@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Emanuele Giorgi",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "I am an Associate Professor in Biostatistics and the Head of the Centre for Health Informatics, Computing, and Statistics at Lancaster University. My research focuses on developing statistical methodologies motivated by and applied to challenges in population health, with a particular emphasis on tropical disease mapping.\nMy full CV can be accessed here."
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,12 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "TBC…"
   }
 ]

@@ -5,14 +5,8 @@ about:
   template: trestles
   image-width: 20em
   image-shape: rounded
-
-
 ---
 
-This is a Quarto website.
+I am an Associate Professor in Biostatistics and the Head of the [Centre for Health Informatics, Computing, and Statistics](https://chicas.lancaster-university.uk/) at Lancaster University. My research focuses on developing statistical methodologies motivated by and applied to challenges in population health, with a particular emphasis on tropical disease mapping.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+My full CV can be accessed [here](CV_EGiorgi.pdf).

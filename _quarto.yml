@@ -3,13 +3,14 @@ project:
   output-dir: docs
 
 website:
-  url: "https://giorgilancs.github.io"
+  site-url: https://giorgilancs.github.io
   title: "Don't let appearances fool you"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: projects.qmd
+        text: Projects
 
 format:
   html:
