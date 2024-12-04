@@ -1,0 +1,18 @@
+---
+title: "Emanuele Giorgi"
+image: profile.jpg
+about:
+  template: trestles
+  image-width: 20em
+  image-shape: rounded
+
+
+---
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+```{r}
+1 + 1
+```
