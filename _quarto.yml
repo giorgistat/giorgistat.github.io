@@ -3,6 +3,7 @@ project:
   output-dir: docs
 
 website:
+  url: "https://giorgilancs.github.io"
   title: "Don't let appearances fool you"
   navbar:
     left:
