@@ -1,0 +1,8 @@
+---
+title: "Books"
+---
+
+## [Model based geostatistics for global public health](https://www.routledge.com/Model-based-Geostatistics-for-Global-Public-Health-Methods-and-Applications/Diggle-Giorgi/p/book/9781032093642?srsltid=AfmBOoorCB0EMimcXx0idtYQCMM50J-ZhORW9tsHxjSbRu8goWwe5PZF)  
+![](mbg.jpg){.border .rounded .shadow-lg width=20%}
+
+*Model-based Geostatistics for Global Public Health: Methods and Applications* (Diggle, P. J. and Giorgi E., 2020) provides an introductory account of model-based geostatistics, its implementation in open-source software and its application in public health research.

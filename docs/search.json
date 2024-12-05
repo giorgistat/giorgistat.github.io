@@ -47,5 +47,26 @@
     "title": "Projects",
     "section": "Neglected Tropical Diseases",
     "text": "Neglected Tropical Diseases\n\nDeveloping and applying novel geostatistical models for neglected tropical disease mapping in collaboration with international global health organizations."
+  },
+  {
+    "objectID": "books.html",
+    "href": "books.html",
+    "title": "Books",
+    "section": "",
+    "text": "Model-based Geostatistics for Global Public Health: Methods and Applications (Diggle, P. J. and Giorgi E., 2020) provides an introductory account of model-based geostatistics, its implementation in open-source software and its application in public health research."
+  },
+  {
+    "objectID": "books.html#model-based-geostatistics-for-global-public-health-diggle-p-j.-and-giorgi-e.",
+    "href": "books.html#model-based-geostatistics-for-global-public-health-diggle-p-j.-and-giorgi-e.",
+    "title": "Books",
+    "section": "",
+    "text": "Model-based Geostatistics for Global Public Health: Methods and Applications provides an introductory account of model-based geostatistics, its implementation in open-source software and its application in public health research."
+  },
+  {
+    "objectID": "books.html#model-based-geostatistics-for-global-public-health",
+    "href": "books.html#model-based-geostatistics-for-global-public-health",
+    "title": "Books",
+    "section": "",
+    "text": "Model-based Geostatistics for Global Public Health: Methods and Applications (Diggle, P. J. and Giorgi E., 2020) provides an introductory account of model-based geostatistics, its implementation in open-source software and its application in public health research."
   }
 ]

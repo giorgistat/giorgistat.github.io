@@ -11,6 +11,8 @@ website:
         text: Home
       - href: projects.qmd
         text: Projects
+      - href: books.qmd
+        text: Books
 
 format:
   html:
