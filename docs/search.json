@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Emanuele Giorgi",
+    "title": "Dr. Emanuele Giorgi",
     "section": "",
-    "text": "I am an Associate Professor in Biostatistics and the Head of the Centre for Health Informatics, Computing, and Statistics at Lancaster University. My research focuses on developing statistical methodologies motivated by and applied to challenges in population health, with a particular emphasis on tropical disease mapping.\nMy full CV can be accessed here."
+    "text": "I am an Associate Professor in Biostatistics and Head of the Centre for Health Informatics, Computing, and Statistics (CHICAS) at Lancaster University. My research centers on the development of statistical methodologies driven by public health problems, with a special focus on tropical disease mapping.\n\n\n\nSpatial and spatio-temporal modeling\n\nGeostatistical methods for disease mapping for global health\n\nPoint process models\nStatistical methods for serological data\n\nFor a comprehensive overview of my academic and professional journey, you can access my full CV.\n\n\n\n\nYou can find my full list of publications here\n\n\n\n\n\nEmail: e.giorgi@lancaster.ac.uk"
   },
   {
     "objectID": "about.html",
@@ -18,6 +18,34 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "TBC…"
+    "text": "Explore some of the projects I am working on. Click on a project to learn more."
+  },
+  {
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Dr. Emanuele Giorgi",
+    "section": "",
+    "text": "Spatial and spatio-temporal modeling\n\nGeostatistical methods for disease mapping for global health\n\nPoint process models\nStatistical methods for serological data\n\nFor a comprehensive overview of my academic and professional journey, you can access my full CV."
+  },
+  {
+    "objectID": "index.html#publications",
+    "href": "index.html#publications",
+    "title": "Dr. Emanuele Giorgi",
+    "section": "",
+    "text": "You can find my full list of publications here"
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Dr. Emanuele Giorgi",
+    "section": "",
+    "text": "Email: e.giorgi@lancaster.ac.uk"
+  },
+  {
+    "objectID": "projects.html#neglected-tropical-diseases",
+    "href": "projects.html#neglected-tropical-diseases",
+    "title": "Projects",
+    "section": "Neglected Tropical Diseases",
+    "text": "Neglected Tropical Diseases\n\nDeveloping and applying novel geostatistical models for neglected tropical disease mapping in collaboration with international global health organizations."
   }
 ]

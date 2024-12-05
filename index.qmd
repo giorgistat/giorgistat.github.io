@@ -1,12 +1,39 @@
 ---
-title: "Emanuele Giorgi"
+title: "Dr. Emanuele Giorgi"
 image: profile.jpg
 about:
   template: trestles
-  image-width: 20em
-  image-shape: rounded
+  image-width: 15em
+  image-shape: round
+title-block-banner: true
+theme:
+  light: flatly
+  dark: darkly
 ---
 
-I am an Associate Professor in Biostatistics and the Head of the [Centre for Health Informatics, Computing, and Statistics](https://chicas.lancaster-university.uk/) at Lancaster University. My research focuses on developing statistical methodologies motivated by and applied to challenges in population health, with a particular emphasis on tropical disease mapping.
 
-My full CV can be accessed [here](CV_EGiorgi.pdf).
+# Welcome
+
+I am an Associate Professor in Biostatistics and Head of the [Centre for Health Informatics, Computing, and Statistics (CHICAS)](https://chicas.lancaster-university.uk/) at Lancaster University. My research centers on the development of statistical methodologies driven by public health problems, with a special focus on tropical disease mapping.
+
+## Research Interests
+
+- Spatial and spatio-temporal modeling  
+- Geostatistical methods for disease mapping for global health  
+- Point process models
+- Statistical methods for serological data
+
+For a comprehensive overview of my academic and professional journey, you can access my [full CV](CV_EGiorgi.pdf).
+
+---
+
+## Publications
+
+You can find my full list of publications [here](https://www.lancaster.ac.uk/dsi/about-us/members/emanuele-giorgi2) 
+
+---
+
+## Contact
+
+- **Email**: [e.giorgi@lancaster.ac.uk](mailto:e.giorgi@lancaster.ac.uk)  
+
