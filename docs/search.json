@@ -68,5 +68,12 @@
     "title": "Books",
     "section": "",
     "text": "Model-based Geostatistics for Global Public Health: Methods and Applications (Diggle, P. J. and Giorgi E., 2020) provides an introductory account of model-based geostatistics, its implementation in open-source software and its application in public health research."
+  },
+  {
+    "objectID": "ntds.html",
+    "href": "ntds.html",
+    "title": "Neglected Tropical Diseases",
+    "section": "",
+    "text": "Neglected Tropical Diseases (NTDs) are a group of infectious diseases that primarily affect impoverished populations in low- and middle-income countries. These diseases, such as lymphatic filariasis, trachoma, and soil-transmitted helminths, have significant impacts on health, social development, and economic productivity. Addressing NTDs requires innovative approaches to map, analyze, and design control interventions efficiently.\nMy research focuses on the application of spatial and spatio-temporal statistical methods for the design and analysis of data from NTDs prevalence surveys. This methodological framework enables policymakers to target resources more effectively and make informed decisions for NTD elimination programs.\nAs the Head of the World Health Organization (WHO) Collaborating Centre on Geostatistical Methods for Neglected Tropical Diseases, I lead initiatives that leverage cutting-edge statistical techniques to support global health priorities. This role involves developing tools, conducting training programs, and fostering collaborations to advance the use of spatial statistics in the fight against NTDs.\nTo know more about my research on NTDs read our Significance paper here (the published paper can also be accessed through the official Significance website here)"
   }
 ]
