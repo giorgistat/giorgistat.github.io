@@ -2,10 +2,10 @@
 title: "Book Chapters"
 ---
 
--  Macharia, P.M., Odhiambo, J.N., Mumo, E., Maina, A., **<u>Giorgi, E.</u>**, Okiro, E.A. (2023). \textit{Approaches to Defining Health Facility Catchment Areas in Sub-Saharan Africa.} Approaches to Defining Health Facility Catchment Areas in Sub-Saharan Africa. In: Adewoyin, Y. (eds) Health and Medical Geography in Africa. Global Perspectives on Health Geography. Springer, Cham. https://doi.org/10.1007/978-3-031-41268-4-21
+-  Macharia, P.M., Odhiambo, J.N., Mumo, E., Maina, A., **<u>Giorgi, E.</u>**, Okiro, E.A. (2023). *Approaches to Defining Health Facility Catchment Areas in Sub-Saharan Africa.* Approaches to Defining Health Facility Catchment Areas in Sub-Saharan Africa. In: Adewoyin, Y. (eds) Health and Medical Geography in Africa. Global Perspectives on Health Geography. Springer, Cham. https://doi.org/10.1007/978-3-031-41268-4-21
 
 
--  Diggle, P. J., **<u>Giorgi, E.</u>**, Chipeta, M. G., MacFarlane, S. (2017). \textit{Keeping track of health outcomes in space and time: an introduction to spatial and spatio-temporal
-methods.} In: The Palgrave Handbook on Global Health Data for Policy. Palgrave Macmillan.
+-  Diggle, P. J., **<u>Giorgi, E.</u>**, Chipeta, M. G., MacFarlane, S. (2017). *Keeping track of health outcomes in space and time: an introduction to spatial and spatio-temporal
+methods.* In: The Palgrave Handbook on Global Health Data for Policy. Palgrave Macmillan.
 
--  Diggle, P. J., **<u>Giorgi, E.</u>** (2017). \textit{Preferential sampling of exposure levels. In: Hanbook of Environmental and Ecological Statisics.} Chapman \& Hall/CRC Handbooks of Modern Statistical Methods.
+-  Diggle, P. J., **<u>Giorgi, E.</u>** (2017). *Preferential sampling of exposure levels. In: Hanbook of Environmental and Ecological Statisics.* Chapman \& Hall/CRC Handbooks of Modern Statistical Methods.
