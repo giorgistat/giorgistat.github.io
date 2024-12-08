@@ -2,6 +2,8 @@
 title: "Publications"
 ---
 
+![](papers.jpg){.border .rounded .shadow-lg width=50%}
+
 Welcome to the Publications page. Explore the sections below:
 
 - [Original Research Articles](original-research.qmd)
