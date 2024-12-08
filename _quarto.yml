@@ -4,7 +4,7 @@ project:
 
 website:
   site-url: https://giorgistat.github.io/
-  title: "Don't let appearances fool you"
+  title: "Welcome to My Personal Website"
   navbar:
     left:
       - href: index.qmd
