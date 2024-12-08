@@ -13,5 +13,17 @@
   },
   "books.qmd": {
     "books.html": "a1eb0374"
+  },
+  "publications/book-chapters.qmd": {
+    "book-chapters.html": "dfd3d1fc"
+  },
+  "publications/other-publications.qmd": {
+    "other-publications.html": "2da7c518"
+  },
+  "publications/index.qmd": {
+    "index.html": "58ad52b9"
+  },
+  "publications/original-research.qmd": {
+    "original-research.html": "b73c2211"
   }
 }

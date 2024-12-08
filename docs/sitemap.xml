@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://giorgilancs.github.io/index.html</loc>
-    <lastmod>2024-12-06T18:00:09.734Z</lastmod>
+    <lastmod>2024-12-08T10:45:27.565Z</lastmod>
   </url>
   <url>
     <loc>https://giorgilancs.github.io/projects.html</loc>
@@ -15,5 +15,21 @@
   <url>
     <loc>https://giorgilancs.github.io/books.html</loc>
     <lastmod>2024-12-05T12:48:22.220Z</lastmod>
+  </url>
+  <url>
+    <loc>https://giorgilancs.github.io/publications/original-research.html</loc>
+    <lastmod>2024-12-08T10:47:46.132Z</lastmod>
+  </url>
+  <url>
+    <loc>https://giorgilancs.github.io/publications/other-publications.html</loc>
+    <lastmod>2024-12-08T10:40:53.580Z</lastmod>
+  </url>
+  <url>
+    <loc>https://giorgilancs.github.io/publications/book-chapters.html</loc>
+    <lastmod>2024-12-08T10:32:46.091Z</lastmod>
+  </url>
+  <url>
+    <loc>https://giorgilancs.github.io/publications/index.html</loc>
+    <lastmod>2024-12-08T10:15:59.401Z</lastmod>
   </url>
 </urlset>

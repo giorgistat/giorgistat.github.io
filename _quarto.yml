@@ -13,6 +13,16 @@ website:
         text: Projects
       - href: books.qmd
         text: Books
+      - text: Publications
+        menu:
+          - href: publications/index.qmd
+            text: Overview
+          - href: publications/original-research.qmd
+            text: Original Research
+          - href: publications/book-chapters.qmd
+            text: Book Chapters
+          - href: publications/other-publications.qmd
+            text: Other Publications
 
 format:
   html:
@@ -21,4 +31,3 @@ format:
     toc: true
 
 editor: visual
-

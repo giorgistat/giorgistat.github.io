@@ -1,5 +1,5 @@
 ---
-title: "Dr. Emanuele Giorgi"
+title: "Dr Emanuele Giorgi"
 image: profile.jpg
 about:
   template: trestles
@@ -28,7 +28,8 @@ For a comprehensive overview of my academic and professional journey, you can ac
 
 ## Publications
 
-You can find my full list of publications [here](https://www.lancaster.ac.uk/dsi/about-us/members/emanuele-giorgi2#publications)
+You can find my full list of publications [here](publications/index.html)
+
 
 ------------------------------------------------------------------------
 
