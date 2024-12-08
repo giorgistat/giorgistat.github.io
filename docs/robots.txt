@@ -1,1 +1,1 @@
-Sitemap: https://egiorgi.github.io/sitemap.xml
+Sitemap: https://giorgistat.github.io/sitemap.xml
