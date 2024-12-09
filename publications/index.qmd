@@ -3,8 +3,8 @@ title: "Publications"
 format: html
 ---
 
-::: {.grid}
-::: {.g-col-8}
+::::: grid
+::: g-col-8
 Welcome to the Publications page. Explore the sections below:
 
 -   [Original Research Articles](original-research.qmd)
@@ -18,7 +18,7 @@ Welcome to the Publications page. Explore the sections below:
     -   [Book Reviews](other-publications.qmd#reviews)
 :::
 
-::: {.g-col-4}
+::: g-col-4
 ![](papers.jpg){.border .rounded .shadow-lg width="100%"}
 :::
-:::
+:::::
