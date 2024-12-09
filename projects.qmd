@@ -7,15 +7,10 @@ format:
       dark: darkly
 ---
 
-
 Explore some of the projects I am working on. Click on a project to learn more.
 
+## [Neglected Tropical Diseases](ntds.qmd)
 
-## [Neglected Tropical Diseases](ntds.qmd)  
-![](ntds.png){.border .rounded .shadow-lg width=30%}
+![](ntds.png){.border .rounded .shadow-lg width="30%"}
 
 Developing and applying novel geostatistical models for neglected tropical disease mapping in collaboration with international global health organizations.
-
-
-
-

@@ -10,7 +10,7 @@ title: "Original Research Articles"
 -  Macharia, P., Ray, N., Gitonga, C. W., Snow, R. W., **<u>Giorgi, E.</u>** (2022). *Combining school-catchment area models with geostatistical models for analysing school survey data from low-resource settings: inferential benefits and limitations.* Spatial statistics.   https://doi.org/10.1016/j.spasta.2022.100679
 
 
--  **<u>Giorgi, E.</u>**, Fronterr\`e, C., Macharia, P., Alegana, V., Snow, R., Diggle, P. (2021) *Model building and assessment of the impact of covariates for disease prevalence mapping in low-resource settings: to explain and to predict.* Journal of the Royal Society Interface. 18:20210104.   http://doi.org/10.1098/rsif.2021.0104
+-  **<u>Giorgi, E.</u>**, Fronterre, C., Macharia, P., Alegana, V., Snow, R., Diggle, P. (2021) *Model building and assessment of the impact of covariates for disease prevalence mapping in low-resource settings: to explain and to predict.* Journal of the Royal Society Interface. 18:20210104.   http://doi.org/10.1098/rsif.2021.0104
 
 -  Kyomuhangi, I., **<u>Giorgi, E.</u>** (2021) *A unified and flexible modelling framework for the analysis of malaria serology data.* Epidemiology \& Infection. doi:10.1017/S0950268821000753
 
@@ -38,7 +38,7 @@ in disease risk.* Spatial Statistics. doi:10.1016/j.spasta.2019.100397
 
 
 
--  Fronterr\`e, C., **<u>Giorgi, E.</u>**, Diggle, P. J. (2018). *Geostatistical inference in the presence of geomasking: a composite-likelihood approach.* Spatial Statistics. DOI: 10.1016/j.spasta.2018.06.004
+-  Fronterre, C., **<u>Giorgi, E.</u>**, Diggle, P. J. (2018). *Geostatistical inference in the presence of geomasking: a composite-likelihood approach.* Spatial Statistics. DOI: 10.1016/j.spasta.2018.06.004
 
 
 
