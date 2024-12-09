@@ -63,12 +63,12 @@ in disease risk.* Spatial Statistics. doi:10.1016/j.spasta.2019.100397
 
 ## Applications in Public Health {#public-health}
 
--  Puranik, A., Diggle, P. J., Odiere, M. R., Gass, K., Kepha, S., Okoyo, C.,  Mwandawiro, C., Wakesho, F., Omondi, W., Sultani, H. M., **<u>Giorgi, E.</u>**, *Understanding the impact of covariates on the classification of implementation units for soil-transmitted helminths control: A case study from Kenya.* BMC Medical Research Methodology, 24, 294 (2024). https://doi.org/10.1186/s12874-024-02420-1
+-  Puranik, A., Diggle, P. J., Odiere, M. R., Gass, K., Kepha, S., Okoyo, C.,  Mwandawiro, C., Wakesho, F., Omondi, W., Sultani, H. M., **<u>Giorgi, E.</u>** (2024). *Understanding the impact of covariates on the classification of implementation units for soil-transmitted helminths control: A case study from Kenya.* BMC Medical Research Methodology, 24, 294 (2024). https://doi.org/10.1186/s12874-024-02420-1
 
--  Khaki, J.,  Macharia, P., **<u>Giorgi, E.</u>**, Benova, L., *Prevalence and determinants of double and triple burden of malnutrition among mother-child pairs in Malawi: a mapping and multilevel modelling study.* Pubblic Health Nutrition. Public Health Nutrition.  
+-  Khaki, J.,  Macharia, P., **<u>Giorgi, E.</u>**, Benova, L. (2024). *Prevalence and determinants of double and triple burden of malnutrition among mother-child pairs in Malawi: a mapping and multilevel modelling study.* Pubblic Health Nutrition. Public Health Nutrition.  
 2024;27(1):e241. doi:10.1017/S1368980024002064 
 
--  Soni, N., Eyre, M. T., Souza, F. N., Diggle, P. J., Ko, A. I., Begon, M., Pickup, R., Childs, J. E., Khalil, H., Carvalho-Pereira, T. S. A., Pertile, A. C., Carvalho, M., de Oliveira, D., Junior, N. N., **<u>Giorgi, E.</u>**$^*$, Costa, F.$^*$, *Disentangling the influence of reservoir abundance and pathogen shedding on zoonotic spillover of the Leptospira agent in urban informal settlements.* International Journal of Hygiene and Environmental Health. 12:1447592. doi: 10.3389/fpubh.2024.1447592 
+-  Soni, N., Eyre, M. T., Souza, F. N., Diggle, P. J., Ko, A. I., Begon, M., Pickup, R., Childs, J. E., Khalil, H., Carvalho-Pereira, T. S. A., Pertile, A. C., Carvalho, M., de Oliveira, D., Junior, N. N., **<u>Giorgi, E.</u>**$^*$, Costa, F.$^*$ (2024). *Disentangling the influence of reservoir abundance and pathogen shedding on zoonotic spillover of the Leptospira agent in urban informal settlements.* International Journal of Hygiene and Environmental Health. 12:1447592. doi: 10.3389/fpubh.2024.1447592 
 $^*$These authors contributed equally.
 
 -  Khaki, J.J, Meiring, J.E., Thindwa, D., Henrion, M.Y., Jere, T.M., Msuku, H., The STRATAA Consortium, Heyderman, R.S., Gordon, M. A., **<u>Giorgi, E.</u>** (2024). *Modelling Salmonella Typhi in Blantyre, Malawi, using point pattern methods.* Scientific Reports. 14, 17164.  https://doi.org/10.1038/s41598-024-66436-9
