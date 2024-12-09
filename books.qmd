@@ -6,3 +6,8 @@ title: "Books"
 ![](mbg.jpg){.border .rounded .shadow-lg width=20%}
 
 *Model-based Geostatistics for Global Public Health: Methods and Applications* (Diggle, P. J. and Giorgi E., 2020) provides an introductory account of model-based geostatistics, its implementation in open-source software and its application in public health research.
+
+## Time serie analysis: A Biostatistical Introduction  
+![](ts.png){.border .rounded .shadow-lg width=20%}
+
+*Time sries analysis: a biostatistical introduction* (Diggle, P. J. and Giorgi, E., 2024) is an introductory account of time series analysis, written from the perspective of applied statisticians whose interests lie primarily in the biomedical and health sciences. 

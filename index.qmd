@@ -9,7 +9,6 @@ title-block-banner: true
 theme:
   light: flatly
   dark: darkly
-
 ---
 
 # Welcome
