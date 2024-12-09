@@ -25,5 +25,20 @@
   },
   "publications/original-research.qmd": {
     "original-research.html": "b73c2211"
+  },
+  "riskmap.qmd": {
+    "riskmap.html": "6a43c2d6"
+  },
+  "projects/index.qmd": {
+    "index.html": "dbcd7468"
+  },
+  "projects/projects.qmd": {
+    "projects.html": "c148354d"
+  },
+  "projects/ntds.qmd": {
+    "ntds.html": "ae368509"
+  },
+  "projects/riskmap.qmd": {
+    "riskmap.html": "f42f35f0"
   }
 }

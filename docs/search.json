@@ -152,5 +152,82 @@
     "title": "Books",
     "section": "Time serie analysis: A Biostatistical Introduction",
     "text": "Time serie analysis: A Biostatistical Introduction\n\nTime sries analysis: a biostatistical introduction (Diggle, P. J. and Giorgi, E., 2024) is an introductory account of time series analysis, written from the perspective of applied statisticians whose interests lie primarily in the biomedical and health sciences."
+  },
+  {
+    "objectID": "projects.html#riskmap-an-r-package-for-geotatistical-modeling-of-spatially-referenced-data",
+    "href": "projects.html#riskmap-an-r-package-for-geotatistical-modeling-of-spatially-referenced-data",
+    "title": "Projects",
+    "section": "RiskMap: an R Package for Geotatistical Modeling of Spatially Referenced Data",
+    "text": "RiskMap: an R Package for Geotatistical Modeling of Spatially Referenced Data\n\nDeveloping open-source statistical software to make model-based geostatistical methods more accessible to researchers worldwide."
+  },
+  {
+    "objectID": "riskmap.html",
+    "href": "riskmap.html",
+    "title": "The RiskMap R package",
+    "section": "",
+    "text": "I am the lead developer of the RiskMap R package, which provides a comprehensive implementation of state-of-the-art geostatistical methods. This package plays a pivotal role in both my research and teaching, serving as a core component in the development and delivery of my workshops and MSc-level courses. I am also authoring a book on the application of this package, which will be published by CRC Chapman & Hall in their R Series collection, with an expected release date of December 2025."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Explore some of the projects I am working on. Click on a project to learn more."
+  },
+  {
+    "objectID": "projects/ntds.html",
+    "href": "projects/ntds.html",
+    "title": "Neglected Tropical Diseases",
+    "section": "",
+    "text": "Neglected Tropical Diseases (NTDs) are a group of infectious diseases that primarily affect impoverished populations in low- and middle-income countries. These diseases, such as lymphatic filariasis, trachoma, and soil-transmitted helminths, have significant impacts on health, social development, and economic productivity. Addressing NTDs requires innovative approaches to map, analyze, and design control interventions efficiently.\nMy research focuses on the application of spatial and spatio-temporal statistical methods for the design and analysis of data from NTDs prevalence surveys. This methodological framework enables policymakers to target resources more effectively and make informed decisions for NTD elimination programs.\nAs the Head of the World Health Organization (WHO) Collaborating Centre on Geostatistical Methods for Neglected Tropical Diseases, I lead initiatives that leverage cutting-edge statistical techniques to support global health priorities. This role involves developing tools, conducting training programs, and fostering collaborations to advance the use of spatial statistics in the fight against NTDs.\nTo know more about my research on NTDs read our Significance paper here (the published paper can also be accessed through the official Significance website here)"
+  },
+  {
+    "objectID": "projects/projects.html",
+    "href": "projects/projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Explore some of the projects I am working on. Click on a project to learn more."
+  },
+  {
+    "objectID": "projects/projects.html#neglected-tropical-diseases",
+    "href": "projects/projects.html#neglected-tropical-diseases",
+    "title": "Projects",
+    "section": "Neglected Tropical Diseases",
+    "text": "Neglected Tropical Diseases\n\nDeveloping and applying novel geostatistical models for neglected tropical disease mapping in collaboration with international global health organizations."
+  },
+  {
+    "objectID": "projects/projects.html#riskmap-an-r-package-for-geotatistical-modeling-of-spatially-referenced-data",
+    "href": "projects/projects.html#riskmap-an-r-package-for-geotatistical-modeling-of-spatially-referenced-data",
+    "title": "Projects",
+    "section": "RiskMap: an R Package for Geotatistical Modeling of Spatially Referenced Data",
+    "text": "RiskMap: an R Package for Geotatistical Modeling of Spatially Referenced Data\n\nDeveloping open-source statistical software to make model-based geostatistical methods more accessible to researchers worldwide."
+  },
+  {
+    "objectID": "projects/index.html#neglected-tropical-diseases",
+    "href": "projects/index.html#neglected-tropical-diseases",
+    "title": "Projects",
+    "section": "Neglected Tropical Diseases",
+    "text": "Neglected Tropical Diseases\n\nDeveloping and applying novel geostatistical models for neglected tropical disease mapping in collaboration with international global health organizations."
+  },
+  {
+    "objectID": "projects/index.html#riskmap-an-r-package-for-geotatistical-modeling-of-spatially-referenced-data",
+    "href": "projects/index.html#riskmap-an-r-package-for-geotatistical-modeling-of-spatially-referenced-data",
+    "title": "Projects",
+    "section": "RiskMap: an R Package for Geotatistical Modeling of Spatially Referenced Data",
+    "text": "RiskMap: an R Package for Geotatistical Modeling of Spatially Referenced Data\n\nDeveloping open-source statistical software to make model-based geostatistical methods more accessible to researchers worldwide."
+  },
+  {
+    "objectID": "projects/riskmap.html",
+    "href": "projects/riskmap.html",
+    "title": "The RiskMap R package",
+    "section": "",
+    "text": "I am the lead developer of the RiskMap R package, which provides a comprehensive implementation of state-of-the-art geostatistical methods. This package plays a pivotal role in both my research and teaching, serving as a core component in the development and delivery of my workshops and MSc-level courses. I am also authoring a book on the application of this package, which will be published by CRC Chapman & Hall in their R Series collection, with an expected release date of December 2025."
+  },
+  {
+    "objectID": "projects/index.html#the-riskmap-r-package",
+    "href": "projects/index.html#the-riskmap-r-package",
+    "title": "Projects",
+    "section": "The RiskMap R Package",
+    "text": "The RiskMap R Package\n\nDeveloping open-source statistical software to make model-based geostatistical methods more accessible to researchers worldwide."
   }
 ]

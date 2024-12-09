@@ -9,3 +9,9 @@ Explore some of the projects I am working on. Click on a project to learn more.
 ![](ntds.png){.border .rounded .shadow-lg width="30%"}
 
 Developing and applying novel geostatistical models for neglected tropical disease mapping in collaboration with international global health organizations.
+
+## [The RiskMap R Package](riskmap.qmd)
+
+![](R.png){.border .rounded .shadow-lg width="18%"}
+
+Developing open-source statistical software to make model-based geostatistical methods more accessible to researchers worldwide.

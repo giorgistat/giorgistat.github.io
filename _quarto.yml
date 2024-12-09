@@ -9,8 +9,14 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: projects.qmd
-        text: Projects
+      - text: Projects
+        menu:
+          - href: projects/index.qmd
+            text: Overview
+          - href: projects/ntds.qmd
+            text: Neglected Tropical Diseases
+          - href: projects/riskmap.qmd
+            text: The RiskMap R package
       - href: books.qmd
         text: Books
       - text: Publications
