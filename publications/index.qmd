@@ -1,17 +1,24 @@
 ---
 title: "Publications"
+format: html
 ---
 
-![](papers.jpg){.border .rounded .shadow-lg width=50%}
-
+::: {.grid}
+::: {.g-col-8}
 Welcome to the Publications page. Explore the sections below:
 
-- [Original Research Articles](original-research.qmd)
-  - [Statistical Methodology](original-research.qmd#stat-methodology)
-  - [Applications in Public Health](original-research.qmd#public-health)
-  - [Teaching of Statistics](original-research.qmd#teaching)
-- [Book Chapters](book-chapters.qmd)
-- [Other Non Peer-Reviewed Publications](other-publications.qmd)
-  - [Outreach and Public Engagement](other-publications.qmd#outreach)
-  - [Invited Comments](other-publications.qmd#comments)
-  - [Book Reviews](other-publications.qmd#reviews)
+-   [Original Research Articles](original-research.qmd)
+    -   [Statistical Methodology](original-research.qmd#stat-methodology)
+    -   [Applications in Public Health](original-research.qmd#public-health)
+    -   [Teaching of Statistics](original-research.qmd#teaching)
+-   [Book Chapters](book-chapters.qmd)
+-   [Other Non Peer-Reviewed Publications](other-publications.qmd)
+    -   [Outreach and Public Engagement](other-publications.qmd#outreach)
+    -   [Invited Comments](other-publications.qmd#comments)
+    -   [Book Reviews](other-publications.qmd#reviews)
+:::
+
+::: {.g-col-4}
+![](papers.jpg){.border .rounded .shadow-lg width="100%"}
+:::
+:::
