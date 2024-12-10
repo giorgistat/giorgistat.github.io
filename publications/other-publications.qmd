@@ -2,22 +2,20 @@
 title: "Other Non Peer-Reviewed Publications"
 ---
 
-
 ## Outreach and Public Engagement {#outreach}
 
--  Purkiss, J., Clark, F., **<u>Giorgi, E.</u>** (2024). *Using geostatistics to fight neglected tropical diseases.* Significance, Volume 21, Issue 4, September 2024, Pages 14–18, \\ https://doi.org/10.1093/jrssig/qmae057
+-   Purkiss, J., Clark, F., **<u>Giorgi, E.</u>** (2024). *Using geostatistics to fight neglected tropical diseases.* Significance, Volume 21, Issue 4, September 2024, Pages 14–18, \\ https://doi.org/10.1093/jrssig/qmae057
 
--  **<u>Giorgi, E.</u>** (2018). *Career Highlights: Emanuele Giorgi on teaching in Africa.* Significance, 15: 41. doi:10.1111/j.1740-9713.2018.01111.x
+-   **<u>Giorgi, E.</u>** (2018). *Career Highlights: Emanuele Giorgi on teaching in Africa.* Significance, 15: 41. doi:10.1111/j.1740-9713.2018.01111.x
 
--  **<u>Giorgi, E.</u>**, Bisanzio, D. (2017). *Why malaria is unlikely to return to Italy – despite a recent death from the disease.* The Conversation. Available [here](https://theconversation.com/why-malaria-is-unlikely-to-return-to-italy-despite-a-recent-death-from-the-disease-83663)
+-   **<u>Giorgi, E.</u>**, Bisanzio, D. (2017). *Why malaria is unlikely to return to Italy – despite a recent death from the disease.* The Conversation. Available [here](https://theconversation.com/why-malaria-is-unlikely-to-return-to-italy-despite-a-recent-death-from-the-disease-83663)
 
 ## Invited Comments to Publications {#comments}
+
 -   Stockdale, A. J., Kreuels, B., Henrion, M., **<u>Giorgi, E.</u>**, Kyomuhangi, I., Geretti, A. M. (2018). *Hepatitis D prevalence: problems with extrapolation to global population estimates.* Gut.\\ DOI:10.1136/gutjnl-2018-317874
 
-
--  Diggle, P. J., **<u>Giorgi, E.</u>** (2014). *Geostatistical mapping of helminth infection rates.* The Lancet Infectious Diseases. 15:9-11
-
+-   Diggle, P. J., **<u>Giorgi, E.</u>** (2014). *Geostatistical mapping of helminth infection rates.* The Lancet Infectious Diseases. 15:9-11
 
 ## Book Reviews {#reviews}
 
--  **<u>Giorgi, E.</u>** (2017). *Review of "Spatial Point Patterns: Methodology and Applications with R".* American Statistician. doi: 10.1080/00031305.2017.1322880
+-   **<u>Giorgi, E.</u>** (2017). *Review of "Spatial Point Patterns: Methodology and Applications with R".* American Statistician. doi: 10.1080/00031305.2017.1322880
