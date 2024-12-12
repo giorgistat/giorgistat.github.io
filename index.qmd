@@ -6,9 +6,6 @@ about:
   image-width: 15em
   image-shape: round
 title-block-banner: true
-theme:
-  light: flatly
-  dark: darkly
 ---
 
 # Welcome
