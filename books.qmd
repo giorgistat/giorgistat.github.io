@@ -2,12 +2,14 @@
 title: "Books"
 ---
 
-## [Model based geostatistics for global public health](https://www.routledge.com/Model-based-Geostatistics-for-Global-Public-Health-Methods-and-Applications/Diggle-Giorgi/p/book/9781032093642?srsltid=AfmBOoorCB0EMimcXx0idtYQCMM50J-ZhORW9tsHxjSbRu8goWwe5PZF)  
-![](mbg.jpg){.border .rounded .shadow-lg width=20%}
+## [Model based geostatistics for global public health](https://www.routledge.com/Model-based-Geostatistics-for-Global-Public-Health-Methods-and-Applications/Diggle-Giorgi/p/book/9781032093642?srsltid=AfmBOoorCB0EMimcXx0idtYQCMM50J-ZhORW9tsHxjSbRu8goWwe5PZF)
+
+![](mbg.jpg){.border .rounded .shadow-lg width="20%"}
 
 *Model-based Geostatistics for Global Public Health: Methods and Applications* (Diggle, P. J. and Giorgi E., 2020) provides an introductory account of model-based geostatistics, its implementation in open-source software and its application in public health research.
 
-## Time serie analysis: A Biostatistical Introduction  
-![](ts.png){.border .rounded .shadow-lg width=20%}
+## [Time serie analysis: A Biostatistical Introduction](https://global.oup.com/academic/product/time-series-a-biostatistical-introduction-9780198714842?q=peter%20diggle%20time%20series&lang=en&cc=gb)
 
-*Time sries analysis: a biostatistical introduction* (Diggle, P. J. and Giorgi, E., 2024) is an introductory account of time series analysis, written from the perspective of applied statisticians whose interests lie primarily in the biomedical and health sciences. 
+![](ts.png){.border .rounded .shadow-lg width="20%"}
+
+*Time sries analysis: a biostatistical introduction* (Diggle, P. J. and Giorgi, E., 2024) is an introductory account of time series analysis, written from the perspective of applied statisticians whose interests lie primarily in the biomedical and health sciences.
