@@ -229,5 +229,19 @@
     "title": "Projects",
     "section": "The RiskMap R Package",
     "text": "The RiskMap R Package\n\nDeveloping open-source statistical software to make model-based geostatistical methods more accessible to researchers worldwide."
+  },
+  {
+    "objectID": "projects/index.html#statistical-methods-for-serological-data-analysis",
+    "href": "projects/index.html#statistical-methods-for-serological-data-analysis",
+    "title": "Projects",
+    "section": "Statistical Methods for Serological Data Analysis",
+    "text": "Statistical Methods for Serological Data Analysis\n\nDeveloping statistical methods to understand the dynamics of infectious disease exposure using serological data, with applications in integrated disease surveillance."
+  },
+  {
+    "objectID": "projects/serology.html",
+    "href": "projects/serology.html",
+    "title": "Statisitcal Methods for Serological Data Analysis",
+    "section": "",
+    "text": "Image taken from Kyomuhangi and Giorgi (2021)\n\n\nSerology data, which measure antibodies in the blood, are invaluable for disease surveillance as they provide insights into past exposure to infections. This is particularly useful for diseases with low case numbers, where traditional surveillance methods may underestimate transmission. By capturing cumulative exposure, serology enables a more comprehensive understanding of disease dynamics over time and across populations.\nI have been developing novel methods for the analysis of serology data that extend previous approaches by avoiding the use of arbitrary thresholds and incorporating age-dependency into the modeling process. These threshold-free, flexible frameworks allow for more accurate estimates of disease exposure and better capture age-related patterns in seroprevalence.\nBuilding on this foundation, I am expanding these methods to analyze data for multiple diseases simultaneously, enabling integrated disease surveillance. This work aims to support more efficient and comprehensive monitoring of infectious diseases, particularly in low-resource settings, by leveraging serological data to track and map the co-distribution of multiple infections."
   }
 ]

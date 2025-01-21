@@ -17,6 +17,8 @@ website:
             text: Neglected Tropical Diseases
           - href: projects/riskmap.qmd
             text: The RiskMap R package
+          - href: projects/serology.qmd
+            text: Statisitcal Methods for Serological Data Analysis
       - href: books.qmd
         text: Books
       - text: Publications

@@ -40,5 +40,8 @@
   },
   "projects/riskmap.qmd": {
     "riskmap.html": "f42f35f0"
+  },
+  "projects/serology.qmd": {
+    "serology.html": "131a8bd4"
   }
 }

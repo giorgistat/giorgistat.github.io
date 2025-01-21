@@ -1,0 +1,11 @@
+---
+title: "Statisitcal Methods for Serological Data Analysis"
+---
+
+![Image taken from Kyomuhangi and Giorgi (2021)](unified.png){.border .rounded .shadow-lg width="50%"}
+
+Serology data, which measure antibodies in the blood, are invaluable for disease surveillance as they provide insights into past exposure to infections. This is particularly useful for diseases with low case numbers, where traditional surveillance methods may underestimate transmission. By capturing cumulative exposure, serology enables a more comprehensive understanding of disease dynamics over time and across populations.  
+
+I have been developing novel methods for the analysis of serology data that extend previous approaches by avoiding the use of arbitrary thresholds and incorporating age-dependency into the modeling process. These threshold-free, flexible frameworks allow for more accurate estimates of disease exposure and better capture age-related patterns in seroprevalence.  
+
+Building on this foundation, I am expanding these methods to analyze data for multiple diseases simultaneously, enabling **integrated disease surveillance**. This work aims to support more efficient and comprehensive monitoring of infectious diseases, particularly in low-resource settings, by leveraging serological data to track and map the co-distribution of multiple infections.  

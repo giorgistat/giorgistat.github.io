@@ -15,3 +15,9 @@ Developing and applying novel geostatistical models for neglected tropical disea
 ![](R.png){.border .rounded .shadow-lg width="18%"}
 
 Developing open-source statistical software to make model-based geostatistical methods more accessible to researchers worldwide.
+
+## [Statistical Methods for Serological Data Analysis](serology.qmd)
+
+![](antibody.jpg){.border .rounded .shadow-lg width="18%"}
+
+Developing statistical methods to understand the dynamics of infectious disease exposure using serological data, with applications in integrated disease surveillance.
