@@ -15,9 +15,9 @@ I am an Associate Professor in Biostatistics and Head of the [Centre for Health 
 ## Research Interests
 
 -   Spatial and spatio-temporal modeling\
--   Geostatistical methods for disease mapping for global health\
+-   Geostatistical methods for global health applications\
 -   Point process models
--   Statistical methods for serological data
+-   Statistical methods for serological data analysis
 
 For a comprehensive overview of my academic and professional journey, you can access my [full CV](CV_EGiorgi.pdf).
 
