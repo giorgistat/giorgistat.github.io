@@ -4,13 +4,14 @@ subtitle: "From Methodology Development to Policy Applications"
 author: "Emanuele Giorgi"  
 institute: "Lancaster University"  
 date: ""  
-format:  
-  revealjs:  
-    theme: solarized  
-    transition: fade  
-    slide-number: true  
-    chalkboard: true  
-    footer: ""  
+format:
+  revealjs:
+    theme: solarized
+    transition: fade
+    slide-number: true
+    chalkboard: true
+    logo: "your-logo.png"
+    footer: ""
 ---
 
 ## My Background {.smaller}
