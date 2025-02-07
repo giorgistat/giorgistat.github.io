@@ -31,6 +31,8 @@ website:
             text: Book Chapters
           - href: publications/other-publications.qmd
             text: Other Publications
+      - href: talks/index.qmd
+        text: Talks
 
 
 format:

@@ -1,0 +1,8 @@
+---
+title: "Talks"
+---
+
+- **[Model-based Geostatistics for Global Public Health: From Methodology Development to Policy Applications](Birmingham%20(20%20Feb%202025).qmd)**  
+  *University of Birmingham, 20 February 2025*
+
+---

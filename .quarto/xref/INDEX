@@ -43,5 +43,11 @@
   },
   "projects/serology.qmd": {
     "serology.html": "131a8bd4"
+  },
+  "talks/Birmingham (20 Feb 2025).qmd": {
+    "Birmingham (20 Feb 2025).html": "930c204a"
+  },
+  "talks/index.qmd": {
+    "index.html": "8860d745"
   }
 }
