@@ -2,7 +2,9 @@
 title: "Model-based Geostatistics for Global Public Health"  
 subtitle: "From Methodology Development to Policy Applications"  
 author: "Emanuele Giorgi"  
-institute: "Lancaster University"  
+institute: "Lancaster University" 
+execute:
+  freeze: true
 date: ""  
 format:
   revealjs:
