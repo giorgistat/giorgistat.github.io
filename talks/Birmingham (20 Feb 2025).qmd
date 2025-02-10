@@ -180,7 +180,6 @@ Amoah, B., Diggle, P. J., Giorgi, E. (2019). A geostatistical framework for comb
 
 Sasanami, M., et al. (2023). Using model-based geostatistics for assessing the elimination of trachoma. **PLoS Neglected Tropical Diseases**, 17(7): e0011476. https://doi.org/10.1371/journal.pntd.0011476
 
-
 ## Challenges in Translating Geostatistics for Policy
 
 -   **Complexity of methods** – Advanced models are difficult to interpret for non-specialists.
