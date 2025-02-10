@@ -12,7 +12,7 @@ format:
     transition: fade
     slide-number: true
     chalkboard: true
-    logo: "your-logo.png"
+    logo: "figures/clogo.png"
     footer: ""
 ---
 
@@ -125,7 +125,21 @@ Giorgi, E. and Fronterre, C. (expected August 2025) *Model-based geostatistics f
 
 <center>![](figures/exceedprob.png){height="4in"}</center>
 
+
+## Extensions to spatio-temporal modelling {.smaller}
+
+**Question:** Which spatio-temporal correlation structures are suitable for modelling disease prevalence data?
+
+<center>![](figures/spatio_temporal.png){height="3.8in"}</center>
+
+. . .
+
+Giorgi, E., Diggle, P. J., Snow, R. W., Noor, A. M. (2018). Geostatistical methods for disease mapping and visualization using data from spatio-temporally referenced prevalence surveys. **International Statistical Review.** https://doi.org/10.1111/insr.12268
+
+
 ## Spatially structured zero-inflation {.smaller}
+
+**Question:** How can we effectively model the bivariate relationship between disease suitability and disease prevalence?
 
 <center>![](figures/sudan.png){height="4in"}</center>
 
@@ -133,7 +147,11 @@ Giorgi, E. and Fronterre, C. (expected August 2025) *Model-based geostatistics f
 
 Diggle, P. J., Giorgi, E. (2016). Model-based geostatistics for prevalence mapping in low-resource settings (with discussion). **Journal of the American Statistical Association.** 111:1096-1120
 
+
+
 ## Combining data from multiple diagnostics {.smaller}
+
+**Questions:** 1) How we predict a gold-standard diagnostic using cheap biased diagnostics? 2) How do we model the bivariate relationship between two complementary gold-standards? 
 
 <center>![](figures/combining.png){height="4in"}</center>
 
@@ -141,13 +159,6 @@ Diggle, P. J., Giorgi, E. (2016). Model-based geostatistics for prevalence mappi
 
 Amoah, B., Diggle, P. J., Giorgi, E. (2019). A geostatistical framework for combining data from multiple diagnostic tests. **Biometrics.** doi:10.1111/biom.13142
 
-## Extensions to spatio-temporal modelling {.smaller}
-
-<center>![](figures/spatio_temporal.png){height="4in"}</center>
-
-. . .
-
-Giorgi, E., Diggle, P. J., Snow, R. W., Noor, A. M. (2018). Geostatistical methods for disease mapping and visualization using data from spatio-temporally referenced prevalence surveys. **International Statistical Review.** https://doi.org/10.1111/insr.12268
 
 ## Future research directions
 
@@ -169,6 +180,18 @@ Giorgi, E., Diggle, P. J., Snow, R. W., Noor, A. M. (2018). Geostatistical metho
 
 Sasanami, M., et al. (2023). Using model-based geostatistics for assessing the elimination of trachoma. **PLoS Neglected Tropical Diseases**, 17(7): e0011476. https://doi.org/10.1371/journal.pntd.0011476
 
+
+## Challenges in Translating Geostatistics for Policy
+
+-   **Complexity of methods** – Advanced models are difficult to interpret for non-specialists.
+
+-   **Data uncertainty** – Policymakers may struggle to incorporate probabilistic estimates into decision-making.
+
+-   **Lack of user-friendly tools** – Limited access to tools that allow interactive exploration of spatial predictions.
+
+-   **Lack of local geostatistical expertise** – Few or no local experts support to support control programmes.
+
+
 ## Engagement with policy makers {.smaller}
 
 Technical meeting on geostatistical methods for trachoma elimination
@@ -180,16 +203,6 @@ Lancaster University, 4-5 March 2024
 ## Criteria for using model-based geostatistics
 
 <center>![](figures/deciion_tree.png){height="6in"}</center>
-
-## Challenges in Translating Geostatistics for Policy
-
--   **Complexity of methods** – Advanced models are difficult to interpret for non-specialists.
-
--   **Data uncertainty** – Policymakers may struggle to incorporate probabilistic estimates into decision-making.
-
--   **Lack of user-friendly tools** – Limited access to tools that allow interactive exploration of spatial predictions.
-
--   **Lack of local geostatistical expertise** – Few or no local experts support to support control programmes.
 
 ## A user-friendly app for malaria mapping {.smaller}
 

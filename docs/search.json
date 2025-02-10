@@ -312,21 +312,21 @@
     "href": "talks/Birmingham (20 Feb 2025).html#spatially-structured-zero-inflation",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "Spatially structured zero-inflation",
-    "text": "Spatially structured zero-inflation\n\n\n\n\nDiggle, P. J., Giorgi, E. (2016). Model-based geostatistics for prevalence mapping in low-resource settings (with discussion). Journal of the American Statistical Association. 111:1096-1120"
+    "text": "Spatially structured zero-inflation\nQuestion: How can we effectively model the bivariate relationship between disease suitability and disease prevalence?\n\n\n\n\nDiggle, P. J., Giorgi, E. (2016). Model-based geostatistics for prevalence mapping in low-resource settings (with discussion). Journal of the American Statistical Association. 111:1096-1120"
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#combining-data-from-multiple-diagnostics",
     "href": "talks/Birmingham (20 Feb 2025).html#combining-data-from-multiple-diagnostics",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "Combining data from multiple diagnostics",
-    "text": "Combining data from multiple diagnostics\n\n\n\n\nAmoah, B., Diggle, P. J., Giorgi, E. (2019). A geostatistical framework for combining data from multiple diagnostic tests. Biometrics. doi:10.1111/biom.13142"
+    "text": "Combining data from multiple diagnostics\nQuestions: 1) How we predict a gold-standard diagnostic using cheap biased diagnostics? 2) How do we model the bivariate relationship between two complementary gold-standards?\n\n\n\n\nAmoah, B., Diggle, P. J., Giorgi, E. (2019). A geostatistical framework for combining data from multiple diagnostic tests. Biometrics. doi:10.1111/biom.13142"
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#extensions-to-spatio-temporal-modelling",
     "href": "talks/Birmingham (20 Feb 2025).html#extensions-to-spatio-temporal-modelling",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "Extensions to spatio-temporal modelling",
-    "text": "Extensions to spatio-temporal modelling\n\n\n\n\nGiorgi, E., Diggle, P. J., Snow, R. W., Noor, A. M. (2018). Geostatistical methods for disease mapping and visualization using data from spatio-temporally referenced prevalence surveys. International Statistical Review. https://doi.org/10.1111/insr.12268"
+    "text": "Extensions to spatio-temporal modelling\nQuestion: Which spatio-temporal correlation structures are suitable for modelling disease prevalence data?\n\n\n\n\nGiorgi, E., Diggle, P. J., Snow, R. W., Noor, A. M. (2018). Geostatistical methods for disease mapping and visualization using data from spatio-temporally referenced prevalence surveys. International Statistical Review. https://doi.org/10.1111/insr.12268"
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#future-research-directions",
