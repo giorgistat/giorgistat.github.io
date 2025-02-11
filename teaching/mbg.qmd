@@ -13,23 +13,23 @@ This course provides a comprehensive introduction to **Model-based Geostatistics
 
 ### 1. Introduction
 - **Description**: An overview of geostatistical problems in the context of epidemiological studies.
-- **Materials**: [Introduction](MBG/introduction.qmd)
+- **Slides and R scripts**: [Introduction](MBG/introduction.qmd)
 
 ### 2. Exploratory Analysis
 - **Description**: Exploring regression relationships, overdispersion and spatial correlation.
-- **Materials**: [Exploratory Analysis](MBG/model_fitting.qmd)
+- **Slides and R scripts**: [Exploratory Analysis](MBG/model_fitting.qmd)
 
 ### 3. Model Formulation and Parameter Estimation
 - **Description**: How to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.
-- **Materials**: *Coming soon* (under development)
+- **Slides and R scripts**: *Coming soon* (under development)
 
 ### 4. Geostatistical prediction
 - **Description**: How to predict health outcomes using geostatistical models, at pixel- and areal-level.
-- **Materials**: *Coming soon* (under development)
+- **Slides and R scripts**: *Coming soon* (under development)
 
 ### 5. Validation of model performance
 - **Description**: Assessing the model performance using cross-validation and simulation-based approaches.
-- **Materials**: *Coming soon* (under development)
+- **Slides and R scripts**: *Coming soon* (under development)
 
 ---
 
