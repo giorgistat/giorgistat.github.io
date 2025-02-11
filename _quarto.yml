@@ -9,18 +9,10 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - text: Projects
-        menu:
-          - href: projects/index.qmd
-            text: Overview
-          - href: projects/ntds.qmd
-            text: Neglected Tropical Diseases
-          - href: projects/riskmap.qmd
-            text: The RiskMap R package
-          - href: projects/serology.qmd
-            text: Statisitcal Methods for Serological Data Analysis
       - href: books.qmd
         text: Books
+      - text: Projects
+        href: projects/index.qmd
       - text: Publications
         menu:
           - href: publications/index.qmd
@@ -33,6 +25,10 @@ website:
             text: Other Publications
       - href: talks/index.qmd
         text: Talks
+      - href: teaching/index.qmd
+        text: Teaching
+
+
 
 
 format:

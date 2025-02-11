@@ -1,0 +1,30 @@
+---
+title: "Teaching"
+---
+
+
+This page serves as a hub for sharing teaching resources from the courses I teach at **Lancaster University**, **Cambridge University** , invited courses and workshops. The materials are currently under development, and I plan to make them available here as they are finalized.
+
+---
+
+## Courses Offered
+
+### 1. Model-based Geostatistics
+- **Description**: This course covers the fundamentals of model-based geostatistics, with a focus on applications in global public health and tropical diseases. Topics include exploratory analysis of spatial data, parameter estimation, spatial prediction and model validation. 
+- **Materials**: [here](mbg.qmd)
+
+### 2. Time-series Analysis in Epidemiology
+- **Description**: This course introduces the basics of time-series, starting from harmonic regressio to model seasonal trends and introduces discrete and continuous time series models. The first focus is on autregressive. Then on Gaussian processes. Applications include forecasting od disease risk.
+- **Materials**: *Coming soon* (under development)
+
+---
+
+## About the Materials
+- The teaching materials shared here are designed to support students, as well as researchers who would like to teach these courses.
+- The content is continually updated and improved, so please check back regularly for new resources.
+- Feedback and suggestions are welcome! Feel free to reach out if you have any questions or ideas for improvement.
+
+
+
+    
+

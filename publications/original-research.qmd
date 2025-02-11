@@ -52,9 +52,9 @@ title: "Original Research Articles"
 
 ## Applications in Public Health {#public-health}
 
-- Khaki, J., Minnery, M., **<u>Giorgi, E.</u>** (2025). *Using ESPEN Data for Evidence-Based Control of Neglected Tropical Diseases in sub-Saharan Africa: a Comprehensive Model-based Geostatistical Analysis on Soil-Transmitted Helminths.*  PLOS Neglected Tropical Diseases 19(1): e0012782. https://doi.org/10.1371/journal.pntd.0012782
+-   Khaki, J., Minnery, M., **<u>Giorgi, E.</u>** (2025). *Using ESPEN Data for Evidence-Based Control of Neglected Tropical Diseases in sub-Saharan Africa: a Comprehensive Model-based Geostatistical Analysis on Soil-Transmitted Helminths.* PLOS Neglected Tropical Diseases 19(1): e0012782. https://doi.org/10.1371/journal.pntd.0012782
 
-- Bun, K., Mode, B., Bjerum, C., Payne1, M., Tisch, D., Salo, J., Kovach, J., Susapu, M., Sekihara, M., **<u>Giorgi, E.</u>**,  Diggle, P. J., Weil, G., Robinson, L., Laman, M., King, C. L. (2025). *Alternative Approaches for Monitoring and Evaluation of Lymphatic Filariasis Following Mass Drug Treatment with Ivermectin, Diethylcarbamazine and Albendazole in East New Britain Province, Papua New Guinea.* PLOS Neglected Tropical Diseases 19(1): e0012128. https://doi.org/10.1371/journal.pntd.0012128
+-   Bun, K., Mode, B., Bjerum, C., Payne1, M., Tisch, D., Salo, J., Kovach, J., Susapu, M., Sekihara, M., **<u>Giorgi, E.</u>**, Diggle, P. J., Weil, G., Robinson, L., Laman, M., King, C. L. (2025). *Alternative Approaches for Monitoring and Evaluation of Lymphatic Filariasis Following Mass Drug Treatment with Ivermectin, Diethylcarbamazine and Albendazole in East New Britain Province, Papua New Guinea.* PLOS Neglected Tropical Diseases 19(1): e0012128. https://doi.org/10.1371/journal.pntd.0012128
 
 -   Puranik, A., Diggle, P. J., Odiere, M. R., Gass, K., Kepha, S., Okoyo, C., Mwandawiro, C., Wakesho, F., Omondi, W., Sultani, H. M., **<u>Giorgi, E.</u>** (2024). *Understanding the impact of covariates on the classification of implementation units for soil-transmitted helminths control: A case study from Kenya.* BMC Medical Research Methodology, 24, 294 (2024). https://doi.org/10.1186/s12874-024-02420-1
 

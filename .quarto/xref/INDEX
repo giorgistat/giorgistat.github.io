@@ -49,5 +49,20 @@
   },
   "talks/index.qmd": {
     "index.html": "8860d745"
+  },
+  "Teaching/MBG/mbg.qmd": {
+    "mbg.html": "5c7fdf16"
+  },
+  "teaching/MBG/introduction.qmd": {
+    "introduction.html": "9bf92ea3"
+  },
+  "teaching/MBG/model_fitting.qmd": {
+    "model_fitting.html": "7300ba8b"
+  },
+  "teaching/index.qmd": {
+    "index.html": "39a2a1a2"
+  },
+  "teaching/mbg.qmd": {
+    "mbg.html": "f46dc8e7"
   }
 }

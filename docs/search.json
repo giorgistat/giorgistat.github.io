@@ -397,5 +397,390 @@
     "title": "Talks",
     "section": "",
     "text": "Model-based Geostatistics for Global Public Health: From Methodology Development to Policy Applications\nUniversity of Birmingham, 20 February 2025"
+  },
+  {
+    "objectID": "Teaching/MBG/mbg.html#registry",
+    "href": "Teaching/MBG/mbg.html#registry",
+    "title": "Introduction",
+    "section": "Registry",
+    "text": "Registry\n\nCase counts in sub-regions\n\nPopulation size as denominator\n\nCovariates from census data\n\n\n\nResearch Question:\nDoes plague infection risk increase above 800m elevation?\n[Giorgi et al., 2016, Spatial and Spatio-temporal Epidemiology]"
+  },
+  {
+    "objectID": "Teaching/MBG/mbg.html#case-control",
+    "href": "Teaching/MBG/mbg.html#case-control",
+    "title": "Introduction",
+    "section": "Case-Control",
+    "text": "Case-Control\n\nCases: All known cases in the study region\n\nControls: Probability sample of non-cases\n\n\n\n\n\nLocations of all known cases (1974–82)\n\nResidential locations of a random sample of births\n\n\n\n\n\n\nReferences:\nCuzick & Edwards (1990), Diggle & Chetwynd (1991)"
+  },
+  {
+    "objectID": "Teaching/MBG/mbg.html#survey",
+    "href": "Teaching/MBG/mbg.html#survey",
+    "title": "Introduction",
+    "section": "Survey",
+    "text": "Survey\n\nSampled locations within study region\n\nData collected per location\n\nCommon in low-resource settings\n\n\nLoa loa in Cameroon {.smaller}\n\n\nData: Empirical prevalences in surveyed villages\n\nMap: Predictive probabilities of exceeding 20% prevalence threshold\n\n[Diggle et al., 2007]"
+  },
+  {
+    "objectID": "Teaching/MBG/mbg.html#epidemiological-data",
+    "href": "Teaching/MBG/mbg.html#epidemiological-data",
+    "title": "Introduction",
+    "section": "Epidemiological Data",
+    "text": "Epidemiological Data\n\nIncidence: Number of new cases per unit time per unit population\n\nPrevalence: Number of existing cases per unit population\n\nRisk: Probability that a person will contract the disease (per unit time or lifetime)\n\nObjective: Understand spatial variation in disease incidence, prevalence, and risk\nRelevant books:\nElliott et al. (2000), Gelfand et al. (2010), Rothman (1986), Waller & Gotway (2004), Woodward (1999)"
+  },
+  {
+    "objectID": "Teaching/MBG/mbg.html#cholera-in-victorian-london-1854",
+    "href": "Teaching/MBG/mbg.html#cholera-in-victorian-london-1854",
+    "title": "Introduction",
+    "section": "Cholera in Victorian London, 1854",
+    "text": "Cholera in Victorian London, 1854\n\n\n\nJohn Snow removed the handle of the Broad Street water pump\n\nIdentified contaminated water as the disease source\n\nContradicted conventional wisdom at the time\n\n1854 Broad Street cholera outbreak"
+  },
+  {
+    "objectID": "Teaching/MBG/mbg.html#study-designs",
+    "href": "Teaching/MBG/mbg.html#study-designs",
+    "title": "Introduction",
+    "section": "Study Designs",
+    "text": "Study Designs\n\nRegistry\n\nCase counts in sub-regions\n\nPopulation size as denominator\n\nCovariates from census data\n\nCase-Control\n\nCases: All known cases in the study region\n\nControls: Probability sample of non-cases\n\nSurvey\n\nSampled locations within study region\n\nData collected per location\n\nCommon in low-resource settings"
+  },
+  {
+    "objectID": "Teaching/MBG/mbg.html#registry-example-plague-in-madagascar",
+    "href": "Teaching/MBG/mbg.html#registry-example-plague-in-madagascar",
+    "title": "Introduction",
+    "section": "Registry Example: Plague in Madagascar",
+    "text": "Registry Example: Plague in Madagascar\n\nResearch Question:\nDoes plague infection risk increase above 800m elevation?\nGiorgi et al., 2016, Spatial and Spatio-temporal Epidemiology"
+  },
+  {
+    "objectID": "Teaching/MBG/mbg.html#case-control-example-childhood-leukaemia-in-humberside",
+    "href": "Teaching/MBG/mbg.html#case-control-example-childhood-leukaemia-in-humberside",
+    "title": "Introduction",
+    "section": "Case-Control Example: Childhood Leukaemia in Humberside",
+    "text": "Case-Control Example: Childhood Leukaemia in Humberside\n\n\nLocations of all known cases (1974–82)\n\nResidential locations of a random sample of births\n\nReferences:\nCuzick & Edwards (1990), Diggle & Chetwynd (1991)"
+  },
+  {
+    "objectID": "Teaching/MBG/mbg.html#survey-example-loa-loa-in-cameroon",
+    "href": "Teaching/MBG/mbg.html#survey-example-loa-loa-in-cameroon",
+    "title": "Introduction",
+    "section": "Survey Example: Loa loa in Cameroon",
+    "text": "Survey Example: Loa loa in Cameroon\n\n\nData: Empirical prevalences in surveyed villages\n\nMap: Predictive probabilities of exceeding 20% prevalence threshold\n\nDiggle et al., 2007"
+  },
+  {
+    "objectID": "Teaching/MBG/mbg.html#research-questions",
+    "href": "Teaching/MBG/mbg.html#research-questions",
+    "title": "Introduction",
+    "section": "Research Questions",
+    "text": "Research Questions\nPlague in Madagascar\n\nIs elevation an important risk factor?\n\nIf so, why?\n\nChildhood Leukaemia in Humberside\n\nDo cases show unexpected clustering?\n\nLoa loa in Cameroon\n\nWhat environmental factors influence risk?\n\nCan we predict areas exceeding an intervention threshold?"
+  },
+  {
+    "objectID": "Teaching/MBG/mbg.html#epidemic-vs-endemic-patterns",
+    "href": "Teaching/MBG/mbg.html#epidemic-vs-endemic-patterns",
+    "title": "Introduction",
+    "section": "Epidemic vs Endemic Patterns",
+    "text": "Epidemic vs Endemic Patterns\n\nEpidemic: Foot-and-mouth in Cumbria (2001)\n\nEndemic: Gastroenteric disease in Hampshire (AEGISS)\n\nAnimations:\n- Foot-and-mouth\n- AEGISS\nHow are these patterns different?"
+  },
+  {
+    "objectID": "Teaching/MBG/mbg.html#empirical-modelling-aegiss-project",
+    "href": "Teaching/MBG/mbg.html#empirical-modelling-aegiss-project",
+    "title": "Introduction",
+    "section": "Empirical Modelling: AEGISS Project",
+    "text": "Empirical Modelling: AEGISS Project\n\nObjective: Early detection of incidence anomalies\n\n3,374 reports of gastro-intestinal illness\n\nLog-Gaussian Cox process for space-time correlation"
+  },
+  {
+    "objectID": "Teaching/MBG/mbg.html#geostatistics",
+    "href": "Teaching/MBG/mbg.html#geostatistics",
+    "title": "Introduction",
+    "section": "Geostatistics",
+    "text": "Geostatistics\n\n\n\n\n\n\n\nData: \\((y_i, x_i)\\), where \\(x_i \\in A \\subset \\mathbb{R}^2\\)\n\nModel: \\(Y_i = S(x_i) + Z_i\\)\n\nObjective: Estimate \\(\\int_{A} S(x) dx\\) (e.g., mining yield)"
+  },
+  {
+    "objectID": "Teaching/MBG/mbg.html#model-based-geostatistics",
+    "href": "Teaching/MBG/mbg.html#model-based-geostatistics",
+    "title": "Introduction",
+    "section": "Model-Based Geostatistics",
+    "text": "Model-Based Geostatistics\n\n\n\n\n\nAnimation: Malaria in Chikwawa district"
+  },
+  {
+    "objectID": "Teaching/MBG/mbg.html#science-and-statistics",
+    "href": "Teaching/MBG/mbg.html#science-and-statistics",
+    "title": "Introduction",
+    "section": "Science and Statistics",
+    "text": "Science and Statistics\n\nKey Concepts:\n- \\(S\\): “Process of nature”\n- \\(Y\\): “Observed data”\n- Bayesian Framework: \\([Y, S] = [S][Y | S]\\)\nAdapted from: Statistics and Scientific Method (Diggle & Chatwynd, 2011)"
+  },
+  {
+    "objectID": "Teaching/MBG/mbg.html#model-based-geostatistics-for-public-health",
+    "href": "Teaching/MBG/mbg.html#model-based-geostatistics-for-public-health",
+    "title": "Introduction",
+    "section": "Model-Based Geostatistics for Public Health",
+    "text": "Model-Based Geostatistics for Public Health\n\n\n\n\n\nAnimation: Malaria in Chikwawa district"
+  },
+  {
+    "objectID": "Teaching/MBG/mbg.html#workflow-of-a-statistical-analysis",
+    "href": "Teaching/MBG/mbg.html#workflow-of-a-statistical-analysis",
+    "title": "Introduction",
+    "section": "Workflow of a statistical analysis",
+    "text": "Workflow of a statistical analysis\n\n\n\n\nHow do we apply the workflow of a statistical analysis in model-based geostatistics?"
+  },
+  {
+    "objectID": "teaching/MBG/introduction.html#epidemiological-data",
+    "href": "teaching/MBG/introduction.html#epidemiological-data",
+    "title": "Introduction",
+    "section": "Epidemiological Data",
+    "text": "Epidemiological Data\n\nIncidence: Number of new cases per unit time per unit population\n\nPrevalence: Number of existing cases per unit population\n\nRisk: Probability that a person will contract the disease (per unit time or lifetime)\n\nObjective: Understand spatial variation in disease incidence, prevalence, and risk\nRelevant books:\nElliott et al. (2000), Gelfand et al. (2010), Rothman (1986), Waller & Gotway (2004), Woodward (1999)"
+  },
+  {
+    "objectID": "teaching/MBG/introduction.html#cholera-in-victorian-london-1854",
+    "href": "teaching/MBG/introduction.html#cholera-in-victorian-london-1854",
+    "title": "Introduction",
+    "section": "Cholera in Victorian London, 1854",
+    "text": "Cholera in Victorian London, 1854\n\n\n\nJohn Snow removed the handle of the Broad Street water pump\n\nIdentified contaminated water as the disease source\n\nContradicted conventional wisdom at the time\n\n1854 Broad Street cholera outbreak"
+  },
+  {
+    "objectID": "teaching/MBG/introduction.html#study-designs",
+    "href": "teaching/MBG/introduction.html#study-designs",
+    "title": "Introduction",
+    "section": "Study Designs",
+    "text": "Study Designs\n\nRegistry\n\nCase counts in sub-regions\n\nPopulation size as denominator\n\nCovariates from census data\n\nCase-Control\n\nCases: All known cases in the study region\n\nControls: Probability sample of non-cases\n\nSurvey\n\nSampled locations within study region\n\nData collected per location\n\nCommon in low-resource settings"
+  },
+  {
+    "objectID": "teaching/MBG/introduction.html#registry-example-plague-in-madagascar",
+    "href": "teaching/MBG/introduction.html#registry-example-plague-in-madagascar",
+    "title": "Introduction",
+    "section": "Registry Example: Plague in Madagascar",
+    "text": "Registry Example: Plague in Madagascar\n\nResearch Question:\nDoes plague infection risk increase above 800m elevation?\nGiorgi et al., 2016, Spatial and Spatio-temporal Epidemiology"
+  },
+  {
+    "objectID": "teaching/MBG/introduction.html#case-control-example-childhood-leukaemia-in-humberside",
+    "href": "teaching/MBG/introduction.html#case-control-example-childhood-leukaemia-in-humberside",
+    "title": "Introduction",
+    "section": "Case-Control Example: Childhood Leukaemia in Humberside",
+    "text": "Case-Control Example: Childhood Leukaemia in Humberside\n\n\nLocations of all known cases (1974–82)\n\nResidential locations of a random sample of births\n\nReferences:\nCuzick & Edwards (1990), Diggle & Chetwynd (1991)"
+  },
+  {
+    "objectID": "teaching/MBG/introduction.html#survey-example-loa-loa-in-cameroon",
+    "href": "teaching/MBG/introduction.html#survey-example-loa-loa-in-cameroon",
+    "title": "Introduction",
+    "section": "Survey Example: Loa loa in Cameroon",
+    "text": "Survey Example: Loa loa in Cameroon\n\n\nData: Empirical prevalences in surveyed villages\n\nMap: Predictive probabilities of exceeding 20% prevalence threshold\n\nDiggle et al., 2007"
+  },
+  {
+    "objectID": "teaching/MBG/introduction.html#research-questions",
+    "href": "teaching/MBG/introduction.html#research-questions",
+    "title": "Introduction",
+    "section": "Research Questions",
+    "text": "Research Questions\nPlague in Madagascar\n\nIs elevation an important risk factor?\n\nIf so, why?\n\nChildhood Leukaemia in Humberside\n\nDo cases show unexpected clustering?\n\nLoa loa in Cameroon\n\nWhat environmental factors influence risk?\n\nCan we predict areas exceeding an intervention threshold?"
+  },
+  {
+    "objectID": "teaching/MBG/introduction.html#epidemic-vs-endemic-patterns",
+    "href": "teaching/MBG/introduction.html#epidemic-vs-endemic-patterns",
+    "title": "Introduction",
+    "section": "Epidemic vs Endemic Patterns",
+    "text": "Epidemic vs Endemic Patterns\n\nEpidemic: Foot-and-mouth in Cumbria (2001)\n\nEndemic: Gastroenteric disease in Hampshire (AEGISS)\n\nAnimations:\n- Foot-and-mouth\n- AEGISS\nHow are these patterns different?"
+  },
+  {
+    "objectID": "teaching/MBG/introduction.html#empirical-modelling-aegiss-project",
+    "href": "teaching/MBG/introduction.html#empirical-modelling-aegiss-project",
+    "title": "Introduction",
+    "section": "Empirical Modelling: AEGISS Project",
+    "text": "Empirical Modelling: AEGISS Project\n\nObjective: Early detection of incidence anomalies\n\n3,374 reports of gastro-intestinal illness\n\nLog-Gaussian Cox process for space-time correlation"
+  },
+  {
+    "objectID": "teaching/MBG/introduction.html#geostatistics",
+    "href": "teaching/MBG/introduction.html#geostatistics",
+    "title": "Introduction",
+    "section": "Geostatistics",
+    "text": "Geostatistics\n\n\n\n\n\n\n\nData: \\((y_i, x_i)\\), where \\(x_i \\in A \\subset \\mathbb{R}^2\\)\n\nModel: \\(Y_i = S(x_i) + Z_i\\)\n\nObjective: Estimate \\(\\int_{A} S(x) dx\\) (e.g., mining yield)"
+  },
+  {
+    "objectID": "teaching/MBG/introduction.html#model-based-geostatistics-for-public-health",
+    "href": "teaching/MBG/introduction.html#model-based-geostatistics-for-public-health",
+    "title": "Introduction",
+    "section": "Model-Based Geostatistics for Public Health",
+    "text": "Model-Based Geostatistics for Public Health\n\n\n\n\n\nAnimation: Malaria in Chikwawa district"
+  },
+  {
+    "objectID": "teaching/MBG/introduction.html#science-and-statistics",
+    "href": "teaching/MBG/introduction.html#science-and-statistics",
+    "title": "Introduction",
+    "section": "Science and Statistics",
+    "text": "Science and Statistics\n\nKey Concepts:\n- \\(S\\): “Process of nature”\n- \\(Y\\): “Observed data”\n- Bayesian Framework: \\([Y, S] = [S][Y | S]\\)\nAdapted from: Statistics and Scientific Method (Diggle & Chatwynd, 2011)"
+  },
+  {
+    "objectID": "teaching/MBG/introduction.html#workflow-of-a-statistical-analysis",
+    "href": "teaching/MBG/introduction.html#workflow-of-a-statistical-analysis",
+    "title": "Introduction",
+    "section": "Workflow of a statistical analysis",
+    "text": "Workflow of a statistical analysis\n\n\n\n\nHow do we apply the workflow of a statistical analysis in model-based geostatistics?\n\n\n\n\n\nClick here to go back to the course page"
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#overview",
+    "href": "teaching/MBG/model_fitting.html#overview",
+    "title": "Exploratory analysis",
+    "section": "Overview",
+    "text": "Overview\n\nExploring relationships\nExploring overdispersion\nExploring spatial correlation"
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#main-r-functions",
+    "href": "teaching/MBG/model_fitting.html#main-r-functions",
+    "title": "Exploratory analysis",
+    "section": "Main R Functions",
+    "text": "Main R Functions\n\n\n\nFunction\nPackage\nPurpose\n\n\n\n\nlmer\nlme4\nLinear mixed models\n\n\nglmer\nlme4\nGeneralized linear mixed models\n\n\nglgm\nRiskMap\nGeneralized linear geostatistical models\n\n\ns_variogram\nRiskMap\nEmpirical variogram computation"
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#exploring-relationships",
+    "href": "teaching/MBG/model_fitting.html#exploring-relationships",
+    "title": "Exploratory analysis",
+    "section": "Exploring relationships",
+    "text": "Exploring relationships\n\nHow to explore relationships with count data?\nHow to deal with binary data?\nHow to model non-linear relationships?\n\nR script"
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#overdispersion-in-count-data",
+    "href": "teaching/MBG/model_fitting.html#overdispersion-in-count-data",
+    "title": "Exploratory analysis",
+    "section": "Overdispersion in Count Data",
+    "text": "Overdispersion in Count Data\n\nWhat is overdispersion?\n\nOccurs when the variance of count data exceeds the mean.\nViolates the Poisson assumption:\n\\[ \\text{Var}(Y) = \\mathbb{E}(Y). \\]\n\nWhy does it matter?\n\nStandard models (e.g., Poisson regression) underestimate uncertainty.\nLeads to overly optimistic confidence intervals and p-values."
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#example-overdispersion-in-correlated-binary-data",
+    "href": "teaching/MBG/model_fitting.html#example-overdispersion-in-correlated-binary-data",
+    "title": "Exploratory analysis",
+    "section": "Example: Overdispersion in Correlated Binary Data",
+    "text": "Example: Overdispersion in Correlated Binary Data\n\nConsider \\(Y = \\sum_{i=1}^n X_i\\), where \\(X_i\\) are correlated binary variables.\n\n\n\nIf \\(X_i\\) are independent, \\(Y\\) follows a Binomial distribution: \\[ \\mathbb{E}(Y) = np, \\quad \\text{Var}(Y) = np(1-p). \\]\n\n\n\n\nIf \\(X_i\\) are correlated, the variance increases:\n\\[ \\text{Var}(Y) = np(1-p) + \\sum_{i \\neq j} \\text{Cov}(X_i, X_j). \\]\n\n\n\n\nThis leads to overdispersion."
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#negative-binomial-distribution",
+    "href": "teaching/MBG/model_fitting.html#negative-binomial-distribution",
+    "title": "Model Formulation and Estimation",
+    "section": "Negative Binomial Distribution",
+    "text": "Negative Binomial Distribution\n\nA common solution for overdispersed count data.\nExtends the Poisson distribution by introducing a dispersion parameter \\(\\alpha\\):\n\\[ \\mathbb{E}(Y) = \\mu, \\quad \\text{Var}(Y) = \\mu + \\alpha \\mu^2. \\]\nWhen \\(\\alpha = 0\\), it reduces to Poisson.\nRandom Effects Interpretation:\n\nThe Negative Binomial can be interpreted as a Gamma-Poisson mixture.\nThe Poisson mean \\(\\mu\\) is drawn from a Gamma distribution, introducing extra variability."
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#overview-1",
+    "href": "teaching/MBG/model_fitting.html#overview-1",
+    "title": "Model Formulation and Estimation",
+    "section": "Overview",
+    "text": "Overview\n\nUnderstanding statistical models for spatial data\nKey functions in R for model fitting\nExploratory analysis and its importance\nParameter estimation techniques"
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#main-r-functions-1",
+    "href": "teaching/MBG/model_fitting.html#main-r-functions-1",
+    "title": "Model Formulation and Estimation",
+    "section": "Main R Functions",
+    "text": "Main R Functions\n\n\n\nFunction\nPackage\nPurpose\n\n\n\n\nlmer\nlme4\nLinear mixed models\n\n\nglmer\nlme4\nGeneralized linear mixed models\n\n\nglgm\nRiskMap\nGeneralized linear geostatistical models\n\n\ns_variogram\nRiskMap\nEmpirical variogram computation"
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#exploring-relationships-1",
+    "href": "teaching/MBG/model_fitting.html#exploring-relationships-1",
+    "title": "Model Formulation and Estimation",
+    "section": "Exploring relationships",
+    "text": "Exploring relationships\n\nHow to explore relationships with count data?\nHow to deal with binary data?\nHow to model non-linear relationships?\n\nR script"
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#example-negative-binomial-distribution",
+    "href": "teaching/MBG/model_fitting.html#example-negative-binomial-distribution",
+    "title": "Exploratory analysis",
+    "section": "Example: Negative Binomial Distribution",
+    "text": "Example: Negative Binomial Distribution\n\nA common solution for overdispersed count data.\nExtends the Poisson distribution by introducing a dispersion parameter \\(\\alpha\\):\n\\[ \\mathbb{E}(Y) = \\mu, \\quad \\text{Var}(Y) = \\mu + \\alpha \\mu^2. \\]\nWhen \\(\\alpha = 0\\), it reduces to Poisson.\nRandom Effects Interpretation:\n\nThe Negative Binomial can be interpreted as a Gamma-Poisson mixture.\nThe Poisson mean \\(\\mu\\) is drawn from a Gamma distribution, introducing extra variability."
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#random-effects-models-for-overdispersion",
+    "href": "teaching/MBG/model_fitting.html#random-effects-models-for-overdispersion",
+    "title": "Exploratory analysis",
+    "section": "Random Effects Models for Overdispersion",
+    "text": "Random Effects Models for Overdispersion\n\nOverdispersion often arises due to unobserved heterogeneity.\nA solution is to introduce random effects that account for latent variability.\n\n\n\nRandom Intercept Model:\n\\[ Y_{ij} \\mid b_j \\sim \\text{Poisson}(\\mu_{ij}), \\quad \\log(\\mu_{ij}) = X_{ij} \\beta + b_j. \\]\n\n\n\n\n\\(b_j \\sim \\mathcal{N}(0, \\sigma^2)\\) captures between-group variability.\n\n\n\n\nLeads to extra variability in counts, addressing overdispersion.\n\n\n\n\nConnection to Negative Binomial:\n\nIf \\(b_j\\) follows a Gamma distribution instead of Normal, the model is equivalent to a Negative Binomial."
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#marginal-models-for-overdispersion",
+    "href": "teaching/MBG/model_fitting.html#marginal-models-for-overdispersion",
+    "title": "Exploratory analysis",
+    "section": "Marginal Models for Overdispersion",
+    "text": "Marginal Models for Overdispersion\n\nAn alternative to random effects models is using marginal models.\nInstead of modeling subject-level variation, these models estimate population-averaged effects.\nGeneralized Estimating Equations (GEE):\n\nDoes not assume a specific distribution for random effects.\nUses a working correlation matrix to account for within-group dependence.\nRobust standard errors help correct for overdispersion.\n\n\nSee Diggle, Heagerty, Liang, Zeger"
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#random-effects-models-for-overdispersion-1",
+    "href": "teaching/MBG/model_fitting.html#random-effects-models-for-overdispersion-1",
+    "title": "Exploratory analysis",
+    "section": "Random Effects Models for Overdispersion",
+    "text": "Random Effects Models for Overdispersion\n\nOverdispersion often arises due to unobserved heterogeneity.\nA solution is to introduce random effects that account for latent variability.\nRandom Intercept Model:\n\\[ Y_{ij} \\mid b_j \\sim \\text{Poisson}(\\mu_{ij}), \\quad \\log(\\mu_{ij}) = X_{ij} \\beta + b_j. \\]\n\n( b_j (0, ^2) ) captures between-group variability.\nLeads to extra variability in counts, addressing overdispersion.\n\nConnection to Negative Binomial:\n\nIf ( b_j ) follows a Gamma distribution instead of Normal, the model is equivalent to a Negative Binomial."
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#choosing-between-models",
+    "href": "teaching/MBG/model_fitting.html#choosing-between-models",
+    "title": "Exploratory analysis",
+    "section": "Choosing Between Models",
+    "text": "Choosing Between Models\n\n\n\n\n\n\n\n\nComparison of Random Effects vs. Marginal Models\n\n\nFeature\nRandom Effects Model\nMarginal Model (GEE)\n\n\n\n\nInterpretation\nSubject-specific\nPopulation-averaged\n\n\nHandles Overdispersion\nYes (via latent effects)\nYes (via robust SE)\n\n\nComputational Complexity\nHigher\nLower\n\n\n\n\n\n\n\n\nExample 1\n\nA clinical trial measuring blood pressure at multiple time points for patients in different hospitals.\n\nWhy Use Random Effects?\n\nEach patient has their own baseline blood pressure that varies.\n\nA random intercept accounts for individual differences.\n\nIf hospitals have different treatment protocols, a random hospital effect can be included.\n\n\n\n\nExample 2\n\nStudy Design: A population-wide study on whether a new influenza vaccine reduces hospitalization rates.\n\nWhy Use Marginal Models?\n\nInterest is in the population-averaged effect of the vaccine, not individual variation.\n\nGeneralized Estimating Equations (GEE) account for correlation in repeated measures without assuming a specific random effect structure.\n\n\n\n\n\n\nClick here to go back to the course page"
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#choosing-between-models-1",
+    "href": "teaching/MBG/model_fitting.html#choosing-between-models-1",
+    "title": "Exploratory analysis",
+    "section": "Choosing Between Models",
+    "text": "Choosing Between Models\n\n\n\n\n\n\n\n\nComparison of Random Effects vs. Marginal Models\n\n\nFeature\nRandom Effects Model\nMarginal Model (GEE)\n\n\n\n\nInterpretation\nSubject-specific\nPopulation-averaged\n\n\nHandles Overdispersion\nYes (via latent effects)\nYes (via robust SE)\n\n\nComputational Complexity\nHigher\nLower\n\n\n\n\n\n\n\n\nExample 1\n\nA clinical trial measuring blood pressure at multiple time points for patients in different hospitals.\n\nWhy Use Random Effects?\n\nEach patient has their own baseline blood pressure that varies.\n\nA random intercept accounts for individual differences.\n\nIf hospitals have different treatment protocols, a random hospital effect can be included.\n\n\n\n\nExample 2\n\nStudy Design: A population-wide study on whether a new influenza vaccine reduces hospitalization rates.\n\nWhy Use Marginal Models?\n\nInterest is in the population-averaged effect of the vaccine, not individual variation.\n\nGeneralized Estimating Equations (GEE) account for correlation in repeated measures without assuming a specific random effect structure."
+  },
+  {
+    "objectID": "teaching/index.html",
+    "href": "teaching/index.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "This page serves as a hub for sharing teaching resources from the courses I teach at Lancaster University, Cambridge University , invited courses and workshops. The materials are currently under development, and I plan to make them available here as they are finalized."
+  },
+  {
+    "objectID": "teaching/mbg.html",
+    "href": "teaching/mbg.html",
+    "title": "Model-based Geostatistics",
+    "section": "",
+    "text": "Figure taken from Stresman, Giorgi et al (2017)\nThis course provides a comprehensive introduction to Model-based Geostatistics, with a focus on applications in global public health and environmental science. The course on the applications of geostaistical methods while keeping the mathematical content to the minimum level required. The course is taught using the R software environment."
+  },
+  {
+    "objectID": "teaching/index.html#courses-offered",
+    "href": "teaching/index.html#courses-offered",
+    "title": "Teaching",
+    "section": "Courses Offered",
+    "text": "Courses Offered\n\n1. Model-based Geostatistics\n\nDescription: This course covers the fundamentals of model-based geostatistics, with a focus on applications in global public health and tropical diseases. Topics include exploratory analysis of spatial data, parameter estimation, spatial prediction and model validation.\nMaterials: here\n\n\n\n2. Time-series Analysis in Epidemiology\n\nDescription: This course introduces the basics of time-series, starting from harmonic regressio to model seasonal trends and introduces discrete and continuous time series models. The first focus is on autregressive. Then on Gaussian processes. Applications include forecasting od disease risk.\nMaterials: Coming soon (under development)"
+  },
+  {
+    "objectID": "teaching/index.html#about-the-materials",
+    "href": "teaching/index.html#about-the-materials",
+    "title": "Teaching",
+    "section": "About the Materials",
+    "text": "About the Materials\n\nThe teaching materials shared here are designed to support students, as well as researchers who would like to teach these courses.\nThe content is continually updated and improved, so please check back regularly for new resources.\nFeedback and suggestions are welcome! Feel free to reach out if you have any questions or ideas for improvement."
+  },
+  {
+    "objectID": "teaching/mbg.html#course-overview",
+    "href": "teaching/mbg.html#course-overview",
+    "title": "Model-based Geostatistics",
+    "section": "Course Overview",
+    "text": "Course Overview\nThis course provides a comprehensive introduction to Model-based Geostatistics, with a focus on applications in global public health and environmental science. The course on the applications of geostaistical methods while keeping the mathematical content to the minimum level required. The course is taught using the R software environment."
+  },
+  {
+    "objectID": "teaching/mbg.html#course-content",
+    "href": "teaching/mbg.html#course-content",
+    "title": "Model-based Geostatistics",
+    "section": "Course Content",
+    "text": "Course Content\n\n1. Introduction\n\nDescription: An overview of geostatistical problems in the context of epidemiological studies.\nMaterials: Introduction\n\n\n\n2. Exploratory Analysis\n\nDescription: Exploring regression relationships, overdispersion and spatial correlation.\nMaterials: Exploratory Analysis\n\n\n\n3. Model Formulation and Parameter Estimation\n\nDescription: How to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.\nMaterials: Coming soon (under development)\n\n\n\n4. Geostatistical prediction\n\nDescription: How to predict health outcomes using geostatistical models, at pixel- and areal-level.\nMaterials: Coming soon (under development)\n\n\n\n5. Validation of model performance\n\nDescription: Assessing the model performance using cross-validation and simulation-based approaches.\nMaterials: Coming soon (under development)"
+  },
+  {
+    "objectID": "teaching/mbg.html#learning-outcomes",
+    "href": "teaching/mbg.html#learning-outcomes",
+    "title": "Model-based Geostatistics",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\nBy the end of this course, students will be able to:\n\nUnderstand the theoretical foundations of model-based geostatistics.\nPerform exploratory analysis of spatial data using R.\nFit and interpret geostatistical models.\nPerform geostatistical prediction in answer to a given publich health questions.\nValidate geostatistical models using cross-validation and other simulation based approaches."
+  },
+  {
+    "objectID": "teaching/mbg.html#prerequisites",
+    "href": "teaching/mbg.html#prerequisites",
+    "title": "Model-based Geostatistics",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\nBasic knowledge of the basics of probability.\nGood knowledge of generalized linear models.\nFamiliarity with R programming (or willingness to learn).\nNo prior experience with geostatistics is required."
+  },
+  {
+    "objectID": "teaching/mbg.html#how-to-use-this-material",
+    "href": "teaching/mbg.html#how-to-use-this-material",
+    "title": "Model-based Geostatistics",
+    "section": "How to Use This Material",
+    "text": "How to Use This Material\n\nEach section includes lecture notes, code examples, and exercises.\nThe materials are designed to be self-paced, but they can also be used in a classroom setting."
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#you-can-go-back-to-the-course-page",
+    "href": "teaching/MBG/model_fitting.html#you-can-go-back-to-the-course-page",
+    "title": "Exploratory analysis",
+    "section": "You can go back to the course page",
+    "text": "You can go back to the course page\nClick here"
   }
 ]

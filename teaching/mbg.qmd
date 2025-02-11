@@ -1,0 +1,62 @@
+---
+title: "Model-based Geostatistics"
+---
+
+![Figure taken from [Stresman, Giorgi et al (2017)](https://www.nature.com/articles/srep45849)](MBG/course_cover.jpg){height=3in}
+
+
+This course provides a comprehensive introduction to **Model-based Geostatistics**, with a focus on applications in global public health and environmental science. The course on the applications of geostaistical methods while keeping the mathematical content to the minimum level required. The course is taught using the R software environment. 
+
+---
+
+## Course Content
+
+### 1. Introduction
+- **Description**: An overview of geostatistical problems in the context of epidemiological studies.
+- **Materials**: [Introduction](MBG/introduction.qmd)
+
+### 2. Exploratory Analysis
+- **Description**: Exploring regression relationships, overdispersion and spatial correlation.
+- **Materials**: [Exploratory Analysis](MBG/model_fitting.qmd)
+
+### 3. Model Formulation and Parameter Estimation
+- **Description**: How to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.
+- **Materials**: *Coming soon* (under development)
+
+### 4. Geostatistical prediction
+- **Description**: How to predict health outcomes using geostatistical models, at pixel- and areal-level.
+- **Materials**: *Coming soon* (under development)
+
+### 5. Validation of model performance
+- **Description**: Assessing the model performance using cross-validation and simulation-based approaches.
+- **Materials**: *Coming soon* (under development)
+
+---
+
+## Learning Outcomes
+
+By the end of this course, students will be able to:
+
+- Understand the theoretical foundations of model-based geostatistics.
+- Perform exploratory analysis of spatial data using R.
+- Fit and interpret geostatistical models.
+- Perform geostatistical prediction in answer to a given publich health questions.
+- Validate geostatistical models using cross-validation and other simulation based approaches.
+
+---
+
+## Prerequisites
+
+- Basic knowledge of the basics of probability.
+- Good knowledge of generalized linear models.
+- Familiarity with R programming (or willingness to learn).
+- No prior experience with geostatistics is required.
+
+---
+
+## How to Use This Material
+
+- Each section includes lecture notes, code examples, and exercises.
+- The materials are designed to be self-paced, but they can also be used in a classroom setting.
+
+

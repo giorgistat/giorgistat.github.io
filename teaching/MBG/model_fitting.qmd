@@ -1,0 +1,178 @@
+---
+title: "Exploratory analysis"
+subtitle: "Model-based Geostatistics for Global Public Health"  
+author: "Emanuele Giorgi"  
+institute: "Lancaster University" 
+execute:
+  freeze: true
+date: ""  
+format:
+  revealjs:
+    theme: solarized
+    transition: fade
+    slide-number: true
+    chalkboard: true
+    logo: "Images/clogo.png"
+    footer: "[Click here to go back to the course page](../mbg.qmd)"
+---
+
+
+## Overview
+
+- Exploring relationships
+- Exploring overdispersion
+- Exploring spatial correlation
+
+## Exploring relationships
+
+- How to explore relationships with count data? 
+- How to deal with binary data?
+- How to model non-linear relationships?
+
+[R script](R scripts/explore_associations.R)
+
+---
+
+## Overdispersion in Count Data {.smaller}
+
+- **What is overdispersion?**
+  - Occurs when the variance of count data exceeds the mean.
+  - Violates the Poisson assumption:  
+    $$ \text{Var}(Y) = \mathbb{E}(Y). $$
+
+- **Why does it matter?**
+  - Standard models (e.g., Poisson regression) underestimate uncertainty.
+  - Leads to overly optimistic confidence intervals and p-values.
+
+---
+
+## Example: Overdispersion in Correlated Binary Data {.smaller}
+
+- Consider $Y = \sum_{i=1}^n X_i$, where $X_i$ are correlated binary variables.
+
+. . .
+
+- If $X_i$ are independent, $Y$ follows a Binomial distribution: 
+  $$ \mathbb{E}(Y) = np, \quad \text{Var}(Y) = np(1-p). $$
+  
+. . .
+
+- If $X_i$ are correlated, the variance increases:  
+  $$ \text{Var}(Y) = np(1-p) + \sum_{i \neq j} \text{Cov}(X_i, X_j). $$
+  
+. . .
+
+- This leads to overdispersion.
+
+---
+
+## Example: Negative Binomial Distribution {.smaller .scrollable}
+
+- A common solution for overdispersed count data.
+- Extends the Poisson distribution by introducing a dispersion parameter $\alpha$:  
+  $$ \mathbb{E}(Y) = \mu, \quad \text{Var}(Y) = \mu + \alpha \mu^2. $$
+- When $\alpha = 0$, it reduces to Poisson.
+
+- **Random Effects Interpretation**:
+  - The Negative Binomial can be interpreted as a Gamma-Poisson mixture.
+  - The Poisson mean $\mu$ is drawn from a Gamma distribution, introducing extra variability.
+
+<center>
+![](Images/pois-gamma.png)
+</center>
+
+---
+
+## Random Effects Models for Overdispersion {.smaller .scrollable}
+
+- Overdispersion often arises due to **unobserved heterogeneity**.
+- A solution is to introduce **random effects** that account for latent variability.
+
+. . .
+
+- **Random Intercept Model**:  
+  $$ Y_{ij} \mid b_j \sim \text{Poisson}(\mu_{ij}), \quad \log(\mu_{ij}) = X_{ij} \beta + b_j. $$
+  
+. . .
+
+  - $b_j \sim \mathcal{N}(0, \sigma^2)$ captures between-group variability.
+
+. . .
+
+  - Leads to extra variability in counts, addressing overdispersion.
+
+. . .
+
+- **Connection to Negative Binomial**:
+  - If $b_j$ follows a **Gamma** distribution instead of Normal, the model is equivalent to a **Negative Binomial**.
+
+---
+
+## Marginal Models for Overdispersion {.smaller .scrollable}
+
+- An alternative to random effects models is using **marginal models**.
+- Instead of modeling subject-level variation, these models estimate **population-averaged effects**.
+
+- **Generalized Estimating Equations (GEE)**:
+  - Does not assume a specific distribution for random effects.
+  - Uses a working correlation matrix to account for within-group dependence.
+  - Robust standard errors help correct for overdispersion.
+  
+See [Diggle, Heagerty, Liang, Zeger](https://global.oup.com/academic/product/analysis-of-longitudinal-data-9780198524847?cc=gb&lang=en&)
+---
+
+
+## Choosing Between Models {.smaller .scrollable}
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-width: 16
+#| fig-height: 14
+library(gt)
+
+# Define table
+comparison_table <- data.frame(
+  Feature = c("Interpretation", "Handles Overdispersion", "Computational Complexity"),
+  Random_Effects_Model = c("Subject-specific", "Yes (via latent effects)", "Higher"),
+  Marginal_Model_GEE = c("Population-averaged", "Yes (via robust SE)", "Lower")
+)
+
+# Create a nicer table using gt
+gt_table <- gt(comparison_table) |>
+  tab_header(title = "Comparison of Random Effects vs. Marginal Models") |>
+  cols_label(
+    Feature = "Feature",
+    Random_Effects_Model = "Random Effects Model",
+    Marginal_Model_GEE = "Marginal Model (GEE)"
+  ) |>
+  tab_options(
+    table.font.size = "large",
+    column_labels.font.weight = "bold",
+    table.width = "100%" 
+  )
+
+gt_table
+
+```
+
+. . .
+
+**Example 1**
+
+-  A clinical trial measuring **blood pressure** at multiple time points for patients in different hospitals.  
+- **Why Use Random Effects?**  
+  - Each patient has their own **baseline blood pressure** that varies.  
+  - A **random intercept** accounts for individual differences.  
+  - If hospitals have different treatment protocols, a **random hospital effect** can be included.  
+
+. . .
+
+**Example 2**
+
+- **Study Design**: A population-wide study on whether a new **influenza vaccine** reduces hospitalization rates.  
+- **Why Use Marginal Models?**  
+  - Interest is in the **population-averaged effect** of the vaccine, not individual variation.  
+  - **Generalized Estimating Equations (GEE)** account for correlation in repeated measures without assuming a specific random effect structure.  
+
