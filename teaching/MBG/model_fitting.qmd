@@ -233,3 +233,44 @@ Maximize the likelihood using the Laplace approximation (**glmer** in the **lme4
 {{< video https://www.youtube.com/embed/NHmYXk9cU0o?si=nhndWx75b4HHnOBx width="800" height="400" >}}
 
 [R script](R scripts/glmer_fit.R)
+
+## Coordinate Reference Systems (CRS)
+
+- A CRS defines how spatial data is projected onto the Earth's surface.
+- Two main types:
+  - **Geographic CRS** (Latitude/Longitude, e.g., WGS84)
+  - **Projected CRS** (e.g., UTM, which uses meters for measurements)
+
+![Geographic vs. Projected CRS](Images/gcs_pcs.png)
+
+---
+
+## Computing Distance
+
+- Distances in Geographic CRS (Lat/Lon) require **geodesic** calculations (e.g., Haversine formula).
+- Projecting to **UTM** allows for Euclidean distance calculations in meters.
+- Conversion to UTM in R:
+  ```r
+  library(sf)
+  points <- st_as_sf(data.frame(lon = c(-0.1, -0.2), lat = c(51.5, 51.6)), 
+                     coords = c("lon", "lat"), crs = 4326)
+  points_utm <- st_transform(points, crs = 32630)
+  ```
+
+![UTM Zones](https://upload.wikimedia.org/wikipedia/commons/9/99/Utm-zones.jpg)
+
+---
+
+## Spatial Data Formats
+
+- **Shapefiles**:
+  - Vector data format for storing geometries (points, lines, polygons).
+  - Commonly used in GIS applications.
+  
+- **Raster Files**:
+  - Grid-based data (e.g., satellite images, elevation models).
+  - Each cell has a value representing an attribute (e.g., temperature, elevation).
+
+![Vector vs Raster](https://upload.wikimedia.org/wikipedia/commons/3/3b/Vector_raster.png)
+
+---

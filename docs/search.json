@@ -802,6 +802,27 @@
     "href": "teaching/MBG/model_fitting.html#example-riverblindness-in-liberia",
     "title": "Exploratory analysis",
     "section": "Example: Riverblindness in Liberia",
-    "text": "Example: Riverblindness in Liberia\n\nR script\n\n\n\n\nClick here to go back to the course page"
+    "text": "Example: Riverblindness in Liberia\n\nR script"
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#coordinate-reference-systems-crs",
+    "href": "teaching/MBG/model_fitting.html#coordinate-reference-systems-crs",
+    "title": "Exploratory analysis",
+    "section": "Coordinate Reference Systems (CRS)",
+    "text": "Coordinate Reference Systems (CRS)\n\nA CRS defines how spatial data is projected onto the Earth’s surface.\nTwo main types:\n\nGeographic CRS (Latitude/Longitude, e.g., WGS84)\nProjected CRS (e.g., UTM, which uses meters for measurements)\n\n\n\nGeographic vs. Projected CRS"
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#computing-distance",
+    "href": "teaching/MBG/model_fitting.html#computing-distance",
+    "title": "Exploratory analysis",
+    "section": "Computing Distance",
+    "text": "Computing Distance\n\nDistances in Geographic CRS (Lat/Lon) require geodesic calculations (e.g., Haversine formula).\nProjecting to UTM allows for Euclidean distance calculations in meters.\nConversion to UTM in R:\nlibrary(sf)\npoints &lt;- st_as_sf(data.frame(lon = c(-0.1, -0.2), lat = c(51.5, 51.6)), \n                   coords = c(\"lon\", \"lat\"), crs = 4326)\npoints_utm &lt;- st_transform(points, crs = 32630)\n\n\nUTM Zones"
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#spatial-data-formats",
+    "href": "teaching/MBG/model_fitting.html#spatial-data-formats",
+    "title": "Exploratory analysis",
+    "section": "Spatial Data Formats",
+    "text": "Spatial Data Formats\n\nShapefiles:\n\nVector data format for storing geometries (points, lines, polygons).\nCommonly used in GIS applications.\n\nRaster Files:\n\nGrid-based data (e.g., satellite images, elevation models).\nEach cell has a value representing an attribute (e.g., temperature, elevation).\n\n\n\nVector vs Raster"
   }
 ]
