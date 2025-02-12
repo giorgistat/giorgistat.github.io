@@ -704,7 +704,7 @@
     "href": "teaching/MBG/model_fitting.html#choosing-between-models",
     "title": "Exploratory analysis",
     "section": "Choosing Between Models",
-    "text": "Choosing Between Models\n\n\n\n\n\n\n\n\nComparison of Random Effects vs. Marginal Models\n\n\nFeature\nRandom Effects Model\nMarginal Model (GEE)\n\n\n\n\nInterpretation\nSubject-specific\nPopulation-averaged\n\n\nHandles Overdispersion\nYes (via latent effects)\nYes (via robust SE)\n\n\nComputational Complexity\nHigher\nLower\n\n\n\n\n\n\n\n\nExample 1\n\nA clinical trial measuring blood pressure at multiple time points for patients in different hospitals.\n\nWhy Use Random Effects?\n\nEach patient has their own baseline blood pressure that varies.\n\nA random intercept accounts for individual differences.\n\nIf hospitals have different treatment protocols, a random hospital effect can be included.\n\n\n\n\nExample 2\n\nStudy Design: A population-wide study on whether a new influenza vaccine reduces hospitalization rates.\n\nWhy Use Marginal Models?\n\nInterest is in the population-averaged effect of the vaccine, not individual variation.\n\nGeneralized Estimating Equations (GEE) account for correlation in repeated measures without assuming a specific random effect structure.\n\n\n\n\n\n\nClick here to go back to the course page"
+    "text": "Choosing Between Models\n\n\n\n\n\n\n\n\nComparison of Random Effects vs. Marginal Models\n\n\nFeature\nRandom Effects Model\nMarginal Model (GEE)\n\n\n\n\nInterpretation\nSubject-specific\nPopulation-averaged\n\n\nHandles Overdispersion\nYes (via latent effects)\nYes (via robust SE)\n\n\nComputational Complexity\nHigher\nLower\n\n\n\n\n\n\n\n\nExample 1\n\nA clinical trial measuring blood pressure at multiple time points for patients in different hospitals.\n\nWhy Use Random Effects?\n\nEach patient has their own baseline blood pressure that varies.\n\nA random intercept accounts for individual differences.\n\nIf hospitals have different treatment protocols, a random hospital effect can be included.\n\n\n\n\nExample 2\n\nStudy Design: A population-wide study on whether a new influenza vaccine reduces hospitalization rates.\n\nWhy Use Marginal Models?\n\nInterest is in the population-averaged effect of the vaccine, not individual variation.\n\nGeneralized Estimating Equations (GEE) account for correlation in repeated measures without assuming a specific random effect structure."
   },
   {
     "objectID": "teaching/MBG/model_fitting.html#choosing-between-models-1",
@@ -782,5 +782,26 @@
     "title": "Exploratory analysis",
     "section": "You can go back to the course page",
     "text": "You can go back to the course page\nClick here"
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#a-class-of-generalized-linear-models",
+    "href": "teaching/MBG/model_fitting.html#a-class-of-generalized-linear-models",
+    "title": "Exploratory analysis",
+    "section": "A class of generalized linear models",
+    "text": "A class of generalized linear models\nAssumptions:\n\n\n\\(Z_{i}\\) are i.i.d. random variables;\n\n\n\n\n\\(Y_{i} \\mid Z_i \\sim f(\\cdot)\\) belongs to the exponential family;\n\n\n\n\n\\(E[Y_{i}\\mid Z_i] = m_i \\mu_{i}\\) and \\(\\text{Var}[Y_{i} \\mid Z_i] = m_i V(\\mu_{i})\\);\n\n\n\n\n\\(g(\\mu_{i}) = \\eta_i = d_i^\\top \\beta + Z_i\\);\n\n\n\n\n\\(Y_i \\mid Z_i\\) are mutually independent for \\(i=1,\\dots,n\\)."
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#parameter-estimation",
+    "href": "teaching/MBG/model_fitting.html#parameter-estimation",
+    "title": "Exploratory analysis",
+    "section": "Parameter Estimation",
+    "text": "Parameter Estimation\n\nLikelihood function\n\nThe vector of unkown parameters is \\(\\theta=(\\beta, \\sigma^2)\\) \\[\nL(\\theta) = \\prod_{i=1}^n \\int_{-\\infty}^{+\\infty} [Z_i] [Y_i \\mid Z_i] \\: dY_i\n\\]\n\n\nEstimation Method\n\nMaximize the likelihood using the Laplace approximation (glmer in the lme4 package).\n\n\n\nHypothesis Testing\n\nObtain \\(\\hat{\\theta}\\) (MLE).\nObtain \\(\\hat{\\theta}_{0}\\), the MLE constrained by fixing \\(p\\) values of \\(\\beta\\) to 0.\nCompute the log-likelihood ratio:\n\n\\[\nD = 2(\\log L(\\hat{\\theta}) - \\log L(\\hat{\\theta}_0)) \\sim \\chi^2_{p}\n\\]\n\nP-value: \\(P(D &gt; D_{obs} \\mid H_0)\\)"
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#example-riverblindness-in-liberia",
+    "href": "teaching/MBG/model_fitting.html#example-riverblindness-in-liberia",
+    "title": "Exploratory analysis",
+    "section": "Example: Riverblindness in Liberia",
+    "text": "Example: Riverblindness in Liberia\n\nR script\n\n\n\n\nClick here to go back to the course page"
   }
 ]
