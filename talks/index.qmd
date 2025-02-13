@@ -2,7 +2,11 @@
 title: "Talks"
 ---
 
+This page includes slides of presentations given at seminars and conferences since February 2025.
+
+![](figures/semiar.jpg){width=40%}
+
 -   [**Model-based Geostatistics for Global Public Health: From Methodology Development to Policy Applications**](Birmingham%20(20%20Feb%202025).qmd)\
-    *University of Birmingham, 20 February 2025*
+    Seminar: *Department of Applied Health Sciences, University of Birmingham, 20 February 2025*
 
 ------------------------------------------------------------------------

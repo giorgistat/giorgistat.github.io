@@ -2,6 +2,8 @@
 title: "Teaching"
 ---
 
+![](../talks/figures/teaching.jpg){width=40%}
+
 
 This page serves as a hub for sharing teaching resources from the courses I teach at **Lancaster University**, **Cambridge University** , invited courses and workshops. The materials are currently under development, and I plan to make them available here as they are finalized.
 

@@ -256,7 +256,7 @@
     "href": "talks/Birmingham (20 Feb 2025).html#presentation-overview",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "Presentation Overview",
-    "text": "Presentation Overview\n\nOverview Model-based Geostatistical Methods for Disease Mapping\nCurrent Methodological Problems\nInforming Policy Decisions\nCapacity Building"
+    "text": "Presentation Overview\n\nNeglected Tropical Diseases: an overview\nModel-based Geostatistics: Current and Future Research\nInforming Policy Decisions\nCapacity Building"
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#from-the-mining-industry-to-public-health",
@@ -389,7 +389,7 @@
     "href": "talks/index.html",
     "title": "Talks",
     "section": "",
-    "text": "Model-based Geostatistics for Global Public Health: From Methodology Development to Policy Applications\nUniversity of Birmingham, 20 February 2025"
+    "text": "This page includes slides of presentations given at seminars and conferences since February 2025.\n\n\nModel-based Geostatistics for Global Public Health: From Methodology Development to Policy Applications\nSeminar: Department of Applied Health Sciences, University of Birmingham, 20 February 2025"
   },
   {
     "objectID": "talks/index.html#section",
@@ -809,20 +809,62 @@
     "href": "teaching/MBG/model_fitting.html#coordinate-reference-systems-crs",
     "title": "Exploratory analysis",
     "section": "Coordinate Reference Systems (CRS)",
-    "text": "Coordinate Reference Systems (CRS)\n\nA CRS defines how spatial data is projected onto the Earth’s surface.\nTwo main types:\n\nGeographic CRS (Latitude/Longitude, e.g., WGS84)\nProjected CRS (e.g., UTM, which uses meters for measurements)\n\n\n\nGeographic vs. Projected CRS"
+    "text": "Coordinate Reference Systems (CRS)\n\nGeographic vs. Projected CRS\nA CRS defines how spatial data is projected onto the Earth’s surface.\nTwo main types:\n\nGeographic CRS (Latitude/Longitude, e.g., WGS84)\nProjected CRS (e.g., UTM, which uses meters for measurements)"
   },
   {
     "objectID": "teaching/MBG/model_fitting.html#computing-distance",
     "href": "teaching/MBG/model_fitting.html#computing-distance",
     "title": "Exploratory analysis",
     "section": "Computing Distance",
-    "text": "Computing Distance\n\nDistances in Geographic CRS (Lat/Lon) require geodesic calculations (e.g., Haversine formula).\nProjecting to UTM allows for Euclidean distance calculations in meters.\nConversion to UTM in R:\nlibrary(sf)\npoints &lt;- st_as_sf(data.frame(lon = c(-0.1, -0.2), lat = c(51.5, 51.6)), \n                   coords = c(\"lon\", \"lat\"), crs = 4326)\npoints_utm &lt;- st_transform(points, crs = 32630)\n\n\nUTM Zones"
+    "text": "Computing Distance\n\nDistances in Geographic CRS (Lat/Lon) require geodesic calculations (e.g., Haversine formula).\nProjecting to UTM allows for Euclidean distance calculations in meters.\nConversion to UTM in R:\nlibrary(sf)\npoints &lt;- st_as_sf(data.frame(lon = c(-0.1, -0.2), lat = c(51.5, 51.6)), \n                   coords = c(\"lon\", \"lat\"), crs = 4326)\npoints_utm &lt;- st_transform(points, crs = 32630)"
   },
   {
     "objectID": "teaching/MBG/model_fitting.html#spatial-data-formats",
     "href": "teaching/MBG/model_fitting.html#spatial-data-formats",
     "title": "Exploratory analysis",
     "section": "Spatial Data Formats",
-    "text": "Spatial Data Formats\n\nShapefiles:\n\nVector data format for storing geometries (points, lines, polygons).\nCommonly used in GIS applications.\n\nRaster Files:\n\nGrid-based data (e.g., satellite images, elevation models).\nEach cell has a value representing an attribute (e.g., temperature, elevation).\n\n\n\nVector vs Raster"
+    "text": "Spatial Data Formats\n\n\n\n\nShapefiles:\n\nVector data format for storing geometries (points, lines, polygons).\nCommonly used in GIS applications.\n\nRaster Files:\n\nGrid-based data (e.g., satellite images, elevation models).\nEach cell has a value representing an attribute (e.g., temperature, elevation)."
+  },
+  {
+    "objectID": "teaching/MBG/model_fitting.html#mapping-with-covariates",
+    "href": "teaching/MBG/model_fitting.html#mapping-with-covariates",
+    "title": "Exploratory analysis",
+    "section": "Mapping with covariates",
+    "text": "Mapping with covariates\nConsider the following GLMM for the Liberia data on riverblindness. \\[\n\\log\\left\\{\\frac{p(x_i)}{1-p(x_i)}\\right\\} = \\beta_0 + \\beta_1 \\log\\{e(x_i)\\} + Z_i\n\\] where \\(e(x)\\) is the elevation in meters at location \\(x\\).\n\nQuestion: How can we use this model for mapping?\n\n\n\n\nClick here to go back to the course page"
+  },
+  {
+    "objectID": "talks/Birmingham (20 Feb 2025).html#neglected-tropical-diseases",
+    "href": "talks/Birmingham (20 Feb 2025).html#neglected-tropical-diseases",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "Neglected tropical diseases",
+    "text": "Neglected tropical diseases"
+  },
+  {
+    "objectID": "talks/Birmingham (20 Feb 2025).html#ntds-endemic-areas",
+    "href": "talks/Birmingham (20 Feb 2025).html#ntds-endemic-areas",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "NTDs endemic areas",
+    "text": "NTDs endemic areas"
+  },
+  {
+    "objectID": "talks/Birmingham (20 Feb 2025).html#ntd-endemic-areas",
+    "href": "talks/Birmingham (20 Feb 2025).html#ntd-endemic-areas",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "NTD endemic areas",
+    "text": "NTD endemic areas"
+  },
+  {
+    "objectID": "talks/Birmingham (20 Feb 2025).html#ntds-risk-factors",
+    "href": "talks/Birmingham (20 Feb 2025).html#ntds-risk-factors",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "NTDs Risk Factors",
+    "text": "NTDs Risk Factors\n\n\n\n\n\n\n\n\n\n\n\n\n\nCommon risk factors:\n- Poor sanitation and lack of clean water\n- Limited healthcare access\n- Poverty and overcrowding\n- Exposure to disease vectors (e.g., mosquitoes, flies)\n- Lack of education and awareness"
+  },
+  {
+    "objectID": "talks/Birmingham (20 Feb 2025).html#the-impact-of-ntds",
+    "href": "talks/Birmingham (20 Feb 2025).html#the-impact-of-ntds",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "The impact of NTDs",
+    "text": "The impact of NTDs"
   }
 ]

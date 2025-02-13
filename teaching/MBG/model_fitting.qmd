@@ -234,21 +234,24 @@ Maximize the likelihood using the Laplace approximation (**glmer** in the **lme4
 
 [R script](R scripts/glmer_fit.R)
 
-## Coordinate Reference Systems (CRS)
+## Coordinate Reference Systems (CRS) {.smaller .scrollable}
+
+![Geographic vs. Projected CRS](Images/gcs_pcs.png){width="40%"}
 
 - A CRS defines how spatial data is projected onto the Earth's surface.
 - Two main types:
   - **Geographic CRS** (Latitude/Longitude, e.g., WGS84)
   - **Projected CRS** (e.g., UTM, which uses meters for measurements)
 
-![Geographic vs. Projected CRS](Images/gcs_pcs.png)
 
 ---
 
 ## Computing Distance
 
 - Distances in Geographic CRS (Lat/Lon) require **geodesic** calculations (e.g., Haversine formula).
+
 - Projecting to **UTM** allows for Euclidean distance calculations in meters.
+
 - Conversion to UTM in R:
   ```r
   library(sf)
@@ -257,12 +260,13 @@ Maximize the likelihood using the Laplace approximation (**glmer** in the **lme4
   points_utm <- st_transform(points, crs = 32630)
   ```
 
-![UTM Zones](https://upload.wikimedia.org/wikipedia/commons/9/99/Utm-zones.jpg)
 
 ---
 
-## Spatial Data Formats
-
+## Spatial Data Formats {.smaller}
+<center>
+![](Images/rastervector.png){width="30%"}
+</center>
 - **Shapefiles**:
   - Vector data format for storing geometries (points, lines, polygons).
   - Commonly used in GIS applications.
@@ -270,7 +274,17 @@ Maximize the likelihood using the Laplace approximation (**glmer** in the **lme4
 - **Raster Files**:
   - Grid-based data (e.g., satellite images, elevation models).
   - Each cell has a value representing an attribute (e.g., temperature, elevation).
-
-![Vector vs Raster](https://upload.wikimedia.org/wikipedia/commons/3/3b/Vector_raster.png)
-
 ---
+
+## Mapping with covariates
+
+Consider the following GLMM for the Liberia data on riverblindness.
+$$
+\log\left\{\frac{p(x_i)}{1-p(x_i)}\right\} = \beta_0 + \beta_1 \log\{e(x_i)\} + Z_i
+$$
+where $e(x)$ is the elevation in meters at location $x$. 
+
+. . .
+
+
+**Question:** How can we use this model for mapping?

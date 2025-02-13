@@ -32,12 +32,42 @@ format:
 
 ## Presentation Overview
 
-1.  **Overview Model-based Geostatistical Methods for Disease Mapping**
-2.  **Current Methodological Problems**
+1.  **Neglected Tropical Diseases: an overview**
+2.  **Model-based Geostatistics: Current and Future Research**
 3.  **Informing Policy Decisions**
 4.  **Capacity Building**
 
 ------------------------------------------------------------------------
+
+## Neglected tropical diseases
+
+![](figures/Figure-12.png)
+
+## NTD endemic areas
+![](figures/Prevalence-of-neglected-tropical-diseases-NTDs-by-country-The-burden-of-NTDs-in_W640.jpg)
+
+## NTDs Risk Factors {.smaller}
+
+::: {layout-ncol="2"}
+
+![](figures/D200-0790-138A-2.jpg){width=35%}
+
+![](figures/Five-Diseases-That-Thrive-in-Poor-Sanitation.jpg){width=35%}
+
+:::
+
+**Common risk factors:**  
+- Poor sanitation and lack of clean water  
+- Limited healthcare access  
+- Poverty and overcrowding  
+- Exposure to disease vectors (e.g., mosquitoes, flies)  
+- Lack of education and awareness  
+
+
+## The impact of NTDs
+![](figures/Ranking-of-NTDs-by-Disease-Burden-DALYs-and-Comparison-with-HIV-AIDS-Tuberculosis-and.png){width=35%}
+
+
 
 ## From the mining industry to public health
 
