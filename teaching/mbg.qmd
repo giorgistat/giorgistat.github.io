@@ -21,7 +21,7 @@ An overview of geostatistical problems in the context of epidemiological studies
 Exploring regression relationships, overdispersion and spatial correlation.
 
 -   [Slides and R scripts](MBG/exp_analysis.qmd)
--   [Exercise](MBG/Exercises/Exercise-1.pdf)
+-   [Exercise](MBG/Exercises/Exercise-1.pdf) and [raster files](MBG/Data/Tanzania_rasters.zip) for the analysis 
 
 ### 3. Model Formulation and Parameter Estimation
 
