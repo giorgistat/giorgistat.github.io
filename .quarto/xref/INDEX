@@ -64,5 +64,11 @@
   },
   "teaching/mbg.qmd": {
     "mbg.html": "f46dc8e7"
+  },
+  "teaching/MBG/exp_analysis.qmd": {
+    "exp_analysis.html": "c58fbf2e"
+  },
+  "teaching/MBG/Exercises/Exercise 1.Rmd": {
+    "Exercise 1.html": "05ca76ef"
   }
 }

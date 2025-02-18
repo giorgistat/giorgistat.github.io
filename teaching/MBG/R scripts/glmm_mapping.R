@@ -67,17 +67,13 @@ terra::plot(mean(a), plg = list(title = "Min. temperature (C)"))
 # Extract elevation values at grid locations
 elev_data_frame <- data.frame(elevation = extract(elev_lb, st_coordinates(grid_utm)))
 
-# Fit a binomial GLM model with log-elevation as a predictor
-glm_fit <- glm(cbind(npos, ntest - npos) ~ log(elevation),
-               data = liberia, family = "binomial")
-
 # Predict prevalence using the fitted model
-pred_glm <- predict(glm_fit, newdata = elev_data_frame, type = "response")
+pred_glmer <- predict(fit_glmer_lib, newdata = elev_data_frame, type = "response", re.form = NA)
 
 # Create a data frame with predicted prevalence and grid coordinates
 raster_pred <- data.frame(x = st_coordinates(grid_utm)[, 1],
                           y = st_coordinates(grid_utm)[, 2],
-                          prev = pred_glm)
+                          prev = pred_glmer)
 
 # Plot the predicted prevalence using ggplot2
 ggplot(data = raster_pred) +
