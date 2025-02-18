@@ -28,7 +28,7 @@ format:
 -   How to deal with binary data?
 -   How to model non-linear relationships?
 
-![](Images/rlogo.png){width=10%} [explore_associations.R](R%20scripts/explore_associations.R)
+![](Images/rlogo.png){width="10%"} [explore_associations.R](R%20scripts/explore_associations.R)
 
 ------------------------------------------------------------------------
 
@@ -230,7 +230,7 @@ Maximize the likelihood using the Laplace approximation (**glmer** in the **lme4
 
 {{< video https://www.youtube.com/embed/NHmYXk9cU0o?si=nhndWx75b4HHnOBx width="800" height="400" >}}
 
-![](Images/rlogo.png){width=10%} [glmer_fit.R](R%20scripts/glmer_fit.R)
+![](Images/rlogo.png){width="10%"} [glmer_fit.R](R%20scripts/glmer_fit.R)
 
 ## Coordinate Reference Systems (CRS) {.smaller .scrollable}
 
@@ -272,7 +272,7 @@ Maximize the likelihood using the Laplace approximation (**glmer** in the **lme4
 
     -   Each cell has a value representing an attribute (e.g., temperature, elevation).
 
-## Mapping with covariates only {.smaller]}
+## Mapping with covariates only {.smaller\]}
 
 Consider the following GLMM for the Liberia data on riverblindness. $$
 \log\left\{\frac{p(x_i)}{1-p(x_i)}\right\} = \beta_0 + \beta_1 \log\{e(x_i)\} + Z_i
@@ -284,4 +284,4 @@ $$ where $e(x)$ is the elevation in meters at location $x$ and $Z_i \sim N(0,\ta
 
 . . .
 
-![](Images/rlogo.png){width=10%} [glmm_mapping.R](R scripts/glmm_mapping.R)
+![](Images/rlogo.png){width="10%"} [glmm_mapping.R](R%20scripts/glmm_mapping.R)

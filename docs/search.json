@@ -521,92 +521,92 @@
     "objectID": "teaching/MBG/introduction.html#epidemiological-data",
     "href": "teaching/MBG/introduction.html#epidemiological-data",
     "title": "Introduction",
-    "section": "",
-    "text": "Incidence: Number of new cases per unit time per unit population\n\nPrevalence: Number of existing cases per unit population\n\nRisk: Probability that a person will contract the disease (per unit time or lifetime)\n\nObjective: Understand spatial variation in disease incidence, prevalence, and risk\nRelevant books:\nElliott et al. (2000), Gelfand et al. (2010), Rothman (1986), Waller & Gotway (2004), Woodward (1999)"
+    "section": "Epidemiological Data",
+    "text": "Epidemiological Data\n\nIncidence: Number of new cases per unit time per unit population\n\nPrevalence: Number of existing cases per unit population\n\nRisk: Probability that a person will contract the disease (per unit time or lifetime)\n\nObjective: Understand spatial variation in disease incidence, prevalence, and risk\nRelevant books:\nElliott et al. (2000), Gelfand et al. (2010), Rothman (1986), Waller & Gotway (2004), Woodward (1999)"
   },
   {
     "objectID": "teaching/MBG/introduction.html#cholera-in-victorian-london-1854",
     "href": "teaching/MBG/introduction.html#cholera-in-victorian-london-1854",
     "title": "Introduction",
-    "section": "",
-    "text": "John Snow removed the handle of the Broad Street water pump\n\nIdentified contaminated water as the disease source\n\nContradicted conventional wisdom at the time\n\n1854 Broad Street cholera outbreak"
+    "section": "Cholera in Victorian London, 1854",
+    "text": "Cholera in Victorian London, 1854\n\n\n\nJohn Snow removed the handle of the Broad Street water pump\n\nIdentified contaminated water as the disease source\n\nContradicted conventional wisdom at the time\n\n1854 Broad Street cholera outbreak"
   },
   {
     "objectID": "teaching/MBG/introduction.html#study-designs",
     "href": "teaching/MBG/introduction.html#study-designs",
     "title": "Introduction",
-    "section": "",
-    "text": "Registry\n\nCase counts in sub-regions\n\nPopulation size as denominator\n\nCovariates from census data\n\nCase-Control\n\nCases: All known cases in the study region\n\nControls: Probability sample of non-cases\n\nSurvey\n\nSampled locations within study region\n\nData collected per location\n\nCommon in low-resource settings"
+    "section": "Study Designs",
+    "text": "Study Designs\n\nRegistry\n\nCase counts in sub-regions\n\nPopulation size as denominator\n\nCovariates from census data\n\nCase-Control\n\nCases: All known cases in the study region\n\nControls: Probability sample of non-cases\n\nSurvey\n\nSampled locations within study region\n\nData collected per location\n\nCommon in low-resource settings"
   },
   {
     "objectID": "teaching/MBG/introduction.html#registry-example-plague-in-madagascar",
     "href": "teaching/MBG/introduction.html#registry-example-plague-in-madagascar",
     "title": "Introduction",
-    "section": "",
-    "text": "Research Question:\nDoes plague infection risk increase above 800m elevation?\nGiorgi et al., 2016, Spatial and Spatio-temporal Epidemiology"
+    "section": "Registry Example: Plague in Madagascar",
+    "text": "Registry Example: Plague in Madagascar\n\nResearch Question:\nDoes plague infection risk increase above 800m elevation?\nGiorgi et al., 2016, Spatial and Spatio-temporal Epidemiology"
   },
   {
     "objectID": "teaching/MBG/introduction.html#case-control-example-childhood-leukaemia-in-humberside",
     "href": "teaching/MBG/introduction.html#case-control-example-childhood-leukaemia-in-humberside",
     "title": "Introduction",
-    "section": "",
-    "text": "Locations of all known cases (1974–82)\n\nResidential locations of a random sample of births\n\nReferences:\nCuzick & Edwards (1990), Diggle & Chetwynd (1991)"
+    "section": "Case-Control Example: Childhood Leukaemia in Humberside",
+    "text": "Case-Control Example: Childhood Leukaemia in Humberside\n\n\nLocations of all known cases (1974–82)\n\nResidential locations of a random sample of births\n\nReferences:\nCuzick & Edwards (1990), Diggle & Chetwynd (1991)"
   },
   {
     "objectID": "teaching/MBG/introduction.html#survey-example-loa-loa-in-cameroon",
     "href": "teaching/MBG/introduction.html#survey-example-loa-loa-in-cameroon",
     "title": "Introduction",
-    "section": "",
-    "text": "Data: Empirical prevalences in surveyed villages\n\nMap: Predictive probabilities of exceeding 20% prevalence threshold\n\nDiggle et al., 2007"
+    "section": "Survey Example: Loa loa in Cameroon",
+    "text": "Survey Example: Loa loa in Cameroon\n\n\nData: Empirical prevalences in surveyed villages\n\nMap: Predictive probabilities of exceeding 20% prevalence threshold\n\nDiggle et al., 2007"
   },
   {
     "objectID": "teaching/MBG/introduction.html#research-questions",
     "href": "teaching/MBG/introduction.html#research-questions",
     "title": "Introduction",
-    "section": "",
-    "text": "Is elevation an important risk factor?\n\nIf so, why?\n\n\n\n\n\nDo cases show unexpected clustering?\n\n\n\n\n\nWhat environmental factors influence risk?\n\nCan we predict areas exceeding an intervention threshold?"
+    "section": "Research Questions",
+    "text": "Research Questions\nPlague in Madagascar\n\nIs elevation an important risk factor?\n\nIf so, why?\n\nChildhood Leukaemia in Humberside\n\nDo cases show unexpected clustering?\n\nLoa loa in Cameroon\n\nWhat environmental factors influence risk?\n\nCan we predict areas exceeding an intervention threshold?"
   },
   {
     "objectID": "teaching/MBG/introduction.html#epidemic-vs-endemic-patterns",
     "href": "teaching/MBG/introduction.html#epidemic-vs-endemic-patterns",
     "title": "Introduction",
-    "section": "",
-    "text": "Epidemic: Foot-and-mouth in Cumbria (2001)\n\nEndemic: Gastroenteric disease in Hampshire (AEGISS)\n\nAnimations:\n- Foot-and-mouth\n- AEGISS\nHow are these patterns different?"
+    "section": "Epidemic vs Endemic Patterns",
+    "text": "Epidemic vs Endemic Patterns\n\nEpidemic: Foot-and-mouth in Cumbria (2001)\n\nEndemic: Gastroenteric disease in Hampshire (AEGISS)\n\nAnimations:\n- Foot-and-mouth\n- AEGISS\nHow are these patterns different?"
   },
   {
     "objectID": "teaching/MBG/introduction.html#empirical-modelling-aegiss-project",
     "href": "teaching/MBG/introduction.html#empirical-modelling-aegiss-project",
     "title": "Introduction",
-    "section": "",
-    "text": "Objective: Early detection of incidence anomalies\n\n3,374 reports of gastro-intestinal illness\n\nLog-Gaussian Cox process for space-time correlation"
+    "section": "Empirical Modelling: AEGISS Project",
+    "text": "Empirical Modelling: AEGISS Project\n\nObjective: Early detection of incidence anomalies\n\n3,374 reports of gastro-intestinal illness\n\nLog-Gaussian Cox process for space-time correlation"
   },
   {
     "objectID": "teaching/MBG/introduction.html#geostatistics",
     "href": "teaching/MBG/introduction.html#geostatistics",
     "title": "Introduction",
-    "section": "",
-    "text": "Data: \\((y_i, x_i)\\), where \\(x_i \\in A \\subset \\mathbb{R}^2\\)\n\nModel: \\(Y_i = S(x_i) + Z_i\\)\n\nObjective: Estimate \\(\\int_{A} S(x) dx\\) (e.g., mining yield)"
+    "section": "Geostatistics",
+    "text": "Geostatistics\n\n\n\n\n\n\n\nData: \\((y_i, x_i)\\), where \\(x_i \\in A \\subset \\mathbb{R}^2\\)\n\nModel: \\(Y_i = S(x_i) + Z_i\\)\n\nObjective: Estimate \\(\\int_{A} S(x) dx\\) (e.g., mining yield)"
   },
   {
     "objectID": "teaching/MBG/introduction.html#model-based-geostatistics-for-public-health",
     "href": "teaching/MBG/introduction.html#model-based-geostatistics-for-public-health",
     "title": "Introduction",
-    "section": "",
-    "text": "Animation: Malaria in Chikwawa district"
+    "section": "Model-Based Geostatistics for Public Health",
+    "text": "Model-Based Geostatistics for Public Health\n\n\n\n\n\nAnimation: Malaria in Chikwawa district"
   },
   {
     "objectID": "teaching/MBG/introduction.html#science-and-statistics",
     "href": "teaching/MBG/introduction.html#science-and-statistics",
     "title": "Introduction",
-    "section": "",
-    "text": "Key Concepts:\n- \\(S\\): “Process of nature”\n- \\(Y\\): “Observed data”\n- Bayesian Framework: \\([Y, S] = [S][Y | S]\\)\nAdapted from: Statistics and Scientific Method (Diggle & Chatwynd, 2011)"
+    "section": "Science and Statistics",
+    "text": "Science and Statistics\n\nKey Concepts:\n- \\(S\\): “Process of nature”\n- \\(Y\\): “Observed data”\n- Bayesian Framework: \\([Y, S] = [S][Y | S]\\)\nAdapted from: Statistics and Scientific Method (Diggle & Chatwynd, 2011)"
   },
   {
     "objectID": "teaching/MBG/introduction.html#workflow-of-a-statistical-analysis",
     "href": "teaching/MBG/introduction.html#workflow-of-a-statistical-analysis",
     "title": "Introduction",
-    "section": "",
-    "text": "How do we apply the workflow of a statistical analysis in model-based geostatistics?"
+    "section": "Workflow of a statistical analysis",
+    "text": "Workflow of a statistical analysis\n\n\n\n\nHow do we apply the workflow of a statistical analysis in model-based geostatistics?\n\n\n\n\n\nClick here to go back to the course page"
   },
   {
     "objectID": "teaching/MBG/model_fitting.html#overview",
@@ -913,8 +913,8 @@
     "objectID": "teaching/MBG/exp_analysis.html#overview",
     "href": "teaching/MBG/exp_analysis.html#overview",
     "title": "Exploratory analysis",
-    "section": "",
-    "text": "Exploring relationships\nExploring overdispersion\nExploring spatial correlation"
+    "section": "Overview",
+    "text": "Overview\n\nExploring relationships\nExploring overdispersion\nExploring spatial correlation"
   },
   {
     "objectID": "teaching/MBG/exp_analysis.html#exploring-relationships",
@@ -935,7 +935,7 @@
     "href": "teaching/MBG/exp_analysis.html#example-overdispersion-in-correlated-binary-data",
     "title": "Exploratory analysis",
     "section": "Example: Overdispersion in Correlated Binary Data",
-    "text": "Example: Overdispersion in Correlated Binary Data\n\nConsider \\(Y = \\sum_{i=1}^n X_i\\), where \\(X_i\\) are correlated binary variables.\n\n. . .\n\nIf \\(X_i\\) are independent, \\(Y\\) follows a Binomial distribution: \\[ \\mathbb{E}(Y) = np, \\quad \\text{Var}(Y) = np(1-p). \\]\n\n. . .\n\nIf \\(X_i\\) are correlated, the variance increases:\n\\[ \\text{Var}(Y) = np(1-p) + \\sum_{i \\neq j} \\text{Cov}(X_i, X_j). \\]\n\n. . .\n\nThis leads to overdispersion."
+    "text": "Example: Overdispersion in Correlated Binary Data\n\nConsider \\(Y = \\sum_{i=1}^n X_i\\), where \\(X_i\\) are correlated binary variables.\n\n\n\nIf \\(X_i\\) are independent, \\(Y\\) follows a Binomial distribution: \\[ \\mathbb{E}(Y) = np, \\quad \\text{Var}(Y) = np(1-p). \\]\n\n\n\n\nIf \\(X_i\\) are correlated, the variance increases:\n\\[ \\text{Var}(Y) = np(1-p) + \\sum_{i \\neq j} \\text{Cov}(X_i, X_j). \\]\n\n\n\n\nThis leads to overdispersion."
   },
   {
     "objectID": "teaching/MBG/exp_analysis.html#example-negative-binomial-distribution",
@@ -949,7 +949,7 @@
     "href": "teaching/MBG/exp_analysis.html#random-effects-models-for-overdispersion",
     "title": "Exploratory analysis",
     "section": "Random Effects Models for Overdispersion",
-    "text": "Random Effects Models for Overdispersion\n\nOverdispersion often arises due to unobserved heterogeneity.\nA solution is to introduce random effects that account for latent variability.\n\n. . .\n\nRandom Intercept Model:\n\\[ Y_{ij} \\mid b_j \\sim \\text{Poisson}(\\mu_{ij}), \\quad \\log(\\mu_{ij}) = X_{ij} \\beta + b_j. \\]\n\n. . .\n\n\\(b_j \\sim \\mathcal{N}(0, \\sigma^2)\\) captures between-group variability.\n\n. . .\n\nLeads to extra variability in counts, addressing overdispersion.\n\n. . .\n\nConnection to Negative Binomial:\n\nIf \\(b_j\\) follows a Gamma distribution instead of Normal, the model is equivalent to a Negative Binomial."
+    "text": "Random Effects Models for Overdispersion\n\nOverdispersion often arises due to unobserved heterogeneity.\nA solution is to introduce random effects that account for latent variability.\n\n\n\nRandom Intercept Model:\n\\[ Y_{ij} \\mid b_j \\sim \\text{Poisson}(\\mu_{ij}), \\quad \\log(\\mu_{ij}) = X_{ij} \\beta + b_j. \\]\n\n\n\n\n\\(b_j \\sim \\mathcal{N}(0, \\sigma^2)\\) captures between-group variability.\n\n\n\n\nLeads to extra variability in counts, addressing overdispersion.\n\n\n\n\nConnection to Negative Binomial:\n\nIf \\(b_j\\) follows a Gamma distribution instead of Normal, the model is equivalent to a Negative Binomial."
   },
   {
     "objectID": "teaching/MBG/exp_analysis.html#marginal-models-for-overdispersion",
@@ -963,21 +963,21 @@
     "href": "teaching/MBG/exp_analysis.html#choosing-between-models",
     "title": "Exploratory analysis",
     "section": "Choosing Between Models",
-    "text": "Choosing Between Models\n\n\n\n\n\n\n\n\nComparison of Random Effects vs. Marginal Models\n\n\nFeature\nRandom Effects Model\nMarginal Model (GEE)\n\n\n\n\nInterpretation\nSubject-specific\nPopulation-averaged\n\n\nHandles Overdispersion\nYes (via latent effects)\nYes (via robust SE)\n\n\nComputational Complexity\nHigher\nLower\n\n\n\n\n\n\n\n. . .\nExample 1\n\nA clinical trial measuring blood pressure at multiple time points for patients in different hospitals.\n\nWhy Use Random Effects?\n\nEach patient has their own baseline blood pressure that varies.\n\nA random intercept accounts for individual differences.\n\nIf hospitals have different treatment protocols, a random hospital effect can be included.\n\n\n. . .\nExample 2\n\nStudy Design: A population-wide study on whether a new influenza vaccine reduces hospitalization rates.\n\nWhy Use Marginal Models?\n\nInterest is in the population-averaged effect of the vaccine, not individual variation.\n\nGeneralized Estimating Equations (GEE) account for correlation in repeated measures without assuming a specific random effect structure."
+    "text": "Choosing Between Models\n\n\n\n\n\n\n\n\nComparison of Random Effects vs. Marginal Models\n\n\nFeature\nRandom Effects Model\nMarginal Model (GEE)\n\n\n\n\nInterpretation\nSubject-specific\nPopulation-averaged\n\n\nHandles Overdispersion\nYes (via latent effects)\nYes (via robust SE)\n\n\nComputational Complexity\nHigher\nLower\n\n\n\n\n\n\n\n\nExample 1\n\nA clinical trial measuring blood pressure at multiple time points for patients in different hospitals.\n\nWhy Use Random Effects?\n\nEach patient has their own baseline blood pressure that varies.\n\nA random intercept accounts for individual differences.\n\nIf hospitals have different treatment protocols, a random hospital effect can be included.\n\n\n\n\nExample 2\n\nStudy Design: A population-wide study on whether a new influenza vaccine reduces hospitalization rates.\n\nWhy Use Marginal Models?\n\nInterest is in the population-averaged effect of the vaccine, not individual variation.\n\nGeneralized Estimating Equations (GEE) account for correlation in repeated measures without assuming a specific random effect structure."
   },
   {
     "objectID": "teaching/MBG/exp_analysis.html#a-class-of-generalized-linear-models",
     "href": "teaching/MBG/exp_analysis.html#a-class-of-generalized-linear-models",
     "title": "Exploratory analysis",
     "section": "A class of generalized linear models",
-    "text": "A class of generalized linear models\nAssumptions:\n. . .\n\n\\(Z_{i}\\) are i.i.d. random variables;\n\n. . .\n\n\\(Y_{i} \\mid Z_i \\sim f(\\cdot)\\) belongs to the exponential family;\n\n. . .\n\n\\(E[Y_{i}\\mid Z_i] = m_i \\mu_{i}\\) and \\(\\text{Var}[Y_{i} \\mid Z_i] = m_i V(\\mu_{i})\\);\n\n. . .\n\n\\(g(\\mu_{i}) = \\eta_i = d_i^\\top \\beta + Z_i\\);\n\n. . .\n\n\\(Y_i \\mid Z_i\\) are mutually independent for \\(i=1,\\dots,n\\)."
+    "text": "A class of generalized linear models\nAssumptions:\n\n\n\\(Z_{i}\\) are i.i.d. random variables;\n\n\n\n\n\\(Y_{i} \\mid Z_i \\sim f(\\cdot)\\) belongs to the exponential family;\n\n\n\n\n\\(E[Y_{i}\\mid Z_i] = m_i \\mu_{i}\\) and \\(\\text{Var}[Y_{i} \\mid Z_i] = m_i V(\\mu_{i})\\);\n\n\n\n\n\\(g(\\mu_{i}) = \\eta_i = d_i^\\top \\beta + Z_i\\);\n\n\n\n\n\\(Y_i \\mid Z_i\\) are mutually independent for \\(i=1,\\dots,n\\)."
   },
   {
     "objectID": "teaching/MBG/exp_analysis.html#parameter-estimation",
     "href": "teaching/MBG/exp_analysis.html#parameter-estimation",
     "title": "Exploratory analysis",
     "section": "Parameter Estimation",
-    "text": "Parameter Estimation\n\nLikelihood function\n\nThe vector of unkown parameters is \\(\\theta=(\\beta, \\sigma^2)\\) \\[\nL(\\theta) = \\prod_{i=1}^n \\int_{-\\infty}^{+\\infty} [Z_i] [Y_i \\mid Z_i] \\: dY_i\n\\]\n. . .\n\nEstimation Method\n\nMaximize the likelihood using the Laplace approximation (glmer in the lme4 package).\n. . .\n\nHypothesis Testing\n\nObtain \\(\\hat{\\theta}\\) (MLE).\nObtain \\(\\hat{\\theta}_{0}\\), the MLE constrained by fixing \\(p\\) values of \\(\\beta\\) to 0.\nCompute the log-likelihood ratio:\n\n\\[\nD = 2(\\log L(\\hat{\\theta}) - \\log L(\\hat{\\theta}_0)) \\sim \\chi^2_{p}\n\\]\n\nP-value: \\(P(D &gt; D_{obs} \\mid H_0)\\)"
+    "text": "Parameter Estimation\n\nLikelihood function\n\nThe vector of unkown parameters is \\(\\theta=(\\beta, \\sigma^2)\\) \\[\nL(\\theta) = \\prod_{i=1}^n \\int_{-\\infty}^{+\\infty} [Z_i] [Y_i \\mid Z_i] \\: dY_i\n\\]\n\n\nEstimation Method\n\nMaximize the likelihood using the Laplace approximation (glmer in the lme4 package).\n\n\n\nHypothesis Testing\n\nObtain \\(\\hat{\\theta}\\) (MLE).\nObtain \\(\\hat{\\theta}_{0}\\), the MLE constrained by fixing \\(p\\) values of \\(\\beta\\) to 0.\nCompute the log-likelihood ratio:\n\n\\[\nD = 2(\\log L(\\hat{\\theta}) - \\log L(\\hat{\\theta}_0)) \\sim \\chi^2_{p}\n\\]\n\nP-value: \\(P(D &gt; D_{obs} \\mid H_0)\\)"
   },
   {
     "objectID": "teaching/MBG/exp_analysis.html#example-riverblindness-in-liberia",
@@ -991,7 +991,7 @@
     "href": "teaching/MBG/exp_analysis.html#coordinate-reference-systems-crs",
     "title": "Exploratory analysis",
     "section": "Coordinate Reference Systems (CRS)",
-    "text": "Coordinate Reference Systems (CRS)\n\n\n\nGeographic vs. Projected CRS\n\n\n\nA CRS defines how spatial data is projected onto the Earth’s surface.\nTwo main types:\n\nGeographic CRS (Latitude/Longitude, e.g., WGS84)\nProjected CRS (e.g., UTM, which uses meters for measurements)"
+    "text": "Coordinate Reference Systems (CRS)\n\nGeographic vs. Projected CRS\nA CRS defines how spatial data is projected onto the Earth’s surface.\nTwo main types:\n\nGeographic CRS (Latitude/Longitude, e.g., WGS84)\nProjected CRS (e.g., UTM, which uses meters for measurements)"
   },
   {
     "objectID": "teaching/MBG/exp_analysis.html#computing-distance",
@@ -1012,6 +1012,6 @@
     "href": "teaching/MBG/exp_analysis.html#mapping-with-covariates-only-.smaller",
     "title": "Exploratory analysis",
     "section": "Mapping with covariates only {.smaller]}",
-    "text": "Mapping with covariates only {.smaller]}\nConsider the following GLMM for the Liberia data on riverblindness. \\[\n\\log\\left\\{\\frac{p(x_i)}{1-p(x_i)}\\right\\} = \\beta_0 + \\beta_1 \\log\\{e(x_i)\\} + Z_i\n\\] where \\(e(x)\\) is the elevation in meters at location \\(x\\) and \\(Z_i \\sim N(0,\\tau^2)\\) i.d.d.\n. . .\nQuestion: How can we use this model for mapping?\n. . .\n glmm_mapping.R"
+    "text": "Mapping with covariates only {.smaller]}\nConsider the following GLMM for the Liberia data on riverblindness. \\[\n\\log\\left\\{\\frac{p(x_i)}{1-p(x_i)}\\right\\} = \\beta_0 + \\beta_1 \\log\\{e(x_i)\\} + Z_i\n\\] where \\(e(x)\\) is the elevation in meters at location \\(x\\) and \\(Z_i \\sim N(0,\\tau^2)\\) i.d.d.\n\nQuestion: How can we use this model for mapping?\n\n\n glmm_mapping.R\n\n\n\n\nClick here to go back to the course page"
   }
 ]
