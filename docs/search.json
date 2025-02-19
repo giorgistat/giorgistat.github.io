@@ -1013,5 +1013,26 @@
     "title": "Exploratory analysis",
     "section": "Mapping with covariates only {.smaller]}",
     "text": "Mapping with covariates only {.smaller]}\nConsider the following GLMM for the Liberia data on riverblindness. \\[\n\\log\\left\\{\\frac{p(x_i)}{1-p(x_i)}\\right\\} = \\beta_0 + \\beta_1 \\log\\{e(x_i)\\} + Z_i\n\\] where \\(e(x)\\) is the elevation in meters at location \\(x\\) and \\(Z_i \\sim N(0,\\tau^2)\\) i.d.d.\n\nQuestion: How can we use this model for mapping?\n\n\n glmm_mapping.R\n\n\n\n\nClick here to go back to the course page"
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#overview-of-topics",
+    "href": "teaching/MBG/estimation.html#overview-of-topics",
+    "title": "Model formulation and parameter estimation",
+    "section": "Overview of topics",
+    "text": "Overview of topics\n\nHow to assess residual spatial correlation\nHow to formulate and fit a geostatistical model\nHow to interpret the results from a model fit"
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#which-residuals-should-we-use-to-assess-spatial-correlation",
+    "href": "teaching/MBG/estimation.html#which-residuals-should-we-use-to-assess-spatial-correlation",
+    "title": "Model formulation and parameter estimation",
+    "section": "Which residuals should we use to assess spatial correlation?",
+    "text": "Which residuals should we use to assess spatial correlation?\n\nPearson Residuals: \\[\\frac{y_i - \\hat{y}_i}{\\sqrt{\\text{Var}(\\hat{y}_i)}}\\]\nDeviance Residuals: \\[\\text{sign}(y_i - \\hat{y}_i) \\times \\sqrt{d_i}\\] where \\(d_i\\) is the deviance contribution of observation \\(i\\).\nRandom Effects Residuals: \\(\\hat{Z}_i\\), i.e. the estimated random effect for each location/household/cluster/village."
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#the-empirical-variogram-using-random-effects-residuals",
+    "href": "teaching/MBG/estimation.html#the-empirical-variogram-using-random-effects-residuals",
+    "title": "Model formulation and parameter estimation",
+    "section": "The Empirical Variogram using Random Effects Residuals",
+    "text": "The Empirical Variogram using Random Effects Residuals\n\nThe empirical variogram is defined as: \\[\n\\gamma(D_{[a,b]}) = \\frac{1}{2|D_{[a,b]}|} \\sum_{(i,j) \\in D_{[a,b]}} (\\hat{Z}_i - \\hat{Z}_j)^2\n\\] where:\n\n\\(D_{[a,b]}\\) is a class of distance with lower limit \\(a\\) and upper limit \\(b\\);\n\\(|D_{[a,b]}|\\) is the number of pairs of observations whose locations ar at a distance between \\(a\\) and \\(b\\).\n\n\n\n\n\n\nClick here to go back to the course page"
   }
 ]

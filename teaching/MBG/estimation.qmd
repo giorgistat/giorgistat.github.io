@@ -1,0 +1,49 @@
+---
+title: "Model formulation and parameter estimation"
+subtitle: "Model-based Geostatistics for Global Public Health"  
+author: "Emanuele Giorgi"  
+institute: "Lancaster University" 
+execute:
+  freeze: true
+date: ""  
+format:
+  revealjs:
+    theme: solarized
+    transition: fade
+    slide-number: true
+    chalkboard: true
+    logo: "Images/clogo.png"
+    footer: "[Click here to go back to the course page](../mbg.qmd)"
+---
+
+## Overview of topics
+
+-   How to assess residual spatial correlation
+-   How to formulate and fit a geostatistical model
+-   How to interpret the results from a model fit
+
+---
+
+## Which residuals should we use to assess spatial correlation? {.smaller}
+
+
+- **Pearson Residuals**: $$\frac{y_i - \hat{y}_i}{\sqrt{\text{Var}(\hat{y}_i)}}$$
+
+- **Deviance Residuals**: $$\text{sign}(y_i - \hat{y}_i) \times \sqrt{d_i}$$
+where $d_i$ is the deviance contribution of observation $i$.
+
+- **Random Effects Residuals**: $\hat{Z}_i$, i.e. the estimated random effect for each location/household/cluster/village.
+
+
+---
+
+## The Empirical Variogram using Random Effects Residuals {.smaller}
+
+
+- The empirical variogram is defined as:
+$$
+  \gamma(D_{[a,b]}) = \frac{1}{2|D_{[a,b]}|} \sum_{(i,j) \in D_{[a,b]}} (\hat{Z}_i - \hat{Z}_j)^2
+$$
+  where:
+  - $D_{[a,b]}$ is a class of distance with lower limit $a$ and upper limit $b$;
+  - $|D_{[a,b]}|$ is the number of pairs of observations whose locations ar at a distance between $a$ and $b$.

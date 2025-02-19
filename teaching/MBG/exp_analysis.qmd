@@ -16,17 +16,18 @@ format:
     footer: "[Click here to go back to the course page](../mbg.qmd)"
 ---
 
-## Overview
+## Overview of topics
 
--   Exploring relationships
--   Exploring overdispersion
--   Exploring spatial correlation
+-   How to explore relationships with count data
+-   How to use a non-spatial model for mapping
+-   How to handle spatial data in R
+
 
 ## Exploring relationships
 
--   How to explore relationships with count data?
--   How to deal with binary data?
+-   How to explore relationships with count data (binary and aggregated counts)?
 -   How to model non-linear relationships?
+-   How to use a non-spatial model for mapping?
 
 ![](Images/rlogo.png){width="10%"} [explore_associations.R](R%20scripts/explore_associations.R)
 
