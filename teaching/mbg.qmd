@@ -8,16 +8,18 @@ This course provides a comprehensive introduction to **Model-based Geostatistics
 
 ------------------------------------------------------------------------
 
-## Course Content
-
 ## R packages 
 
 -   *Essential*: `RiskMap`, `rgeoboundaries`, `ggplot2`, `sf`, `terra`, `elevats`
 -   *Desireable*: `shiny`
 
-Install RiskMap in R by running `devtools::install_github("giorgilancs/RiskMap")`
+Install `RiskMap` in R by running `devtools::install_github("giorgilancs/RiskMap")`
 
-Install rgeoboundaries in R by running `remotes::install_github("wmgeolab/rgeoboundaries")`
+Install `rgeoboundaries` in R by running `remotes::install_github("wmgeolab/rgeoboundaries")`
+
+
+## Course Content
+
 
 ### 1. Introduction
 
