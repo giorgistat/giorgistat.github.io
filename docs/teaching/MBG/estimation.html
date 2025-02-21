@@ -351,7 +351,7 @@ Emanuele Giorgi
 <li>How to interpret the results from a model fit</li>
 </ul>
 </section>
-<section id="which-residuals-should-we-use-to-assess-spatial-correlation" class="slide level2 smaller">
+<section id="which-residuals-should-we-use-to-assess-spatial-correlation" class="slide level2 smaller scrollable">
 <h2>Which residuals should we use to assess spatial correlation?</h2>
 <ul>
 <li><p><strong>Pearson Residuals</strong>: <span class="math display">\[\frac{y_i - \hat{y}_i}{\sqrt{\text{Var}(\hat{y}_i)}}\]</span></p></li>
@@ -359,7 +359,7 @@ Emanuele Giorgi
 <li><p><strong>Random Effects Residuals</strong>: <span class="math inline">\(\hat{Z}_i\)</span>, i.e.&nbsp;the estimated random effect for each location/household/cluster/village.</p></li>
 </ul>
 </section>
-<section id="the-empirical-variogram-using-random-effects-residuals" class="slide level2 smaller">
+<section id="the-empirical-variogram-using-random-effects-residuals" class="slide level2 smaller scrollable">
 <h2>The Empirical Variogram using Random Effects Residuals</h2>
 <ul>
 <li>The empirical variogram is defined as: <span class="math display">\[
@@ -370,11 +370,119 @@ Emanuele Giorgi
 <li><span class="math inline">\(|D_{[a,b]}|\)</span> is the number of pairs of observations whose locations ar at a distance between <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>.</li>
 </ul></li>
 </ul>
+<div class="fragment">
+<p><img data-src="Images/variogram.png"></p>
+</div>
+<div class="fragment">
+<p><img data-src="Images/rlogo.png" style="width:10.0%"> <a href="R scripts/liberia_variog.R">liberia_variog.R</a></p>
+</div>
+</section>
+<section id="stationary-and-isotropic-gaussian-processes" class="slide level2">
+<h2>Stationary and Isotropic Gaussian Processes</h2>
+<ul>
+<li>A <strong>Gaussian Process (GP)</strong> is a collection of random variables, any finite subset of which follows a multivariate normal distribution.</li>
+<li>A GP is <strong>stationary</strong> if its statistical properties do not change with location shifts.</li>
+<li>It is <strong>isotropic</strong> if its properties do not change with locations rotations.</li>
+<li>We denote a GP as <span class="math inline">\(S(x)\)</span>, where <span class="math inline">\(x\)</span> represents location.</li>
+</ul>
+</section>
+<section id="the-matérn-process" class="slide level2 smaller">
+<h2>The Matérn Process</h2>
+<ul>
+<li>The <strong>Matérn covariance function</strong> is the most widely used in geostatistics.</li>
+<li>It is controlled by three parameters:
+<ul>
+<li><strong>Variance</strong> (<span class="math inline">\(\sigma^2\)</span>) – controls process magnitude</li>
+<li><strong>Smoothness</strong> (<span class="math inline">\(\kappa\)</span>) – determines differentiability</li>
+<li><strong>Scale parameter</strong> (<span class="math inline">\(\phi\)</span>) – governs spatial correlation decay</li>
+</ul></li>
+<li>The covariance function is given by: <span class="math display">\[
+C(h) = \sigma^2 \frac{2^{1-\kappa}}{\Gamma(\kappa)} \left( \frac{h}{\phi} \right)^\kappa K_\kappa \left( \frac{h}{\phi} \right), h = ||x-x'||
+\]</span> where <span class="math inline">\(K_\kappa\)</span> is the modified Bessel function of the second kind.</li>
+</ul>
+<p><img data-src="Images/rlogo.png" style="width:10.0%"> <a href="R scripts/matern_simulator.R">matern_simulator.R</a></p>
+</section>
+<section id="theoretical-variogram" class="slide level2 smallar scrollable">
+<h2>Theoretical Variogram</h2>
+<ul>
+<li>The variogram measures spatial dependence: <span class="math display">\[
+\gamma(h) = \frac{1}{2} \mathbb{E} \left[\left\{S(x) - S(x')\right\}^2\right]
+\]</span></li>
+<li>For the Matérn process, it is derived from its covariance function <span class="math display">\[
+\gamma(h) = \sigma^2 \left( 1 - C(h) \right), h = ||x-x'||
+\]</span></li>
+</ul>
+<div class="fragment">
+<center>
+<img data-src="Images/theo_variog.png" style="width:80.0%">
+</center>
+</div>
+</section>
+<section id="theoretical-variogram-with-noise" class="slide level2 smallar scrollable">
+<h2>Theoretical Variogram with Noise</h2>
+<ul>
+<li><p>The variogram measures spatial dependence: <span class="math display">\[
+\gamma(h) = \frac{1}{2} \mathbb{E} \left[\left\{S(x) + Z(x) - S(x') - Z(x')\right\}^2\right]
+\]</span></p></li>
+<li><p>Where <span class="math inline">\(Z(x)\)</span> is Gaussian noise with mean 0 and variance <span class="math inline">\(\tau^2\)</span></p></li>
+<li><p>The expression of the variogram changes to <span class="math display">\[
+\gamma(h) = \tau^2 + \sigma^2 \left( 1 - C(h) \right), h = ||x-x'||
+\]</span> . . .</p></li>
+</ul>
+<center>
+<img data-src="Images/theo_variog_withnoise.png" style="width:80.0%">
+</center>
+</section>
+<section id="the-linear-geostatistical-model" class="slide level2 smaller scrollable">
+<h2>The linear geostatistical model</h2>
+<ul>
+<li>The general expression is</li>
+</ul>
+<p><span class="math display">\[
+Y_i = d(x_i)\top \beta + S(x_i) + U_i
+\]</span></p>
+<p>where: <span class="math inline">\(d(x_i)\)</span> are covariates, <span class="math inline">\(S(x_i)\)</span> is a stationary and isotropic spatial Gaussian process and <span class="math inline">\(U_i\)</span> is Gaussian noise.</p>
+<div class="fragment">
+<ul>
+<li>Denote <span class="math inline">\(S = (S(x_1), \ldots, S(x_n))\)</span>.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Assuming <span class="math inline">\(R(\phi)\)</span> to be the correlation matrix of <span class="math inline">\(S\)</span>, and <span class="math inline">\(U_i \sim \text{N}(0, \tau^2)\)</span>, the vector of observations <span class="math inline">\(\mathbf{Y} = (Y_1, \dots, Y_n)^T\)</span> follows a multivariate normal distribution:</li>
+</ul>
+<p><span class="math display">\[
+\mathbf{Y} \sim \text{MVN}\left(D\beta, \Sigma\right)
+\]</span></p>
+<p>where the covariance matrix is given by</p>
+<p><span class="math display">\[
+\Sigma = \sigma^2 R(\phi) + \tau^2 I_n.
+\]</span></p>
+</div>
+</section>
+<section id="parameter-estimation-via-likelihood" class="slide level2">
+<h2>Parameter Estimation via Likelihood</h2>
+<ul>
+<li>The parameters <span class="math inline">\(\theta = (\mu, \sigma^2, \tau^2, \phi)\)</span> are estimated by maximizing the log-likelihood function:</li>
+</ul>
+<p><span class="math display">\[
+\ell(\theta) = -\frac{1}{2} \left[ n \log(2\pi) + \log |\Sigma| + (\mathbf{Y} - D\beta)^T \Sigma^{-1} (\mathbf{Y} - D\beta) \right].
+\]</span></p>
+<ul>
+<li>Optimization is typically performed using numerical methods such as gradient-based algorithms or derivative-free approaches like the Nelder-Mead method.</li>
+</ul>
+</section>
+<section id="using-moss-to-monitor-air-pollution" class="slide level2">
+<h2>Using moss to monitor air pollution</h2>
+<iframe data-external="1" src="https://www.youtube.com/embed/TtFC2cB5h2E?si=ARXK2AnWVZirDhAB" width="800" height="400" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<div class="fragment">
+<p><img data-src="Images/rlogo.png" style="width:10.0%"> <a href="R scripts/galicia_fit.R">galicia_fit.R</a></p>
 
 <div class="quarto-auto-generated-content">
 <p><img src="Images/clogo.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p><a href="../../teaching/mbg.html">Click here to go back to the course page</a></p>
+</div>
 </div>
 </div>
 </section>

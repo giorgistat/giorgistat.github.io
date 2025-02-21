@@ -22,28 +22,142 @@ format:
 -   How to formulate and fit a geostatistical model
 -   How to interpret the results from a model fit
 
+------------------------------------------------------------------------
+
+## Which residuals should we use to assess spatial correlation? {.smaller .scrollable}
+
+-   **Pearson Residuals**: $$\frac{y_i - \hat{y}_i}{\sqrt{\text{Var}(\hat{y}_i)}}$$
+
+-   **Deviance Residuals**: $$\text{sign}(y_i - \hat{y}_i) \times \sqrt{d_i}$$ where $d_i$ is the deviance contribution of observation $i$.
+
+-   **Random Effects Residuals**: $\hat{Z}_i$, i.e. the estimated random effect for each location/household/cluster/village.
+
+------------------------------------------------------------------------
+
+## The Empirical Variogram using Random Effects Residuals {.smaller .scrollable}
+
+-   The empirical variogram is defined as: $$
+    \gamma(D_{[a,b]}) = \frac{1}{2|D_{[a,b]}|} \sum_{(i,j) \in D_{[a,b]}} (\hat{Z}_i - \hat{Z}_j)^2
+    $$ where:
+    -   $D_{[a,b]}$ is a class of distance with lower limit $a$ and upper limit $b$;
+    -   $|D_{[a,b]}|$ is the number of pairs of observations whose locations ar at a distance between $a$ and $b$.
+
+. . .
+
+![](Images/variogram.png)
+
+. . .
+
+![](Images/rlogo.png){width="10%"} [liberia_variog.R](R%20scripts/liberia_variog.R)
+
+. . .
+ 
+## Stationary and Isotropic Gaussian Processes 
+
+- A **Gaussian Process (GP)** is a collection of random variables, any finite subset of which follows a multivariate normal distribution.
+- A GP is **stationary** if its statistical properties do not change with location shifts.
+- It is **isotropic** if its properties do not change with locations rotations. 
+- We denote a GP as $S(x)$, where $x$ represents location.
+
+## The Matérn Process {.smaller}
+
+- The **Matérn covariance function** is the most widely used in  geostatistics.
+- It is controlled by three parameters:
+  - **Variance** ($\sigma^2$) – controls process magnitude
+  - **Smoothness** ($\kappa$) – determines differentiability
+  - **Scale parameter** ($\phi$) – governs spatial correlation decay
+- The covariance function is given by:
+$$
+  C(h) = \sigma^2 \frac{2^{1-\kappa}}{\Gamma(\kappa)} \left( \frac{h}{\phi} \right)^\kappa K_\kappa \left( \frac{h}{\phi} \right), h = ||x-x'||
+$$
+  where $K_\kappa$ is the modified Bessel function of the second kind.
+
+![](Images/rlogo.png){width="10%"} [matern_simulator.R](R%20scripts/matern_simulator.R)
+
 ---
 
-## Which residuals should we use to assess spatial correlation? {.smaller}
+## Theoretical Variogram {.smallar .scrollable}
 
+- The variogram measures spatial dependence:
+$$
+  \gamma(h) = \frac{1}{2} \mathbb{E} \left[\left\{S(x) - S(x')\right\}^2\right]
+$$
+- For the Matérn process, it is derived from its covariance function
+$$
+  \gamma(h) = \sigma^2 \left( 1 - C(h) \right), h = ||x-x'||
+$$
 
-- **Pearson Residuals**: $$\frac{y_i - \hat{y}_i}{\sqrt{\text{Var}(\hat{y}_i)}}$$
+. . .
 
-- **Deviance Residuals**: $$\text{sign}(y_i - \hat{y}_i) \times \sqrt{d_i}$$
-where $d_i$ is the deviance contribution of observation $i$.
-
-- **Random Effects Residuals**: $\hat{Z}_i$, i.e. the estimated random effect for each location/household/cluster/village.
-
+<center>
+![](Images/theo_variog.png){width=80%}
+</center>
 
 ---
 
-## The Empirical Variogram using Random Effects Residuals {.smaller}
+## Theoretical Variogram with Noise {.smallar .scrollable}
+
+- The variogram measures spatial dependence:
+$$
+  \gamma(h) = \frac{1}{2} \mathbb{E} \left[\left\{S(x) + Z(x) - S(x') - Z(x')\right\}^2\right]
+$$
+- Where $Z(x)$ is Gaussian noise with mean 0 and variance $\tau^2$
+
+- The expression of the variogram changes to
+$$
+  \gamma(h) = \tau^2 + \sigma^2 \left( 1 - C(h) \right), h = ||x-x'||
+$$
+. . .
+
+<center>
+![](Images/theo_variog_withnoise.png){width=80%}
+</center>
 
 
-- The empirical variogram is defined as:
+## The linear geostatistical model {.smaller .scrollable}
+
+-   The general expression is 
+
 $$
-  \gamma(D_{[a,b]}) = \frac{1}{2|D_{[a,b]}|} \sum_{(i,j) \in D_{[a,b]}} (\hat{Z}_i - \hat{Z}_j)^2
+Y_i = d(x_i)\top \beta + S(x_i) + U_i
 $$
-  where:
-  - $D_{[a,b]}$ is a class of distance with lower limit $a$ and upper limit $b$;
-  - $|D_{[a,b]}|$ is the number of pairs of observations whose locations ar at a distance between $a$ and $b$.
+
+where: $d(x_i)$ are covariates, $S(x_i)$ is a stationary and isotropic spatial Gaussian process and $U_i$ is Gaussian noise.
+
+. . .
+
+-   Denote $S = (S(x_1), \ldots, S(x_n))$.
+
+. . .
+
+
+-   Assuming $R(\phi)$ to be the correlation matrix of $S$, and $U_i \sim \text{N}(0, \tau^2)$, the vector of observations $\mathbf{Y} = (Y_1, \dots, Y_n)^T$ follows a multivariate normal distribution:
+
+$$
+\mathbf{Y} \sim \text{MVN}\left(D\beta, \Sigma\right)
+$$
+
+where the covariance matrix is given by 
+
+$$
+\Sigma = \sigma^2 R(\phi) + \tau^2 I_n.
+$$
+
+## Parameter Estimation via Likelihood
+
+-   The parameters $\theta = (\mu, \sigma^2, \tau^2, \phi)$ are estimated by maximizing the log-likelihood function:
+
+$$
+\ell(\theta) = -\frac{1}{2} \left[ n \log(2\pi) + \log |\Sigma| + (\mathbf{Y} - D\beta)^T \Sigma^{-1} (\mathbf{Y} - D\beta) \right].
+$$
+
+-   Optimization is typically performed using numerical methods such as gradient-based algorithms or derivative-free approaches like the Nelder-Mead method.
+
+## Using moss to monitor air pollution
+
+{{< video https://www.youtube.com/embed/TtFC2cB5h2E?si=ARXK2AnWVZirDhAB width="800" height="400" >}}
+
+. . .
+
+![](Images/rlogo.png){width="10%"} [galicia_fit.R](R%20scripts/galicia_fit.R)
+

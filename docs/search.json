@@ -753,7 +753,7 @@
     "href": "teaching/mbg.html#course-content",
     "title": "Model-based Geostatistics",
     "section": "Course Content",
-    "text": "Course Content\n\n1. Introduction\nAn overview of geostatistical problems in the context of epidemiological studies.\n\nSlides and R scripts\n\n\n\n2. Exploratory Analysis\nExploring regression relationships, overdispersion and spatial correlation.\n\nSlides and R scripts\nExercise and raster files for the analysis\n\n\n\n3. Model Formulation and Parameter Estimation\nHow to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.\n\nSlides and R scripts: Coming soon (under development)\n\n\n\n4. Geostatistical prediction\nHow to predict health outcomes using geostatistical models, at pixel- and areal-level.\n\nSlides and R scripts: Coming soon (under development)\n\n\n\n5. Validation of model performance\nAssessing the model performance using cross-validation and simulation-based approaches.\n\nSlides and R scripts: Coming soon (under development)"
+    "text": "Course Content"
   },
   {
     "objectID": "teaching/mbg.html#learning-outcomes",
@@ -921,7 +921,7 @@
     "href": "teaching/MBG/exp_analysis.html#exploring-relationships",
     "title": "Exploratory analysis",
     "section": "Exploring relationships",
-    "text": "Exploring relationships\n\nHow to explore relationships with count data?\nHow to deal with binary data?\nHow to model non-linear relationships?\n\n explore_associations.R"
+    "text": "Exploring relationships\n\nHow to explore relationships with count data (binary and aggregated counts)?\nHow to model non-linear relationships?\nHow to use a non-spatial model for mapping?\n\n explore_associations.R"
   },
   {
     "objectID": "teaching/MBG/exp_analysis.html#overdispersion-in-count-data",
@@ -1033,6 +1033,111 @@
     "href": "teaching/MBG/estimation.html#the-empirical-variogram-using-random-effects-residuals",
     "title": "Model formulation and parameter estimation",
     "section": "The Empirical Variogram using Random Effects Residuals",
-    "text": "The Empirical Variogram using Random Effects Residuals\n\nThe empirical variogram is defined as: \\[\n\\gamma(D_{[a,b]}) = \\frac{1}{2|D_{[a,b]}|} \\sum_{(i,j) \\in D_{[a,b]}} (\\hat{Z}_i - \\hat{Z}_j)^2\n\\] where:\n\n\\(D_{[a,b]}\\) is a class of distance with lower limit \\(a\\) and upper limit \\(b\\);\n\\(|D_{[a,b]}|\\) is the number of pairs of observations whose locations ar at a distance between \\(a\\) and \\(b\\).\n\n\n\n\n\n\nClick here to go back to the course page"
+    "text": "The Empirical Variogram using Random Effects Residuals\n\nThe empirical variogram is defined as: \\[\n\\gamma(D_{[a,b]}) = \\frac{1}{2|D_{[a,b]}|} \\sum_{(i,j) \\in D_{[a,b]}} (\\hat{Z}_i - \\hat{Z}_j)^2\n\\] where:\n\n\\(D_{[a,b]}\\) is a class of distance with lower limit \\(a\\) and upper limit \\(b\\);\n\\(|D_{[a,b]}|\\) is the number of pairs of observations whose locations ar at a distance between \\(a\\) and \\(b\\).\n\n\n\n\n\n\n liberia_variog.R"
+  },
+  {
+    "objectID": "talks/Birmingham (20 Feb 2025).html#future-methodological-directions",
+    "href": "talks/Birmingham (20 Feb 2025).html#future-methodological-directions",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "Future methodological directions",
+    "text": "Future methodological directions\n\nUsing multivariate geostatistical models to analyse serological data from multiple diseases\nIncorporating mathematical models for the impact of interventions into geostatistical models\nDeveloping more robust methods for the validation of geostatistical models for counts data.\nDealing with spatial and temporal misalignment in repeated cross-sectional survey data"
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#the-matérn-process",
+    "href": "teaching/MBG/estimation.html#the-matérn-process",
+    "title": "Model formulation and parameter estimation",
+    "section": "The Matérn Process",
+    "text": "The Matérn Process\n\nThe Matérn covariance function is the most widely used in geostatistics.\nIt is controlled by three parameters:\n\nVariance (\\(\\sigma^2\\)) – controls process magnitude\nSmoothness (\\(\\kappa\\)) – determines differentiability\nScale parameter (\\(\\phi\\)) – governs spatial correlation decay\n\nThe covariance function is given by: \\[\nC(h) = \\sigma^2 \\frac{2^{1-\\kappa}}{\\Gamma(\\kappa)} \\left( \\frac{h}{\\phi} \\right)^\\kappa K_\\kappa \\left( \\frac{h}{\\phi} \\right), h = ||x-x'||\n\\] where \\(K_\\kappa\\) is the modified Bessel function of the second kind.\n\n matern_simulator.R"
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#stationary-and-isotropic-gaussian-processes",
+    "href": "teaching/MBG/estimation.html#stationary-and-isotropic-gaussian-processes",
+    "title": "Model formulation and parameter estimation",
+    "section": "Stationary and Isotropic Gaussian Processes",
+    "text": "Stationary and Isotropic Gaussian Processes\n\nA Gaussian Process (GP) is a collection of random variables, any finite subset of which follows a multivariate normal distribution.\nA GP is stationary if its statistical properties do not change with location shifts.\nIt is isotropic if its properties do not change with locations rotations.\nWe denote a GP as \\(S(x)\\), where \\(x\\) represents location."
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#interactive-r-code-for-matérn-process",
+    "href": "teaching/MBG/estimation.html#interactive-r-code-for-matérn-process",
+    "title": "Model formulation and parameter estimation",
+    "section": "Interactive R Code for Matérn Process",
+    "text": "Interactive R Code for Matérn Process"
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#simulating-a-spatial-field",
+    "href": "teaching/MBG/estimation.html#simulating-a-spatial-field",
+    "title": "Model formulation and parameter estimation",
+    "section": "Simulating a Spatial Field",
+    "text": "Simulating a Spatial Field"
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#theoretical-variogram",
+    "href": "teaching/MBG/estimation.html#theoretical-variogram",
+    "title": "Model formulation and parameter estimation",
+    "section": "Theoretical Variogram",
+    "text": "Theoretical Variogram\n\nThe variogram measures spatial dependence: \\[\n\\gamma(h) = \\frac{1}{2} \\mathbb{E} \\left[\\left\\{S(x) - S(x')\\right\\}^2\\right]\n\\]\nFor the Matérn process, it is derived from its covariance function \\[\n\\gamma(h) = \\sigma^2 \\left( 1 - C(h) \\right), h = ||x-x'||\n\\]"
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#simulating-a-matern-process",
+    "href": "teaching/MBG/estimation.html#simulating-a-matern-process",
+    "title": "Model formulation and parameter estimation",
+    "section": "Simulating a Matern Process",
+    "text": "Simulating a Matern Process\nlibrary(ggplot2)\nlibrary(fields)\n\n# Function to generate Matérn correlation\nmatern_corr &lt;- function(h, nu, rho) {\n  if (h == 0) return(1)\n  factor &lt;- (2^(1 - nu)) / gamma(nu)\n  scaled_h &lt;- h / rho\n  factor * (scaled_h^nu) * besselK(scaled_h, nu)\n}\n\n# User-defined parameters\nsigma2 &lt;- 1  # Variance\nnu &lt;- 1.5  # Smoothness\nrho &lt;- 0.5  # Scale parameter\n\n# Distance grid\nh_vals &lt;- seq(0, 3, length.out = 100)\ncorr_vals &lt;- sapply(h_vals, matern_corr, nu = nu, rho = rho)\n\n# Plot correlation function\nggplot(data.frame(h = h_vals, corr = corr_vals), aes(x = h, y = corr)) +\n  geom_line() +\n  labs(title = \"Matérn Correlation Function\", x = \"Distance h\", y = \"Correlation\")\n\n# Simulating a Spatial Field\nset.seed(42)\ngrid_size &lt;- 30\nx &lt;- seq(0, 1, length.out = grid_size)\ny &lt;- seq(0, 1, length.out = grid_size)\ngrid &lt;- expand.grid(x = x, y = y)\n\n# Generate a Matérn GP field using fields package\nsim_field &lt;- spatialProcess(grid, rnorm(nrow(grid), mean = 0, sd = sqrt(sigma2)))\n\nggplot(grid, aes(x = x, y = y, fill = sim_field$fitted.values)) +\n  geom_tile() +\n  scale_fill_viridis_c() +\n  theme_minimal() +\n  labs(title = \"Simulated Matérn GP Surface\", fill = \"Value\")"
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#theoretical-variogram-with-noise",
+    "href": "teaching/MBG/estimation.html#theoretical-variogram-with-noise",
+    "title": "Model formulation and parameter estimation",
+    "section": "Theoretical Variogram with Noise",
+    "text": "Theoretical Variogram with Noise\n\nThe variogram measures spatial dependence: \\[\n\\gamma(h) = \\frac{1}{2} \\mathbb{E} \\left[\\left\\{S(x) + Z(x) - S(x') - Z(x')\\right\\}^2\\right]\n\\]\nWhere \\(Z(x)\\) is Gaussian noise with mean 0 and variance \\(\\tau^2\\)\nThe expression of the variogram changes to \\[\n\\gamma(h) = \\tau^2 + \\sigma^2 \\left( 1 - C(h) \\right), h = ||x-x'||\n\\] . . ."
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#theoretical-variogram-with-noise-1",
+    "href": "teaching/MBG/estimation.html#theoretical-variogram-with-noise-1",
+    "title": "Model formulation and parameter estimation",
+    "section": "Theoretical Variogram with Noise",
+    "text": "Theoretical Variogram with Noise\n\nThe variogram measures spatial dependence: \\[\n\\gamma(h) = \\frac{1}{2} \\mathbb{E} \\left[\\left\\{S(x) + Z(x) - S(x') - Z(x')\\right\\}^2\\right]\n\\]\nWhere \\(Z(x)\\) is Gaussian noise with mean 0 and variance \\(\\tau^2\\)\nThe expression of the variogram changes to \\[\n\\gamma(h) = \\tau^2 + \\sigma^2 \\left( 1 - C(h) \\right), h = ||x-x'||\n\\] . . ."
+  },
+  {
+    "objectID": "teaching/MBG/exp_analysis.html#overview-of-topics",
+    "href": "teaching/MBG/exp_analysis.html#overview-of-topics",
+    "title": "Exploratory analysis",
+    "section": "Overview of topics",
+    "text": "Overview of topics\n\nHow to explore relationships with count data\nHow to use a non-spatial model for mapping\nHow to handle spatial data in R"
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#example-lead-concentration-in-moss-samples-in-galicia",
+    "href": "teaching/MBG/estimation.html#example-lead-concentration-in-moss-samples-in-galicia",
+    "title": "Model formulation and parameter estimation",
+    "section": "Example: Lead concentration in moss samples in Galicia",
+    "text": "Example: Lead concentration in moss samples in Galicia"
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#the-linear-geostatistical-model",
+    "href": "teaching/MBG/estimation.html#the-linear-geostatistical-model",
+    "title": "Model formulation and parameter estimation",
+    "section": "The linear geostatistical model",
+    "text": "The linear geostatistical model\n\nThe general expression is\n\n\\[\nY_i = d(x_i)\\top \\beta + S(x_i) + U_i\n\\]\nwhere: \\(d(x_i)\\) are covariates, \\(S(x_i)\\) is a stationary and isotropic spatial Gaussian process and \\(U_i\\) is Gaussian noise.\n\n\nDenote \\(S = (S(x_1), \\ldots, S(x_n))\\).\n\n\n\n\nAssuming \\(R(\\phi)\\) to be the correlation matrix of \\(S\\), and \\(U_i \\sim \\text{N}(0, \\tau^2)\\), the vector of observations \\(\\mathbf{Y} = (Y_1, \\dots, Y_n)^T\\) follows a multivariate normal distribution:\n\n\\[\n\\mathbf{Y} \\sim \\text{MVN}\\left(D\\beta, \\Sigma\\right)\n\\]\nwhere the covariance matrix is given by\n\\[\n\\Sigma = \\sigma^2 R(\\phi) + \\tau^2 I_n.\n\\]"
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#parameter-estimation-via-likelihood",
+    "href": "teaching/MBG/estimation.html#parameter-estimation-via-likelihood",
+    "title": "Model formulation and parameter estimation",
+    "section": "Parameter Estimation via Likelihood",
+    "text": "Parameter Estimation via Likelihood\n\nThe parameters \\(\\theta = (\\mu, \\sigma^2, \\tau^2, \\phi)\\) are estimated by maximizing the log-likelihood function:\n\n\\[\n\\ell(\\theta) = -\\frac{1}{2} \\left[ n \\log(2\\pi) + \\log |\\Sigma| + (\\mathbf{Y} - D\\beta)^T \\Sigma^{-1} (\\mathbf{Y} - D\\beta) \\right].\n\\]\n\nOptimization is typically performed using numerical methods such as gradient-based algorithms or derivative-free approaches like the Nelder-Mead method."
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#using-moss-to-monitor-air-pollution",
+    "href": "teaching/MBG/estimation.html#using-moss-to-monitor-air-pollution",
+    "title": "Model formulation and parameter estimation",
+    "section": "Using moss to monitor air pollution",
+    "text": "Using moss to monitor air pollution\n\n\n galicia_fit.R\n\n\n\n\nClick here to go back to the course page"
+  },
+  {
+    "objectID": "teaching/mbg.html#r-packages",
+    "href": "teaching/mbg.html#r-packages",
+    "title": "Model-based Geostatistics",
+    "section": "R packages",
+    "text": "R packages\n\nEssential: RiskMap, rgeoboundaries, ggplot2, sf, terra, elevats\nDesireable: shiny\n\nInstall RiskMap in R by running devtools::install_github(\"giorgilancs/RiskMap\")\nInstall rgeoboundaries in R by running remotes::install_github(\"wmgeolab/rgeoboundaries\")\n\n1. Introduction\nAn overview of geostatistical problems in the context of epidemiological studies.\n\nSlides and R scripts\n\n\n\n2. Exploratory Analysis\nExploring regression relationships, overdispersion and spatial correlation.\n\nSlides and R scripts\nExercise and raster files for the analysis\n\n\n\n3. Model Formulation and Parameter Estimation\nHow to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.\n\nSlides and R scripts\n\n\n\n4. Geostatistical prediction\nHow to predict health outcomes using geostatistical models, at pixel- and areal-level.\n\nSlides and R scripts: Coming soon (under development)\n\n\n\n5. Validation of model performance\nAssessing the model performance using cross-validation and simulation-based approaches.\n\nSlides and R scripts: Coming soon (under development)"
   }
 ]

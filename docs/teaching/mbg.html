@@ -147,7 +147,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#course-content" id="toc-course-content" class="nav-link active" data-scroll-target="#course-content">Course Content</a>
+  <li><a href="#course-content" id="toc-course-content" class="nav-link active" data-scroll-target="#course-content">Course Content</a></li>
+  <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages">R packages</a>
   <ul class="collapse">
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">1. Introduction</a></li>
   <li><a href="#exploratory-analysis" id="toc-exploratory-analysis" class="nav-link" data-scroll-target="#exploratory-analysis">2. Exploratory Analysis</a></li>
@@ -193,6 +194,15 @@ ul.task-list li input[type="checkbox"] {
 <hr>
 <section id="course-content" class="level2">
 <h2 class="anchored" data-anchor-id="course-content">Course Content</h2>
+</section>
+<section id="r-packages" class="level2">
+<h2 class="anchored" data-anchor-id="r-packages">R packages</h2>
+<ul>
+<li><em>Essential</em>: <code>RiskMap</code>, <code>rgeoboundaries</code>, <code>ggplot2</code>, <code>sf</code>, <code>terra</code>, <code>elevats</code></li>
+<li><em>Desireable</em>: <code>shiny</code></li>
+</ul>
+<p>Install RiskMap in R by running <code>devtools::install_github("giorgilancs/RiskMap")</code></p>
+<p>Install rgeoboundaries in R by running <code>remotes::install_github("wmgeolab/rgeoboundaries")</code></p>
 <section id="introduction" class="level3">
 <h3 class="anchored" data-anchor-id="introduction">1. Introduction</h3>
 <p>An overview of geostatistical problems in the context of epidemiological studies.</p>
@@ -212,7 +222,7 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="model-formulation-and-parameter-estimation">3. Model Formulation and Parameter Estimation</h3>
 <p>How to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.</p>
 <ul>
-<li><strong>Slides and R scripts</strong>: <em>Coming soon</em> (under development)</li>
+<li><a href="../teaching/MBG/estimation.html">Slides and R scripts</a></li>
 </ul>
 </section>
 <section id="geostatistical-prediction" class="level3">
