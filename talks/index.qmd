@@ -2,7 +2,7 @@
 title: "Talks"
 ---
 
-This page includes slides of presentations given at seminars and conferences since February 2025.
+This page includes slides of selected presentations given at seminars and conferences since February 2025.
 
 ![](figures/semiar.jpg){width="40%"}
 
