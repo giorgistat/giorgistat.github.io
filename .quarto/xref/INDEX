@@ -73,5 +73,8 @@
   },
   "teaching/MBG/estimation.qmd": {
     "estimation.html": "f0f3c5b2"
+  },
+  "teaching/MBG/Exercises/Exercise 2.Rmd": {
+    "Exercise 2.html": "6d811a3e"
   }
 }

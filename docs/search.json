@@ -753,7 +753,7 @@
     "href": "teaching/mbg.html#course-content",
     "title": "Model-based Geostatistics",
     "section": "Course Content",
-    "text": "Course Content\n\n1. Introduction\nAn overview of geostatistical problems in the context of epidemiological studies.\n\nSlides and R scripts\n\n\n\n2. Exploratory Analysis\nExploring regression relationships, overdispersion and spatial correlation.\n\nSlides and R scripts\nExercise and raster files for the analysis\n\n\n\n3. Model Formulation and Parameter Estimation\nHow to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.\n\nSlides and R scripts\n\n\n\n4. Geostatistical prediction\nHow to predict health outcomes using geostatistical models, at pixel- and areal-level.\n\nSlides and R scripts: Coming soon (under development)\n\n\n\n5. Validation of model performance\nAssessing the model performance using cross-validation and simulation-based approaches.\n\nSlides and R scripts: Coming soon (under development)"
+    "text": "Course Content\n\n1. Introduction\nAn overview of geostatistical problems in the context of epidemiological studies.\n\nSlides and R scripts\n\n\n\n2. Exploratory Analysis\nExploring regression relationships, overdispersion and spatial correlation.\n\nSlides and R scripts\nExercise and raster files for the analysis\n\n\n\n3. Model Formulation and Parameter Estimation\nHow to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.\n\nSlides and R scripts\nExercise\n\n\n\n4. Geostatistical prediction\nHow to predict health outcomes using geostatistical models, at pixel- and areal-level.\n\nSlides and R scripts: Coming soon (under development)\n\n\n\n5. Validation of model performance\nAssessing the model performance using cross-validation and simulation-based approaches.\n\nSlides and R scripts: Coming soon (under development)"
   },
   {
     "objectID": "teaching/mbg.html#learning-outcomes",
@@ -893,7 +893,7 @@
     "href": "teaching/MBG/Exercises/Exercise 1.html",
     "title": "Exercise 1",
     "section": "",
-    "text": "In this exercise, you will use the tz_malaria data-set from the RiskMap package. Run the code below to load the data-set.\n\nlibrary(RiskMap)\ndata(\"tz_malaria\")\n\nFor more information on the data see the help page, which can be accessed be entering ?tz_malaria.\n\nUsing the empirical logit of malaria prevalence (Pf is the variable of the cases and Ex is the number of examined individuals) and suitable graphical tools, explore the relationship between the empirical logit and the following variables:\n\nTemperature\nPrecipitation\nEVI (Enhanced Vegetation Index)\nNTL (Night-Time Lights) Are the relationships linear? How would you enter this variable when using a logistic regression?\n\nFit a binomial GLM to model malaria prevalence as a quadratic function in temperature and then answer the following questions.\n\nWrite a function to calculate the peak temperature at which malaria prevalence is highest.\n(Optional) Perform parametric bootstrapping to estimate the 95% confidence interval for the peak temperature. Print the peak temperature estimate and its confidence interval from the bootstrap.\nFit a linear spline model to estimate the change point in temperature where the relationship with malaria prevalence changes. Based on the AIC, between the linear spline and quadric transformation of temperature, which provides a better fit to the data?\n\nExtend the linear spline model that inlcudes temperature to also include EVI as a predictor and fit a generalized linear mixed-effects model (GLMM) with a random intercept for cluster.number. Is there evidence of over-dispersion?\n\nLoad the raster files for temperature and EVI using the following code.\n\n\n\n# Read and project raster files\nr_temp &lt;- rast(\"path/to/local/Tanzania_Annual_LST_2015.tif\")\nr_temp &lt;- terra::project(r_temp, \"EPSG:32736\")\nr_evi &lt;- rast(\"path/to/local/Tanzania_Annual_EVI_2015.tif\")\nr_evi &lt;- terra::project(r_evi, \"EPSG:32736\")\n\n\nUsing the fitted GLMM, create a raster of the predicted malaria prevalence. To do this, consider proceeding through the following steps: 1) load the boundaries for Tanzania; 2) create a predictive grid of the desired resolution; 3) extract the covariates of temperature and EVI over the grid; 4) predict malaria prevalence using the fitted GLMM over the gridp; 5) convert the predictions into a raster and visualize the results. What patterns do you observe in the predicted prevalence?"
+    "text": "In this exercise, you will use the tz_malaria data-set from the RiskMap package. Run the code below to load the data-set.\n\nlibrary(RiskMap)\ndata(\"tz_malaria\")\n\nFor more information on the data see the help page, which can be accessed be entering ?tz_malaria.\n\nUsing the empirical logit of malaria prevalence (Pf is the variable of the cases and Ex is the number of examined individuals) and suitable graphical tools, explore the relationship between the empirical logit and the following variables:\n\nTemperature\nPrecipitation\nEVI (Enhanced Vegetation Index)\nNTL (Night-Time Lights) Are the relationships linear? How would you enter this variable when using a logistic regression?\n\nFit a binomial GLM to model malaria prevalence as a quadratic function in temperature and then answer the following questions.\n\nWrite a function to calculate the peak temperature at which malaria prevalence is highest.\n(Optional) Perform parametric bootstrapping to estimate the 95% confidence interval for the peak temperature. Print the peak temperature estimate and its confidence interval from the bootstrap.\nFit a linear spline model to estimate the change point in temperature where the relationship with malaria prevalence changes. Based on the AIC, between the linear spline and quadric transformation of temperature, which provides a better fit to the data?\n\nExtend the linear spline model that inlcudes temperature to also include EVI as a predictor and fit a generalized linear mixed-effects model (GLMM) with a random intercept for cluster.number. Is there evidence of over-dispersion?\n\nLoad the raster files for temperature and EVI using the following code.\n\n\n# Read and project raster files\nr_temp &lt;- rast(\"path/to/local/Tanzania_Annual_LST_2015.tif\")\nr_temp &lt;- terra::project(r_temp, \"EPSG:32736\")\nr_evi &lt;- rast(\"path/to/local/Tanzania_Annual_EVI_2015.tif\")\nr_evi &lt;- terra::project(r_evi, \"EPSG:32736\")\n\nUsing the fitted GLMM, create a raster of the predicted malaria prevalence. To do this, consider proceeding through the following steps: 1) load the boundaries for Tanzania; 2) create a predictive grid of the desired resolution; 3) extract the covariates of temperature and EVI over the grid; 4) predict malaria prevalence using the fitted GLMM over the gridp; 5) convert the predictions into a raster and visualize the results. What patterns do you observe in the predicted prevalence?"
   },
   {
     "objectID": "teaching/MBG/introduction.html",
@@ -1131,7 +1131,7 @@
     "href": "teaching/MBG/estimation.html#using-moss-to-monitor-air-pollution",
     "title": "Model formulation and parameter estimation",
     "section": "Using moss to monitor air pollution",
-    "text": "Using moss to monitor air pollution\n\n\n galicia_fit.R\n\n\n\n\nClick here to go back to the course page"
+    "text": "Using moss to monitor air pollution\n\n\n galicia_fit.R"
   },
   {
     "objectID": "teaching/mbg.html#r-packages",
@@ -1139,5 +1139,47 @@
     "title": "Model-based Geostatistics",
     "section": "R packages",
     "text": "R packages\n\nEssential: RiskMap, rgeoboundaries, ggplot2, sf, terra, elevats\nDesireable: shiny\n\nInstall RiskMap in R by running devtools::install_github(\"giorgilancs/RiskMap\")\nInstall rgeoboundaries in R by running remotes::install_github(\"wmgeolab/rgeoboundaries\")"
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#generalized-linear-geostatistical-models",
+    "href": "teaching/MBG/estimation.html#generalized-linear-geostatistical-models",
+    "title": "Model formulation and parameter estimation",
+    "section": "Generalized linear geostatistical models",
+    "text": "Generalized linear geostatistical models\n\nLet \\(S(x)\\) be a stationary and isotropic Gaussian process, with Matérn correlation function.\n\n\n\nLet \\(Z_i\\) be independent identically distributed random variables.\n\n\n\n\nLet \\(d(x_i)\\) be a vector of covariates with associated regression coefficients \\(\\beta\\).\n\n\n\n\nLet \\(Y_i\\) be a random variable that, conditionally on \\(S(x_i)\\) and \\(Z_i\\), follows an exponential family distribution (e.g. Gaussian, Binomial, Poisson).\n\n\n\n\nLet \\(g(\\cdot)\\) be a link function.\n\n\\(\\mathbb{E} \\left[ Y_i \\: | \\: S(x_i), Z_i \\right] = m_i \\mu_i\\)\n\n\\({\\rm Var}\\left[Y_i \\: | \\: S(x_i), Z_i\\right] = m_i V(\\mu_i)\\)\n\\(g(\\mu_i) = d(x_i)^\\top \\beta + S(x_i) + Z_i\\)"
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#examples-binomial-and-poisson-geostatistical-models",
+    "href": "teaching/MBG/estimation.html#examples-binomial-and-poisson-geostatistical-models",
+    "title": "Model formulation and parameter estimation",
+    "section": "Examples: Binomial and Poisson Geostatistical Models",
+    "text": "Examples: Binomial and Poisson Geostatistical Models\nBinomial Geostatistical Model\n\n\\(Y_i \\: | \\: S(x_i), Z_i \\sim \\text{Binomial}(m_i, \\mu_i)\\)\nLink function: Logit link \\(g(\\mu_i) = \\log \\left( \\frac{\\mu_i}{1 - \\mu_i} \\right) = d(x_i)^\\top \\beta + S(x_i) + Z_i\\)\nVariance function: \\(V(\\mu_i) = m_i \\mu_i (1 - \\mu_i)\\)\n\n\nPoisson Geostatistical Model\n\n\\(Y_i \\: | \\: S(x_i), Z_i \\sim \\text{Poisson}(m_i \\mu_i)\\)\nLink function: Log link \\(g(\\mu_i) = \\log (\\mu_i) = d(x_i)^\\top \\beta + S(x_i) + Z_i\\)\nVariance function: \\(V(\\mu_i) = m_i \\mu_i\\)\n\n\n\n\n\nClick here to go back to the course page"
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#binomial-and-poisson-geostatistical-models",
+    "href": "teaching/MBG/estimation.html#binomial-and-poisson-geostatistical-models",
+    "title": "Model formulation and parameter estimation",
+    "section": "Binomial and Poisson Geostatistical Models",
+    "text": "Binomial and Poisson Geostatistical Models\n\nBinomial Geostatistical Model\n\n\\(Y_i \\: | \\: S(x_i), Z_i \\sim \\text{Binomial}(m_i, \\mu_i)\\)\nLink function: Logit link \\(g(\\mu_i) = \\log \\left( \\frac{\\mu_i}{1 - \\mu_i} \\right) = d(x_i)^\\top \\beta + S(x_i) + Z_i\\)\nVariance function: \\(V(\\mu_i) = m_i \\mu_i (1 - \\mu_i)\\)\n\n\n\n\nPoisson Geostatistical Model\n\n\\(Y_i \\: | \\: S(x_i), Z_i \\sim \\text{Poisson}(m_i \\mu_i)\\)\nLink function: Log link \\(g(\\mu_i) = \\log (\\mu_i) = d(x_i)^\\top \\beta + S(x_i) + Z_i\\)\nVariance function: \\(V(\\mu_i) = m_i \\mu_i\\)"
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#monte-carlo-maximum-likelihood-mcml",
+    "href": "teaching/MBG/estimation.html#monte-carlo-maximum-likelihood-mcml",
+    "title": "Model formulation and parameter estimation",
+    "section": "Monte Carlo Maximum Likelihood (MCML)",
+    "text": "Monte Carlo Maximum Likelihood (MCML)\n\nLet \\(W_i = S(x_i) + Z_i\\) and \\(W = (W_1, \\ldots, W_n)\\)\n\n\n\nThe likelihood function for parameters \\(\\theta = (\\beta, \\sigma^2, \\phi, \\tau^2)\\) is given by:\n\\[\nL(\\theta) = \\int N(W; D\\beta, \\Omega) f(y| W) dW\n\\]\nwhere \\(\\Omega = \\sigma^2 R(\\phi) + \\tau^2I_n\\).\n\n\n\n\nWe approximate this using Monte Carlo integration:\n\\[\nL_m(\\theta) = \\frac{1}{B} \\sum_{j=1}^{B} \\frac{N\\left(W^{(j)}; D\\beta, \\Omega \\right)}{N\\left(W^{(j)}; D\\beta_0, \\Omega_0\\right)}\n\\] where \\(W^{(i)}\\) are sampled from the distribution of \\(W\\) given \\(y\\) using an MCMC algorithm."
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#mcml-iterative-estimation",
+    "href": "teaching/MBG/estimation.html#mcml-iterative-estimation",
+    "title": "Model formulation and parameter estimation",
+    "section": "MCML: Iterative Estimation",
+    "text": "MCML: Iterative Estimation\n\nChoose initial values \\(\\theta_0\\) and generate samples \\(W^{(j)}\\), for \\(j = 1,\\ldots, B\\).\n\n\n\nEstimate \\(\\theta\\) by maximizing the Monte Carlo approximation, denoted by \\(L_m(\\theta)\\), to the likelihood. Denote with \\(\\hat{\\theta}_m\\) this estimate.\n\n\n\n\nUpdate \\(\\theta_0 = \\hat{\\theta}_m\\) and iterate until convergence.\n\n\n\n\nStandard errors are computed using the inverse Hessian of \\(L_m(\\theta)\\) at \\(\\hat{\\theta}_m\\).\n\n\n\n glgm_fit.R\n\n\n\n\nClick here to go back to the course page"
+  },
+  {
+    "objectID": "teaching/MBG/Exercises/Exercise 2.html",
+    "href": "teaching/MBG/Exercises/Exercise 2.html",
+    "title": "Exercise 2",
+    "section": "",
+    "text": "Load the tz_malaria dataset from the RiskMap package and convert it to an sf object to handle spatial data.\n\nFit a binomial generalized linear mixed model (GLMM) with a random intercept for cluster.number, assuming no fixed effects. Write down the equations that defines the linear predictor of this model and list the model assumptions; denote this model with \\(M_0\\). Extract the estimated random effects and use them to compute and plot the empirical variogram. Interpret the variogram to assess spatial correlation.\nFit a binomial GLMM that includes temperature and a linear spline transformation for temperature, along with EVI as predictors. Write down the equations that defines the linear predictor of this model and list the model assumptions; denote this model with \\(M_1\\). Extract the estimated random effects and compute the empirical variogram. Compare this variogram with the one from the null model.\nExtend both \\(M_0\\) and \\(M_1\\) so that they also include a stationary and isotropic spatial Gaussian process with exponential correlation function. Fit the two models using Monte Carlo Maximum Likelihood (MCML) and interpret the summaries of the model fits.\nCompute the theoretical variograms for both models using their estimated parameters. Overlay the theoretical variograms in a single plot and ensure that the curves are distinguishable with a legend. Discuss whether the inclusion of temperature and EVI reduces spatial correlation in the residuals and how this affects model interpretation."
   }
 ]

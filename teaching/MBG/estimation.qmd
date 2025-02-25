@@ -51,72 +51,61 @@ format:
 ![](Images/rlogo.png){width="10%"} [liberia_variog.R](R%20scripts/liberia_variog.R)
 
 . . .
- 
-## Stationary and Isotropic Gaussian Processes 
 
-- A **Gaussian Process (GP)** is a collection of random variables, any finite subset of which follows a multivariate normal distribution.
-- A GP is **stationary** if its statistical properties do not change with location shifts.
-- It is **isotropic** if its properties do not change with locations rotations. 
-- We denote a GP as $S(x)$, where $x$ represents location.
+## Stationary and Isotropic Gaussian Processes
+
+-   A **Gaussian Process (GP)** is a collection of random variables, any finite subset of which follows a multivariate normal distribution.
+-   A GP is **stationary** if its statistical properties do not change with location shifts.
+-   It is **isotropic** if its properties do not change with locations rotations.
+-   We denote a GP as $S(x)$, where $x$ represents location.
 
 ## The Matérn Process {.smaller}
 
-- The **Matérn covariance function** is the most widely used in  geostatistics.
-- It is controlled by three parameters:
-  - **Variance** ($\sigma^2$) – controls process magnitude
-  - **Smoothness** ($\kappa$) – determines differentiability
-  - **Scale parameter** ($\phi$) – governs spatial correlation decay
-- The covariance function is given by:
-$$
-  C(h) = \sigma^2 \frac{2^{1-\kappa}}{\Gamma(\kappa)} \left( \frac{h}{\phi} \right)^\kappa K_\kappa \left( \frac{h}{\phi} \right), h = ||x-x'||
-$$
-  where $K_\kappa$ is the modified Bessel function of the second kind.
+-   The **Matérn covariance function** is the most widely used in geostatistics.
+-   It is controlled by three parameters:
+    -   **Variance** ($\sigma^2$) – controls process magnitude
+    -   **Smoothness** ($\kappa$) – determines differentiability
+    -   **Scale parameter** ($\phi$) – governs spatial correlation decay
+-   The covariance function is given by: $$
+    C(h) = \sigma^2 \frac{2^{1-\kappa}}{\Gamma(\kappa)} \left( \frac{h}{\phi} \right)^\kappa K_\kappa \left( \frac{h}{\phi} \right), h = ||x-x'||
+    $$ where $K_\kappa$ is the modified Bessel function of the second kind.
 
 ![](Images/rlogo.png){width="10%"} [matern_simulator.R](R%20scripts/matern_simulator.R)
 
----
+------------------------------------------------------------------------
 
 ## Theoretical Variogram {.smallar .scrollable}
 
-- The variogram measures spatial dependence:
-$$
-  \gamma(h) = \frac{1}{2} \mathbb{E} \left[\left\{S(x) - S(x')\right\}^2\right]
-$$
-- For the Matérn process, it is derived from its covariance function
-$$
-  \gamma(h) = \sigma^2 \left( 1 - C(h) \right), h = ||x-x'||
-$$
+-   The variogram measures spatial dependence: $$
+    \gamma(h) = \frac{1}{2} \mathbb{E} \left[\left\{S(x) - S(x')\right\}^2\right]
+    $$
+-   For the Matérn process, it is derived from its covariance function $$
+    \gamma(h) = \sigma^2 \left( 1 - C(h) \right), h = ||x-x'||
+    $$
 
 . . .
 
-<center>
-![](Images/theo_variog.png){width=80%}
-</center>
+<center>![](Images/theo_variog.png){width="80%"}</center>
 
----
+------------------------------------------------------------------------
 
 ## Theoretical Variogram with Noise {.smallar .scrollable}
 
-- The variogram measures spatial dependence:
-$$
-  \gamma(h) = \frac{1}{2} \mathbb{E} \left[\left\{S(x) + Z(x) - S(x') - Z(x')\right\}^2\right]
-$$
-- Where $Z(x)$ is Gaussian noise with mean 0 and variance $\tau^2$
+-   The variogram measures spatial dependence: $$
+    \gamma(h) = \frac{1}{2} \mathbb{E} \left[\left\{S(x) + Z(x) - S(x') - Z(x')\right\}^2\right]
+    $$
 
-- The expression of the variogram changes to
-$$
-  \gamma(h) = \tau^2 + \sigma^2 \left( 1 - C(h) \right), h = ||x-x'||
-$$
-. . .
+-   Where $Z(x)$ is Gaussian noise with mean 0 and variance $\tau^2$
 
-<center>
-![](Images/theo_variog_withnoise.png){width=80%}
-</center>
+-   The expression of the variogram changes to $$
+    \gamma(h) = \tau^2 + \sigma^2 \left( 1 - C(h) \right), h = ||x-x'||
+    $$ . . .
 
+<center>![](Images/theo_variog_withnoise.png){width="80%"}</center>
 
 ## The linear geostatistical model {.smaller .scrollable}
 
--   The general expression is 
+-   The general expression is
 
 $$
 Y_i = d(x_i)\top \beta + S(x_i) + U_i
@@ -130,14 +119,13 @@ where: $d(x_i)$ are covariates, $S(x_i)$ is a stationary and isotropic spatial G
 
 . . .
 
-
 -   Assuming $R(\phi)$ to be the correlation matrix of $S$, and $U_i \sim \text{N}(0, \tau^2)$, the vector of observations $\mathbf{Y} = (Y_1, \dots, Y_n)^T$ follows a multivariate normal distribution:
 
 $$
 \mathbf{Y} \sim \text{MVN}\left(D\beta, \Sigma\right)
 $$
 
-where the covariance matrix is given by 
+where the covariance matrix is given by
 
 $$
 \Sigma = \sigma^2 R(\phi) + \tau^2 I_n.
@@ -160,4 +148,90 @@ $$
 . . .
 
 ![](Images/rlogo.png){width="10%"} [galicia_fit.R](R%20scripts/galicia_fit.R)
+
+
+## Generalized linear geostatistical models {.smaller .scrollable}
+
+-   Let $S(x)$ be a stationary and isotropic Gaussian process, with Matérn correlation function.
+
+. . . 
+
+-   Let $Z_i$ be independent identically distributed random variables.
+
+. . . 
+
+-   Let $d(x_i)$ be a vector of covariates with associated regression coefficients $\beta$.
+
+. . . 
+
+-   Let $Y_i$ be a random variable that, conditionally on $S(x_i)$ and $Z_i$, follows an exponential family distribution (e.g. Gaussian, Binomial, Poisson). 
+
+. . . 
+
+-   Let $g(\cdot)$ be a link function.  
+    -   $\mathbb{E} \left[ Y_i \: | \: S(x_i), Z_i \right] = m_i \mu_i$  
+    -   ${\rm Var}\left[Y_i \: | \: S(x_i), Z_i\right] = m_i V(\mu_i)$
+    -   $g(\mu_i) = d(x_i)^\top \beta + S(x_i) + Z_i$
+
+---
+
+## Binomial and Poisson Geostatistical Models {.smaller .scrollable}
+
+-   **Binomial Geostatistical Model**
+    -   $Y_i \: | \: S(x_i), Z_i \sim \text{Binomial}(m_i, \mu_i)$
+    -   **Link function**: Logit link $g(\mu_i) = \log \left( \frac{\mu_i}{1 - \mu_i} \right) = d(x_i)^\top \beta + S(x_i) + Z_i$
+    -   **Variance function**: $V(\mu_i) = m_i \mu_i (1 - \mu_i)$
+
+. . . 
+
+-   **Poisson Geostatistical Model**
+    -   $Y_i \: | \: S(x_i), Z_i \sim \text{Poisson}(m_i \mu_i)$
+    -   **Link function**: Log link $g(\mu_i) = \log (\mu_i) = d(x_i)^\top \beta + S(x_i) + Z_i$
+    -   **Variance function**: $V(\mu_i) = m_i \mu_i$
+
+## Monte Carlo Maximum Likelihood (MCML) {.smaller}
+
+-   Let $W_i = S(x_i) + Z_i$ and $W = (W_1, \ldots, W_n)$
+
+. . .
+
+- The likelihood function for parameters $\theta = (\beta, \sigma^2, \phi, \tau^2)$ is given by:
+
+  $$
+  L(\theta) = \int N(W; D\beta, \Omega) f(y| W) dW
+  $$
+
+  where $\Omega = \sigma^2 R(\phi) + \tau^2I_n$.
+
+. . .
+
+- We approximate this using Monte Carlo integration:
+  
+  $$
+  L_m(\theta) = \frac{1}{B} \sum_{j=1}^{B} \frac{N\left(W^{(j)}; D\beta, \Omega \right)}{N\left(W^{(j)}; D\beta_0, \Omega_0\right)}
+  $$
+where $W^{(i)}$ are sampled from the distribution of $W$ given $y$ using an MCMC algorithm.
+
+---
+
+## MCML: Iterative Estimation {.smaller}
+
+- Choose initial values $\theta_0$ and generate samples $W^{(j)}$, for $j = 1,\ldots, B$.
+
+. . .
+ 
+- Estimate $\theta$ by maximizing the Monte Carlo approximation, denoted by $L_m(\theta)$, to the likelihood. Denote with $\hat{\theta}_m$ this estimate.
+
+. . .
+
+- Update $\theta_0 = \hat{\theta}_m$ and iterate until convergence. 
+
+. . .
+
+- Standard errors are computed using the inverse Hessian of $L_m(\theta)$ at $\hat{\theta}_m$.
+
+. . .
+
+![](Images/rlogo.png){width="10%"} [glgm_fit.R](R%20scripts/glgm_fit.R)
+
 

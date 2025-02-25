@@ -8,7 +8,7 @@ This course provides a comprehensive introduction to **Model-based Geostatistics
 
 ------------------------------------------------------------------------
 
-## R packages 
+## R packages
 
 -   *Essential*: `RiskMap`, `rgeoboundaries`, `ggplot2`, `sf`, `terra`, `elevats`
 -   *Desireable*: `shiny`
@@ -17,9 +17,7 @@ Install `RiskMap` in R by running `devtools::install_github("giorgilancs/RiskMap
 
 Install `rgeoboundaries` in R by running `remotes::install_github("wmgeolab/rgeoboundaries")`
 
-
 ## Course Content
-
 
 ### 1. Introduction
 
@@ -39,6 +37,7 @@ Exploring regression relationships, overdispersion and spatial correlation.
 How to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.
 
 -   [Slides and R scripts](MBG/estimation.qmd)
+-   [Exercise](MBG/Exercises/Exercise-2.pdf)
 
 ### 4. Geostatistical prediction
 

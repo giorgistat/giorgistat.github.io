@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Exercise 1 – Welcome to My Personal Website</title>
+<title>Exercise 2 – Welcome to My Personal Website</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -101,6 +67,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../../styles.css">
 </head>
@@ -184,7 +179,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Exercise 1</h1>
+<h1 class="title">Exercise 2</h1>
 </div>
 
 
@@ -201,38 +196,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>In this exercise, you will use the <code>tz_malaria</code> data-set from the <code>RiskMap</code> package. Run the code below to load the data-set.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(RiskMap)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"tz_malaria"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>For more information on the data see the help page, which can be accessed be entering <code>?tz_malaria</code>.</p>
+<p>Load the <code>tz_malaria</code> dataset from the RiskMap package and convert it to an <code>sf</code> object to handle spatial data.</p>
 <ol type="1">
-<li><p>Using the empirical logit of malaria prevalence (<code>Pf</code> is the variable of the cases and <code>Ex</code> is the number of examined individuals) and suitable graphical tools, explore the relationship between the empirical logit and the following variables:</p>
-<ul>
-<li>Temperature</li>
-<li>Precipitation</li>
-<li>EVI (Enhanced Vegetation Index)</li>
-<li>NTL (Night-Time Lights) Are the relationships linear? How would you enter this variable when using a logistic regression?</li>
-</ul></li>
-<li><p>Fit a binomial GLM to model malaria prevalence as a quadratic function in temperature and then answer the following questions.</p>
-<ul>
-<li>Write a function to calculate the peak temperature at which malaria prevalence is highest.</li>
-<li>(Optional) Perform parametric bootstrapping to estimate the 95% confidence interval for the peak temperature. Print the peak temperature estimate and its confidence interval from the bootstrap.</li>
-<li>Fit a linear spline model to estimate the change point in temperature where the relationship with malaria prevalence changes. Based on the AIC, between the linear spline and quadric transformation of temperature, which provides a better fit to the data?</li>
-</ul></li>
-<li><p>Extend the linear spline model that inlcudes temperature to also include EVI as a predictor and fit a generalized linear mixed-effects model (GLMM) with a random intercept for <code>cluster.number</code>. Is there evidence of over-dispersion?</p>
-<ul>
-<li>Load the raster files for temperature and EVI using the following code.</li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read and project raster files</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>r_temp <span class="ot">&lt;-</span> <span class="fu">rast</span>(<span class="st">"path/to/local/Tanzania_Annual_LST_2015.tif"</span>)</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>r_temp <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">project</span>(r_temp, <span class="st">"EPSG:32736"</span>)</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>r_evi <span class="ot">&lt;-</span> <span class="fu">rast</span>(<span class="st">"path/to/local/Tanzania_Annual_EVI_2015.tif"</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>r_evi <span class="ot">&lt;-</span> terra<span class="sc">::</span><span class="fu">project</span>(r_evi, <span class="st">"EPSG:32736"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div></li>
-<li><p>Using the fitted GLMM, create a raster of the predicted malaria prevalence. To do this, consider proceeding through the following steps: 1) load the boundaries for Tanzania; 2) create a predictive grid of the desired resolution; 3) extract the covariates of temperature and EVI over the grid; 4) predict malaria prevalence using the fitted GLMM over the gridp; 5) convert the predictions into a raster and visualize the results. What patterns do you observe in the predicted prevalence?</p></li>
+<li><p>Fit a binomial generalized linear mixed model (GLMM) with a random intercept for cluster.number, assuming no fixed effects. Write down the equations that defines the linear predictor of this model and list the model assumptions; denote this model with <span class="math inline">\(M_0\)</span>. Extract the estimated random effects and use them to compute and plot the empirical variogram. Interpret the variogram to assess spatial correlation.</p></li>
+<li><p>Fit a binomial GLMM that includes temperature and a linear spline transformation for temperature, along with EVI as predictors. Write down the equations that defines the linear predictor of this model and list the model assumptions; denote this model with <span class="math inline">\(M_1\)</span>. Extract the estimated random effects and compute the empirical variogram. Compare this variogram with the one from the null model.</p></li>
+<li><p>Extend both <span class="math inline">\(M_0\)</span> and <span class="math inline">\(M_1\)</span> so that they also include a stationary and isotropic spatial Gaussian process with exponential correlation function. Fit the two models using Monte Carlo Maximum Likelihood (MCML) and interpret the summaries of the model fits.</p></li>
+<li><p>Compute the theoretical variograms for both models using their estimated parameters. Overlay the theoretical variograms in a single plot and ensure that the curves are distinguishable with a legend. Discuss whether the inclusion of temperature and EVI reduces spatial correlation in the residuals and how this affects model interpretation.</p></li>
 </ol>
 <hr>
 

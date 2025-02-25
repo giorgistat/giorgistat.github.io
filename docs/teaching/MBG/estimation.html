@@ -477,6 +477,106 @@ Y_i = d(x_i)\top \beta + S(x_i) + U_i
 <iframe data-external="1" src="https://www.youtube.com/embed/TtFC2cB5h2E?si=ARXK2AnWVZirDhAB" width="800" height="400" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 <div class="fragment">
 <p><img data-src="Images/rlogo.png" style="width:10.0%"> <a href="R scripts/galicia_fit.R">galicia_fit.R</a></p>
+</div>
+</section>
+<section id="generalized-linear-geostatistical-models" class="slide level2 smaller scrollable">
+<h2>Generalized linear geostatistical models</h2>
+<ul>
+<li>Let <span class="math inline">\(S(x)\)</span> be a stationary and isotropic Gaussian process, with Matérn correlation function.</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Let <span class="math inline">\(Z_i\)</span> be independent identically distributed random variables.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Let <span class="math inline">\(d(x_i)\)</span> be a vector of covariates with associated regression coefficients <span class="math inline">\(\beta\)</span>.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Let <span class="math inline">\(Y_i\)</span> be a random variable that, conditionally on <span class="math inline">\(S(x_i)\)</span> and <span class="math inline">\(Z_i\)</span>, follows an exponential family distribution (e.g.&nbsp;Gaussian, Binomial, Poisson).</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Let <span class="math inline">\(g(\cdot)\)</span> be a link function.
+<ul>
+<li><span class="math inline">\(\mathbb{E} \left[ Y_i \: | \: S(x_i), Z_i \right] = m_i \mu_i\)</span><br>
+</li>
+<li><span class="math inline">\({\rm Var}\left[Y_i \: | \: S(x_i), Z_i\right] = m_i V(\mu_i)\)</span></li>
+<li><span class="math inline">\(g(\mu_i) = d(x_i)^\top \beta + S(x_i) + Z_i\)</span></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="binomial-and-poisson-geostatistical-models" class="slide level2 smaller scrollable">
+<h2>Binomial and Poisson Geostatistical Models</h2>
+<ul>
+<li><strong>Binomial Geostatistical Model</strong>
+<ul>
+<li><span class="math inline">\(Y_i \: | \: S(x_i), Z_i \sim \text{Binomial}(m_i, \mu_i)\)</span></li>
+<li><strong>Link function</strong>: Logit link <span class="math inline">\(g(\mu_i) = \log \left( \frac{\mu_i}{1 - \mu_i} \right) = d(x_i)^\top \beta + S(x_i) + Z_i\)</span></li>
+<li><strong>Variance function</strong>: <span class="math inline">\(V(\mu_i) = m_i \mu_i (1 - \mu_i)\)</span></li>
+</ul></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>Poisson Geostatistical Model</strong>
+<ul>
+<li><span class="math inline">\(Y_i \: | \: S(x_i), Z_i \sim \text{Poisson}(m_i \mu_i)\)</span></li>
+<li><strong>Link function</strong>: Log link <span class="math inline">\(g(\mu_i) = \log (\mu_i) = d(x_i)^\top \beta + S(x_i) + Z_i\)</span></li>
+<li><strong>Variance function</strong>: <span class="math inline">\(V(\mu_i) = m_i \mu_i\)</span></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="monte-carlo-maximum-likelihood-mcml" class="slide level2 smaller">
+<h2>Monte Carlo Maximum Likelihood (MCML)</h2>
+<ul>
+<li>Let <span class="math inline">\(W_i = S(x_i) + Z_i\)</span> and <span class="math inline">\(W = (W_1, \ldots, W_n)\)</span></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><p>The likelihood function for parameters <span class="math inline">\(\theta = (\beta, \sigma^2, \phi, \tau^2)\)</span> is given by:</p>
+<p><span class="math display">\[
+L(\theta) = \int N(W; D\beta, \Omega) f(y| W) dW
+\]</span></p>
+<p>where <span class="math inline">\(\Omega = \sigma^2 R(\phi) + \tau^2I_n\)</span>.</p></li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li><p>We approximate this using Monte Carlo integration:</p>
+<p><span class="math display">\[
+L_m(\theta) = \frac{1}{B} \sum_{j=1}^{B} \frac{N\left(W^{(j)}; D\beta, \Omega \right)}{N\left(W^{(j)}; D\beta_0, \Omega_0\right)}
+\]</span> where <span class="math inline">\(W^{(i)}\)</span> are sampled from the distribution of <span class="math inline">\(W\)</span> given <span class="math inline">\(y\)</span> using an MCMC algorithm.</p></li>
+</ul>
+</div>
+</section>
+<section id="mcml-iterative-estimation" class="slide level2 smaller">
+<h2>MCML: Iterative Estimation</h2>
+<ul>
+<li>Choose initial values <span class="math inline">\(\theta_0\)</span> and generate samples <span class="math inline">\(W^{(j)}\)</span>, for <span class="math inline">\(j = 1,\ldots, B\)</span>.</li>
+</ul>
+<div class="fragment">
+<ul>
+<li>Estimate <span class="math inline">\(\theta\)</span> by maximizing the Monte Carlo approximation, denoted by <span class="math inline">\(L_m(\theta)\)</span>, to the likelihood. Denote with <span class="math inline">\(\hat{\theta}_m\)</span> this estimate.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Update <span class="math inline">\(\theta_0 = \hat{\theta}_m\)</span> and iterate until convergence.</li>
+</ul>
+</div>
+<div class="fragment">
+<ul>
+<li>Standard errors are computed using the inverse Hessian of <span class="math inline">\(L_m(\theta)\)</span> at <span class="math inline">\(\hat{\theta}_m\)</span>.</li>
+</ul>
+</div>
+<div class="fragment">
+<p><img data-src="Images/rlogo.png" style="width:10.0%"> <a href="R scripts/glgm_fit.R">glgm_fit.R</a></p>
 
 <div class="quarto-auto-generated-content">
 <p><img src="Images/clogo.png" class="slide-logo"></p>
