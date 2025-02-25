@@ -7,6 +7,6 @@ This page includes slides of presentations given at seminars and conferences sin
 ![](figures/semiar.jpg){width="40%"}
 
 -   [**Model-based Geostatistics for Global Public Health: From Methodology Development to Policy Applications**](Birmingham%20(20%20Feb%202025).qmd)\
-    Seminar at *Oslo Centre for Biostatistics and Epidemiology, Oslo University, 17 March 2025*
+    Seminar at *Oslo Centre for Biostatistics and Epidemiology, Oslo University, 20 March 2025*
 
 ------------------------------------------------------------------------
