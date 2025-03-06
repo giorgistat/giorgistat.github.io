@@ -6,50 +6,6 @@ title: "Model-based Geostatistics"
 
 This course provides a comprehensive introduction to **Model-based Geostatistics**, with a focus on applications in global public health and environmental science. The course on the applications of geostaistical methods while keeping the mathematical content to the minimum level required. The course is taught using the R software environment.
 
-------------------------------------------------------------------------
-
-## R packages
-
--   *Essential*: `RiskMap`, `rgeoboundaries`, `ggplot2`, `sf`, `terra`, `elevats`
--   *Desireable*: `shiny`
-
-Install `RiskMap` in R by running `devtools::install_github("giorgilancs/RiskMap")`
-
-Install `rgeoboundaries` in R by running `remotes::install_github("wmgeolab/rgeoboundaries")`
-
-## Course Content
-
-### 1. Introduction
-
-An overview of geostatistical problems in the context of epidemiological studies.
-
--   [Slides and R scripts](MBG/introduction.qmd)
-
-### 2. Exploratory Analysis
-
-Exploring regression relationships, overdispersion and spatial correlation.
-
--   [Slides and R scripts](MBG/exp_analysis.qmd)
--   [Exercise](MBG/Exercises/Exercise-1.pdf) and [raster files](MBG/Data/Tanzania_rasters.zip) for the analysis
-
-### 3. Model Formulation and Parameter Estimation
-
-How to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.
-
--   [Slides and R scripts](MBG/estimation.qmd)
--   [Exercise](MBG/Exercises/Exercise-2.pdf)
-
-### 4. Geostatistical prediction
-
-How to predict health outcomes using geostatistical models, at pixel- and areal-level.
-
--   **Slides and R scripts**: *Coming soon* (under development)
-
-### 5. Validation of model performance
-
-Assessing the model performance using cross-validation and simulation-based approaches.
-
--   **Slides and R scripts**: *Coming soon* (under development)
 
 ------------------------------------------------------------------------
 
@@ -62,6 +18,55 @@ By the end of this course, students will be able to:
 -   Fit and interpret geostatistical models.
 -   Perform geostatistical prediction in answer to a given publich health questions.
 -   Validate geostatistical models using cross-validation and other simulation based approaches.
+
+------------------------------------------------------------------------
+
+## R packages
+
+-   *Essential*: `RiskMap`, `rgeoboundaries`, `ggplot2`, `sf`, `terra`, `elevats`
+-   *Desireable*: `shiny`
+
+Install `RiskMap` in R by running `devtools::install_github("giorgilancs/RiskMap")`
+
+Install `rgeoboundaries` in R by running `remotes::install_github("wmgeolab/rgeoboundaries")`
+
+------------------------------------------------------------------------
+
+## Course Content
+
+### 1. Introduction
+
+An overview of geostatistical problems in the context of epidemiological studies.
+
+-   [Slides](MBG/introduction.qmd)
+
+### 2. Exploratory Analysis
+
+Exploring regression relationships, overdispersion and spatial correlation.
+
+-   [Slides](MBG/exp_analysis.qmd)
+-   [Exercise](MBG/Exercises/Exercise-1.pdf) and [raster files](MBG/Data/Tanzania_rasters.zip) for the analysis
+
+### 3. Model Formulation and Parameter Estimation
+
+How to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.
+
+-   [Slides](MBG/estimation.qmd)
+-   [Exercise](MBG/Exercises/Exercise-2.pdf)
+
+### 4. Geostatistical prediction
+
+How to predict health outcomes using geostatistical models, at pixel- and areal-level.
+
+-   [Slides](MBG/geostat_pred.qmd)
+-   [Exercise](MBG/Exercises/Exercise-3.pdf) 
+
+### 5. Validation of model performance
+
+Assessing the model performance using cross-validation and simulation-based approaches.
+
+-   **Slides and R scripts**: *Coming soon* (under development)
+
 
 ------------------------------------------------------------------------
 
@@ -78,3 +83,5 @@ By the end of this course, students will be able to:
 
 -   Each section includes lecture notes, code examples, and exercises.
 -   The materials are designed to be self-paced, but they can also be used in a classroom setting.
+
+

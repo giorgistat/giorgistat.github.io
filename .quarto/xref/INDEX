@@ -76,5 +76,8 @@
   },
   "teaching/MBG/Exercises/Exercise 2.Rmd": {
     "Exercise 2.html": "6d811a3e"
+  },
+  "teaching/MBG/geostat_pred.qmd": {
+    "geostat_pred.html": "5499d966"
   }
 }

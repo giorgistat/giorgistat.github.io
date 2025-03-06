@@ -753,7 +753,7 @@
     "href": "teaching/mbg.html#course-content",
     "title": "Model-based Geostatistics",
     "section": "Course Content",
-    "text": "Course Content\n\n1. Introduction\nAn overview of geostatistical problems in the context of epidemiological studies.\n\nSlides and R scripts\n\n\n\n2. Exploratory Analysis\nExploring regression relationships, overdispersion and spatial correlation.\n\nSlides and R scripts\nExercise and raster files for the analysis\n\n\n\n3. Model Formulation and Parameter Estimation\nHow to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.\n\nSlides and R scripts\nExercise\n\n\n\n4. Geostatistical prediction\nHow to predict health outcomes using geostatistical models, at pixel- and areal-level.\n\nSlides and R scripts: Coming soon (under development)\n\n\n\n5. Validation of model performance\nAssessing the model performance using cross-validation and simulation-based approaches.\n\nSlides and R scripts: Coming soon (under development)"
+    "text": "Course Content\n\n1. Introduction\nAn overview of geostatistical problems in the context of epidemiological studies.\n\nSlides\n\n\n\n2. Exploratory Analysis\nExploring regression relationships, overdispersion and spatial correlation.\n\nSlides\nExercise and raster files for the analysis\n\n\n\n3. Model Formulation and Parameter Estimation\nHow to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.\n\nSlides\nExercise\n\n\n\n4. Geostatistical prediction\nHow to predict health outcomes using geostatistical models, at pixel- and areal-level.\n\nSlides\nExercise\n\n\n\n5. Validation of model performance\nAssessing the model performance using cross-validation and simulation-based approaches.\n\nSlides and R scripts: Coming soon (under development)"
   },
   {
     "objectID": "teaching/mbg.html#learning-outcomes",
@@ -1181,5 +1181,103 @@
     "title": "Exercise 2",
     "section": "",
     "text": "Load the tz_malaria dataset from the RiskMap package and convert it to an sf object to handle spatial data.\n\nFit a binomial generalized linear mixed model (GLMM) with a random intercept for cluster.number, assuming no fixed effects. Write down the equations that defines the linear predictor of this model and list the model assumptions; denote this model with \\(M_0\\). Extract the estimated random effects and use them to compute and plot the empirical variogram. Interpret the variogram to assess spatial correlation.\nFit a binomial GLMM that includes temperature and a linear spline transformation for temperature, along with EVI as predictors. Write down the equations that defines the linear predictor of this model and list the model assumptions; denote this model with \\(M_1\\). Extract the estimated random effects and compute the empirical variogram. Compare this variogram with the one from the null model.\nExtend both \\(M_0\\) and \\(M_1\\) so that they also include a stationary and isotropic spatial Gaussian process with exponential correlation function. Fit the two models using Monte Carlo Maximum Likelihood (MCML) and interpret the summaries of the model fits.\nCompute the theoretical variograms for both models using their estimated parameters. Overlay the theoretical variograms in a single plot and ensure that the curves are distinguishable with a legend. Discuss whether the inclusion of temperature and EVI reduces spatial correlation in the residuals and how this affects model interpretation."
+  },
+  {
+    "objectID": "teaching/MBG/geostat_pred.html#geostatistical-problems",
+    "href": "teaching/MBG/geostat_pred.html#geostatistical-problems",
+    "title": "Geostatistical prediction",
+    "section": "Geostatistical problems",
+    "text": "Geostatistical problems\n\n“Conventional geostatistical methodology solves the problem of predicting the realized value of a linear functional of a Gaussian spatial stochastic process \\(S(x)\\) based on observations \\(Y_i= S(x_i) + Z_i\\) at sampling locations \\(x_i\\), where the \\(Z_i\\) are mutually independent, zero-mean Gaussian random variables.”\n\nDiggle, Tawn and Moyeed (1998)"
+  },
+  {
+    "objectID": "teaching/MBG/geostat_pred.html#defining-the-predictive-target",
+    "href": "teaching/MBG/geostat_pred.html#defining-the-predictive-target",
+    "title": "Geostatistical prediction",
+    "section": "Defining the predictive target",
+    "text": "Defining the predictive target\n\n\nSpatially continuous targets correspond to an unobserved spatially continuous surface (e.g. disease prevalence), formally denoted by \\(\\mathcal{T} = \\{T(x), x \\in A\\}\\), where \\(A\\) is our region of interest.\n\n\n\n\nAreal-level targets, usually defined as transformation of the spatially continuous surface \\(\\mathcal{T}\\), defined previously, and which we denote as \\(\\mathcal{T}_{A} = F(\\mathcal{T}, A)\\)."
+  },
+  {
+    "objectID": "teaching/MBG/geostat_pred.html#examples-of-predictive-target",
+    "href": "teaching/MBG/geostat_pred.html#examples-of-predictive-target",
+    "title": "Geostatistical prediction",
+    "section": "Examples of predictive target",
+    "text": "Examples of predictive target\n\n\n\n\n\n\n\n\nPredictive target \\(T(x)\\)\nName\nGLM family\n\n\n\n\n\\(d(x)^\\top \\beta + S(x)\\)\nLinear predictor\nAny GLM\n\n\n\\(\\frac{\\exp\\{d(x)^\\top \\beta + S(x)\\}}{1+\\exp\\{d(x)^\\top \\beta + S(x)\\}}\\)\nPrevalence\nBinomial\n\n\n\\(\\exp\\{d(x)^\\top \\beta + S(x)\\}\\)\nMean number of cases\nPoisson\n\n\n\\(S(x)\\)\nSpatial random effects\nAny GLM\n\n\n\\(d(x)^\\top \\beta\\)\nCovariates effects\nAny GLM"
+  },
+  {
+    "objectID": "teaching/MBG/geostat_pred.html#the-predictive-distribution-of-the-target",
+    "href": "teaching/MBG/geostat_pred.html#the-predictive-distribution-of-the-target",
+    "title": "Geostatistical prediction",
+    "section": "The predictive distribution of the target",
+    "text": "The predictive distribution of the target"
+  },
+  {
+    "objectID": "teaching/MBG/geostat_pred.html#the-predictive-distribution-of-the-target-1",
+    "href": "teaching/MBG/geostat_pred.html#the-predictive-distribution-of-the-target-1",
+    "title": "Geostatistical prediction",
+    "section": "The predictive distribution of the target",
+    "text": "The predictive distribution of the target"
+  },
+  {
+    "objectID": "teaching/MBG/geostat_pred.html#the-predictive-distribution-of-the-target-2",
+    "href": "teaching/MBG/geostat_pred.html#the-predictive-distribution-of-the-target-2",
+    "title": "Geostatistical prediction",
+    "section": "The predictive distribution of the target",
+    "text": "The predictive distribution of the target"
+  },
+  {
+    "objectID": "teaching/MBG/geostat_pred.html#the-predictive-distribution-of-the-target-3",
+    "href": "teaching/MBG/geostat_pred.html#the-predictive-distribution-of-the-target-3",
+    "title": "Geostatistical prediction",
+    "section": "The predictive distribution of the target",
+    "text": "The predictive distribution of the target"
+  },
+  {
+    "objectID": "teaching/MBG/geostat_pred.html#the-predictive-distribution-of-the-target-4",
+    "href": "teaching/MBG/geostat_pred.html#the-predictive-distribution-of-the-target-4",
+    "title": "Geostatistical prediction",
+    "section": "The predictive distribution of the target",
+    "text": "The predictive distribution of the target"
+  },
+  {
+    "objectID": "teaching/MBG/geostat_pred.html#steps-of-geostistical-prediction-for-tx",
+    "href": "teaching/MBG/geostat_pred.html#steps-of-geostistical-prediction-for-tx",
+    "title": "Geostatistical prediction",
+    "section": "Steps of geostistical prediction for \\(T(x)\\)",
+    "text": "Steps of geostistical prediction for \\(T(x)\\)\nPreliminary steps:\n\nObtain the shapefile of the boundaries of the study area.\nGenerate a regular grid that covers the study for the desired spatial resolution, using the shapefile.\nExtract all the covariates used in the model on the grid and ensure that there are no missing values.\n\n\nPrediction steps (for a given location \\(x\\) on the grid):\n\nGenerate samples from the predictive distribution of \\(S(x) \\: | \\: y\\), say \\(S_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n\n\n\nApply the transformation defined by \\(T(x)\\) to each of the samples \\(S_{(j)}(x)\\), to obtain \\(T_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n\n\n\nUsing the Monte Carlo samples \\(T_{(j)}(x)\\), obtain the desired summaries of the predictive distribution:\n\nMean: \\(\\overline{T}_B = B^{-1} \\sum_{j=1}^B T_{(j)}(x)\\)\nStandard deviation: \\(\\left[B^{-1} \\sum_{j=1}^B (T_{(j)}(x) - \\overline{T}_B)^2\\right]^{1/2}\\)\nPrediction intervals at 95\\(\\%\\) coverage level\nExceedance probabilities: \\(B^{-1} \\sum_{j=1}^B I(T_{(j)}(x) &gt; L)\\), for a given threshold \\(L\\).\n\n\n\n\n\n\nClick here to go back to the course page"
+  },
+  {
+    "objectID": "teaching/MBG/geostat_pred.html#steps-for-the-geostistical-prediction-of-tx",
+    "href": "teaching/MBG/geostat_pred.html#steps-for-the-geostistical-prediction-of-tx",
+    "title": "Geostatistical prediction",
+    "section": "Steps for the geostistical prediction of \\(T(x)\\)",
+    "text": "Steps for the geostistical prediction of \\(T(x)\\)\nPreliminary steps:\n\nObtain the shapefile of the boundaries of the study area.\nGenerate a regular grid that covers the study for the desired spatial resolution, using the shapefile.\nExtract all the covariates used in the model on the grid and ensure that there are no missing values.\n\n\nPrediction steps (for a given location \\(x\\) on the grid):\n\nGenerate samples from the predictive distribution of \\(S(x) \\: | \\: y\\), say \\(S_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n\n\n\nApply the transformation defined by \\(T(x)\\) to each of the samples \\(S_{(j)}(x)\\), to obtain \\(T_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n\n\n\nUsing the Monte Carlo samples \\(T_{(j)}(x)\\), obtain the desired summaries of the predictive distribution:\n\nMean: \\(\\overline{T}_B = B^{-1} \\sum_{j=1}^B T_{(j)}(x)\\)\nStandard deviation: \\(\\left[B^{-1} \\sum_{j=1}^B (T_{(j)}(x) - \\overline{T}_B)^2\\right]^{1/2}\\)\nPrediction intervals at 95\\(\\%\\) coverage level\nExceedance probabilities: \\(B^{-1} \\sum_{j=1}^B I(T_{(j)}(x) &gt; L)\\), for a given threshold \\(L\\).\n\n\n\n\n pred_cont.R"
+  },
+  {
+    "objectID": "teaching/MBG/geostat_pred.html#marginal-vs-joint-predictions",
+    "href": "teaching/MBG/geostat_pred.html#marginal-vs-joint-predictions",
+    "title": "Geostatistical prediction",
+    "section": "Marginal vs joint predictions",
+    "text": "Marginal vs joint predictions\n\nLet \\(\\tilde{X} = (\\tilde{x}_1, \\ldots, \\tilde{x}_q)\\) be the set of prediciton locations that are make up the regular grid.\n\n\n\nMarginal predictions are obtained by simulating independently from the \\(q\\) marginal predictive distributions of \\([S(\\tilde{X}) | y]\\). In other words, we consider a prediction location \\(\\tilde{x}_j\\), simulate from \\([S(\\tilde{x}_j) \\: |\\: y]\\) say \\(B\\) samples, and repeat this for \\(j=1,\\ldots,q\\)\n\n\n\n\nJoint predictions are obtained by simulating from the joint distribution of \\([S(\\tilde{X}) \\: |\\: y]\\). Unlike marginal predictions, joint predictions take into account the correlation between the different components of \\([S(\\tilde{X}) \\: |\\: y]\\).\n\n\n\n\nWhen the target is \\(T(x)\\), i.e. at pixel-level, we can use either marginal or joint predictions.\n\n\n\n\nWhen the target is areal level (see next slides), we can ONLY use joint predictions."
+  },
+  {
+    "objectID": "teaching/MBG/geostat_pred.html#areal-level-targets-questions-to-consider",
+    "href": "teaching/MBG/geostat_pred.html#areal-level-targets-questions-to-consider",
+    "title": "Geostatistical prediction",
+    "section": "Areal-level targets: questions to consider",
+    "text": "Areal-level targets: questions to consider\n\nWhat spatially continuous target, \\(T(x)\\), are we seeking to aggregate?\nWhat are the spatial units, denoted as \\(A_i\\) for \\(i = 1, \\dots, N\\), over which the aggregation is required?\nWhat aggregating function should be applied?\nShould spatial weights be incorporated in the aggregation, and if so, what weights are appropriate?"
+  },
+  {
+    "objectID": "teaching/MBG/geostat_pred.html#example-regional-average-prevalence",
+    "href": "teaching/MBG/geostat_pred.html#example-regional-average-prevalence",
+    "title": "Geostatistical prediction",
+    "section": "Example: regional average prevalence",
+    "text": "Example: regional average prevalence\n\nLet \\(T(x) = \\exp\\{d(x)^\\top \\beta + S(x) \\}/(1+\\exp\\{d(x)^\\top \\beta + S(x)\\})\\)\n\n\n\nAverage (unweighted) prevalence \\[\n\\mathcal{M}_i = \\frac{1}{|A_i|}\\int_{A_i} T(x) \\: dx.\n\\]\n\n\n\n\nAverage weighted prevalence \\[\n\\mathcal{M}_i = \\frac{\\int_{A_i} w(x) T(x) \\: dx}{\\int_{A_i} w(x) \\: dx}.\n\\]\n\n\n\n\nWe approximate the above integrals using the regular grid, e.g.\n\n\\[\\mathcal{M}_i \\approx \\frac{1}{\\#\\{j : \\tilde{x}_j \\in A_i\\}} \\sum_{\\tilde{x}_j \\in A_i} T(\\tilde{x}_j), \\]\nfor the unweighted regional prevalence."
+  },
+  {
+    "objectID": "teaching/MBG/geostat_pred.html#steps-for-the-geostistical-prediction-of-areal-targets",
+    "href": "teaching/MBG/geostat_pred.html#steps-for-the-geostistical-prediction-of-areal-targets",
+    "title": "Geostatistical prediction",
+    "section": "Steps for the geostistical prediction of areal targets",
+    "text": "Steps for the geostistical prediction of areal targets\nPreliminary steps:\n\nObtain the shapefile of the study area.\nObtain the shapefiles of the boundaries of the regions for which aggregation is required.\nGenerate a regular grid that covers the study for the desired spatial resolution, using the shapefile.\nExtract all the covariates used in the model on the grid and ensure that there are no missing values.\nFor weighted areal level target, extract all the weights on the grid and ensure that there are no missing values.\n\n\nPrediction steps (for a given location \\(x\\) on the grid):\n\n(Joint prediction) Generate samples from the predictive distribution of \\(S(x) \\: | \\: y\\), say \\(S_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n\n\n\nApply the transformation defined by \\(T(x)\\) to each of the samples \\(S_{(j)}(x)\\), to obtain \\(T_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n\n\n\nAggregate the samples \\(T_{(j)}\\) for each region \\(A_i\\) to obtain samples of the areal-level predictive target \\(\\mathcal{M}_i\\). Denote these samples as \\(\\mathcal{M}_i^{(j)}\\).\nObtain the desired summaries of the predictive distribution of \\(\\mathcal{M}_i\\). Examples:\n\nMean: \\(\\overline{\\mathcal{M}}_{i,B} = B^{-1} \\sum_{j=1}^B \\mathcal{M}_i^{(j)}\\)\nStandard deviation: \\(\\left[B^{-1} \\sum_{j=1}^B (\\mathcal{M}_i^{(j)} - \\overline{\\mathcal{M}}_{i,B})^2\\right]^{1/2}\\)\nPrediction intervals at 95\\(\\%\\) coverage level\nExceedance probabilities: \\(B^{-1} \\sum_{j=1}^B I(\\mathcal{M}_{i}^{(j)} &gt; L)\\), for a given threshold \\(L\\).\n\n\n\n\n pred_area.R\n\n\n\n\nClick here to go back to the course page"
   }
 ]

@@ -147,7 +147,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#r-packages" id="toc-r-packages" class="nav-link active" data-scroll-target="#r-packages">R packages</a></li>
+  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link active" data-scroll-target="#learning-outcomes">Learning Outcomes</a></li>
+  <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages">R packages</a></li>
   <li><a href="#course-content" id="toc-course-content" class="nav-link" data-scroll-target="#course-content">Course Content</a>
   <ul class="collapse">
   <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">1. Introduction</a></li>
@@ -156,7 +157,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#geostatistical-prediction" id="toc-geostatistical-prediction" class="nav-link" data-scroll-target="#geostatistical-prediction">4. Geostatistical prediction</a></li>
   <li><a href="#validation-of-model-performance" id="toc-validation-of-model-performance" class="nav-link" data-scroll-target="#validation-of-model-performance">5. Validation of model performance</a></li>
   </ul></li>
-  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link" data-scroll-target="#learning-outcomes">Learning Outcomes</a></li>
   <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
   <li><a href="#how-to-use-this-material" id="toc-how-to-use-this-material" class="nav-link" data-scroll-target="#how-to-use-this-material">How to Use This Material</a></li>
   </ul>
@@ -192,56 +192,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>This course provides a comprehensive introduction to <strong>Model-based Geostatistics</strong>, with a focus on applications in global public health and environmental science. The course on the applications of geostaistical methods while keeping the mathematical content to the minimum level required. The course is taught using the R software environment.</p>
 <hr>
-<section id="r-packages" class="level2">
-<h2 class="anchored" data-anchor-id="r-packages">R packages</h2>
-<ul>
-<li><em>Essential</em>: <code>RiskMap</code>, <code>rgeoboundaries</code>, <code>ggplot2</code>, <code>sf</code>, <code>terra</code>, <code>elevats</code></li>
-<li><em>Desireable</em>: <code>shiny</code></li>
-</ul>
-<p>Install <code>RiskMap</code> in R by running <code>devtools::install_github("giorgilancs/RiskMap")</code></p>
-<p>Install <code>rgeoboundaries</code> in R by running <code>remotes::install_github("wmgeolab/rgeoboundaries")</code></p>
-</section>
-<section id="course-content" class="level2">
-<h2 class="anchored" data-anchor-id="course-content">Course Content</h2>
-<section id="introduction" class="level3">
-<h3 class="anchored" data-anchor-id="introduction">1. Introduction</h3>
-<p>An overview of geostatistical problems in the context of epidemiological studies.</p>
-<ul>
-<li><a href="../teaching/MBG/introduction.html">Slides and R scripts</a></li>
-</ul>
-</section>
-<section id="exploratory-analysis" class="level3">
-<h3 class="anchored" data-anchor-id="exploratory-analysis">2. Exploratory Analysis</h3>
-<p>Exploring regression relationships, overdispersion and spatial correlation.</p>
-<ul>
-<li><a href="../teaching/MBG/exp_analysis.html">Slides and R scripts</a></li>
-<li><a href="MBG/Exercises/Exercise-1.pdf">Exercise</a> and <a href="MBG/Data/Tanzania_rasters.zip">raster files</a> for the analysis</li>
-</ul>
-</section>
-<section id="model-formulation-and-parameter-estimation" class="level3">
-<h3 class="anchored" data-anchor-id="model-formulation-and-parameter-estimation">3. Model Formulation and Parameter Estimation</h3>
-<p>How to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.</p>
-<ul>
-<li><a href="../teaching/MBG/estimation.html">Slides and R scripts</a></li>
-<li><a href="MBG/Exercises/Exercise-2.pdf">Exercise</a></li>
-</ul>
-</section>
-<section id="geostatistical-prediction" class="level3">
-<h3 class="anchored" data-anchor-id="geostatistical-prediction">4. Geostatistical prediction</h3>
-<p>How to predict health outcomes using geostatistical models, at pixel- and areal-level.</p>
-<ul>
-<li><strong>Slides and R scripts</strong>: <em>Coming soon</em> (under development)</li>
-</ul>
-</section>
-<section id="validation-of-model-performance" class="level3">
-<h3 class="anchored" data-anchor-id="validation-of-model-performance">5. Validation of model performance</h3>
-<p>Assessing the model performance using cross-validation and simulation-based approaches.</p>
-<ul>
-<li><strong>Slides and R scripts</strong>: <em>Coming soon</em> (under development)</li>
-</ul>
-<hr>
-</section>
-</section>
 <section id="learning-outcomes" class="level2">
 <h2 class="anchored" data-anchor-id="learning-outcomes">Learning Outcomes</h2>
 <p>By the end of this course, students will be able to:</p>
@@ -253,6 +203,58 @@ ul.task-list li input[type="checkbox"] {
 <li>Validate geostatistical models using cross-validation and other simulation based approaches.</li>
 </ul>
 <hr>
+</section>
+<section id="r-packages" class="level2">
+<h2 class="anchored" data-anchor-id="r-packages">R packages</h2>
+<ul>
+<li><em>Essential</em>: <code>RiskMap</code>, <code>rgeoboundaries</code>, <code>ggplot2</code>, <code>sf</code>, <code>terra</code>, <code>elevats</code></li>
+<li><em>Desireable</em>: <code>shiny</code></li>
+</ul>
+<p>Install <code>RiskMap</code> in R by running <code>devtools::install_github("giorgilancs/RiskMap")</code></p>
+<p>Install <code>rgeoboundaries</code> in R by running <code>remotes::install_github("wmgeolab/rgeoboundaries")</code></p>
+<hr>
+</section>
+<section id="course-content" class="level2">
+<h2 class="anchored" data-anchor-id="course-content">Course Content</h2>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">1. Introduction</h3>
+<p>An overview of geostatistical problems in the context of epidemiological studies.</p>
+<ul>
+<li><a href="../teaching/MBG/introduction.html">Slides</a></li>
+</ul>
+</section>
+<section id="exploratory-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="exploratory-analysis">2. Exploratory Analysis</h3>
+<p>Exploring regression relationships, overdispersion and spatial correlation.</p>
+<ul>
+<li><a href="../teaching/MBG/exp_analysis.html">Slides</a></li>
+<li><a href="MBG/Exercises/Exercise-1.pdf">Exercise</a> and <a href="MBG/Data/Tanzania_rasters.zip">raster files</a> for the analysis</li>
+</ul>
+</section>
+<section id="model-formulation-and-parameter-estimation" class="level3">
+<h3 class="anchored" data-anchor-id="model-formulation-and-parameter-estimation">3. Model Formulation and Parameter Estimation</h3>
+<p>How to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.</p>
+<ul>
+<li><a href="../teaching/MBG/estimation.html">Slides</a></li>
+<li><a href="MBG/Exercises/Exercise-2.pdf">Exercise</a></li>
+</ul>
+</section>
+<section id="geostatistical-prediction" class="level3">
+<h3 class="anchored" data-anchor-id="geostatistical-prediction">4. Geostatistical prediction</h3>
+<p>How to predict health outcomes using geostatistical models, at pixel- and areal-level.</p>
+<ul>
+<li><a href="../teaching/MBG/geostat_pred.html">Slides</a></li>
+<li><a href="MBG/Exercises/Exercise-3.pdf">Exercise</a></li>
+</ul>
+</section>
+<section id="validation-of-model-performance" class="level3">
+<h3 class="anchored" data-anchor-id="validation-of-model-performance">5. Validation of model performance</h3>
+<p>Assessing the model performance using cross-validation and simulation-based approaches.</p>
+<ul>
+<li><strong>Slides and R scripts</strong>: <em>Coming soon</em> (under development)</li>
+</ul>
+<hr>
+</section>
 </section>
 <section id="prerequisites" class="level2">
 <h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
