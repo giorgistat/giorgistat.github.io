@@ -49,7 +49,6 @@ format:
 
 ![](figures/Prevalence-of-neglected-tropical-diseases-NTDs-by-country-The-burden-of-NTDs-in_W640.jpg)
 
-
 ## The impact of NTDs
 
 ![](figures/Ranking-of-NTDs-by-Disease-Burden-DALYs-and-Comparison-with-HIV-AIDS-Tuberculosis-and.png){width="35%"}
@@ -68,7 +67,6 @@ format:
 - Poverty and overcrowding\
 - Exposure to disease vectors (e.g., mosquitoes, flies)\
 - Lack of education and awareness
-
 
 ## From the mining industry to public health
 
@@ -166,7 +164,7 @@ Giorgi, E. and Fronterre, C. (expected August 2025) *Model-based geostatistics f
 
 Giorgi, E., Diggle, P. J., Snow, R. W., Noor, A. M. (2018). Geostatistical methods for disease mapping and visualization using data from spatio-temporally referenced prevalence surveys. **International Statistical Review.** https://doi.org/10.1111/insr.12268
 
----
+------------------------------------------------------------------------
 
 ## Combining data from multiple diagnostics {.smaller}
 
@@ -178,7 +176,7 @@ Giorgi, E., Diggle, P. J., Snow, R. W., Noor, A. M. (2018). Geostatistical metho
 
 Amoah, B., Diggle, P. J., Giorgi, E. (2019). A geostatistical framework for combining data from multiple diagnostic tests. **Biometrics.** doi:10.1111/biom.13142
 
----
+------------------------------------------------------------------------
 
 ## Spatially structured zero-inflation {.smaller}
 
@@ -189,7 +187,6 @@ Amoah, B., Diggle, P. J., Giorgi, E. (2019). A geostatistical framework for comb
 . . .
 
 Diggle, P. J., Giorgi, E. (2016). Model-based geostatistics for prevalence mapping in low-resource settings (with discussion). **Journal of the American Statistical Association.** 111:1096-1120
-
 
 ## Future methodological directions
 
@@ -229,9 +226,14 @@ Lancaster University, 4-5 March 2024
 
 <center>![](figures/trachoma_meeting.png){height="5in"}</center>
 
-## Criteria for using model-based geostatistics
+## Engagement with policy makers {.smaller}
 
-<center>![](figures/deciion_tree.png){height="6in"}</center>
+Technical meeting on capacity building 
+
+Lancaster University, 3-4 March 2025
+
+<center>![](figures/cap_build.jpg){height="5in"}</center>
+
 
 ## A user-friendly app for malaria mapping {.smaller}
 
