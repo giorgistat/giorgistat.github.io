@@ -753,14 +753,14 @@
     "href": "teaching/mbg.html#course-content",
     "title": "Model-based Geostatistics",
     "section": "Course Content",
-    "text": "Course Content\n\n1. Introduction\nAn overview of geostatistical problems in the context of epidemiological studies.\n\nSlides\n\n\n\n2. Exploratory Analysis\nExploring regression relationships, overdispersion and spatial correlation.\n\nSlides\nExercise and raster files for the analysis\n\n\n\n3. Model Formulation and Parameter Estimation\nHow to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.\n\nSlides\nExercise\n\n\n\n4. Geostatistical prediction\nHow to predict health outcomes using geostatistical models, at pixel- and areal-level.\n\nSlides\nExercise\n\n\n\n5. Validation of model performance\nAssessing the model performance using cross-validation and simulation-based approaches.\n\nSlides and R scripts: Coming soon (under development)"
+    "text": "Course Content\n\n1. Introduction\nAn overview of geostatistical problems in the context of epidemiological studies.\n\nSlides\n\n\n\n2. Exploratory Analysis\nExploring regression relationships, overdispersion and spatial correlation.\n\nSlides\nExercise and raster files for the analysis\n\n\n\n3. Model Formulation and Parameter Estimation\nHow to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.\n\nSlides\nExercise\n\n\n\n4. Geostatistical prediction\nHow to predict health outcomes using geostatistical models, at pixel- and areal-level.\n\nSlides\nExercise"
   },
   {
     "objectID": "teaching/mbg.html#learning-outcomes",
     "href": "teaching/mbg.html#learning-outcomes",
     "title": "Model-based Geostatistics",
     "section": "Learning Outcomes",
-    "text": "Learning Outcomes\nBy the end of this course, students will be able to:\n\nUnderstand the theoretical foundations of model-based geostatistics.\nPerform exploratory analysis of spatial data using R.\nFit and interpret geostatistical models.\nPerform geostatistical prediction in answer to a given publich health questions.\nValidate geostatistical models using cross-validation and other simulation based approaches."
+    "text": "Learning Outcomes\nBy the end of this course, students will be able to:\n\nUnderstand the theoretical foundations of model-based geostatistics.\nPerform exploratory analysis of spatial data using R.\nFit and interpret geostatistical models.\nPerform geostatistical prediction in answer to a given public health questions."
   },
   {
     "objectID": "teaching/mbg.html#prerequisites",
