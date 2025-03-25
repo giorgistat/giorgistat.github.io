@@ -16,8 +16,7 @@ By the end of this course, students will be able to:
 -   Understand the theoretical foundations of model-based geostatistics.
 -   Perform exploratory analysis of spatial data using R.
 -   Fit and interpret geostatistical models.
--   Perform geostatistical prediction in answer to a given publich health questions.
--   Validate geostatistical models using cross-validation and other simulation based approaches.
+-   Perform geostatistical prediction in answer to a given public health questions.
 
 ------------------------------------------------------------------------
 
@@ -60,12 +59,6 @@ How to predict health outcomes using geostatistical models, at pixel- and areal-
 
 -   [Slides](MBG/geostat_pred.qmd)
 -   [Exercise](MBG/Exercises/Exercise-3.pdf) 
-
-### 5. Validation of model performance
-
-Assessing the model performance using cross-validation and simulation-based approaches.
-
--   **Slides and R scripts**: *Coming soon* (under development)
 
 
 ------------------------------------------------------------------------
