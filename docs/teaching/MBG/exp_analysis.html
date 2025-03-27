@@ -416,8 +416,9 @@ Emanuele Giorgi
 <li>How to handle spatial data in R</li>
 </ul>
 </section>
-<section id="exploring-relationships" class="slide level2">
-<h2>Exploring relationships</h2>
+<section id="example-riverblindness-in-liberia" class="slide level2 smaller scrollable">
+<h2>Example: Riverblindness in Liberia</h2>
+<iframe data-external="1" src="https://www.youtube.com/embed/NHmYXk9cU0o?si=nhndWx75b4HHnOBx" width="800" height="400" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
 <ul>
 <li>How to explore relationships with count data (binary and aggregated counts)?</li>
 <li>How to model non-linear relationships?</li>
@@ -489,12 +490,12 @@ Emanuele Giorgi
 <div class="fragment">
 <ul>
 <li><strong>Random Intercept Model</strong>:<br>
-<span class="math display">\[ Y_{ij} \mid b_j \sim \text{Poisson}(\mu_{ij}), \quad \log(\mu_{ij}) = X_{ij} \beta + b_j. \]</span></li>
+<span class="math display">\[ Y_{ij} \mid b_j \sim \text{Binomial}(p_{ij}), \quad \log\left\{\frac{p_{ij}}{1-p_{ij}}\right\} = \beta_0 + d_{ij} \beta_1 + Z_i. \]</span></li>
 </ul>
 </div>
 <div class="fragment">
 <ul>
-<li><span class="math inline">\(b_j \sim \mathcal{N}(0, \sigma^2)\)</span> captures between-group variability.</li>
+<li><span class="math inline">\(Z_i \sim \mathcal{N}(0, \sigma^2)\)</span> captures between-group variability.</li>
 </ul>
 </div>
 <div class="fragment">
@@ -506,7 +507,7 @@ Emanuele Giorgi
 <ul>
 <li><strong>Connection to Negative Binomial</strong>:
 <ul>
-<li>If <span class="math inline">\(b_j\)</span> follows a <strong>Gamma</strong> distribution instead of Normal, the model is equivalent to a <strong>Negative Binomial</strong>.</li>
+<li>If <span class="math inline">\(Z_i\)</span> follows a <strong>Gamma</strong> distribution instead of Normal, the model is equivalent to a <strong>Negative Binomial</strong>.</li>
 </ul></li>
 </ul>
 </div>
@@ -529,23 +530,23 @@ Emanuele Giorgi
 <h2>Choosing Between Models</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="excecgmdln" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#excecgmdln table {
+<div id="clwkhrayet" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#clwkhrayet table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#excecgmdln thead, #excecgmdln tbody, #excecgmdln tfoot, #excecgmdln tr, #excecgmdln td, #excecgmdln th {
+#clwkhrayet thead, #clwkhrayet tbody, #clwkhrayet tfoot, #clwkhrayet tr, #clwkhrayet td, #clwkhrayet th {
   border-style: none;
 }
 
-#excecgmdln p {
+#clwkhrayet p {
   margin: 0;
   padding: 0;
 }
 
-#excecgmdln .gt_table {
+#clwkhrayet .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -571,12 +572,12 @@ Emanuele Giorgi
   border-left-color: #D3D3D3;
 }
 
-#excecgmdln .gt_caption {
+#clwkhrayet .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#excecgmdln .gt_title {
+#clwkhrayet .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -588,7 +589,7 @@ Emanuele Giorgi
   border-bottom-width: 0;
 }
 
-#excecgmdln .gt_subtitle {
+#clwkhrayet .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -600,7 +601,7 @@ Emanuele Giorgi
   border-top-width: 0;
 }
 
-#excecgmdln .gt_heading {
+#clwkhrayet .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -612,13 +613,13 @@ Emanuele Giorgi
   border-right-color: #D3D3D3;
 }
 
-#excecgmdln .gt_bottom_border {
+#clwkhrayet .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#excecgmdln .gt_col_headings {
+#clwkhrayet .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -633,7 +634,7 @@ Emanuele Giorgi
   border-right-color: #D3D3D3;
 }
 
-#excecgmdln .gt_col_heading {
+#clwkhrayet .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -653,7 +654,7 @@ Emanuele Giorgi
   overflow-x: hidden;
 }
 
-#excecgmdln .gt_column_spanner_outer {
+#clwkhrayet .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -665,15 +666,15 @@ Emanuele Giorgi
   padding-right: 4px;
 }
 
-#excecgmdln .gt_column_spanner_outer:first-child {
+#clwkhrayet .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#excecgmdln .gt_column_spanner_outer:last-child {
+#clwkhrayet .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#excecgmdln .gt_column_spanner {
+#clwkhrayet .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -685,11 +686,11 @@ Emanuele Giorgi
   width: 100%;
 }
 
-#excecgmdln .gt_spanner_row {
+#clwkhrayet .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#excecgmdln .gt_group_heading {
+#clwkhrayet .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -715,7 +716,7 @@ Emanuele Giorgi
   text-align: left;
 }
 
-#excecgmdln .gt_empty_group_heading {
+#clwkhrayet .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -730,15 +731,15 @@ Emanuele Giorgi
   vertical-align: middle;
 }
 
-#excecgmdln .gt_from_md > :first-child {
+#clwkhrayet .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#excecgmdln .gt_from_md > :last-child {
+#clwkhrayet .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#excecgmdln .gt_row {
+#clwkhrayet .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -757,7 +758,7 @@ Emanuele Giorgi
   overflow-x: hidden;
 }
 
-#excecgmdln .gt_stub {
+#clwkhrayet .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -770,7 +771,7 @@ Emanuele Giorgi
   padding-right: 5px;
 }
 
-#excecgmdln .gt_stub_row_group {
+#clwkhrayet .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -784,15 +785,15 @@ Emanuele Giorgi
   vertical-align: top;
 }
 
-#excecgmdln .gt_row_group_first td {
+#clwkhrayet .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#excecgmdln .gt_row_group_first th {
+#clwkhrayet .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#excecgmdln .gt_summary_row {
+#clwkhrayet .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -802,16 +803,16 @@ Emanuele Giorgi
   padding-right: 5px;
 }
 
-#excecgmdln .gt_first_summary_row {
+#clwkhrayet .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#excecgmdln .gt_first_summary_row.thick {
+#clwkhrayet .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#excecgmdln .gt_last_summary_row {
+#clwkhrayet .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -821,7 +822,7 @@ Emanuele Giorgi
   border-bottom-color: #D3D3D3;
 }
 
-#excecgmdln .gt_grand_summary_row {
+#clwkhrayet .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -831,7 +832,7 @@ Emanuele Giorgi
   padding-right: 5px;
 }
 
-#excecgmdln .gt_first_grand_summary_row {
+#clwkhrayet .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -841,7 +842,7 @@ Emanuele Giorgi
   border-top-color: #D3D3D3;
 }
 
-#excecgmdln .gt_last_grand_summary_row_top {
+#clwkhrayet .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -851,11 +852,11 @@ Emanuele Giorgi
   border-bottom-color: #D3D3D3;
 }
 
-#excecgmdln .gt_striped {
+#clwkhrayet .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#excecgmdln .gt_table_body {
+#clwkhrayet .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -864,7 +865,7 @@ Emanuele Giorgi
   border-bottom-color: #D3D3D3;
 }
 
-#excecgmdln .gt_footnotes {
+#clwkhrayet .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -878,7 +879,7 @@ Emanuele Giorgi
   border-right-color: #D3D3D3;
 }
 
-#excecgmdln .gt_footnote {
+#clwkhrayet .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -887,7 +888,7 @@ Emanuele Giorgi
   padding-right: 5px;
 }
 
-#excecgmdln .gt_sourcenotes {
+#clwkhrayet .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -901,7 +902,7 @@ Emanuele Giorgi
   border-right-color: #D3D3D3;
 }
 
-#excecgmdln .gt_sourcenote {
+#clwkhrayet .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -909,72 +910,72 @@ Emanuele Giorgi
   padding-right: 5px;
 }
 
-#excecgmdln .gt_left {
+#clwkhrayet .gt_left {
   text-align: left;
 }
 
-#excecgmdln .gt_center {
+#clwkhrayet .gt_center {
   text-align: center;
 }
 
-#excecgmdln .gt_right {
+#clwkhrayet .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#excecgmdln .gt_font_normal {
+#clwkhrayet .gt_font_normal {
   font-weight: normal;
 }
 
-#excecgmdln .gt_font_bold {
+#clwkhrayet .gt_font_bold {
   font-weight: bold;
 }
 
-#excecgmdln .gt_font_italic {
+#clwkhrayet .gt_font_italic {
   font-style: italic;
 }
 
-#excecgmdln .gt_super {
+#clwkhrayet .gt_super {
   font-size: 65%;
 }
 
-#excecgmdln .gt_footnote_marks {
+#clwkhrayet .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#excecgmdln .gt_asterisk {
+#clwkhrayet .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#excecgmdln .gt_indent_1 {
+#clwkhrayet .gt_indent_1 {
   text-indent: 5px;
 }
 
-#excecgmdln .gt_indent_2 {
+#clwkhrayet .gt_indent_2 {
   text-indent: 10px;
 }
 
-#excecgmdln .gt_indent_3 {
+#clwkhrayet .gt_indent_3 {
   text-indent: 15px;
 }
 
-#excecgmdln .gt_indent_4 {
+#clwkhrayet .gt_indent_4 {
   text-indent: 20px;
 }
 
-#excecgmdln .gt_indent_5 {
+#clwkhrayet .gt_indent_5 {
   text-indent: 25px;
 }
 
-#excecgmdln .katex-display {
+#clwkhrayet .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#excecgmdln div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#clwkhrayet div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1073,7 +1074,8 @@ Emanuele Giorgi
 <section id="parameter-estimation" class="slide level2 smaller scrollable">
 <h2>Parameter Estimation</h2>
 <ul>
-<li><strong>Likelihood function</strong></li>
+<li><p>Let the <span class="math inline">\(Z_i\)</span> be i.i.d. Gaussian distributions with mean zero and variance <span class="math inline">\(\sigma^2\)</span>.</p></li>
+<li><p><strong>Likelihood function</strong></p></li>
 </ul>
 <p>The vector of unkown parameters is <span class="math inline">\(\theta=(\beta, \sigma^2)\)</span> <span class="math display">\[
 L(\theta) = \prod_{i=1}^n \int_{-\infty}^{+\infty} [Z_i] [Y_i \mid Z_i] \: dY_i
@@ -1100,11 +1102,9 @@ D = 2(\log L(\hat{\theta}) - \log L(\hat{\theta}_0)) \sim \chi^2_{p}
 </ol></li>
 </ul>
 </div>
-</section>
-<section id="example-riverblindness-in-liberia" class="slide level2">
-<h2>Example: Riverblindness in Liberia</h2>
-<iframe data-external="1" src="https://www.youtube.com/embed/NHmYXk9cU0o?si=nhndWx75b4HHnOBx" width="800" height="400" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<div class="fragment">
 <p><img data-src="Images/rlogo.png" style="width:10.0%"> <a href="R scripts/glmer_fit.R">glmer_fit.R</a></p>
+</div>
 </section>
 <section id="coordinate-reference-systems-crs" class="slide level2 smaller scrollable">
 <h2>Coordinate Reference Systems (CRS)</h2>

@@ -22,7 +22,11 @@ format:
 -   How to use a non-spatial model for mapping
 -   How to handle spatial data in R
 
-## Exploring relationships
+------------------------------------------------------------------------
+
+## Example: Riverblindness in Liberia {.smaller .scrollable}
+
+{{< video https://www.youtube.com/embed/NHmYXk9cU0o?si=nhndWx75b4HHnOBx width="800" height="400" >}}
 
 -   How to explore relationships with count data (binary and aggregated counts)?
 -   How to model non-linear relationships?
@@ -89,11 +93,11 @@ format:
 . . .
 
 -   **Random Intercept Model**:\
-    $$ Y_{ij} \mid b_j \sim \text{Poisson}(\mu_{ij}), \quad \log(\mu_{ij}) = X_{ij} \beta + b_j. $$
+    $$ Y_{ij} \mid b_j \sim \text{Binomial}(p_{ij}), \quad \log\left\{\frac{p_{ij}}{1-p_{ij}}\right\} = \beta_0 + d_{ij} \beta_1 + Z_i. $$
 
 . . .
 
--   $b_j \sim \mathcal{N}(0, \sigma^2)$ captures between-group variability.
+-   $Z_i \sim \mathcal{N}(0, \sigma^2)$ captures between-group variability.
 
 . . .
 
@@ -102,7 +106,7 @@ format:
 . . .
 
 -   **Connection to Negative Binomial**:
-    -   If $b_j$ follows a **Gamma** distribution instead of Normal, the model is equivalent to a **Negative Binomial**.
+    -   If $Z_i$ follows a **Gamma** distribution instead of Normal, the model is equivalent to a **Negative Binomial**.
 
 ------------------------------------------------------------------------
 
@@ -198,7 +202,11 @@ Assumptions:
 
 5.  $Y_i \mid Z_i$ are mutually independent for $i=1,\dots,n$.
 
+
+
 ## Parameter Estimation {.smaller .scrollable}
+
+-   Let the $Z_i$ be i.i.d. Gaussian distributions with mean zero and variance $\sigma^2$.
 
 -   **Likelihood function**
 
@@ -226,9 +234,7 @@ Maximize the likelihood using the Laplace approximation (**glmer** in the **lme4
 
     4.  P-value: $P(D > D_{obs} \mid H_0)$
 
-## Example: Riverblindness in Liberia
-
-{{< video https://www.youtube.com/embed/NHmYXk9cU0o?si=nhndWx75b4HHnOBx width="800" height="400" >}}
+. . .
 
 ![](Images/rlogo.png){width="10%"} [glmer_fit.R](R%20scripts/glmer_fit.R)
 
