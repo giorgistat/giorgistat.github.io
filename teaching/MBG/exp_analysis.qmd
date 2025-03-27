@@ -22,7 +22,6 @@ format:
 -   How to use a non-spatial model for mapping
 -   How to handle spatial data in R
 
-
 ## Exploring relationships
 
 -   How to explore relationships with count data (binary and aggregated counts)?
@@ -273,7 +272,7 @@ Maximize the likelihood using the Laplace approximation (**glmer** in the **lme4
 
     -   Each cell has a value representing an attribute (e.g., temperature, elevation).
 
-## Mapping with covariates only {.smaller\]}
+## Mapping with covariates only
 
 Consider the following GLMM for the Liberia data on riverblindness. $$
 \log\left\{\frac{p(x_i)}{1-p(x_i)}\right\} = \beta_0 + \beta_1 \log\{e(x_i)\} + Z_i
