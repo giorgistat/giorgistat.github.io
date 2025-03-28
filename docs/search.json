@@ -1054,7 +1054,7 @@
     "href": "teaching/MBG/estimation.html#stationary-and-isotropic-gaussian-processes",
     "title": "Model formulation and parameter estimation",
     "section": "Stationary and Isotropic Gaussian Processes",
-    "text": "Stationary and Isotropic Gaussian Processes\n\nA Gaussian Process (GP) is a collection of random variables, any finite subset of which follows a multivariate normal distribution.\nA GP is stationary if its statistical properties do not change with location shifts.\nIt is isotropic if its properties do not change with locations rotations.\nWe denote a GP as \\(S(x)\\), where \\(x\\) represents location."
+    "text": "Stationary and Isotropic Gaussian Processes\n\nA Gaussian Process (GP) is a collection of random variables, any finite subset of which follows a multivariate normal distribution.\nA GP is stationary if its statistical properties do not change with location shifts.\nIt is isotropic if its properties do not change with locations rotations.\nWe denote a GP as \\(S(x)\\), where \\(x\\) represents location.\nFor a stationary and isotropic GP, the correlation function is purely a function of the distance between locations."
   },
   {
     "objectID": "teaching/MBG/estimation.html#interactive-r-code-for-matérn-process",
@@ -1075,7 +1075,7 @@
     "href": "teaching/MBG/estimation.html#theoretical-variogram",
     "title": "Model formulation and parameter estimation",
     "section": "Theoretical Variogram",
-    "text": "Theoretical Variogram\n\nThe variogram measures spatial dependence: \\[\n\\gamma(h) = \\frac{1}{2} \\mathbb{E} \\left[\\left\\{S(x) - S(x')\\right\\}^2\\right]\n\\]\nFor the Matérn process, it is derived from its covariance function \\[\n\\gamma(h) = \\sigma^2 \\left( 1 - C(h) \\right), h = ||x-x'||\n\\]"
+    "text": "Theoretical Variogram\n\nThe variogram measures spatial dependence: \\[\n\\gamma(h) = \\frac{1}{2} \\mathbb{E} \\left[\\left\\{S(x) - S(x')\\right\\}^2\\right]\n\\]\nFor the Matérn process, it is derived from its covariance function \\[\n\\gamma(h) = \\sigma^2 \\left( 1 - \\rho(h) \\right), h = ||x-x'||\n\\] where \\(\\rho(h)\\) is the correlation function of \\(S(x)\\)."
   },
   {
     "objectID": "teaching/MBG/estimation.html#simulating-a-matern-process",
@@ -1173,7 +1173,7 @@
     "href": "teaching/MBG/estimation.html#mcml-iterative-estimation",
     "title": "Model formulation and parameter estimation",
     "section": "MCML: Iterative Estimation",
-    "text": "MCML: Iterative Estimation\n\nChoose initial values \\(\\theta_0\\) and generate samples \\(W^{(j)}\\), for \\(j = 1,\\ldots, B\\).\n\n\n\nEstimate \\(\\theta\\) by maximizing the Monte Carlo approximation, denoted by \\(L_m(\\theta)\\), to the likelihood. Denote with \\(\\hat{\\theta}_m\\) this estimate.\n\n\n\n\nUpdate \\(\\theta_0 = \\hat{\\theta}_m\\) and iterate until convergence.\n\n\n\n\nStandard errors are computed using the inverse Hessian of \\(L_m(\\theta)\\) at \\(\\hat{\\theta}_m\\).\n\n\n\n glgm_fit.R\n\n\n\n\nClick here to go back to the course page"
+    "text": "MCML: Iterative Estimation\n\nChoose initial values \\(\\theta_0\\) and generate samples \\(W^{(j)}\\), for \\(j = 1,\\ldots, B\\).\n\n\n\nEstimate \\(\\theta\\) by maximizing the Monte Carlo approximation, denoted by \\(L_m(\\theta)\\), to the likelihood. Denote with \\(\\hat{\\theta}_m\\) this estimate.\n\n\n\n\nUpdate \\(\\theta_0 = \\hat{\\theta}_m\\) and iterate until convergence.\n\n\n\n\nStandard errors are computed using the inverse Hessian of \\(L_m(\\theta)\\) at \\(\\hat{\\theta}_m\\).\n\n\n\n glgm_fit.R"
   },
   {
     "objectID": "teaching/MBG/Exercises/Exercise 2.html",
@@ -1300,5 +1300,26 @@
     "title": "Exploratory analysis",
     "section": "Mapping with covariates only",
     "text": "Mapping with covariates only\nConsider the following GLMM for the Liberia data on riverblindness. \\[\n\\log\\left\\{\\frac{p(x_i)}{1-p(x_i)}\\right\\} = \\beta_0 + \\beta_1 \\log\\{e(x_i)\\} + Z_i\n\\] where \\(e(x)\\) is the elevation in meters at location \\(x\\) and \\(Z_i \\sim N(0,\\tau^2)\\) i.d.d.\n\nQuestion: How can we use this model for mapping?\n\n\n glmm_mapping.R\n\n\n\n\nClick here to go back to the course page"
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#special-cases-of-the-matérn-covariance",
+    "href": "teaching/MBG/estimation.html#special-cases-of-the-matérn-covariance",
+    "title": "Model formulation and parameter estimation",
+    "section": "Special Cases of the Matérn Covariance",
+    "text": "Special Cases of the Matérn Covariance\nThe Matérn family includes two important special cases:\n\nExponential Covariance (\\(\\kappa = 1/2\\))\n\\[ C(h) = \\sigma^2 \\exp\\left(-\\frac{h}{\\phi}\\right) \\]\nProperties:\n\nRelatively rough process, non-differentiable\n\nContinuous but not differentiable\n\nMarkovian (memoryless) property\n\n\n\n\nGaussian (Squared Exponential) Covariance (\\(\\kappa \\to \\infty\\))\n\\[ C(h) = \\sigma^2 \\exp\\left(-\\frac{h^2}{2\\phi^2}\\right) \\]\nProperties:\n\nInfinitely differentiable\n\nProduces very smooth realizations\n\nSometimes too smooth for physical processes"
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#practical-range-of-spatial-correlation",
+    "href": "teaching/MBG/estimation.html#practical-range-of-spatial-correlation",
+    "title": "Model formulation and parameter estimation",
+    "section": "Practical Range of Spatial Correlation",
+    "text": "Practical Range of Spatial Correlation\n\nDefinition: Distance (\\(h^*\\)) where correlation drops to 0.05 (5%)\n\nRepresents the effective spatial dependence range\nCommonly used cutoff in geostatistics\n\nGeneral Solution: \\[ \\rho(h^*) =  0.05 \\] Solve for \\(h^*\\) to find practical range\nExponential Covariance Example: \\[ \\rho(h^*) = \\exp\\left(-\\frac{h^*}{\\phi}\\right) = 0.05 \\] \\[ \\Rightarrow -\\frac{h^*}{\\phi} = \\log(0.05) \\approx -3 \\] \\[ \\Rightarrow h^* \\approx 3\\phi \\]\n\nPractical range: \\(3\\phi\\)\nAt \\(h^* = 3\\phi\\), correlation drops to ~5%"
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html#the-nugget-effect-as-small-scale-spatial-correlation",
+    "href": "teaching/MBG/estimation.html#the-nugget-effect-as-small-scale-spatial-correlation",
+    "title": "Model formulation and parameter estimation",
+    "section": "The Nugget Effect as Small-Scale Spatial Correlation",
+    "text": "The Nugget Effect as Small-Scale Spatial Correlation\n\nInterpretation of \\(Z_i\\):\n\nRepresents microscale variation (below measurement distance)\nCaptures measurement error or sub-resolution variability\n\nExample Process with Threshold Correlation: \\[ \\rho(h) = \\begin{cases}\n    \\delta & \\text{if } h \\leq h_0 \\\\\n    0 & \\text{if } h &gt; h_0\n    \\end{cases} \\]\n\nWhere \\(\\delta\\) is small-scale correlation\n\\(h_0\\) is resolution threshold\n\nPractical Implications:\n\nIf minimum distance between samples \\(&gt; h_0\\):\n\nProcess appears as \\(Z_i \\sim N(0, \\tau^2)\\) (pure noise)\nSpatial structure in \\(Z_i\\) becomes undetectable\n\nCannot disentangle \\(Z_i\\) from measurement error in the lineara geostatistical model"
   }
 ]

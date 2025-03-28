@@ -58,6 +58,7 @@ format:
 -   A GP is **stationary** if its statistical properties do not change with location shifts.
 -   It is **isotropic** if its properties do not change with locations rotations.
 -   We denote a GP as $S(x)$, where $x$ represents location.
+-   For a stationary and isotropic GP, the correlation function is purely a function of the distance between locations. 
 
 ## The Matérn Process {.smaller}
 
@@ -74,14 +75,58 @@ format:
 
 ------------------------------------------------------------------------
 
+## Special Cases of the Matérn Covariance {.smaller .scrollable}
+
+The Matérn family includes two important special cases:
+
+- **Exponential Covariance** ($\kappa = 1/2$)  
+  $$ C(h) = \sigma^2 \exp\left(-\frac{h}{\phi}\right) $$  
+  Properties:  
+    - Relatively rough process, non-differentiable  
+    - Continuous but not differentiable  
+    - Markovian (memoryless) property  
+
+. . .
+
+- **Gaussian (Squared Exponential) Covariance** ($\kappa \to \infty$)  
+  $$ C(h) = \sigma^2 \exp\left(-\frac{h^2}{2\phi^2}\right) $$  
+  Properties:  
+    - Infinitely differentiable  
+    - Produces very smooth realizations  
+    - Sometimes too smooth for physical processes  
+
+
+------------------------------------------------------------------------
+
+## Practical Range of Spatial Correlation {.smaller .scrollable}
+
+- **Definition**: Distance ($h^*$) where correlation drops to 0.05 (5%)
+  - Represents the effective spatial dependence range
+  - Commonly used cutoff in geostatistics
+
+- **General Solution**:
+  $$ \rho(h^*) =  0.05 $$
+  Solve for $h^*$ to find practical range
+
+- **Exponential Covariance Example**:
+  $$ \rho(h^*) = \exp\left(-\frac{h^*}{\phi}\right) = 0.05 $$
+  $$ \Rightarrow -\frac{h^*}{\phi} = \log(0.05) \approx -3 $$
+  $$ \Rightarrow h^* \approx 3\phi $$
+  - *Practical range*: $3\phi$
+  - At $h^* = 3\phi$, correlation drops to ~5%
+  
+
+------------------------------------------------------------------------
+
 ## Theoretical Variogram {.smallar .scrollable}
 
 -   The variogram measures spatial dependence: $$
     \gamma(h) = \frac{1}{2} \mathbb{E} \left[\left\{S(x) - S(x')\right\}^2\right]
     $$
 -   For the Matérn process, it is derived from its covariance function $$
-    \gamma(h) = \sigma^2 \left( 1 - C(h) \right), h = ||x-x'||
+    \gamma(h) = \sigma^2 \left( 1 - \rho(h) \right), h = ||x-x'||
     $$
+where $\rho(h)$ is the correlation function of $S(x)$.
 
 . . .
 
@@ -149,31 +194,30 @@ $$
 
 ![](Images/rlogo.png){width="10%"} [galicia_fit.R](R%20scripts/galicia_fit.R)
 
-
 ## Generalized linear geostatistical models {.smaller .scrollable}
 
 -   Let $S(x)$ be a stationary and isotropic Gaussian process, with Matérn correlation function.
 
-. . . 
+. . .
 
 -   Let $Z_i$ be independent identically distributed random variables.
 
-. . . 
+. . .
 
 -   Let $d(x_i)$ be a vector of covariates with associated regression coefficients $\beta$.
 
-. . . 
+. . .
 
--   Let $Y_i$ be a random variable that, conditionally on $S(x_i)$ and $Z_i$, follows an exponential family distribution (e.g. Gaussian, Binomial, Poisson). 
+-   Let $Y_i$ be a random variable that, conditionally on $S(x_i)$ and $Z_i$, follows an exponential family distribution (e.g. Gaussian, Binomial, Poisson).
 
-. . . 
+. . .
 
--   Let $g(\cdot)$ be a link function.  
-    -   $\mathbb{E} \left[ Y_i \: | \: S(x_i), Z_i \right] = m_i \mu_i$  
+-   Let $g(\cdot)$ be a link function.
+    -   $\mathbb{E} \left[ Y_i \: | \: S(x_i), Z_i \right] = m_i \mu_i$\
     -   ${\rm Var}\left[Y_i \: | \: S(x_i), Z_i\right] = m_i V(\mu_i)$
     -   $g(\mu_i) = d(x_i)^\top \beta + S(x_i) + Z_i$
 
----
+------------------------------------------------------------------------
 
 ## Binomial and Poisson Geostatistical Models {.smaller .scrollable}
 
@@ -182,7 +226,7 @@ $$
     -   **Link function**: Logit link $g(\mu_i) = \log \left( \frac{\mu_i}{1 - \mu_i} \right) = d(x_i)^\top \beta + S(x_i) + Z_i$
     -   **Variance function**: $V(\mu_i) = m_i \mu_i (1 - \mu_i)$
 
-. . . 
+. . .
 
 -   **Poisson Geostatistical Model**
     -   $Y_i \: | \: S(x_i), Z_i \sim \text{Poisson}(m_i \mu_i)$
@@ -195,43 +239,63 @@ $$
 
 . . .
 
-- The likelihood function for parameters $\theta = (\beta, \sigma^2, \phi, \tau^2)$ is given by:
+-   The likelihood function for parameters $\theta = (\beta, \sigma^2, \phi, \tau^2)$ is given by:
 
-  $$
-  L(\theta) = \int N(W; D\beta, \Omega) f(y| W) dW
-  $$
+    $$
+    L(\theta) = \int N(W; D\beta, \Omega) f(y| W) dW
+    $$
 
-  where $\Omega = \sigma^2 R(\phi) + \tau^2I_n$.
+    where $\Omega = \sigma^2 R(\phi) + \tau^2I_n$.
 
 . . .
 
-- We approximate this using Monte Carlo integration:
-  
-  $$
-  L_m(\theta) = \frac{1}{B} \sum_{j=1}^{B} \frac{N\left(W^{(j)}; D\beta, \Omega \right)}{N\left(W^{(j)}; D\beta_0, \Omega_0\right)}
-  $$
-where $W^{(i)}$ are sampled from the distribution of $W$ given $y$ using an MCMC algorithm.
+-   We approximate this using Monte Carlo integration:
 
----
+    $$
+    L_m(\theta) = \frac{1}{B} \sum_{j=1}^{B} \frac{N\left(W^{(j)}; D\beta, \Omega \right)}{N\left(W^{(j)}; D\beta_0, \Omega_0\right)}
+    $$ where $W^{(i)}$ are sampled from the distribution of $W$ given $y$ using an MCMC algorithm.
+
+------------------------------------------------------------------------
 
 ## MCML: Iterative Estimation {.smaller}
 
-- Choose initial values $\theta_0$ and generate samples $W^{(j)}$, for $j = 1,\ldots, B$.
-
-. . .
- 
-- Estimate $\theta$ by maximizing the Monte Carlo approximation, denoted by $L_m(\theta)$, to the likelihood. Denote with $\hat{\theta}_m$ this estimate.
+-   Choose initial values $\theta_0$ and generate samples $W^{(j)}$, for $j = 1,\ldots, B$.
 
 . . .
 
-- Update $\theta_0 = \hat{\theta}_m$ and iterate until convergence. 
+-   Estimate $\theta$ by maximizing the Monte Carlo approximation, denoted by $L_m(\theta)$, to the likelihood. Denote with $\hat{\theta}_m$ this estimate.
 
 . . .
 
-- Standard errors are computed using the inverse Hessian of $L_m(\theta)$ at $\hat{\theta}_m$.
+-   Update $\theta_0 = \hat{\theta}_m$ and iterate until convergence.
+
+. . .
+
+-   Standard errors are computed using the inverse Hessian of $L_m(\theta)$ at $\hat{\theta}_m$.
 
 . . .
 
 ![](Images/rlogo.png){width="10%"} [glgm_fit.R](R%20scripts/glgm_fit.R)
 
 
+## The Nugget Effect as Small-Scale Spatial Correlation {.smaller .scrollablel}
+
+- **Interpretation of $Z_i$**:
+  - Represents microscale variation (below measurement distance)
+  - Captures measurement error or sub-resolution variability
+
+- **Example Process with Threshold Correlation**:
+  $$ \rho(h) = \begin{cases} 
+      \delta & \text{if } h \leq h_0 \\
+      0 & \text{if } h > h_0 
+      \end{cases} $$
+  - Where $\delta$ is small-scale correlation
+  - $h_0$ is resolution threshold
+
+- **Practical Implications**:
+  - If minimum distance between samples $> h_0$:
+    - Process appears as $Z_i \sim N(0, \tau^2)$ (pure noise)
+    - Spatial structure in $Z_i$ becomes undetectable
+  - Cannot disentangle $Z_i$ from measurement error in the lineara geostatistical model
+
+------------------------------------------------------------------------

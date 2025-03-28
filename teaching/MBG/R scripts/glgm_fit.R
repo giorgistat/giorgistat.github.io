@@ -33,6 +33,13 @@ lb_fit <- glgpm(npos ~ log(elevation) + gp(),
 
 summary(lb_fit)
 
+### Including the nugget effect Z_i
+
+lb_fit_n <- glgpm(npos ~ log(elevation) + gp(nugget = NULL),
+                den = ntest,
+                family = "binomial",
+                data = liberia_sf)
+summary(lb_fit_n)
 
 #####################################################################################
 #####################################################################################

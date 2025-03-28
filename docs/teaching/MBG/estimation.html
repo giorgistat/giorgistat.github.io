@@ -384,6 +384,7 @@ Emanuele Giorgi
 <li>A GP is <strong>stationary</strong> if its statistical properties do not change with location shifts.</li>
 <li>It is <strong>isotropic</strong> if its properties do not change with locations rotations.</li>
 <li>We denote a GP as <span class="math inline">\(S(x)\)</span>, where <span class="math inline">\(x\)</span> represents location.</li>
+<li>For a stationary and isotropic GP, the correlation function is purely a function of the distance between locations.</li>
 </ul>
 </section>
 <section id="the-matérn-process" class="slide level2 smaller">
@@ -402,6 +403,52 @@ C(h) = \sigma^2 \frac{2^{1-\kappa}}{\Gamma(\kappa)} \left( \frac{h}{\phi} \right
 </ul>
 <p><img data-src="Images/rlogo.png" style="width:10.0%"> <a href="R scripts/matern_simulator.R">matern_simulator.R</a></p>
 </section>
+<section id="special-cases-of-the-matérn-covariance" class="slide level2 smaller scrollable">
+<h2>Special Cases of the Matérn Covariance</h2>
+<p>The Matérn family includes two important special cases:</p>
+<ul>
+<li><strong>Exponential Covariance</strong> (<span class="math inline">\(\kappa = 1/2\)</span>)<br>
+<span class="math display">\[ C(h) = \sigma^2 \exp\left(-\frac{h}{\phi}\right) \]</span><br>
+Properties:
+<ul>
+<li>Relatively rough process, non-differentiable<br>
+</li>
+<li>Continuous but not differentiable<br>
+</li>
+<li>Markovian (memoryless) property</li>
+</ul></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><strong>Gaussian (Squared Exponential) Covariance</strong> (<span class="math inline">\(\kappa \to \infty\)</span>)<br>
+<span class="math display">\[ C(h) = \sigma^2 \exp\left(-\frac{h^2}{2\phi^2}\right) \]</span><br>
+Properties:
+<ul>
+<li>Infinitely differentiable<br>
+</li>
+<li>Produces very smooth realizations<br>
+</li>
+<li>Sometimes too smooth for physical processes</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="practical-range-of-spatial-correlation" class="slide level2 smaller scrollable">
+<h2>Practical Range of Spatial Correlation</h2>
+<ul>
+<li><p><strong>Definition</strong>: Distance (<span class="math inline">\(h^*\)</span>) where correlation drops to 0.05 (5%)</p>
+<ul>
+<li>Represents the effective spatial dependence range</li>
+<li>Commonly used cutoff in geostatistics</li>
+</ul></li>
+<li><p><strong>General Solution</strong>: <span class="math display">\[ \rho(h^*) =  0.05 \]</span> Solve for <span class="math inline">\(h^*\)</span> to find practical range</p></li>
+<li><p><strong>Exponential Covariance Example</strong>: <span class="math display">\[ \rho(h^*) = \exp\left(-\frac{h^*}{\phi}\right) = 0.05 \]</span> <span class="math display">\[ \Rightarrow -\frac{h^*}{\phi} = \log(0.05) \approx -3 \]</span> <span class="math display">\[ \Rightarrow h^* \approx 3\phi \]</span></p>
+<ul>
+<li><em>Practical range</em>: <span class="math inline">\(3\phi\)</span></li>
+<li>At <span class="math inline">\(h^* = 3\phi\)</span>, correlation drops to ~5%</li>
+</ul></li>
+</ul>
+</section>
 <section id="theoretical-variogram" class="slide level2 smallar scrollable">
 <h2>Theoretical Variogram</h2>
 <ul>
@@ -409,8 +456,8 @@ C(h) = \sigma^2 \frac{2^{1-\kappa}}{\Gamma(\kappa)} \left( \frac{h}{\phi} \right
 \gamma(h) = \frac{1}{2} \mathbb{E} \left[\left\{S(x) - S(x')\right\}^2\right]
 \]</span></li>
 <li>For the Matérn process, it is derived from its covariance function <span class="math display">\[
-\gamma(h) = \sigma^2 \left( 1 - C(h) \right), h = ||x-x'||
-\]</span></li>
+\gamma(h) = \sigma^2 \left( 1 - \rho(h) \right), h = ||x-x'||
+\]</span> where <span class="math inline">\(\rho(h)\)</span> is the correlation function of <span class="math inline">\(S(x)\)</span>.</li>
 </ul>
 <div class="fragment">
 <center>
@@ -577,12 +624,42 @@ L_m(\theta) = \frac{1}{B} \sum_{j=1}^{B} \frac{N\left(W^{(j)}; D\beta, \Omega \r
 </div>
 <div class="fragment">
 <p><img data-src="Images/rlogo.png" style="width:10.0%"> <a href="R scripts/glgm_fit.R">glgm_fit.R</a></p>
+</div>
+</section>
+<section id="the-nugget-effect-as-small-scale-spatial-correlation" class="slide level2 smaller scrollablel">
+<h2>The Nugget Effect as Small-Scale Spatial Correlation</h2>
+<ul>
+<li><strong>Interpretation of <span class="math inline">\(Z_i\)</span></strong>:
+<ul>
+<li>Represents microscale variation (below measurement distance)</li>
+<li>Captures measurement error or sub-resolution variability</li>
+</ul></li>
+<li><strong>Example Process with Threshold Correlation</strong>: <span class="math display">\[ \rho(h) = \begin{cases}
+    \delta &amp; \text{if } h \leq h_0 \\
+    0 &amp; \text{if } h &gt; h_0
+    \end{cases} \]</span>
+<ul>
+<li>Where <span class="math inline">\(\delta\)</span> is small-scale correlation</li>
+<li><span class="math inline">\(h_0\)</span> is resolution threshold</li>
+</ul></li>
+<li><strong>Practical Implications</strong>:
+<ul>
+<li>If minimum distance between samples <span class="math inline">\(&gt; h_0\)</span>:
+<ul>
+<li>Process appears as <span class="math inline">\(Z_i \sim N(0, \tau^2)\)</span> (pure noise)</li>
+<li>Spatial structure in <span class="math inline">\(Z_i\)</span> becomes undetectable</li>
+</ul></li>
+<li>Cannot disentangle <span class="math inline">\(Z_i\)</span> from measurement error in the lineara geostatistical model</li>
+</ul></li>
+</ul>
+</section>
+<section class="slide level2">
+
 
 <div class="quarto-auto-generated-content">
 <p><img src="Images/clogo.png" class="slide-logo"></p>
 <div class="footer footer-default">
 <p><a href="../../teaching/mbg.html">Click here to go back to the course page</a></p>
-</div>
 </div>
 </div>
 </section>
