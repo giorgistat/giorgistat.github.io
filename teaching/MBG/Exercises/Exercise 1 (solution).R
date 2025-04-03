@@ -84,8 +84,6 @@ ci_upper <- quantile(peak_temps, 0.975)
 cat("Temperature at which prevalence is highest:", peak_temp_estimate, "\n")
 cat("95% Confidence Interval: [", ci_lower, ",", ci_upper, "]\n")
 
-# Point 3
-
 # Estimate change point
 estimate_change_point <- function(data, change_points = seq(25, 35, by = 0.1)) {
   log_likelihoods <- numeric(length(change_points))
@@ -128,7 +126,7 @@ p_spl <- ggplot(tz_malaria, aes(x = Temperature, y = elogit)) +
        y = "Empirical logit") +
   theme_minimal()
 
-# Point 4
+# Point 3
 
 library(lme4)
 
@@ -157,9 +155,9 @@ shp_tz <- st_transform(shp_tz, crs = 32736)
 grid_utm <- create_grid(shp_tz, spat_res = 5)
 
 # Read and project raster files
-r_temp <- rast("path/to/local/Tanzania_Annual_LST_2015.tif")
+r_temp <- rast("../Data/Tanzania_Annual_LST_2015.tif")
 r_temp <- terra::project(r_temp, "EPSG:32736")
-r_evi <- rast("path/to/local/Tanzania_Annual_EVI_2015.tif")
+r_evi <- rast("../Data//Tanzania_Annual_EVI_2015.tif")
 r_evi <- terra::project(r_evi, "EPSG:32736")
 
 # Extract values and predict prevalence
@@ -183,3 +181,4 @@ ggplot(data = raster_pred) +
   coord_cartesian() +
   theme_minimal() +
   labs(title = "Predictions", fill = "Prevalence")
+

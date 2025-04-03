@@ -118,3 +118,4 @@ plot(pred_area_w, which_target = "prev", which_summary = "exceed20",
   guides(fill=guide_legend(title="Probability")) +
   ggtitle("Exceedance probability (L = 0.2) \n (population weighted)") +
   theme(plot.title = element_text(size = 15))
+

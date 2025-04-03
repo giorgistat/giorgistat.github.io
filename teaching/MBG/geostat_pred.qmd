@@ -169,7 +169,7 @@ for the unweighted regional prevalence.
 
 . . .
 
-3.  Aggregate the samples $T_{(j)}$ for each region $A_i$ to obtain samples of the areal-level predictive target $\mathcal{M}_i$. Denote these samples as $\mathcal{M}_i^{(j)}$. 
+3.  Aggregate the samples $T_{(j)}(x)$ for each region $A_i$ to obtain samples of the areal-level predictive target $\mathcal{M}_i$. Denote these samples as $\mathcal{M}_i^{(j)}$.
 
 4.  Obtain the desired summaries of the predictive distribution of $\mathcal{M}_i$. Examples:
 

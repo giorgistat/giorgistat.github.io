@@ -38,7 +38,7 @@ grid_lb <- create_grid(shp_lb, spat_res = 5)
 library(elevatr)
 elevation <- get_elev_point(st_as_sf(grid_lb), prj = crs_lb, src = "aws")$elevation
 
-pred_lb <- data.frame(elvation=elevation)
+pred_lb <- data.frame(elevation=elevation)
 
 # Predict S(x)
 
