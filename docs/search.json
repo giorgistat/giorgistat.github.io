@@ -389,7 +389,7 @@
     "href": "talks/index.html",
     "title": "Talks",
     "section": "",
-    "text": "This page includes slides of selected presentations given at seminars and conferences since February 2025.\n\n\nModel-based Geostatistics for Global Public Health: From Methodology Development to Policy Applications\nSeminar at Oslo Centre for Biostatistics and Epidemiology, Oslo University, 20 March 2025"
+    "text": "This page includes slides of selected presentations given at seminars and conferences since February 2025.\n\n\nIncorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods\nSeminar at the Department of Statistics at Lund University, Sweden, 26 May 2025\nModel-based Geostatistics for Global Public Health: From Methodology Development to Policy Applications\nSeminar at Oslo Centre for Biostatistics and Epidemiology, Oslo University, 20 March 2025"
   },
   {
     "objectID": "talks/index.html#section",
@@ -1339,37 +1339,37 @@
   {
     "objectID": "talks/Lund2025.html#presentation-overview",
     "href": "talks/Lund2025.html#presentation-overview",
-    "title": "Model-based Geostatistics for Global Public Health",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Presentation Overview",
-    "text": "Presentation Overview\n\nNeglected Tropical Diseases: an overview\nModel-based Geostatistics: Current and Future Research\nInforming Policy Decisions\nCapacity Building"
+    "text": "Presentation Overview\n\nNeglected Tropical Diseases and Mass Drug Administration\nThe standard geostatistical model for prevalence mapping\nA decay-adjusted spatio-temporal model\nApplication to lymphatic filariasis in Madagascar\nSummary"
   },
   {
     "objectID": "talks/Lund2025.html#neglected-tropical-diseases",
     "href": "talks/Lund2025.html#neglected-tropical-diseases",
-    "title": "Model-based Geostatistics for Global Public Health",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Neglected tropical diseases",
     "text": "Neglected tropical diseases"
   },
   {
     "objectID": "talks/Lund2025.html#ntd-endemic-areas",
     "href": "talks/Lund2025.html#ntd-endemic-areas",
-    "title": "Model-based Geostatistics for Global Public Health",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "NTD endemic areas",
     "text": "NTD endemic areas"
   },
   {
     "objectID": "talks/Lund2025.html#the-impact-of-ntds",
     "href": "talks/Lund2025.html#the-impact-of-ntds",
-    "title": "Model-based Geostatistics for Global Public Health",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "The impact of NTDs",
     "text": "The impact of NTDs"
   },
   {
     "objectID": "talks/Lund2025.html#ntds-risk-factors",
     "href": "talks/Lund2025.html#ntds-risk-factors",
-    "title": "Model-based Geostatistics for Global Public Health",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "NTDs Risk Factors",
-    "text": "NTDs Risk Factors\n\n\n\n\n\n\n\n\n\n\n\n\nCommon risk factors:\n- Poor sanitation and lack of clean water\n- Limited healthcare access\n- Poverty and overcrowding\n- Exposure to disease vectors (e.g., mosquitoes, flies)\n- Lack of education and awareness"
+    "text": "NTDs Risk Factors\n\n\n\n\n\n\n\n\n\n\n\n\n\nCommon risk factors:\n- Poor sanitation and lack of clean water\n- Limited healthcare access\n- Poverty and overcrowding\n- Exposure to disease vectors (e.g., mosquitoes, flies)\n- Lack of education and awareness"
   },
   {
     "objectID": "talks/Lund2025.html#from-the-mining-industry-to-public-health",
@@ -1395,16 +1395,16 @@
   {
     "objectID": "talks/Lund2025.html#the-ingredients-of-a-geostatistical-model-for-prevalence-mapping",
     "href": "talks/Lund2025.html#the-ingredients-of-a-geostatistical-model-for-prevalence-mapping",
-    "title": "Model-based Geostatistics for Global Public Health",
+    "title": "Accounting for the effect of mass drug administration using geostatistical methods",
     "section": "The ingredients of a geostatistical model for prevalence mapping",
-    "text": "The ingredients of a geostatistical model for prevalence mapping\n\nOutcome: \\(Y_i\\) number of cases out \\(n_i\\) sampled\n\n. . .\n\nLocations: \\(X = (x_1, \\ldots, x_n)\\)\n\n. . .\n\nCovariates (optional): \\(d(x)\\) (e.g. elevation, distance from waterways)\n\n. . .\n\nSpatial Gaussian process: \\(S(x)\\) (stationary and isotropic) \\[\n{\\rm cov}\\{S(x), S(x')\\} = \\sigma^2 \\rho(||x - x'||; \\phi)\n\\] Example: \\(\\rho(u; \\phi) = \\exp\\{-u/\\phi\\}\\)."
+    "text": "The ingredients of a geostatistical model for prevalence mapping\n\nOutcome: \\(Y_i\\) number of cases out \\(n_i\\) sampled\n\n\n\nLocations: \\(X = (x_1, \\ldots, x_n)\\)\n\n\n\n\nCovariates (optional): \\(d(x)\\) (e.g. elevation, distance from waterways)\n\n\n\n\nSpatial Gaussian process: \\(S(x)\\) (stationary and isotropic) \\[\n{\\rm cov}\\{S(x), S(x')\\} = \\sigma^2 \\rho(||x - x'||; \\phi)\n\\] Example: \\(\\rho(u; \\phi) = \\exp\\{-u/\\phi\\}\\)."
   },
   {
     "objectID": "talks/Lund2025.html#putting-all-together",
     "href": "talks/Lund2025.html#putting-all-together",
-    "title": "Model-based Geostatistics for Global Public Health",
+    "title": "Accounting for the effect of mass drug administration using geostatistical methods",
     "section": "Putting all together",
-    "text": "Putting all together\n\nConditional independence: \\(Y_{i}\\) conditionally on \\(S(x_i)\\) are mutually independent \\(Bin(n_i , p(x_i))\\)\n\n. . .\n\nThe linear predictor \\[\n\\log\\left\\{\\frac{p(x_i)}{1-p(x_i)}\\right\\} = \\beta_0 + d(x_i)^\\top \\beta + S(x_i)\n\\]\n\n. . .\n\nThe joint distribution: \\([S, Y] = [S] [Y | S]\\)\n\nwhere \\(Y=(Y_1, \\ldots, Y_n)\\) and \\(S = (S(x_1), \\ldots, S(x_n))\\)\n. . .\n\nThe likelihood function \\[\nL(\\theta) = \\int_{\\mathbb{R}^n} [S] [Y | S] \\: dS\n\\] How do we approximate this intractable integral?"
+    "text": "Putting all together\n\nConditional independence: \\(Y_{i}\\) conditionally on \\(S(x_i)\\) are mutually independent \\(Bin(n_i , p(x_i))\\)\n\n\n\nThe linear predictor \\[\n\\log\\left\\{\\frac{p(x_i)}{1-p(x_i)}\\right\\} = \\beta_0 + d(x_i)^\\top \\beta + S(x_i)\n\\]\n\n\n\n\nThe joint distribution: \\([S, Y] = [S] [Y | S]\\)\n\nwhere \\(Y=(Y_1, \\ldots, Y_n)\\) and \\(S = (S(x_1), \\ldots, S(x_n))\\)"
   },
   {
     "objectID": "talks/Lund2025.html#prevmap-and-riskmap",
@@ -1493,8 +1493,190 @@
   {
     "objectID": "talks/Lund2025.html#thank-you",
     "href": "talks/Lund2025.html#thank-you",
-    "title": "Model-based Geostatistics for Global Public Health",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "THANK YOU!",
-    "text": "THANK YOU!\n\n\n\nLet’s Connect\n🔗 giorgistat.github.io\n📧 e.giorgi@lancaster.ac.uk\n📍 CHICAS, Lancaster Medical School, Lancaster University, UK"
+    "text": "THANK YOU!\n\n\n\n🔗 giorgistat.github.io\n📧 e.giorgi@lancaster.ac.uk\n📍 CHICAS, Lancaster Medical School, Lancaster University, UK"
+  },
+  {
+    "objectID": "talks/Lund2025.html#mass-drug-administration-mda-a-preventive-strategy",
+    "href": "talks/Lund2025.html#mass-drug-administration-mda-a-preventive-strategy",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Mass Drug Administration (MDA): A Preventive Strategy",
+    "text": "Mass Drug Administration (MDA): A Preventive Strategy\nWhat is MDA? Mass Drug Administration involves the periodic distribution of safe, effective medications to entire at-risk populations—regardless of disease status—to reduce transmission and prevent infections.\n\nWhy is it used?\n\nControls or eliminates disease in endemic areas\nReduces the community-level parasite burden\nPrevents long-term complications and disability\n\n\n\nKey Features:\n\nDelivered at regular intervals (annually or biannually)\nOften combined with public health education\nSupported by WHO and major global health initiatives"
+  },
+  {
+    "objectID": "talks/Lund2025.html#albendazole",
+    "href": "talks/Lund2025.html#albendazole",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Albendazole",
+    "text": "Albendazole\n\n\n\n\n\n\n\n\nHow it works:\nAlbendazole disrupts the metabolism of parasitic worms by inhibiting microtubule formation, which is essential for their survival.\n\nAlbendazole works by stopping worms from absorbing the nutrients they need to survive. It blocks a process inside their cells that’s kind of like the framework or “skeleton” that helps them function and grow. Without it, the worms can’t live for long and are eventually cleared from the body.\n\nUsed for NTDs such as:\n\nLymphatic filariasis (in combination with ivermectin or DEC)\nSoil-transmitted helminths (e.g., ascariasis, hookworm, trichuriasis)\n\nMDA use:\nDistributed in large-scale deworming campaigns, particularly targeting children and at-risk communities."
+  },
+  {
+    "objectID": "talks/Lund2025.html#ivermectin",
+    "href": "talks/Lund2025.html#ivermectin",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Ivermectin",
+    "text": "Ivermectin\n\n\n\n\n\n\n\n\nHow it works:\nIvermectin paralyzes and kills parasites by interfering with their nerve and muscle function via chloride channel disruption. Parasites cannot move and feed.\n\nIvermectin kills parasites by messing with their nerves and muscles, which causes them to become paralyzed and die. It stops them from moving and feeding, so the body can get rid of them.\nChloride channel disruption refers to any impairment in the normal function of chloride channels, which are protein pores in cell membranes that allow chloride ions (Cl-) to pass through.\n\nUsed for NTDs such as:\n\nOnchocerciasis (river blindness)\n\nLymphatic filariasis (in combination with albendazole)\n\nStrongyloidiasis\n\nMDA use: Ivermectin is given to both adults and children (weighing more than 15kg), but its use is carefully considered for pregnant women."
+  },
+  {
+    "objectID": "talks/Lund2025.html#praziquantel",
+    "href": "talks/Lund2025.html#praziquantel",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Praziquantel",
+    "text": "Praziquantel\n\n\n\n\n\n\n\n\nHow it works:\nPraziquantel increases permeability of the parasite’s cell membranes to calcium ions, causing muscle contraction and paralysis.\n\nPraziquantel makes the outer layer of the parasite’s cells more “leaky,” allowing calcium to enter. This causes the parasite’s muscles to tighten and paralyze it, making it easier for the body to get rid of it.\nInside the cells of parasites, calcium is important for controlling muscle movement. When calcium enters the parasite’s cells (which normally isn’t supposed to happen), it disrupts the normal function of the muscles.\nThis excess calcium makes the muscles contract and become stiff. The parasite can’t move properly or feed, and it becomes paralyzed, which allows the body to get rid of it. So, calcium causes the parasite’s muscles to freeze up, stopping it from surviving or causing further harm.\n\nUsed for NTDs such as:\n\n\nSchistosomiasis\n\nTapeworm infections\n\nMDA use:\nKey drug in school-based and community-wide treatment campaigns in regions with high schistosomiasis burden."
+  },
+  {
+    "objectID": "talks/Lund2025.html#treating-ntds",
+    "href": "talks/Lund2025.html#treating-ntds",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Treating NTDs",
+    "text": "Treating NTDs\n\n\n\n\n\nDisease\nAlb\nPZQ\nIVM\nAZM\nDEC\nMOX\nOther\n\n\n\n\nSTH\n✓\n\n\n\n\n\nMBD\n\n\nSchisto\n✓†\n✓\n\n\n\n\nOXA\n\n\nLF\n✓†\n\n✓\n\n✓\n✓\nDOX*\n\n\nTrachoma\n\n\n✓‡\n✓\n\n\nTEO\n\n\n\n\n\n\n\nAbbreviations:\nAlb = Albendazole, PZQ = Praziquantel, IVM = Ivermectin, AZM = Azithromycin, DEC = Diethylcarbamazine, MOX = Moxidectin, MBD = Mebendazole, OXA = Oxamniquine, DOX = Doxycycline, TEO = Tetracycline eye ointment\nSymbols:\n† Used in combination therapy\n‡ Only in onchocerciasis co-endemic areas\n*Adjunctive treatment\n\nKey Explanations: - combo: Combination therapy enhances efficacy (e.g., albendazole+praziquantel for schistosomiasis kills both juvenile and adult worms)\n\nco-endemic areas only (trachoma/ivermectin):\n\nIvermectin is only recommended for trachoma in areas where onchocerciasis (river blindness) is also present because:\n\nIn onchocerciasis-endemic areas: Mass ivermectin distribution is already occurring for river blindness control, so it can simultaneously help reduce trachoma transmission\nIn non-onchocerciasis areas:\n\nAzithromycin is preferred as the primary trachoma treatment because:\n\nIt has direct antibacterial action against Chlamydia trachomatis\nBetter safety profile for children and pregnant women\nAdditional community-wide benefits against other bacterial infections\n\nIvermectin isn’t contraindicated, but simply less optimal than azithromycin for trachoma-specific control\n\n\n\nadjunct:\n\nSecondary treatment that supports but doesn’t replace primary therapy\nExample: Doxycycline for LF kills Wolbachia bacteria inside adult worms, making them sterile (used alongside albendazole/ivermectin)"
+  },
+  {
+    "objectID": "talks/Lund2025.html#assessing-mda-impact",
+    "href": "talks/Lund2025.html#assessing-mda-impact",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Assessing MDA Impact",
+    "text": "Assessing MDA Impact\nTimeframe for observable impact:\n\nSTH: Reduced prevalence seen after 1-2 annual rounds\nSchistosomiasis: Egg reduction visible after 1-2 years\nLF: Microfilariae reduction within months, but breaking transmission requires 5+ years\nTrachoma: Active disease reduction in 1-3 years\n\nMonitoring surveys:\n\nBaseline surveys (pre-MDA)\nTransmission Assessment Surveys (TAS) for LF after 5+ rounds\nImpact surveys (after 3-5 rounds)\nPost-treatment surveillance (after reaching elimination targets)\n\nKey indicators:\n\nParasitological prevalence (STH, schisto)\nAntigenemia (LF)\nTF/TI rates (trachoma)\nEntomological indices (for vector-borne NTDs)"
+  },
+  {
+    "objectID": "talks/Lund2025.html#modelling-the-impact-of-mda",
+    "href": "talks/Lund2025.html#modelling-the-impact-of-mda",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Modelling the impact of MDA",
+    "text": "Modelling the impact of MDA"
+  },
+  {
+    "objectID": "talks/Lund2025.html#the-standard-geostatistical-model-for-prevalence-mapping",
+    "href": "talks/Lund2025.html#the-standard-geostatistical-model-for-prevalence-mapping",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "The standard geostatistical model for prevalence mapping",
+    "text": "The standard geostatistical model for prevalence mapping\n\nOutcome: \\(Y_i\\) number of cases out \\(n_i\\) sampled\n\n\n\nLocations: \\(X = (x_1, \\ldots, x_n)\\)\n\n\n\n\nCovariates (optional): \\(d(x)\\) (e.g. elevation, distance from waterways)\n\n\n\n\nSpatial Gaussian process: \\(S(x)\\) (stationary and isotropic) \\[\n{\\rm cov}\\{S(x), S(x')\\} = \\sigma^2 \\rho(||x - x'||; \\phi)\n\\] Example: \\(\\rho(u; \\phi) = \\exp\\{-u/\\phi\\}\\).\n\n\n\n\nConditional independence: \\(Y_{i}\\) conditionally on \\(S(x_i)\\) are mutually independent \\(Bin(n_i , p(x_i))\\)\n\n\n\n\nThe linear predictor \\[\n\\log\\left\\{\\frac{p(x_i)}{1-p(x_i)}\\right\\} = \\beta_0 + d(x_i)^\\top \\beta + S(x_i)\n\\]"
+  },
+  {
+    "objectID": "talks/Lund2025.html#spatial-and-temporal-confounding-with-mda",
+    "href": "talks/Lund2025.html#spatial-and-temporal-confounding-with-mda",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Spatial and temporal confounding with MDA",
+    "text": "Spatial and temporal confounding with MDA\n\n\n\nIssues:\n\nAreas with different levels of transmission are sampled at different times.\nUse of MDA rounds can even show a positive associated with disease risk"
+  },
+  {
+    "objectID": "talks/Lund2025.html#incorporation-of-the-lagged-effects-of-mda",
+    "href": "talks/Lund2025.html#incorporation-of-the-lagged-effects-of-mda",
+    "title": "Modelling the Impact of MDA",
+    "section": "Incorporation of the lagged effect(s) of MDA",
+    "text": "Incorporation of the lagged effect(s) of MDA"
+  },
+  {
+    "objectID": "talks/Lund2025.html#modelling-the-impact-of-mda-1",
+    "href": "talks/Lund2025.html#modelling-the-impact-of-mda-1",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Modelling the Impact of MDA",
+    "text": "Modelling the Impact of MDA\nWe model observed prevalence \\(P(x,t)\\) as a product of:\n\nCounterfactual prevalence, \\(P^*(x,t)\\), in the absence of MDA\nA cumulative MDA effect, based on rounds of effective treatment\n\n\\[\nP(x, t) = P^*(x, t)\\prod_{j=1}^{r(t)} \\left[1 - f(t - u_j)\\right]^{I(x, u_j)}\n\\]\n\n\\(u_j\\): times of effective MDA rounds\n\n\\(I(x, u_j)\\): indicator of MDA coverage at location \\(x\\) and time \\(u_j\\)\n\\(r(t)\\) is the number of MDA rounds carried out before time \\(t\\)"
+  },
+  {
+    "objectID": "talks/Lund2025.html#parametric-form-of-mda-decay-function",
+    "href": "talks/Lund2025.html#parametric-form-of-mda-decay-function",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Parametric form of MDA decay function",
+    "text": "Parametric form of MDA decay function\n\\[\nf(v) = \\alpha \\exp\\left\\{ -\\left(\\frac{v}{\\gamma}\\right)^{\\kappa} \\right\\}\n\\]\n\n\\(\\alpha\\): maximum reduction immediately after MDA\n\n\\(\\gamma\\): scale of decay\n\n\\(\\kappa\\): shape of decay (fixed)"
+  },
+  {
+    "objectID": "talks/Lund2025.html#inference-monte-carlo-maximum-likelihood-mcml",
+    "href": "talks/Lund2025.html#inference-monte-carlo-maximum-likelihood-mcml",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Inference: Monte Carlo Maximum Likelihood (MCML)",
+    "text": "Inference: Monte Carlo Maximum Likelihood (MCML)\n\nLet \\(W_i = S(x_i) + Z_i\\) and \\(W = (W_1, \\ldots, W_n)\\)\n\n\n\nThe likelihood function for parameters \\(\\theta = (\\beta, \\sigma^2, \\phi, \\tau^2)\\) is given by:\n\\[\nL(\\theta) = \\int N(W; D\\beta, \\Omega) f(y| W) dW\n\\]\nwhere \\(\\Omega = \\sigma^2 R(\\phi) + \\tau^2I_n\\).\n\n\n\n\nWe approximate this using Monte Carlo integration:\n\\[\nL_m(\\theta) = \\frac{1}{B} \\sum_{j=1}^{B} \\frac{N\\left(W^{(j)}; D\\beta, \\Omega \\right)}{N\\left(W^{(j)}; D\\beta_0, \\Omega_0\\right)}\n\\] where \\(W^{(i)}\\) are sampled from the distribution of \\(W\\) given \\(y\\) using an MCMC algorithm.\nAll implemented in the dast function of the RiskMap package"
+  },
+  {
+    "objectID": "talks/Lund2025.html#example-lymphatic-filariasis-in-madagascar",
+    "href": "talks/Lund2025.html#example-lymphatic-filariasis-in-madagascar",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Example: Lymphatic filariasis in Madagascar",
+    "text": "Example: Lymphatic filariasis in Madagascar"
+  },
+  {
+    "objectID": "talks/Lund2025.html#the-data",
+    "href": "talks/Lund2025.html#the-data",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "The data",
+    "text": "The data"
+  },
+  {
+    "objectID": "talks/Lund2025.html#timeline-of-surveys-and-mda",
+    "href": "talks/Lund2025.html#timeline-of-surveys-and-mda",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Timeline of surveys and MDA",
+    "text": "Timeline of surveys and MDA"
+  },
+  {
+    "objectID": "talks/Lund2025.html#monotone-likelihood-for-alpha",
+    "href": "talks/Lund2025.html#monotone-likelihood-for-alpha",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Monotone likelihood for \\(\\alpha\\)",
+    "text": "Monotone likelihood for \\(\\alpha\\)"
+  },
+  {
+    "objectID": "talks/Lund2025.html#introducing-penalization-for-alpha",
+    "href": "talks/Lund2025.html#introducing-penalization-for-alpha",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Introducing penalization for \\(\\alpha\\)",
+    "text": "Introducing penalization for \\(\\alpha\\)\n\nLet \\(p(\\alpha) &gt; 0\\) be a positive function.\n\n\n\nThe penalized likelihood for \\(\\alpha\\) is \\[\nL_{p}(\\theta) = L(\\theta) - p(\\alpha)\n\\]\n\n\n\n\nProposed penalty\n\\[\np(\\alpha) = -\\left[\\lambda_1 \\log\\alpha + \\lambda_2\\log(1-\\alpha) \\right]\n\\]\n\n\n\n\nWe set \\(\\lambda_1 = 20\\) and \\(\\lambda_2 = 14\\). (This inspired by a Beta distribution with mode in around 0.6, with 0.42 and 0.7 as its 0.025 and 0.975 quantiles, respectively.)"
+  },
+  {
+    "objectID": "talks/Lund2025.html#introducing-penalization-for-alpha-1",
+    "href": "talks/Lund2025.html#introducing-penalization-for-alpha-1",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Introducing penalization for \\(\\alpha\\)",
+    "text": "Introducing penalization for \\(\\alpha\\)"
+  },
+  {
+    "objectID": "talks/Lund2025.html#paramter-estimates",
+    "href": "talks/Lund2025.html#paramter-estimates",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Paramter estimates",
+    "text": "Paramter estimates\nNOTES: We set \\(k = 1\\) for the MDA impact function.\n\n\n\nParameter\nEstimate\nLower.limit\nUpper.limit\n\n\n\n\nIntercept\n-2.582\n-2.622\n-2.541\n\n\nSpatial process variance\n2.204\n1.891\n2.569\n\n\nSpatial correlation scale\n79.153\n70.874\n88.399\n\n\nα (max reduction)\n0.856\n0.839\n0.872\n\n\nγ (decay scale)\n1.802\n1.768\n1.837"
+  },
+  {
+    "objectID": "talks/Lund2025.html#estimate-mda-impact-function",
+    "href": "talks/Lund2025.html#estimate-mda-impact-function",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Estimate MDA impact function",
+    "text": "Estimate MDA impact function"
+  },
+  {
+    "objectID": "talks/Lund2025.html#estimated-mda-impact-function",
+    "href": "talks/Lund2025.html#estimated-mda-impact-function",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Estimated MDA impact function",
+    "text": "Estimated MDA impact function"
+  },
+  {
+    "objectID": "talks/Lund2025.html#prevalence-prediction",
+    "href": "talks/Lund2025.html#prevalence-prediction",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Prevalence prediction",
+    "text": "Prevalence prediction"
+  },
+  {
+    "objectID": "talks/Lund2025.html#next-steps-and-extenions",
+    "href": "talks/Lund2025.html#next-steps-and-extenions",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Next steps and extenions",
+    "text": "Next steps and extenions\n\nCarry out simulation study to understand how we can recover the true prevalence and draw inferences on the MDA impact function.\nApply DAST to other NTDs.\nKey assumptions of DAST\n\nThe MDA effect is the same across time\nIncorporating data from multiple diagnostics\nAccounting for the effect of different types of treatments\nUncertainty in the MDA coverage"
+  },
+  {
+    "objectID": "talks/Lund2025.html#monte-carlo-maximum-likelihood",
+    "href": "talks/Lund2025.html#monte-carlo-maximum-likelihood",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Monte Carlo Maximum Likelihood",
+    "text": "Monte Carlo Maximum Likelihood\n\nLet \\(W_i = S(x_i) + Z_i\\) and \\(W = (W_1, \\ldots, W_n)\\)\n\n\n\nThe likelihood function for parameters \\(\\theta = (\\beta, \\sigma^2, \\phi, \\tau^2)\\) is given by:\n\\[\nL(\\theta) = \\int N(W; D\\beta, \\Omega) f(y| W) dW\n\\]\nwhere \\(\\Omega = \\sigma^2 R(\\phi) + \\tau^2I_n\\).\n\n\n\n\nWe approximate this using Monte Carlo integration:\n\\[\nL_m(\\theta) = \\frac{1}{B} \\sum_{j=1}^{B} \\frac{N\\left(W^{(j)}; D\\beta, \\Omega \\right)}{N\\left(W^{(j)}; D\\beta_0, \\Omega_0\\right)}\n\\] where \\(W^{(i)}\\) are sampled from the distribution of \\(W\\) given \\(y\\) using an MCMC algorithm.\nAll implemented in the dast function of the RiskMap package"
+  },
+  {
+    "objectID": "talks/Lund2025.html#prevalence-prediction-2000-2024",
+    "href": "talks/Lund2025.html#prevalence-prediction-2000-2024",
+    "title": "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "Prevalence prediction 2000-2024",
+    "text": "Prevalence prediction 2000-2024"
   }
 ]

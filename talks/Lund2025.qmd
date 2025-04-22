@@ -1,7 +1,7 @@
 ---
-title: "Model-based Geostatistics for Global Public Health"  
-subtitle: "From Methodology Development to Policy Applications"  
-author: "Emanuele Giorgi"  
+title: "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods"  
+subtitle: "A decay-adjusted spatio-temporal (DAST) model"  
+author: "Emanuele Giorgi, Claudio Fronterre, Jana Purkiss, Freya Clark"  
 institute: "Lancaster University" 
 execute:
   freeze: true
@@ -16,28 +16,13 @@ format:
     footer: ""
 ---
 
-## My Background {.smaller}
-
-### Current Roles
-
--   **Head, Centre for Health Informatics, Computing, and Statistics (CHICAS)**\
-    [chicas.lancaster-university.uk](https://chicas.lancaster-university.uk)\
--   **Head, WHO Collaborating Centre for Geostatistical Methods for NTD Research**
-
-### Education
-
--   **PhD in Statistics and Epidemiology** (Sep 2015)\
--   **MSc in Statistics** (July 2012)\
--   **BSc in Statistics** (April 2012)
-
-------------------------------------------------------------------------
-
 ## Presentation Overview
 
-1.  **Neglected Tropical Diseases: an overview**
-2.  **Model-based Geostatistics: Current and Future Research**
-3.  **Informing Policy Decisions**
-4.  **Capacity Building**
+1.  **Neglected Tropical Diseases and Mass Drug Administration**
+2.  **The standard geostatistical model for prevalence mapping**
+3.  **A decay-adjusted spatio-temporal model**
+4.  **Application to lymphatic filariasis in Madagascar**
+5.  **Summary**
 
 ------------------------------------------------------------------------
 
@@ -68,33 +53,270 @@ format:
 - Exposure to disease vectors (e.g., mosquitoes, flies)\
 - Lack of education and awareness
 
-## From the mining industry to public health
+## Mass Drug Administration (MDA): A Preventive Strategy {.smaller}
 
-::: {#fig1 layout="[1,1]"}
-![(a) Danie Gerhardus Krige GCOB (26 August 1919 – 3 March 2013)](figures/krige.jpg){height="4in"}
+**What is MDA?** Mass Drug Administration involves the periodic distribution of safe, effective medications to **entire at-risk populations**—regardless of disease status—to reduce transmission and prevent infections.
 
-![(b) Mining application of geostatistics](figures/mining.jpeg){height="4in"}
+. . .
+
+**Why is it used?**
+
+-   Controls or eliminates disease in endemic areas
+
+-   Reduces the community-level parasite burden
+
+-   Prevents long-term complications and disability
+
+. . .
+
+**Key Features:**
+
+-   Delivered at regular intervals (annually or biannually)
+
+-   Often combined with public health education
+
+-   Supported by WHO and major global health initiatives
+
+## Albendazole {.smaller}
+
+:::::: {layout-ncol="2"}
+::: {.column width="30%"}
+![](figures/albe.jpg){width="30%"}
 :::
 
-------------------------------------------------------------------------
+:::: {.column width="70%"}
+**How it works:**\
+Albendazole disrupts the metabolism of parasitic worms by inhibiting microtubule formation, which is essential for their survival.
 
-## Riverblindness
-
-<center>![](figures/river_blindness_cycle_male_eng.jpg){width="8in"}</center>
-
-------------------------------------------------------------------------
-
-## Mapping river-blindness
-
-::: {layout="[1,1]"}
-![(a) Map of the observed prevalence of palpable nodules in the 14,473 surveyed villages.](figures/oncho_loc.png){height="4in"}
-
-![(b) Map of the predicted prevalence.](figures/oncho_pred.png){height="4in"}
+::: notes
+Albendazole works by stopping worms from absorbing the nutrients they need to survive. It blocks a process inside their cells that’s kind of like the framework or "skeleton" that helps them function and grow. Without it, the worms can't live for long and are eventually cleared from the body.
 :::
 
-------------------------------------------------------------------------
+**Used for NTDs such as:**
 
-## The ingredients of a geostatistical model for prevalence mapping {.scrollable .smaller}
+-   Lymphatic filariasis (in combination with ivermectin or DEC)
+
+-   Soil-transmitted helminths (e.g., ascariasis, hookworm, trichuriasis)
+
+**MDA use:**\
+Distributed in large-scale deworming campaigns, particularly targeting children and at-risk communities.
+::::
+::::::
+
+## Ivermectin {.smaller}
+
+:::::: {layout-ncol="2"}
+::: {.column width="30%"}
+![](figures/ivermectin.jpg){width="30%"}
+:::
+
+:::: {.column width="70%"}
+**How it works:**
+
+Ivermectin paralyzes and kills parasites by interfering with their nerve and muscle function via chloride channel disruption. Parasites cannot move and feed.
+
+::: notes
+**Ivermectin kills parasites by messing with their nerves and muscles, which causes them to become paralyzed and die.** It stops them from moving and feeding, so the body can get rid of them.
+
+Chloride channel disruption refers to any impairment in the normal function of chloride channels, which are protein pores in cell membranes that allow chloride ions (Cl-) to pass through.
+:::
+
+**Used for NTDs such as:**
+
+-   Onchocerciasis (river blindness)\
+
+-   Lymphatic filariasis (in combination with albendazole)\
+
+-   Strongyloidiasis
+
+**MDA use:** Ivermectin is given to both adults and children (weighing more than 15kg), but its use is carefully considered for pregnant women.
+::::
+::::::
+
+## Praziquantel {.smaller}
+
+:::::: {layout-ncol="2"}
+::: {.column width="30%"}
+![](figures/praz.jpg){width="30%"}
+:::
+
+:::: {.column width="70%"}
+**How it works:**\
+Praziquantel increases permeability of the parasite's cell membranes to calcium ions, causing muscle contraction and paralysis.
+
+::: notes
+Praziquantel makes the outer layer of the parasite’s cells more "leaky," allowing calcium to enter. This causes the parasite's muscles to tighten and paralyze it, making it easier for the body to get rid of it.
+
+Inside the cells of parasites, calcium is important for controlling muscle movement. When calcium enters the parasite's cells (which normally isn't supposed to happen), it disrupts the normal function of the muscles.
+
+This excess calcium makes the muscles contract and become stiff. The parasite can't move properly or feed, and it becomes paralyzed, which allows the body to get rid of it. So, calcium causes the parasite’s muscles to freeze up, stopping it from surviving or causing further harm.
+:::
+
+**Used for NTDs such as:**\
+
+-   Schistosomiasis\
+
+-   Tapeworm infections
+
+**MDA use:**\
+Key drug in school-based and community-wide treatment campaigns in regions with high schistosomiasis burden.
+::::
+::::::
+
+## Treating NTDs {.smaller}
+
+```{r}
+#| echo: false
+#| tbl-width: compact
+
+ntd_treatments <- data.frame(
+  Disease = c("STH", "Schisto", "LF", "Trachoma"),
+  ALB = c("✓", "✓†", "✓†", ""),
+  PZQ = c("", "✓", "", ""),
+  IVM = c("", "", "✓", "✓‡"),
+  AZM = c("", "", "", "✓"),
+  DEC = c("", "", "✓", ""),
+  MOX = c("", "", "✓", ""),
+  Other = c("MBD", "OXA", "DOX*", "TEO")
+)
+
+knitr::kable(ntd_treatments, align = "c", 
+             col.names = c("Disease", "Alb", "PZQ", "IVM", "AZM", "DEC", "MOX", "Other")) |>
+  kableExtra::kable_styling(
+    full_width = FALSE,
+    font_size = 27,
+    latex_options = "scale_down"
+  )
+```
+
+**Abbreviations:**
+
+Alb = Albendazole, PZQ = Praziquantel, IVM = Ivermectin, AZM = Azithromycin, DEC = Diethylcarbamazine, MOX = Moxidectin, MBD = Mebendazole, OXA = Oxamniquine, DOX = Doxycycline, TEO = Tetracycline eye ointment
+
+**Symbols:**
+
+† Used in combination therapy
+
+‡ Only in onchocerciasis co-endemic areas
+
+\*Adjunctive treatment
+
+::: notes
+**Key Explanations:** - **combo**: Combination therapy enhances efficacy (e.g., albendazole+praziquantel for schistosomiasis kills both juvenile and adult worms)
+
+-   **co-endemic areas only** (trachoma/ivermectin):
+    -   Ivermectin is only recommended for trachoma in areas where onchocerciasis (river blindness) is also present because:
+        1.  **In onchocerciasis-endemic areas**: Mass ivermectin distribution is already occurring for river blindness control, so it can simultaneously help reduce trachoma transmission
+        2.  **In non-onchocerciasis areas**:
+            -   Azithromycin is preferred as the primary trachoma treatment because:
+                -   It has direct antibacterial action against Chlamydia trachomatis
+                -   Better safety profile for children and pregnant women
+                -   Additional community-wide benefits against other bacterial infections
+            -   Ivermectin isn't contraindicated, but simply less optimal than azithromycin for trachoma-specific control
+-   **adjunct**:
+    -   Secondary treatment that supports but doesn't replace primary therapy
+    -   Example: Doxycycline for LF kills Wolbachia bacteria inside adult worms, making them sterile (used alongside albendazole/ivermectin)
+:::
+
+## Assessing MDA Impact {.smaller .scrollable}
+
+**Timeframe for observable impact:**
+
+-   STH: Reduced prevalence seen after 1-2 annual rounds
+
+-   Schistosomiasis: Egg reduction visible after 1-2 years
+
+-   LF: Microfilariae reduction within months, but breaking transmission requires 5+ years
+
+-   Trachoma: Active disease reduction in 1-3 years
+
+**Monitoring surveys:**
+
+-   Baseline surveys (pre-MDA)
+
+-   Transmission Assessment Surveys (TAS) for LF after 5+ rounds
+
+-   Impact surveys (after 3-5 rounds)
+
+-   Post-treatment surveillance (after reaching elimination targets)
+
+**Key indicators:**
+
+-   Parasitological prevalence (STH, schisto)
+
+-   Antigenemia (LF)
+
+-   TF/TI rates (trachoma)
+
+-   Entomological indices (for vector-borne NTDs)
+
+## Modelling the impact of MDA
+
+```{r}
+#| echo: false
+#| fig-cap: ""
+#| fig-width: 8
+#| fig-height: 5
+library(ggplot2)
+
+# Create time sequence (-5 to 20 years)
+time <- seq(-10, 20, by = 0.1)
+
+# Define Gamma-shaped MDA impact function
+gamma_impact <- function(t) {
+  # Parameters for Gamma distribution (shape=3, rate=0.7 gives mode around 3)
+  dgamma(pmax(0, t), shape = 3, rate = 0.7) * 15 # Scaled for visibility
+}
+
+# Find the mode (peak time) of the Gamma distribution
+mode_time <- (3 - 1)/0.7  # (shape-1)/rate
+peak_impact <- gamma_impact(mode_time)
+
+# Exponential decay starting at mode
+exp_decay <- function(t) {
+  peak_impact * exp(-0.25 * (t - mode_time))
+}
+
+# Create data frame
+impact_data <- data.frame(
+  Time = time,
+  Impact = ifelse(time < 0, 0, gamma_impact(time)),
+  Exponential_Fit = ifelse(time >= mode_time, exp_decay(time), NA)
+)
+
+# Calculate optimal text positions
+text_y_pos <- max(impact_data$Impact, na.rm = TRUE) * c(0.9, 0.7, 0.5)
+text_x_pos <- c(mode_time + 3, mode_time + 3, 5)
+
+# Plot
+ggplot(impact_data, aes(x = Time)) +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "blue") +
+  geom_line(aes(y = Impact), color = "black", linewidth = 1.2) +
+  geom_line(aes(y = Exponential_Fit), color = "green", linetype = "dashed", linewidth = 1, na.rm = TRUE) +
+  # Annotations with non-overlapping positions
+  annotate("text", x = -2.5, y = 0.1*max(impact_data$Impact, na.rm = TRUE), 
+           label = "Baseline", color = "black", hjust = 0.5) +
+  annotate("text", x = -9, y = 0.6*max(impact_data$Impact, na.rm = TRUE), 
+           label = "MDA Implementation", color = "blue", hjust = 0) +
+  annotate("text", x = text_x_pos[2], y = text_y_pos[2], 
+           label = "MDA Impact Approximation", color = "green", hjust = 0) +
+  geom_vline(xintercept = mode_time, linetype = "dotted", color = "gray50") +
+  annotate("text", x = mode_time+3, y = 0, 
+           label = "Impact Survey", vjust = 1.5, color = "gray30") +
+  labs(title = "Impact of Mass Drug Administration (MDA) Over Time",
+       x = "Time (years)",
+       y = "Relative Prevalence Reduction",
+       caption = "Blue dashed line: MDA implementation time\nGreen dashed line: Decay approximation from geostatistical model") +
+  theme_minimal() +
+  theme(plot.caption = element_text(hjust = 0)) +
+  ylim(0, max(impact_data$Impact, na.rm = TRUE) * 1.1) +
+  # Ensure no text overlap
+  coord_cartesian(clip = "off") +
+  theme(plot.margin = unit(c(1, 1, 1.5, 1), "lines"))
+
+```
+
+## The standard geostatistical model for prevalence mapping {.scrollable .smaller}
 
 -   **Outcome**: $Y_i$ number of cases out $n_i$ sampled
 
@@ -112,7 +334,7 @@ format:
     {\rm cov}\{S(x), S(x')\} = \sigma^2 \rho(||x - x'||; \phi)
     $$ Example: $\rho(u; \phi) = \exp\{-u/\phi\}$.
 
-## Putting all together {.scrollable .smaller}
+. . .
 
 -   **Conditional independence**: $Y_{i}$ conditionally on $S(x_i)$ are mutually independent $Bin(n_i , p(x_i))$
 
@@ -122,134 +344,167 @@ format:
     \log\left\{\frac{p(x_i)}{1-p(x_i)}\right\} = \beta_0 + d(x_i)^\top \beta + S(x_i)
     $$
 
-. . .
+## Spatial and temporal confounding with MDA {.smaller}
 
--   The **joint distribution**: $[S, Y] = [S] [Y | S]$
+<center>![](figures/scenario_surveys.png)</center>
 
-where $Y=(Y_1, \ldots, Y_n)$ and $S = (S(x_1), \ldots, S(x_n))$
+**Issues:**
 
-. . .
+-   Areas with different levels of transmission are sampled at different times.
 
--   The **likelihood function** $$
-    L(\theta) = \int_{\mathbb{R}^n} [S] [Y | S] \: dS
-    $$ How do we approximate this intractable integral?
+-   Use of MDA rounds can even show a positive associated with disease risk
 
-## PrevMap and RiskMap {.smaller}
+## Modelling the Impact of MDA {.smaller}
 
-<center>![](figures/prevmap.png){height="4in"}</center>
+We model observed prevalence $P(x,t)$ as a product of:
 
-. . .
+-   **Counterfactual prevalence**, $P^*(x,t)$, in the absence of MDA
+-   A **cumulative MDA effect**, based on rounds of effective treatment
 
-Giorgi, E. and Fronterre, C. (expected August 2025) *Model-based geostatistics for global public health using R.* Chapman and Hall/CRC. The R Series.
+$$
+P(x, t) = P^*(x, t)\prod_{j=1}^{r(t)} \left[1 - f(t - u_j)\right]^{I(x, u_j)}
+$$
 
-## Identifying disease hotspots
+-   $u_j$: times of effective MDA rounds\
+-   $I(x, u_j)$: indicator of MDA coverage at location $x$ and time $u_j$
+-   $r(t)$ is the number of MDA rounds carried out before time $t$
 
--   **Hotspot:** riverblindness prevalence above $20\%$
+## Parametric form of MDA decay function {.smaller}
 
-. . .
+$$
+f(v) = \alpha \exp\left\{ -\left(\frac{v}{\gamma}\right)^{\kappa} \right\}
+$$
 
--   **Exceedance probability:** ${\rm Prob}\{p(x) > 0.2 \:  | \: Y \}$
+-   $\alpha$: maximum reduction immediately after MDA\
+-   $\gamma$: scale of decay\
+-   $\kappa$: shape of decay (fixed)
 
-. . .
+<center>![](figures/f_mda.jpg){width="40%"}</center>
 
-<center>![](figures/exceedprob.png){height="4in"}</center>
+## Monte Carlo Maximum Likelihood {.smaller .scrollable}
 
-## Extensions to spatio-temporal modelling {.smaller}
-
-**Question:** Which spatio-temporal correlation structures are suitable for modelling disease prevalence data?
-
-<center>![](figures/spatio_temporal.png){height="3.8in"}</center>
-
-. . .
-
-Giorgi, E., Diggle, P. J., Snow, R. W., Noor, A. M. (2018). Geostatistical methods for disease mapping and visualization using data from spatio-temporally referenced prevalence surveys. **International Statistical Review.** https://doi.org/10.1111/insr.12268
-
-------------------------------------------------------------------------
-
-## Combining data from multiple diagnostics {.smaller}
-
-**Questions:** 1) How we predict a gold-standard diagnostic using cheap biased diagnostics? 2) How do we model the bivariate relationship between two complementary gold-standards?
-
-<center>![](figures/combining.png){height="4in"}</center>
+-   Let $W_i = S(x_i) + Z_i$ and $W = (W_1, \ldots, W_n)$
 
 . . .
 
-Amoah, B., Diggle, P. J., Giorgi, E. (2019). A geostatistical framework for combining data from multiple diagnostic tests. **Biometrics.** doi:10.1111/biom.13142
+-   The likelihood function for parameters $\theta = (\beta, \sigma^2, \phi, \tau^2)$ is given by:
 
-------------------------------------------------------------------------
+    $$
+    L(\theta) = \int N(W; D\beta, \Omega) f(y| W) dW
+    $$
 
-## Spatially structured zero-inflation {.smaller}
-
-**Question:** How can we effectively model the bivariate relationship between disease suitability and disease prevalence?
-
-<center>![](figures/sudan.png){height="4in"}</center>
+    where $\Omega = \sigma^2 R(\phi) + \tau^2I_n$.
 
 . . .
 
-Diggle, P. J., Giorgi, E. (2016). Model-based geostatistics for prevalence mapping in low-resource settings (with discussion). **Journal of the American Statistical Association.** 111:1096-1120
+-   We approximate this using Monte Carlo integration:
 
-## Future methodological directions
+    $$
+    L_m(\theta) = \frac{1}{B} \sum_{j=1}^{B} \frac{N\left(W^{(j)}; D\beta, \Omega \right)}{N\left(W^{(j)}; D\beta_0, \Omega_0\right)}
+    $$ where $W^{(i)}$ are sampled from the distribution of $W$ given $y$ using an MCMC algorithm.
 
--   Using **multivariate geostatistical** models to analyse serological data from multiple diseases
+-   All implemented in the `dast` function of the `RiskMap` package <img src="figures/excitement.png" width="80" height="80" style="vertical-align: middle;"/>
 
--   Incorporating **mathematical models** for the impact of interventions into geostatistical models
+## Example: Lymphatic filariasis in Madagascar
 
--   Developing more robust methods for the **validation** of geostatistical models for counts data.
+<center>![](figures/lf.png){width="60%"}</center>
 
--   Dealing with **spatial and temporal misalignment** in repeated cross-sectional survey data
+## The data
 
-## Translation into policy: the case of trachoma
+::: {style="width: 100%; height: 900px; position: relative;"}
+<iframe src="lf_madagascar.html" width="100%" height="70%" style="border: none; position: absolute; top: 0; left: 0;">
 
-<center>![](figures/trachoma.jpg){height="6in"}</center>
+</iframe>
+:::
 
-## Informing the elimination of trachoma {.smaller}
+## Timeline of surveys and MDA
 
-<center>![](figures/elimination_tr.PNG){height="5in"}</center>
+<center>![](figures/mdg_data.png){width="55%"}</center>
 
-Sasanami, M., et al. (2023). Using model-based geostatistics for assessing the elimination of trachoma. **PLoS Neglected Tropical Diseases**, 17(7): e0011476. https://doi.org/10.1371/journal.pntd.0011476
+## Monotone likelihood for $\alpha$
 
-## Challenges in Translating Geostatistics for Policy
+<center>![](figures/profile_alpha.jpg){width="50%"}</center>
 
--   **Complexity of methods** – Advanced models are difficult to interpret for non-specialists.
+## Introducing penalization for $\alpha$ {.smaller .scrollable}
 
--   **Data uncertainty** – Policymakers may struggle to incorporate probabilistic estimates into decision-making.
+-   Let $p(\alpha) > 0$ be a positive function.
 
--   **Lack of user-friendly tools** – Limited access to tools that allow interactive exploration of spatial predictions.
+. . .
 
--   **Lack of local geostatistical expertise** – Few or no local experts support to support control programmes.
+-   The penalized likelihood for $\alpha$ is $$
+    L_{p}(\theta) = L(\theta) - p(\alpha)
+    $$
 
-## Engagement with policy makers {.smaller}
+. . .
 
-Technical meeting on geostatistical methods for trachoma elimination
+-   Proposed penalty
 
-Lancaster University, 4-5 March 2024
+    $$
+    p(\alpha) = -\left[\lambda_1 \log\alpha + \lambda_2\log(1-\alpha) \right]
+    $$
 
-<center>![](figures/trachoma_meeting.png){height="5in"}</center>
+. . .
 
-## Engagement with policy makers {.smaller}
+-   We set $\lambda_1 = 20$ and $\lambda_2 = 14$. (This inspired by a Beta distribution with mode in around 0.6, with 0.42 and 0.7 as its 0.025 and 0.975 quantiles, respectively.)
 
-Technical meeting on capacity building 
+<center>![](figures/beta_distr.png){width="40%"}</center>
 
-Lancaster University, 3-4 March 2025
+## Introducing penalization for $\alpha$ {.smaller}
 
-<center>![](figures/cap_build.jpg){height="5in"}</center>
+<center>![](figures/penalized_profile_alpha.jpg){width="50%"}</center>
 
+## Paramter estimates {.smaller}
 
-## A user-friendly app for malaria mapping {.smaller}
+NOTES: We set $k = 1$ for the MDA impact function.
 
-<center>
+```{r}
+#| echo: false
+#| results: asis
 
-[Link to Maplaria App](https://fhm-chicas-maplaria.lancs.ac.uk/landing?redirect=/)
+library(knitr)
+library(kableExtra)
 
-![](figures/maplaria.png){height="6in"}
+results <- data.frame(
+  Parameter = c("Intercept", "Spatial process variance", "Spatial correlation scale", 
+                "\u03B1 (max reduction)", "\u03B3 (decay scale)"),  # Using Unicode for α and γ
+  Estimate = c(-2.582, 2.204, 79.153, 0.856, 1.802),
+  `Lower limit` = c(-2.622, 1.891, 70.874, 0.839, 1.768),
+  `Upper limit` = c(-2.541, 2.569, 88.399, 0.872, 1.837)
+)
 
-</center>
+kable(results, align = "c", caption = "") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE) %>%
+  column_spec(1, width = "4cm")  # Adjust column width for parameter names
+```
+
+## Estimated MDA impact function
+
+<center>![](figures/mdg_mda_f.png)</center>
+
+## Prevalence prediction 2000-2024
+
+<center>![](figures/prevalence_animation.gif)</center>
+
+## Next steps and extenions
+
+-   Carry out simulation study to understand how we can recover the true prevalence and draw inferences on the MDA impact function.
+
+-   Apply DAST to other NTDs.
+
+-   Key assumptions of DAST
+
+    -   The MDA effect is the same across time
+
+    -   Incorporating data from multiple diagnostics
+
+    -   Accounting for the effect of different types of treatments
+
+    -   Uncertainty in the MDA coverage
 
 ## THANK YOU! {.smaller}
 
 <center>![](figures/questions.jpg){height="4in"}</center>
 
-**Let's Connect**\
 🔗 [giorgistat.github.io](https://giorgistat.github.io)\
 📧 e.giorgi\@lancaster.ac.uk\
 📍 CHICAS, Lancaster Medical School, Lancaster University, UK
