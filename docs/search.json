@@ -1321,5 +1321,180 @@
     "title": "Model formulation and parameter estimation",
     "section": "The Nugget Effect as Small-Scale Spatial Correlation",
     "text": "The Nugget Effect as Small-Scale Spatial Correlation\n\nInterpretation of \\(Z_i\\):\n\nRepresents microscale variation (below measurement distance)\nCaptures measurement error or sub-resolution variability\n\nExample Process with Threshold Correlation: \\[ \\rho(h) = \\begin{cases}\n    \\delta & \\text{if } h \\leq h_0 \\\\\n    0 & \\text{if } h &gt; h_0\n    \\end{cases} \\]\n\nWhere \\(\\delta\\) is small-scale correlation\n\\(h_0\\) is resolution threshold\n\nPractical Implications:\n\nIf minimum distance between samples \\(&gt; h_0\\):\n\nProcess appears as \\(Z_i \\sim N(0, \\tau^2)\\) (pure noise)\nSpatial structure in \\(Z_i\\) becomes undetectable\n\nCannot disentangle \\(Z_i\\) from measurement error in the lineara geostatistical model"
+  },
+  {
+    "objectID": "talks/Lund2025.html",
+    "href": "talks/Lund2025.html",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "",
+    "text": "Head, Centre for Health Informatics, Computing, and Statistics (CHICAS)\nchicas.lancaster-university.uk\n\nHead, WHO Collaborating Centre for Geostatistical Methods for NTD Research\n\n\n\n\n\nPhD in Statistics and Epidemiology (Sep 2015)\n\nMSc in Statistics (July 2012)\n\nBSc in Statistics (April 2012)"
+  },
+  {
+    "objectID": "talks/Lund2025.html#my-background",
+    "href": "talks/Lund2025.html#my-background",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "",
+    "text": "Head, Centre for Health Informatics, Computing, and Statistics (CHICAS)\nchicas.lancaster-university.uk\n\nHead, WHO Collaborating Centre for Geostatistical Methods for NTD Research\n\n\n\n\n\nPhD in Statistics and Epidemiology (Sep 2015)\n\nMSc in Statistics (July 2012)\n\nBSc in Statistics (April 2012)"
+  },
+  {
+    "objectID": "talks/Lund2025.html#presentation-overview",
+    "href": "talks/Lund2025.html#presentation-overview",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "Presentation Overview",
+    "text": "Presentation Overview\n\nNeglected Tropical Diseases: an overview\nModel-based Geostatistics: Current and Future Research\nInforming Policy Decisions\nCapacity Building"
+  },
+  {
+    "objectID": "talks/Lund2025.html#neglected-tropical-diseases",
+    "href": "talks/Lund2025.html#neglected-tropical-diseases",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "Neglected tropical diseases",
+    "text": "Neglected tropical diseases"
+  },
+  {
+    "objectID": "talks/Lund2025.html#ntd-endemic-areas",
+    "href": "talks/Lund2025.html#ntd-endemic-areas",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "NTD endemic areas",
+    "text": "NTD endemic areas"
+  },
+  {
+    "objectID": "talks/Lund2025.html#the-impact-of-ntds",
+    "href": "talks/Lund2025.html#the-impact-of-ntds",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "The impact of NTDs",
+    "text": "The impact of NTDs"
+  },
+  {
+    "objectID": "talks/Lund2025.html#ntds-risk-factors",
+    "href": "talks/Lund2025.html#ntds-risk-factors",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "NTDs Risk Factors",
+    "text": "NTDs Risk Factors\n\n\n\n\n\n\n\n\n\n\n\n\nCommon risk factors:\n- Poor sanitation and lack of clean water\n- Limited healthcare access\n- Poverty and overcrowding\n- Exposure to disease vectors (e.g., mosquitoes, flies)\n- Lack of education and awareness"
+  },
+  {
+    "objectID": "talks/Lund2025.html#from-the-mining-industry-to-public-health",
+    "href": "talks/Lund2025.html#from-the-mining-industry-to-public-health",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "From the mining industry to public health",
+    "text": "From the mining industry to public health\n\n\n\n\n\n\n\n\n(a) Danie Gerhardus Krige GCOB (26 August 1919 – 3 March 2013)\n\n\n\n\n\n\n\n(b) Mining application of geostatistics"
+  },
+  {
+    "objectID": "talks/Lund2025.html#riverblindness",
+    "href": "talks/Lund2025.html#riverblindness",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "Riverblindness",
+    "text": "Riverblindness"
+  },
+  {
+    "objectID": "talks/Lund2025.html#mapping-river-blindness",
+    "href": "talks/Lund2025.html#mapping-river-blindness",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "Mapping river-blindness",
+    "text": "Mapping river-blindness\n\n\n\n\n\n\n\n\n(a) Map of the observed prevalence of palpable nodules in the 14,473 surveyed villages.\n\n\n\n\n\n\n\n(b) Map of the predicted prevalence."
+  },
+  {
+    "objectID": "talks/Lund2025.html#the-ingredients-of-a-geostatistical-model-for-prevalence-mapping",
+    "href": "talks/Lund2025.html#the-ingredients-of-a-geostatistical-model-for-prevalence-mapping",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "The ingredients of a geostatistical model for prevalence mapping",
+    "text": "The ingredients of a geostatistical model for prevalence mapping\n\nOutcome: \\(Y_i\\) number of cases out \\(n_i\\) sampled\n\n. . .\n\nLocations: \\(X = (x_1, \\ldots, x_n)\\)\n\n. . .\n\nCovariates (optional): \\(d(x)\\) (e.g. elevation, distance from waterways)\n\n. . .\n\nSpatial Gaussian process: \\(S(x)\\) (stationary and isotropic) \\[\n{\\rm cov}\\{S(x), S(x')\\} = \\sigma^2 \\rho(||x - x'||; \\phi)\n\\] Example: \\(\\rho(u; \\phi) = \\exp\\{-u/\\phi\\}\\)."
+  },
+  {
+    "objectID": "talks/Lund2025.html#putting-all-together",
+    "href": "talks/Lund2025.html#putting-all-together",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "Putting all together",
+    "text": "Putting all together\n\nConditional independence: \\(Y_{i}\\) conditionally on \\(S(x_i)\\) are mutually independent \\(Bin(n_i , p(x_i))\\)\n\n. . .\n\nThe linear predictor \\[\n\\log\\left\\{\\frac{p(x_i)}{1-p(x_i)}\\right\\} = \\beta_0 + d(x_i)^\\top \\beta + S(x_i)\n\\]\n\n. . .\n\nThe joint distribution: \\([S, Y] = [S] [Y | S]\\)\n\nwhere \\(Y=(Y_1, \\ldots, Y_n)\\) and \\(S = (S(x_1), \\ldots, S(x_n))\\)\n. . .\n\nThe likelihood function \\[\nL(\\theta) = \\int_{\\mathbb{R}^n} [S] [Y | S] \\: dS\n\\] How do we approximate this intractable integral?"
+  },
+  {
+    "objectID": "talks/Lund2025.html#prevmap-and-riskmap",
+    "href": "talks/Lund2025.html#prevmap-and-riskmap",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "PrevMap and RiskMap",
+    "text": "PrevMap and RiskMap\n\n\n\n. . .\nGiorgi, E. and Fronterre, C. (expected August 2025) Model-based geostatistics for global public health using R. Chapman and Hall/CRC. The R Series."
+  },
+  {
+    "objectID": "talks/Lund2025.html#identifying-disease-hotspots",
+    "href": "talks/Lund2025.html#identifying-disease-hotspots",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "Identifying disease hotspots",
+    "text": "Identifying disease hotspots\n\nHotspot: riverblindness prevalence above \\(20\\%\\)\n\n. . .\n\nExceedance probability: \\({\\rm Prob}\\{p(x) &gt; 0.2 \\:  | \\: Y \\}\\)\n\n. . ."
+  },
+  {
+    "objectID": "talks/Lund2025.html#extensions-to-spatio-temporal-modelling",
+    "href": "talks/Lund2025.html#extensions-to-spatio-temporal-modelling",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "Extensions to spatio-temporal modelling",
+    "text": "Extensions to spatio-temporal modelling\nQuestion: Which spatio-temporal correlation structures are suitable for modelling disease prevalence data?\n\n\n\n. . .\nGiorgi, E., Diggle, P. J., Snow, R. W., Noor, A. M. (2018). Geostatistical methods for disease mapping and visualization using data from spatio-temporally referenced prevalence surveys. International Statistical Review. https://doi.org/10.1111/insr.12268"
+  },
+  {
+    "objectID": "talks/Lund2025.html#combining-data-from-multiple-diagnostics",
+    "href": "talks/Lund2025.html#combining-data-from-multiple-diagnostics",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "Combining data from multiple diagnostics",
+    "text": "Combining data from multiple diagnostics\nQuestions: 1) How we predict a gold-standard diagnostic using cheap biased diagnostics? 2) How do we model the bivariate relationship between two complementary gold-standards?\n\n\n\n. . .\nAmoah, B., Diggle, P. J., Giorgi, E. (2019). A geostatistical framework for combining data from multiple diagnostic tests. Biometrics. doi:10.1111/biom.13142"
+  },
+  {
+    "objectID": "talks/Lund2025.html#spatially-structured-zero-inflation",
+    "href": "talks/Lund2025.html#spatially-structured-zero-inflation",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "Spatially structured zero-inflation",
+    "text": "Spatially structured zero-inflation\nQuestion: How can we effectively model the bivariate relationship between disease suitability and disease prevalence?\n\n\n\n. . .\nDiggle, P. J., Giorgi, E. (2016). Model-based geostatistics for prevalence mapping in low-resource settings (with discussion). Journal of the American Statistical Association. 111:1096-1120"
+  },
+  {
+    "objectID": "talks/Lund2025.html#future-methodological-directions",
+    "href": "talks/Lund2025.html#future-methodological-directions",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "Future methodological directions",
+    "text": "Future methodological directions\n\nUsing multivariate geostatistical models to analyse serological data from multiple diseases\nIncorporating mathematical models for the impact of interventions into geostatistical models\nDeveloping more robust methods for the validation of geostatistical models for counts data.\nDealing with spatial and temporal misalignment in repeated cross-sectional survey data"
+  },
+  {
+    "objectID": "talks/Lund2025.html#translation-into-policy-the-case-of-trachoma",
+    "href": "talks/Lund2025.html#translation-into-policy-the-case-of-trachoma",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "Translation into policy: the case of trachoma",
+    "text": "Translation into policy: the case of trachoma"
+  },
+  {
+    "objectID": "talks/Lund2025.html#informing-the-elimination-of-trachoma",
+    "href": "talks/Lund2025.html#informing-the-elimination-of-trachoma",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "Informing the elimination of trachoma",
+    "text": "Informing the elimination of trachoma\n\n\n\nSasanami, M., et al. (2023). Using model-based geostatistics for assessing the elimination of trachoma. PLoS Neglected Tropical Diseases, 17(7): e0011476. https://doi.org/10.1371/journal.pntd.0011476"
+  },
+  {
+    "objectID": "talks/Lund2025.html#challenges-in-translating-geostatistics-for-policy",
+    "href": "talks/Lund2025.html#challenges-in-translating-geostatistics-for-policy",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "Challenges in Translating Geostatistics for Policy",
+    "text": "Challenges in Translating Geostatistics for Policy\n\nComplexity of methods – Advanced models are difficult to interpret for non-specialists.\nData uncertainty – Policymakers may struggle to incorporate probabilistic estimates into decision-making.\nLack of user-friendly tools – Limited access to tools that allow interactive exploration of spatial predictions.\nLack of local geostatistical expertise – Few or no local experts support to support control programmes."
+  },
+  {
+    "objectID": "talks/Lund2025.html#engagement-with-policy-makers",
+    "href": "talks/Lund2025.html#engagement-with-policy-makers",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "Engagement with policy makers",
+    "text": "Engagement with policy makers\nTechnical meeting on geostatistical methods for trachoma elimination\nLancaster University, 4-5 March 2024"
+  },
+  {
+    "objectID": "talks/Lund2025.html#engagement-with-policy-makers-1",
+    "href": "talks/Lund2025.html#engagement-with-policy-makers-1",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "Engagement with policy makers",
+    "text": "Engagement with policy makers\nTechnical meeting on capacity building\nLancaster University, 3-4 March 2025"
+  },
+  {
+    "objectID": "talks/Lund2025.html#a-user-friendly-app-for-malaria-mapping",
+    "href": "talks/Lund2025.html#a-user-friendly-app-for-malaria-mapping",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "A user-friendly app for malaria mapping",
+    "text": "A user-friendly app for malaria mapping\n\nLink to Maplaria App"
+  },
+  {
+    "objectID": "talks/Lund2025.html#thank-you",
+    "href": "talks/Lund2025.html#thank-you",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "THANK YOU!",
+    "text": "THANK YOU!\n\n\n\nLet’s Connect\n🔗 giorgistat.github.io\n📧 e.giorgi@lancaster.ac.uk\n📍 CHICAS, Lancaster Medical School, Lancaster University, UK"
   }
 ]

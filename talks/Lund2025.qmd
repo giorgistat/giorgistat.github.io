@@ -1,0 +1,255 @@
+---
+title: "Model-based Geostatistics for Global Public Health"  
+subtitle: "From Methodology Development to Policy Applications"  
+author: "Emanuele Giorgi"  
+institute: "Lancaster University" 
+execute:
+  freeze: true
+date: ""  
+format:
+  revealjs:
+    theme: solarized
+    transition: fade
+    slide-number: true
+    chalkboard: true
+    logo: "figures/clogo.png"
+    footer: ""
+---
+
+## My Background {.smaller}
+
+### Current Roles
+
+-   **Head, Centre for Health Informatics, Computing, and Statistics (CHICAS)**\
+    [chicas.lancaster-university.uk](https://chicas.lancaster-university.uk)\
+-   **Head, WHO Collaborating Centre for Geostatistical Methods for NTD Research**
+
+### Education
+
+-   **PhD in Statistics and Epidemiology** (Sep 2015)\
+-   **MSc in Statistics** (July 2012)\
+-   **BSc in Statistics** (April 2012)
+
+------------------------------------------------------------------------
+
+## Presentation Overview
+
+1.  **Neglected Tropical Diseases: an overview**
+2.  **Model-based Geostatistics: Current and Future Research**
+3.  **Informing Policy Decisions**
+4.  **Capacity Building**
+
+------------------------------------------------------------------------
+
+## Neglected tropical diseases
+
+![](figures/Figure-12.png)
+
+## NTD endemic areas
+
+![](figures/Prevalence-of-neglected-tropical-diseases-NTDs-by-country-The-burden-of-NTDs-in_W640.jpg)
+
+## The impact of NTDs
+
+![](figures/Ranking-of-NTDs-by-Disease-Burden-DALYs-and-Comparison-with-HIV-AIDS-Tuberculosis-and.png){width="35%"}
+
+## NTDs Risk Factors {.smaller}
+
+::: {layout-ncol="2"}
+![](figures/D200-0790-138A-2.jpg){width="35%"}
+
+![](figures/Five-Diseases-That-Thrive-in-Poor-Sanitation.jpg){width="35%"}
+:::
+
+**Common risk factors:**\
+- Poor sanitation and lack of clean water\
+- Limited healthcare access\
+- Poverty and overcrowding\
+- Exposure to disease vectors (e.g., mosquitoes, flies)\
+- Lack of education and awareness
+
+## From the mining industry to public health
+
+::: {#fig1 layout="[1,1]"}
+![(a) Danie Gerhardus Krige GCOB (26 August 1919 – 3 March 2013)](figures/krige.jpg){height="4in"}
+
+![(b) Mining application of geostatistics](figures/mining.jpeg){height="4in"}
+:::
+
+------------------------------------------------------------------------
+
+## Riverblindness
+
+<center>![](figures/river_blindness_cycle_male_eng.jpg){width="8in"}</center>
+
+------------------------------------------------------------------------
+
+## Mapping river-blindness
+
+::: {layout="[1,1]"}
+![(a) Map of the observed prevalence of palpable nodules in the 14,473 surveyed villages.](figures/oncho_loc.png){height="4in"}
+
+![(b) Map of the predicted prevalence.](figures/oncho_pred.png){height="4in"}
+:::
+
+------------------------------------------------------------------------
+
+## The ingredients of a geostatistical model for prevalence mapping {.scrollable .smaller}
+
+-   **Outcome**: $Y_i$ number of cases out $n_i$ sampled
+
+. . .
+
+-   **Locations**: $X = (x_1, \ldots, x_n)$
+
+. . .
+
+-   **Covariates** (optional): $d(x)$ (e.g. elevation, distance from waterways)
+
+. . .
+
+-   **Spatial Gaussian process**: $S(x)$ (stationary and isotropic) $$
+    {\rm cov}\{S(x), S(x')\} = \sigma^2 \rho(||x - x'||; \phi)
+    $$ Example: $\rho(u; \phi) = \exp\{-u/\phi\}$.
+
+## Putting all together {.scrollable .smaller}
+
+-   **Conditional independence**: $Y_{i}$ conditionally on $S(x_i)$ are mutually independent $Bin(n_i , p(x_i))$
+
+. . .
+
+-   The **linear predictor** $$
+    \log\left\{\frac{p(x_i)}{1-p(x_i)}\right\} = \beta_0 + d(x_i)^\top \beta + S(x_i)
+    $$
+
+. . .
+
+-   The **joint distribution**: $[S, Y] = [S] [Y | S]$
+
+where $Y=(Y_1, \ldots, Y_n)$ and $S = (S(x_1), \ldots, S(x_n))$
+
+. . .
+
+-   The **likelihood function** $$
+    L(\theta) = \int_{\mathbb{R}^n} [S] [Y | S] \: dS
+    $$ How do we approximate this intractable integral?
+
+## PrevMap and RiskMap {.smaller}
+
+<center>![](figures/prevmap.png){height="4in"}</center>
+
+. . .
+
+Giorgi, E. and Fronterre, C. (expected August 2025) *Model-based geostatistics for global public health using R.* Chapman and Hall/CRC. The R Series.
+
+## Identifying disease hotspots
+
+-   **Hotspot:** riverblindness prevalence above $20\%$
+
+. . .
+
+-   **Exceedance probability:** ${\rm Prob}\{p(x) > 0.2 \:  | \: Y \}$
+
+. . .
+
+<center>![](figures/exceedprob.png){height="4in"}</center>
+
+## Extensions to spatio-temporal modelling {.smaller}
+
+**Question:** Which spatio-temporal correlation structures are suitable for modelling disease prevalence data?
+
+<center>![](figures/spatio_temporal.png){height="3.8in"}</center>
+
+. . .
+
+Giorgi, E., Diggle, P. J., Snow, R. W., Noor, A. M. (2018). Geostatistical methods for disease mapping and visualization using data from spatio-temporally referenced prevalence surveys. **International Statistical Review.** https://doi.org/10.1111/insr.12268
+
+------------------------------------------------------------------------
+
+## Combining data from multiple diagnostics {.smaller}
+
+**Questions:** 1) How we predict a gold-standard diagnostic using cheap biased diagnostics? 2) How do we model the bivariate relationship between two complementary gold-standards?
+
+<center>![](figures/combining.png){height="4in"}</center>
+
+. . .
+
+Amoah, B., Diggle, P. J., Giorgi, E. (2019). A geostatistical framework for combining data from multiple diagnostic tests. **Biometrics.** doi:10.1111/biom.13142
+
+------------------------------------------------------------------------
+
+## Spatially structured zero-inflation {.smaller}
+
+**Question:** How can we effectively model the bivariate relationship between disease suitability and disease prevalence?
+
+<center>![](figures/sudan.png){height="4in"}</center>
+
+. . .
+
+Diggle, P. J., Giorgi, E. (2016). Model-based geostatistics for prevalence mapping in low-resource settings (with discussion). **Journal of the American Statistical Association.** 111:1096-1120
+
+## Future methodological directions
+
+-   Using **multivariate geostatistical** models to analyse serological data from multiple diseases
+
+-   Incorporating **mathematical models** for the impact of interventions into geostatistical models
+
+-   Developing more robust methods for the **validation** of geostatistical models for counts data.
+
+-   Dealing with **spatial and temporal misalignment** in repeated cross-sectional survey data
+
+## Translation into policy: the case of trachoma
+
+<center>![](figures/trachoma.jpg){height="6in"}</center>
+
+## Informing the elimination of trachoma {.smaller}
+
+<center>![](figures/elimination_tr.PNG){height="5in"}</center>
+
+Sasanami, M., et al. (2023). Using model-based geostatistics for assessing the elimination of trachoma. **PLoS Neglected Tropical Diseases**, 17(7): e0011476. https://doi.org/10.1371/journal.pntd.0011476
+
+## Challenges in Translating Geostatistics for Policy
+
+-   **Complexity of methods** – Advanced models are difficult to interpret for non-specialists.
+
+-   **Data uncertainty** – Policymakers may struggle to incorporate probabilistic estimates into decision-making.
+
+-   **Lack of user-friendly tools** – Limited access to tools that allow interactive exploration of spatial predictions.
+
+-   **Lack of local geostatistical expertise** – Few or no local experts support to support control programmes.
+
+## Engagement with policy makers {.smaller}
+
+Technical meeting on geostatistical methods for trachoma elimination
+
+Lancaster University, 4-5 March 2024
+
+<center>![](figures/trachoma_meeting.png){height="5in"}</center>
+
+## Engagement with policy makers {.smaller}
+
+Technical meeting on capacity building 
+
+Lancaster University, 3-4 March 2025
+
+<center>![](figures/cap_build.jpg){height="5in"}</center>
+
+
+## A user-friendly app for malaria mapping {.smaller}
+
+<center>
+
+[Link to Maplaria App](https://fhm-chicas-maplaria.lancs.ac.uk/landing?redirect=/)
+
+![](figures/maplaria.png){height="6in"}
+
+</center>
+
+## THANK YOU! {.smaller}
+
+<center>![](figures/questions.jpg){height="4in"}</center>
+
+**Let's Connect**\
+🔗 [giorgistat.github.io](https://giorgistat.github.io)\
+📧 e.giorgi\@lancaster.ac.uk\
+📍 CHICAS, Lancaster Medical School, Lancaster University, UK
