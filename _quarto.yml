@@ -28,7 +28,6 @@ website:
       - href: teaching/index.qmd
         text: Teaching
 
-  # About card under profile picture
   page-footer: ""
 
 format:
@@ -38,16 +37,3 @@ format:
     toc: true
 
 editor: visual
-
-# About section for profile sidebar (add this to index.qmd or _quarto.yml if shared globally)
-about:
-  template: trestles
-  image: profile.jpg
-  image-width: 15em
-  image-shape: round
-  links:
-    - icon: envelope
-      text: "e.giorgi@lancaster.ac.uk"
-      href: "mailto:e.giorgi@lancaster.ac.uk"
-    - text: "<img src='bs.png' alt='Bluesky' style='height:1em; vertical-align:middle;'> @giorgistat.bsky.social"
-      href: "https://bsky.app/profile/giorgistat.bsky.social"
