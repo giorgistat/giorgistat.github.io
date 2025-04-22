@@ -485,7 +485,7 @@ kable(results, align = "c", caption = "") %>%
 
 <center>![](figures/prevalence_animation.gif)</center>
 
-## Next steps and extenions
+## Next steps and extenions {.smaller}
 
 -   Carry out simulation study to understand how we can recover the true prevalence and draw inferences on the MDA impact function.
 
