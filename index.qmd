@@ -33,4 +33,3 @@ For a comprehensive overview of my academic and professional journey, you can ac
 ## Publications
 
 You can find my full list of publications [here](publications/index.html)
-

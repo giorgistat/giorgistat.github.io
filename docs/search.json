@@ -753,7 +753,7 @@
     "href": "teaching/mbg.html#course-content",
     "title": "Model-based Geostatistics",
     "section": "Course Content",
-    "text": "Course Content\n\n1. Introduction\nAn overview of geostatistical problems in the context of epidemiological studies.\n\nSlides\n\n\n\n2. Exploratory Analysis\nExploring regression relationships, overdispersion and spatial correlation.\n\nSlides\nExercise and raster files for the analysis\n\n\n\n3. Model Formulation and Parameter Estimation\nHow to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.\n\nSlides\nExercise\n\n\n\n4. Geostatistical prediction\nHow to predict health outcomes using geostatistical models, at pixel- and areal-level.\n\nSlides\nExercise"
+    "text": "Course Content\nYou can download all the R scripts used in the slides here.\n\n1. Introduction\nAn overview of geostatistical problems in the context of epidemiological studies.\n\nSlides\n\n\n\n2. Exploratory Analysis\nExploring regression relationships, overdispersion and spatial correlation.\n\nSlides\nExercise, raster files for the analysis and solution\n\n\n\n3. Model Formulation and Parameter Estimation\nHow to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.\n\nSlides\nExercise and solution\n\n\n\n4. Geostatistical prediction\nHow to predict health outcomes using geostatistical models, at pixel- and areal-level.\n\nSlides\nExercise and solution"
   },
   {
     "objectID": "teaching/mbg.html#learning-outcomes",

@@ -6,7 +6,6 @@ title: "Model-based Geostatistics"
 
 This course provides a comprehensive introduction to **Model-based Geostatistics**, with a focus on applications in global public health and environmental science. The course on the applications of geostaistical methods while keeping the mathematical content to the minimum level required. The course is taught using the R software environment.
 
-
 ------------------------------------------------------------------------
 
 ## Learning Outcomes
@@ -33,6 +32,8 @@ Install `rgeoboundaries` in R by running `remotes::install_github("wmgeolab/rgeo
 
 ## Course Content
 
+You can download all the R scripts used in the slides [here](MBG/R scripts.zip).
+
 ### 1. Introduction
 
 An overview of geostatistical problems in the context of epidemiological studies.
@@ -44,22 +45,21 @@ An overview of geostatistical problems in the context of epidemiological studies
 Exploring regression relationships, overdispersion and spatial correlation.
 
 -   [Slides](MBG/exp_analysis.qmd)
--   [Exercise](MBG/Exercises/Exercise-1.pdf) and [raster files](MBG/Data/Tanzania_rasters.zip) for the analysis
+-   [Exercise](MBG/Exercises/Exercise-1.pdf), [raster files](MBG/Data/Tanzania_rasters.zip) for the analysis and [solution](MBG/Exercises/Exercise 1 (solution).zip)
 
 ### 3. Model Formulation and Parameter Estimation
 
 How to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.
 
 -   [Slides](MBG/estimation.qmd)
--   [Exercise](MBG/Exercises/Exercise-2.pdf)
+-   [Exercise](MBG/Exercises/Exercise-2.pdf) and [solution](MBG/Exercises/Exercise 2 (solution).zip)
 
 ### 4. Geostatistical prediction
 
 How to predict health outcomes using geostatistical models, at pixel- and areal-level.
 
 -   [Slides](MBG/geostat_pred.qmd)
--   [Exercise](MBG/Exercises/Exercise-3.pdf) 
-
+-   [Exercise](MBG/Exercises/Exercise-3.pdf) and [solution](MBG/Exercises/Exercise 3 (solution).zip)
 
 ------------------------------------------------------------------------
 
@@ -76,5 +76,3 @@ How to predict health outcomes using geostatistical models, at pixel- and areal-
 
 -   Each section includes lecture notes, code examples, and exercises.
 -   The materials are designed to be self-paced, but they can also be used in a classroom setting.
-
-
