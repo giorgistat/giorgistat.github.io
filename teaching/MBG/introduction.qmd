@@ -19,7 +19,7 @@ format:
 # Overview
 
 -   **Defining geostatistical problems**
--   **Spatial exploratory analysis based on the variogram**
+-   **Model-based geostatistics as a data-driven approach to spatial analysis of health outcomes**
 
 ------------------------------------------------------------------------
 

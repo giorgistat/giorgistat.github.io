@@ -93,7 +93,7 @@ format:
 . . .
 
 -   **Random Intercept Model**:\
-    $$ Y_{ij} \mid b_j \sim \text{Binomial}(p_{ij}), \quad \log\left\{\frac{p_{ij}}{1-p_{ij}}\right\} = \beta_0 + d_{ij} \beta_1 + Z_i. $$
+    $$ Y_{ij} \mid Z_i \sim \text{Binomial}(p_{ij}), \quad \log\left\{\frac{p_{ij}}{1-p_{ij}}\right\} = \beta_0 + d_{ij} \beta_1 + Z_i. $$
 
 . . .
 
@@ -201,8 +201,6 @@ Assumptions:
 . . .
 
 5.  $Y_i \mid Z_i$ are mutually independent for $i=1,\dots,n$.
-
-
 
 ## Parameter Estimation {.smaller .scrollable}
 

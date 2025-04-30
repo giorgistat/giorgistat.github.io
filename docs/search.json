@@ -949,7 +949,7 @@
     "href": "teaching/MBG/exp_analysis.html#random-effects-models-for-overdispersion",
     "title": "Exploratory analysis",
     "section": "Random Effects Models for Overdispersion",
-    "text": "Random Effects Models for Overdispersion\n\nOverdispersion often arises due to unobserved heterogeneity.\nA solution is to introduce random effects that account for latent variability.\n\n\n\nRandom Intercept Model:\n\\[ Y_{ij} \\mid b_j \\sim \\text{Binomial}(p_{ij}), \\quad \\log\\left\\{\\frac{p_{ij}}{1-p_{ij}}\\right\\} = \\beta_0 + d_{ij} \\beta_1 + Z_i. \\]\n\n\n\n\n\\(Z_i \\sim \\mathcal{N}(0, \\sigma^2)\\) captures between-group variability.\n\n\n\n\nLeads to extra variability in counts, addressing overdispersion.\n\n\n\n\nConnection to Negative Binomial:\n\nIf \\(Z_i\\) follows a Gamma distribution instead of Normal, the model is equivalent to a Negative Binomial."
+    "text": "Random Effects Models for Overdispersion\n\nOverdispersion often arises due to unobserved heterogeneity.\nA solution is to introduce random effects that account for latent variability.\n\n\n\nRandom Intercept Model:\n\\[ Y_{ij} \\mid Z_i \\sim \\text{Binomial}(p_{ij}), \\quad \\log\\left\\{\\frac{p_{ij}}{1-p_{ij}}\\right\\} = \\beta_0 + d_{ij} \\beta_1 + Z_i. \\]\n\n\n\n\n\\(Z_i \\sim \\mathcal{N}(0, \\sigma^2)\\) captures between-group variability.\n\n\n\n\nLeads to extra variability in counts, addressing overdispersion.\n\n\n\n\nConnection to Negative Binomial:\n\nIf \\(Z_i\\) follows a Gamma distribution instead of Normal, the model is equivalent to a Negative Binomial."
   },
   {
     "objectID": "teaching/MBG/exp_analysis.html#marginal-models-for-overdispersion",
