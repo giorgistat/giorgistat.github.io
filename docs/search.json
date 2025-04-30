@@ -1047,7 +1047,7 @@
     "href": "teaching/MBG/estimation.html#the-matérn-process",
     "title": "Model formulation and parameter estimation",
     "section": "The Matérn Process",
-    "text": "The Matérn Process\n\nThe Matérn covariance function is the most widely used in geostatistics.\nIt is controlled by three parameters:\n\nVariance (\\(\\sigma^2\\)) – controls process magnitude\nSmoothness (\\(\\kappa\\)) – determines differentiability\nScale parameter (\\(\\phi\\)) – governs spatial correlation decay\n\nThe covariance function is given by: \\[\nC(h) = \\sigma^2 \\frac{2^{1-\\kappa}}{\\Gamma(\\kappa)} \\left( \\frac{h}{\\phi} \\right)^\\kappa K_\\kappa \\left( \\frac{h}{\\phi} \\right), h = ||x-x'||\n\\] where \\(K_\\kappa\\) is the modified Bessel function of the second kind.\n\n matern_simulator.R"
+    "text": "The Matérn Process\n\nThe Matérn covariance function is the most widely used in geostatistics.\nIt is controlled by three parameters:\n\nVariance (\\(\\sigma^2\\)) – controls process magnitude\nSmoothness (\\(\\kappa\\)) – determines differentiability\nScale parameter (\\(\\phi\\)) – governs spatial correlation decay\n\nThe covariance function is given by: \\[\nC(h) = \\sigma^2 \\frac{2^{1-\\kappa}}{\\Gamma(\\kappa)} \\left( h/\\phi \\right)^\\kappa K_\\kappa \\left(h/\\phi \\right), h = ||x-x'||\n\\] where \\(K_\\kappa\\) is the modified Bessel function of the second kind.\n\n matern_simulator.R"
   },
   {
     "objectID": "teaching/MBG/estimation.html#stationary-and-isotropic-gaussian-processes",

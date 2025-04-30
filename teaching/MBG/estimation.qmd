@@ -68,7 +68,7 @@ format:
     -   **Smoothness** ($\kappa$) – determines differentiability
     -   **Scale parameter** ($\phi$) – governs spatial correlation decay
 -   The covariance function is given by: $$
-    C(h) = \sigma^2 \frac{2^{1-\kappa}}{\Gamma(\kappa)} \left( \frac{h}{\phi} \right)^\kappa K_\kappa \left( \frac{h}{\phi} \right), h = ||x-x'||
+    C(h) = \sigma^2 \frac{2^{1-\kappa}}{\Gamma(\kappa)} \left( h/\phi \right)^\kappa K_\kappa \left(h/\phi \right), h = ||x-x'||
     $$ where $K_\kappa$ is the modified Bessel function of the second kind.
 
 ![](Images/rlogo.png){width="10%"} [matern_simulator.R](R%20scripts/matern_simulator.R)
