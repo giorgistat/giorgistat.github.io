@@ -32,7 +32,7 @@ Install `rgeoboundaries` in R by running `remotes::install_github("wmgeolab/rgeo
 
 ## Course Content
 
-You can download all the R scripts used in the slides [here](MBG/R scripts.zip).
+You can download all the R scripts used in the slides [here](MBG/R%20scripts.zip).
 
 ### 1. Introduction
 
@@ -45,21 +45,21 @@ An overview of geostatistical problems in the context of epidemiological studies
 Exploring regression relationships, overdispersion and spatial correlation.
 
 -   [Slides](MBG/exp_analysis.qmd)
--   [Exercise](MBG/Exercises/Exercise-1.pdf), [raster files](MBG/Data/Tanzania_rasters.zip) for the analysis and [solution](MBG/Exercises/Exercise 1 (solution).zip)
+-   [Exercise](MBG/Exercises/Exercise-1.pdf), [raster files](MBG/Data/Tanzania_rasters.zip) for the analysis and [solution](MBG/Exercises/Exercise%201%20(solution).zip)
 
 ### 3. Model Formulation and Parameter Estimation
 
 How to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.
 
 -   [Slides](MBG/estimation.qmd)
--   [Exercise](MBG/Exercises/Exercise-2.pdf) and [solution](MBG/Exercises/Exercise 2 (solution).zip)
+-   [Exercise](MBG/Exercises/Exercise-2.pdf) and [solution](MBG/Exercises/Exercise%202%20(solution).zip)
 
 ### 4. Geostatistical prediction
 
 How to predict health outcomes using geostatistical models, at pixel- and areal-level.
 
 -   [Slides](MBG/geostat_pred.qmd)
--   [Exercise](MBG/Exercises/Exercise-3.pdf) and [solution](MBG/Exercises/Exercise 3 (solution).zip)
+-   [Exercise](MBG/Exercises/Exercise-3.pdf) and [solution](MBG/Exercises/Exercise%203%20(solution).zip)
 
 ------------------------------------------------------------------------
 
