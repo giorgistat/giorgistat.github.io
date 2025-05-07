@@ -31,24 +31,28 @@ plot_s_variogram(galicia_variog, plot_envelope = TRUE)
 
 # Fit a linear geostatistical model
 fit_galicia <-
-  glgpm(log(lead) ~ gp(x, y, kappa = 1.5), data=galicia, family = "gaussian",
+  glgpm(log(lead) ~ gp(x, y, kappa = 1.5),
+        data=galicia, family = "gaussian",
         crs = 32629, scale_to_km = TRUE, messages = FALSE)
 
 summary(fit_galicia)
 
+
 # Maximum likelihood estimates
 par_hat <- coef(fit_galicia)
+
+practical_range <- uniroot(function(x) matern_cor(x, phi = par_hat$phi, kappa = 1.5) - 0.05,
+        lower = 0.001, upper = 200)$root
+
 
 # Given parameters
 sigma2 <- par_hat$sigma2
 phi <- par_hat$phi
 
-# Compute the practical range where correlation = 0.05
-practical_range <- -phi * log(0.05)
 
 # Define distance values for plotting
 h <- seq(0, practical_range * 1.2, length.out = 100)
-variogram <- sigma2 * (1 - exp(-h / phi))
+variogram <- sigma2 * (1 -  matern_cor(h, phi = par_hat$phi, kappa = 1.5))
 
 # Plot the variogram
 plot(h, variogram, type = "l", col = "blue", lwd = 2,

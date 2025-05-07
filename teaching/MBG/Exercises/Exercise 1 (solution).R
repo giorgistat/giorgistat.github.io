@@ -138,7 +138,7 @@ fit2_glmer <- glmer(cbind(Pf, Ex - Pf) ~ Temperature + pmax(Temperature - opt_cp
 
 summary(fit2_glmer)
 
-# Point 5
+# Point 4
 
 library(sf)
 library(rgeoboundaries)
@@ -146,6 +146,9 @@ library(terra)
 
 # Convert to sf object
 tz_sf <- st_as_sf(tz_malaria, coords = c("utm_x", "utm_y"), crs = 32736)
+
+tz_sf <- st_as_sf(tz_malaria, coords = c("Long", "Lat"), crs = 4326)
+tz_sf <- st_transform(tz_sf, crs = propose_utm(tz_sf))
 
 # Download Tanzania boundary
 shp_tz <- geoboundaries(country = "tanzania", adm_lvl = "adm0")
