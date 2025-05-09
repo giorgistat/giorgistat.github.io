@@ -4,23 +4,23 @@ title: "Original Research Articles"
 
 ## Statistical Methodology {#stat-methodology}
 
--   Kyomuhangi, I., **<u>Giorgi, E.</u>**  (2022). *A threshold-free approach with age-dependency for estimating malaria seroprevalence.* Malaria Journal. https://doi.org/10.1371/journal.pone.0262145
+-   Kyomuhangi, I., **<u>Giorgi, E.</u>** (2022). *A threshold-free approach with age-dependency for estimating malaria seroprevalence.* Malaria Journal. https://doi.org/10.1371/journal.pone.0262145
 
--   Macharia, P., Ray, N., Gitonga, C. W., Snow, R. W., **<u>Giorgi, E.</u>**  (2022). *Combining school-catchment area models with geostatistical models for analysing school survey data from low-resource settings: inferential benefits and limitations.* Spatial statistics. https://doi.org/10.1016/j.spasta.2022.100679
+-   Macharia, P., Ray, N., Gitonga, C. W., Snow, R. W., **<u>Giorgi, E.</u>** (2022). *Combining school-catchment area models with geostatistical models for analysing school survey data from low-resource settings: inferential benefits and limitations.* Spatial statistics. https://doi.org/10.1016/j.spasta.2022.100679
 
 -   **<u>Giorgi, E.</u>** , Fronterre, C., Macharia, P., Alegana, V., Snow, R., Diggle, P. (2021) *Model building and assessment of the impact of covariates for disease prevalence mapping in low-resource settings: to explain and to predict.* Journal of the Royal Society Interface. 18:20210104. http://doi.org/10.1098/rsif.2021.0104
 
--   Kyomuhangi, I., **<u>Giorgi, E.</u>**  (2021) *A unified and flexible modelling framework for the analysis of malaria serology data.* Epidemiology & Infection. doi:10.1017/S0950268821000753
+-   Kyomuhangi, I., **<u>Giorgi, E.</u>** (2021) *A unified and flexible modelling framework for the analysis of malaria serology data.* Epidemiology & Infection. doi:10.1017/S0950268821000753
 
 -   Diggle, P. J., **<u>Giorgi, E.</u>** , Atsame, J., Ella, S. N., Ogoussan, K., Gass, K. (2020). *A tale of two parasites: statistical modelling to support disease control programmes in Africa.* Statistical Science. 35:42-50, doi:10.1214/19-STS738
 
--   Johnson, O. O., Getherall, T., Knight, J., **<u>Giorgi, E.</u>**  (2020) *A modelling framework for developing early warning systems of COPD emergency admissions.* Spatial and spatio-temporal epidemiology. doi: 10.1016/j.sste.2020.100392
+-   Johnson, O. O., Getherall, T., Knight, J., **<u>Giorgi, E.</u>** (2020) *A modelling framework for developing early warning systems of COPD emergency admissions.* Spatial and spatio-temporal epidemiology. doi: 10.1016/j.sste.2020.100392
 
--   Eyre, M. T., Carvalho-Pereira, T. S., Souza, F. N., Khalil, H., Hacker, K. P., Serrano, S., Taylor, J. P., Reis, M. G., Ko, A. J., Begon, M., Diggle, P. J., Costa, F., **<u>Giorgi, E.</u>**  (2020) *A multivariate geostatistical framework for combining multiple indices of abundance for disease vectors and reservoirs: A case study of rattiness in a low-income urban Brazilian community.* Journal of the Royal Society Interface. doi:10.1098/rsif.2020.0398
+-   Eyre, M. T., Carvalho-Pereira, T. S., Souza, F. N., Khalil, H., Hacker, K. P., Serrano, S., Taylor, J. P., Reis, M. G., Ko, A. J., Begon, M., Diggle, P. J., Costa, F., **<u>Giorgi, E.</u>** (2020) *A multivariate geostatistical framework for combining multiple indices of abundance for disease vectors and reservoirs: A case study of rattiness in a low-income urban Brazilian community.* Journal of the Royal Society Interface. doi:10.1098/rsif.2020.0398
 
 -   Johnson, O. O., Diggle, P. J., **<u>Giorgi, E.</u>** , (2020). *Dealing with spatial misalignment to model the relationship between deprivation and life expectancy: A model-based geostatistical approach.* International Journal of Health Geographics. DOI: 10.1186/s12942-020-00200-w
 
--   Kyomuhangi, I., Abeku, T. A., Kirby, M. J., Tesfaye, G.,**<u>Giorgi, E.</u>**  (2020). *Understanding the effects of dichotomization of continuous outcomes on geostatistical inference.* Spatial Statistics. 00424, https://doi.org/10.1016/j.spasta.2020.100424.
+-   Kyomuhangi, I., Abeku, T. A., Kirby, M. J., Tesfaye, G.,**<u>Giorgi, E.</u>** (2020). *Understanding the effects of dichotomization of continuous outcomes on geostatistical inference.* Spatial Statistics. 00424, https://doi.org/10.1016/j.spasta.2020.100424.
 
 -   Ejigu, B. A., Wencheko, E., Moraga, P., **<u>Giorgi, E.</u>** , (2020). *Geostatistical methods for modelling non-stationary patterns in disease risk.* Spatial Statistics. doi:10.1016/j.spasta.2019.100397
 
@@ -28,9 +28,9 @@ title: "Original Research Articles"
 
 -   Milton, P., **<u>Giorgi, E.</u>** , Bhatt, S. (2019). *Spatial Analysis Made Easy with Linear Regression and Kernels.* Epidemics. DOI:10.1016/j.epidem.2019.100362
 
--   Amoah, B., Diggle, P. J., **<u>Giorgi, E.</u>**  (2019). *A geostatistical framework for combining data from multiple diagnostic tests.* Biometrics. doi:10.1111/biom.13142
+-   Amoah, B., Diggle, P. J., **<u>Giorgi, E.</u>** (2019). *A geostatistical framework for combining data from multiple diagnostic tests.* Biometrics. doi:10.1111/biom.13142
 
--   Johnson, O. O., Diggle, P. J., **<u>Giorgi, E.</u>**  (2019). *A spatially discrete approximation to log-Gaussian Cox processes for modelling aggregated disease count data.* Statistics in Medicine. doi:10.1002/sim.8339
+-   Johnson, O. O., Diggle, P. J., **<u>Giorgi, E.</u>** (2019). *A spatially discrete approximation to log-Gaussian Cox processes for modelling aggregated disease count data.* Statistics in Medicine. doi:10.1002/sim.8339
 
 -   Fronterre, C., **<u>Giorgi, E.</u>** , Diggle, P. J. (2018). *Geostatistical inference in the presence of geomasking: a composite-likelihood approach.* Spatial Statistics. DOI: 10.1016/j.spasta.2018.06.004
 
@@ -42,7 +42,7 @@ title: "Original Research Articles"
 
 -   **<u>Giorgi, E.</u>** , Diggle, P. J. (2017). *PrevMap: an R package for prevalence mapping.* Journal of Statistical Software. 78:1-29, doi: 10.18637/jss.v078.i08
 
--   Diggle, P. J., **<u>Giorgi, E.</u>**  (2016). *Model-based geostatistics for prevalence mapping in low-resource settings (with discussion).* Journal of the American Statistical Association. 111:1096-1120
+-   Diggle, P. J., **<u>Giorgi, E.</u>** (2016). *Model-based geostatistics for prevalence mapping in low-resource settings (with discussion).* Journal of the American Statistical Association. 111:1096-1120
 
 -   **<u>Giorgi, E.</u>** , Diggle, P. J. (2014). *On the inverse geostatistical problem of inference on missing locations.* Spatial statistics. 11:35-44 arXiv:1409.3408
 
@@ -52,20 +52,22 @@ title: "Original Research Articles"
 
 ## Applications in Public Health {#public-health}
 
--   Mategula, D., Gichuki, J., Barnes, K. I., **<u>Giorgi, E.</u>**  , Terlouw, D. J., *Advancing Early Warning Systems for Malaria: Progress, Challenges, and Future Directions: A Scoping Review.* PLoS Global Public Health. In press.
+-   Harte, A., Sasanami, M., Burgert-Brucker, C. R., Bakhtiari, A., Bisanzio, D., Jimenez, C., Solomon, A. W., Kabona, G. E., Masika, M. P., Ngondi, J., Ante-Testard, P. A., Arnold, B. F., Baayenda, G., Ruiz Cuenca, P., Diggle, P. J., Edirweera, D., Emerson, P. M., Fronterre, C., Gass, K., Hadley, L., Hooper, P. J., Kamau, E., Kebede, F., Kyomuhangi, I., Lietman, T. M., McCracken, K., Minnery, M., Nash, S. D., Nicholls, T., Olobio, N., Palmer, S. L., Saeedzai, S. A., Somerville, S., Stern, C., Stukel, D., Landmann Szwarcwald, C., Talero, S. L., Yevstigneyeva, V., Kello, A. B., Harding-Esch, E., **<u>Giorgi, E.</u>** , *Using model-based geostatistics to refine population-based estimates of trachoma prevalence: update from a technical consultation.* American Journal of Tropical Medicine & Hygiene. In production. Pre-print available at Zenodo. https://doi.org/10.5281/zenodo.14989070
 
--   Khaki, J., Minnery, M., **<u>Giorgi, E.</u>**  (2025). *Using ESPEN Data for Evidence-Based Control of Neglected Tropical Diseases in sub-Saharan Africa: a Comprehensive Model-based Geostatistical Analysis on Soil-Transmitted Helminths.* PLOS Neglected Tropical Diseases 19(1): e0012782. https://doi.org/10.1371/journal.pntd.0012782
+-   Mategula, D., Gichuki, J., Barnes, K. I., **<u>Giorgi, E.</u>** , Terlouw, D. J., *Advancing Early Warning Systems for Malaria: Progress, Challenges, and Future Directions: A Scoping Review.* PLoS Global Public Health. In press.
+
+-   Khaki, J., Minnery, M., **<u>Giorgi, E.</u>** (2025). *Using ESPEN Data for Evidence-Based Control of Neglected Tropical Diseases in sub-Saharan Africa: a Comprehensive Model-based Geostatistical Analysis on Soil-Transmitted Helminths.* PLOS Neglected Tropical Diseases 19(1): e0012782. https://doi.org/10.1371/journal.pntd.0012782
 
 -   Bun, K., Mode, B., Bjerum, C., Payne1, M., Tisch, D., Salo, J., Kovach, J., Susapu, M., Sekihara, M., **<u>Giorgi, E.</u>** , Diggle, P. J., Weil, G., Robinson, L., Laman, M., King, C. L. (2025). *Alternative Approaches for Monitoring and Evaluation of Lymphatic Filariasis Following Mass Drug Treatment with Ivermectin, Diethylcarbamazine and Albendazole in East New Britain Province, Papua New Guinea.* PLOS Neglected Tropical Diseases 19(1): e0012128. https://doi.org/10.1371/journal.pntd.0012128
 
--   Puranik, A., Diggle, P. J., Odiere, M. R., Gass, K., Kepha, S., Okoyo, C., Mwandawiro, C., Wakesho, F., Omondi, W., Sultani, H. M., **<u>Giorgi, E.</u>**  (2024). *Understanding the impact of covariates on the classification of implementation units for soil-transmitted helminths control: A case study from Kenya.* BMC Medical Research Methodology, 24, 294 (2024). https://doi.org/10.1186/s12874-024-02420-1
+-   Puranik, A., Diggle, P. J., Odiere, M. R., Gass, K., Kepha, S., Okoyo, C., Mwandawiro, C., Wakesho, F., Omondi, W., Sultani, H. M., **<u>Giorgi, E.</u>** (2024). *Understanding the impact of covariates on the classification of implementation units for soil-transmitted helminths control: A case study from Kenya.* BMC Medical Research Methodology, 24, 294 (2024). https://doi.org/10.1186/s12874-024-02420-1
 
 -   Khaki, J., Macharia, P., **<u>Giorgi, E.</u>** , Benova, L. (2024). *Prevalence and determinants of double and triple burden of malnutrition among mother-child pairs in Malawi: a mapping and multilevel modelling study.* Pubblic Health Nutrition. Public Health Nutrition.\
     2024;27(1):e241. doi:10.1017/S1368980024002064
 
 -   Soni, N., Eyre, M. T., Souza, F. N., Diggle, P. J., Ko, A. I., Begon, M., Pickup, R., Childs, J. E., Khalil, H., Carvalho-Pereira, T. S. A., Pertile, A. C., Carvalho, M., de Oliveira, D., Junior, N. N., **<u>Giorgi, E.</u>** $^*$, Costa, F.$^*$ (2024). *Disentangling the influence of reservoir abundance and pathogen shedding on zoonotic spillover of the Leptospira agent in urban informal settlements.* Frontiers in Public Health. 12:1447592. doi: 10.3389/fpubh.2024.1447592 $^*$These authors contributed equally.
 
--   Khaki, J.J, Meiring, J.E., Thindwa, D., Henrion, M.Y., Jere, T.M., Msuku, H., The STRATAA Consortium, Heyderman, R.S., Gordon, M. A., **<u>Giorgi, E.</u>**  (2024). *Modelling Salmonella Typhi in Blantyre, Malawi, using point pattern methods.* Scientific Reports. 14, 17164. https://doi.org/10.1038/s41598-024-66436-9
+-   Khaki, J.J, Meiring, J.E., Thindwa, D., Henrion, M.Y., Jere, T.M., Msuku, H., The STRATAA Consortium, Heyderman, R.S., Gordon, M. A., **<u>Giorgi, E.</u>** (2024). *Modelling Salmonella Typhi in Blantyre, Malawi, using point pattern methods.* Scientific Reports. 14, 17164. https://doi.org/10.1038/s41598-024-66436-9
 
 -   Barrett, C. L., Chiphwanya, J., Mkwanda, D., Matipula, D. E., Ndhlovu, P., Chaponda, L., Turner, J. D., **<u>Giorgi, E.</u>** , Betts, H., Martindale, S., Taylor, M. J., Read, J. M., Kelly-Hope, L. A. (2024).*The national distribution of lymphatic filariasis cases in Malawi using patient mapping and geostatistical modelling.* PLoS Neglected Tropical Diseases. https://doi.org/10.1371/journal.pntd.0012056
 
@@ -73,7 +75,7 @@ title: "Original Research Articles"
 
 -   Carvalho-Pereira, T., Eyre, M., Zeppelini, C., Espirito Santo, V., Santiago, D., Santana, R., Palma, F., Reis, M., Lustosa, R., Khalil, H., Diggle, P., **<u>Giorgi, E.</u>** , Costa, F., Begon, M. (2023). *Basic urban services fail to neutralise environmental determinants of ‘rattiness’, a composite metric of rat abundance.* Urban Ecosystems. https://doi.org/10.1007/s11252-023-01481-2
 
--   Sasanami, M., Amoah, B., Amza, A., Souley, A. S. Y, Diori, A. N., Bakhtiari, A., Kadri, B., Szwarcwald, C. L., Gomez, D. V. F., Almou, I., Lopes, M. F. C., Masika, M. P., Beidou, N., Boyd, S., Harding-Esch, E. M., Solomon, A. W, **<u>Giorgi, E.</u>**  (2023). *Using model-based geostatistics for assessing the elimination of trachoma.* PLoS Neglected Tropical Diseases, 17(7): e0011476. https://doi.org/10.1371/journal.pntd.0011476
+-   Sasanami, M., Amoah, B., Amza, A., Souley, A. S. Y, Diori, A. N., Bakhtiari, A., Kadri, B., Szwarcwald, C. L., Gomez, D. V. F., Almou, I., Lopes, M. F. C., Masika, M. P., Beidou, N., Boyd, S., Harding-Esch, E. M., Solomon, A. W, **<u>Giorgi, E.</u>** (2023). *Using model-based geostatistics for assessing the elimination of trachoma.* PLoS Neglected Tropical Diseases, 17(7): e0011476. https://doi.org/10.1371/journal.pntd.0011476
 
 -   Dermauw, V., De Vijver, E. V., Dorny, P., **<u>Giorgi, E.</u>** , Ganaba, R., Millogo, A., Tarnagda, Z., Cisse, A. K., Carabin, A., *Geostatistical analysis of active human cysticercosis: Results of a large-scale study in 60 villages in Burkina Faso'.* PLoS Neglected Tropical Diseases. https://doi.org/10.1371/journal.pntd.0011437
 
@@ -94,7 +96,7 @@ $^*$ I have co-authored this paper as member of the NTD consortium.
 -   Eyre, M. T., Souza, F. N., Carvalho-Pereira, T. S. A., Nery, N., de Oliveira, D., Cruz, J. S., Sacramento, G. A., Khalil, H., Wunder, E. A., Hacker, K. P., Childs, J. E., Reis, M., Begon, M., Diggle, P. J., Ko, A. I., **<u>Giorgi, E.</u>** $^*$, Costa, F.$^*$ (2022). *Linking rattiness, geography and environmental degradation to spillover Leptospira infections in marginalised urban settings.* ELife. https://doi.org/10.7554/eLife.73120\
     $^*$These authors contributed equally.
 
--   Ringwald, B., Tolhurst, R., Taegtmeyer, M., Digolo, L., Gichuna, G., Gaitho, M. M., Phillips-Howard, P. A., Otiso, L., **<u>Giorgi, E.</u>**  (2022). *Intra-urban variation of intimate partner violence against women and men in Kenya: a secondary data analysis.* Journal of Interpersonal Violence. https://doi.org/10.1177/08862605221120893
+-   Ringwald, B., Tolhurst, R., Taegtmeyer, M., Digolo, L., Gichuna, G., Gaitho, M. M., Phillips-Howard, P. A., Otiso, L., **<u>Giorgi, E.</u>** (2022). *Intra-urban variation of intimate partner violence against women and men in Kenya: a secondary data analysis.* Journal of Interpersonal Violence. https://doi.org/10.1177/08862605221120893
 
 -   Grau-Pujol, B., Cano, J., Marti-Soler, H., Casellas, A., **<u>Giorgi, E.</u>** , Nhacolo, A., Saute, F., Gine, R, Quinto, L., Sacoor, C., Munoz, J. (2022). *Neighbors' use of water and sanitation facilities can affect children's health: a cohort study in Mozambique using a spatial approach.* BMC Public Health 22, 983 (2022). https://doi.org/10.1186/s12889-022-13373-9
 
@@ -104,7 +106,7 @@ $^*$ I have co-authored this paper as member of the NTD consortium.
 
 -   **<u>Giorgi, E.</u>** , Macharia, P. M., Woodmansey, J., Snow, R. W., Rowlingson, B. (2021). *Maplaria: a user friendly web-application for spatio-temporal malaria prevalence mapping.* Malaria Journal. 20, 471 https://doi.org/10.1186/s12936-021-04011-7
 
--   Amoah, B., McCann, R. S., Kabaghe, A. N., Mburu, M., Chipeta, M G., Moraga, P., Gowelo, S., Tizifa, T., van den Berg, H., Mzilahowa, T., Takken, W., van Vugt, M., Phiri, K.S., Diggle, P. J., Terlouw, D. J., **<u>Giorgi, E.</u>**  (2021). *Identifying fine-scale spatiotemporal patterns in Plasmodium falciparum transmission by monitoring parasite prevalence and entomological inoculation rate.* ELife. 10:e65682 doi:10.7554/eLife.65682
+-   Amoah, B., McCann, R. S., Kabaghe, A. N., Mburu, M., Chipeta, M G., Moraga, P., Gowelo, S., Tizifa, T., van den Berg, H., Mzilahowa, T., Takken, W., van Vugt, M., Phiri, K.S., Diggle, P. J., Terlouw, D. J., **<u>Giorgi, E.</u>** (2021). *Identifying fine-scale spatiotemporal patterns in Plasmodium falciparum transmission by monitoring parasite prevalence and entomological inoculation rate.* ELife. 10:e65682 doi:10.7554/eLife.65682
 
 -   Grau-Pujol, B., Mart\`i-Soler, H., Escola, V., Demontis, V., Jamine, J. C., Gandasegui, J., Muchisse, O., Cambra-Pellej'a, M., Cossa, A., Martinez-Valladares, M., Sacoor, C., Van Lieshout, L., Cano, J., **<u>Giorgi, E.</u>** , Munoz, J. (2021). *Towards soil-transmitted helminths transmission interruption: the impact of diagnostic tools on infection prediction in a low intensity setting in Southern Mozambique.* PLoS Neglected Tropical Diseases. https://doi.org/10.1371/journal.pntd.0009803
 
@@ -138,7 +140,7 @@ $^*$ I have co-authored this paper as member of the NTD consortium.
 
 -   Runge, M., Snow, R. W., Molteni, F., Thawer, S., Mohamed, A., Mandike, R., **<u>Giorgi, E.</u>** , Macharia, P. M., Smith, T., Lengeler, C., Pothin, E., (2020). *Simulating the council-specific impact of anti-malaria interventions: a tool to support malaria strategic planning in Tanzania.* Malaria Journal. https://doi.org/10.1371/journal.pone.0228469
 
--   Neyens, T., Diggle, P. D., Faes, C., Beenaerts, N., Artois, T., **<u>Giorgi, E.</u>**  (2020). *Mapping species richness using opportunistic samples: a case study on ground-floor bryophyte species richness in the Belgian province of Limburg.* Scientific Reports 9, 19122, doi:10.1038/s41598-019-55593-x
+-   Neyens, T., Diggle, P. D., Faes, C., Beenaerts, N., Artois, T., **<u>Giorgi, E.</u>** (2020). *Mapping species richness using opportunistic samples: a case study on ground-floor bryophyte species richness in the Belgian province of Limburg.* Scientific Reports 9, 19122, doi:10.1038/s41598-019-55593-x
 
 -   Hale, A. C., S'anchez-Vizca'ino, F., Rowlingson, B., Radford, A. D., **<u>Giorgi, E.</u>** , O’Brien, S. J., Diggle, P. J. (2019). *A real-time spatio-temporal syndromic surveillance system with application to small companion animals.* Scientific Reports 9, 17738, doi:10.1038/s41598-019-53352-6
 
@@ -194,6 +196,6 @@ $^*$ I have co-authored this paper as member of the NTD consortium.
 
 ## Teaching of Statistics {#teaching}
 
--   Johnson, O., Fronterre, C., Diggle, P. J., Amoah, A., **<u>Giorgi, E.</u>**  (2021). *MBGapp: A Shiny application for teaching model-based geostatistics to population health scientists.* PLoS ONE. https://doi.org/10.1371/journal.pone.0262145
+-   Johnson, O., Fronterre, C., Diggle, P. J., Amoah, A., **<u>Giorgi, E.</u>** (2021). *MBGapp: A Shiny application for teaching model-based geostatistics to population health scientists.* PLoS ONE. https://doi.org/10.1371/journal.pone.0262145
 
--   **<u>Giorgi, E.</u>**  (2018). *Using a problem-driven approach for teaching statistics at the African Institute of Mathematical Sciences (invited paper).* In M. A. Sorto, A. White, & L. Guyot (Eds.), Looking back, looking forward. Proceedings of the Tenth International Conference on Teaching Statistics (ICOTS10, July, 2018), Kyoto, Japan. Voorburg, The Netherlands: International Statistical Institute. Available [here](https://iase-web.org/icots/10/proceedings/pdfs/ICOTS10_3H3.pdf?1531364259)
+-   **<u>Giorgi, E.</u>** (2018). *Using a problem-driven approach for teaching statistics at the African Institute of Mathematical Sciences (invited paper).* In M. A. Sorto, A. White, & L. Guyot (Eds.), Looking back, looking forward. Proceedings of the Tenth International Conference on Teaching Statistics (ICOTS10, July, 2018), Kyoto, Japan. Voorburg, The Netherlands: International Statistical Institute. Available [here](https://iase-web.org/icots/10/proceedings/pdfs/ICOTS10_3H3.pdf?1531364259)
