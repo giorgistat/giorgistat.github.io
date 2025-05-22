@@ -1,5 +1,5 @@
 ---
-title: "Incorporating the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods"  
+title: "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods"  
 subtitle: "A decay-adjusted spatio-temporal (DAST) model"  
 author: "Emanuele Giorgi, Claudio Fronterre, Jana Purkiss, Freya Clark"  
 institute: "Lancaster University" 
@@ -405,7 +405,18 @@ $$
 
 -   All implemented in the `dast` function of the `RiskMap` package <img src="figures/excitement.png" width="80" height="80" style="vertical-align: middle;"/>
 
-## Example: Lymphatic filariasis in Madagascar
+## Applications
+
+
+-   [Lymphatic filariasis in Madagascar](#lf-slide)
+
+
+
+
+-   [Soil-transmitted helminths in Kenya](#sth-slide)
+
+
+## Example: Lymphatic filariasis in Madagascar {#lf-slide}
 
 <center>![](figures/lf.png){width="60%"}</center>
 
@@ -453,29 +464,20 @@ $$
 
 <center>![](figures/penalized_profile_alpha.jpg){width="50%"}</center>
 
-## Paramter estimates {.smaller}
+## Paramter estimates 
 
-NOTES: We set $k = 1$ for the MDA impact function.
+MDA impact function: $f(v) = \alpha\exp\{-v/\gamma\}$, with $v$ denoting the years since last MDA
 
-```{r}
-#| echo: false
-#| results: asis
+. . .
 
-library(knitr)
-library(kableExtra)
+| Parameter                     | Estimates                         |
+|-----------------|----------------------------------|
+| Intercept                | -2.582 (-2.622, -2.541)          |
+| Spatial variance         | 2.204 (1.891, 2.569)             |
+| Spatial scale            | 79.153 (70.874, 88.399)          |
+| Max. reduction ($\alpha$) | 0.856 (0.839, 0.872)             |
+| Decay scale ($\gamma$)    | 1.802 (1.768, 1.837)             |
 
-results <- data.frame(
-  Parameter = c("Intercept", "Spatial process variance", "Spatial correlation scale", 
-                "\u03B1 (max reduction)", "\u03B3 (decay scale)"),  # Using Unicode for α and γ
-  Estimate = c(-2.582, 2.204, 79.153, 0.856, 1.802),
-  `Lower limit` = c(-2.622, 1.891, 70.874, 0.839, 1.768),
-  `Upper limit` = c(-2.541, 2.569, 88.399, 0.872, 1.837)
-)
-
-kable(results, align = "c", caption = "") %>%
-  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE) %>%
-  column_spec(1, width = "4cm")  # Adjust column width for parameter names
-```
 
 ## Estimated MDA impact function
 
@@ -485,9 +487,53 @@ kable(results, align = "c", caption = "") %>%
 
 <center>![](figures/prevalence_animation.gif)</center>
 
+
+## Example: soil-transmitted helminths in Kenya {#sth-slide}
+
+<center>![](figures/sth_cycle.jpg)</center>
+
+## The data
+::: {style="width: 100%; height: 900px; position: relative;"}
+<iframe src="sth_kenya.html" width="100%" height="70%" style="border: none; position: absolute; top: 0; left: 0;">
+
+</iframe>
+:::
+
+
+## Timeline of surveys and MDA
+
+<center>![](figures/kenya_data.png){width="55%"}</center>
+
+## Paramter estimates {.smaller}
+
+MDA impact function: $f(v) = \alpha\exp\{-v/\gamma\}$, with $v$ denoting the years since last MDA
+
+. . .
+
+
+
+| Parameter                | Ascaris            | Trichuris             | Hookworm            |
+|--------------------------|----------------------------------|----------------------------------|----------------------------------|
+| **Intercept**            | -2.41 (-2.45, -2.37)             | -2.44 (-2.51, -2.37)             | -1.94 (-1.98, -1.90)             |
+| **Spatial variance**    | 26.83 (14.70, 48.97)             | 15.57 (8.35, 29.06)              | 29.75 (20.17, 43.89)             |
+| **Spatial scale**        | 263.31 (178.38, 388.66)          | 109.02 (72.34, 164.32)           | 198.63 (152.33, 258.99)          |
+| **Max. reduction ($\alpha$)**        | 0.318 (0.299, 0.338)             | 0.837 (0.533, 0.958)             | 0.892 (0.871, 0.909)             |
+| **Decay scale ($\gamma$)**      | 9.49 (7.41, 12.16)               | 1.23 (1.01, 1.49)                | 6.46 (6.06, 6.90)                |
+
+## The MDA impact by STH species
+
+<center>![](figures/MDA_effects.png)</center>
+
+## Prevalence prediction 2012-2023
+
+<center>![](figures/STH_grid_animation.gif){width="75%"}</center>
+
+<center>![](figures/STH_sc_animation.gif){width="75%"}</center>
+
+
 ## Next steps and extenions {.smaller}
 
--   Carry out simulation study to understand how we can recover the true prevalence and draw inferences on the MDA impact function.
+-   Need for extension that includes $S(x,t)$ rather than $S(x)$.
 
 -   Apply DAST to other NTDs.
 
@@ -500,6 +546,7 @@ kable(results, align = "c", caption = "") %>%
     -   Accounting for the effect of different types of treatments
 
     -   Uncertainty in the MDA coverage
+
 
 ## THANK YOU! {.smaller}
 

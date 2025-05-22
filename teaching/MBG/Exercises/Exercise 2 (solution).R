@@ -2,6 +2,7 @@ rm(list = ls())
 
 library(RiskMap)
 library(lme4)
+library(sf)
 
 data("tz_malaria")
 tz_malaria <- st_as_sf(tz_malaria, coords = c("utm_x", "utm_y"), crs = 32736)
@@ -43,6 +44,8 @@ s_variogram(data = tz_malaria, variable = "Z_hat",
 plot_s_variogram(tz_vari, plot_envelope = TRUE)
 
 
+
+
 ### Point 3
 
 # Fitting an intercept only model
@@ -52,6 +55,13 @@ glgm_fit_null <- glgpm(Pf ~ gp(nugget = NULL),
                       family = "binomial")
 
 summary(glgm_fit_null)
+
+glgm_fit_null <- glgpm(Pf ~ gp(nugget = NULL),
+                       den = Ex,
+                       par0 = coef(glgm_fit_null),
+                       data = tz_malaria,
+                       family = "binomial")
+
 
 # Fitting a model with covariates
 glgm_fit <- glgpm(Pf ~ Temperature + pmax(Temperature - 33, 0) +

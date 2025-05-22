@@ -7,8 +7,8 @@ data("tz_malaria")
 tz_malaria <- st_as_sf(tz_malaria, coords = c("utm_x", "utm_y"), crs = 32736)
 
 # Fitting a model with covariates
-glgm_fit <- glgpm(Pf ~ Temperature + pmax(Temperature - 33, 0) +
-                    EVI + gp(nugget = NULL),
+glgm_fit <- glgpm(Pf ~ EVI + Temperature + pmax(Temperature - 33, 0) +
+                     gp(nugget = NULL),
                   den = Ex,
                   data = tz_malaria,
                   family = "binomial")
@@ -27,16 +27,16 @@ grid_tza <- create_grid(shp_tz_0, spat_res = 10)
 
 # EVI for Tanzania
 library(terra)
-tza_evi <- rast("teaching/MBG/Data/Tanzania_Annual_EVI_2015.tif")
+tza_evi <- rast("../Data/Tanzania_Annual_EVI_2015.tif")
 tza_evi <- project(tza_evi, "EPSG:32736")
 
 # Temperature for Tanzania
-tza_temp <- rast("teaching/MBG/Data/Tanzania_Annual_LST_2015.tif")
+tza_temp <- rast("../Data/Tanzania_Annual_LST_2015.tif")
 tza_temp <- project(tza_temp, "EPSG:32736")
 
 # Population density for Tanzania
 library(terra)
-tza_pop <- rast("teaching/MBG/Data/Tanzania_population_density_2015.tif")
+tza_pop <- rast("../Data/Tanzania_population_density_2015.tif")
 tza_pop <- project(tza_pop, "EPSG:32736")
 
 # Extract covariates over the grid
@@ -57,7 +57,7 @@ pred_T_grid <-
                   f_target = list(prev = function(x) exp(x)/(1+exp(x))),
                   pd_summary = list(mean = mean,
                                     below10 = function(x) mean(x < 0.1),
-                                    btw10_30 = function(x) mean(x > 0.1 &
+                                    btw10_20 = function(x) mean(x > 0.1 &
                                                                 x < 0.2),
                                     class = function(x) {
                                       v1 <- mean(x < 0.1)
@@ -72,7 +72,7 @@ plot(pred_T_grid, which_target = "prev", which_summary = "mean",
 
 plot(pred_T_grid, which_target = "prev", which_summary = "below10")
 
-plot(pred_T_grid, which_target = "prev", which_summary = "btw10_30")
+plot(pred_T_grid, which_target = "prev", which_summary = "btw10_20")
 
 plot(pred_T_grid, which_target = "prev", which_summary = "class")
 
