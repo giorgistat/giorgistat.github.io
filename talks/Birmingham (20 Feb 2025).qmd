@@ -18,13 +18,6 @@ format:
 
 ## My Background {.smaller}
 
-### Current Roles
-
--   **Head, Centre for Health Informatics, Computing, and Statistics (CHICAS)**\
-    [chicas.lancaster-university.uk](https://chicas.lancaster-university.uk)\
--   **Head, WHO Collaborating Centre for Geostatistical Methods for NTD Research**
-
-### Education
 
 -   **PhD in Statistics and Epidemiology** (Sep 2015)\
 -   **MSc in Statistics** (July 2012)\
