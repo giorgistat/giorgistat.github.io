@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Teaching – Welcome to My Personal Website</title>
+<title>Model-based geostatistics for public health using R – Welcome to My Personal Website</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -128,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../teaching/index.html" aria-current="page"> 
+    <a class="nav-link" href="../teaching/index.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
 </ul>
@@ -147,13 +181,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#courses-offered" id="toc-courses-offered" class="nav-link active" data-scroll-target="#courses-offered">Courses Offered</a>
+  <li><a href="#learning-outcomes" id="toc-learning-outcomes" class="nav-link active" data-scroll-target="#learning-outcomes">Learning Outcomes</a></li>
+  <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages">R Packages</a></li>
+  <li><a href="#workshop-content" id="toc-workshop-content" class="nav-link" data-scroll-target="#workshop-content">Workshop Content</a>
   <ul class="collapse">
-  <li><a href="#model-based-geostatistics" id="toc-model-based-geostatistics" class="nav-link" data-scroll-target="#model-based-geostatistics">1. Model-based Geostatistics</a></li>
-  <li><a href="#time-series-analysis-in-epidemiology" id="toc-time-series-analysis-in-epidemiology" class="nav-link" data-scroll-target="#time-series-analysis-in-epidemiology">2. Time-series Analysis in Epidemiology</a></li>
-  <li><a href="#workshops" id="toc-workshops" class="nav-link" data-scroll-target="#workshops">3. Workshops</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">1. Introduction</a></li>
+  <li><a href="#exploratory-analysis" id="toc-exploratory-analysis" class="nav-link" data-scroll-target="#exploratory-analysis">2. Exploratory Analysis</a></li>
+  <li><a href="#model-formulation-and-parameter-estimation" id="toc-model-formulation-and-parameter-estimation" class="nav-link" data-scroll-target="#model-formulation-and-parameter-estimation">3. Model Formulation and Parameter Estimation</a></li>
+  <li><a href="#geostatistical-prediction" id="toc-geostatistical-prediction" class="nav-link" data-scroll-target="#geostatistical-prediction">4. Geostatistical Prediction</a></li>
   </ul></li>
-  <li><a href="#about-the-materials" id="toc-about-the-materials" class="nav-link" data-scroll-target="#about-the-materials">About the Materials</a></li>
+  <li><a href="#using-the-materials" id="toc-using-the-materials" class="nav-link" data-scroll-target="#using-the-materials">Using the Materials</a></li>
   </ul>
 </nav>
     </div>
@@ -162,7 +199,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Teaching</h1>
+<h1 class="title">Model-based geostatistics for public health using R</h1>
 </div>
 
 
@@ -179,38 +216,76 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="../talks/figures/teaching.jpg" class="img-fluid" style="width:40.0%"></p>
-<p>This page serves as a hub for sharing teaching resources from the courses I teach at <strong>Lancaster University</strong>, <strong>Cambridge University</strong> , invited courses and workshops. The materials are currently under development, and I plan to make them available here as they are finalized.</p>
+<p><img src="MBG/R scripts/RSS-2025-website-banner.jpg" style="height:3in"></p>
+<section id="learning-outcomes" class="level2">
+<h2 class="anchored" data-anchor-id="learning-outcomes">Learning Outcomes</h2>
+<p>By the end of the workshop, participants will be able to:</p>
+<ul>
+<li>Understand the key principles of model-based geostatistics<br>
+</li>
+<li>Explore and visualise spatial data using R<br>
+</li>
+<li>Fit and interpret geostatistical models<br>
+</li>
+<li>Carry out geostatistical prediction at both pixel and areal levels</li>
+</ul>
 <hr>
-<section id="courses-offered" class="level2">
-<h2 class="anchored" data-anchor-id="courses-offered">Courses Offered</h2>
-<section id="model-based-geostatistics" class="level3">
-<h3 class="anchored" data-anchor-id="model-based-geostatistics">1. Model-based Geostatistics</h3>
+</section>
+<section id="r-packages" class="level2">
+<h2 class="anchored" data-anchor-id="r-packages">R Packages</h2>
 <ul>
-<li><strong>Description</strong>: This course covers the fundamentals of model-based geostatistics, with a focus on applications in global public health and tropical diseases. Topics include exploratory analysis of spatial data, parameter estimation, spatial prediction and model validation.</li>
-<li><strong>Materials</strong>: <a href="../teaching/mbg.html">here</a></li>
+<li><em>Essential</em>: <code>RiskMap</code>, <code>rgeoboundaries</code>, <code>ggplot2</code>, <code>sf</code>, <code>terra</code>, <code>elevatr</code><br>
+</li>
+<li><em>Optional</em>: <code>shiny</code></li>
+</ul>
+<p>Install <code>RiskMap</code> in R:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>devtools<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"giorgilancs/RiskMap"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Install <code>rgeoboundaries</code> in R:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"wmgeolab/rgeoboundaries"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="workshop-content" class="level2">
+<h2 class="anchored" data-anchor-id="workshop-content">Workshop Content</h2>
+<p>All R scripts used in the slides can be downloaded</p>
+<section id="introduction" class="level3">
+<h3 class="anchored" data-anchor-id="introduction">1. Introduction</h3>
+<p>Geostatistical problems in the context of epidemiological studies.</p>
+<ul>
+<li><a href="../teaching/MBG/introduction_rss2025.html">Slides</a></li>
 </ul>
 </section>
-<section id="time-series-analysis-in-epidemiology" class="level3">
-<h3 class="anchored" data-anchor-id="time-series-analysis-in-epidemiology">2. Time-series Analysis in Epidemiology</h3>
+<section id="exploratory-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="exploratory-analysis">2. Exploratory Analysis</h3>
+<p>Exploring associations and spatial correlation.</p>
 <ul>
-<li><strong>Description</strong>: This course introduces the basics of time-series, starting from harmonic regressio to model seasonal trends and introduces discrete and continuous time series models. The first focus is on autregressive. Then on Gaussian processes. Applications include forecasting od disease risk.</li>
-<li><strong>Materials</strong>: <em>Coming soon</em> (under development)</li>
+<li><p><a href="../teaching/MBG/exp_analysis_rss2025.html">Slides</a></p></li>
+<li><p><a href="MBG/R scripts/RSS2025/explore_associations_rss2025.R">R script</a></p></li>
 </ul>
 </section>
-<section id="workshops" class="level3">
-<h3 class="anchored" data-anchor-id="workshops">3. Workshops</h3>
+<section id="model-formulation-and-parameter-estimation" class="level3">
+<h3 class="anchored" data-anchor-id="model-formulation-and-parameter-estimation">3. Model Formulation and Parameter Estimation</h3>
+<p>Fitting geostatistical models via Monte Carlo maximum likelihood.</p>
 <ul>
-<li>Royal Statistical Society Conference, Edinburgh, 2 September 2025. Materials: <a href="../teaching/RSS2025.html">here</a></li>
+<li><p><a href="../teaching/MBG/estimation_rss2025.html">Slides</a></p></li>
+<li><p><a href="MBG/R scripts/RSS2025/parameter_estimation_rss2025.R">R script</a></p></li>
 </ul>
 </section>
-</section>
-<section id="about-the-materials" class="level2">
-<h2 class="anchored" data-anchor-id="about-the-materials">About the Materials</h2>
+<section id="geostatistical-prediction" class="level3">
+<h3 class="anchored" data-anchor-id="geostatistical-prediction">4. Geostatistical Prediction</h3>
+<p>Prediction of health outcomes at different spatial scales.</p>
 <ul>
-<li>The teaching materials shared here are designed to support students, as well as researchers who would like to teach these courses.</li>
-<li>The content is continually updated and improved, so please check back regularly for new resources.</li>
-<li>Feedback and suggestions are welcome! Feel free to reach out if you have any questions or ideas for improvement.</li>
+<li><p><a href="../teaching/MBG/geostat_pred_rss2025.html">Slides</a></p></li>
+<li><p><a href="MBG/R scripts/RSS2025/geo_prediction_rss2025.R">R script</a></p></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="using-the-materials" class="level2">
+<h2 class="anchored" data-anchor-id="using-the-materials">Using the Materials</h2>
+<ul>
+<li>Each section includes slides, R code, and short exercises.<br>
+</li>
+<li>Materials can be followed independently after the workshop.</li>
 </ul>
 
 

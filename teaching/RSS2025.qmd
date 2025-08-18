@@ -1,0 +1,73 @@
+---
+title: "Model-based geostatistics for public health using R"
+---
+
+![](MBG/R scripts/RSS-2025-website-banner.jpg){height="3in"}
+
+
+## Learning Outcomes
+
+By the end of the workshop, participants will be able to:
+
+- Understand the key principles of model-based geostatistics  
+- Explore and visualise spatial data using R  
+- Fit and interpret geostatistical models  
+- Carry out geostatistical prediction at both pixel and areal levels  
+
+------------------------------------------------------------------------
+
+## R Packages
+
+- *Essential*: `RiskMap`, `rgeoboundaries`, `ggplot2`, `sf`, `terra`, `elevatr`  
+- *Optional*: `shiny`  
+
+Install `RiskMap` in R:  
+```r
+devtools::install_github("giorgilancs/RiskMap")
+```
+
+Install `rgeoboundaries` in R:  
+```r
+remotes::install_github("wmgeolab/rgeoboundaries")
+```
+
+------------------------------------------------------------------------
+
+## Workshop Content
+
+All R scripts used in the slides can be downloaded
+
+### 1. Introduction
+Geostatistical problems in the context of epidemiological studies.  
+
+- [Slides](MBG/introduction_rss2025.qmd)
+
+### 2. Exploratory Analysis
+Exploring associations and spatial correlation.  
+
+- [Slides](MBG/exp_analysis_rss2025.qmd)
+
+- [R script](MBG/R scripts/RSS2025/explore_associations_rss2025.R)
+
+
+### 3. Model Formulation and Parameter Estimation
+Fitting geostatistical models via Monte Carlo maximum likelihood.  
+
+- [Slides](MBG/estimation_rss2025.qmd)
+
+- [R script](MBG/R scripts/RSS2025/parameter_estimation_rss2025.R)
+
+### 4. Geostatistical Prediction
+Prediction of health outcomes at different spatial scales.  
+
+- [Slides](MBG/geostat_pred_rss2025.qmd)
+
+- [R script](MBG/R scripts/RSS2025/geo_prediction_rss2025.R)
+
+
+------------------------------------------------------------------------
+
+## Using the Materials
+
+- Each section includes slides, R code, and short exercises.  
+- Materials can be followed independently after the workshop.  

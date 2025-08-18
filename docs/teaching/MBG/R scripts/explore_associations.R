@@ -103,7 +103,8 @@ anova(glm_age_gender_no_interaction, glm_age_gender_interaction, test = "Chisq")
 # Group elevation into quantiles to analyze relationship with RDT
 tibble::glimpse(malkenya_comm)
 malkenya_comm$elevation_class <- cut(malkenya_comm$elevation,
-                                     breaks = quantile(malkenya_comm$elevation, seq(0, 1, by = 0.1)),
+                                     breaks = quantile(malkenya_comm$elevation,
+                                                       seq(0, 1, by = 0.1)),
                                      include.lowest = TRUE)
 
 # Compute empirical logit by elevation class

@@ -1,0 +1,193 @@
+---
+title: "Introduction"  
+subtitle: "Model-based Geostatistics for Global Public Health"  
+author: "Emanuele Giorgi"  
+institute: "Lancaster University" 
+execute:
+  freeze: true
+date: ""  
+format:
+  revealjs:
+    theme: solarized
+    transition: fade
+    slide-number: true
+    chalkboard: true
+    logo: "Images/clogo.png"
+    footer: "[Click here to go back to the course page](../RSS2025.qmd)"
+---
+
+# Overview
+
+-   **Defining geostatistical problems**
+-   **Model-based geostatistics as a data-driven approach to spatial analysis of health outcomes**
+
+------------------------------------------------------------------------
+
+## Epidemiological Data {.smaller}
+
+-   **Incidence:** Number of new cases per unit time per unit population\
+-   **Prevalence:** Number of existing cases per unit population\
+-   **Risk:** Probability that a person will contract the disease (per unit time or lifetime)
+
+**Objective:** Understand spatial variation in disease incidence, prevalence, and risk
+
+**Relevant books:**\
+Elliott et al. (2000), Gelfand et al. (2010), Rothman (1986), Waller & Gotway (2004), Woodward (1999)
+
+------------------------------------------------------------------------
+
+## Cholera in Victorian London, 1854 {.smaller}
+
+::::: columns
+::: column
+-   John Snow removed the handle of the Broad Street water pump\
+-   Identified contaminated water as the disease source\
+-   Contradicted conventional wisdom at the time
+
+[1854 Broad Street cholera outbreak](https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak)
+:::
+
+::: column
+![](Images/Snow.jpg){width="60%"}\
+![](Images/john-snow.jpg){width="30%"}
+:::
+:::::
+
+------------------------------------------------------------------------
+
+## Study Designs {.smaller}
+
+1.  **Registry**
+    -   Case counts in sub-regions\
+    -   Population size as denominator\
+    -   Covariates from census data
+2.  **Case-Control**
+    -   Cases: All known cases in the study region\
+    -   Controls: Probability sample of non-cases
+3.  **Survey**
+    -   Sampled locations within study region\
+    -   Data collected per location\
+    -   Common in low-resource settings
+
+------------------------------------------------------------------------
+
+## **Registry Example: Plague in Madagascar** {.smaller}
+
+![](Images/plague.png){width="60%"}
+
+**Research Question:**\
+Does plague infection risk increase above 800m elevation?
+
+[Giorgi et al., 2016, Spatial and Spatio-temporal Epidemiology](https://www.sciencedirect.com/science/article/abs/pii/S1877584516300302?via%3Dihub)
+
+------------------------------------------------------------------------
+
+## **Case-Control Example: Childhood Leukaemia in Humberside** {.smaller}
+
+![](Images/leuk.png){width="45%"}
+
+-   Locations of all known cases (1974–82)\
+-   Residential locations of a random sample of births
+
+**References:**\
+[Cuzick & Edwards (1990)](https://www.jstor.org/stable/2345652), [Diggle & Chetwynd (1991)](https://www.jstor.org/stable/2532668)
+
+------------------------------------------------------------------------
+
+## **Survey Example: Loa loa in Cameroon** {.smaller}
+
+![](Images/pinkmap.png){width="60%"}
+
+-   **Data:** Empirical prevalences in surveyed villages\
+-   **Map:** Predictive probabilities of exceeding 20% prevalence threshold
+
+[Diggle et al., 2007](https://www.tandfonline.com/doi/epdf/10.1179/136485913X13789813917463?needAccess=true)
+
+------------------------------------------------------------------------
+
+## Research Questions {.smaller}
+
+### **Plague in Madagascar**
+
+-   Is elevation an important risk factor?\
+-   If so, **why**?
+
+### **Childhood Leukaemia in Humberside**
+
+-   Do cases show unexpected clustering?
+
+### **Loa loa in Cameroon**
+
+-   What environmental factors influence risk?\
+-   Can we predict areas exceeding an intervention threshold?
+
+------------------------------------------------------------------------
+
+
+## **Empirical Modelling: AEGISS Project** {.smaller}
+
+-   **Objective:** Early detection of incidence anomalies\
+-   3,374 reports of gastro-intestinal illness\
+-   Log-Gaussian Cox process for space-time correlation
+
+![](Images/6-Mar-2003-2.png){width="60%"}
+
+------------------------------------------------------------------------
+
+## **Geostatistics** {.smaller}
+
+::::: columns
+::: column
+![](Images/south_africa.png){width="75%"}
+:::
+
+::: column
+![](Images/krige.jpg){width="70%"}
+:::
+:::::
+
+-   **Data:** $(y_i, x_i)$, where $x_i \in A \subset \mathbb{R}^2$\
+
+-   **Model:** $Y_i = S(x_i) + Z_i$\
+
+-   **Objective:** Estimate $\int_{A} S(x) dx$ (e.g., mining yield)
+
+## **Model-Based Geostatistics for Public Health** {.smaller}
+
+::::: columns
+::: column
+![](Images/villages_map.png){width="65%"}
+:::
+
+::: column
+![](Images/Exceed201.png){width="90%"}\
+Animation: [Malaria in Chikwawa district](https://www.lancaster.ac.uk/staff/giorgi/malaria/)
+:::
+:::::
+
+------------------------------------------------------------------------
+
+## Science and Statistics {.smaller}
+
+![](Images/science_triangle.jpg){width="50%"}
+
+**Key Concepts:**\
+- $S$: "Process of nature"\
+- $Y$: "Observed data"\
+- Bayesian Framework: $[Y, S] = [S][Y | S]$
+
+**Adapted from:** [Statistics and Scientific Method (Diggle & Chatwynd, 2011)](https://global.oup.com/academic/product/statistics-and-scientific-method-9780199543199?cc=gb&lang=en&)
+
+------------------------------------------------------------------------
+
+## Workflow of a statistical analysis
+
+::::: columns
+::: column
+![](Images/stat.png){height="6in"}
+:::
+
+::: column
+How do we apply the workflow of a statistical analysis in model-based geostatistics?
+:::
+:::::

@@ -85,5 +85,20 @@
   },
   "talks/Lund2025.qmd": {
     "Lund2025.html": "d06a87af"
+  },
+  "teaching/RSS2025.qmd": {
+    "RSS2025.html": "2f38ee7d"
+  },
+  "teaching/MBG/introduction_rss2025.qmd": {
+    "introduction_rss2025.html": "6659c3d9"
+  },
+  "teaching/MBG/exp_analysis_rss2025.qmd": {
+    "exp_analysis_rss2025.html": "300d52c9"
+  },
+  "teaching/MBG/estimation_rss2025.qmd": {
+    "estimation_rss2025.html": "2ee4985a"
+  },
+  "teaching/MBG/geostat_pred_rss2025.qmd": {
+    "geostat_pred_rss2025.html": "138d31ac"
   }
 }

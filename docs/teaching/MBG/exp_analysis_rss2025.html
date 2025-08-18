@@ -223,7 +223,7 @@ Emanuele Giorgi
 <ul>
 <li>How to explore relationships with count data (binary and aggregated counts)?</li>
 <li>How to model non-linear relationships?</li>
-<li>How to use a non-spatial model for mapping?</li>
+<li>How to assess residual spatial correlation?</li>
 </ul>
 <p><img data-src="Images/rlogo.png" style="width:10.0%"> <a href="R scripts/explore_associations.R">explore_associations.R</a></p>
 </section>
@@ -313,536 +313,6 @@ Emanuele Giorgi
 </ul>
 </div>
 </section>
-<section id="marginal-models-for-overdispersion" class="slide level2 smaller scrollable">
-<h2>Marginal Models for Overdispersion</h2>
-<ul>
-<li><p>An alternative to random effects models is using <strong>marginal models</strong>.</p></li>
-<li><p>Instead of modeling subject-level variation, these models estimate <strong>population-averaged effects</strong>.</p></li>
-<li><p><strong>Generalized Estimating Equations (GEE)</strong>:</p>
-<ul>
-<li>Does not assume a specific distribution for random effects.</li>
-<li>Uses a working correlation matrix to account for within-group dependence.</li>
-<li>Robust standard errors help correct for overdispersion.</li>
-</ul></li>
-</ul>
-<p>See <a href="https://global.oup.com/academic/product/analysis-of-longitudinal-data-9780198524847?cc=gb&amp;lang=en&amp;">Diggle, Heagerty, Liang, Zeger</a></p>
-</section>
-<section id="choosing-between-models" class="slide level2 smaller scrollable">
-<h2>Choosing Between Models</h2>
-<div class="cell">
-<div class="cell-output-display">
-<div id="zjpsqbcnlm" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#zjpsqbcnlm table {
-  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#zjpsqbcnlm thead, #zjpsqbcnlm tbody, #zjpsqbcnlm tfoot, #zjpsqbcnlm tr, #zjpsqbcnlm td, #zjpsqbcnlm th {
-  border-style: none;
-}
-
-#zjpsqbcnlm p {
-  margin: 0;
-  padding: 0;
-}
-
-#zjpsqbcnlm .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: large;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: 100%;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
-
-#zjpsqbcnlm .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#zjpsqbcnlm .gt_title {
-  color: #333333;
-  font-size: 125%;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#zjpsqbcnlm .gt_subtitle {
-  color: #333333;
-  font-size: 85%;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#zjpsqbcnlm .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#zjpsqbcnlm .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#zjpsqbcnlm .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#zjpsqbcnlm .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: bold;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#zjpsqbcnlm .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: bold;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#zjpsqbcnlm .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#zjpsqbcnlm .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#zjpsqbcnlm .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#zjpsqbcnlm .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#zjpsqbcnlm .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#zjpsqbcnlm .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#zjpsqbcnlm .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#zjpsqbcnlm .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#zjpsqbcnlm .gt_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#zjpsqbcnlm .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#zjpsqbcnlm .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#zjpsqbcnlm .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#zjpsqbcnlm .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#zjpsqbcnlm .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#zjpsqbcnlm .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#zjpsqbcnlm .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#zjpsqbcnlm .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#zjpsqbcnlm .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#zjpsqbcnlm .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#zjpsqbcnlm .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#zjpsqbcnlm .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#zjpsqbcnlm .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#zjpsqbcnlm .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#zjpsqbcnlm .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#zjpsqbcnlm .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#zjpsqbcnlm .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#zjpsqbcnlm .gt_left {
-  text-align: left;
-}
-
-#zjpsqbcnlm .gt_center {
-  text-align: center;
-}
-
-#zjpsqbcnlm .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#zjpsqbcnlm .gt_font_normal {
-  font-weight: normal;
-}
-
-#zjpsqbcnlm .gt_font_bold {
-  font-weight: bold;
-}
-
-#zjpsqbcnlm .gt_font_italic {
-  font-style: italic;
-}
-
-#zjpsqbcnlm .gt_super {
-  font-size: 65%;
-}
-
-#zjpsqbcnlm .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#zjpsqbcnlm .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#zjpsqbcnlm .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#zjpsqbcnlm .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#zjpsqbcnlm .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#zjpsqbcnlm .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#zjpsqbcnlm .gt_indent_5 {
-  text-indent: 25px;
-}
-
-#zjpsqbcnlm .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#zjpsqbcnlm div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
-}
-</style>
-
-<table class="gt_table caption-top" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-<thead>
-<tr class="gt_heading header">
-<th colspan="3" class="gt_heading gt_title gt_font_normal gt_bottom_border">Comparison of Random Effects vs. Marginal Models</th>
-</tr>
-<tr class="gt_col_headings even">
-<th id="Feature" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Feature</th>
-<th id="Random_Effects_Model" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Random Effects Model</th>
-<th id="Marginal_Model_GEE" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Marginal Model (GEE)</th>
-</tr>
-</thead>
-<tbody class="gt_table_body">
-<tr class="odd">
-<td class="gt_row gt_left" headers="Feature">Interpretation</td>
-<td class="gt_row gt_left" headers="Random_Effects_Model">Subject-specific</td>
-<td class="gt_row gt_left" headers="Marginal_Model_GEE">Population-averaged</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="Feature">Handles Overdispersion</td>
-<td class="gt_row gt_left" headers="Random_Effects_Model">Yes (via latent effects)</td>
-<td class="gt_row gt_left" headers="Marginal_Model_GEE">Yes (via robust SE)</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="Feature">Computational Complexity</td>
-<td class="gt_row gt_left" headers="Random_Effects_Model">Higher</td>
-<td class="gt_row gt_left" headers="Marginal_Model_GEE">Lower</td>
-</tr>
-</tbody>
-</table>
-
-</div>
-</div>
-</div>
-<div class="fragment">
-<p><strong>Example 1</strong></p>
-<ul>
-<li>A clinical trial measuring <strong>blood pressure</strong> at multiple time points for patients in different hospitals.<br>
-</li>
-<li><strong>Why Use Random Effects?</strong>
-<ul>
-<li>Each patient has their own <strong>baseline blood pressure</strong> that varies.<br>
-</li>
-<li>A <strong>random intercept</strong> accounts for individual differences.<br>
-</li>
-<li>If hospitals have different treatment protocols, a <strong>random hospital effect</strong> can be included.</li>
-</ul></li>
-</ul>
-</div>
-<div class="fragment">
-<p><strong>Example 2</strong></p>
-<ul>
-<li><strong>Study Design</strong>: A population-wide study on whether a new <strong>influenza vaccine</strong> reduces hospitalization rates.<br>
-</li>
-<li><strong>Why Use Marginal Models?</strong>
-<ul>
-<li>Interest is in the <strong>population-averaged effect</strong> of the vaccine, not individual variation.<br>
-</li>
-<li><strong>Generalized Estimating Equations (GEE)</strong> account for correlation in repeated measures without assuming a specific random effect structure.</li>
-</ul></li>
-</ul>
-</div>
-</section>
 <section id="a-class-of-generalized-linear-models" class="slide level2">
 <h2>A class of generalized linear models</h2>
 <p>Assumptions:</p>
@@ -907,17 +377,46 @@ D = 2(\log L(\hat{\theta}) - \log L(\hat{\theta}_0)) \sim \chi^2_{p}
 <p><img data-src="Images/rlogo.png" style="width:10.0%"> <a href="R scripts/glmer_fit.R">glmer_fit.R</a></p>
 </div>
 </section>
-<section id="coordinate-reference-systems-crs" class="slide level2 smaller scrollable">
-<h2>Coordinate Reference Systems (CRS)</h2>
-
-<img data-src="Images/gcs_pcs.png" style="width:40.0%" class="r-stretch quarto-figure-center"><p class="caption">Geographic vs.&nbsp;Projected CRS</p><ul>
-<li>A CRS defines how spatial data is projected onto the Earth’s surface.</li>
-<li>Two main types:
+<section id="which-residuals-should-we-use-to-assess-spatial-correlation" class="slide level2 smaller scrollable">
+<h2>Which residuals should we use to assess spatial correlation?</h2>
 <ul>
-<li><strong>Geographic CRS</strong> (Latitude/Longitude, e.g., WGS84)</li>
-<li><strong>Projected CRS</strong> (e.g., UTM, which uses meters for measurements)</li>
+<li><p><strong>Pearson Residuals</strong>: <span class="math display">\[\frac{y_i - \hat{y}_i}{\sqrt{\text{Var}(\hat{y}_i)}}\]</span></p></li>
+<li><p><strong>Deviance Residuals</strong>: <span class="math display">\[\text{sign}(y_i - \hat{y}_i) \times \sqrt{d_i}\]</span> where <span class="math inline">\(d_i\)</span> is the deviance contribution of observation <span class="math inline">\(i\)</span>.</p></li>
+<li><p><strong>Random Effects Residuals</strong>: <span class="math inline">\(\hat{Z}_i\)</span>, i.e.&nbsp;the estimated random effect for each location/household/cluster/village.</p></li>
+</ul>
+</section>
+<section id="the-empirical-variogram-using-random-effects-residuals" class="slide level2 smaller scrollable">
+<h2>The Empirical Variogram using Random Effects Residuals</h2>
+<ul>
+<li>The empirical variogram is defined as: <span class="math display">\[
+\gamma(D_{[a,b]}) = \frac{1}{2|D_{[a,b]}|} \sum_{(i,j) \in D_{[a,b]}} (\hat{Z}_i - \hat{Z}_j)^2
+\]</span> where:
+<ul>
+<li><span class="math inline">\(D_{[a,b]}\)</span> is a class of distance with lower limit <span class="math inline">\(a\)</span> and upper limit <span class="math inline">\(b\)</span>;</li>
+<li><span class="math inline">\(|D_{[a,b]}|\)</span> is the number of pairs of observations whose locations ar at a distance between <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>.</li>
 </ul></li>
 </ul>
+<div class="fragment">
+<p><img data-src="Images/variogram.png"></p>
+</div>
+<div class="fragment">
+<table class="caption-top">
+<colgroup>
+<col style="width: 100%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">## Coordinate Reference Systems (CRS) {.smaller .scrollable}</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><img data-src="Images/gcs_pcs.png" style="width:40.0%" alt="Geographic vs.&nbsp;Projected CRS"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">- A CRS defines how spatial data is projected onto the Earth’s surface. - Two main types: - <strong>Geographic CRS</strong> (Latitude/Longitude, e.g., WGS84) - <strong>Projected CRS</strong> (e.g., UTM, which uses meters for measurements)</td>
+</tr>
+</tbody>
+</table>
+</div>
 </section>
 <section id="computing-distance" class="slide level2">
 <h2>Computing Distance</h2>
@@ -948,26 +447,14 @@ D = 2(\log L(\hat{\theta}) - \log L(\hat{\theta}_0)) \sim \chi^2_{p}
 <li><p>Each cell has a value representing an attribute (e.g., temperature, elevation).</p></li>
 </ul></li>
 </ul>
-</section>
-<section id="mapping-with-covariates-only" class="slide level2">
-<h2>Mapping with covariates only</h2>
-<p>Consider the following GLMM for the Liberia data on riverblindness. <span class="math display">\[
-\log\left\{\frac{p(x_i)}{1-p(x_i)}\right\} = \beta_0 + \beta_1 \log\{e(x_i)\} + Z_i
-\]</span> where <span class="math inline">\(e(x)\)</span> is the elevation in meters at location <span class="math inline">\(x\)</span> and <span class="math inline">\(Z_i \sim N(0,\tau^2)\)</span> i.d.d.</p>
-<div class="fragment">
-<p><strong>Question:</strong> How can we use this model for mapping?</p>
-</div>
-<div class="fragment">
-<p><img data-src="Images/rlogo.png" style="width:10.0%"> <a href="R scripts/glmm_mapping.R">glmm_mapping.R</a></p>
 
 
-</div>
 </section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="Images/clogo.png" class="slide-logo"></p>
 <div class="footer footer-default">
-<p><a href="../../teaching/mbg.html">Click here to go back to the course page</a></p>
+<p><a href="../../teaching/RSS2025.html">Click here to go back to the course page</a></p>
 </div>
 </div></div>
 
@@ -1181,44 +668,6 @@ D = 2(\log L(\hat{\theta}) - \log L(\hat{\theta}_0)) \sim \chi^2_{p}
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

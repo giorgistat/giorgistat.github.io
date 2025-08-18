@@ -20,7 +20,11 @@ This page serves as a hub for sharing teaching resources from the courses I teac
 -   **Description**: This course introduces the basics of time-series, starting from harmonic regressio to model seasonal trends and introduces discrete and continuous time series models. The first focus is on autregressive. Then on Gaussian processes. Applications include forecasting od disease risk.
 -   **Materials**: *Coming soon* (under development)
 
-------------------------------------------------------------------------
+
+### 3. Workshops
+
+-  Royal Statistical Society Conference, Edinburgh, 2 September 2025. Materials:  [here](RSS2025.qmd)
+
 
 ## About the Materials
 

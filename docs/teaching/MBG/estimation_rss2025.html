@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Emanuele Giorgi">
 
-<title>Teaching – Welcome to My Personal Website</title>
+<title>Model formulation and parameter estimation – Welcome to My Personal Website</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-62c092813c5f23ad562e4909b7eaa944.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-62c092813c5f23ad562e4909b7eaa944.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,8 +68,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -78,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Welcome to My Personal Website</span>
     </a>
   </div>
@@ -89,15 +119,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../books.html"> 
+    <a class="nav-link" href="../../books.html"> 
 <span class="menu-text">Books</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects/index.html"> 
+    <a class="nav-link" href="../../projects/index.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -106,29 +136,29 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-publications">    
         <li>
-    <a class="dropdown-item" href="../publications/index.html">
+    <a class="dropdown-item" href="../../publications/index.html">
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../publications/original-research.html">
+    <a class="dropdown-item" href="../../publications/original-research.html">
  <span class="dropdown-text">Original Research</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../publications/book-chapters.html">
+    <a class="dropdown-item" href="../../publications/book-chapters.html">
  <span class="dropdown-text">Book Chapters</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../publications/other-publications.html">
+    <a class="dropdown-item" href="../../publications/other-publications.html">
  <span class="dropdown-text">Other Publications</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../talks/index.html"> 
+    <a class="nav-link" href="../../talks/index.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../teaching/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../teaching/index.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
 </ul>
@@ -147,29 +177,46 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#courses-offered" id="toc-courses-offered" class="nav-link active" data-scroll-target="#courses-offered">Courses Offered</a>
-  <ul class="collapse">
-  <li><a href="#model-based-geostatistics" id="toc-model-based-geostatistics" class="nav-link" data-scroll-target="#model-based-geostatistics">1. Model-based Geostatistics</a></li>
-  <li><a href="#time-series-analysis-in-epidemiology" id="toc-time-series-analysis-in-epidemiology" class="nav-link" data-scroll-target="#time-series-analysis-in-epidemiology">2. Time-series Analysis in Epidemiology</a></li>
-  <li><a href="#workshops" id="toc-workshops" class="nav-link" data-scroll-target="#workshops">3. Workshops</a></li>
-  </ul></li>
-  <li><a href="#about-the-materials" id="toc-about-the-materials" class="nav-link" data-scroll-target="#about-the-materials">About the Materials</a></li>
+  <li><a href="#overview-of-topics" id="toc-overview-of-topics" class="nav-link active" data-scroll-target="#overview-of-topics">Overview of topics</a></li>
+  <li><a href="#stationary-and-isotropic-gaussian-processes" id="toc-stationary-and-isotropic-gaussian-processes" class="nav-link" data-scroll-target="#stationary-and-isotropic-gaussian-processes">Stationary and Isotropic Gaussian Processes</a></li>
+  <li><a href="#the-matérn-process" id="toc-the-matérn-process" class="nav-link" data-scroll-target="#the-matérn-process">The Matérn Process</a></li>
+  <li><a href="#special-cases-of-the-matérn-covariance" id="toc-special-cases-of-the-matérn-covariance" class="nav-link" data-scroll-target="#special-cases-of-the-matérn-covariance">Special Cases of the Matérn Covariance</a></li>
+  <li><a href="#practical-range-of-spatial-correlation" id="toc-practical-range-of-spatial-correlation" class="nav-link" data-scroll-target="#practical-range-of-spatial-correlation">Practical Range of Spatial Correlation</a></li>
+  <li><a href="#generalized-linear-geostatistical-models" id="toc-generalized-linear-geostatistical-models" class="nav-link" data-scroll-target="#generalized-linear-geostatistical-models">Generalized linear geostatistical models</a></li>
+  <li><a href="#binomial-and-poisson-geostatistical-models" id="toc-binomial-and-poisson-geostatistical-models" class="nav-link" data-scroll-target="#binomial-and-poisson-geostatistical-models">Binomial and Poisson Geostatistical Models</a></li>
+  <li><a href="#monte-carlo-maximum-likelihood-mcml" id="toc-monte-carlo-maximum-likelihood-mcml" class="nav-link" data-scroll-target="#monte-carlo-maximum-likelihood-mcml">Monte Carlo Maximum Likelihood (MCML)</a></li>
+  <li><a href="#mcml-iterative-estimation" id="toc-mcml-iterative-estimation" class="nav-link" data-scroll-target="#mcml-iterative-estimation">MCML: Iterative Estimation</a></li>
+  <li><a href="#the-nugget-effect-as-small-scale-spatial-correlation" id="toc-the-nugget-effect-as-small-scale-spatial-correlation" class="nav-link" data-scroll-target="#the-nugget-effect-as-small-scale-spatial-correlation">The Nugget Effect as Small-Scale Spatial Correlation</a></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="estimation_rss2025.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Teaching</h1>
+<h1 class="title">Model formulation and parameter estimation</h1>
+<p class="subtitle lead">Model-based Geostatistics for Global Public Health</p>
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Emanuele Giorgi </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Lancaster University
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    
+      
   
     
   </div>
@@ -179,39 +226,207 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="../talks/figures/teaching.jpg" class="img-fluid" style="width:40.0%"></p>
-<p>This page serves as a hub for sharing teaching resources from the courses I teach at <strong>Lancaster University</strong>, <strong>Cambridge University</strong> , invited courses and workshops. The materials are currently under development, and I plan to make them available here as they are finalized.</p>
+<section id="overview-of-topics" class="level2">
+<h2 class="anchored" data-anchor-id="overview-of-topics">Overview of topics</h2>
+<ul>
+<li>An overview of staionary Gaussian processes in 2 dimensions</li>
+<li>How to formulate and fit a geostatistical model</li>
+<li>How to interpret the results from a model fit</li>
+</ul>
 <hr>
-<section id="courses-offered" class="level2">
-<h2 class="anchored" data-anchor-id="courses-offered">Courses Offered</h2>
-<section id="model-based-geostatistics" class="level3">
-<h3 class="anchored" data-anchor-id="model-based-geostatistics">1. Model-based Geostatistics</h3>
+</section>
+<section id="stationary-and-isotropic-gaussian-processes" class="level2">
+<h2 class="anchored" data-anchor-id="stationary-and-isotropic-gaussian-processes">Stationary and Isotropic Gaussian Processes</h2>
 <ul>
-<li><strong>Description</strong>: This course covers the fundamentals of model-based geostatistics, with a focus on applications in global public health and tropical diseases. Topics include exploratory analysis of spatial data, parameter estimation, spatial prediction and model validation.</li>
-<li><strong>Materials</strong>: <a href="../teaching/mbg.html">here</a></li>
+<li>A <strong>Gaussian Process (GP)</strong> is a collection of random variables, any finite subset of which follows a multivariate normal distribution.</li>
+<li>A GP is <strong>stationary</strong> if its statistical properties do not change with location shifts.</li>
+<li>It is <strong>isotropic</strong> if its properties do not change with locations rotations.</li>
+<li>We denote a GP as <span class="math inline">\(S(x)\)</span>, where <span class="math inline">\(x\)</span> represents location.</li>
+<li>For a stationary and isotropic GP, the correlation function is purely a function of the distance between locations.</li>
 </ul>
 </section>
-<section id="time-series-analysis-in-epidemiology" class="level3">
-<h3 class="anchored" data-anchor-id="time-series-analysis-in-epidemiology">2. Time-series Analysis in Epidemiology</h3>
+<section id="the-matérn-process" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="the-matérn-process">The Matérn Process</h2>
 <ul>
-<li><strong>Description</strong>: This course introduces the basics of time-series, starting from harmonic regressio to model seasonal trends and introduces discrete and continuous time series models. The first focus is on autregressive. Then on Gaussian processes. Applications include forecasting od disease risk.</li>
-<li><strong>Materials</strong>: <em>Coming soon</em> (under development)</li>
+<li>The <strong>Matérn covariance function</strong> is the most widely used in geostatistics.</li>
+<li>It is controlled by three parameters:
+<ul>
+<li><strong>Variance</strong> (<span class="math inline">\(\sigma^2\)</span>) – controls process magnitude</li>
+<li><strong>Smoothness</strong> (<span class="math inline">\(\kappa\)</span>) – determines differentiability</li>
+<li><strong>Scale parameter</strong> (<span class="math inline">\(\phi\)</span>) – governs spatial correlation decay</li>
+</ul></li>
+<li>The covariance function is given by: <span class="math display">\[
+C(h) = \sigma^2 \frac{2^{1-\kappa}}{\Gamma(\kappa)} \left( h/\phi \right)^\kappa K_\kappa \left(h/\phi \right), h = ||x-x'||
+\]</span> where <span class="math inline">\(K_\kappa\)</span> is the modified Bessel function of the second kind.</li>
+</ul>
+<p><img src="Images/rlogo.png" class="img-fluid" style="width:10.0%"> <a href="R scripts/matern_simulator.R">matern_simulator.R</a></p>
+<hr>
+</section>
+<section id="special-cases-of-the-matérn-covariance" class="level2 smaller scrollable">
+<h2 class="smaller scrollable anchored" data-anchor-id="special-cases-of-the-matérn-covariance">Special Cases of the Matérn Covariance</h2>
+<p>The Matérn family includes two important special cases:</p>
+<ul>
+<li><strong>Exponential Covariance</strong> (<span class="math inline">\(\kappa = 1/2\)</span>)<br>
+<span class="math display">\[ C(h) = \sigma^2 \exp\left(-\frac{h}{\phi}\right) \]</span><br>
+Properties:
+<ul>
+<li>Relatively rough process, non-differentiable<br>
+</li>
+<li>Continuous but not differentiable<br>
+</li>
+<li>Markovian (memoryless) property</li>
+</ul></li>
+</ul>
+<p>. . .</p>
+<ul>
+<li><strong>Gaussian (Squared Exponential) Covariance</strong> (<span class="math inline">\(\kappa \to \infty\)</span>)<br>
+<span class="math display">\[ C(h) = \sigma^2 \exp\left(-\frac{h^2}{2\phi^2}\right) \]</span><br>
+Properties:
+<ul>
+<li>Infinitely differentiable<br>
+</li>
+<li>Produces very smooth realizations<br>
+</li>
+<li>Sometimes too smooth for physical processes</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="practical-range-of-spatial-correlation" class="level2 smaller scrollable">
+<h2 class="smaller scrollable anchored" data-anchor-id="practical-range-of-spatial-correlation">Practical Range of Spatial Correlation</h2>
+<ul>
+<li><p><strong>Definition</strong>: Distance (<span class="math inline">\(h^*\)</span>) where correlation drops to 0.05 (5%)</p>
+<ul>
+<li>Represents the effective spatial dependence range</li>
+<li>Commonly used cutoff in geostatistics</li>
+</ul></li>
+<li><p><strong>General Solution</strong>: <span class="math display">\[ \rho(h^*) =  0.05 \]</span> Solve for <span class="math inline">\(h^*\)</span> to find practical range</p></li>
+<li><p><strong>Exponential Covariance Example</strong>: <span class="math display">\[ \rho(h^*) = \exp\left(-\frac{h^*}{\phi}\right) = 0.05 \]</span> <span class="math display">\[ \Rightarrow -\frac{h^*}{\phi} = \log(0.05) \approx -3 \]</span> <span class="math display">\[ \Rightarrow h^* \approx 3\phi \]</span></p>
+<ul>
+<li><em>Practical range</em>: <span class="math inline">\(3\phi\)</span></li>
+<li>At <span class="math inline">\(h^* = 3\phi\)</span>, correlation drops to ~5%</li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="generalized-linear-geostatistical-models" class="level2 smaller scrollable">
+<h2 class="smaller scrollable anchored" data-anchor-id="generalized-linear-geostatistical-models">Generalized linear geostatistical models</h2>
+<ul>
+<li>Let <span class="math inline">\(S(x)\)</span> be a stationary and isotropic Gaussian process, with Matérn correlation function.</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li>Let <span class="math inline">\(Z_i\)</span> be independent identically distributed random variables.</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li>Let <span class="math inline">\(d(x_i)\)</span> be a vector of covariates with associated regression coefficients <span class="math inline">\(\beta\)</span>.</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li>Let <span class="math inline">\(Y_i\)</span> be a random variable that, conditionally on <span class="math inline">\(S(x_i)\)</span> and <span class="math inline">\(Z_i\)</span>, follows an exponential family distribution (e.g.&nbsp;Gaussian, Binomial, Poisson).</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li>Let <span class="math inline">\(g(\cdot)\)</span> be a link function.
+<ul>
+<li><span class="math inline">\(\mathbb{E} \left[ Y_i \: | \: S(x_i), Z_i \right] = m_i \mu_i\)</span><br>
+</li>
+<li><span class="math inline">\({\rm Var}\left[Y_i \: | \: S(x_i), Z_i\right] = m_i V(\mu_i)\)</span></li>
+<li><span class="math inline">\(g(\mu_i) = d(x_i)^\top \beta + S(x_i) + Z_i\)</span></li>
+</ul></li>
+</ul>
+<hr>
+</section>
+<section id="binomial-and-poisson-geostatistical-models" class="level2 smaller scrollable">
+<h2 class="smaller scrollable anchored" data-anchor-id="binomial-and-poisson-geostatistical-models">Binomial and Poisson Geostatistical Models</h2>
+<ul>
+<li><strong>Binomial Geostatistical Model</strong>
+<ul>
+<li><span class="math inline">\(Y_i \: | \: S(x_i), Z_i \sim \text{Binomial}(m_i, \mu_i)\)</span></li>
+<li><strong>Link function</strong>: Logit link <span class="math inline">\(g(\mu_i) = \log \left( \frac{\mu_i}{1 - \mu_i} \right) = d(x_i)^\top \beta + S(x_i) + Z_i\)</span></li>
+<li><strong>Variance function</strong>: <span class="math inline">\(V(\mu_i) = m_i \mu_i (1 - \mu_i)\)</span></li>
+</ul></li>
+</ul>
+<p>. . .</p>
+<ul>
+<li><strong>Poisson Geostatistical Model</strong>
+<ul>
+<li><span class="math inline">\(Y_i \: | \: S(x_i), Z_i \sim \text{Poisson}(m_i \mu_i)\)</span></li>
+<li><strong>Link function</strong>: Log link <span class="math inline">\(g(\mu_i) = \log (\mu_i) = d(x_i)^\top \beta + S(x_i) + Z_i\)</span></li>
+<li><strong>Variance function</strong>: <span class="math inline">\(V(\mu_i) = m_i \mu_i\)</span></li>
+</ul></li>
 </ul>
 </section>
-<section id="workshops" class="level3">
-<h3 class="anchored" data-anchor-id="workshops">3. Workshops</h3>
+<section id="monte-carlo-maximum-likelihood-mcml" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="monte-carlo-maximum-likelihood-mcml">Monte Carlo Maximum Likelihood (MCML)</h2>
 <ul>
-<li>Royal Statistical Society Conference, Edinburgh, 2 September 2025. Materials: <a href="../teaching/RSS2025.html">here</a></li>
+<li>Let <span class="math inline">\(W_i = S(x_i) + Z_i\)</span> and <span class="math inline">\(W = (W_1, \ldots, W_n)\)</span></li>
 </ul>
-</section>
-</section>
-<section id="about-the-materials" class="level2">
-<h2 class="anchored" data-anchor-id="about-the-materials">About the Materials</h2>
+<p>. . .</p>
 <ul>
-<li>The teaching materials shared here are designed to support students, as well as researchers who would like to teach these courses.</li>
-<li>The content is continually updated and improved, so please check back regularly for new resources.</li>
-<li>Feedback and suggestions are welcome! Feel free to reach out if you have any questions or ideas for improvement.</li>
+<li><p>The likelihood function for parameters <span class="math inline">\(\theta = (\beta, \sigma^2, \phi, \tau^2)\)</span> is given by:</p>
+<p><span class="math display">\[
+L(\theta) = \int N(W; D\beta, \Omega) f(y| W) dW
+\]</span></p>
+<p>where <span class="math inline">\(\Omega = \sigma^2 R(\phi) + \tau^2I_n\)</span>.</p></li>
 </ul>
+<p>. . .</p>
+<ul>
+<li><p>We approximate this using Monte Carlo integration:</p>
+<p><span class="math display">\[
+L_m(\theta) = \frac{1}{B} \sum_{j=1}^{B} \frac{N\left(W^{(j)}; D\beta, \Omega \right)}{N\left(W^{(j)}; D\beta_0, \Omega_0\right)}
+\]</span> where <span class="math inline">\(W^{(i)}\)</span> are sampled from the distribution of <span class="math inline">\(W\)</span> given <span class="math inline">\(y\)</span> using an MCMC algorithm.</p></li>
+</ul>
+<hr>
+</section>
+<section id="mcml-iterative-estimation" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="mcml-iterative-estimation">MCML: Iterative Estimation</h2>
+<ul>
+<li>Choose initial values <span class="math inline">\(\theta_0\)</span> and generate samples <span class="math inline">\(W^{(j)}\)</span>, for <span class="math inline">\(j = 1,\ldots, B\)</span>.</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li>Estimate <span class="math inline">\(\theta\)</span> by maximizing the Monte Carlo approximation, denoted by <span class="math inline">\(L_m(\theta)\)</span>, to the likelihood. Denote with <span class="math inline">\(\hat{\theta}_m\)</span> this estimate.</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li>Update <span class="math inline">\(\theta_0 = \hat{\theta}_m\)</span> and iterate until convergence.</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li>Standard errors are computed using the inverse Hessian of <span class="math inline">\(L_m(\theta)\)</span> at <span class="math inline">\(\hat{\theta}_m\)</span>.</li>
+</ul>
+<p>. . .</p>
+<p><img src="Images/rlogo.png" class="img-fluid" style="width:10.0%"> <a href="R scripts/glgm_fit.R">glgm_fit.R</a></p>
+</section>
+<section id="the-nugget-effect-as-small-scale-spatial-correlation" class="level2 smaller scrollablel">
+<h2 class="smaller scrollablel anchored" data-anchor-id="the-nugget-effect-as-small-scale-spatial-correlation">The Nugget Effect as Small-Scale Spatial Correlation</h2>
+<ul>
+<li><strong>Interpretation of</strong> <span class="math inline">\(Z_i\)</span>:
+<ul>
+<li>Represents microscale variation (below measurement distance)</li>
+<li>Captures measurement error or sub-resolution variability</li>
+</ul></li>
+<li><strong>Example Process with Threshold Correlation</strong>: <span class="math display">\[ \rho(h) = \begin{cases}
+    \delta &amp; \text{if } h \leq h_0 \\
+    0 &amp; \text{if } h &gt; h_0
+    \end{cases} \]</span>
+<ul>
+<li>Where <span class="math inline">\(\delta\)</span> is small-scale correlation</li>
+<li><span class="math inline">\(h_0\)</span> is resolution threshold</li>
+</ul></li>
+<li><strong>Practical Implications</strong>:
+<ul>
+<li>If minimum distance between samples <span class="math inline">\(&gt; h_0\)</span>:
+<ul>
+<li>Process appears as <span class="math inline">\(Z_i \sim N(0, \tau^2)\)</span> (pure noise)</li>
+<li>Spatial structure in <span class="math inline">\(Z_i\)</span> becomes undetectable</li>
+</ul></li>
+<li>Cannot disentangle <span class="math inline">\(Z_i\)</span> from measurement error in the lineara geostatistical model</li>
+</ul></li>
+</ul>
+<hr>
 
 
 </section>

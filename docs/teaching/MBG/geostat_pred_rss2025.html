@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Emanuele Giorgi">
 
-<title>Teaching – Welcome to My Personal Website</title>
+<title>Geostatistical prediction – Welcome to My Personal Website</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,22 +24,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-62c092813c5f23ad562e4909b7eaa944.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-62c092813c5f23ad562e4909b7eaa944.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,8 +68,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../styles.css">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -78,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Welcome to My Personal Website</span>
     </a>
   </div>
@@ -89,15 +119,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../books.html"> 
+    <a class="nav-link" href="../../books.html"> 
 <span class="menu-text">Books</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects/index.html"> 
+    <a class="nav-link" href="../../projects/index.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -106,29 +136,29 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-publications">    
         <li>
-    <a class="dropdown-item" href="../publications/index.html">
+    <a class="dropdown-item" href="../../publications/index.html">
  <span class="dropdown-text">Overview</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../publications/original-research.html">
+    <a class="dropdown-item" href="../../publications/original-research.html">
  <span class="dropdown-text">Original Research</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../publications/book-chapters.html">
+    <a class="dropdown-item" href="../../publications/book-chapters.html">
  <span class="dropdown-text">Book Chapters</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../publications/other-publications.html">
+    <a class="dropdown-item" href="../../publications/other-publications.html">
  <span class="dropdown-text">Other Publications</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../talks/index.html"> 
+    <a class="nav-link" href="../../talks/index.html"> 
 <span class="menu-text">Talks</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../teaching/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../teaching/index.html"> 
 <span class="menu-text">Teaching</span></a>
   </li>  
 </ul>
@@ -147,29 +177,49 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#courses-offered" id="toc-courses-offered" class="nav-link active" data-scroll-target="#courses-offered">Courses Offered</a>
-  <ul class="collapse">
-  <li><a href="#model-based-geostatistics" id="toc-model-based-geostatistics" class="nav-link" data-scroll-target="#model-based-geostatistics">1. Model-based Geostatistics</a></li>
-  <li><a href="#time-series-analysis-in-epidemiology" id="toc-time-series-analysis-in-epidemiology" class="nav-link" data-scroll-target="#time-series-analysis-in-epidemiology">2. Time-series Analysis in Epidemiology</a></li>
-  <li><a href="#workshops" id="toc-workshops" class="nav-link" data-scroll-target="#workshops">3. Workshops</a></li>
-  </ul></li>
-  <li><a href="#about-the-materials" id="toc-about-the-materials" class="nav-link" data-scroll-target="#about-the-materials">About the Materials</a></li>
+  <li><a href="#geostatistical-problems" id="toc-geostatistical-problems" class="nav-link active" data-scroll-target="#geostatistical-problems">Geostatistical problems</a></li>
+  <li><a href="#defining-the-predictive-target" id="toc-defining-the-predictive-target" class="nav-link" data-scroll-target="#defining-the-predictive-target">Defining the predictive target</a></li>
+  <li><a href="#examples-of-predictive-target" id="toc-examples-of-predictive-target" class="nav-link" data-scroll-target="#examples-of-predictive-target">Examples of predictive target</a></li>
+  <li><a href="#the-predictive-distribution-of-the-target" id="toc-the-predictive-distribution-of-the-target" class="nav-link" data-scroll-target="#the-predictive-distribution-of-the-target">The predictive distribution of the target</a></li>
+  <li><a href="#the-predictive-distribution-of-the-target-1" id="toc-the-predictive-distribution-of-the-target-1" class="nav-link" data-scroll-target="#the-predictive-distribution-of-the-target-1">The predictive distribution of the target</a></li>
+  <li><a href="#the-predictive-distribution-of-the-target-2" id="toc-the-predictive-distribution-of-the-target-2" class="nav-link" data-scroll-target="#the-predictive-distribution-of-the-target-2">The predictive distribution of the target</a></li>
+  <li><a href="#the-predictive-distribution-of-the-target-3" id="toc-the-predictive-distribution-of-the-target-3" class="nav-link" data-scroll-target="#the-predictive-distribution-of-the-target-3">The predictive distribution of the target</a></li>
+  <li><a href="#the-predictive-distribution-of-the-target-4" id="toc-the-predictive-distribution-of-the-target-4" class="nav-link" data-scroll-target="#the-predictive-distribution-of-the-target-4">The predictive distribution of the target</a></li>
+  <li><a href="#steps-for-the-geostistical-prediction-of-tx" id="toc-steps-for-the-geostistical-prediction-of-tx" class="nav-link" data-scroll-target="#steps-for-the-geostistical-prediction-of-tx">Steps for the geostistical prediction of <span class="math inline">\(T(x)\)</span></a></li>
+  <li><a href="#marginal-vs-joint-predictions" id="toc-marginal-vs-joint-predictions" class="nav-link" data-scroll-target="#marginal-vs-joint-predictions">Marginal vs joint predictions</a></li>
+  <li><a href="#areal-level-targets-questions-to-consider" id="toc-areal-level-targets-questions-to-consider" class="nav-link" data-scroll-target="#areal-level-targets-questions-to-consider">Areal-level targets: questions to consider</a></li>
+  <li><a href="#example-regional-average-prevalence" id="toc-example-regional-average-prevalence" class="nav-link" data-scroll-target="#example-regional-average-prevalence">Example: regional average prevalence</a></li>
+  <li><a href="#steps-for-the-geostistical-prediction-of-areal-targets" id="toc-steps-for-the-geostistical-prediction-of-areal-targets" class="nav-link" data-scroll-target="#steps-for-the-geostistical-prediction-of-areal-targets">Steps for the geostistical prediction of areal targets</a></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="geostat_pred_rss2025.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Teaching</h1>
+<h1 class="title">Geostatistical prediction</h1>
+<p class="subtitle lead">Model-based Geostatistics for Global Public Health</p>
 </div>
 
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Emanuele Giorgi </p>
+  </div>
+  <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            Lancaster University
+          </p>
+      </div>
+  </div>
 
 <div class="quarto-title-meta">
 
-    
+      
   
     
   </div>
@@ -179,39 +229,215 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><img src="../talks/figures/teaching.jpg" class="img-fluid" style="width:40.0%"></p>
-<p>This page serves as a hub for sharing teaching resources from the courses I teach at <strong>Lancaster University</strong>, <strong>Cambridge University</strong> , invited courses and workshops. The materials are currently under development, and I plan to make them available here as they are finalized.</p>
-<hr>
-<section id="courses-offered" class="level2">
-<h2 class="anchored" data-anchor-id="courses-offered">Courses Offered</h2>
-<section id="model-based-geostatistics" class="level3">
-<h3 class="anchored" data-anchor-id="model-based-geostatistics">1. Model-based Geostatistics</h3>
+<section id="geostatistical-problems" class="level2">
+<h2 class="anchored" data-anchor-id="geostatistical-problems">Geostatistical problems</h2>
+<blockquote class="blockquote">
+<p>“Conventional geostatistical methodology solves the problem of predicting the realized value of a linear functional of a Gaussian spatial stochastic process <span class="math inline">\(S(x)\)</span> based on observations <span class="math inline">\(Y_i= S(x_i) + Z_i\)</span> at sampling locations <span class="math inline">\(x_i\)</span>, where the <span class="math inline">\(Z_i\)</span> are mutually independent, zero-mean Gaussian random variables.”</p>
+</blockquote>
+<p><a href="https://rss.onlinelibrary.wiley.com/doi/10.1111/1467-9876.00113">Diggle, Tawn and Moyeed (1998)</a></p>
+</section>
+<section id="defining-the-predictive-target" class="level2">
+<h2 class="anchored" data-anchor-id="defining-the-predictive-target">Defining the predictive target</h2>
+<p>. . .</p>
 <ul>
-<li><strong>Description</strong>: This course covers the fundamentals of model-based geostatistics, with a focus on applications in global public health and tropical diseases. Topics include exploratory analysis of spatial data, parameter estimation, spatial prediction and model validation.</li>
-<li><strong>Materials</strong>: <a href="../teaching/mbg.html">here</a></li>
+<li><strong>Spatially continuous targets</strong> correspond to an unobserved spatially continuous surface (e.g.&nbsp;disease prevalence), formally denoted by <span class="math inline">\(\mathcal{T} = \{T(x), x \in A\}\)</span>, where <span class="math inline">\(A\)</span> is our region of interest.</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li><strong>Areal-level targets</strong>, usually defined as transformation of the spatially continuous surface <span class="math inline">\(\mathcal{T}\)</span>, defined previously, and which we denote as <span class="math inline">\(\mathcal{T}_{A} = F(\mathcal{T}, A)\)</span>.</li>
 </ul>
 </section>
-<section id="time-series-analysis-in-epidemiology" class="level3">
-<h3 class="anchored" data-anchor-id="time-series-analysis-in-epidemiology">2. Time-series Analysis in Epidemiology</h3>
+<section id="examples-of-predictive-target" class="level2 scrollable">
+<h2 class="scrollable anchored" data-anchor-id="examples-of-predictive-target">Examples of predictive target</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 37%">
+<col style="width: 30%">
+<col style="width: 31%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Predictive target <span class="math inline">\(T(x)\)</span></th>
+<th>Name</th>
+<th>GLM family</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(d(x)^\top \beta + S(x)\)</span></td>
+<td>Linear predictor</td>
+<td>Any GLM</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\frac{\exp\{d(x)^\top \beta + S(x)\}}{1+\exp\{d(x)^\top \beta + S(x)\}}\)</span></td>
+<td>Prevalence</td>
+<td>Binomial</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\exp\{d(x)^\top \beta + S(x)\}\)</span></td>
+<td>Mean number of cases</td>
+<td>Poisson</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(S(x)\)</span></td>
+<td>Spatial random effects</td>
+<td>Any GLM</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(d(x)^\top \beta\)</span></td>
+<td>Covariates effects</td>
+<td>Any GLM</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="the-predictive-distribution-of-the-target" class="level2">
+<h2 class="anchored" data-anchor-id="the-predictive-distribution-of-the-target">The predictive distribution of the target</h2>
+<center>
+<img src="Images/pred1.png" class="img-fluid" style="width:60.0%">
+</center>
+</section>
+<section id="the-predictive-distribution-of-the-target-1" class="level2">
+<h2 class="anchored" data-anchor-id="the-predictive-distribution-of-the-target-1">The predictive distribution of the target</h2>
+<center>
+<img src="Images/pred2.png" class="img-fluid" style="width:60.0%">
+</center>
+</section>
+<section id="the-predictive-distribution-of-the-target-2" class="level2">
+<h2 class="anchored" data-anchor-id="the-predictive-distribution-of-the-target-2">The predictive distribution of the target</h2>
+<center>
+<img src="Images/pred3.png" class="img-fluid" style="width:60.0%">
+</center>
+</section>
+<section id="the-predictive-distribution-of-the-target-3" class="level2">
+<h2 class="anchored" data-anchor-id="the-predictive-distribution-of-the-target-3">The predictive distribution of the target</h2>
+<center>
+<img src="Images/pred4.png" class="img-fluid" style="width:60.0%">
+</center>
+</section>
+<section id="the-predictive-distribution-of-the-target-4" class="level2">
+<h2 class="anchored" data-anchor-id="the-predictive-distribution-of-the-target-4">The predictive distribution of the target</h2>
+<center>
+<img src="Images/pred5.png" class="img-fluid" style="width:60.0%">
+</center>
+</section>
+<section id="steps-for-the-geostistical-prediction-of-tx" class="level2 smaller scrollable">
+<h2 class="smaller scrollable anchored" data-anchor-id="steps-for-the-geostistical-prediction-of-tx">Steps for the geostistical prediction of <span class="math inline">\(T(x)\)</span></h2>
+<p><strong>Preliminary steps:</strong></p>
 <ul>
-<li><strong>Description</strong>: This course introduces the basics of time-series, starting from harmonic regressio to model seasonal trends and introduces discrete and continuous time series models. The first focus is on autregressive. Then on Gaussian processes. Applications include forecasting od disease risk.</li>
-<li><strong>Materials</strong>: <em>Coming soon</em> (under development)</li>
+<li>Obtain the <strong>shapefile</strong> of the boundaries of the study area.</li>
+<li>Generate a <strong>regular grid</strong> that covers the study for the desired spatial resolution, using the shapefile.</li>
+<li>Extract all the <strong>covariates</strong> used in the model on the grid and ensure that there are no missing values.</li>
+</ul>
+<p>. . .</p>
+<p><strong>Prediction steps</strong> (for a given location <span class="math inline">\(x\)</span> on the grid):</p>
+<ol type="1">
+<li>Generate samples from the predictive distribution of <span class="math inline">\(S(x) \: | \: y\)</span>, say <span class="math inline">\(S_{(j)}(x)\)</span>, for <span class="math inline">\(j = 1, \ldots, B\)</span>.</li>
+</ol>
+<p>. . .</p>
+<ol start="2" type="1">
+<li>Apply the transformation defined by <span class="math inline">\(T(x)\)</span> to each of the samples <span class="math inline">\(S_{(j)}(x)\)</span>, to obtain <span class="math inline">\(T_{(j)}(x)\)</span>, for <span class="math inline">\(j = 1, \ldots, B\)</span>.</li>
+</ol>
+<p>. . .</p>
+<ol start="3" type="1">
+<li><p>Using the Monte Carlo samples <span class="math inline">\(T_{(j)}(x)\)</span>, obtain the desired summaries of the predictive distribution:</p>
+<ul>
+<li><p>Mean: <span class="math inline">\(\overline{T}_B = B^{-1} \sum_{j=1}^B T_{(j)}(x)\)</span></p></li>
+<li><p>Standard deviation: <span class="math inline">\(\left[B^{-1} \sum_{j=1}^B (T_{(j)}(x) - \overline{T}_B)^2\right]^{1/2}\)</span></p></li>
+<li><p>Prediction intervals at 95<span class="math inline">\(\%\)</span> coverage level</p></li>
+<li><p>Exceedance probabilities: <span class="math inline">\(B^{-1} \sum_{j=1}^B I(T_{(j)}(x) &gt; L)\)</span>, for a given threshold <span class="math inline">\(L\)</span>.</p></li>
+</ul></li>
+</ol>
+<p>. . .</p>
+<p><img src="Images/rlogo.png" class="img-fluid" style="width:10.0%"> <a href="R scripts/pred_cont.R">pred_cont.R</a></p>
+</section>
+<section id="marginal-vs-joint-predictions" class="level2 smaller">
+<h2 class="smaller anchored" data-anchor-id="marginal-vs-joint-predictions">Marginal vs joint predictions</h2>
+<ul>
+<li>Let <span class="math inline">\(\tilde{X} = (\tilde{x}_1, \ldots, \tilde{x}_q)\)</span> be the set of prediciton locations that are make up the regular grid.</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li><strong>Marginal predictions</strong> are obtained by simulating independently from the <span class="math inline">\(q\)</span> marginal predictive distributions of <span class="math inline">\([S(\tilde{X}) | y]\)</span>. In other words, we consider a prediction location <span class="math inline">\(\tilde{x}_j\)</span>, simulate from <span class="math inline">\([S(\tilde{x}_j) \: |\: y]\)</span> say <span class="math inline">\(B\)</span> samples, and repeat this for <span class="math inline">\(j=1,\ldots,q\)</span></li>
+</ul>
+<p>. . .</p>
+<ul>
+<li><strong>Joint predictions</strong> are obtained by simulating from the joint distribution of <span class="math inline">\([S(\tilde{X}) \: |\: y]\)</span>. Unlike marginal predictions, joint predictions take into account the correlation between the different components of <span class="math inline">\([S(\tilde{X}) \: |\: y]\)</span>.</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li>When the target is <span class="math inline">\(T(x)\)</span>, i.e.&nbsp;at pixel-level, we can use either marginal or joint predictions.</li>
+</ul>
+<p>. . .</p>
+<ul>
+<li>When the target is areal level (see next slides), we can ONLY use joint predictions.</li>
 </ul>
 </section>
-<section id="workshops" class="level3">
-<h3 class="anchored" data-anchor-id="workshops">3. Workshops</h3>
-<ul>
-<li>Royal Statistical Society Conference, Edinburgh, 2 September 2025. Materials: <a href="../teaching/RSS2025.html">here</a></li>
-</ul>
+<section id="areal-level-targets-questions-to-consider" class="level2">
+<h2 class="anchored" data-anchor-id="areal-level-targets-questions-to-consider">Areal-level targets: questions to consider</h2>
+<ol type="1">
+<li>What spatially continuous target, <span class="math inline">\(T(x)\)</span>, are we seeking to aggregate?</li>
+<li>What are the spatial units, denoted as <span class="math inline">\(A_i\)</span> for <span class="math inline">\(i = 1, \dots, N\)</span>, over which the aggregation is required?</li>
+<li>What aggregating function should be applied?</li>
+<li>Should spatial weights be incorporated in the aggregation, and if so, what weights are appropriate?</li>
+</ol>
 </section>
-</section>
-<section id="about-the-materials" class="level2">
-<h2 class="anchored" data-anchor-id="about-the-materials">About the Materials</h2>
+<section id="example-regional-average-prevalence" class="level2 smaller scrollable">
+<h2 class="smaller scrollable anchored" data-anchor-id="example-regional-average-prevalence">Example: regional average prevalence</h2>
 <ul>
-<li>The teaching materials shared here are designed to support students, as well as researchers who would like to teach these courses.</li>
-<li>The content is continually updated and improved, so please check back regularly for new resources.</li>
-<li>Feedback and suggestions are welcome! Feel free to reach out if you have any questions or ideas for improvement.</li>
+<li>Let <span class="math inline">\(T(x) = \exp\{d(x)^\top \beta + S(x) \}/(1+\exp\{d(x)^\top \beta + S(x)\})\)</span></li>
 </ul>
+<p>. . .</p>
+<ul>
+<li>Average (unweighted) prevalence <span class="math display">\[
+\mathcal{M}_i = \frac{1}{|A_i|}\int_{A_i} T(x) \: dx.
+\]</span></li>
+</ul>
+<p>. . .</p>
+<ul>
+<li>Average weighted prevalence <span class="math display">\[
+\mathcal{M}_i = \frac{\int_{A_i} w(x) T(x) \: dx}{\int_{A_i} w(x) \: dx}.
+\]</span></li>
+</ul>
+<p>. . .</p>
+<ul>
+<li>We approximate the above integrals using the regular grid, e.g.</li>
+</ul>
+<p><span class="math display">\[\mathcal{M}_i \approx \frac{1}{\#\{j : \tilde{x}_j \in A_i\}} \sum_{\tilde{x}_j \in A_i} T(\tilde{x}_j), \]</span></p>
+<p>for the unweighted regional prevalence.</p>
+</section>
+<section id="steps-for-the-geostistical-prediction-of-areal-targets" class="level2 smaller scrollable">
+<h2 class="smaller scrollable anchored" data-anchor-id="steps-for-the-geostistical-prediction-of-areal-targets">Steps for the geostistical prediction of areal targets</h2>
+<p><strong>Preliminary steps:</strong></p>
+<ul>
+<li>Obtain the <strong>shapefile</strong> of the study area.</li>
+<li>Obtain the <strong>shapefiles</strong> of the boundaries of the regions for which aggregation is required.</li>
+<li>Generate a <strong>regular grid</strong> that covers the study for the desired spatial resolution, using the shapefile.</li>
+<li>Extract all the <strong>covariates</strong> used in the model on the grid and ensure that there are no missing values.</li>
+<li>For weighted areal level target, extract all the <strong>weights</strong> on the grid and ensure that there are no missing values.</li>
+</ul>
+<p>. . .</p>
+<p><strong>Prediction steps</strong> (for a given location <span class="math inline">\(x\)</span> on the grid):</p>
+<ol type="1">
+<li>(<em>Joint prediction</em>) Generate samples from the predictive distribution of <span class="math inline">\(S(x) \: | \: y\)</span>, say <span class="math inline">\(S_{(j)}(x)\)</span>, for <span class="math inline">\(j = 1, \ldots, B\)</span>.</li>
+</ol>
+<p>. . .</p>
+<ol start="2" type="1">
+<li>Apply the transformation defined by <span class="math inline">\(T(x)\)</span> to each of the samples <span class="math inline">\(S_{(j)}(x)\)</span>, to obtain <span class="math inline">\(T_{(j)}(x)\)</span>, for <span class="math inline">\(j = 1, \ldots, B\)</span>.</li>
+</ol>
+<p>. . .</p>
+<ol start="3" type="1">
+<li><p>Aggregate the samples <span class="math inline">\(T_{(j)}(x)\)</span> for each region <span class="math inline">\(A_i\)</span> to obtain samples of the areal-level predictive target <span class="math inline">\(\mathcal{M}_i\)</span>. Denote these samples as <span class="math inline">\(\mathcal{M}_i^{(j)}\)</span>.</p></li>
+<li><p>Obtain the desired summaries of the predictive distribution of <span class="math inline">\(\mathcal{M}_i\)</span>. Examples:</p>
+<ul>
+<li><p>Mean: <span class="math inline">\(\overline{\mathcal{M}}_{i,B} = B^{-1} \sum_{j=1}^B \mathcal{M}_i^{(j)}\)</span></p></li>
+<li><p>Standard deviation: <span class="math inline">\(\left[B^{-1} \sum_{j=1}^B (\mathcal{M}_i^{(j)} - \overline{\mathcal{M}}_{i,B})^2\right]^{1/2}\)</span></p></li>
+<li><p>Prediction intervals at 95<span class="math inline">\(\%\)</span> coverage level</p></li>
+<li><p>Exceedance probabilities: <span class="math inline">\(B^{-1} \sum_{j=1}^B I(\mathcal{M}_{i}^{(j)} &gt; L)\)</span>, for a given threshold <span class="math inline">\(L\)</span>.</p></li>
+</ul></li>
+</ol>
+<p>. . .</p>
+<p><img src="Images/rlogo.png" class="img-fluid" style="width:10.0%"> <a href="R scripts/pred_area.R">pred_area.R</a></p>
 
 
 </section>
