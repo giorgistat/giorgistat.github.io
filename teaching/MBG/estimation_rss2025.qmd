@@ -24,7 +24,6 @@ format:
 
 ------------------------------------------------------------------------
 
-
 ## Stationary and Isotropic Gaussian Processes
 
 -   A **Gaussian Process (GP)** is a collection of random variables, any finite subset of which follows a multivariate normal distribution.
@@ -85,7 +84,6 @@ The Matérn family includes two important special cases:
     -   At $h^* = 3\phi$, correlation drops to \~5%
 
 ------------------------------------------------------------------------
-
 
 ## Generalized linear geostatistical models {.smaller .scrollable}
 

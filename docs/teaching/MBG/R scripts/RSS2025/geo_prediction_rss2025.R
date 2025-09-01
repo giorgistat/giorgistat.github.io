@@ -1,63 +1,48 @@
-rm(list = ls())
+# 1) LOAD R PACKAGES -----------------------------------------------------------
 
-library(RiskMap)
-library(sf)
-library(ggplot2)
+# Load R packages
+library(wpgpDownloadR) # Download population data from worldpop
+library(elevatr)       # Download elevation data
+library(terra)         # Raster handling
 
-data("liberia")
+# 2) CREATE PREDICTION GRID ----------------------------------------------------
 
-# Convert to an sf object
-liberia_sf <- st_as_sf(liberia, coords = c("long", "lat"), crs = 4326)
-crs_lb <- propose_utm(liberia_sf)
-liberia_sf <- st_transform(liberia_sf, crs = crs_lb)
+# Convert the admin boundaries to the same CRS of our data
+liberia_admin0 <- st_transform(liberia_admin0, crs = st_crs(liberia_utm))
 
+# Create the grid (5km  resolution)
+grid_lb <- create_grid(liberia_admin0, spat_res = 5)
 
-# Fitting a Binomial geostatistical model
+# Visualise the grid
+plot(liberia_admin0$geometry)
+plot(grid_lb, cex = .5, add = T, col = "grey")
 
-lb_fit <- glgpm(npos ~ log(elevation) + gp(),
-                den = ntest,
-                family = "binomial",
-                data = liberia_sf)
-
-
-# Obtaining the grid
-
-library(rgeoboundaries)
-
-shp_lb <- geoboundaries(country = "liberia", adm_lvl = "adm0")
-shp_lb <- st_transform(shp_lb, crs=crs_lb)
-
-
-# Create the grid
-
-grid_lb <- create_grid(shp_lb, spat_res = 5)
-
+# 3) EXTRACT COVARIATE VALUES --------------------------------------------------
 
 # Extract elevation
+elevation <- get_elev_point(st_as_sf(grid_lb),
+                            prj = st_crs(grid_lb),
+                            src = "aws")$elevation
 
-library(elevatr)
-elevation <- get_elev_point(st_as_sf(grid_lb), prj = crs_lb, src = "aws")$elevation
+pred_lb <- as.data.frame(elevation)
 
-pred_lb <- data.frame(elevation=elevation)
+# 4) PIXEL LEVEL PREDICTIONS ---------------------------------------------------
 
-# Predict S(x)
+# Predict S(x) (marginal predictions)
+pred_S_lb <- pred_over_grid(lb_fit, grid_pred = grid_lb, predictors = pred_lb)
 
-pred_S_lb <-
-  pred_over_grid(lb_fit, grid_pred = grid_lb,
-                 predictors = pred_lb)
+# Predict targes of interest T(x)
+pred_T_lb <- pred_target_grid(
+  pred_S_lb,
+  f_target = list(prev = function(x) exp(x) / (1 + exp(x))),
+  pd_summary = list(mean = mean,
+                    lower_lim = function(x) quantile(x, 0.025),
+                    upper_lim = function(x) quantile(x, 0.975),
+                    exceed20 = function(x) mean(x > 0.2),
+                    exceed30 = function(x) mean(x > 0.3))
+  )
 
-# Predict T(x)
-
-pred_T_lb <-
-  pred_target_grid(pred_S_lb,
-                   f_target = list(prev = function(x) exp(x)/(1+exp(x))),
-                   pd_summary = list(mean = mean,
-                                     lower_lim = function(x) quantile(x, 0.025),
-                                     upper_lim = function(x) quantile(x, 0.975),
-                                     exceed20 = function(x) mean(x > 0.2),
-                                     exceed30 = function(x) mean(x > 0.3)))
-
-
+# Visualise the predictions
 plot(pred_T_lb, which_target = "prev", which_summary = "mean",
      main = "Predictive mean")
 
@@ -73,104 +58,93 @@ plot(pred_T_lb, which_target = "prev", which_summary = "exceed20",
 plot(pred_T_lb, which_target = "prev", which_summary = "exceed30",
      main = "Exceedance probability (L = 0.3)")
 
-################
+# 4) AREA LEVEL PREDICTIONS (UNWEIGHTED) ---------------------------------------
+
+# Retrieve admin 1 boundaries for liberia
+liberia_admin1 <- gb_adm1("Liberia")
+
+# Change CRS
+liberia_admin1 <- st_transform(liberia_admin1, crs = st_crs(liberia_admin0))
+
+plot(liberia_admin1$geometry)
+
+# Predict S(x) (joint predictions)
+pred_S_lb <- pred_over_grid(lb_fit, grid_pred = grid_lb, predictors = pred_lb,
+                            type = "joint")
 
 
-# Obtaining the grid
-
-library(rgeoboundaries)
-shp_lb_0 <- geoboundaries(country = "liberia", adm_lvl = "adm0")
-shp_lb_0 <- st_transform(shp_lb_0, crs=crs_lb)
-
-shp_lb_1 <- geoboundaries(country = "liberia", adm_lvl = "adm1")
-shp_lb_1 <- st_transform(shp_lb_1, crs=crs_lb)
-
-
-# Create the grid
-
-grid_lb <- create_grid(shp_lb_0, spat_res = 5)
-
-
-# Extract elevation
-
-library(elevatr)
-elevation <- get_elev_point(st_as_sf(grid_lb), prj = crs_lb, src = "aws")$elevation
-
-pred_lb <- data.frame(elvation=elevation)
-
-# Predict S(x)
-
-pred_S_lb <-
-  pred_over_grid(lb_fit, grid_pred = grid_lb,
-                 predictors = pred_lb, type="joint")
-
-
-## Unweighted regional prevalence
-
-pred_area <- pred_target_shp(pred_S_lb, shp = shp_lb_1,
-                             shp_target = function(Tx) mean(Tx),
-                             f_target = list(prev =
-                                               function(lp) exp(lp)/(1+exp(lp))),
-                             pd_summary = list(mean = mean,
-                                               exceed20 = function(x) mean(x > 0.2)),
-                             col_names = "shapeName")
+# Unweighted regional prevalence
+pred_area <- pred_target_shp(
+  pred_S_lb,
+  shp = liberia_admin1,
+  shp_target = function(x) mean(x),
+  f_target = list(prev = function(x) exp(x) / (1 + exp(x))),
+  pd_summary = list(mean = mean,
+                    exceed20 = function(x) mean(x > 0.2)),
+  col_names = "shapeName"
+  )
 
 # Plot point predictions of average prevalence
-plot(pred_area, which_target = "prev", which_summary = "mean",
-     palette = "RdYlGn",
-     limits = c(0.1, 0.30),
-     breaks =  seq(0.1, 0.30, by = 0.05)) +
-  guides(fill=guide_legend(title="Prevalence")) +
-  ggtitle("Average prevalence \n (no weights)") +
-  theme(plot.title = element_text(size = 15))
+ggplot(pred_area$shp) +
+  geom_sf(aes(fill = prev_mean * 100), col = "black") +
+  scale_fill_distiller("Average Prevalence (%)", palette = "YlOrRd", direction = 1) +
+  guides(fill = guide_colorbar(title.position="top", title.hjust = 0.5)) +
+  theme_minimal() +
+  theme(legend.position = "top", legend.key.width = unit(1.5, ( "cm")))
 
 # Plot of the exceedance probabilities
-plot(pred_area, which_target = "prev", which_summary = "exceed20",
-     palette = "RdYlGn",
-     limits = c(0, 1),
-     breaks = seq(0,1, by = 0.1)) +
-  guides(fill=guide_legend(title="Probability")) +
-  ggtitle("Exceedance probability (L = 0.2) \n (no weights)") +
-  theme(plot.title = element_text(size = 15))
+ggplot(pred_area$shp) +
+  geom_sf(aes(fill = prev_exceed20), col = "black") +
+  scale_fill_gradient2("Exceedance probability (L = 20%)",
+                       midpoint = 0.5, low = "blue4", high = "red4") +
+  guides(fill = guide_colorbar(title.position="top", title.hjust = 0.5)) +
+  theme_minimal() +
+  theme(legend.position = "top", legend.key.width = unit(1.5, ( "cm")))
 
+# 5) AREA LEVEL PREDICTIONS (WEIGHTED) -----------------------------------------
 
-# Obtaining population density
-library(wpgpDownloadR)
+# Obtaining population
+
+# Search for datasets available for Liberia
+# usign the ISO3 country code
+lbr_datasets <- wpgpListCountryDatasets(ISO3 = "LBR")
+
+# Download population and load as a raster
 lbr_url <- wpgpGetCountryDataset(ISO3 = "LBR", covariate = "ppp_2014")
-library(terra)
 lbr_pop <- rast(lbr_url)
-lbr_pop <- project(lbr_pop, "EPSG:32629")
 
-# Extra pop density weights at the prediction grid
-weights_pred <- extract(lbr_pop, st_as_sf(grid_lb))$lbr_ppp_2014
+# Aggregate raster at the same resolution of our grid
+lbr_pop_5km <- aggregate(lbr_pop, fact = 50, fun = "sum", na.rm = T)
 
+# Extra pop weights at the prediction grid
+grid_lb_wgs84 <- st_transform(st_as_sf(grid_lb), crs = 4326)
+weights_pred <- extract(lbr_pop, grid_lb_wgs84)$lbr_ppp_2014
 
 # Prediction of the population weighted regional average prevalence
-
-pred_area_w <- pred_target_shp(pred_S_lb, shp = shp_lb_1,
-                               shp_target = function(Tx) sum(Tx),
-                               f_target = list(prev =
-                                                 function(lp) exp(lp)/(1+exp(lp))),
-                               pd_summary = list(mean = mean,
-                                                 exceed20 = function(x) mean(x > 0.2)),
-                               weights = weights_pred,
-                               standardize_weights = TRUE,
-                               col_names = "shapeName")
+pred_area_w <- pred_target_shp(
+  pred_S_lb,
+  shp = liberia_admin1,
+  shp_target = function(x) sum(x),
+  f_target = list(prev = function(x) exp(x) / (1 + exp(x))),
+  pd_summary = list(mean = mean,
+                    exceed20 = function(x) mean(x > 0.2)),
+  weights = weights_pred,
+  standardize_weights = TRUE,
+  col_names = "shapeName")
 
 # Plot point predictions of average prevalence (weighted)
-plot(pred_area_w, which_target = "prev", which_summary = "mean",
-     palette = "RdYlGn",
-     limits = c(0.1, 0.30),
-     breaks =  seq(0.1, 0.30, by = 0.05)) +
-  guides(fill=guide_legend(title="Prevalence")) +
-  ggtitle("Average prevalence \n (population weighted)") +
-  theme(plot.title = element_text(size = 15))
+ggplot(pred_area_w$shp) +
+  geom_sf(aes(fill = prev_mean * 100), col = "black") +
+  scale_fill_distiller("Average Prevalence (%)", palette = "YlOrRd", direction = 1) +
+  guides(fill = guide_colorbar(title.position="top", title.hjust = 0.5)) +
+  theme_minimal() +
+  theme(legend.position = "top", legend.key.width = unit(1.5, ( "cm")))
 
 # Plot of the exceedance probabilities (weighted)
-plot(pred_area_w, which_target = "prev", which_summary = "exceed20",
-     palette = "RdYlGn",
-     limits = c(0, 1),
-     breaks = seq(0,1, by = 0.1)) +
-  guides(fill=guide_legend(title="Probability")) +
-  ggtitle("Exceedance probability (L = 0.2) \n (population weighted)") +
-  theme(plot.title = element_text(size = 15))
+ggplot(pred_area_w$shp) +
+  geom_sf(aes(fill = prev_exceed20), col = "black") +
+  scale_fill_gradient2("Exceedance probability (L = 20%)",
+                       midpoint = 0.5, low = "blue4", high = "red4") +
+  guides(fill = guide_colorbar(title.position="top", title.hjust = 0.5)) +
+  theme_minimal() +
+  theme(legend.position = "top", legend.key.width = unit(1.5, ( "cm")))

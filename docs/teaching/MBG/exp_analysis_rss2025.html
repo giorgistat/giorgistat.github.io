@@ -348,7 +348,8 @@ Emanuele Giorgi
 <li><p>Let the <span class="math inline">\(Z_i\)</span> be i.i.d. Gaussian distributions with mean zero and variance <span class="math inline">\(\sigma^2\)</span>.</p></li>
 <li><p><strong>Likelihood function</strong></p></li>
 </ul>
-<p>The vector of unkown parameters is <span class="math inline">\(\theta=(\beta, \sigma^2)\)</span> <span class="math display">\[
+<p>The vector of unkown parameters is <span class="math inline">\(\theta=(\beta, \sigma^2)\)</span></p>
+<p><span class="math display">\[
 L(\theta) = \prod_{i=1}^n \int_{-\infty}^{+\infty} [Z_i] [Y_i \mid Z_i] \: dY_i
 \]</span></p>
 <div class="fragment">
@@ -399,24 +400,20 @@ D = 2(\log L(\hat{\theta}) - \log L(\hat{\theta}_0)) \sim \chi^2_{p}
 <div class="fragment">
 <p><img data-src="Images/variogram.png"></p>
 </div>
-<div class="fragment">
-<table class="caption-top">
-<colgroup>
-<col style="width: 100%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">## Coordinate Reference Systems (CRS) {.smaller .scrollable}</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;"><img data-src="Images/gcs_pcs.png" style="width:40.0%" alt="Geographic vs.&nbsp;Projected CRS"></td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">- A CRS defines how spatial data is projected onto the Earth’s surface. - Two main types: - <strong>Geographic CRS</strong> (Latitude/Longitude, e.g., WGS84) - <strong>Projected CRS</strong> (e.g., UTM, which uses meters for measurements)</td>
-</tr>
-</tbody>
-</table>
-</div>
+</section>
+<section id="coordinate-reference-systems-crs" class="slide level2 smaller scrollable">
+<h2>Coordinate Reference Systems (CRS)</h2>
+
+<img data-src="Images/gcs_pcs.png" style="width:40.0%" class="r-stretch quarto-figure-center"><p class="caption">Geographic vs.&nbsp;Projected CRS</p><ul>
+<li>A CRS tells us how the coordinates in our data match real-world locations on the Earth.<br>
+</li>
+<li>Two main types:
+<ul>
+<li><strong>Geographic CRS</strong> (Latitude/Longitude, e.g., WGS84)<br>
+</li>
+<li><strong>Projected CRS</strong> (e.g., UTM, which uses meters for measurements)</li>
+</ul></li>
+</ul>
 </section>
 <section id="computing-distance" class="slide level2">
 <h2>Computing Distance</h2>
