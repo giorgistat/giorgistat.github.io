@@ -2,33 +2,49 @@
 title: "Model-based geostatistics for public health using R"
 ---
 
-![](MBG/R scripts/RSS-2025-website-banner.jpg){height="3in"}
+![](MBG/R%20scripts/RSS-2025-website-banner.jpg){height="3in"}
 
+> 📖 An online free version of the draft of our book is available at
+[www.mbgr.org](https://www.mbgr.org) and will be printed by CRC Press 
+by the end of the year.
 
 ## Learning Outcomes
 
 By the end of the workshop, participants will be able to:
 
-- Understand the key principles of model-based geostatistics  
-- Explore and visualise spatial data using R  
-- Fit and interpret geostatistical models  
-- Carry out geostatistical prediction at both pixel and areal levels  
+-   Understand the key principles of model-based geostatistics\
+-   Explore and visualise spatial data using R\
+-   Fit and interpret geostatistical models\
+-   Carry out geostatistical prediction at both pixel and areal levels
 
 ------------------------------------------------------------------------
 
 ## R Packages
 
-- *Essential*: `RiskMap`, `rgeoboundaries`, `ggplot2`, `sf`, `terra`, `elevatr`  
-- *Optional*: `shiny`  
+-   *Essential*: `RiskMap`, `rgeoboundaries`, `ggplot2`, `sf`, `terra`, `elevatr`, `mapview`, `ggspatial`, `lme4`\
+-   *Optional*: `shiny`
 
-Install `RiskMap` in R:  
-```r
+Install `RiskMap` in R:
+
+``` r
 devtools::install_github("giorgilancs/RiskMap")
 ```
 
-Install `rgeoboundaries` in R:  
-```r
+Install `rgeoboundaries` in R:
+
+``` r
 remotes::install_github("wmgeolab/rgeoboundaries")
+```
+
+Install all remaining packages:
+
+``` r
+# Install pacman if not available
+if (!requireNamespace("pacman", quietly = TRUE)) install.packages("pacman")
+
+# Load and install everything in one go
+pacman::p_load(ggplot2, sf, terra, elevatr, mapview, ggspatial, lme4,
+               character.only = TRUE)
 ```
 
 ------------------------------------------------------------------------
@@ -38,36 +54,41 @@ remotes::install_github("wmgeolab/rgeoboundaries")
 All R scripts used in the slides can be downloaded
 
 ### 1. Introduction
-Geostatistical problems in the context of epidemiological studies.  
 
-- [Slides](MBG/introduction_rss2025.qmd)
+Geostatistical problems in the context of epidemiological studies.
+
+-   [Slides](MBG/introduction_rss2025.qmd)
 
 ### 2. Exploratory Analysis
-Exploring associations and spatial correlation.  
 
-- [Slides](MBG/exp_analysis_rss2025.qmd)
+Exploring associations and spatial correlation.
 
-- [R script](MBG/R scripts/RSS2025/explore_associations_rss2025.R)
+-   [Slides](MBG/exp_analysis_rss2025.qmd)
 
+-   [R script](MBG/R%20scripts/RSS2025/explore_associations_rss2025.R)
 
 ### 3. Model Formulation and Parameter Estimation
-Fitting geostatistical models via Monte Carlo maximum likelihood.  
 
-- [Slides](MBG/estimation_rss2025.qmd)
+Fitting geostatistical models via Monte Carlo maximum likelihood.
 
-- [R script](MBG/R scripts/RSS2025/parameter_estimation_rss2025.R)
+-   [Slides](MBG/estimation_rss2025.qmd)
+
+-   [R script](MBG/R%20scripts/RSS2025/parameter_estimation_rss2025.R)
 
 ### 4. Geostatistical Prediction
-Prediction of health outcomes at different spatial scales.  
 
-- [Slides](MBG/geostat_pred_rss2025.qmd)
+Prediction of health outcomes at different spatial scales.
 
-- [R script](MBG/R scripts/RSS2025/geo_prediction_rss2025.R)
+-   [Slides](MBG/geostat_pred_rss2025.qmd)
 
+-   [R script](MBG/R%20scripts/RSS2025/geo_prediction_rss2025.R)
 
 ------------------------------------------------------------------------
 
 ## Using the Materials
 
-- Each section includes slides, R code, and short exercises.  
-- Materials can be followed independently after the workshop.  
+-   Each section includes slides, R code, and short exercises.\
+-   Materials can be followed independently after the workshop.
+
+📖 You can also access a free online draft of our book at [www.mbgr.org](https://www.mbgr.org), to be published in print by CRC Press by the end of the year.
+

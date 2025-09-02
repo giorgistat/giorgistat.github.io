@@ -98,7 +98,7 @@ format:
 
 ## Marginal vs joint predictions {.smaller}
 
--   Let $\tilde{X} = (\tilde{x}_1, \ldots, \tilde{x}_q)$ be the set of prediciton locations that are make up the regular grid.
+-   Let $\tilde{X} = (\tilde{x}_1, \ldots, \tilde{x}_q)$ be the set of prediciton locations that make up the regular grid.
 
 . . .
 
