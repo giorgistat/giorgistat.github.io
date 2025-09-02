@@ -140,7 +140,7 @@ Assumptions:
 
 -   **Likelihood function**
 
-The vector of unkown parameters is $\theta=(\beta, \sigma^2)$ 
+The vector of unkown parameters is $\theta=(\beta, \sigma^2)$
 
 $$
 L(\theta) = \prod_{i=1}^n \int_{-\infty}^{+\infty} [Z_i] [Y_i \mid Z_i] \: dY_i
@@ -198,10 +198,10 @@ Maximize the likelihood using the Laplace approximation (**glmer** in the **lme4
 
 ![Geographic vs. Projected CRS](Images/gcs_pcs.png){width="40%"}
 
-- A CRS tells us how the coordinates in our data match real-world locations on the Earth.  
-- Two main types:  
-  - **Geographic CRS** (Latitude/Longitude, e.g., WGS84)  
-  - **Projected CRS** (e.g., UTM, which uses meters for measurements)
+-   A CRS tells us how the coordinates in our data match real-world locations on the Earth.\
+-   Two main types:
+    -   **Geographic CRS** (Latitude/Longitude, e.g., WGS84)\
+    -   **Projected CRS** (e.g., UTM, which uses meters for measurements)
 
 ## Computing Distance
 

@@ -35,7 +35,7 @@ format:
 ## Examples of predictive target {.scrollable}
 
 | Predictive target $T(x)$ | Name | GLM family |
-|---------------------------|----------------------|-----------------------|
+|----|----|----|
 | $d(x)^\top \beta + S(x)$ | Linear predictor | Any GLM |
 | $\frac{\exp\{d(x)^\top \beta + S(x)\}}{1+\exp\{d(x)^\top \beta + S(x)\}}$ | Prevalence | Binomial |
 | $\exp\{d(x)^\top \beta + S(x)\}$ | Mean number of cases | Poisson |

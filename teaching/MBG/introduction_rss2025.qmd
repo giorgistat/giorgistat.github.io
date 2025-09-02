@@ -123,7 +123,6 @@ Does plague infection risk increase above 800m elevation?
 
 ------------------------------------------------------------------------
 
-
 ## **Empirical Modelling: AEGISS Project** {.smaller}
 
 -   **Objective:** Early detection of incidence anomalies\

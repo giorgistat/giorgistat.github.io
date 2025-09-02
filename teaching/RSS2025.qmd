@@ -4,9 +4,7 @@ title: "Model-based geostatistics for public health using R"
 
 ![](MBG/R%20scripts/RSS-2025-website-banner.jpg){height="3in"}
 
-> 📖 An online free version of the draft of our book is available at
-[www.mbgr.org](https://www.mbgr.org) and will be printed by CRC Press 
-by the end of the year.
+> 📖 An online free version of the draft of our book is available at [www.mbgr.org](https://www.mbgr.org) and will be printed by CRC Press by the end of the year.
 
 ## Learning Outcomes
 
@@ -91,4 +89,3 @@ Prediction of health outcomes at different spatial scales.
 -   Materials can be followed independently after the workshop.
 
 📖 You can also access a free online draft of our book at [www.mbgr.org](https://www.mbgr.org), to be published in print by CRC Press by the end of the year.
-

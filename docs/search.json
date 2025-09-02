@@ -1426,5 +1426,26 @@
     "title": "Talks",
     "section": "",
     "text": "This page includes slides of selected presentations given at seminars and conferences since February 2025.\n\n\nAccounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods\nSeminar at the Department of Statistics at Lund University, Sweden, 26 May 2025\nModel-based Geostatistics for Global Public Health: From Methodology Development to Policy Applications\nSeminar at Oslo Centre for Biostatistics and Epidemiology, Oslo University, 20 March 2025"
+  },
+  {
+    "objectID": "teaching/MBG/estimation_rss2025.html",
+    "href": "teaching/MBG/estimation_rss2025.html",
+    "title": "Model formulation and parameter estimation",
+    "section": "",
+    "text": "An overview of staionary Gaussian processes in 2 dimensions\nHow to formulate and fit a geostatistical model\nHow to interpret the results from a model fit"
+  },
+  {
+    "objectID": "teaching/MBG/geostat_pred_rss2025.html",
+    "href": "teaching/MBG/geostat_pred_rss2025.html",
+    "title": "Geostatistical prediction",
+    "section": "",
+    "text": "“Conventional geostatistical methodology solves the problem of predicting the realized value of a linear functional of a Gaussian spatial stochastic process \\(S(x)\\) based on observations \\(Y_i= S(x_i) + Z_i\\) at sampling locations \\(x_i\\), where the \\(Z_i\\) are mutually independent, zero-mean Gaussian random variables.”\n\nDiggle, Tawn and Moyeed (1998)"
+  },
+  {
+    "objectID": "teaching/MBG/exp_analysis_rss2025.html",
+    "href": "teaching/MBG/exp_analysis_rss2025.html",
+    "title": "Exploratory analysis",
+    "section": "",
+    "text": "How to explore relationships with count data\nHow to use a non-spatial model for mapping\nHow to handle spatial data in R"
   }
 ]
