@@ -1,5 +1,5 @@
 ---
-title: "Dr Emanuele Giorgi"
+title: "Prof Emanuele Giorgi"
 image: profile.jpg
 about:
   template: trestles
@@ -8,8 +8,8 @@ about:
   image-shape: round
   links:
     - icon: envelope
-      text: "e.giorgi@lancaster.ac.uk"
-      href: "mailto:e.giorgi@lancaster.ac.uk"
+      text: "e.giorgi@bham.ac.uk"
+      href: "mailto:e.giorgi@bham.ac.uk"
     - text: "<img src='bs.png' alt='Bluesky' style='height:1em; vertical-align:middle;'> @giorgistat.bsky.social"
       href: "https://bsky.app/profile/giorgistat.bsky.social"
 title-block-banner: true
@@ -17,7 +17,8 @@ title-block-banner: true
 
 # Welcome
 
-I am an Associate Professor in Biostatistics and Head of the [Centre for Health Informatics, Computing, and Statistics (CHICAS)](https://chicas.lancaster-university.uk/) at Lancaster University. My research centers on the development of statistical methodologies driven by public health problems, with a special focus on tropical disease mapping.
+I am Professor of Statistical Science in the Biostatistics, Evidence Synthesis, Test Evaluation and Prediction Models ([BESTEAM](https://www.birmingham.ac.uk/research/applied-health/research/besteam/biostatistics-evidence-synthesis-test-evaluation-and-prediction-models-besteam)) group at the University of Birmingham.  
+My research focuses on developing statistical methodologies motivated by real-world public health challenges, with particular emphasis on mapping tropical diseases.
 
 ## Research Interests
 
