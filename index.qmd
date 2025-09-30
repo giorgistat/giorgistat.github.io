@@ -1,5 +1,6 @@
 ---
-title: "Prof Emanuele Giorgi"
+title: "<span style='font-size:0.7em;'>Prof&nbsp;Emanuele&nbsp;Giorgi</span> <img src='uob_logo_v2.jpg' style='height:3.5em; margin-left:3em; vertical-align:middle;'>"
+
 image: profile.jpg
 about:
   template: trestles
@@ -15,10 +16,12 @@ about:
 title-block-banner: true
 ---
 
+
 # Welcome
 
 I am Professor of Statistical Science in the Biostatistics, Evidence Synthesis, Test Evaluation and Prediction Models ([BESTEAM](https://www.birmingham.ac.uk/research/applied-health/research/besteam/biostatistics-evidence-synthesis-test-evaluation-and-prediction-models-besteam)) group at the University of Birmingham.  
-My research focuses on developing statistical methodologies motivated by real-world public health challenges, with particular emphasis on mapping tropical diseases.
+
+My research focuses on developing statistical methodology motivated by real-world public health challenges, with particular emphasis on mapping tropical diseases.
 
 ## Research Interests
 

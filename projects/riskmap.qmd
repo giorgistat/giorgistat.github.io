@@ -5,3 +5,5 @@ title: "The RiskMap R package"
 ![](oncho.jpg){.border .rounded .shadow-lg width="30%"}
 
 I am the lead developer of the [RiskMap](https://cran.r-project.org/web/packages/RiskMap/index.html) R package, which provides a comprehensive implementation of state-of-the-art geostatistical methods. This package plays a pivotal role in both my research and teaching, serving as a core component in the development and delivery of my workshops and MSc-level courses. I am also authoring a book on the application of this package, which will be published by CRC Chapman & Hall in their R Series collection, with an expected release date of December 2025.
+
+To learn how to use RiskMap, you can use our book *Model-based Geostatistics for Global Public Health using R (Giorgi and Fronterre, 2025)* which is freely available online at this [link](<https://mbgr.quarto.pub/book/>)

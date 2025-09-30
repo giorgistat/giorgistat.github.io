@@ -1,111 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://giorgistat.github.io/talks/Lund2025.html</loc>
-    <lastmod>2025-09-01T13:36:37.706Z</lastmod>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/books.html</loc>
+    <lastmod>2024-12-24T09:26:50.096Z</lastmod>
   </url>
   <url>
-    <loc>https://giorgistat.github.io/talks/Birmingham (20 Feb 2025).html</loc>
-    <lastmod>2025-09-01T13:36:37.654Z</lastmod>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/projects/index.html</loc>
+    <lastmod>2025-01-21T15:24:41.665Z</lastmod>
   </url>
   <url>
-    <loc>https://giorgistat.github.io/index.html</loc>
-    <lastmod>2025-09-29T12:57:08.208Z</lastmod>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/projects/serology.html</loc>
+    <lastmod>2025-01-21T15:26:13.790Z</lastmod>
   </url>
   <url>
-    <loc>https://giorgistat.github.io/publications/original-research.html</loc>
-    <lastmod>2025-09-01T13:36:37.654Z</lastmod>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/publications/original-research.html</loc>
+    <lastmod>2025-07-14T08:24:42.333Z</lastmod>
   </url>
   <url>
-    <loc>https://giorgistat.github.io/publications/book-chapters.html</loc>
-    <lastmod>2025-09-01T13:36:37.654Z</lastmod>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/publications/other-publications.html</loc>
+    <lastmod>2025-02-11T17:14:04.747Z</lastmod>
   </url>
   <url>
-    <loc>https://giorgistat.github.io/teaching/MBG/geostat_pred.html</loc>
-    <lastmod>2025-09-01T13:36:38.237Z</lastmod>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/talks/index.html</loc>
+    <lastmod>2025-05-28T09:37:25.611Z</lastmod>
   </url>
   <url>
-    <loc>https://giorgistat.github.io/teaching/MBG/introduction_rss2025.html</loc>
-    <lastmod>2025-09-02T08:03:51.056Z</lastmod>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/talks/Birmingham (20 Feb 2025).html</loc>
+    <lastmod>2025-07-01T08:53:36.378Z</lastmod>
   </url>
   <url>
-    <loc>https://giorgistat.github.io/teaching/MBG/exp_analysis_rss2025.html</loc>
-    <lastmod>2025-09-02T08:03:40.571Z</lastmod>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/teaching/MBG/geostat_pred.html</loc>
+    <lastmod>2025-04-03T11:37:18.054Z</lastmod>
   </url>
   <url>
-    <loc>https://giorgistat.github.io/teaching/MBG/Exercises/Exercise 3.html</loc>
-    <lastmod>2025-09-01T13:36:38.215Z</lastmod>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/teaching/MBG/Exercises/Exercise 2.html</loc>
+    <lastmod>2025-02-25T17:08:59.897Z</lastmod>
   </url>
   <url>
-    <loc>https://giorgistat.github.io/teaching/MBG/exp_analysis.html</loc>
-    <lastmod>2025-09-01T13:36:38.237Z</lastmod>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/teaching/MBG/exp_analysis.html</loc>
+    <lastmod>2025-08-18T07:38:45.584Z</lastmod>
   </url>
   <url>
-    <loc>https://giorgistat.github.io/teaching/MBG/estimation_rss2025.html</loc>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/teaching/MBG/estimation_rss2025.html</loc>
     <lastmod>2025-09-02T08:01:11.259Z</lastmod>
   </url>
   <url>
-    <loc>https://giorgistat.github.io/teaching/RSS2025.html</loc>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/teaching/MBG/exp_analysis_rss2025.html</loc>
+    <lastmod>2025-09-02T08:03:40.571Z</lastmod>
+  </url>
+  <url>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/teaching/MBG/introduction.html</loc>
+    <lastmod>2025-04-30T08:34:42.304Z</lastmod>
+  </url>
+  <url>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/teaching/RSS2025.html</loc>
     <lastmod>2025-09-02T08:01:33.161Z</lastmod>
   </url>
   <url>
-    <loc>https://giorgistat.github.io/projects/ntds.html</loc>
-    <lastmod>2025-09-01T13:36:37.651Z</lastmod>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/teaching/mbg.html</loc>
+    <lastmod>2025-05-07T14:46:51.456Z</lastmod>
   </url>
   <url>
-    <loc>https://giorgistat.github.io/projects/serology.html</loc>
-    <lastmod>2025-09-01T13:36:37.651Z</lastmod>
-  </url>
-  <url>
-    <loc>https://giorgistat.github.io/projects/index.html</loc>
-    <lastmod>2025-09-01T13:36:37.651Z</lastmod>
-  </url>
-  <url>
-    <loc>https://giorgistat.github.io/projects/riskmap.html</loc>
-    <lastmod>2025-09-01T13:36:37.651Z</lastmod>
-  </url>
-  <url>
-    <loc>https://giorgistat.github.io/teaching/mbg.html</loc>
-    <lastmod>2025-09-01T13:36:38.237Z</lastmod>
-  </url>
-  <url>
-    <loc>https://giorgistat.github.io/teaching/MBG/estimation.html</loc>
-    <lastmod>2025-09-01T13:36:38.237Z</lastmod>
-  </url>
-  <url>
-    <loc>https://giorgistat.github.io/teaching/MBG/Exercises/Exercise 1.html</loc>
-    <lastmod>2025-09-01T13:36:38.215Z</lastmod>
-  </url>
-  <url>
-    <loc>https://giorgistat.github.io/teaching/MBG/Exercises/Exercise 2.html</loc>
-    <lastmod>2025-09-01T13:36:38.215Z</lastmod>
-  </url>
-  <url>
-    <loc>https://giorgistat.github.io/teaching/MBG/introduction.html</loc>
-    <lastmod>2025-09-01T13:36:38.237Z</lastmod>
-  </url>
-  <url>
-    <loc>https://giorgistat.github.io/teaching/MBG/geostat_pred_rss2025.html</loc>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/teaching/MBG/geostat_pred_rss2025.html</loc>
     <lastmod>2025-09-02T08:04:24.054Z</lastmod>
   </url>
   <url>
-    <loc>https://giorgistat.github.io/teaching/index.html</loc>
-    <lastmod>2025-09-01T13:36:38.237Z</lastmod>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/teaching/MBG/estimation.html</loc>
+    <lastmod>2025-04-30T10:03:09.453Z</lastmod>
   </url>
   <url>
-    <loc>https://giorgistat.github.io/publications/other-publications.html</loc>
-    <lastmod>2025-09-01T13:36:37.654Z</lastmod>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/teaching/MBG/introduction_rss2025.html</loc>
+    <lastmod>2025-09-02T08:03:51.056Z</lastmod>
   </url>
   <url>
-    <loc>https://giorgistat.github.io/publications/index.html</loc>
-    <lastmod>2025-09-01T13:36:37.654Z</lastmod>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/teaching/MBG/Exercises/Exercise 3.html</loc>
+    <lastmod>2025-03-06T14:01:23.853Z</lastmod>
+  </url>
+  <url>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/teaching/MBG/Exercises/Exercise 1.html</loc>
+    <lastmod>2025-02-25T17:09:14.088Z</lastmod>
+  </url>
+  <url>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/teaching/index.html</loc>
+    <lastmod>2025-08-18T08:08:40.929Z</lastmod>
+  </url>
+  <url>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/talks/Lund2025.html</loc>
+    <lastmod>2025-05-22T10:12:28.345Z</lastmod>
+  </url>
+  <url>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/publications/book-chapters.html</loc>
+    <lastmod>2025-02-11T17:13:38.263Z</lastmod>
+  </url>
+  <url>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/publications/index.html</loc>
+    <lastmod>2025-07-14T08:18:41.534Z</lastmod>
+  </url>
+  <url>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/projects/ntds.html</loc>
+    <lastmod>2025-01-21T15:20:19.646Z</lastmod>
+  </url>
+  <url>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/projects/riskmap.html</loc>
+    <lastmod>2024-12-09T15:43:34.536Z</lastmod>
+  </url>
+  <url>
+    <loc>https://62e5c619-9e86-411a-997c-994c703863e6.netlify.app/index.html</loc>
+    <lastmod>2025-09-29T12:57:08.208Z</lastmod>
+  </url>
+  <url>
+    <loc>https://giorgistat.github.io/index.html</loc>
+    <lastmod>2025-09-30T07:23:57.253Z</lastmod>
   </url>
   <url>
     <loc>https://giorgistat.github.io/books.html</loc>
-    <lastmod>2025-09-01T13:36:37.381Z</lastmod>
+    <lastmod>2025-09-30T11:37:42.956Z</lastmod>
+  </url>
+  <url>
+    <loc>https://giorgistat.github.io/projects/riskmap.html</loc>
+    <lastmod>2025-09-30T08:22:27.749Z</lastmod>
+  </url>
+  <url>
+    <loc>https://giorgistat.github.io/projects/index.html</loc>
+    <lastmod>2025-01-21T15:24:41.665Z</lastmod>
   </url>
   <url>
     <loc>https://giorgistat.github.io/talks/index.html</loc>
-    <lastmod>2025-09-01T13:36:37.777Z</lastmod>
+    <lastmod>2025-05-28T09:37:25.611Z</lastmod>
   </url>
 </urlset>
