@@ -116,7 +116,7 @@
     "href": "talks/index.html",
     "title": "Talks",
     "section": "",
-    "text": "This page includes slides of selected presentations given at seminars and conferences since February 2025.\n\n\nAccounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods\nSeminar at the Department of Statistics at Lund University, Sweden, 26 May 2025\nModel-based Geostatistics for Global Public Health: From Methodology Development to Policy Applications\nSeminar at Oslo Centre for Biostatistics and Epidemiology, Oslo University, 20 March 2025"
+    "text": "This page includes slides of selected presentations given at seminars and conferences since February 2025.\n\n\nA flexible class of latent variable models for the analysis of antibody response data\nSeminar at the Barcelona Supercomputing Centre, Barcelona, Spain, 5 December 2025\nAccounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods\nSeminar at the Department of Statistics at Lund University, Lund, Sweden, 26 May 2025\nModel-based Geostatistics for Global Public Health: From Methodology Development to Policy Applications\nSeminar at Oslo Centre for Biostatistics and Epidemiology, Oslo University, Oslo, Norway, 20 March 2025"
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#my-background",
@@ -1137,8 +1137,8 @@
     "objectID": "talks/Lund2025.html#presentation-overview",
     "href": "talks/Lund2025.html#presentation-overview",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
-    "section": "Presentation Overview",
-    "text": "Presentation Overview\n\nNeglected Tropical Diseases and Mass Drug Administration\nThe standard geostatistical model for prevalence mapping\nA decay-adjusted spatio-temporal model\nApplication to lymphatic filariasis in Madagascar\nSummary"
+    "section": "",
+    "text": "Neglected Tropical Diseases and Mass Drug Administration\nThe standard geostatistical model for prevalence mapping\nA decay-adjusted spatio-temporal model\nApplication to lymphatic filariasis in Madagascar\nSummary"
   },
   {
     "objectID": "talks/Lund2025.html#neglected-tropical-diseases",
@@ -1173,28 +1173,28 @@
     "href": "talks/Lund2025.html#mass-drug-administration-mda-a-preventive-strategy",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Mass Drug Administration (MDA): A Preventive Strategy",
-    "text": "Mass Drug Administration (MDA): A Preventive Strategy\nWhat is MDA? Mass Drug Administration involves the periodic distribution of safe, effective medications to entire at-risk populations—regardless of disease status—to reduce transmission and prevent infections.\n\nWhy is it used?\n\nControls or eliminates disease in endemic areas\nReduces the community-level parasite burden\nPrevents long-term complications and disability\n\n\n\nKey Features:\n\nDelivered at regular intervals (annually or biannually)\nOften combined with public health education\nSupported by WHO and major global health initiatives"
+    "text": "Mass Drug Administration (MDA): A Preventive Strategy\nWhat is MDA? Mass Drug Administration involves the periodic distribution of safe, effective medications to entire at-risk populations—regardless of disease status—to reduce transmission and prevent infections.\n. . .\nWhy is it used?\n\nControls or eliminates disease in endemic areas\nReduces the community-level parasite burden\nPrevents long-term complications and disability\n\n. . .\nKey Features:\n\nDelivered at regular intervals (annually or biannually)\nOften combined with public health education\nSupported by WHO and major global health initiatives"
   },
   {
     "objectID": "talks/Lund2025.html#albendazole",
     "href": "talks/Lund2025.html#albendazole",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Albendazole",
-    "text": "Albendazole\n\n\n\n\n\nHow it works:\nAlbendazole disrupts the metabolism of parasitic worms by inhibiting microtubule formation, which is essential for their survival.\n\nAlbendazole works by stopping worms from absorbing the nutrients they need to survive. It blocks a process inside their cells that’s kind of like the framework or “skeleton” that helps them function and grow. Without it, the worms can’t live for long and are eventually cleared from the body.\n\nUsed for NTDs such as:\n\nLymphatic filariasis (in combination with ivermectin or DEC)\nSoil-transmitted helminths (e.g., ascariasis, hookworm, trichuriasis)\n\nMDA use:\nDistributed in large-scale deworming campaigns, particularly targeting children and at-risk communities."
+    "text": "Albendazole\n\n\n\n\n\n\nHow it works:\nAlbendazole disrupts the metabolism of parasitic worms by inhibiting microtubule formation, which is essential for their survival.\n\nAlbendazole works by stopping worms from absorbing the nutrients they need to survive. It blocks a process inside their cells that’s kind of like the framework or “skeleton” that helps them function and grow. Without it, the worms can’t live for long and are eventually cleared from the body.\n\nUsed for NTDs such as:\n\nLymphatic filariasis (in combination with ivermectin or DEC)\nSoil-transmitted helminths (e.g., ascariasis, hookworm, trichuriasis)\n\nMDA use:\nDistributed in large-scale deworming campaigns, particularly targeting children and at-risk communities."
   },
   {
     "objectID": "talks/Lund2025.html#ivermectin",
     "href": "talks/Lund2025.html#ivermectin",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Ivermectin",
-    "text": "Ivermectin\n\n\n\n\n\nHow it works:\nIvermectin paralyzes and kills parasites by interfering with their nerve and muscle function via chloride channel disruption. Parasites cannot move and feed.\n\nIvermectin kills parasites by messing with their nerves and muscles, which causes them to become paralyzed and die. It stops them from moving and feeding, so the body can get rid of them.\nChloride channel disruption refers to any impairment in the normal function of chloride channels, which are protein pores in cell membranes that allow chloride ions (Cl-) to pass through.\n\nUsed for NTDs such as:\n\nOnchocerciasis (river blindness)\n\nLymphatic filariasis (in combination with albendazole)\n\nStrongyloidiasis\n\nMDA use: Ivermectin is given to both adults and children (weighing more than 15kg), but its use is carefully considered for pregnant women."
+    "text": "Ivermectin\n\n\n\n\n\n\nHow it works:\nIvermectin paralyzes and kills parasites by interfering with their nerve and muscle function via chloride channel disruption. Parasites cannot move and feed.\n\nIvermectin kills parasites by messing with their nerves and muscles, which causes them to become paralyzed and die. It stops them from moving and feeding, so the body can get rid of them.\nChloride channel disruption refers to any impairment in the normal function of chloride channels, which are protein pores in cell membranes that allow chloride ions (Cl-) to pass through.\n\nUsed for NTDs such as:\n\nOnchocerciasis (river blindness)\n\nLymphatic filariasis (in combination with albendazole)\n\nStrongyloidiasis\n\nMDA use: Ivermectin is given to both adults and children (weighing more than 15kg), but its use is carefully considered for pregnant women."
   },
   {
     "objectID": "talks/Lund2025.html#praziquantel",
     "href": "talks/Lund2025.html#praziquantel",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Praziquantel",
-    "text": "Praziquantel\n\n\n\n\n\nHow it works:\nPraziquantel increases permeability of the parasite’s cell membranes to calcium ions, causing muscle contraction and paralysis.\n\nPraziquantel makes the outer layer of the parasite’s cells more “leaky,” allowing calcium to enter. This causes the parasite’s muscles to tighten and paralyze it, making it easier for the body to get rid of it.\nInside the cells of parasites, calcium is important for controlling muscle movement. When calcium enters the parasite’s cells (which normally isn’t supposed to happen), it disrupts the normal function of the muscles.\nThis excess calcium makes the muscles contract and become stiff. The parasite can’t move properly or feed, and it becomes paralyzed, which allows the body to get rid of it. So, calcium causes the parasite’s muscles to freeze up, stopping it from surviving or causing further harm.\n\nUsed for NTDs such as:\n\n\nSchistosomiasis\n\nTapeworm infections\n\nMDA use:\nKey drug in school-based and community-wide treatment campaigns in regions with high schistosomiasis burden."
+    "text": "Praziquantel\n\n\n\n\n\n\nHow it works:\nPraziquantel increases permeability of the parasite’s cell membranes to calcium ions, causing muscle contraction and paralysis.\n\nPraziquantel makes the outer layer of the parasite’s cells more “leaky,” allowing calcium to enter. This causes the parasite’s muscles to tighten and paralyze it, making it easier for the body to get rid of it.\nInside the cells of parasites, calcium is important for controlling muscle movement. When calcium enters the parasite’s cells (which normally isn’t supposed to happen), it disrupts the normal function of the muscles.\nThis excess calcium makes the muscles contract and become stiff. The parasite can’t move properly or feed, and it becomes paralyzed, which allows the body to get rid of it. So, calcium causes the parasite’s muscles to freeze up, stopping it from surviving or causing further harm.\n\nUsed for NTDs such as:\n\n\nSchistosomiasis\n\nTapeworm infections\n\nMDA use:\nKey drug in school-based and community-wide treatment campaigns in regions with high schistosomiasis burden."
   },
   {
     "objectID": "talks/Lund2025.html#treating-ntds",
@@ -1222,7 +1222,7 @@
     "href": "talks/Lund2025.html#the-standard-geostatistical-model-for-prevalence-mapping",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "The standard geostatistical model for prevalence mapping",
-    "text": "The standard geostatistical model for prevalence mapping\n\nOutcome: \\(Y_i\\) number of cases out \\(n_i\\) sampled\n\n\n\nLocations: \\(X = (x_1, \\ldots, x_n)\\)\n\n\n\n\nCovariates (optional): \\(d(x)\\) (e.g. elevation, distance from waterways)\n\n\n\n\nSpatial Gaussian process: \\(S(x)\\) (stationary and isotropic) \\[\n{\\rm cov}\\{S(x), S(x')\\} = \\sigma^2 \\rho(||x - x'||; \\phi)\n\\] Example: \\(\\rho(u; \\phi) = \\exp\\{-u/\\phi\\}\\).\n\n\n\n\nConditional independence: \\(Y_{i}\\) conditionally on \\(S(x_i)\\) are mutually independent \\(Bin(n_i , p(x_i))\\)\n\n\n\n\nThe linear predictor \\[\n\\log\\left\\{\\frac{p(x_i)}{1-p(x_i)}\\right\\} = \\beta_0 + d(x_i)^\\top \\beta + S(x_i)\n\\]"
+    "text": "The standard geostatistical model for prevalence mapping\n\nOutcome: \\(Y_i\\) number of cases out \\(n_i\\) sampled\n\n. . .\n\nLocations: \\(X = (x_1, \\ldots, x_n)\\)\n\n. . .\n\nCovariates (optional): \\(d(x)\\) (e.g. elevation, distance from waterways)\n\n. . .\n\nSpatial Gaussian process: \\(S(x)\\) (stationary and isotropic) \\[\n{\\rm cov}\\{S(x), S(x')\\} = \\sigma^2 \\rho(||x - x'||; \\phi)\n\\] Example: \\(\\rho(u; \\phi) = \\exp\\{-u/\\phi\\}\\).\n\n. . .\n\nConditional independence: \\(Y_{i}\\) conditionally on \\(S(x_i)\\) are mutually independent \\(Bin(n_i , p(x_i))\\)\n\n. . .\n\nThe linear predictor \\[\n\\log\\left\\{\\frac{p(x_i)}{1-p(x_i)}\\right\\} = \\beta_0 + d(x_i)^\\top \\beta + S(x_i)\n\\]"
   },
   {
     "objectID": "talks/Lund2025.html#spatial-and-temporal-confounding-with-mda",
@@ -1250,7 +1250,7 @@
     "href": "talks/Lund2025.html#monte-carlo-maximum-likelihood",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Monte Carlo Maximum Likelihood",
-    "text": "Monte Carlo Maximum Likelihood\n\nLet \\(W_i = S(x_i) + Z_i\\) and \\(W = (W_1, \\ldots, W_n)\\)\n\n\n\nThe likelihood function for parameters \\(\\theta = (\\beta, \\sigma^2, \\phi, \\tau^2)\\) is given by:\n\\[\nL(\\theta) = \\int N(W; D\\beta, \\Omega) f(y| W) dW\n\\]\nwhere \\(\\Omega = \\sigma^2 R(\\phi) + \\tau^2I_n\\).\n\n\n\n\nWe approximate this using Monte Carlo integration:\n\\[\nL_m(\\theta) = \\frac{1}{B} \\sum_{j=1}^{B} \\frac{N\\left(W^{(j)}; D\\beta, \\Omega \\right)}{N\\left(W^{(j)}; D\\beta_0, \\Omega_0\\right)}\n\\] where \\(W^{(i)}\\) are sampled from the distribution of \\(W\\) given \\(y\\) using an MCMC algorithm.\nAll implemented in the dast function of the RiskMap package"
+    "text": "Monte Carlo Maximum Likelihood\n\nLet \\(W_i = S(x_i) + Z_i\\) and \\(W = (W_1, \\ldots, W_n)\\)\n\n. . .\n\nThe likelihood function for parameters \\(\\theta = (\\beta, \\sigma^2, \\phi, \\tau^2)\\) is given by:\n\\[\nL(\\theta) = \\int N(W; D\\beta, \\Omega) f(y| W) dW\n\\]\nwhere \\(\\Omega = \\sigma^2 R(\\phi) + \\tau^2I_n\\).\n\n. . .\n\nWe approximate this using Monte Carlo integration:\n\\[\nL_m(\\theta) = \\frac{1}{B} \\sum_{j=1}^{B} \\frac{N\\left(W^{(j)}; D\\beta, \\Omega \\right)}{N\\left(W^{(j)}; D\\beta_0, \\Omega_0\\right)}\n\\] where \\(W^{(i)}\\) are sampled from the distribution of \\(W\\) given \\(y\\) using an MCMC algorithm.\nAll implemented in the dast function of the RiskMap package"
   },
   {
     "objectID": "talks/Lund2025.html#applications",
@@ -1292,7 +1292,7 @@
     "href": "talks/Lund2025.html#introducing-penalization-for-alpha",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Introducing penalization for \\(\\alpha\\)",
-    "text": "Introducing penalization for \\(\\alpha\\)\n\nLet \\(p(\\alpha) &gt; 0\\) be a positive function.\n\n\n\nThe penalized likelihood for \\(\\alpha\\) is \\[\nL_{p}(\\theta) = L(\\theta) - p(\\alpha)\n\\]\n\n\n\n\nProposed penalty\n\\[\np(\\alpha) = -\\left[\\lambda_1 \\log\\alpha + \\lambda_2\\log(1-\\alpha) \\right]\n\\]\n\n\n\n\nWe set \\(\\lambda_1 = 20\\) and \\(\\lambda_2 = 14\\). (This inspired by a Beta distribution with mode in around 0.6, with 0.42 and 0.7 as its 0.025 and 0.975 quantiles, respectively.)"
+    "text": "Introducing penalization for \\(\\alpha\\)\n\nLet \\(p(\\alpha) &gt; 0\\) be a positive function.\n\n. . .\n\nThe penalized likelihood for \\(\\alpha\\) is \\[\nL_{p}(\\theta) = L(\\theta) - p(\\alpha)\n\\]\n\n. . .\n\nProposed penalty\n\\[\np(\\alpha) = -\\left[\\lambda_1 \\log\\alpha + \\lambda_2\\log(1-\\alpha) \\right]\n\\]\n\n. . .\n\nWe set \\(\\lambda_1 = 20\\) and \\(\\lambda_2 = 14\\). (This inspired by a Beta distribution with mode in around 0.6, with 0.42 and 0.7 as its 0.025 and 0.975 quantiles, respectively.)"
   },
   {
     "objectID": "talks/Lund2025.html#introducing-penalization-for-alpha-1",
@@ -1306,7 +1306,7 @@
     "href": "talks/Lund2025.html#paramter-estimates",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Paramter estimates",
-    "text": "Paramter estimates\nMDA impact function: \\(f(v) = \\alpha\\exp\\{-v/\\gamma\\}\\), with \\(v\\) denoting the years since last MDA\n\n\n\n\nParameter\nEstimates\n\n\n\n\nIntercept\n-2.582 (-2.622, -2.541)\n\n\nSpatial variance\n2.204 (1.891, 2.569)\n\n\nSpatial scale\n79.153 (70.874, 88.399)\n\n\nMax. reduction (\\(\\alpha\\))\n0.856 (0.839, 0.872)\n\n\nDecay scale (\\(\\gamma\\))\n1.802 (1.768, 1.837)"
+    "text": "Paramter estimates\nMDA impact function: \\(f(v) = \\alpha\\exp\\{-v/\\gamma\\}\\), with \\(v\\) denoting the years since last MDA\n. . .\n\n\n\nParameter\nEstimates\n\n\n\n\nIntercept\n-2.582 (-2.622, -2.541)\n\n\nSpatial variance\n2.204 (1.891, 2.569)\n\n\nSpatial scale\n79.153 (70.874, 88.399)\n\n\nMax. reduction (\\(\\alpha\\))\n0.856 (0.839, 0.872)\n\n\nDecay scale (\\(\\gamma\\))\n1.802 (1.768, 1.837)"
   },
   {
     "objectID": "talks/Lund2025.html#estimated-mda-impact-function",
@@ -1348,7 +1348,7 @@
     "href": "talks/Lund2025.html#paramter-estimates-1",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Paramter estimates",
-    "text": "Paramter estimates\nMDA impact function: \\(f(v) = \\alpha\\exp\\{-v/\\gamma\\}\\), with \\(v\\) denoting the years since last MDA\n\n\n\n\n\n\n\n\n\n\nParameter\nAscaris\nTrichuris\nHookworm\n\n\n\n\nIntercept\n-2.41 (-2.45, -2.37)\n-2.44 (-2.51, -2.37)\n-1.94 (-1.98, -1.90)\n\n\nSpatial variance\n26.83 (14.70, 48.97)\n15.57 (8.35, 29.06)\n29.75 (20.17, 43.89)\n\n\nSpatial scale\n263.31 (178.38, 388.66)\n109.02 (72.34, 164.32)\n198.63 (152.33, 258.99)\n\n\nMax. reduction (\\(\\alpha\\))\n0.318 (0.299, 0.338)\n0.837 (0.533, 0.958)\n0.892 (0.871, 0.909)\n\n\nDecay scale (\\(\\gamma\\))\n9.49 (7.41, 12.16)\n1.23 (1.01, 1.49)\n6.46 (6.06, 6.90)"
+    "text": "Paramter estimates\nMDA impact function: \\(f(v) = \\alpha\\exp\\{-v/\\gamma\\}\\), with \\(v\\) denoting the years since last MDA\n. . .\n\n\n\n\n\n\n\n\n\nParameter\nAscaris\nTrichuris\nHookworm\n\n\n\n\nIntercept\n-2.41 (-2.45, -2.37)\n-2.44 (-2.51, -2.37)\n-1.94 (-1.98, -1.90)\n\n\nSpatial variance\n26.83 (14.70, 48.97)\n15.57 (8.35, 29.06)\n29.75 (20.17, 43.89)\n\n\nSpatial scale\n263.31 (178.38, 388.66)\n109.02 (72.34, 164.32)\n198.63 (152.33, 258.99)\n\n\nMax. reduction (\\(\\alpha\\))\n0.318 (0.299, 0.338)\n0.837 (0.533, 0.958)\n0.892 (0.871, 0.909)\n\n\nDecay scale (\\(\\gamma\\))\n9.49 (7.41, 12.16)\n1.23 (1.01, 1.49)\n6.46 (6.06, 6.90)"
   },
   {
     "objectID": "talks/Lund2025.html#the-mda-impact-by-sth-species",
@@ -1440,5 +1440,334 @@
     "title": "Books",
     "section": "Model based geostatistics for global public health: Methods and Applications",
     "text": "Model based geostatistics for global public health: Methods and Applications\n\nModel-based Geostatistics for Global Public Health: Methods and Applications (Diggle, P. J. and Giorgi E., 2020) provides an introductory account of model-based geostatistics, its implementation in open-source software and its application in public health research."
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#presentation-overview",
+    "href": "talks/Barcelona2025.html#presentation-overview",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Presentation Overview",
+    "text": "Presentation Overview\n\nA brief overview of the serology\nCurrent approaches for the analysis of antibody data\nThe proposed modelling approach\nApplication to malaria sero-epidemiology\nSummary"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#thank-you",
+    "href": "talks/Barcelona2025.html#thank-you",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "THANK YOU!",
+    "text": "THANK YOU!\n\n\n\n🔗 giorgistat.github.io\n📧 e.giorgi@bham.ac.uk\n📍 BESTEAM, Department of Applied Health Sciences, University of Birmingham"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#key-definitions",
+    "href": "talks/Barcelona2025.html#key-definitions",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Key definitions",
+    "text": "Key definitions\n\n\n\nAntigen\nA molecule (often a protein or polysaccharide) from a pathogen that is recognized by the immune system and can trigger an immune response.\nAntibody\nA protein produced by B cells that specifically binds to an antigen, reflecting current or past exposure to the pathogen."
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#immune-response-to-infectious-diseases",
+    "href": "talks/Barcelona2025.html#immune-response-to-infectious-diseases",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Immune response to infectious diseases",
+    "text": "Immune response to infectious diseases\n\n\nFollowing infection, the adaptive immune response is initiated through antigen recognition by naïve B cells. Different classes of antibodies play distinct roles in this process. IgM is usually the first antibody produced following infection and reflects recent or ongoing exposure, but is short-lived. IgG is produced later, after immune maturation and class switching, and persists substantially longer, providing a durable marker of past exposure. Other antibody classes, such as IgA and IgE, play important biological roles but are less commonly used in sero-epidemiological studies.\nThe initiation of the adaptive immune response is not immediate, introducing a delay between pathogen entry and measurable antibody responses. During the incubation period, the pathogen replicates while innate immune mechanisms dominate early control. Antigen processing and presentation occur during this phase, and B-cell activation begins, but IgG antibodies are typically not yet detectable, creating a systematic lag between infection onset and serological evidence of exposure.\nAs infection progresses into the early symptomatic phase, short-lived antibody classes, particularly IgM, start to rise. At the same time, class-switch recombination is initiated and IgG production begins, although IgG levels remain relatively low. For this reason, IgG-based assays often have limited sensitivity very early in the course of disease.\nDuring the peak symptomatic phase, or shortly thereafter, antigen levels decline as immune control is established. Plasma cells produce increasing quantities of IgG, leading to a rapid rise in IgG levels, which typically peak around or shortly after symptom resolution. The timing and magnitude of this peak depend on pathogen characteristics, infection intensity, and host immune status.\nIn the recovery and convalescent phase, IgM wanes rapidly, while IgG declines much more slowly, often following an approximately exponential decay. Long-lived plasma cells and memory B cells maintain persistent IgG titres, which may remain detectable for months or years. Subsequent exposure or reinfection usually results in faster and stronger boosting of IgG, compared with the primary response.\nBecause of this delayed but durable behaviour, IgG provides an integrated record of infection history, rather than a snapshot of current infection. This makes IgG the most commonly measured antibody isotype in sero-epidemiology.\n\n\nDenning DW, Kilcoyne A, Ucer C (2020). Non-infectious status indicated by detectable IgG antibody to SARS-CoV-2.\nBritish Dental Journal, 229:521–524. Link to article"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#when-are-igg-responses-informative",
+    "href": "talks/Barcelona2025.html#when-are-igg-responses-informative",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "When are IgG responses informative?",
+    "text": "When are IgG responses informative?\n\n\nInfections with many asymptomatic cases\nmalaria, dengue, chikungunya, Zika\nAcute infections with short diagnostic windows\nSARS-CoV-2, influenza, yellow fever\nDiseases with repeated or cumulative exposure\nmalaria, schistosomiasis, soil-transmitted helminths, onchocerciasis\nChronic infection or elimination settings\ntrachoma, lymphatic filariasis, onchocerciasis\nNot informative when cell-mediated immunity is dominant\ntuberculosis, leishmaniasis\n\n\n\nIgG responses are most informative in settings where infection history cannot be reliably reconstructed from clinical or diagnostic data alone.\nInfections with a high proportion of asymptomatic or mildly symptomatic cases, such as malaria, dengue, chikungunya and Zika, are poorly captured by routine surveillance. In these contexts, IgG provides a cumulative record of past exposure at both individual and population levels.\nIgG is also valuable for acute infections with short diagnostic windows, such as SARS-CoV-2, influenza and yellow fever, where molecular or antigen-based detection is only possible for a limited period. Persisting IgG allows retrospective assessment of transmission.\nDiseases characterised by repeated or ongoing exposure, such as malaria, schistosomiasis, soil-transmitted helminths and onchocerciasis, are another important application. Here, IgG levels integrate multiple infection events and can be informative about long-term transmission intensity rather than single episodes.\nIgG responses are also widely used in chronic infections and in elimination or near-elimination settings, such as trachoma and lymphatic filariasis, where clinical cases become rare but evidence of residual transmission is still required.\nHowever, there are important contexts where IgG is less informative. For infections that induce weak or short-lived systemic antibody responses, particularly some enteric bacterial infections such as cholera or non-typhoidal Salmonella, IgG levels may not reliably reflect exposure.\nIgG is also less informative for diseases in which immunity is primarily cell-mediated rather than antibody-mediated, or where circulating IgG does not correlate well with protection or recent transmission, limiting its interpretability without additional modelling.\nIn interpreting serological data, it is useful to contrast antibody-mediated and cell-mediated immunity. Antibody-mediated, or humoral, immunity is driven by circulating antibodies such as IgM and IgG, which target pathogens or antigens present in the blood or other extracellular spaces. For this reason, antibody responses are particularly useful for population surveillance, for reconstructing exposure history, and for epidemiological inference based on serology. By contrast, cell-mediated immunity acts primarily through T cells that recognise and destroy infected host cells. In diseases where immune control relies predominantly on these cellular mechanisms, circulating antibody levels may provide only limited information about infection status or protection, and are therefore often poorly captured by serology alone."
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#antibody-data-and-mixtures",
+    "href": "talks/Barcelona2025.html#antibody-data-and-mixtures",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Antibody data and mixtures",
+    "text": "Antibody data and mixtures\n\n\nQuantitative antibody concentration \\(Y_i\\) (e.g. OD values)\n\nClassical approach: two-component Gaussian mixture\n\nSeronegative vs seropositive components\n\n\\[\nf(y) = \\pi_0 \\mathcal{N}(y ; \\mu_0, \\sigma_0^2)\n     + \\pi_1 \\mathcal{N}(y ; \\mu_1, \\sigma_1^2),\n\\quad \\pi_0 + \\pi_1 = 1\n\\]"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#overlap-and-inconclusive-zone",
+    "href": "talks/Barcelona2025.html#overlap-and-inconclusive-zone",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Overlap and inconclusive zone",
+    "text": "Overlap and inconclusive zone\n\n\nBinary serostatus assumed\n\nStrong overlap \\(\\Rightarrow\\) ambiguous classification\n\n“Grey” region where posterior probabilities are not decisive"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#from-binary-status-to-continuous-seroreactivity",
+    "href": "talks/Barcelona2025.html#from-binary-status-to-continuous-seroreactivity",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "From binary status to continuous seroreactivity",
+    "text": "From binary status to continuous seroreactivity\n\n\nReplace discrete seronegative/seropositive by continuous immune state\n\nLatent variable \\(T \\in [0,1]\\):\n\n\\(T=0\\): no activation\n\n\\(T=1\\): full activation\n\nIntermediate values: partial seroreactivity"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#conditional-model-y-mid-t",
+    "href": "talks/Barcelona2025.html#conditional-model-y-mid-t",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Conditional model \\(Y \\mid T\\)",
+    "text": "Conditional model \\(Y \\mid T\\)\n\nAntibody level given latent seroreactivity:\n\\[\nY \\mid T=t \\sim\n\\mathcal{N}\\!\\left( (1-t)\\mu_0 + t\\mu_1,\\;\n                   (1-t)\\sigma_0^2 + t\\sigma_1^2 \\right)\n\\]\n\n\\(\\mu_0\\): baseline (no activation)\n\n\\(\\mu_1\\): saturation level\n\n\\(\\sigma_0^2, \\sigma_1^2\\): heterogeneity at the two extremes"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#link-with-antibody-acquisition-models",
+    "href": "talks/Barcelona2025.html#link-with-antibody-acquisition-models",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Link with antibody acquisition models",
+    "text": "Link with antibody acquisition models\n\nClassical antibody acquisition model\n(Yman et al., 2016) \\[\n\\mathbb{E}[Y;a] = f(a) = \\mu_0 + (\\mu_1 - \\mu_0)\\{1 - \\exp(-r a)\\},\n\\] with age \\(a\\) and acquisition rate \\(r &gt; 0\\).\nInterpretation in the latent sero-reactivity framework \\[\n\\mathbb{E}[T;a] = \\frac{f(a)-\\mu_0}{\\mu_1-\\mu_0}\n      = 1 - \\exp(-r a),\n\\]\nResulting expectation of the antibody level \\[\n\\mathbb{E}[Y;a] = \\mu_0 + (\\mu_1-\\mu_0)\\,\\mathbb{E}[T;a].\n\\]"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#single-beta-model-for-t",
+    "href": "talks/Barcelona2025.html#single-beta-model-for-t",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Single Beta model for \\(T\\)",
+    "text": "Single Beta model for \\(T\\)"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#interpreting-alphabeta",
+    "href": "talks/Barcelona2025.html#interpreting-alphabeta",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Interpreting \\(\\alpha,\\beta\\)",
+    "text": "Interpreting \\(\\alpha,\\beta\\)\n\n\n\\(\\alpha,\\beta&gt;1\\): most individuals at intermediate seroreactivity\n\n\\(\\alpha&lt;1,\\beta&gt;1\\): mass near \\(0\\) \\(\\Rightarrow\\) mostly non-reactive\n\n\\(\\alpha&gt;1,\\beta&lt;1\\): mass near \\(1\\) \\(\\Rightarrow\\) mostly highly reactive\n\n\\(\\alpha,\\beta&lt;1\\): U-shaped \\(\\Rightarrow\\) mix of naïve and highly exposed\n\n(Shapes illustrated in previous slide via Beta examples.)"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#mixture-models-for-the-latent-state",
+    "href": "talks/Barcelona2025.html#mixture-models-for-the-latent-state",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Mixture models for the latent state",
+    "text": "Mixture models for the latent state\n\nAssume distinct immunological subgroups in \\(T\\)-space:\n\\[\nf_T(t) = \\sum_{c=1}^{3} \\pi_c f_c(t;\\boldsymbol\\theta_c),\n\\quad t\\in(0,1)\n\\]\n\nExample with three components:\n\nlow seroreactivity\n\nintermediate seroreactivity\n\nhigh seroreactivity"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#age-dependent-single-beta-model",
+    "href": "talks/Barcelona2025.html#age-dependent-single-beta-model",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Age-dependent single Beta model",
+    "text": "Age-dependent single Beta model\n\nAge enters via Beta shape parameters:\n\\[\n\\alpha(a) = \\alpha_0\\,a^{\\gamma}, \\qquad\n\\beta(a)  = \\beta_0\\,a^{\\delta}.\n\\]\nAlternative mean–variance parameterisation:\n\\[\n\\mathbb{E}(T) = \\mu(a),\\quad\n\\mathrm{Var}(T) = \\frac{\\mu(a)\\{1-\\mu(a)\\}}{1+\\phi},\n\\]\n\\[\n\\alpha(a) = \\mu(a)\\phi,\\quad\n\\beta(a)  = \\{1-\\mu(a)\\}\\phi,\n\\]\nwith\n\\[\n\\log\\frac{\\mu(a)}{1-\\mu(a)} = \\eta_0 + \\eta_1 \\log(a).\n\\]"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#age-dependent-mixing-probabilities",
+    "href": "talks/Barcelona2025.html#age-dependent-mixing-probabilities",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Age-dependent mixing probabilities",
+    "text": "Age-dependent mixing probabilities\n\nTwo-component mixture in latent space:\n\\[\nf(t;a) = (1-\\pi(a))\\,\\mathrm{Beta}(t;\\alpha_1,\\beta_1)\n       + \\pi(a)\\,\\mathrm{Beta}(t;\\alpha_2,\\beta_2).\n\\]\n\nComponent 1: low seroreactivity (mass near \\(0\\))\n\nComponent 2: high seroreactivity (mass near \\(1\\))\n\nMechanistic age-effect (reversible catalytic):\n\\[\n\\pi(a) = 1 - \\exp(-\\lambda a).\n\\]"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#inference-marginal-density-and-likelihood",
+    "href": "talks/Barcelona2025.html#inference-marginal-density-and-likelihood",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Inference: marginal density and likelihood",
+    "text": "Inference: marginal density and likelihood\n\nMarginal density:\n\\[\nf(y ; \\boldsymbol\\theta,\\boldsymbol\\psi) =\n\\int_0^1\n\\phi\\!\\left(y;\\; (1-t)\\mu_0+t\\mu_1,\\;\n              (1-t)\\sigma_0^2+t\\sigma_1^2\\right)\n\\, g_T(t;\\boldsymbol\\psi)\\, dt.\n\\]\nLog-likelihood:\n\\[\n\\ell(\\boldsymbol\\theta,\\boldsymbol\\psi)\n=\n\\sum_{i=1}^n \\log f(y_i ; \\boldsymbol\\theta,\\boldsymbol\\psi).\n\\]\n\nDirect maximisation requires repeated numerical integration"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#histogram-based-minimumdistance-fit",
+    "href": "talks/Barcelona2025.html#histogram-based-minimumdistance-fit",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Histogram-based minimum–distance fit",
+    "text": "Histogram-based minimum–distance fit\n\n\nBin data: counts \\(n_j\\) in bins \\([b_{j-1},b_j)\\), midpoints \\(m_j\\)\n\nEmpirical density:\n\n\\[\n\\widehat f_j = \\frac{n_j}{n\\,\\Delta_j},\\quad\n\\Delta_j = b_j-b_{j-1}\n\\]\n\nModel bin probability:\n\n\\[\np_j(\\boldsymbol\\theta,\\boldsymbol\\psi)\n\\approx f(m_j ; \\boldsymbol\\theta,\\boldsymbol\\psi)\\,\\Delta_j\n\\]\n\n\\(L_2\\) criterion:\n\n\\[\nQ(\\boldsymbol\\theta,\\boldsymbol\\psi)\n= \\sum_{j=1}^J  \n\\bigl\\{\\widehat f_j - f(m_j ; \\boldsymbol\\theta,\\boldsymbol\\psi)\\bigr\\}^2\n\\]\nUsed for fast fitting / good starting values for full MLE."
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#application-malaria-serology",
+    "href": "talks/Barcelona2025.html#application-malaria-serology",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Application: malaria serology",
+    "text": "Application: malaria serology\n\n\nCross-sectional data from western Kenyan highlands\n\nAntibody responses to Plasmodium falciparum:\n\nAMA1 (shorter-lived response)\n\nMSP1 (longer-lived response)\n\n\nOutcome: log OD for each antigen\n\nGoal: model age-dependent distributions and latent seroreactivity"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#ama1-exploratory-age-stratified-fits",
+    "href": "talks/Barcelona2025.html#ama1-exploratory-age-stratified-fits",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "AMA1: exploratory age-stratified fits",
+    "text": "AMA1: exploratory age-stratified fits\n\n\nFit \\(Y \\mid T\\) with age-specific Beta for \\(T\\)\n\nKeep \\(\\mu_0,\\mu_1,\\sigma_0,\\sigma_1\\) fixed across ages\n\nRe-estimate \\(\\mathrm{Beta}(\\alpha,\\beta)\\) in each age band"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#ama1-joint-latent-mixture-model",
+    "href": "talks/Barcelona2025.html#ama1-joint-latent-mixture-model",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "AMA1: joint latent mixture model",
+    "text": "AMA1: joint latent mixture model\n\n\nAge \\(&lt;15\\): mechanistic reversible catalytic structure\n\nAge \\(\\ge 15\\): empirical Beta with logit–log age effect\n\nSimplified latent mixture below 15:\n\\[\nT  \\sim (1 - \\pi(a))\\,\\delta_0\n      + \\pi(a)\\,\\mathrm{Beta}(\\alpha_2, 1),\n\\]\n\\[\n\\pi(a) = 1 - \\exp(-\\lambda a).\n\\]\n\n\\(\\delta_0\\): point mass at 0 (no response)"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#ama1-fitted-distribution-and-pia",
+    "href": "talks/Barcelona2025.html#ama1-fitted-distribution-and-pia",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "AMA1: fitted distribution and \\(\\pi(a)\\)",
+    "text": "AMA1: fitted distribution and \\(\\pi(a)\\)\n\nLeft: envelope of simulated histograms vs observed AMA1.\nRight: age-dependent \\(\\pi(a)\\) (probability of belonging to the reactive component)."
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#msp1-exploratory-age-stratified-fits",
+    "href": "talks/Barcelona2025.html#msp1-exploratory-age-stratified-fits",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "MSP1: exploratory age-stratified fits",
+    "text": "MSP1: exploratory age-stratified fits\n\n\nSame exploratory strategy as AMA1\n\nAge-specific Beta for \\(T\\), fixed \\(Y \\mid T\\) parameters"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#msp1-age-dependent-beta-model",
+    "href": "talks/Barcelona2025.html#msp1-age-dependent-beta-model",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "MSP1: age-dependent Beta model",
+    "text": "MSP1: age-dependent Beta model\n\nLatent state:\n\\[\nT \\sim \\mathrm{Beta}\\big(\\alpha(a),\\,\\beta(a)\\big),\n\\]\nwith\n\\[\n\\alpha(a) = \\alpha_0\\,a^{\\gamma},\n\\qquad\n\\beta(a) = \\beta_0\\,a^{\\delta(a)},\n\\]\n\\[\n\\delta(a) =\n\\begin{cases}\n\\delta_1, & a \\le \\tau_{cp},\\\\[4pt]\n\\delta_1+\\delta_2, & a &gt; \\tau_{cp}.\n\\end{cases}\n\\]\n\nChange-point \\(\\tau_{cp}\\) controls shift in age trend of \\(\\beta(a)\\)"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#msp1-model-fit-and-age-profile",
+    "href": "talks/Barcelona2025.html#msp1-model-fit-and-age-profile",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "MSP1: model fit and age profile",
+    "text": "MSP1: model fit and age profile\n\nValidation envelope:\n\nExpected log antibody by age (AMA1 vs MSP1):\n\n\nAMA1: rises then plateaus/wanes\n\nMSP1: steady increase, consistent with long-lived response"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#seropositivity-and-seronegativity",
+    "href": "talks/Barcelona2025.html#seropositivity-and-seronegativity",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Seropositivity and seronegativity",
+    "text": "Seropositivity and seronegativity\n\n\nSeronegativity\nAbsence of detectable antibody response to a given antigen.\nSeropositivity\nAntibody concentration exceeding a predefined assay-specific threshold, interpreted as evidence of prior exposure or immunity.\n\nCommon approaches to serostatus classification\n\nManufacturer-defined assay cut-offs\n\nThresholds based on negative controls\n(e.g. mean \\(+\\) 2 or 3 SDs)\n\nROC-based cut-offs using known positive/negative samples\n\nImmunological correlates of protection (when available)\n\nData-driven thresholds via finite mixture models\n\n\n\nHere I want to briefly clarify what we mean by seropositivity and how it is typically defined in practice.\nThe most common approach relies on manufacturer-provided cut-offs, which are often derived under laboratory conditions and may not translate well to field settings or different epidemiological contexts.\nAnother widely used method is based on negative controls, for example defining seropositivity as antibody levels exceeding the mean of a presumed negative population by two or three standard deviations. This is simple and reproducible, but it depends critically on having a truly unexposed reference group, which is often difficult to identify.\nWhen well-characterised positive and negative samples are available, researchers sometimes use ROC curve analysis to choose a cut-off that optimises sensitivity and specificity. This approach is statistically principled, but again depends on the availability and representativeness of validation samples. (ROC-based cut-offs require reference samples with assumed known status. Positive samples usually come from PCR- or clinically confirmed cases, often biased toward recent or symptomatic infections. Negative samples typically come from presumed unexposed populations, such as blood donors from non-endemic areas or historical sera. A threshold is then chosen to balance sensitivity and specificity along the ROC curve. The limitation is that these reference samples are rarely representative of the full immune spectrum in endemic settings, so ROC cut-offs often fail to capture intermediate or waning antibody responses.)\nIn a few settings, immunological correlates of protection are available, meaning that a specific antibody level is known to be associated with clinical protection. These thresholds are biologically meaningful, but they are rare and pathogen-specific.\nFinally, many sero-epidemiological studies rely on finite mixture models, most commonly Gaussian mixtures, to estimate a data-driven threshold separating seronegative and seropositive subpopulations. This is the approach we focus on next, and it motivates the modelling framework introduced in the following slides."
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#a-latent-variable-of-sero-reactivity",
+    "href": "talks/Barcelona2025.html#a-latent-variable-of-sero-reactivity",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "A latent variable of sero-reactivity",
+    "text": "A latent variable of sero-reactivity\n\n\n\n\n\n\n\nSero-reactivity\nThe presence or degree of antibody reactivity, irrespective of any diagnostic threshold.\n\n\nLatent variable \\(T \\in [0,1]\\) represents the underlying serological activation state:\n\n\\(T=0\\): minimal or absent serological activity\n\n\\(T=1\\): strong or saturated antibody response\n\nAntibody level given latent seroreactivity: \\[\nY \\mid T=t \\sim\n\\mathcal{N}\\!\\big( (1-t)\\mu_0 + t\\mu_1,\\;\n                 (1-t)\\sigma_0^2 + t\\sigma_1^2 \\big)\n\\]\n\n\\(\\mu_0\\): baseline (no activation)\n\n\\(\\mu_1\\): saturation level\n\n\\(\\sigma_0^2, \\sigma_1^2\\): heterogeneity at the two extremes"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#the-model-outcome",
+    "href": "talks/Barcelona2025.html#the-model-outcome",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "The model outcome",
+    "text": "The model outcome"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#a-latent-variable-of-sero-reactivity-1",
+    "href": "talks/Barcelona2025.html#a-latent-variable-of-sero-reactivity-1",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "A latent variable of sero-reactivity",
+    "text": "A latent variable of sero-reactivity\n\n\n\n\n\n\n\nSero-reactivity\nThe presence or degree of antibody reactivity, irrespective of any diagnostic threshold.\nLatent variable \\(T \\in [0,1]\\) represents the underlying serological activation state:\n\n\\(T=0\\): minimal or absent serological activity\n\n\\(T=1\\): strong or saturated antibody response\n\nAntibody level given latent seroreactivity:\n\n\\[\nY \\mid T=t \\sim\n\\mathcal{N}\\!\\big( (1-t)\\mu_0 + t\\mu_1,\\;\n                   (1-t)\\sigma_0^2 + t\\sigma_1^2 \\big)\n\\]\n\n\\(\\mu_0\\): baseline (no activation)\n\n\\(\\mu_1\\): saturation level\n\n\\(\\sigma_0^2, \\sigma_1^2\\): heterogeneity at the two extremes"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#how-do-we-model-the-latent-variable-t",
+    "href": "talks/Barcelona2025.html#how-do-we-model-the-latent-variable-t",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "How do we model the latent variable \\(T\\) ?",
+    "text": "How do we model the latent variable \\(T\\) ?\n\n\nSingle-density approach\nThe latent sero-reactivity \\(T \\in [0,1]\\) is modelled using a single parametric distribution: \\[\nT \\sim \\text{Beta}(\\alpha,\\beta),\n\\] where \\((\\alpha,\\beta)\\) control the mean level of sero-reactivity and its heterogeneity.\nMixture-distribution approach\nThe latent variable \\(T\\) is modelled as a three-component mixture capturing graded serological states: \\[\nT \\sim \\pi_0\\,\\text{Beta}(\\alpha_0,\\beta_0)\n   + \\pi_1\\,\\text{Beta}(\\alpha_1,\\beta_1)\n   + \\pi_2\\,\\text{Beta}(\\alpha_2,\\beta_2),\n\\] with \\(\\pi_k \\ge 0\\), \\(\\sum_{k=0}^2 \\pi_k = 1\\), representing low, intermediate, and high sero-reactivity."
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#how-do-we-model-age-dependency-in-t",
+    "href": "talks/Barcelona2025.html#how-do-we-model-age-dependency-in-t",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "How do we model age dependency in \\(T\\)?",
+    "text": "How do we model age dependency in \\(T\\)?\n\n\nHow should latent sero-reactivity \\(T\\) change with age, reflecting cumulative exposure and immune maturation?\nAge-dependent structure\nLet the distribution of \\(T\\) depend on age \\(a\\) through parameters or mixing proportions, allowing gradual acquisition.\nApplication to malaria\nDifferent antigens exhibit distinct age profiles of acquisition and boosting.\n\nAMA1\nRapid acquisition in early childhood, with sero-reactivity increasing quickly at young ages.\nMSP1\nSlower and more gradual age-related increases, reflecting different exposure or immune dynamics.\n\n\n\n\nAMA1 and MSP1 are both blood-stage antigens of Plasmodium falciparum, but they differ in their immunological properties and in how antibody responses to them are acquired over age.\nAntibodies to AMA1 tend to be acquired relatively quickly after exposure. Even limited exposure early in life often leads to detectable IgG responses, and antibody levels rise steeply with age during early childhood. This makes AMA1 a marker of recent or intense exposure, particularly sensitive to changes in transmission. However, AMA1 responses can also wane relatively quickly in the absence of continued exposure and are known to be boosted strongly by repeated infections.\nBy contrast, MSP1 antibody responses are typically acquired more gradually. Detectable IgG levels often increase slowly over childhood and adolescence, reflecting cumulative rather than recent exposure. MSP1 responses are therefore often more stable over time and less sensitive to short-term fluctuations in transmission intensity, making them a marker of long-term exposure history.\nThese differences mean that AMA1 and MSP1 encode different information about transmission. AMA1 is more informative about current or recent transmission, while MSP1 reflects accumulated past exposure. From a modelling perspective, this motivates allowing the age-dependence of latent sero-reactivity to differ by antigen, rather than assuming a common functional form across markers.\nIn our framework, this translates naturally into antigen-specific age effects on the latent variable T T, capturing faster acquisition for AMA1 and slower, more gradual accumulation for MSP1, without imposing hard sero-positivity thresholds."
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#age-dependent-latent-model-for-ama1",
+    "href": "talks/Barcelona2025.html#age-dependent-latent-model-for-ama1",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Age-dependent latent model for AMA1",
+    "text": "Age-dependent latent model for AMA1\n\n\nFor age \\(a&lt;15\\) years, \\(T\\) follows a Dirac-Beta mixture: \\[\nT \\sim (1-\\pi(a))\\,\\delta_0 + \\pi(a)\\,\\mathrm{Beta}(\\alpha_2,1), \\quad\n\\pi(a)=1-\\exp(-\\lambda a).\n\\]\nFor age \\(a\\ge 15\\) years, \\(T\\) follows a single Beta with logit-linear mean: \\[\nT \\sim \\mathrm{Beta}\\big(\\mu(a)\\phi,\\,[1-\\mu(a)]\\phi\\big), \\quad\n\\log\\left\\{\\frac{\\mu(a)}{1-\\mu(a)}\\right\\}=\\eta_0+\\eta_1\\log(a).\n\\]\nContinuity constraint on the mean of \\(T\\) at \\(a=15\\): \\[\n\\eta_0=\\mathrm{logit}(\\mu_{15^-})-\\eta_1\\log(15),\n\\] with \\[\n\\mu_{15^-}=(1-\\exp(-15\\lambda))\\frac{\\alpha_2}{\\alpha_2+1}.\n\\]"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#ama1-analysis-results",
+    "href": "talks/Barcelona2025.html#ama1-analysis-results",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "AMA1 analysis: results",
+    "text": "AMA1 analysis: results"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#age-dependent-latent-model-for-msp1",
+    "href": "talks/Barcelona2025.html#age-dependent-latent-model-for-msp1",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Age-dependent latent model for MSP1",
+    "text": "Age-dependent latent model for MSP1\n\n\nLatent sero-reactivity \\(T\\) follows a single age-dependent Beta distribution: \\[\nT \\sim \\mathrm{Beta}(\\alpha(a),\\beta(a)).\n\\]\n\n\nAge-dependent shape parameters: \\[\n\\alpha(a)=\\alpha_0\\,a^{\\gamma}, \\quad \\beta(a)=\\beta_0\\,a^{\\delta(a)}.\n\\]\nPiecewise age effect in \\(\\beta(a)\\) with change-point \\(\\tau_{cp}\\): \\[\n\\delta(a)=\n\\begin{cases}\n\\delta_1, & a \\le \\tau_{cp},\\\\\n\\delta_1+\\delta_2, & a &gt; \\tau_{cp}.\n\\end{cases}\n\\]\nInduced mean of \\(T\\) for \\(a \\ge \\tau_{cp}\\): \\[\n\\mathbb{E}[T;a]=\\left\\{1+\\frac{\\beta_0}{\\alpha_0}a^{\\delta_1+\\delta_2-\\gamma}\\right\\}^{-1}.\n\\]"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#msp1-analysis-results",
+    "href": "talks/Barcelona2025.html#msp1-analysis-results",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "MSP1 analysis: results",
+    "text": "MSP1 analysis: results"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#ama1-parameter-estimates",
+    "href": "talks/Barcelona2025.html#ama1-parameter-estimates",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "AMA1: parameter estimates",
+    "text": "AMA1: parameter estimates\n\n\n\n\nParameter\n\n\nEstimate\n\n\nSD\n\n\n2.5%\n\n\n50%\n\n\n97.5%\n\n\n\n\n\n\nDistribution of Y | T\n\n\n\n\nμ₀\n\n\n-3.427\n\n\n0.077\n\n\n-3.626\n\n\n-3.470\n\n\n-3.311\n\n\n\n\nμ₁\n\n\n0.790\n\n\n0.016\n\n\n0.774\n\n\n0.808\n\n\n0.838\n\n\n\n\nσ₀\n\n\n0.606\n\n\n0.041\n\n\n0.537\n\n\n0.609\n\n\n0.695\n\n\n\n\nσ₁\n\n\n0.114\n\n\n0.022\n\n\n0.077\n\n\n0.122\n\n\n0.164\n\n\n\n\nDistribution of T (age &lt; 15)\n\n\n\n\nα₂\n\n\n1.337\n\n\n0.074\n\n\n1.248\n\n\n1.341\n\n\n1.563\n\n\n\n\nλ\n\n\n0.224\n\n\n0.032\n\n\n0.173\n\n\n0.227\n\n\n0.299\n\n\n\n\nDistribution of T (age ≥ 15)\n\n\n\n\nϕ\n\n\n3.423\n\n\n0.259\n\n\n3.078\n\n\n3.520\n\n\n4.117\n\n\n\n\nη₁\n\n\n-0.096\n\n\n0.124\n\n\n-0.399\n\n\n-0.097\n\n\n0.110\n\n\n\n\n\nThe estimate of \\(\\lambda\\) suggests that on average it takes about 4.5 years for individuals to reach higher levels of sero-reactivity."
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#ama1-analysis-model-based-histograms",
+    "href": "talks/Barcelona2025.html#ama1-analysis-model-based-histograms",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "AMA1 analysis: model-based histograms",
+    "text": "AMA1 analysis: model-based histograms"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#ama1-parameter-estimates-1",
+    "href": "talks/Barcelona2025.html#ama1-parameter-estimates-1",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "AMA1: parameter estimates",
+    "text": "AMA1: parameter estimates\n\n\n\n\nParameter\n\n\nEstimate\n\n\nSD\n\n\n2.5%\n\n\n50%\n\n\n97.5%\n\n\n\n\n\n\nDistribution of Y | T\n\n\n\n\nμ₀\n\n\n-3.427\n\n\n0.077\n\n\n-3.626\n\n\n-3.470\n\n\n-3.311\n\n\n\n\nμ₁\n\n\n0.790\n\n\n0.016\n\n\n0.774\n\n\n0.808\n\n\n0.838\n\n\n\n\nσ₀\n\n\n0.606\n\n\n0.041\n\n\n0.537\n\n\n0.609\n\n\n0.695\n\n\n\n\nσ₁\n\n\n0.114\n\n\n0.022\n\n\n0.077\n\n\n0.122\n\n\n0.164\n\n\n\n\nDistribution of T (age &lt; 15)\n\n\n\n\nα₂\n\n\n1.337\n\n\n0.074\n\n\n1.248\n\n\n1.341\n\n\n1.563\n\n\n\n\nλ\n\n\n0.224\n\n\n0.032\n\n\n0.173\n\n\n0.227\n\n\n0.299\n\n\n\n\nDistribution of T (age ≥ 15)\n\n\n\n\nϕ\n\n\n3.423\n\n\n0.259\n\n\n3.078\n\n\n3.520\n\n\n4.117\n\n\n\n\nη₁\n\n\n-0.096\n\n\n0.124\n\n\n-0.399\n\n\n-0.097\n\n\n0.110\n\n\n\n\n\nThe estimate of \\(\\lambda\\) suggests that on average it takes about 4.5 years for individuals to reach higher levels of sero-reactivity."
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#msp1-parameter-estimates",
+    "href": "talks/Barcelona2025.html#msp1-parameter-estimates",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "MSP1: parameter estimates",
+    "text": "MSP1: parameter estimates\n\n\n\n\nParameter\n\n\nMean\n\n\nSD\n\n\n2.5%\n\n\n50%\n\n\n97.5%\n\n\n\n\n\n\nDistribution of Y | T\n\n\n\n\nμ0\n\n\n-4.481\n\n\n0.042\n\n\n-4.567\n\n\n-4.479\n\n\n-4.404\n\n\n\n\nμ1\n\n\n1.255\n\n\n0.026\n\n\n1.205\n\n\n1.255\n\n\n1.307\n\n\n\n\nlog σ0\n\n\n-0.677\n\n\n0.043\n\n\n-0.764\n\n\n-0.676\n\n\n-0.599\n\n\n\n\nlog σ1\n\n\n-5.716\n\n\n0.536\n\n\n-6.892\n\n\n-5.666\n\n\n-4.874\n\n\n\n\nDistribution of T\n\n\n\n\nα0\n\n\n0.093\n\n\n0.036\n\n\n0.025\n\n\n0.093\n\n\n0.166\n\n\n\n\nγ1\n\n\n0.277\n\n\n0.011\n\n\n0.256\n\n\n0.277\n\n\n0.297\n\n\n\n\nβ0\n\n\n0.755\n\n\n0.037\n\n\n0.684\n\n\n0.754\n\n\n0.827\n\n\n\n\nδ1\n\n\n0.110\n\n\n0.018\n\n\n0.075\n\n\n0.110\n\n\n0.145\n\n\n\n\nτcp\n\n\n11.623\n\n\n0.406\n\n\n11.004\n\n\n11.667\n\n\n12.197\n\n\n\n\nδ2\n\n\n-0.061\n\n\n0.010\n\n\n-0.080\n\n\n-0.061\n\n\n-0.042"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#predicted-antibody-levels-in-ama1-and-msp1",
+    "href": "talks/Barcelona2025.html#predicted-antibody-levels-in-ama1-and-msp1",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Predicted antibody levels in AMA1 and MSP1",
+    "text": "Predicted antibody levels in AMA1 and MSP1"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#summary-and-conclusions",
+    "href": "talks/Barcelona2025.html#summary-and-conclusions",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Summary and conclusions",
+    "text": "Summary and conclusions\n\n\nWe proposed a latent-variable framework that generalizes finite mixture models.\nIt allows flexible age-dependent modelling.\nModelling of the latent variable (seroreactivity) can be done using data-driven or mechanistic approaches.\nWe are working to extend the proposed model to\n\nanalyse geostatistical and longitudinal data-sets;\njointly model multiple antibodies."
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#msp1-parameter-estimates-1",
+    "href": "talks/Barcelona2025.html#msp1-parameter-estimates-1",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "MSP1: parameter estimates",
+    "text": "MSP1: parameter estimates\n\n\n\n\nParameter\n\n\nMean\n\n\nSD\n\n\n2.5%\n\n\n50%\n\n\n97.5%\n\n\n\n\n\n\nDistribution of Y | T\n\n\n\n\nμ0\n\n\n-4.481\n\n\n0.042\n\n\n-4.567\n\n\n-4.479\n\n\n-4.404\n\n\n\n\nμ1\n\n\n1.255\n\n\n0.026\n\n\n1.205\n\n\n1.255\n\n\n1.307\n\n\n\n\nlog σ0\n\n\n-0.677\n\n\n0.043\n\n\n-0.764\n\n\n-0.676\n\n\n-0.599\n\n\n\n\nlog σ1\n\n\n-5.716\n\n\n0.536\n\n\n-6.892\n\n\n-5.666\n\n\n-4.874\n\n\n\n\nDistribution of T\n\n\n\n\nα0\n\n\n0.093\n\n\n0.036\n\n\n0.025\n\n\n0.093\n\n\n0.166\n\n\n\n\nγ1\n\n\n0.277\n\n\n0.011\n\n\n0.256\n\n\n0.277\n\n\n0.297\n\n\n\n\nβ0\n\n\n0.755\n\n\n0.037\n\n\n0.684\n\n\n0.754\n\n\n0.827\n\n\n\n\nδ1\n\n\n0.110\n\n\n0.018\n\n\n0.075\n\n\n0.110\n\n\n0.145\n\n\n\n\nτcp\n\n\n11.623\n\n\n0.406\n\n\n11.004\n\n\n11.667\n\n\n12.197\n\n\n\n\nδ2\n\n\n-0.061\n\n\n0.010\n\n\n-0.080\n\n\n-0.061\n\n\n-0.042"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#inference-and-model-validation",
+    "href": "talks/Barcelona2025.html#inference-and-model-validation",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Inference and model validation",
+    "text": "Inference and model validation\n\n\nTwo complementary inference approaches are used:\n\nfull maximum likelihood, and\n\na fast histogram-based approximation for exploratory fitting and initialisation.\n\nConditional on the latent immune state \\(T\\), antibody concentrations are Gaussian with mean and variance interpolating between low and high sero-reactivity extremes.\nThe marginal density of \\(Y\\) is obtained by integrating out \\(T\\): \\[\nf(y;\\boldsymbol\\theta,\\boldsymbol\\psi)=\\int_0^1\n\\phi\\!\\left(y;(1-t)\\mu_0+t\\mu_1,(1-t)\\sigma_0^2+t\\sigma_1^2\\right)\n\\,g_T(t;\\boldsymbol\\psi)\\,dt.\n\\]\nExact maximum likelihood is based on \\[\n\\ell(\\boldsymbol\\theta,\\boldsymbol\\psi)=\\sum_{i=1}^n\\log f(y_i;\\boldsymbol\\theta,\\boldsymbol\\psi),\n\\] but direct maximisation is computationally intensive due to repeated numerical integration.\nTo reduce computation, data are summarised into a histogram.\nLet \\(\\widehat f_j = n_j/(n\\Delta_j)\\) be the empirical density in bin \\(j\\), and approximate model probabilities by evaluation at bin midpoints: \\[\np_j(\\boldsymbol\\theta,\\boldsymbol\\psi)\\approx f(m_j;\\boldsymbol\\theta,\\boldsymbol\\psi)\\Delta_j.\n\\]\nParameters are estimated by minimising an \\(L_2\\) distance between empirical and model densities: \\[\nQ(\\boldsymbol\\theta,\\boldsymbol\\psi)=\\sum_{j=1}^J\\{\\widehat f_j-f(m_j;\\boldsymbol\\theta,\\boldsymbol\\psi)\\}^2.\n\\] This yields a robust minimum-distance estimator and is computationally efficient when \\(J\\ll n\\)."
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#inference",
+    "href": "talks/Barcelona2025.html#inference",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Inference",
+    "text": "Inference\n\n\nTwo complementary inference approaches are used:\n\nfull maximum likelihood, and\n\na fast histogram-based approximation for exploratory fitting and initialisation.\n\nConditional on the latent immune state \\(T\\), antibody concentrations are Gaussian with mean and variance interpolating between low and high sero-reactivity extremes.\nThe marginal density of \\(Y\\) is obtained by integrating out \\(T\\): \\[\nf(y;\\boldsymbol\\theta,\\boldsymbol\\psi)=\\int_0^1\n\\phi\\!\\left(y;(1-t)\\mu_0+t\\mu_1,(1-t)\\sigma_0^2+t\\sigma_1^2\\right)\n\\,g_T(t;\\boldsymbol\\psi)\\,dt.\n\\]\nExact maximum likelihood is based on \\[\n\\ell(\\boldsymbol\\theta,\\boldsymbol\\psi)=\\sum_{i=1}^n\\log f(y_i;\\boldsymbol\\theta,\\boldsymbol\\psi),\n\\] but direct maximisation is computationally intensive due to repeated numerical integration.\nTo reduce computation, data are summarised into a histogram.\nLet \\(\\widehat f_j = n_j/(n\\Delta_j)\\) be the empirical density in bin \\(j\\), and approximate model probabilities by evaluation at bin midpoints: \\[\np_j(\\boldsymbol\\theta,\\boldsymbol\\psi)\\approx f(m_j;\\boldsymbol\\theta,\\boldsymbol\\psi)\\Delta_j.\n\\]\nParameters are estimated by minimising an \\(L_2\\) distance between empirical and model densities: \\[\nQ(\\boldsymbol\\theta,\\boldsymbol\\psi)=\\sum_{j=1}^J\\{\\widehat f_j-f(m_j;\\boldsymbol\\theta,\\boldsymbol\\psi)\\}^2.\n\\] This yields a robust minimum-distance estimator and is computationally efficient when \\(J\\ll n\\)."
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#exploratory-analysis-ama1",
+    "href": "talks/Barcelona2025.html#exploratory-analysis-ama1",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Exploratory analysis: AMA1",
+    "text": "Exploratory analysis: AMA1"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#exploratory-analysis-msp1",
+    "href": "talks/Barcelona2025.html#exploratory-analysis-msp1",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Exploratory analysis: MSP1",
+    "text": "Exploratory analysis: MSP1"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#antibody-measurement-how-elisa-works",
+    "href": "talks/Barcelona2025.html#antibody-measurement-how-elisa-works",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Antibody measurement: How ELISA Works",
+    "text": "Antibody measurement: How ELISA Works"
+  },
+  {
+    "objectID": "talks/Lund2025.html",
+    "href": "talks/Lund2025.html",
+    "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
+    "section": "",
+    "text": "Neglected Tropical Diseases and Mass Drug Administration\nThe standard geostatistical model for prevalence mapping\nA decay-adjusted spatio-temporal model\nApplication to lymphatic filariasis in Madagascar\nSummary"
   }
 ]

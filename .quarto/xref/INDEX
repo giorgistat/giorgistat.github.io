@@ -100,5 +100,8 @@
   },
   "teaching/MBG/geostat_pred_rss2025.qmd": {
     "geostat_pred_rss2025.html": "138d31ac"
+  },
+  "talks/Barcelona2025.qmd": {
+    "Barcelona2025.html": "8dde3668"
   }
 }

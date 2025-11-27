@@ -1,0 +1,540 @@
+---
+title: "A flexible class of latent variable models for the analysis of antibody response data"
+author:
+  - name: Emanuele Giorgi
+    affiliations:
+      - name: University of Birmingham
+  - name: Jonas Wallin
+    affiliations:
+      - name: Lund University
+execute:
+  freeze: true
+date: ""
+format:
+  revealjs:
+    theme: solarized
+    transition: fade
+    slide-number: true
+    chalkboard: true
+    logo: "figures/uob_logo_v2.jpg"
+    footer: ""
+---
+
+## Presentation Overview
+
+1.  **A brief overview of the serology**
+2.  **Current approaches for the analysis of antibody data**
+3.  **The proposed modelling approach**
+4.  **Application to malaria sero-epidemiology**
+5.  **Summary**
+
+------------------------------------------------------------------------
+
+## Key definitions
+
+::::: columns
+::: {.column width="60%"}
+-   **Antigen**\
+    A molecule (often a protein or polysaccharide) from a pathogen that is recognized by the immune system and can trigger an immune response.
+
+-   **Antibody**\
+    A protein produced by B cells that specifically binds to an antigen, reflecting current or past exposure to the pathogen.
+:::
+
+::: {.column width="40%"}
+![](figures/antib_antig.png){fig-align="center"}
+:::
+:::::
+
+## Immune response to infectious diseases
+
+![](figures/antib_covid.jpg){fig-align="center" out-width="90%"}
+
+::: notes
+Following infection, the adaptive immune response is initiated through antigen recognition by naïve B cells. Different classes of antibodies play distinct roles in this process. IgM is usually the first antibody produced following infection and reflects recent or ongoing exposure, but is short-lived. IgG is produced later, after immune maturation and class switching, and persists substantially longer, providing a durable marker of past exposure. Other antibody classes, such as IgA and IgE, play important biological roles but are less commonly used in sero-epidemiological studies.
+
+The initiation of the adaptive immune response is not immediate, introducing a delay between pathogen entry and measurable antibody responses. During the incubation period, the pathogen replicates while innate immune mechanisms dominate early control. Antigen processing and presentation occur during this phase, and B-cell activation begins, but IgG antibodies are typically not yet detectable, creating a systematic lag between infection onset and serological evidence of exposure.
+
+As infection progresses into the early symptomatic phase, short-lived antibody classes, particularly IgM, start to rise. At the same time, class-switch recombination is initiated and IgG production begins, although IgG levels remain relatively low. For this reason, IgG-based assays often have limited sensitivity very early in the course of disease.
+
+During the peak symptomatic phase, or shortly thereafter, antigen levels decline as immune control is established. Plasma cells produce increasing quantities of IgG, leading to a rapid rise in IgG levels, which typically peak around or shortly after symptom resolution. The timing and magnitude of this peak depend on pathogen characteristics, infection intensity, and host immune status.
+
+In the recovery and convalescent phase, IgM wanes rapidly, while IgG declines much more slowly, often following an approximately exponential decay. Long-lived plasma cells and memory B cells maintain persistent IgG titres, which may remain detectable for months or years. Subsequent exposure or reinfection usually results in faster and stronger boosting of IgG, compared with the primary response.
+
+Because of this delayed but durable behaviour, IgG provides an integrated record of infection history, rather than a snapshot of current infection. This makes IgG the most commonly measured antibody isotype in sero-epidemiology.
+:::
+
+::: footer
+Denning DW, Kilcoyne A, Ucer C (2020). *Non-infectious status indicated by detectable IgG antibody to SARS-CoV-2*.\
+**British Dental Journal**, 229:521–524. [Link to article](https://www.nature.com/articles/s41415-020-2228-9)
+:::
+
+## When are IgG responses informative?
+
+::: {style="font-size:0.75em; line-height:1.15;"}
+-   Infections with many **asymptomatic** cases\
+    malaria, dengue, chikungunya, Zika
+
+-   Acute infections with **short diagnostic windows**\
+    SARS-CoV-2, influenza, yellow fever
+
+-   Diseases with **repeated or cumulative exposure**\
+    malaria, schistosomiasis, soil-transmitted helminths, onchocerciasis
+
+-   **Chronic** infection or **elimination** settings\
+    trachoma, lymphatic filariasis, onchocerciasis
+
+-   [Not informative]{.underline} when **cell-mediated** immunity is dominant\
+    tuberculosis, leishmaniasis
+:::
+
+::: notes
+IgG responses are most informative in settings where infection history cannot be reliably reconstructed from clinical or diagnostic data alone.
+
+Infections with a high proportion of asymptomatic or mildly symptomatic cases, such as malaria, dengue, chikungunya and Zika, are poorly captured by routine surveillance. In these contexts, IgG provides a cumulative record of past exposure at both individual and population levels.
+
+IgG is also valuable for acute infections with short diagnostic windows, such as SARS-CoV-2, influenza and yellow fever, where molecular or antigen-based detection is only possible for a limited period. Persisting IgG allows retrospective assessment of transmission.
+
+Diseases characterised by repeated or ongoing exposure, such as malaria, schistosomiasis, soil-transmitted helminths and onchocerciasis, are another important application. Here, IgG levels integrate multiple infection events and can be informative about long-term transmission intensity rather than single episodes.
+
+IgG responses are also widely used in chronic infections and in elimination or near-elimination settings, such as trachoma and lymphatic filariasis, where clinical cases become rare but evidence of residual transmission is still required.
+
+However, there are important contexts where IgG is less informative. For infections that induce weak or short-lived systemic antibody responses, particularly some enteric bacterial infections such as cholera or non-typhoidal Salmonella, IgG levels may not reliably reflect exposure.
+
+IgG is also less informative for diseases in which immunity is primarily cell-mediated rather than antibody-mediated, or where circulating IgG does not correlate well with protection or recent transmission, limiting its interpretability without additional modelling.
+
+In interpreting serological data, it is useful to contrast antibody-mediated and cell-mediated immunity. Antibody-mediated, or humoral, immunity is driven by circulating antibodies such as IgM and IgG, which target pathogens or antigens present in the blood or other extracellular spaces. For this reason, antibody responses are particularly useful for population surveillance, for reconstructing exposure history, and for epidemiological inference based on serology. By contrast, cell-mediated immunity acts primarily through T cells that recognise and destroy infected host cells. In diseases where immune control relies predominantly on these cellular mechanisms, circulating antibody levels may provide only limited information about infection status or protection, and are therefore often poorly captured by serology alone.
+:::
+
+## Seropositivity and seronegativity {.smaller}
+
+::: {style="font-size:1em; line-height:1.15;"}
+-   **Seronegativity**\
+    Absence of detectable antibody response to a given antigen.
+
+-   **Seropositivity**\
+    Antibody concentration exceeding a predefined assay-specific threshold, interpreted as evidence of prior exposure or immunity.
+
+**Common approaches to serostatus classification**
+
+-   Manufacturer-defined assay cut-offs\
+-   Thresholds based on negative controls\
+    (e.g. mean $+$ 2 or 3 SDs)\
+-   ROC-based cut-offs using known positive/negative samples\
+-   Immunological correlates of protection (when available)\
+-   Data-driven thresholds via finite mixture models
+:::
+
+::: notes
+Here I want to briefly clarify what we mean by seropositivity and how it is typically defined in practice.
+
+The most common approach relies on **manufacturer-provided cut-offs**, which are often derived under laboratory conditions and may not translate well to field settings or different epidemiological contexts.
+
+Another widely used method is based on **negative controls**, for example defining seropositivity as antibody levels exceeding the mean of a presumed negative population by two or three standard deviations. This is simple and reproducible, but it depends critically on having a truly unexposed reference group, which is often difficult to identify.
+
+When well-characterised positive and negative samples are available, researchers sometimes use **ROC curve analysis** to choose a cut-off that optimises sensitivity and specificity. This approach is statistically principled, but again depends on the availability and representativeness of validation samples. (ROC-based cut-offs require reference samples with assumed known status. Positive samples usually come from PCR- or clinically confirmed cases, often biased toward recent or symptomatic infections. Negative samples typically come from presumed unexposed populations, such as blood donors from non-endemic areas or historical sera. A threshold is then chosen to balance sensitivity and specificity along the ROC curve. The limitation is that these reference samples are rarely representative of the full immune spectrum in endemic settings, so ROC cut-offs often fail to capture intermediate or waning antibody responses.)
+
+In a few settings, **immunological correlates of protection** are available, meaning that a specific antibody level is known to be associated with clinical protection. These thresholds are biologically meaningful, but they are rare and pathogen-specific.
+
+Finally, many sero-epidemiological studies rely on **finite mixture models**, most commonly Gaussian mixtures, to estimate a data-driven threshold separating seronegative and seropositive subpopulations. This is the approach we focus on next, and it motivates the modelling framework introduced in the following slides.
+:::
+
+## Antibody data and mixtures {.smaller}
+
+::: {style="font-size:0.9em; line-height:1.15;"}
+-   Quantitative antibody concentration $Y_i$ (e.g. OD values)\
+-   Classical approach: two-component Gaussian mixture\
+-   Seronegative vs seropositive components
+
+$$
+f(y) = \pi_0 \mathcal{N}(y ; \mu_0, \sigma_0^2) 
+     + \pi_1 \mathcal{N}(y ; \mu_1, \sigma_1^2),
+\quad \pi_0 + \pi_1 = 1
+$$
+
+![](figures/antibody_mix.png){width="85%"}
+:::
+
+------------------------------------------------------------------------
+
+## A latent variable of sero-reactivity
+
+:::: {style="font-size:0.65em; line-height:1.15; max-height:650px; overflow-y:auto; padding-right:10px;"}
+![](figures/seroreactivity.png){width="55%," fig-align="center"}
+
+-   **Sero-reactivity**\
+    The presence or degree of antibody reactivity, irrespective of any diagnostic threshold.
+
+::: incremental
+-   Latent variable $T \in [0,1]$ represents the underlying serological activation state:
+    -   $T=0$: minimal or absent serological activity\
+    -   $T=1$: strong or saturated antibody response
+-   Antibody level given latent seroreactivity: $$
+    Y \mid T=t \sim 
+    \mathcal{N}\!\big( (1-t)\mu_0 + t\mu_1,\;
+                     (1-t)\sigma_0^2 + t\sigma_1^2 \big)
+    $$
+    -   $\mu_0$: baseline (no activation)\
+    -   $\mu_1$: saturation level\
+    -   $\sigma_0^2, \sigma_1^2$: heterogeneity at the two extremes
+:::
+::::
+
+## Link with antibody acquisition models {.smaller}
+
+::: incremental
+-   Classical antibody acquisition model\
+    ([Yman et al., 2016](https://www.nature.com/articles/srep19472)) $$
+    \mathbb{E}[Y;a] = f(a) = \mu_0 + (\mu_1 - \mu_0)\{1 - \exp(-r a)\},
+    $$ with age $a$ and acquisition rate $r > 0$.
+
+-   Interpretation in the latent sero-reactivity framework $$
+    \mathbb{E}[T;a] = \frac{f(a)-\mu_0}{\mu_1-\mu_0}
+          = 1 - \exp(-r a),
+    $$
+
+-   Resulting expectation of the antibody level $$
+    \mathbb{E}[Y;a] = \mu_0 + (\mu_1-\mu_0)\,\mathbb{E}[T;a].
+    $$
+:::
+
+## How do we model the latent variable $T$ ? {.smaller}
+
+:::: incremental
+::: {style="font-size:1em; line-height:1.15;"}
+-   **Single-density approach**\
+    The latent sero-reactivity $T \in [0,1]$ is modelled using a single parametric distribution: $$
+    T \sim \text{Beta}(\alpha,\beta),
+    $$ where $(\alpha,\beta)$ control the mean level of sero-reactivity and its heterogeneity.
+-   **Mixture-distribution approach**\
+    The latent variable $T$ is modelled as a three-component mixture capturing graded serological states: $$
+    T \sim \pi_0\,\text{Beta}(\alpha_0,\beta_0)
+       + \pi_1\,\text{Beta}(\alpha_1,\beta_1)
+       + \pi_2\,\text{Beta}(\alpha_2,\beta_2),
+    $$ with $\pi_k \ge 0$, $\sum_{k=0}^2 \pi_k = 1$, representing low, intermediate, and high sero-reactivity.
+:::
+::::
+
+## Single Beta model for $T$ {.smaller}
+
+![](figures/dens_lbmg.png){fig-align="center" width="70%"}
+
+## How do we model age dependency in $T$? {.smaller}
+
+:::: incremental
+::: {style="font-size:1.15em; line-height:1.15;"}
+-   How should latent sero-reactivity $T$ change with age, reflecting cumulative exposure and immune maturation?
+-   **Age-dependent structure**\
+    Let the distribution of $T$ depend on age $a$ through parameters or mixing proportions, allowing gradual acquisition.
+-   Application to **malaria**\
+    Different antigens exhibit distinct age profiles of acquisition and boosting.
+    -   AMA1\
+        Rapid acquisition in early childhood, with sero-reactivity increasing quickly at young ages.
+    -   MSP1\
+        Slower and more gradual age-related increases, reflecting different exposure or immune dynamics.
+:::
+::::
+
+::: notes
+AMA1 and MSP1 are both blood-stage antigens of Plasmodium falciparum, but they differ in their immunological properties and in how antibody responses to them are acquired over age.
+
+Antibodies to AMA1 tend to be acquired relatively quickly after exposure. Even limited exposure early in life often leads to detectable IgG responses, and antibody levels rise steeply with age during early childhood. This makes AMA1 a marker of recent or intense exposure, particularly sensitive to changes in transmission. However, AMA1 responses can also wane relatively quickly in the absence of continued exposure and are known to be boosted strongly by repeated infections.
+
+By contrast, MSP1 antibody responses are typically acquired more gradually. Detectable IgG levels often increase slowly over childhood and adolescence, reflecting cumulative rather than recent exposure. MSP1 responses are therefore often more stable over time and less sensitive to short-term fluctuations in transmission intensity, making them a marker of long-term exposure history.
+
+These differences mean that AMA1 and MSP1 encode different information about transmission. AMA1 is more informative about current or recent transmission, while MSP1 reflects accumulated past exposure. From a modelling perspective, this motivates allowing the age-dependence of latent sero-reactivity to differ by antigen, rather than assuming a common functional form across markers.
+
+In our framework, this translates naturally into antigen-specific age effects on the latent variable T T, capturing faster acquisition for AMA1 and slower, more gradual accumulation for MSP1, without imposing hard sero-positivity thresholds.
+:::
+
+## Age-dependent latent model for AMA1 {.smaller}
+
+:::: incremental
+::: {style="font-size:0.85em; line-height:1.15;"}
+-   For age $a<15$ years, $T$ follows a Dirac-Beta mixture: $$
+    T \sim (1-\pi(a))\,\delta_0 + \pi(a)\,\mathrm{Beta}(\alpha_2,1), \quad
+    \pi(a)=1-\exp(-\lambda a).
+    $$
+-   For age $a\ge 15$ years, $T$ follows a single Beta with logit-linear mean: $$
+    T \sim \mathrm{Beta}\big(\mu(a)\phi,\,[1-\mu(a)]\phi\big), \quad
+    \log\left\{\frac{\mu(a)}{1-\mu(a)}\right\}=\eta_0+\eta_1\log(a).
+    $$
+-   Continuity constraint on the mean of $T$ at $a=15$: $$
+    \eta_0=\mathrm{logit}(\mu_{15^-})-\eta_1\log(15),
+    $$ with $$
+    \mu_{15^-}=(1-\exp(-15\lambda))\frac{\alpha_2}{\alpha_2+1}.
+    $$
+:::
+::::
+
+## AMA1: parameter estimates 
+
+<table style="font-size:0.65em; line-height:1.15; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="border:none;">Parameter</th>
+<th style="border:none;">Estimate</th>
+<th style="border:none;">SD</th>
+<th style="border:none;">2.5%</th>
+<th style="border:none;">50%</th>
+<th style="border:none;">97.5%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="6" style="border:none;"><em>Distribution of Y | T</em></td>
+</tr>
+<tr>
+<td style="border:none;">μ₀</td><td style="border:none;">-3.427</td><td style="border:none;">0.077</td><td style="border:none;">-3.626</td><td style="border:none;">-3.470</td><td style="border:none;">-3.311</td>
+</tr>
+<tr>
+<td style="border:none;">μ₁</td><td style="border:none;">0.790</td><td style="border:none;">0.016</td><td style="border:none;">0.774</td><td style="border:none;">0.808</td><td style="border:none;">0.838</td>
+</tr>
+<tr>
+<td style="border:none;">σ₀</td><td style="border:none;">0.606</td><td style="border:none;">0.041</td><td style="border:none;">0.537</td><td style="border:none;">0.609</td><td style="border:none;">0.695</td>
+</tr>
+<tr>
+<td style="border:none;">σ₁</td><td style="border:none;">0.114</td><td style="border:none;">0.022</td><td style="border:none;">0.077</td><td style="border:none;">0.122</td><td style="border:none;">0.164</td>
+</tr>
+<tr>
+<td colspan="6" style="border:none;"><em>Distribution of T (age &lt; 15)</em></td>
+</tr>
+<tr>
+<td style="border:none;">α₂</td><td style="border:none;">1.337</td><td style="border:none;">0.074</td><td style="border:none;">1.248</td><td style="border:none;">1.341</td><td style="border:none;">1.563</td>
+</tr>
+<tr>
+<td style="border:none;">λ</td><td style="border:none;">0.224</td><td style="border:none;">0.032</td><td style="border:none;">0.173</td><td style="border:none;">0.227</td><td style="border:none;">0.299</td>
+</tr>
+<tr>
+<td colspan="6" style="border:none;"><em>Distribution of T (age ≥ 15)</em></td>
+</tr>
+<tr>
+<td style="border:none;">ϕ</td><td style="border:none;">3.423</td><td style="border:none;">0.259</td><td style="border:none;">3.078</td><td style="border:none;">3.520</td><td style="border:none;">4.117</td>
+</tr>
+<tr>
+<td style="border:none;">η₁</td><td style="border:none;">-0.096</td><td style="border:none;">0.124</td><td style="border:none;">-0.399</td><td style="border:none;">-0.097</td><td style="border:none;">0.110</td>
+</tr>
+</tbody>
+</table>
+
+
+::: {style="font-size:0.85em; line-height:1.15;"}
+*The estimate of* $\lambda$ suggests that on average it takes about 4.5 years for individuals to reach higher levels of sero-reactivity.
+:::
+
+## AMA1 analysis: model-based histograms
+
+![](figures/joint_ama.png){width="55%," fig-align="center"}
+
+## Age-dependent latent model for MSP1 {.smaller}
+
+:::: {style="font-size:0.85em; line-height:1.15;"}
+-   Latent sero-reactivity $T$ follows a single age-dependent Beta distribution: $$
+    T \sim \mathrm{Beta}(\alpha(a),\beta(a)).
+    $$
+
+::: incremental
+-   Age-dependent shape parameters: $$
+    \alpha(a)=\alpha_0\,a^{\gamma}, \quad \beta(a)=\beta_0\,a^{\delta(a)}.
+    $$
+-   Piecewise age effect in $\beta(a)$ with change-point $\tau_{cp}$: $$
+    \delta(a)=
+    \begin{cases}
+    \delta_1, & a \le \tau_{cp},\\
+    \delta_1+\delta_2, & a > \tau_{cp}.
+    \end{cases}
+    $$
+-   Induced mean of $T$ for $a \ge \tau_{cp}$: $$
+    \mathbb{E}[T;a]=\left\{1+\frac{\beta_0}{\alpha_0}a^{\delta_1+\delta_2-\gamma}\right\}^{-1}.
+    $$
+:::
+::::
+
+## MSP1: parameter estimates 
+
+<table style="font-size:0.65em; line-height:1.15; border-collapse:collapse;">
+<thead>
+<tr>
+<th style="border:none;">Parameter</th>
+<th style="border:none;">Mean</th>
+<th style="border:none;">SD</th>
+<th style="border:none;">2.5%</th>
+<th style="border:none;">50%</th>
+<th style="border:none;">97.5%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="6" style="border:none;"><em>Distribution of Y | T</em></td>
+</tr>
+<tr>
+<td style="border:none;">&mu;<sub>0</sub></td>
+<td style="border:none;">-4.481</td>
+<td style="border:none;">0.042</td>
+<td style="border:none;">-4.567</td>
+<td style="border:none;">-4.479</td>
+<td style="border:none;">-4.404</td>
+</tr>
+<tr>
+<td style="border:none;">&mu;<sub>1</sub></td>
+<td style="border:none;">1.255</td>
+<td style="border:none;">0.026</td>
+<td style="border:none;">1.205</td>
+<td style="border:none;">1.255</td>
+<td style="border:none;">1.307</td>
+</tr>
+<tr>
+<td style="border:none;">log&nbsp;&sigma;<sub>0</sub></td>
+<td style="border:none;">-0.677</td>
+<td style="border:none;">0.043</td>
+<td style="border:none;">-0.764</td>
+<td style="border:none;">-0.676</td>
+<td style="border:none;">-0.599</td>
+</tr>
+<tr>
+<td style="border:none;">log&nbsp;&sigma;<sub>1</sub></td>
+<td style="border:none;">-5.716</td>
+<td style="border:none;">0.536</td>
+<td style="border:none;">-6.892</td>
+<td style="border:none;">-5.666</td>
+<td style="border:none;">-4.874</td>
+</tr>
+<tr>
+<td colspan="6" style="border:none;"><em>Distribution of T</em></td>
+</tr>
+<tr>
+<td style="border:none;">&alpha;<sub>0</sub></td>
+<td style="border:none;">0.093</td>
+<td style="border:none;">0.036</td>
+<td style="border:none;">0.025</td>
+<td style="border:none;">0.093</td>
+<td style="border:none;">0.166</td>
+</tr>
+<tr>
+<td style="border:none;">&gamma;<sub>1</sub></td>
+<td style="border:none;">0.277</td>
+<td style="border:none;">0.011</td>
+<td style="border:none;">0.256</td>
+<td style="border:none;">0.277</td>
+<td style="border:none;">0.297</td>
+</tr>
+<tr>
+<td style="border:none;">&beta;<sub>0</sub></td>
+<td style="border:none;">0.755</td>
+<td style="border:none;">0.037</td>
+<td style="border:none;">0.684</td>
+<td style="border:none;">0.754</td>
+<td style="border:none;">0.827</td>
+</tr>
+<tr>
+<td style="border:none;">&delta;<sub>1</sub></td>
+<td style="border:none;">0.110</td>
+<td style="border:none;">0.018</td>
+<td style="border:none;">0.075</td>
+<td style="border:none;">0.110</td>
+<td style="border:none;">0.145</td>
+</tr>
+<tr>
+<td style="border:none;">&tau;<sub>cp</sub></td>
+<td style="border:none;">11.623</td>
+<td style="border:none;">0.406</td>
+<td style="border:none;">11.004</td>
+<td style="border:none;">11.667</td>
+<td style="border:none;">12.197</td>
+</tr>
+<tr>
+<td style="border:none;">&delta;<sub>2</sub></td>
+<td style="border:none;">-0.061</td>
+<td style="border:none;">0.010</td>
+<td style="border:none;">-0.080</td>
+<td style="border:none;">-0.061</td>
+<td style="border:none;">-0.042</td>
+</tr>
+</tbody>
+</table>
+
+
+## MSP1 analysis: results
+
+![](figures/joint_msp.png){width="55%," fig-align="center"}
+
+## Predicted antibody levels in AMA1 and MSP1
+
+![](figures/fig_expected_log_ab_by_age.png)
+
+## Summary and conclusions {.smaller}
+
+:::: {style="font-size:1.2em; line-height:1.15;"}
+::: incremental
+-   We proposed a latent-variable framework that [generalizes finite mixture models]{.underline}.
+-   It allows [flexible age-dependent modelling.]{.underline}
+-   Modelling of the latent variable (seroreactivity) can be done using [data-driven or mechanistic approaches]{.underline}.
+-   We are working to extend the proposed model to
+    -   analyse [geostatistical]{.underline} and [longitudinal]{.underline} data-sets;
+    -   [jointly model]{.underline} multiple antibodies.
+:::
+::::
+
+## THANK YOU! {.smaller}
+
+<center>![](figures/questions.jpg){height="4in"}</center>
+
+🔗 [giorgistat.github.io](https://giorgistat.github.io)\
+📧 e.giorgi\@bham.ac.uk\
+📍 BESTEAM, Department of Applied Health Sciences, University of Birmingham
+
+
+## Inference {.smaller}
+
+<div style="font-size:0.8em; line-height:1.15; max-height:650px; overflow-y:auto; padding-right:10px;">
+
+- Two complementary inference approaches are used:  
+  (i) full maximum likelihood, and  
+  (ii) a fast histogram-based approximation for exploratory fitting and initialisation.
+
+- Conditional on the latent immune state $T$, antibody concentrations are Gaussian with mean and variance interpolating between low and high sero-reactivity extremes.  
+  The marginal density of $Y$ is obtained by integrating out $T$:
+$$
+f(y;\boldsymbol\theta,\boldsymbol\psi)=\int_0^1 
+\phi\!\left(y;(1-t)\mu_0+t\mu_1,(1-t)\sigma_0^2+t\sigma_1^2\right)
+\,g_T(t;\boldsymbol\psi)\,dt.
+$$
+
+- Exact maximum likelihood is based on
+$$
+\ell(\boldsymbol\theta,\boldsymbol\psi)=\sum_{i=1}^n\log f(y_i;\boldsymbol\theta,\boldsymbol\psi),
+$$
+but direct maximisation is computationally intensive due to repeated numerical integration.
+
+- To reduce computation, data are summarised into a histogram.  
+  Let $\widehat f_j = n_j/(n\Delta_j)$ be the empirical density in bin $j$, and approximate model probabilities by evaluation at bin midpoints:
+$$
+p_j(\boldsymbol\theta,\boldsymbol\psi)\approx f(m_j;\boldsymbol\theta,\boldsymbol\psi)\Delta_j.
+$$
+
+- Parameters are estimated by minimising an $L_2$ distance between empirical and model densities:
+$$
+Q(\boldsymbol\theta,\boldsymbol\psi)=\sum_{j=1}^J\{\widehat f_j-f(m_j;\boldsymbol\theta,\boldsymbol\psi)\}^2.
+$$
+  This yields a robust minimum-distance estimator and is computationally efficient when $J\ll n$.
+
+</div>
+
+## Exploratory analysis: AMA1
+
+![](figures/ama_expl.png){width="85%," fig-align="center"}
+
+## Exploratory analysis: MSP1
+
+![](figures/msp_expl.png){width="85%," fig-align="center"}
+
+## Antibody measurement: How ELISA Works {.smaller}
+
+<iframe
+  src="https://www.youtube.com/embed/ERk0hwqhyDw"
+  style="width:100%; height:65vh;"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen>
+</iframe>
+
