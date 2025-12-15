@@ -1,3 +1,450 @@
 /* css styles */
 
+/* ==========================================
+   Custom Color Palette
+   ========================================== */
+:root {
+  --primary-blue: #003087;
+  --accent-blue: #0066cc;
+  --light-blue: #e6f2ff;
+  --dark-gray: #2c3e50;
+  --medium-gray: #6c757d;
+  --light-gray: #f8f9fa;
+  --border-color: #dee2e6;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+}
 
+/* ==========================================
+   Enhanced Typography
+   ========================================== */
+body {
+  font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.7;
+  color: var(--dark-gray);
+  font-size: 1.05rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+h1 {
+  color: var(--primary-blue);
+  font-size: 2.5rem;
+  border-bottom: 3px solid var(--accent-blue);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  color: var(--primary-blue);
+  font-size: 1.9rem;
+  margin-top: 2.5rem;
+}
+
+h3 {
+  color: var(--accent-blue);
+  font-size: 1.5rem;
+}
+
+/* ==========================================
+   Navigation Bar Enhancements
+   ========================================== */
+.navbar {
+  box-shadow: 0 2px 8px var(--shadow-color);
+  padding: 0.8rem 0;
+  background: linear-gradient(135deg, #003087 0%, #0047AB 100%) !important;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem !important;
+  border-radius: 5px;
+  margin: 0 0.2rem;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ==========================================
+   Title Banner
+   ========================================== */
+.quarto-title-banner {
+  background: linear-gradient(135deg, #003087 0%, #0066cc 100%);
+  color: white;
+  padding: 3rem 0;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.quarto-title-banner h1 {
+  color: white;
+  border-bottom: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ==========================================
+   About Section (Home Page)
+   ========================================== */
+.quarto-about-trestles {
+  margin-top: 2rem;
+}
+
+.about-entity {
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--light-blue) 0%, white 100%);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px var(--shadow-color);
+  margin-bottom: 2rem;
+}
+
+.about-image {
+  border: 5px solid var(--accent-blue);
+  box-shadow: 0 8px 20px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px var(--shadow-color);
+}
+
+.about-links {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about-link {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+  background: white;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid var(--border-color);
+  box-shadow: 0 2px 5px var(--shadow-color);
+}
+
+.about-link:hover {
+  transform: translateX(10px);
+  box-shadow: 0 4px 12px var(--shadow-color);
+  border-color: var(--accent-blue);
+  background: var(--light-blue);
+}
+
+.about-link i {
+  font-size: 1.3rem;
+  color: var(--accent-blue);
+  margin-right: 0.5rem;
+}
+
+/* ==========================================
+   Content Sections
+   ========================================== */
+.about-contents {
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+main.content {
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px var(--shadow-color);
+  margin-bottom: 2rem;
+}
+
+/* ==========================================
+   Links and Buttons
+   ========================================== */
+a {
+  color: var(--accent-blue);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-blue);
+  text-decoration: underline;
+}
+
+/* ==========================================
+   Lists
+   ========================================== */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  padding-left: 1.8rem;
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+ul li::before {
+  content: "▸";
+  color: var(--accent-blue);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+
+/* Nested lists */
+ul ul {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+ul ul li::before {
+  content: "•";
+  font-size: 1rem;
+}
+
+/* ==========================================
+   Table of Contents
+   ========================================== */
+#TOC {
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  padding: 1.5rem;
+  background: var(--light-gray);
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+#TOC h2 {
+  color: var(--primary-blue);
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--accent-blue);
+  padding-bottom: 0.5rem;
+}
+
+#TOC .nav-link {
+  color: var(--dark-gray);
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  font-weight: 400;
+  transition: all 0.2s ease;
+}
+
+#TOC .nav-link:hover {
+  background: white;
+  color: var(--accent-blue);
+  padding-left: 1.2rem;
+}
+
+#TOC .nav-link.active {
+  background: var(--accent-blue);
+  color: white;
+  font-weight: 600;
+}
+
+/* ==========================================
+   Horizontal Rules
+   ========================================== */
+hr {
+  border: none;
+  border-top: 2px solid var(--accent-blue);
+  margin: 2.5rem 0;
+  opacity: 0.3;
+}
+
+/* ==========================================
+   Cards and Boxes
+   ========================================== */
+.card {
+  border-radius: 10px;
+  border: 2px solid var(--border-color);
+  box-shadow: 0 4px 12px var(--shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px var(--shadow-color);
+}
+
+/* ==========================================
+   Tables
+   ========================================== */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+table thead {
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-blue) 100%);
+  color: white;
+}
+
+table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+table td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+table tbody tr:hover {
+  background-color: var(--light-blue);
+  transition: background-color 0.2s ease;
+}
+
+/* ==========================================
+   Code Blocks
+   ========================================== */
+code {
+  background-color: var(--light-gray);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #e83e8c;
+}
+
+pre {
+  background-color: var(--light-gray);
+  border-left: 4px solid var(--accent-blue);
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+/* ==========================================
+   Search Box
+   ========================================== */
+#quarto-search {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* ==========================================
+   Responsive Design
+   ========================================== */
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-entity {
+    padding: 1.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  .quarto-title-banner {
+    padding: 2rem 0;
+  }
+}
+
+/* ==========================================
+   Smooth Scrolling
+   ========================================== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ==========================================
+   Selection Styling
+   ========================================== */
+::selection {
+  background-color: var(--accent-blue);
+  color: white;
+}
+
+::-moz-selection {
+  background-color: var(--accent-blue);
+  color: white;
+}
+
+/* ==========================================
+   Focus States for Accessibility
+   ========================================== */
+a:focus,
+button:focus,
+.nav-link:focus {
+  outline: 3px solid var(--accent-blue);
+  outline-offset: 2px;
+}
+
+/* ==========================================
+   Page Load Animation
+   ========================================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main.content {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* ==========================================
+   Print Styles
+   ========================================== */
+@media print {
+  .navbar,
+  #TOC,
+  .page-footer {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+    color: black;
+  }
+
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+}
