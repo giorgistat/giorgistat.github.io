@@ -4,8 +4,19 @@ title: "Statisitcal Methods for Serological Data Analysis"
 
 ![Image taken from Kyomuhangi and Giorgi (2021)](unified.png){.border .rounded .shadow-lg width="50%"}
 
-Serology data, which measure antibodies in the blood, are invaluable for disease surveillance as they provide insights into past exposure to infections. This is particularly useful for diseases with low case numbers, where traditional surveillance methods may underestimate transmission. By capturing cumulative exposure, serology enables a more comprehensive understanding of disease dynamics over time and across populations.  
+Serology data, which measure antibodies in the blood, are invaluable for disease surveillance as they provide insights into past exposure to infections. This is particularly useful for diseases with low case numbers, where traditional surveillance methods may underestimate transmission. By capturing cumulative exposure, serology enables a more comprehensive understanding of disease dynamics over time and across populations.
 
-I have been developing novel methods for the analysis of serology data that extend previous approaches by avoiding the use of arbitrary thresholds and incorporating age-dependency into the modeling process. These threshold-free, flexible frameworks allow for more accurate estimates of disease exposure and better capture age-related patterns in seroprevalence.  
+I have been developing novel methods for the analysis of serology data that extend previous approaches by avoiding the use of arbitrary thresholds and incorporating age-dependency into the modeling process. These threshold-free, flexible frameworks allow for more accurate estimates of disease exposure and better capture age-related patterns in seroprevalence.
 
-Building on this foundation, I am expanding these methods to analyze data for multiple diseases simultaneously, enabling **integrated disease surveillance**. This work aims to support more efficient and comprehensive monitoring of infectious diseases, particularly in low-resource settings, by leveraging serological data to track and map the co-distribution of multiple infections.  
+Building on this foundation, I am expanding these methods to analyze data for multiple diseases simultaneously, enabling **integrated disease surveillance**. This work aims to support more efficient and comprehensive monitoring of infectious diseases, particularly in low-resource settings, by leveraging serological data to track and map the co-distribution of multiple infections.
+
+## Recent publications & preprints
+
+-   <u>**Giorgi, E.**</u>, Wallin, J., *A flexible class of latent variable models for the analysis of antibody response data.* (Under review) [Preprint on arXiv](https://arxiv.org/abs/2512.14504)
+
+-   Romano, C., Wallin, J., William, T., Drakeley, C., Branda, F., Ciccozzi, M., <u>**Giorgi, E.**</u>, *Modelling serological multiplex bead assays responses: A case study from Malaysia.* (Under review) [Preprint on medRxiv](https://doi.org/10.64898/2025.12.11.25342063)
+
+
+-   Kyomuhangi, I., <u>**Giorgi, E.**</u> (2022). *A threshold-free approach with age-dependency for estimating malaria seroprevalence.* Malaria Journal. https://doi.org/10.1371/journal.pone.0262145
+
+-   Kyomuhangi, I., <u>**Giorgi, E.**</u> (2021) *A unified and flexible modelling framework for the analysis of malaria serology data.* Epidemiology & Infection. doi:10.1017/S0950268821000753

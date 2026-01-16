@@ -11,3 +11,11 @@ My research focuses on the application of spatial and spatio-temporal statistica
 As the Head of the World Health Organization (WHO) Collaborating Centre on Geostatistical Methods for Neglected Tropical Diseases, I lead initiatives that leverage cutting-edge statistical techniques to support global health priorities. This role involves developing tools, conducting training programs, and fostering collaborations to advance the use of spatial statistics in the fight against NTDs.
 
 To know more about my research on NTDs **read our Significance paper** [here](Significance_Article.pdf) (the published paper can also be accessed through the official Significance website [here](https://academic.oup.com/jrssig/article-abstract/21/4/14/7730933))
+
+## Recent publications & preprints
+
+-   Giorgi, E., Fronterre, C., Diggle, P. J., *Decay-Adjusted Spatio-Temporal Modeling for Mass Drug Administration Programs*, (Under review) [Preprint on arXiv](https://arxiv.org/abs/2512.03760)
+
+-   Sasanami, M., Almou, I., Diori, A. N., Bakhtiari, A., Beidou, N., Bisanzio, D., Boyd, S., Burgert-Brucker, C. R., Amza, A., Gass, K., Kadri, B., Kebede, F., Masika, M. P., Olobio, N. P., Seife, F., Souley, A. S. Y., Tefera, A., Kello, A. B., Solomon, A. W., Harding-Esch, E. <u>**Giorgi, E.**</u> (2025). *Understanding the impact of covariates for trachoma prevalence prediction using geostatistical methods.* BMC Global and Public Health. BMC Global Public Health 3, 48. https://doi.org/10.1186/s44263-025-00161-x
+
+-   Khaki, J., Minnery, M., <u>**Giorgi, E.**</u> (2025). *Using ESPEN Data for Evidence-Based Control of Neglected Tropical Diseases in sub-Saharan Africa: a Comprehensive Model-based Geostatistical Analysis on Soil-Transmitted Helminths.* PLOS Neglected Tropical Diseases 19(1): e0012782. https://doi.org/10.1371/journal.pntd.0012782

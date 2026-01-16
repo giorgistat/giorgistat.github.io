@@ -53,21 +53,21 @@
     "href": "projects/serology.html",
     "title": "Statisitcal Methods for Serological Data Analysis",
     "section": "",
-    "text": "Image taken from Kyomuhangi and Giorgi (2021)\n\n\nSerology data, which measure antibodies in the blood, are invaluable for disease surveillance as they provide insights into past exposure to infections. This is particularly useful for diseases with low case numbers, where traditional surveillance methods may underestimate transmission. By capturing cumulative exposure, serology enables a more comprehensive understanding of disease dynamics over time and across populations.\nI have been developing novel methods for the analysis of serology data that extend previous approaches by avoiding the use of arbitrary thresholds and incorporating age-dependency into the modeling process. These threshold-free, flexible frameworks allow for more accurate estimates of disease exposure and better capture age-related patterns in seroprevalence.\nBuilding on this foundation, I am expanding these methods to analyze data for multiple diseases simultaneously, enabling integrated disease surveillance. This work aims to support more efficient and comprehensive monitoring of infectious diseases, particularly in low-resource settings, by leveraging serological data to track and map the co-distribution of multiple infections."
+    "text": "Image taken from Kyomuhangi and Giorgi (2021)\nSerology data, which measure antibodies in the blood, are invaluable for disease surveillance as they provide insights into past exposure to infections. This is particularly useful for diseases with low case numbers, where traditional surveillance methods may underestimate transmission. By capturing cumulative exposure, serology enables a more comprehensive understanding of disease dynamics over time and across populations.\nI have been developing novel methods for the analysis of serology data that extend previous approaches by avoiding the use of arbitrary thresholds and incorporating age-dependency into the modeling process. These threshold-free, flexible frameworks allow for more accurate estimates of disease exposure and better capture age-related patterns in seroprevalence.\nBuilding on this foundation, I am expanding these methods to analyze data for multiple diseases simultaneously, enabling integrated disease surveillance. This work aims to support more efficient and comprehensive monitoring of infectious diseases, particularly in low-resource settings, by leveraging serological data to track and map the co-distribution of multiple infections."
   },
   {
     "objectID": "publications/original-research.html",
     "href": "publications/original-research.html",
     "title": "Original Research Articles",
     "section": "",
-    "text": "Chacón-Montalván, E.A., Parry, L., Giorgi, E., Torres, P., Orellana, J.D.Y., Moraga, P., Taylor, B.M. (2025). Mapping food insecurity in the Brazilian Amazon using a spatial item factor analysis model. The Annals of Applied Statistics. In production.\nRuiz Cuenca, P., Souza, F. N., Nascimento, R. C. do, da Silva, A. G., Eyre, M. T., Cerqueira, J., dos Santos, D. O., Ribeiro de Souza, E. V., Read, J., Cremonese, C., Costa, F., Giorgi, E. (2025). Using step selection functions to analyse human mobility using telemetry data in infectious disease epidemiology: a case study of leptospirosis. eLife, 14:RP107153, https://doi.org/10.7554/eLife.107153.1\nKyomuhangi, I., Giorgi, E. (2022). A threshold-free approach with age-dependency for estimating malaria seroprevalence. Malaria Journal. https://doi.org/10.1371/journal.pone.0262145\nMacharia, P., Ray, N., Gitonga, C. W., Snow, R. W., Giorgi, E. (2022). Combining school-catchment area models with geostatistical models for analysing school survey data from low-resource settings: inferential benefits and limitations. Spatial statistics. https://doi.org/10.1016/j.spasta.2022.100679\nGiorgi, E. , Fronterre, C., Macharia, P., Alegana, V., Snow, R., Diggle, P. (2021) Model building and assessment of the impact of covariates for disease prevalence mapping in low-resource settings: to explain and to predict. Journal of the Royal Society Interface. 18:20210104. http://doi.org/10.1098/rsif.2021.0104\nKyomuhangi, I., Giorgi, E. (2021) A unified and flexible modelling framework for the analysis of malaria serology data. Epidemiology & Infection. doi:10.1017/S0950268821000753\nDiggle, P. J., Giorgi, E. , Atsame, J., Ella, S. N., Ogoussan, K., Gass, K. (2020). A tale of two parasites: statistical modelling to support disease control programmes in Africa. Statistical Science. 35:42-50, doi:10.1214/19-STS738\nJohnson, O. O., Getherall, T., Knight, J., Giorgi, E. (2020) A modelling framework for developing early warning systems of COPD emergency admissions. Spatial and spatio-temporal epidemiology. doi: 10.1016/j.sste.2020.100392\nEyre, M. T., Carvalho-Pereira, T. S., Souza, F. N., Khalil, H., Hacker, K. P., Serrano, S., Taylor, J. P., Reis, M. G., Ko, A. J., Begon, M., Diggle, P. J., Costa, F., Giorgi, E. (2020) A multivariate geostatistical framework for combining multiple indices of abundance for disease vectors and reservoirs: A case study of rattiness in a low-income urban Brazilian community. Journal of the Royal Society Interface. doi:10.1098/rsif.2020.0398\nJohnson, O. O., Diggle, P. J., Giorgi, E. , (2020). Dealing with spatial misalignment to model the relationship between deprivation and life expectancy: A model-based geostatistical approach. International Journal of Health Geographics. DOI: 10.1186/s12942-020-00200-w\nKyomuhangi, I., Abeku, T. A., Kirby, M. J., Tesfaye, G.,Giorgi, E. (2020). Understanding the effects of dichotomization of continuous outcomes on geostatistical inference. Spatial Statistics. 00424, https://doi.org/10.1016/j.spasta.2020.100424.\nEjigu, B. A., Wencheko, E., Moraga, P., Giorgi, E. , (2020). Geostatistical methods for modelling non-stationary patterns in disease risk. Spatial Statistics. doi:10.1016/j.spasta.2019.100397\nFronterre, C., Amoah, B., Giorgi, E. , Stanton, M., Diggle, P.J., Design and analysis of elimination surveys for neglected tropical diseases. (2020). Journal of Infectious Diseases. jiz554, https://doi.org/10.1093/infdis/jiz554\nMilton, P., Giorgi, E. , Bhatt, S. (2019). Spatial Analysis Made Easy with Linear Regression and Kernels. Epidemics. DOI:10.1016/j.epidem.2019.100362\nAmoah, B., Diggle, P. J., Giorgi, E. (2019). A geostatistical framework for combining data from multiple diagnostic tests. Biometrics. doi:10.1111/biom.13142\nJohnson, O. O., Diggle, P. J., Giorgi, E. (2019). A spatially discrete approximation to log-Gaussian Cox processes for modelling aggregated disease count data. Statistics in Medicine. doi:10.1002/sim.8339\nFronterre, C., Giorgi, E. , Diggle, P. J. (2018). Geostatistical inference in the presence of geomasking: a composite-likelihood approach. Spatial Statistics. DOI: 10.1016/j.spasta.2018.06.004\nGiorgi, E. , Diggle, P. J., Snow, R. W., Noor, A. M. (2018). Geostatistical methods for disease mapping and visualization using data from spatio-temporally referenced prevalence surveys. International Statistical Review. https://doi.org/10.1111/insr.12268\nGiorgi, E. , (2018). On the goodness-of-fit of generalized linear geostistical models. Spatial statistics. https://doi.org/10.1016/j.spasta.2018.01.002\nGiorgi, E. , Schlüter, D. K., Diggle, P. J. (2017). Bivariate geostatistical modelling of the relationship between Loa loa prevalence and intensity of infection. Environmetrics. doi:10.1002/ env.2447\nGiorgi, E. , Diggle, P. J. (2017). PrevMap: an R package for prevalence mapping. Journal of Statistical Software. 78:1-29, doi: 10.18637/jss.v078.i08\nDiggle, P. J., Giorgi, E. (2016). Model-based geostatistics for prevalence mapping in low-resource settings (with discussion). Journal of the American Statistical Association. 111:1096-1120\nGiorgi, E. , Diggle, P. J. (2014). On the inverse geostatistical problem of inference on missing locations. Spatial statistics. 11:35-44 arXiv:1409.3408\nGiorgi, E. , Sesay, S. S., Terlouw, D. J., Diggle, P. J. (2015). Combining data from multiple spatially referenced prevalence surveys using generalized linear geostatistical models. Journal of the Royal Statistical Society, Series A. 178:445-464 arXiv:1308.2790\nGiorgi, E. , McNeil, A. J. (2014). On the computation of multivariate scenario sets for the skew-t and generalized hyperbolic families. Computational Statistics and Data Analysis. 100:205-220 arXiv:1402.0686"
+    "text": "Chacón-Montalván, E.A., Parry, L., Giorgi, E., Torres, P., Orellana, J.D.Y., Moraga, P., Taylor, B.M. (2025). Mapping food insecurity in the Brazilian Amazon using a spatial item factor analysis model. The Annals of Applied Statistics. 19(4): 3438-3463 (December 2025). DOI: 10.1214/25-AOAS2072\nRuiz Cuenca, P., Souza, F. N., Nascimento, R. C. do, da Silva, A. G., Eyre, M. T., Cerqueira, J., dos Santos, D. O., Ribeiro de Souza, E. V., Read, J., Cremonese, C., Costa, F., Giorgi, E. (2025). Using step selection functions to analyse human mobility using telemetry data in infectious disease epidemiology: a case study of leptospirosis. eLife, 14:RP107153, https://doi.org/10.7554/eLife.107153.1\nKyomuhangi, I., Giorgi, E. (2022). A threshold-free approach with age-dependency for estimating malaria seroprevalence. Malaria Journal. https://doi.org/10.1371/journal.pone.0262145\nMacharia, P., Ray, N., Gitonga, C. W., Snow, R. W., Giorgi, E. (2022). Combining school-catchment area models with geostatistical models for analysing school survey data from low-resource settings: inferential benefits and limitations. Spatial statistics. https://doi.org/10.1016/j.spasta.2022.100679\nGiorgi, E. , Fronterre, C., Macharia, P., Alegana, V., Snow, R., Diggle, P. (2021) Model building and assessment of the impact of covariates for disease prevalence mapping in low-resource settings: to explain and to predict. Journal of the Royal Society Interface. 18:20210104. http://doi.org/10.1098/rsif.2021.0104\nKyomuhangi, I., Giorgi, E. (2021) A unified and flexible modelling framework for the analysis of malaria serology data. Epidemiology & Infection. doi:10.1017/S0950268821000753\nDiggle, P. J., Giorgi, E. , Atsame, J., Ella, S. N., Ogoussan, K., Gass, K. (2020). A tale of two parasites: statistical modelling to support disease control programmes in Africa. Statistical Science. 35:42-50, doi:10.1214/19-STS738\nJohnson, O. O., Getherall, T., Knight, J., Giorgi, E. (2020) A modelling framework for developing early warning systems of COPD emergency admissions. Spatial and spatio-temporal epidemiology. doi: 10.1016/j.sste.2020.100392\nEyre, M. T., Carvalho-Pereira, T. S., Souza, F. N., Khalil, H., Hacker, K. P., Serrano, S., Taylor, J. P., Reis, M. G., Ko, A. J., Begon, M., Diggle, P. J., Costa, F., Giorgi, E. (2020) A multivariate geostatistical framework for combining multiple indices of abundance for disease vectors and reservoirs: A case study of rattiness in a low-income urban Brazilian community. Journal of the Royal Society Interface. doi:10.1098/rsif.2020.0398\nJohnson, O. O., Diggle, P. J., Giorgi, E. , (2020). Dealing with spatial misalignment to model the relationship between deprivation and life expectancy: A model-based geostatistical approach. International Journal of Health Geographics. DOI: 10.1186/s12942-020-00200-w\nKyomuhangi, I., Abeku, T. A., Kirby, M. J., Tesfaye, G.,Giorgi, E. (2020). Understanding the effects of dichotomization of continuous outcomes on geostatistical inference. Spatial Statistics. 00424, https://doi.org/10.1016/j.spasta.2020.100424.\nEjigu, B. A., Wencheko, E., Moraga, P., Giorgi, E. , (2020). Geostatistical methods for modelling non-stationary patterns in disease risk. Spatial Statistics. doi:10.1016/j.spasta.2019.100397\nFronterre, C., Amoah, B., Giorgi, E. , Stanton, M., Diggle, P.J., Design and analysis of elimination surveys for neglected tropical diseases. (2020). Journal of Infectious Diseases. jiz554, https://doi.org/10.1093/infdis/jiz554\nMilton, P., Giorgi, E. , Bhatt, S. (2019). Spatial Analysis Made Easy with Linear Regression and Kernels. Epidemics. DOI:10.1016/j.epidem.2019.100362\nAmoah, B., Diggle, P. J., Giorgi, E. (2019). A geostatistical framework for combining data from multiple diagnostic tests. Biometrics. doi:10.1111/biom.13142\nJohnson, O. O., Diggle, P. J., Giorgi, E. (2019). A spatially discrete approximation to log-Gaussian Cox processes for modelling aggregated disease count data. Statistics in Medicine. doi:10.1002/sim.8339\nFronterre, C., Giorgi, E. , Diggle, P. J. (2018). Geostatistical inference in the presence of geomasking: a composite-likelihood approach. Spatial Statistics. DOI: 10.1016/j.spasta.2018.06.004\nGiorgi, E. , Diggle, P. J., Snow, R. W., Noor, A. M. (2018). Geostatistical methods for disease mapping and visualization using data from spatio-temporally referenced prevalence surveys. International Statistical Review. https://doi.org/10.1111/insr.12268\nGiorgi, E. , (2018). On the goodness-of-fit of generalized linear geostistical models. Spatial statistics. https://doi.org/10.1016/j.spasta.2018.01.002\nGiorgi, E. , Schlüter, D. K., Diggle, P. J. (2017). Bivariate geostatistical modelling of the relationship between Loa loa prevalence and intensity of infection. Environmetrics. doi:10.1002/ env.2447\nGiorgi, E. , Diggle, P. J. (2017). PrevMap: an R package for prevalence mapping. Journal of Statistical Software. 78:1-29, doi: 10.18637/jss.v078.i08\nDiggle, P. J., Giorgi, E. (2016). Model-based geostatistics for prevalence mapping in low-resource settings (with discussion). Journal of the American Statistical Association. 111:1096-1120\nGiorgi, E. , Diggle, P. J. (2014). On the inverse geostatistical problem of inference on missing locations. Spatial statistics. 11:35-44 arXiv:1409.3408\nGiorgi, E. , Sesay, S. S., Terlouw, D. J., Diggle, P. J. (2015). Combining data from multiple spatially referenced prevalence surveys using generalized linear geostatistical models. Journal of the Royal Statistical Society, Series A. 178:445-464 arXiv:1308.2790\nGiorgi, E. , McNeil, A. J. (2014). On the computation of multivariate scenario sets for the skew-t and generalized hyperbolic families. Computational Statistics and Data Analysis. 100:205-220 arXiv:1402.0686"
   },
   {
     "objectID": "publications/original-research.html#stat-methodology",
     "href": "publications/original-research.html#stat-methodology",
     "title": "Original Research Articles",
     "section": "",
-    "text": "Chacón-Montalván, E.A., Parry, L., Giorgi, E., Torres, P., Orellana, J.D.Y., Moraga, P., Taylor, B.M. (2025). Mapping food insecurity in the Brazilian Amazon using a spatial item factor analysis model. The Annals of Applied Statistics. In production.\nRuiz Cuenca, P., Souza, F. N., Nascimento, R. C. do, da Silva, A. G., Eyre, M. T., Cerqueira, J., dos Santos, D. O., Ribeiro de Souza, E. V., Read, J., Cremonese, C., Costa, F., Giorgi, E. (2025). Using step selection functions to analyse human mobility using telemetry data in infectious disease epidemiology: a case study of leptospirosis. eLife, 14:RP107153, https://doi.org/10.7554/eLife.107153.1\nKyomuhangi, I., Giorgi, E. (2022). A threshold-free approach with age-dependency for estimating malaria seroprevalence. Malaria Journal. https://doi.org/10.1371/journal.pone.0262145\nMacharia, P., Ray, N., Gitonga, C. W., Snow, R. W., Giorgi, E. (2022). Combining school-catchment area models with geostatistical models for analysing school survey data from low-resource settings: inferential benefits and limitations. Spatial statistics. https://doi.org/10.1016/j.spasta.2022.100679\nGiorgi, E. , Fronterre, C., Macharia, P., Alegana, V., Snow, R., Diggle, P. (2021) Model building and assessment of the impact of covariates for disease prevalence mapping in low-resource settings: to explain and to predict. Journal of the Royal Society Interface. 18:20210104. http://doi.org/10.1098/rsif.2021.0104\nKyomuhangi, I., Giorgi, E. (2021) A unified and flexible modelling framework for the analysis of malaria serology data. Epidemiology & Infection. doi:10.1017/S0950268821000753\nDiggle, P. J., Giorgi, E. , Atsame, J., Ella, S. N., Ogoussan, K., Gass, K. (2020). A tale of two parasites: statistical modelling to support disease control programmes in Africa. Statistical Science. 35:42-50, doi:10.1214/19-STS738\nJohnson, O. O., Getherall, T., Knight, J., Giorgi, E. (2020) A modelling framework for developing early warning systems of COPD emergency admissions. Spatial and spatio-temporal epidemiology. doi: 10.1016/j.sste.2020.100392\nEyre, M. T., Carvalho-Pereira, T. S., Souza, F. N., Khalil, H., Hacker, K. P., Serrano, S., Taylor, J. P., Reis, M. G., Ko, A. J., Begon, M., Diggle, P. J., Costa, F., Giorgi, E. (2020) A multivariate geostatistical framework for combining multiple indices of abundance for disease vectors and reservoirs: A case study of rattiness in a low-income urban Brazilian community. Journal of the Royal Society Interface. doi:10.1098/rsif.2020.0398\nJohnson, O. O., Diggle, P. J., Giorgi, E. , (2020). Dealing with spatial misalignment to model the relationship between deprivation and life expectancy: A model-based geostatistical approach. International Journal of Health Geographics. DOI: 10.1186/s12942-020-00200-w\nKyomuhangi, I., Abeku, T. A., Kirby, M. J., Tesfaye, G.,Giorgi, E. (2020). Understanding the effects of dichotomization of continuous outcomes on geostatistical inference. Spatial Statistics. 00424, https://doi.org/10.1016/j.spasta.2020.100424.\nEjigu, B. A., Wencheko, E., Moraga, P., Giorgi, E. , (2020). Geostatistical methods for modelling non-stationary patterns in disease risk. Spatial Statistics. doi:10.1016/j.spasta.2019.100397\nFronterre, C., Amoah, B., Giorgi, E. , Stanton, M., Diggle, P.J., Design and analysis of elimination surveys for neglected tropical diseases. (2020). Journal of Infectious Diseases. jiz554, https://doi.org/10.1093/infdis/jiz554\nMilton, P., Giorgi, E. , Bhatt, S. (2019). Spatial Analysis Made Easy with Linear Regression and Kernels. Epidemics. DOI:10.1016/j.epidem.2019.100362\nAmoah, B., Diggle, P. J., Giorgi, E. (2019). A geostatistical framework for combining data from multiple diagnostic tests. Biometrics. doi:10.1111/biom.13142\nJohnson, O. O., Diggle, P. J., Giorgi, E. (2019). A spatially discrete approximation to log-Gaussian Cox processes for modelling aggregated disease count data. Statistics in Medicine. doi:10.1002/sim.8339\nFronterre, C., Giorgi, E. , Diggle, P. J. (2018). Geostatistical inference in the presence of geomasking: a composite-likelihood approach. Spatial Statistics. DOI: 10.1016/j.spasta.2018.06.004\nGiorgi, E. , Diggle, P. J., Snow, R. W., Noor, A. M. (2018). Geostatistical methods for disease mapping and visualization using data from spatio-temporally referenced prevalence surveys. International Statistical Review. https://doi.org/10.1111/insr.12268\nGiorgi, E. , (2018). On the goodness-of-fit of generalized linear geostistical models. Spatial statistics. https://doi.org/10.1016/j.spasta.2018.01.002\nGiorgi, E. , Schlüter, D. K., Diggle, P. J. (2017). Bivariate geostatistical modelling of the relationship between Loa loa prevalence and intensity of infection. Environmetrics. doi:10.1002/ env.2447\nGiorgi, E. , Diggle, P. J. (2017). PrevMap: an R package for prevalence mapping. Journal of Statistical Software. 78:1-29, doi: 10.18637/jss.v078.i08\nDiggle, P. J., Giorgi, E. (2016). Model-based geostatistics for prevalence mapping in low-resource settings (with discussion). Journal of the American Statistical Association. 111:1096-1120\nGiorgi, E. , Diggle, P. J. (2014). On the inverse geostatistical problem of inference on missing locations. Spatial statistics. 11:35-44 arXiv:1409.3408\nGiorgi, E. , Sesay, S. S., Terlouw, D. J., Diggle, P. J. (2015). Combining data from multiple spatially referenced prevalence surveys using generalized linear geostatistical models. Journal of the Royal Statistical Society, Series A. 178:445-464 arXiv:1308.2790\nGiorgi, E. , McNeil, A. J. (2014). On the computation of multivariate scenario sets for the skew-t and generalized hyperbolic families. Computational Statistics and Data Analysis. 100:205-220 arXiv:1402.0686"
+    "text": "Chacón-Montalván, E.A., Parry, L., Giorgi, E., Torres, P., Orellana, J.D.Y., Moraga, P., Taylor, B.M. (2025). Mapping food insecurity in the Brazilian Amazon using a spatial item factor analysis model. The Annals of Applied Statistics. 19(4): 3438-3463 (December 2025). DOI: 10.1214/25-AOAS2072\nRuiz Cuenca, P., Souza, F. N., Nascimento, R. C. do, da Silva, A. G., Eyre, M. T., Cerqueira, J., dos Santos, D. O., Ribeiro de Souza, E. V., Read, J., Cremonese, C., Costa, F., Giorgi, E. (2025). Using step selection functions to analyse human mobility using telemetry data in infectious disease epidemiology: a case study of leptospirosis. eLife, 14:RP107153, https://doi.org/10.7554/eLife.107153.1\nKyomuhangi, I., Giorgi, E. (2022). A threshold-free approach with age-dependency for estimating malaria seroprevalence. Malaria Journal. https://doi.org/10.1371/journal.pone.0262145\nMacharia, P., Ray, N., Gitonga, C. W., Snow, R. W., Giorgi, E. (2022). Combining school-catchment area models with geostatistical models for analysing school survey data from low-resource settings: inferential benefits and limitations. Spatial statistics. https://doi.org/10.1016/j.spasta.2022.100679\nGiorgi, E. , Fronterre, C., Macharia, P., Alegana, V., Snow, R., Diggle, P. (2021) Model building and assessment of the impact of covariates for disease prevalence mapping in low-resource settings: to explain and to predict. Journal of the Royal Society Interface. 18:20210104. http://doi.org/10.1098/rsif.2021.0104\nKyomuhangi, I., Giorgi, E. (2021) A unified and flexible modelling framework for the analysis of malaria serology data. Epidemiology & Infection. doi:10.1017/S0950268821000753\nDiggle, P. J., Giorgi, E. , Atsame, J., Ella, S. N., Ogoussan, K., Gass, K. (2020). A tale of two parasites: statistical modelling to support disease control programmes in Africa. Statistical Science. 35:42-50, doi:10.1214/19-STS738\nJohnson, O. O., Getherall, T., Knight, J., Giorgi, E. (2020) A modelling framework for developing early warning systems of COPD emergency admissions. Spatial and spatio-temporal epidemiology. doi: 10.1016/j.sste.2020.100392\nEyre, M. T., Carvalho-Pereira, T. S., Souza, F. N., Khalil, H., Hacker, K. P., Serrano, S., Taylor, J. P., Reis, M. G., Ko, A. J., Begon, M., Diggle, P. J., Costa, F., Giorgi, E. (2020) A multivariate geostatistical framework for combining multiple indices of abundance for disease vectors and reservoirs: A case study of rattiness in a low-income urban Brazilian community. Journal of the Royal Society Interface. doi:10.1098/rsif.2020.0398\nJohnson, O. O., Diggle, P. J., Giorgi, E. , (2020). Dealing with spatial misalignment to model the relationship between deprivation and life expectancy: A model-based geostatistical approach. International Journal of Health Geographics. DOI: 10.1186/s12942-020-00200-w\nKyomuhangi, I., Abeku, T. A., Kirby, M. J., Tesfaye, G.,Giorgi, E. (2020). Understanding the effects of dichotomization of continuous outcomes on geostatistical inference. Spatial Statistics. 00424, https://doi.org/10.1016/j.spasta.2020.100424.\nEjigu, B. A., Wencheko, E., Moraga, P., Giorgi, E. , (2020). Geostatistical methods for modelling non-stationary patterns in disease risk. Spatial Statistics. doi:10.1016/j.spasta.2019.100397\nFronterre, C., Amoah, B., Giorgi, E. , Stanton, M., Diggle, P.J., Design and analysis of elimination surveys for neglected tropical diseases. (2020). Journal of Infectious Diseases. jiz554, https://doi.org/10.1093/infdis/jiz554\nMilton, P., Giorgi, E. , Bhatt, S. (2019). Spatial Analysis Made Easy with Linear Regression and Kernels. Epidemics. DOI:10.1016/j.epidem.2019.100362\nAmoah, B., Diggle, P. J., Giorgi, E. (2019). A geostatistical framework for combining data from multiple diagnostic tests. Biometrics. doi:10.1111/biom.13142\nJohnson, O. O., Diggle, P. J., Giorgi, E. (2019). A spatially discrete approximation to log-Gaussian Cox processes for modelling aggregated disease count data. Statistics in Medicine. doi:10.1002/sim.8339\nFronterre, C., Giorgi, E. , Diggle, P. J. (2018). Geostatistical inference in the presence of geomasking: a composite-likelihood approach. Spatial Statistics. DOI: 10.1016/j.spasta.2018.06.004\nGiorgi, E. , Diggle, P. J., Snow, R. W., Noor, A. M. (2018). Geostatistical methods for disease mapping and visualization using data from spatio-temporally referenced prevalence surveys. International Statistical Review. https://doi.org/10.1111/insr.12268\nGiorgi, E. , (2018). On the goodness-of-fit of generalized linear geostistical models. Spatial statistics. https://doi.org/10.1016/j.spasta.2018.01.002\nGiorgi, E. , Schlüter, D. K., Diggle, P. J. (2017). Bivariate geostatistical modelling of the relationship between Loa loa prevalence and intensity of infection. Environmetrics. doi:10.1002/ env.2447\nGiorgi, E. , Diggle, P. J. (2017). PrevMap: an R package for prevalence mapping. Journal of Statistical Software. 78:1-29, doi: 10.18637/jss.v078.i08\nDiggle, P. J., Giorgi, E. (2016). Model-based geostatistics for prevalence mapping in low-resource settings (with discussion). Journal of the American Statistical Association. 111:1096-1120\nGiorgi, E. , Diggle, P. J. (2014). On the inverse geostatistical problem of inference on missing locations. Spatial statistics. 11:35-44 arXiv:1409.3408\nGiorgi, E. , Sesay, S. S., Terlouw, D. J., Diggle, P. J. (2015). Combining data from multiple spatially referenced prevalence surveys using generalized linear geostatistical models. Journal of the Royal Statistical Society, Series A. 178:445-464 arXiv:1308.2790\nGiorgi, E. , McNeil, A. J. (2014). On the computation of multivariate scenario sets for the skew-t and generalized hyperbolic families. Computational Statistics and Data Analysis. 100:205-220 arXiv:1402.0686"
   },
   {
     "objectID": "publications/original-research.html#public-health",
@@ -122,8 +122,8 @@
     "objectID": "talks/Birmingham (20 Feb 2025).html#my-background",
     "href": "talks/Birmingham (20 Feb 2025).html#my-background",
     "title": "Model-based Geostatistics for Global Public Health",
-    "section": "My Background",
-    "text": "My Background\n\nPhD in Statistics and Epidemiology (Sep 2015)\n\nMSc in Statistics (July 2012)\n\nBSc in Statistics (April 2012)"
+    "section": "",
+    "text": "PhD in Statistics and Epidemiology (Sep 2015)\n\nMSc in Statistics (July 2012)\n\nBSc in Statistics (April 2012)"
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#presentation-overview",
@@ -158,14 +158,14 @@
     "href": "talks/Birmingham (20 Feb 2025).html#ntds-risk-factors",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "NTDs Risk Factors",
-    "text": "NTDs Risk Factors\n\n\n\n\n\n\n\n\n\n\nCommon risk factors:\n- Poor sanitation and lack of clean water\n- Limited healthcare access\n- Poverty and overcrowding\n- Exposure to disease vectors (e.g., mosquitoes, flies)\n- Lack of education and awareness"
+    "text": "NTDs Risk Factors\n\n\n\n\n\n\n\n\n\n\n\n\n\nCommon risk factors:\n- Poor sanitation and lack of clean water\n- Limited healthcare access\n- Poverty and overcrowding\n- Exposure to disease vectors (e.g., mosquitoes, flies)\n- Lack of education and awareness"
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#from-the-mining-industry-to-public-health",
     "href": "talks/Birmingham (20 Feb 2025).html#from-the-mining-industry-to-public-health",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "From the mining industry to public health",
-    "text": "From the mining industry to public health\n\n\n\n\n\n\n(a) Danie Gerhardus Krige GCOB (26 August 1919 – 3 March 2013)\n\n\n\n\n\n\n\n(b) Mining application of geostatistics"
+    "text": "From the mining industry to public health\n\n\n\n\n\n\n\n\n\n(a) Danie Gerhardus Krige GCOB (26 August 1919 – 3 March 2013)\n\n\n\n\n\n\n\n(b) Mining application of geostatistics"
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#riverblindness",
@@ -179,56 +179,56 @@
     "href": "talks/Birmingham (20 Feb 2025).html#mapping-river-blindness",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "Mapping river-blindness",
-    "text": "Mapping river-blindness\n\n\n\n\n\n\n(a) Map of the observed prevalence of palpable nodules in the 14,473 surveyed villages.\n\n\n\n\n\n\n\n(b) Map of the predicted prevalence."
+    "text": "Mapping river-blindness\n\n\n\n\n\n\n\n\n\n(a) Map of the observed prevalence of palpable nodules in the 14,473 surveyed villages.\n\n\n\n\n\n\n\n(b) Map of the predicted prevalence."
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#the-ingredients-of-a-geostatistical-model-for-prevalence-mapping",
     "href": "talks/Birmingham (20 Feb 2025).html#the-ingredients-of-a-geostatistical-model-for-prevalence-mapping",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "The ingredients of a geostatistical model for prevalence mapping",
-    "text": "The ingredients of a geostatistical model for prevalence mapping\n\nOutcome: \\(Y_i\\) number of cases out \\(n_i\\) sampled\n\n\n\nLocations: \\(X = (x_1, \\ldots, x_n)\\)\n\n\n\n\nCovariates (optional): \\(d(x)\\) (e.g. elevation, distance from waterways)\n\n\n\n\nSpatial Gaussian process: \\(S(x)\\) (stationary and isotropic) \\[\n{\\rm cov}\\{S(x), S(x')\\} = \\sigma^2 \\rho(||x - x'||; \\phi)\n\\] Example: \\(\\rho(u; \\phi) = \\exp\\{-u/\\phi\\}\\)."
+    "text": "The ingredients of a geostatistical model for prevalence mapping\n\nOutcome: \\(Y_i\\) number of cases out \\(n_i\\) sampled\n\n. . .\n\nLocations: \\(X = (x_1, \\ldots, x_n)\\)\n\n. . .\n\nCovariates (optional): \\(d(x)\\) (e.g. elevation, distance from waterways)\n\n. . .\n\nSpatial Gaussian process: \\(S(x)\\) (stationary and isotropic) \\[\n{\\rm cov}\\{S(x), S(x')\\} = \\sigma^2 \\rho(||x - x'||; \\phi)\n\\] Example: \\(\\rho(u; \\phi) = \\exp\\{-u/\\phi\\}\\)."
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#putting-all-together",
     "href": "talks/Birmingham (20 Feb 2025).html#putting-all-together",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "Putting all together",
-    "text": "Putting all together\n\nConditional independence: \\(Y_{i}\\) conditionally on \\(S(x_i)\\) are mutually independent \\(Bin(n_i , p(x_i))\\)\n\n\n\nThe linear predictor \\[\n\\log\\left\\{\\frac{p(x_i)}{1-p(x_i)}\\right\\} = \\beta_0 + d(x_i)^\\top \\beta + S(x_i)\n\\]\n\n\n\n\nThe joint distribution: \\([S, Y] = [S] [Y | S]\\)\n\nwhere \\(Y=(Y_1, \\ldots, Y_n)\\) and \\(S = (S(x_1), \\ldots, S(x_n))\\)\n\n\n\nThe likelihood function \\[\nL(\\theta) = \\int_{\\mathbb{R}^n} [S] [Y | S] \\: dS\n\\] How do we approximate this intractable integral?"
+    "text": "Putting all together\n\nConditional independence: \\(Y_{i}\\) conditionally on \\(S(x_i)\\) are mutually independent \\(Bin(n_i , p(x_i))\\)\n\n. . .\n\nThe linear predictor \\[\n\\log\\left\\{\\frac{p(x_i)}{1-p(x_i)}\\right\\} = \\beta_0 + d(x_i)^\\top \\beta + S(x_i)\n\\]\n\n. . .\n\nThe joint distribution: \\([S, Y] = [S] [Y | S]\\)\n\nwhere \\(Y=(Y_1, \\ldots, Y_n)\\) and \\(S = (S(x_1), \\ldots, S(x_n))\\)\n. . .\n\nThe likelihood function \\[\nL(\\theta) = \\int_{\\mathbb{R}^n} [S] [Y | S] \\: dS\n\\] How do we approximate this intractable integral?"
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#prevmap-and-riskmap",
     "href": "talks/Birmingham (20 Feb 2025).html#prevmap-and-riskmap",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "PrevMap and RiskMap",
-    "text": "PrevMap and RiskMap\n\n\n\n\nGiorgi, E. and Fronterre, C. (expected August 2025) Model-based geostatistics for global public health using R. Chapman and Hall/CRC. The R Series."
+    "text": "PrevMap and RiskMap\n\n\n\n. . .\nGiorgi, E. and Fronterre, C. (expected August 2025) Model-based geostatistics for global public health using R. Chapman and Hall/CRC. The R Series."
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#identifying-disease-hotspots",
     "href": "talks/Birmingham (20 Feb 2025).html#identifying-disease-hotspots",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "Identifying disease hotspots",
-    "text": "Identifying disease hotspots\n\nHotspot: riverblindness prevalence above \\(20\\%\\)\n\n\n\nExceedance probability: \\({\\rm Prob}\\{p(x) &gt; 0.2 \\:  | \\: Y \\}\\)"
+    "text": "Identifying disease hotspots\n\nHotspot: riverblindness prevalence above \\(20\\%\\)\n\n. . .\n\nExceedance probability: \\({\\rm Prob}\\{p(x) &gt; 0.2 \\:  | \\: Y \\}\\)\n\n. . ."
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#extensions-to-spatio-temporal-modelling",
     "href": "talks/Birmingham (20 Feb 2025).html#extensions-to-spatio-temporal-modelling",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "Extensions to spatio-temporal modelling",
-    "text": "Extensions to spatio-temporal modelling\nQuestion: Which spatio-temporal correlation structures are suitable for modelling disease prevalence data?\n\n\n\n\nGiorgi, E., Diggle, P. J., Snow, R. W., Noor, A. M. (2018). Geostatistical methods for disease mapping and visualization using data from spatio-temporally referenced prevalence surveys. International Statistical Review. https://doi.org/10.1111/insr.12268"
+    "text": "Extensions to spatio-temporal modelling\nQuestion: Which spatio-temporal correlation structures are suitable for modelling disease prevalence data?\n\n\n\n. . .\nGiorgi, E., Diggle, P. J., Snow, R. W., Noor, A. M. (2018). Geostatistical methods for disease mapping and visualization using data from spatio-temporally referenced prevalence surveys. International Statistical Review. https://doi.org/10.1111/insr.12268"
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#combining-data-from-multiple-diagnostics",
     "href": "talks/Birmingham (20 Feb 2025).html#combining-data-from-multiple-diagnostics",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "Combining data from multiple diagnostics",
-    "text": "Combining data from multiple diagnostics\nQuestions: 1) How we predict a gold-standard diagnostic using cheap biased diagnostics? 2) How do we model the bivariate relationship between two complementary gold-standards?\n\n\n\n\nAmoah, B., Diggle, P. J., Giorgi, E. (2019). A geostatistical framework for combining data from multiple diagnostic tests. Biometrics. doi:10.1111/biom.13142"
+    "text": "Combining data from multiple diagnostics\nQuestions: 1) How we predict a gold-standard diagnostic using cheap biased diagnostics? 2) How do we model the bivariate relationship between two complementary gold-standards?\n\n\n\n. . .\nAmoah, B., Diggle, P. J., Giorgi, E. (2019). A geostatistical framework for combining data from multiple diagnostic tests. Biometrics. doi:10.1111/biom.13142"
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#spatially-structured-zero-inflation",
     "href": "talks/Birmingham (20 Feb 2025).html#spatially-structured-zero-inflation",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "Spatially structured zero-inflation",
-    "text": "Spatially structured zero-inflation\nQuestion: How can we effectively model the bivariate relationship between disease suitability and disease prevalence?\n\n\n\n\nDiggle, P. J., Giorgi, E. (2016). Model-based geostatistics for prevalence mapping in low-resource settings (with discussion). Journal of the American Statistical Association. 111:1096-1120"
+    "text": "Spatially structured zero-inflation\nQuestion: How can we effectively model the bivariate relationship between disease suitability and disease prevalence?\n\n\n\n. . .\nDiggle, P. J., Giorgi, E. (2016). Model-based geostatistics for prevalence mapping in low-resource settings (with discussion). Journal of the American Statistical Association. 111:1096-1120"
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#future-methodological-directions",
@@ -290,15 +290,15 @@
     "objectID": "teaching/MBG/geostat_pred.html#geostatistical-problems",
     "href": "teaching/MBG/geostat_pred.html#geostatistical-problems",
     "title": "Geostatistical prediction",
-    "section": "Geostatistical problems",
-    "text": "Geostatistical problems\n\n“Conventional geostatistical methodology solves the problem of predicting the realized value of a linear functional of a Gaussian spatial stochastic process \\(S(x)\\) based on observations \\(Y_i= S(x_i) + Z_i\\) at sampling locations \\(x_i\\), where the \\(Z_i\\) are mutually independent, zero-mean Gaussian random variables.”\n\nDiggle, Tawn and Moyeed (1998)"
+    "section": "",
+    "text": "“Conventional geostatistical methodology solves the problem of predicting the realized value of a linear functional of a Gaussian spatial stochastic process \\(S(x)\\) based on observations \\(Y_i= S(x_i) + Z_i\\) at sampling locations \\(x_i\\), where the \\(Z_i\\) are mutually independent, zero-mean Gaussian random variables.”\n\nDiggle, Tawn and Moyeed (1998)"
   },
   {
     "objectID": "teaching/MBG/geostat_pred.html#defining-the-predictive-target",
     "href": "teaching/MBG/geostat_pred.html#defining-the-predictive-target",
     "title": "Geostatistical prediction",
     "section": "Defining the predictive target",
-    "text": "Defining the predictive target\n\n\nSpatially continuous targets correspond to an unobserved spatially continuous surface (e.g. disease prevalence), formally denoted by \\(\\mathcal{T} = \\{T(x), x \\in A\\}\\), where \\(A\\) is our region of interest.\n\n\n\n\nAreal-level targets, usually defined as transformation of the spatially continuous surface \\(\\mathcal{T}\\), defined previously, and which we denote as \\(\\mathcal{T}_{A} = F(\\mathcal{T}, A)\\)."
+    "text": "Defining the predictive target\n. . .\n\nSpatially continuous targets correspond to an unobserved spatially continuous surface (e.g. disease prevalence), formally denoted by \\(\\mathcal{T} = \\{T(x), x \\in A\\}\\), where \\(A\\) is our region of interest.\n\n. . .\n\nAreal-level targets, usually defined as transformation of the spatially continuous surface \\(\\mathcal{T}\\), defined previously, and which we denote as \\(\\mathcal{T}_{A} = F(\\mathcal{T}, A)\\)."
   },
   {
     "objectID": "teaching/MBG/geostat_pred.html#examples-of-predictive-target",
@@ -347,14 +347,14 @@
     "href": "teaching/MBG/geostat_pred.html#steps-for-the-geostistical-prediction-of-tx",
     "title": "Geostatistical prediction",
     "section": "Steps for the geostistical prediction of \\(T(x)\\)",
-    "text": "Steps for the geostistical prediction of \\(T(x)\\)\nPreliminary steps:\n\nObtain the shapefile of the boundaries of the study area.\nGenerate a regular grid that covers the study for the desired spatial resolution, using the shapefile.\nExtract all the covariates used in the model on the grid and ensure that there are no missing values.\n\n\nPrediction steps (for a given location \\(x\\) on the grid):\n\nGenerate samples from the predictive distribution of \\(S(x) \\: | \\: y\\), say \\(S_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n\n\n\nApply the transformation defined by \\(T(x)\\) to each of the samples \\(S_{(j)}(x)\\), to obtain \\(T_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n\n\n\nUsing the Monte Carlo samples \\(T_{(j)}(x)\\), obtain the desired summaries of the predictive distribution:\n\nMean: \\(\\overline{T}_B = B^{-1} \\sum_{j=1}^B T_{(j)}(x)\\)\nStandard deviation: \\(\\left[B^{-1} \\sum_{j=1}^B (T_{(j)}(x) - \\overline{T}_B)^2\\right]^{1/2}\\)\nPrediction intervals at 95\\(\\%\\) coverage level\nExceedance probabilities: \\(B^{-1} \\sum_{j=1}^B I(T_{(j)}(x) &gt; L)\\), for a given threshold \\(L\\).\n\n\n\n\n pred_cont.R"
+    "text": "Steps for the geostistical prediction of \\(T(x)\\)\nPreliminary steps:\n\nObtain the shapefile of the boundaries of the study area.\nGenerate a regular grid that covers the study for the desired spatial resolution, using the shapefile.\nExtract all the covariates used in the model on the grid and ensure that there are no missing values.\n\n. . .\nPrediction steps (for a given location \\(x\\) on the grid):\n\nGenerate samples from the predictive distribution of \\(S(x) \\: | \\: y\\), say \\(S_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n. . .\n\nApply the transformation defined by \\(T(x)\\) to each of the samples \\(S_{(j)}(x)\\), to obtain \\(T_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n. . .\n\nUsing the Monte Carlo samples \\(T_{(j)}(x)\\), obtain the desired summaries of the predictive distribution:\n\nMean: \\(\\overline{T}_B = B^{-1} \\sum_{j=1}^B T_{(j)}(x)\\)\nStandard deviation: \\(\\left[B^{-1} \\sum_{j=1}^B (T_{(j)}(x) - \\overline{T}_B)^2\\right]^{1/2}\\)\nPrediction intervals at 95\\(\\%\\) coverage level\nExceedance probabilities: \\(B^{-1} \\sum_{j=1}^B I(T_{(j)}(x) &gt; L)\\), for a given threshold \\(L\\).\n\n\n. . .\n pred_cont.R"
   },
   {
     "objectID": "teaching/MBG/geostat_pred.html#marginal-vs-joint-predictions",
     "href": "teaching/MBG/geostat_pred.html#marginal-vs-joint-predictions",
     "title": "Geostatistical prediction",
     "section": "Marginal vs joint predictions",
-    "text": "Marginal vs joint predictions\n\nLet \\(\\tilde{X} = (\\tilde{x}_1, \\ldots, \\tilde{x}_q)\\) be the set of prediciton locations that are make up the regular grid.\n\n\n\nMarginal predictions are obtained by simulating independently from the \\(q\\) marginal predictive distributions of \\([S(\\tilde{X}) | y]\\). In other words, we consider a prediction location \\(\\tilde{x}_j\\), simulate from \\([S(\\tilde{x}_j) \\: |\\: y]\\) say \\(B\\) samples, and repeat this for \\(j=1,\\ldots,q\\)\n\n\n\n\nJoint predictions are obtained by simulating from the joint distribution of \\([S(\\tilde{X}) \\: |\\: y]\\). Unlike marginal predictions, joint predictions take into account the correlation between the different components of \\([S(\\tilde{X}) \\: |\\: y]\\).\n\n\n\n\nWhen the target is \\(T(x)\\), i.e. at pixel-level, we can use either marginal or joint predictions.\n\n\n\n\nWhen the target is areal level (see next slides), we can ONLY use joint predictions."
+    "text": "Marginal vs joint predictions\n\nLet \\(\\tilde{X} = (\\tilde{x}_1, \\ldots, \\tilde{x}_q)\\) be the set of prediciton locations that are make up the regular grid.\n\n. . .\n\nMarginal predictions are obtained by simulating independently from the \\(q\\) marginal predictive distributions of \\([S(\\tilde{X}) | y]\\). In other words, we consider a prediction location \\(\\tilde{x}_j\\), simulate from \\([S(\\tilde{x}_j) \\: |\\: y]\\) say \\(B\\) samples, and repeat this for \\(j=1,\\ldots,q\\)\n\n. . .\n\nJoint predictions are obtained by simulating from the joint distribution of \\([S(\\tilde{X}) \\: |\\: y]\\). Unlike marginal predictions, joint predictions take into account the correlation between the different components of \\([S(\\tilde{X}) \\: |\\: y]\\).\n\n. . .\n\nWhen the target is \\(T(x)\\), i.e. at pixel-level, we can use either marginal or joint predictions.\n\n. . .\n\nWhen the target is areal level (see next slides), we can ONLY use joint predictions."
   },
   {
     "objectID": "teaching/MBG/geostat_pred.html#areal-level-targets-questions-to-consider",
@@ -368,14 +368,14 @@
     "href": "teaching/MBG/geostat_pred.html#example-regional-average-prevalence",
     "title": "Geostatistical prediction",
     "section": "Example: regional average prevalence",
-    "text": "Example: regional average prevalence\n\nLet \\(T(x) = \\exp\\{d(x)^\\top \\beta + S(x) \\}/(1+\\exp\\{d(x)^\\top \\beta + S(x)\\})\\)\n\n\n\nAverage (unweighted) prevalence \\[\n\\mathcal{M}_i = \\frac{1}{|A_i|}\\int_{A_i} T(x) \\: dx.\n\\]\n\n\n\n\nAverage weighted prevalence \\[\n\\mathcal{M}_i = \\frac{\\int_{A_i} w(x) T(x) \\: dx}{\\int_{A_i} w(x) \\: dx}.\n\\]\n\n\n\n\nWe approximate the above integrals using the regular grid, e.g.\n\n\\[\\mathcal{M}_i \\approx \\frac{1}{\\#\\{j : \\tilde{x}_j \\in A_i\\}} \\sum_{\\tilde{x}_j \\in A_i} T(\\tilde{x}_j), \\]\nfor the unweighted regional prevalence."
+    "text": "Example: regional average prevalence\n\nLet \\(T(x) = \\exp\\{d(x)^\\top \\beta + S(x) \\}/(1+\\exp\\{d(x)^\\top \\beta + S(x)\\})\\)\n\n. . .\n\nAverage (unweighted) prevalence \\[\n\\mathcal{M}_i = \\frac{1}{|A_i|}\\int_{A_i} T(x) \\: dx.\n\\]\n\n. . .\n\nAverage weighted prevalence \\[\n\\mathcal{M}_i = \\frac{\\int_{A_i} w(x) T(x) \\: dx}{\\int_{A_i} w(x) \\: dx}.\n\\]\n\n. . .\n\nWe approximate the above integrals using the regular grid, e.g.\n\n\\[\\mathcal{M}_i \\approx \\frac{1}{\\#\\{j : \\tilde{x}_j \\in A_i\\}} \\sum_{\\tilde{x}_j \\in A_i} T(\\tilde{x}_j), \\]\nfor the unweighted regional prevalence."
   },
   {
     "objectID": "teaching/MBG/geostat_pred.html#steps-for-the-geostistical-prediction-of-areal-targets",
     "href": "teaching/MBG/geostat_pred.html#steps-for-the-geostistical-prediction-of-areal-targets",
     "title": "Geostatistical prediction",
     "section": "Steps for the geostistical prediction of areal targets",
-    "text": "Steps for the geostistical prediction of areal targets\nPreliminary steps:\n\nObtain the shapefile of the study area.\nObtain the shapefiles of the boundaries of the regions for which aggregation is required.\nGenerate a regular grid that covers the study for the desired spatial resolution, using the shapefile.\nExtract all the covariates used in the model on the grid and ensure that there are no missing values.\nFor weighted areal level target, extract all the weights on the grid and ensure that there are no missing values.\n\n\nPrediction steps (for a given location \\(x\\) on the grid):\n\n(Joint prediction) Generate samples from the predictive distribution of \\(S(x) \\: | \\: y\\), say \\(S_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n\n\n\nApply the transformation defined by \\(T(x)\\) to each of the samples \\(S_{(j)}(x)\\), to obtain \\(T_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n\n\n\nAggregate the samples \\(T_{(j)}(x)\\) for each region \\(A_i\\) to obtain samples of the areal-level predictive target \\(\\mathcal{M}_i\\). Denote these samples as \\(\\mathcal{M}_i^{(j)}\\).\nObtain the desired summaries of the predictive distribution of \\(\\mathcal{M}_i\\). Examples:\n\nMean: \\(\\overline{\\mathcal{M}}_{i,B} = B^{-1} \\sum_{j=1}^B \\mathcal{M}_i^{(j)}\\)\nStandard deviation: \\(\\left[B^{-1} \\sum_{j=1}^B (\\mathcal{M}_i^{(j)} - \\overline{\\mathcal{M}}_{i,B})^2\\right]^{1/2}\\)\nPrediction intervals at 95\\(\\%\\) coverage level\nExceedance probabilities: \\(B^{-1} \\sum_{j=1}^B I(\\mathcal{M}_{i}^{(j)} &gt; L)\\), for a given threshold \\(L\\).\n\n\n\n\n pred_area.R"
+    "text": "Steps for the geostistical prediction of areal targets\nPreliminary steps:\n\nObtain the shapefile of the study area.\nObtain the shapefiles of the boundaries of the regions for which aggregation is required.\nGenerate a regular grid that covers the study for the desired spatial resolution, using the shapefile.\nExtract all the covariates used in the model on the grid and ensure that there are no missing values.\nFor weighted areal level target, extract all the weights on the grid and ensure that there are no missing values.\n\n. . .\nPrediction steps (for a given location \\(x\\) on the grid):\n\n(Joint prediction) Generate samples from the predictive distribution of \\(S(x) \\: | \\: y\\), say \\(S_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n. . .\n\nApply the transformation defined by \\(T(x)\\) to each of the samples \\(S_{(j)}(x)\\), to obtain \\(T_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n. . .\n\nAggregate the samples \\(T_{(j)}(x)\\) for each region \\(A_i\\) to obtain samples of the areal-level predictive target \\(\\mathcal{M}_i\\). Denote these samples as \\(\\mathcal{M}_i^{(j)}\\).\nObtain the desired summaries of the predictive distribution of \\(\\mathcal{M}_i\\). Examples:\n\nMean: \\(\\overline{\\mathcal{M}}_{i,B} = B^{-1} \\sum_{j=1}^B \\mathcal{M}_i^{(j)}\\)\nStandard deviation: \\(\\left[B^{-1} \\sum_{j=1}^B (\\mathcal{M}_i^{(j)} - \\overline{\\mathcal{M}}_{i,B})^2\\right]^{1/2}\\)\nPrediction intervals at 95\\(\\%\\) coverage level\nExceedance probabilities: \\(B^{-1} \\sum_{j=1}^B I(\\mathcal{M}_{i}^{(j)} &gt; L)\\), for a given threshold \\(L\\).\n\n\n. . .\n pred_area.R"
   },
   {
     "objectID": "teaching/MBG/Exercises/Exercise 2.html",
@@ -388,8 +388,8 @@
     "objectID": "teaching/MBG/exp_analysis.html#overview-of-topics",
     "href": "teaching/MBG/exp_analysis.html#overview-of-topics",
     "title": "Exploratory analysis",
-    "section": "Overview of topics",
-    "text": "Overview of topics\n\nHow to explore relationships with count data\nHow to use a non-spatial model for mapping\nHow to handle spatial data in R"
+    "section": "",
+    "text": "How to explore relationships with count data\nHow to use a non-spatial model for mapping\nHow to handle spatial data in R"
   },
   {
     "objectID": "teaching/MBG/exp_analysis.html#example-riverblindness-in-liberia",
@@ -410,7 +410,7 @@
     "href": "teaching/MBG/exp_analysis.html#example-overdispersion-in-correlated-binary-data",
     "title": "Exploratory analysis",
     "section": "Example: Overdispersion in Correlated Binary Data",
-    "text": "Example: Overdispersion in Correlated Binary Data\n\nConsider \\(Y = \\sum_{i=1}^n X_i\\), where \\(X_i\\) are correlated binary variables.\n\n\n\nIf \\(X_i\\) are independent, \\(Y\\) follows a Binomial distribution: \\[ \\mathbb{E}(Y) = np, \\quad \\text{Var}(Y) = np(1-p). \\]\n\n\n\n\nIf \\(X_i\\) are correlated, the variance increases:\n\\[ \\text{Var}(Y) = np(1-p) + \\sum_{i \\neq j} \\text{Cov}(X_i, X_j). \\]\n\n\n\n\nThis leads to overdispersion."
+    "text": "Example: Overdispersion in Correlated Binary Data\n\nConsider \\(Y = \\sum_{i=1}^n X_i\\), where \\(X_i\\) are correlated binary variables.\n\n. . .\n\nIf \\(X_i\\) are independent, \\(Y\\) follows a Binomial distribution: \\[ \\mathbb{E}(Y) = np, \\quad \\text{Var}(Y) = np(1-p). \\]\n\n. . .\n\nIf \\(X_i\\) are correlated, the variance increases:\n\\[ \\text{Var}(Y) = np(1-p) + \\sum_{i \\neq j} \\text{Cov}(X_i, X_j). \\]\n\n. . .\n\nThis leads to overdispersion."
   },
   {
     "objectID": "teaching/MBG/exp_analysis.html#example-negative-binomial-distribution",
@@ -424,7 +424,7 @@
     "href": "teaching/MBG/exp_analysis.html#random-effects-models-for-overdispersion",
     "title": "Exploratory analysis",
     "section": "Random Effects Models for Overdispersion",
-    "text": "Random Effects Models for Overdispersion\n\nOverdispersion often arises due to unobserved heterogeneity.\nA solution is to introduce random effects that account for latent variability.\n\n\n\nRandom Intercept Model:\n\\[ Y_{ij} \\mid Z_i \\sim \\text{Binomial}(p_{ij}), \\quad \\log\\left\\{\\frac{p_{ij}}{1-p_{ij}}\\right\\} = \\beta_0 + d_{ij} \\beta_1 + Z_i. \\]\n\n\n\n\n\\(Z_i \\sim \\mathcal{N}(0, \\sigma^2)\\) captures between-group variability.\n\n\n\n\nLeads to extra variability in counts, addressing overdispersion.\n\n\n\n\nConnection to Negative Binomial:\n\nIf \\(Z_i\\) follows a Gamma distribution instead of Normal, the model is equivalent to a Negative Binomial."
+    "text": "Random Effects Models for Overdispersion\n\nOverdispersion often arises due to unobserved heterogeneity.\nA solution is to introduce random effects that account for latent variability.\n\n. . .\n\nRandom Intercept Model:\n\\[ Y_{ij} \\mid Z_i \\sim \\text{Binomial}(p_{ij}), \\quad \\log\\left\\{\\frac{p_{ij}}{1-p_{ij}}\\right\\} = \\beta_0 + d_{ij} \\beta_1 + Z_i. \\]\n\n. . .\n\n\\(Z_i \\sim \\mathcal{N}(0, \\sigma^2)\\) captures between-group variability.\n\n. . .\n\nLeads to extra variability in counts, addressing overdispersion.\n\n. . .\n\nConnection to Negative Binomial:\n\nIf \\(Z_i\\) follows a Gamma distribution instead of Normal, the model is equivalent to a Negative Binomial."
   },
   {
     "objectID": "teaching/MBG/exp_analysis.html#marginal-models-for-overdispersion",
@@ -438,28 +438,28 @@
     "href": "teaching/MBG/exp_analysis.html#choosing-between-models",
     "title": "Exploratory analysis",
     "section": "Choosing Between Models",
-    "text": "Choosing Between Models\n\n\n\n\n\n\n\n\nComparison of Random Effects vs. Marginal Models\n\n\nFeature\nRandom Effects Model\nMarginal Model (GEE)\n\n\n\n\nInterpretation\nSubject-specific\nPopulation-averaged\n\n\nHandles Overdispersion\nYes (via latent effects)\nYes (via robust SE)\n\n\nComputational Complexity\nHigher\nLower\n\n\n\n\n\n\n\n\nExample 1\n\nA clinical trial measuring blood pressure at multiple time points for patients in different hospitals.\n\nWhy Use Random Effects?\n\nEach patient has their own baseline blood pressure that varies.\n\nA random intercept accounts for individual differences.\n\nIf hospitals have different treatment protocols, a random hospital effect can be included.\n\n\n\n\nExample 2\n\nStudy Design: A population-wide study on whether a new influenza vaccine reduces hospitalization rates.\n\nWhy Use Marginal Models?\n\nInterest is in the population-averaged effect of the vaccine, not individual variation.\n\nGeneralized Estimating Equations (GEE) account for correlation in repeated measures without assuming a specific random effect structure."
+    "text": "Choosing Between Models\n\n\n\n\n\n\n\n\nComparison of Random Effects vs. Marginal Models\n\n\nFeature\nRandom Effects Model\nMarginal Model (GEE)\n\n\n\n\nInterpretation\nSubject-specific\nPopulation-averaged\n\n\nHandles Overdispersion\nYes (via latent effects)\nYes (via robust SE)\n\n\nComputational Complexity\nHigher\nLower\n\n\n\n\n\n\n\n. . .\nExample 1\n\nA clinical trial measuring blood pressure at multiple time points for patients in different hospitals.\n\nWhy Use Random Effects?\n\nEach patient has their own baseline blood pressure that varies.\n\nA random intercept accounts for individual differences.\n\nIf hospitals have different treatment protocols, a random hospital effect can be included.\n\n\n. . .\nExample 2\n\nStudy Design: A population-wide study on whether a new influenza vaccine reduces hospitalization rates.\n\nWhy Use Marginal Models?\n\nInterest is in the population-averaged effect of the vaccine, not individual variation.\n\nGeneralized Estimating Equations (GEE) account for correlation in repeated measures without assuming a specific random effect structure."
   },
   {
     "objectID": "teaching/MBG/exp_analysis.html#a-class-of-generalized-linear-models",
     "href": "teaching/MBG/exp_analysis.html#a-class-of-generalized-linear-models",
     "title": "Exploratory analysis",
     "section": "A class of generalized linear models",
-    "text": "A class of generalized linear models\nAssumptions:\n\n\n\\(Z_{i}\\) are i.i.d. random variables;\n\n\n\n\n\\(Y_{i} \\mid Z_i \\sim f(\\cdot)\\) belongs to the exponential family;\n\n\n\n\n\\(E[Y_{i}\\mid Z_i] = m_i \\mu_{i}\\) and \\(\\text{Var}[Y_{i} \\mid Z_i] = m_i V(\\mu_{i})\\);\n\n\n\n\n\\(g(\\mu_{i}) = \\eta_i = d_i^\\top \\beta + Z_i\\);\n\n\n\n\n\\(Y_i \\mid Z_i\\) are mutually independent for \\(i=1,\\dots,n\\)."
+    "text": "A class of generalized linear models\nAssumptions:\n. . .\n\n\\(Z_{i}\\) are i.i.d. random variables;\n\n. . .\n\n\\(Y_{i} \\mid Z_i \\sim f(\\cdot)\\) belongs to the exponential family;\n\n. . .\n\n\\(E[Y_{i}\\mid Z_i] = m_i \\mu_{i}\\) and \\(\\text{Var}[Y_{i} \\mid Z_i] = m_i V(\\mu_{i})\\);\n\n. . .\n\n\\(g(\\mu_{i}) = \\eta_i = d_i^\\top \\beta + Z_i\\);\n\n. . .\n\n\\(Y_i \\mid Z_i\\) are mutually independent for \\(i=1,\\dots,n\\)."
   },
   {
     "objectID": "teaching/MBG/exp_analysis.html#parameter-estimation",
     "href": "teaching/MBG/exp_analysis.html#parameter-estimation",
     "title": "Exploratory analysis",
     "section": "Parameter Estimation",
-    "text": "Parameter Estimation\n\nLet the \\(Z_i\\) be i.i.d. Gaussian distributions with mean zero and variance \\(\\sigma^2\\).\nLikelihood function\n\nThe vector of unkown parameters is \\(\\theta=(\\beta, \\sigma^2)\\) \\[\nL(\\theta) = \\prod_{i=1}^n \\int_{-\\infty}^{+\\infty} [Z_i] [Y_i \\mid Z_i] \\: dY_i\n\\]\n\n\nEstimation Method\n\nMaximize the likelihood using the Laplace approximation (glmer in the lme4 package).\n\n\n\nHypothesis Testing\n\nObtain \\(\\hat{\\theta}\\) (MLE).\nObtain \\(\\hat{\\theta}_{0}\\), the MLE constrained by fixing \\(p\\) values of \\(\\beta\\) to 0.\nCompute the log-likelihood ratio:\n\n\\[\nD = 2(\\log L(\\hat{\\theta}) - \\log L(\\hat{\\theta}_0)) \\sim \\chi^2_{p}\n\\]\n\nP-value: \\(P(D &gt; D_{obs} \\mid H_0)\\)\n\n\n\n\n glmer_fit.R"
+    "text": "Parameter Estimation\n\nLet the \\(Z_i\\) be i.i.d. Gaussian distributions with mean zero and variance \\(\\sigma^2\\).\nLikelihood function\n\nThe vector of unkown parameters is \\(\\theta=(\\beta, \\sigma^2)\\) \\[\nL(\\theta) = \\prod_{i=1}^n \\int_{-\\infty}^{+\\infty} [Z_i] [Y_i \\mid Z_i] \\: dY_i\n\\]\n. . .\n\nEstimation Method\n\nMaximize the likelihood using the Laplace approximation (glmer in the lme4 package).\n. . .\n\nHypothesis Testing\n\nObtain \\(\\hat{\\theta}\\) (MLE).\nObtain \\(\\hat{\\theta}_{0}\\), the MLE constrained by fixing \\(p\\) values of \\(\\beta\\) to 0.\nCompute the log-likelihood ratio:\n\n\\[\nD = 2(\\log L(\\hat{\\theta}) - \\log L(\\hat{\\theta}_0)) \\sim \\chi^2_{p}\n\\]\n\nP-value: \\(P(D &gt; D_{obs} \\mid H_0)\\)\n\n\n. . .\n glmer_fit.R"
   },
   {
     "objectID": "teaching/MBG/exp_analysis.html#coordinate-reference-systems-crs",
     "href": "teaching/MBG/exp_analysis.html#coordinate-reference-systems-crs",
     "title": "Exploratory analysis",
     "section": "Coordinate Reference Systems (CRS)",
-    "text": "Coordinate Reference Systems (CRS)\n\nGeographic vs. Projected CRS\nA CRS defines how spatial data is projected onto the Earth’s surface.\nTwo main types:\n\nGeographic CRS (Latitude/Longitude, e.g., WGS84)\nProjected CRS (e.g., UTM, which uses meters for measurements)"
+    "text": "Coordinate Reference Systems (CRS)\n\n\n\nGeographic vs. Projected CRS\n\n\n\nA CRS defines how spatial data is projected onto the Earth’s surface.\nTwo main types:\n\nGeographic CRS (Latitude/Longitude, e.g., WGS84)\nProjected CRS (e.g., UTM, which uses meters for measurements)"
   },
   {
     "objectID": "teaching/MBG/exp_analysis.html#computing-distance",
@@ -480,14 +480,14 @@
     "href": "teaching/MBG/exp_analysis.html#mapping-with-covariates-only",
     "title": "Exploratory analysis",
     "section": "Mapping with covariates only",
-    "text": "Mapping with covariates only\nConsider the following GLMM for the Liberia data on riverblindness. \\[\n\\log\\left\\{\\frac{p(x_i)}{1-p(x_i)}\\right\\} = \\beta_0 + \\beta_1 \\log\\{e(x_i)\\} + Z_i\n\\] where \\(e(x)\\) is the elevation in meters at location \\(x\\) and \\(Z_i \\sim N(0,\\tau^2)\\) i.d.d.\n\nQuestion: How can we use this model for mapping?\n\n\n glmm_mapping.R"
+    "text": "Mapping with covariates only\nConsider the following GLMM for the Liberia data on riverblindness. \\[\n\\log\\left\\{\\frac{p(x_i)}{1-p(x_i)}\\right\\} = \\beta_0 + \\beta_1 \\log\\{e(x_i)\\} + Z_i\n\\] where \\(e(x)\\) is the elevation in meters at location \\(x\\) and \\(Z_i \\sim N(0,\\tau^2)\\) i.d.d.\n. . .\nQuestion: How can we use this model for mapping?\n. . .\n glmm_mapping.R"
   },
   {
     "objectID": "teaching/MBG/estimation_rss2025.html#overview-of-topics",
     "href": "teaching/MBG/estimation_rss2025.html#overview-of-topics",
     "title": "Model formulation and parameter estimation",
-    "section": "Overview of topics",
-    "text": "Overview of topics\n\nAn overview of staionary Gaussian processes in 2 dimensions\nHow to formulate and fit a geostatistical model\nHow to interpret the results from a model fit"
+    "section": "",
+    "text": "An overview of staionary Gaussian processes in 2 dimensions\nHow to formulate and fit a geostatistical model\nHow to interpret the results from a model fit"
   },
   {
     "objectID": "teaching/MBG/estimation_rss2025.html#stationary-and-isotropic-gaussian-processes",
@@ -508,7 +508,7 @@
     "href": "teaching/MBG/estimation_rss2025.html#special-cases-of-the-matérn-covariance",
     "title": "Model formulation and parameter estimation",
     "section": "Special Cases of the Matérn Covariance",
-    "text": "Special Cases of the Matérn Covariance\nThe Matérn family includes two important special cases:\n\nExponential Covariance (\\(\\kappa = 1/2\\))\n\\[ C(h) = \\sigma^2 \\exp\\left(-\\frac{h}{\\phi}\\right) \\]\nProperties:\n\nRelatively rough process, non-differentiable\n\nContinuous but not differentiable\n\nMarkovian (memoryless) property\n\n\n\n\nGaussian (Squared Exponential) Covariance (\\(\\kappa \\to \\infty\\))\n\\[ C(h) = \\sigma^2 \\exp\\left(-\\frac{h^2}{2\\phi^2}\\right) \\]\nProperties:\n\nInfinitely differentiable\n\nProduces very smooth realizations\n\nSometimes too smooth for physical processes"
+    "text": "Special Cases of the Matérn Covariance\nThe Matérn family includes two important special cases:\n\nExponential Covariance (\\(\\kappa = 1/2\\))\n\\[ C(h) = \\sigma^2 \\exp\\left(-\\frac{h}{\\phi}\\right) \\]\nProperties:\n\nRelatively rough process, non-differentiable\n\nContinuous but not differentiable\n\nMarkovian (memoryless) property\n\n\n. . .\n\nGaussian (Squared Exponential) Covariance (\\(\\kappa \\to \\infty\\))\n\\[ C(h) = \\sigma^2 \\exp\\left(-\\frac{h^2}{2\\phi^2}\\right) \\]\nProperties:\n\nInfinitely differentiable\n\nProduces very smooth realizations\n\nSometimes too smooth for physical processes"
   },
   {
     "objectID": "teaching/MBG/estimation_rss2025.html#practical-range-of-spatial-correlation",
@@ -522,28 +522,28 @@
     "href": "teaching/MBG/estimation_rss2025.html#generalized-linear-geostatistical-models",
     "title": "Model formulation and parameter estimation",
     "section": "Generalized linear geostatistical models",
-    "text": "Generalized linear geostatistical models\n\nLet \\(S(x)\\) be a stationary and isotropic Gaussian process, with Matérn correlation function.\n\n\n\nLet \\(Z_i\\) be independent identically distributed random variables.\n\n\n\n\nLet \\(d(x_i)\\) be a vector of covariates with associated regression coefficients \\(\\beta\\).\n\n\n\n\nLet \\(Y_i\\) be a random variable that, conditionally on \\(S(x_i)\\) and \\(Z_i\\), follows an exponential family distribution (e.g. Gaussian, Binomial, Poisson).\n\n\n\n\nLet \\(g(\\cdot)\\) be a link function.\n\n\\(\\mathbb{E} \\left[ Y_i \\: | \\: S(x_i), Z_i \\right] = m_i \\mu_i\\)\n\n\\({\\rm Var}\\left[Y_i \\: | \\: S(x_i), Z_i\\right] = m_i V(\\mu_i)\\)\n\\(g(\\mu_i) = d(x_i)^\\top \\beta + S(x_i) + Z_i\\)"
+    "text": "Generalized linear geostatistical models\n\nLet \\(S(x)\\) be a stationary and isotropic Gaussian process, with Matérn correlation function.\n\n. . .\n\nLet \\(Z_i\\) be independent identically distributed random variables.\n\n. . .\n\nLet \\(d(x_i)\\) be a vector of covariates with associated regression coefficients \\(\\beta\\).\n\n. . .\n\nLet \\(Y_i\\) be a random variable that, conditionally on \\(S(x_i)\\) and \\(Z_i\\), follows an exponential family distribution (e.g. Gaussian, Binomial, Poisson).\n\n. . .\n\nLet \\(g(\\cdot)\\) be a link function.\n\n\\(\\mathbb{E} \\left[ Y_i \\: | \\: S(x_i), Z_i \\right] = m_i \\mu_i\\)\n\n\\({\\rm Var}\\left[Y_i \\: | \\: S(x_i), Z_i\\right] = m_i V(\\mu_i)\\)\n\\(g(\\mu_i) = d(x_i)^\\top \\beta + S(x_i) + Z_i\\)"
   },
   {
     "objectID": "teaching/MBG/estimation_rss2025.html#binomial-and-poisson-geostatistical-models",
     "href": "teaching/MBG/estimation_rss2025.html#binomial-and-poisson-geostatistical-models",
     "title": "Model formulation and parameter estimation",
     "section": "Binomial and Poisson Geostatistical Models",
-    "text": "Binomial and Poisson Geostatistical Models\n\nBinomial Geostatistical Model\n\n\\(Y_i \\: | \\: S(x_i), Z_i \\sim \\text{Binomial}(m_i, \\mu_i)\\)\nLink function: Logit link \\(g(\\mu_i) = \\log \\left( \\frac{\\mu_i}{1 - \\mu_i} \\right) = d(x_i)^\\top \\beta + S(x_i) + Z_i\\)\nVariance function: \\(V(\\mu_i) = m_i \\mu_i (1 - \\mu_i)\\)\n\n\n\n\nPoisson Geostatistical Model\n\n\\(Y_i \\: | \\: S(x_i), Z_i \\sim \\text{Poisson}(m_i \\mu_i)\\)\nLink function: Log link \\(g(\\mu_i) = \\log (\\mu_i) = d(x_i)^\\top \\beta + S(x_i) + Z_i\\)\nVariance function: \\(V(\\mu_i) = m_i \\mu_i\\)"
+    "text": "Binomial and Poisson Geostatistical Models\n\nBinomial Geostatistical Model\n\n\\(Y_i \\: | \\: S(x_i), Z_i \\sim \\text{Binomial}(m_i, \\mu_i)\\)\nLink function: Logit link \\(g(\\mu_i) = \\log \\left( \\frac{\\mu_i}{1 - \\mu_i} \\right) = d(x_i)^\\top \\beta + S(x_i) + Z_i\\)\nVariance function: \\(V(\\mu_i) = m_i \\mu_i (1 - \\mu_i)\\)\n\n\n. . .\n\nPoisson Geostatistical Model\n\n\\(Y_i \\: | \\: S(x_i), Z_i \\sim \\text{Poisson}(m_i \\mu_i)\\)\nLink function: Log link \\(g(\\mu_i) = \\log (\\mu_i) = d(x_i)^\\top \\beta + S(x_i) + Z_i\\)\nVariance function: \\(V(\\mu_i) = m_i \\mu_i\\)"
   },
   {
     "objectID": "teaching/MBG/estimation_rss2025.html#monte-carlo-maximum-likelihood-mcml",
     "href": "teaching/MBG/estimation_rss2025.html#monte-carlo-maximum-likelihood-mcml",
     "title": "Model formulation and parameter estimation",
     "section": "Monte Carlo Maximum Likelihood (MCML)",
-    "text": "Monte Carlo Maximum Likelihood (MCML)\n\nLet \\(W_i = S(x_i) + Z_i\\) and \\(W = (W_1, \\ldots, W_n)\\)\n\n\n\nThe likelihood function for parameters \\(\\theta = (\\beta, \\sigma^2, \\phi, \\tau^2)\\) is given by:\n\\[\nL(\\theta) = \\int N(W; D\\beta, \\Omega) f(y| W) dW\n\\]\nwhere \\(\\Omega = \\sigma^2 R(\\phi) + \\tau^2I_n\\).\n\n\n\n\nWe approximate this using Monte Carlo integration:\n\\[\nL_m(\\theta) = \\frac{1}{B} \\sum_{j=1}^{B} \\frac{N\\left(W^{(j)}; D\\beta, \\Omega \\right)}{N\\left(W^{(j)}; D\\beta_0, \\Omega_0\\right)}\n\\] where \\(W^{(i)}\\) are sampled from the distribution of \\(W\\) given \\(y\\) using an MCMC algorithm."
+    "text": "Monte Carlo Maximum Likelihood (MCML)\n\nLet \\(W_i = S(x_i) + Z_i\\) and \\(W = (W_1, \\ldots, W_n)\\)\n\n. . .\n\nThe likelihood function for parameters \\(\\theta = (\\beta, \\sigma^2, \\phi, \\tau^2)\\) is given by:\n\\[\nL(\\theta) = \\int N(W; D\\beta, \\Omega) f(y| W) dW\n\\]\nwhere \\(\\Omega = \\sigma^2 R(\\phi) + \\tau^2I_n\\).\n\n. . .\n\nWe approximate this using Monte Carlo integration:\n\\[\nL_m(\\theta) = \\frac{1}{B} \\sum_{j=1}^{B} \\frac{N\\left(W^{(j)}; D\\beta, \\Omega \\right)}{N\\left(W^{(j)}; D\\beta_0, \\Omega_0\\right)}\n\\] where \\(W^{(i)}\\) are sampled from the distribution of \\(W\\) given \\(y\\) using an MCMC algorithm."
   },
   {
     "objectID": "teaching/MBG/estimation_rss2025.html#mcml-iterative-estimation",
     "href": "teaching/MBG/estimation_rss2025.html#mcml-iterative-estimation",
     "title": "Model formulation and parameter estimation",
     "section": "MCML: Iterative Estimation",
-    "text": "MCML: Iterative Estimation\n\nChoose initial values \\(\\theta_0\\) and generate samples \\(W^{(j)}\\), for \\(j = 1,\\ldots, B\\).\n\n\n\nEstimate \\(\\theta\\) by maximizing the Monte Carlo approximation, denoted by \\(L_m(\\theta)\\), to the likelihood. Denote with \\(\\hat{\\theta}_m\\) this estimate.\n\n\n\n\nUpdate \\(\\theta_0 = \\hat{\\theta}_m\\) and iterate until convergence.\n\n\n\n\nStandard errors are computed using the inverse Hessian of \\(L_m(\\theta)\\) at \\(\\hat{\\theta}_m\\).\n\n\n\n glgm_fit.R"
+    "text": "MCML: Iterative Estimation\n\nChoose initial values \\(\\theta_0\\) and generate samples \\(W^{(j)}\\), for \\(j = 1,\\ldots, B\\).\n\n. . .\n\nEstimate \\(\\theta\\) by maximizing the Monte Carlo approximation, denoted by \\(L_m(\\theta)\\), to the likelihood. Denote with \\(\\hat{\\theta}_m\\) this estimate.\n\n. . .\n\nUpdate \\(\\theta_0 = \\hat{\\theta}_m\\) and iterate until convergence.\n\n. . .\n\nStandard errors are computed using the inverse Hessian of \\(L_m(\\theta)\\) at \\(\\hat{\\theta}_m\\).\n\n. . .\n glgm_fit.R"
   },
   {
     "objectID": "teaching/MBG/estimation_rss2025.html#the-nugget-effect-as-small-scale-spatial-correlation",
@@ -556,8 +556,8 @@
     "objectID": "teaching/MBG/exp_analysis_rss2025.html#overview-of-topics",
     "href": "teaching/MBG/exp_analysis_rss2025.html#overview-of-topics",
     "title": "Exploratory analysis",
-    "section": "Overview of topics",
-    "text": "Overview of topics\n\nHow to explore relationships with count data\nHow to use a non-spatial model for mapping\nHow to handle spatial data in R"
+    "section": "",
+    "text": "How to explore relationships with count data\nHow to use a non-spatial model for mapping\nHow to handle spatial data in R"
   },
   {
     "objectID": "teaching/MBG/exp_analysis_rss2025.html#example-riverblindness-in-liberia",
@@ -578,7 +578,7 @@
     "href": "teaching/MBG/exp_analysis_rss2025.html#example-overdispersion-in-correlated-binary-data",
     "title": "Exploratory analysis",
     "section": "Example: Overdispersion in Correlated Binary Data",
-    "text": "Example: Overdispersion in Correlated Binary Data\n\nConsider \\(Y = \\sum_{i=1}^n X_i\\), where \\(X_i\\) are correlated binary variables.\n\n\n\nIf \\(X_i\\) are independent, \\(Y\\) follows a Binomial distribution: \\[ \\mathbb{E}(Y) = np, \\quad \\text{Var}(Y) = np(1-p). \\]\n\n\n\n\nIf \\(X_i\\) are correlated, the variance increases:\n\\[ \\text{Var}(Y) = np(1-p) + \\sum_{i \\neq j} \\text{Cov}(X_i, X_j). \\]\n\n\n\n\nThis leads to overdispersion."
+    "text": "Example: Overdispersion in Correlated Binary Data\n\nConsider \\(Y = \\sum_{i=1}^n X_i\\), where \\(X_i\\) are correlated binary variables.\n\n. . .\n\nIf \\(X_i\\) are independent, \\(Y\\) follows a Binomial distribution: \\[ \\mathbb{E}(Y) = np, \\quad \\text{Var}(Y) = np(1-p). \\]\n\n. . .\n\nIf \\(X_i\\) are correlated, the variance increases:\n\\[ \\text{Var}(Y) = np(1-p) + \\sum_{i \\neq j} \\text{Cov}(X_i, X_j). \\]\n\n. . .\n\nThis leads to overdispersion."
   },
   {
     "objectID": "teaching/MBG/exp_analysis_rss2025.html#example-negative-binomial-distribution",
@@ -592,21 +592,21 @@
     "href": "teaching/MBG/exp_analysis_rss2025.html#random-effects-models-for-overdispersion",
     "title": "Exploratory analysis",
     "section": "Random Effects Models for Overdispersion",
-    "text": "Random Effects Models for Overdispersion\n\nOverdispersion often arises due to unobserved heterogeneity.\nA solution is to introduce random effects that account for latent variability.\n\n\n\nRandom Intercept Model:\n\\[ Y_{ij} \\mid Z_i \\sim \\text{Binomial}(p_{ij}), \\quad \\log\\left\\{\\frac{p_{ij}}{1-p_{ij}}\\right\\} = \\beta_0 + d_{ij} \\beta_1 + Z_i. \\]\n\n\n\n\n\\(Z_i \\sim \\mathcal{N}(0, \\sigma^2)\\) captures between-group variability.\n\n\n\n\nLeads to extra variability in counts, addressing overdispersion.\n\n\n\n\nConnection to Negative Binomial:\n\nIf \\(Z_i\\) follows a Gamma distribution instead of Normal, the model is equivalent to a Negative Binomial."
+    "text": "Random Effects Models for Overdispersion\n\nOverdispersion often arises due to unobserved heterogeneity.\nA solution is to introduce random effects that account for latent variability.\n\n. . .\n\nRandom Intercept Model:\n\\[ Y_{ij} \\mid Z_i \\sim \\text{Binomial}(p_{ij}), \\quad \\log\\left\\{\\frac{p_{ij}}{1-p_{ij}}\\right\\} = \\beta_0 + d_{ij} \\beta_1 + Z_i. \\]\n\n. . .\n\n\\(Z_i \\sim \\mathcal{N}(0, \\sigma^2)\\) captures between-group variability.\n\n. . .\n\nLeads to extra variability in counts, addressing overdispersion.\n\n. . .\n\nConnection to Negative Binomial:\n\nIf \\(Z_i\\) follows a Gamma distribution instead of Normal, the model is equivalent to a Negative Binomial."
   },
   {
     "objectID": "teaching/MBG/exp_analysis_rss2025.html#a-class-of-generalized-linear-models",
     "href": "teaching/MBG/exp_analysis_rss2025.html#a-class-of-generalized-linear-models",
     "title": "Exploratory analysis",
     "section": "A class of generalized linear models",
-    "text": "A class of generalized linear models\nAssumptions:\n\n\n\\(Z_{i}\\) are i.i.d. random variables;\n\n\n\n\n\\(Y_{i} \\mid Z_i \\sim f(\\cdot)\\) belongs to the exponential family;\n\n\n\n\n\\(E[Y_{i}\\mid Z_i] = m_i \\mu_{i}\\) and \\(\\text{Var}[Y_{i} \\mid Z_i] = m_i V(\\mu_{i})\\);\n\n\n\n\n\\(g(\\mu_{i}) = \\eta_i = d_i^\\top \\beta + Z_i\\);\n\n\n\n\n\\(Y_i \\mid Z_i\\) are mutually independent for \\(i=1,\\dots,n\\)."
+    "text": "A class of generalized linear models\nAssumptions:\n. . .\n\n\\(Z_{i}\\) are i.i.d. random variables;\n\n. . .\n\n\\(Y_{i} \\mid Z_i \\sim f(\\cdot)\\) belongs to the exponential family;\n\n. . .\n\n\\(E[Y_{i}\\mid Z_i] = m_i \\mu_{i}\\) and \\(\\text{Var}[Y_{i} \\mid Z_i] = m_i V(\\mu_{i})\\);\n\n. . .\n\n\\(g(\\mu_{i}) = \\eta_i = d_i^\\top \\beta + Z_i\\);\n\n. . .\n\n\\(Y_i \\mid Z_i\\) are mutually independent for \\(i=1,\\dots,n\\)."
   },
   {
     "objectID": "teaching/MBG/exp_analysis_rss2025.html#parameter-estimation",
     "href": "teaching/MBG/exp_analysis_rss2025.html#parameter-estimation",
     "title": "Exploratory analysis",
     "section": "Parameter Estimation",
-    "text": "Parameter Estimation\n\nLet the \\(Z_i\\) be i.i.d. Gaussian distributions with mean zero and variance \\(\\sigma^2\\).\nLikelihood function\n\nThe vector of unkown parameters is \\(\\theta=(\\beta, \\sigma^2)\\)\n\\[\nL(\\theta) = \\prod_{i=1}^n \\int_{-\\infty}^{+\\infty} [Z_i] [Y_i \\mid Z_i] \\: dY_i\n\\]\n\n\nEstimation Method\n\nMaximize the likelihood using the Laplace approximation (glmer in the lme4 package).\n\n\n\nHypothesis Testing\n\nObtain \\(\\hat{\\theta}\\) (MLE).\nObtain \\(\\hat{\\theta}_{0}\\), the MLE constrained by fixing \\(p\\) values of \\(\\beta\\) to 0.\nCompute the log-likelihood ratio:\n\n\\[\nD = 2(\\log L(\\hat{\\theta}) - \\log L(\\hat{\\theta}_0)) \\sim \\chi^2_{p}\n\\]\n\nP-value: \\(P(D &gt; D_{obs} \\mid H_0)\\)\n\n\n\n\n glmer_fit.R"
+    "text": "Parameter Estimation\n\nLet the \\(Z_i\\) be i.i.d. Gaussian distributions with mean zero and variance \\(\\sigma^2\\).\nLikelihood function\n\nThe vector of unkown parameters is \\(\\theta=(\\beta, \\sigma^2)\\)\n\\[\nL(\\theta) = \\prod_{i=1}^n \\int_{-\\infty}^{+\\infty} [Z_i] [Y_i \\mid Z_i] \\: dY_i\n\\]\n. . .\n\nEstimation Method\n\nMaximize the likelihood using the Laplace approximation (glmer in the lme4 package).\n. . .\n\nHypothesis Testing\n\nObtain \\(\\hat{\\theta}\\) (MLE).\nObtain \\(\\hat{\\theta}_{0}\\), the MLE constrained by fixing \\(p\\) values of \\(\\beta\\) to 0.\nCompute the log-likelihood ratio:\n\n\\[\nD = 2(\\log L(\\hat{\\theta}) - \\log L(\\hat{\\theta}_0)) \\sim \\chi^2_{p}\n\\]\n\nP-value: \\(P(D &gt; D_{obs} \\mid H_0)\\)\n\n\n. . .\n glmer_fit.R"
   },
   {
     "objectID": "teaching/MBG/exp_analysis_rss2025.html#which-residuals-should-we-use-to-assess-spatial-correlation",
@@ -620,14 +620,14 @@
     "href": "teaching/MBG/exp_analysis_rss2025.html#the-empirical-variogram-using-random-effects-residuals",
     "title": "Exploratory analysis",
     "section": "The Empirical Variogram using Random Effects Residuals",
-    "text": "The Empirical Variogram using Random Effects Residuals\n\nThe empirical variogram is defined as: \\[\n\\gamma(D_{[a,b]}) = \\frac{1}{2|D_{[a,b]}|} \\sum_{(i,j) \\in D_{[a,b]}} (\\hat{Z}_i - \\hat{Z}_j)^2\n\\] where:\n\n\\(D_{[a,b]}\\) is a class of distance with lower limit \\(a\\) and upper limit \\(b\\);\n\\(|D_{[a,b]}|\\) is the number of pairs of observations whose locations ar at a distance between \\(a\\) and \\(b\\)."
+    "text": "The Empirical Variogram using Random Effects Residuals\n\nThe empirical variogram is defined as: \\[\n\\gamma(D_{[a,b]}) = \\frac{1}{2|D_{[a,b]}|} \\sum_{(i,j) \\in D_{[a,b]}} (\\hat{Z}_i - \\hat{Z}_j)^2\n\\] where:\n\n\\(D_{[a,b]}\\) is a class of distance with lower limit \\(a\\) and upper limit \\(b\\);\n\\(|D_{[a,b]}|\\) is the number of pairs of observations whose locations ar at a distance between \\(a\\) and \\(b\\).\n\n\n. . .\n\n. . ."
   },
   {
     "objectID": "teaching/MBG/exp_analysis_rss2025.html#coordinate-reference-systems-crs",
     "href": "teaching/MBG/exp_analysis_rss2025.html#coordinate-reference-systems-crs",
     "title": "Exploratory analysis",
     "section": "Coordinate Reference Systems (CRS)",
-    "text": "Coordinate Reference Systems (CRS)\n\nGeographic vs. Projected CRS\nA CRS tells us how the coordinates in our data match real-world locations on the Earth.\n\nTwo main types:\n\nGeographic CRS (Latitude/Longitude, e.g., WGS84)\n\nProjected CRS (e.g., UTM, which uses meters for measurements)"
+    "text": "Coordinate Reference Systems (CRS)\n\n\n\nGeographic vs. Projected CRS\n\n\n\nA CRS tells us how the coordinates in our data match real-world locations on the Earth.\n\nTwo main types:\n\nGeographic CRS (Latitude/Longitude, e.g., WGS84)\n\nProjected CRS (e.g., UTM, which uses meters for measurements)"
   },
   {
     "objectID": "teaching/MBG/exp_analysis_rss2025.html#computing-distance",
@@ -647,92 +647,92 @@
     "objectID": "teaching/MBG/introduction.html#epidemiological-data",
     "href": "teaching/MBG/introduction.html#epidemiological-data",
     "title": "Introduction",
-    "section": "Epidemiological Data",
-    "text": "Epidemiological Data\n\nIncidence: Number of new cases per unit time per unit population\n\nPrevalence: Number of existing cases per unit population\n\nRisk: Probability that a person will contract the disease (per unit time or lifetime)\n\nObjective: Understand spatial variation in disease incidence, prevalence, and risk\nRelevant books:\nElliott et al. (2000), Gelfand et al. (2010), Rothman (1986), Waller & Gotway (2004), Woodward (1999)"
+    "section": "",
+    "text": "Incidence: Number of new cases per unit time per unit population\n\nPrevalence: Number of existing cases per unit population\n\nRisk: Probability that a person will contract the disease (per unit time or lifetime)\n\nObjective: Understand spatial variation in disease incidence, prevalence, and risk\nRelevant books:\nElliott et al. (2000), Gelfand et al. (2010), Rothman (1986), Waller & Gotway (2004), Woodward (1999)"
   },
   {
     "objectID": "teaching/MBG/introduction.html#cholera-in-victorian-london-1854",
     "href": "teaching/MBG/introduction.html#cholera-in-victorian-london-1854",
     "title": "Introduction",
-    "section": "Cholera in Victorian London, 1854",
-    "text": "Cholera in Victorian London, 1854\n\n\n\nJohn Snow removed the handle of the Broad Street water pump\n\nIdentified contaminated water as the disease source\n\nContradicted conventional wisdom at the time\n\n1854 Broad Street cholera outbreak"
+    "section": "",
+    "text": "John Snow removed the handle of the Broad Street water pump\n\nIdentified contaminated water as the disease source\n\nContradicted conventional wisdom at the time\n\n1854 Broad Street cholera outbreak"
   },
   {
     "objectID": "teaching/MBG/introduction.html#study-designs",
     "href": "teaching/MBG/introduction.html#study-designs",
     "title": "Introduction",
-    "section": "Study Designs",
-    "text": "Study Designs\n\nRegistry\n\nCase counts in sub-regions\n\nPopulation size as denominator\n\nCovariates from census data\n\nCase-Control\n\nCases: All known cases in the study region\n\nControls: Probability sample of non-cases\n\nSurvey\n\nSampled locations within study region\n\nData collected per location\n\nCommon in low-resource settings"
+    "section": "",
+    "text": "Registry\n\nCase counts in sub-regions\n\nPopulation size as denominator\n\nCovariates from census data\n\nCase-Control\n\nCases: All known cases in the study region\n\nControls: Probability sample of non-cases\n\nSurvey\n\nSampled locations within study region\n\nData collected per location\n\nCommon in low-resource settings"
   },
   {
     "objectID": "teaching/MBG/introduction.html#registry-example-plague-in-madagascar",
     "href": "teaching/MBG/introduction.html#registry-example-plague-in-madagascar",
     "title": "Introduction",
-    "section": "Registry Example: Plague in Madagascar",
-    "text": "Registry Example: Plague in Madagascar\n\nResearch Question:\nDoes plague infection risk increase above 800m elevation?\nGiorgi et al., 2016, Spatial and Spatio-temporal Epidemiology"
+    "section": "",
+    "text": "Research Question:\nDoes plague infection risk increase above 800m elevation?\nGiorgi et al., 2016, Spatial and Spatio-temporal Epidemiology"
   },
   {
     "objectID": "teaching/MBG/introduction.html#case-control-example-childhood-leukaemia-in-humberside",
     "href": "teaching/MBG/introduction.html#case-control-example-childhood-leukaemia-in-humberside",
     "title": "Introduction",
-    "section": "Case-Control Example: Childhood Leukaemia in Humberside",
-    "text": "Case-Control Example: Childhood Leukaemia in Humberside\n\n\nLocations of all known cases (1974–82)\n\nResidential locations of a random sample of births\n\nReferences:\nCuzick & Edwards (1990), Diggle & Chetwynd (1991)"
+    "section": "",
+    "text": "Locations of all known cases (1974–82)\n\nResidential locations of a random sample of births\n\nReferences:\nCuzick & Edwards (1990), Diggle & Chetwynd (1991)"
   },
   {
     "objectID": "teaching/MBG/introduction.html#survey-example-loa-loa-in-cameroon",
     "href": "teaching/MBG/introduction.html#survey-example-loa-loa-in-cameroon",
     "title": "Introduction",
-    "section": "Survey Example: Loa loa in Cameroon",
-    "text": "Survey Example: Loa loa in Cameroon\n\n\nData: Empirical prevalences in surveyed villages\n\nMap: Predictive probabilities of exceeding 20% prevalence threshold\n\nDiggle et al., 2007"
+    "section": "",
+    "text": "Data: Empirical prevalences in surveyed villages\n\nMap: Predictive probabilities of exceeding 20% prevalence threshold\n\nDiggle et al., 2007"
   },
   {
     "objectID": "teaching/MBG/introduction.html#research-questions",
     "href": "teaching/MBG/introduction.html#research-questions",
     "title": "Introduction",
-    "section": "Research Questions",
-    "text": "Research Questions\nPlague in Madagascar\n\nIs elevation an important risk factor?\n\nIf so, why?\n\nChildhood Leukaemia in Humberside\n\nDo cases show unexpected clustering?\n\nLoa loa in Cameroon\n\nWhat environmental factors influence risk?\n\nCan we predict areas exceeding an intervention threshold?"
+    "section": "",
+    "text": "Is elevation an important risk factor?\n\nIf so, why?\n\n\n\n\n\nDo cases show unexpected clustering?\n\n\n\n\n\nWhat environmental factors influence risk?\n\nCan we predict areas exceeding an intervention threshold?"
   },
   {
     "objectID": "teaching/MBG/introduction.html#epidemic-vs-endemic-patterns",
     "href": "teaching/MBG/introduction.html#epidemic-vs-endemic-patterns",
     "title": "Introduction",
-    "section": "Epidemic vs Endemic Patterns",
-    "text": "Epidemic vs Endemic Patterns\n\nEpidemic: Foot-and-mouth in Cumbria (2001)\n\nEndemic: Gastroenteric disease in Hampshire (AEGISS)\n\nAnimations:\n- Foot-and-mouth\n- AEGISS\nHow are these patterns different?"
+    "section": "",
+    "text": "Epidemic: Foot-and-mouth in Cumbria (2001)\n\nEndemic: Gastroenteric disease in Hampshire (AEGISS)\n\nAnimations:\n- Foot-and-mouth\n- AEGISS\nHow are these patterns different?"
   },
   {
     "objectID": "teaching/MBG/introduction.html#empirical-modelling-aegiss-project",
     "href": "teaching/MBG/introduction.html#empirical-modelling-aegiss-project",
     "title": "Introduction",
-    "section": "Empirical Modelling: AEGISS Project",
-    "text": "Empirical Modelling: AEGISS Project\n\nObjective: Early detection of incidence anomalies\n\n3,374 reports of gastro-intestinal illness\n\nLog-Gaussian Cox process for space-time correlation"
+    "section": "",
+    "text": "Objective: Early detection of incidence anomalies\n\n3,374 reports of gastro-intestinal illness\n\nLog-Gaussian Cox process for space-time correlation"
   },
   {
     "objectID": "teaching/MBG/introduction.html#geostatistics",
     "href": "teaching/MBG/introduction.html#geostatistics",
     "title": "Introduction",
-    "section": "Geostatistics",
-    "text": "Geostatistics\n\n\n\n\n\n\n\nData: \\((y_i, x_i)\\), where \\(x_i \\in A \\subset \\mathbb{R}^2\\)\n\nModel: \\(Y_i = S(x_i) + Z_i\\)\n\nObjective: Estimate \\(\\int_{A} S(x) dx\\) (e.g., mining yield)"
+    "section": "",
+    "text": "Data: \\((y_i, x_i)\\), where \\(x_i \\in A \\subset \\mathbb{R}^2\\)\n\nModel: \\(Y_i = S(x_i) + Z_i\\)\n\nObjective: Estimate \\(\\int_{A} S(x) dx\\) (e.g., mining yield)"
   },
   {
     "objectID": "teaching/MBG/introduction.html#model-based-geostatistics-for-public-health",
     "href": "teaching/MBG/introduction.html#model-based-geostatistics-for-public-health",
     "title": "Introduction",
-    "section": "Model-Based Geostatistics for Public Health",
-    "text": "Model-Based Geostatistics for Public Health\n\n\n\n\n\nAnimation: Malaria in Chikwawa district"
+    "section": "",
+    "text": "Animation: Malaria in Chikwawa district"
   },
   {
     "objectID": "teaching/MBG/introduction.html#science-and-statistics",
     "href": "teaching/MBG/introduction.html#science-and-statistics",
     "title": "Introduction",
-    "section": "Science and Statistics",
-    "text": "Science and Statistics\n\nKey Concepts:\n- \\(S\\): “Process of nature”\n- \\(Y\\): “Observed data”\n- Bayesian Framework: \\([Y, S] = [S][Y | S]\\)\nAdapted from: Statistics and Scientific Method (Diggle & Chatwynd, 2011)"
+    "section": "",
+    "text": "Key Concepts:\n- \\(S\\): “Process of nature”\n- \\(Y\\): “Observed data”\n- Bayesian Framework: \\([Y, S] = [S][Y | S]\\)\nAdapted from: Statistics and Scientific Method (Diggle & Chatwynd, 2011)"
   },
   {
     "objectID": "teaching/MBG/introduction.html#workflow-of-a-statistical-analysis",
     "href": "teaching/MBG/introduction.html#workflow-of-a-statistical-analysis",
     "title": "Introduction",
-    "section": "Workflow of a statistical analysis",
-    "text": "Workflow of a statistical analysis\n\n\n\n\nHow do we apply the workflow of a statistical analysis in model-based geostatistics?"
+    "section": "",
+    "text": "How do we apply the workflow of a statistical analysis in model-based geostatistics?"
   },
   {
     "objectID": "teaching/RSS2025.html#learning-outcomes",
@@ -808,15 +808,15 @@
     "objectID": "teaching/MBG/geostat_pred_rss2025.html#geostatistical-problems",
     "href": "teaching/MBG/geostat_pred_rss2025.html#geostatistical-problems",
     "title": "Geostatistical prediction",
-    "section": "Geostatistical problems",
-    "text": "Geostatistical problems\n\n“Conventional geostatistical methodology solves the problem of predicting the realized value of a linear functional of a Gaussian spatial stochastic process \\(S(x)\\) based on observations \\(Y_i= S(x_i) + Z_i\\) at sampling locations \\(x_i\\), where the \\(Z_i\\) are mutually independent, zero-mean Gaussian random variables.”\n\nDiggle, Tawn and Moyeed (1998)"
+    "section": "",
+    "text": "“Conventional geostatistical methodology solves the problem of predicting the realized value of a linear functional of a Gaussian spatial stochastic process \\(S(x)\\) based on observations \\(Y_i= S(x_i) + Z_i\\) at sampling locations \\(x_i\\), where the \\(Z_i\\) are mutually independent, zero-mean Gaussian random variables.”\n\nDiggle, Tawn and Moyeed (1998)"
   },
   {
     "objectID": "teaching/MBG/geostat_pred_rss2025.html#defining-the-predictive-target",
     "href": "teaching/MBG/geostat_pred_rss2025.html#defining-the-predictive-target",
     "title": "Geostatistical prediction",
     "section": "Defining the predictive target",
-    "text": "Defining the predictive target\n\n\nSpatially continuous targets correspond to an unobserved spatially continuous surface (e.g. disease prevalence), formally denoted by \\(\\mathcal{T} = \\{T(x), x \\in A\\}\\), where \\(A\\) is our region of interest.\n\n\n\n\nAreal-level targets, usually defined as transformation of the spatially continuous surface \\(\\mathcal{T}\\), defined previously, and which we denote as \\(\\mathcal{T}_{A} = F(\\mathcal{T}, A)\\)."
+    "text": "Defining the predictive target\n. . .\n\nSpatially continuous targets correspond to an unobserved spatially continuous surface (e.g. disease prevalence), formally denoted by \\(\\mathcal{T} = \\{T(x), x \\in A\\}\\), where \\(A\\) is our region of interest.\n\n. . .\n\nAreal-level targets, usually defined as transformation of the spatially continuous surface \\(\\mathcal{T}\\), defined previously, and which we denote as \\(\\mathcal{T}_{A} = F(\\mathcal{T}, A)\\)."
   },
   {
     "objectID": "teaching/MBG/geostat_pred_rss2025.html#examples-of-predictive-target",
@@ -865,14 +865,14 @@
     "href": "teaching/MBG/geostat_pred_rss2025.html#steps-for-the-geostistical-prediction-of-tx",
     "title": "Geostatistical prediction",
     "section": "Steps for the geostistical prediction of \\(T(x)\\)",
-    "text": "Steps for the geostistical prediction of \\(T(x)\\)\nPreliminary steps:\n\nObtain the shapefile of the boundaries of the study area.\nGenerate a regular grid that covers the study for the desired spatial resolution, using the shapefile.\nExtract all the covariates used in the model on the grid and ensure that there are no missing values.\n\n\nPrediction steps (for a given location \\(x\\) on the grid):\n\nGenerate samples from the predictive distribution of \\(S(x) \\: | \\: y\\), say \\(S_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n\n\n\nApply the transformation defined by \\(T(x)\\) to each of the samples \\(S_{(j)}(x)\\), to obtain \\(T_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n\n\n\nUsing the Monte Carlo samples \\(T_{(j)}(x)\\), obtain the desired summaries of the predictive distribution:\n\nMean: \\(\\overline{T}_B = B^{-1} \\sum_{j=1}^B T_{(j)}(x)\\)\nStandard deviation: \\(\\left[B^{-1} \\sum_{j=1}^B (T_{(j)}(x) - \\overline{T}_B)^2\\right]^{1/2}\\)\nPrediction intervals at 95\\(\\%\\) coverage level\nExceedance probabilities: \\(B^{-1} \\sum_{j=1}^B I(T_{(j)}(x) &gt; L)\\), for a given threshold \\(L\\).\n\n\n\n\n pred_cont.R"
+    "text": "Steps for the geostistical prediction of \\(T(x)\\)\nPreliminary steps:\n\nObtain the shapefile of the boundaries of the study area.\nGenerate a regular grid that covers the study for the desired spatial resolution, using the shapefile.\nExtract all the covariates used in the model on the grid and ensure that there are no missing values.\n\n. . .\nPrediction steps (for a given location \\(x\\) on the grid):\n\nGenerate samples from the predictive distribution of \\(S(x) \\: | \\: y\\), say \\(S_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n. . .\n\nApply the transformation defined by \\(T(x)\\) to each of the samples \\(S_{(j)}(x)\\), to obtain \\(T_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n. . .\n\nUsing the Monte Carlo samples \\(T_{(j)}(x)\\), obtain the desired summaries of the predictive distribution:\n\nMean: \\(\\overline{T}_B = B^{-1} \\sum_{j=1}^B T_{(j)}(x)\\)\nStandard deviation: \\(\\left[B^{-1} \\sum_{j=1}^B (T_{(j)}(x) - \\overline{T}_B)^2\\right]^{1/2}\\)\nPrediction intervals at 95\\(\\%\\) coverage level\nExceedance probabilities: \\(B^{-1} \\sum_{j=1}^B I(T_{(j)}(x) &gt; L)\\), for a given threshold \\(L\\).\n\n\n. . .\n pred_cont.R"
   },
   {
     "objectID": "teaching/MBG/geostat_pred_rss2025.html#marginal-vs-joint-predictions",
     "href": "teaching/MBG/geostat_pred_rss2025.html#marginal-vs-joint-predictions",
     "title": "Geostatistical prediction",
     "section": "Marginal vs joint predictions",
-    "text": "Marginal vs joint predictions\n\nLet \\(\\tilde{X} = (\\tilde{x}_1, \\ldots, \\tilde{x}_q)\\) be the set of prediciton locations that make up the regular grid.\n\n\n\nMarginal predictions are obtained by simulating independently from the \\(q\\) marginal predictive distributions of \\([S(\\tilde{X}) | y]\\). In other words, we consider a prediction location \\(\\tilde{x}_j\\), simulate from \\([S(\\tilde{x}_j) \\: |\\: y]\\) say \\(B\\) samples, and repeat this for \\(j=1,\\ldots,q\\)\n\n\n\n\nJoint predictions are obtained by simulating from the joint distribution of \\([S(\\tilde{X}) \\: |\\: y]\\). Unlike marginal predictions, joint predictions take into account the correlation between the different components of \\([S(\\tilde{X}) \\: |\\: y]\\).\n\n\n\n\nWhen the target is \\(T(x)\\), i.e. at pixel-level, we can use either marginal or joint predictions.\n\n\n\n\nWhen the target is areal level (see next slides), we can ONLY use joint predictions."
+    "text": "Marginal vs joint predictions\n\nLet \\(\\tilde{X} = (\\tilde{x}_1, \\ldots, \\tilde{x}_q)\\) be the set of prediciton locations that make up the regular grid.\n\n. . .\n\nMarginal predictions are obtained by simulating independently from the \\(q\\) marginal predictive distributions of \\([S(\\tilde{X}) | y]\\). In other words, we consider a prediction location \\(\\tilde{x}_j\\), simulate from \\([S(\\tilde{x}_j) \\: |\\: y]\\) say \\(B\\) samples, and repeat this for \\(j=1,\\ldots,q\\)\n\n. . .\n\nJoint predictions are obtained by simulating from the joint distribution of \\([S(\\tilde{X}) \\: |\\: y]\\). Unlike marginal predictions, joint predictions take into account the correlation between the different components of \\([S(\\tilde{X}) \\: |\\: y]\\).\n\n. . .\n\nWhen the target is \\(T(x)\\), i.e. at pixel-level, we can use either marginal or joint predictions.\n\n. . .\n\nWhen the target is areal level (see next slides), we can ONLY use joint predictions."
   },
   {
     "objectID": "teaching/MBG/geostat_pred_rss2025.html#areal-level-targets-questions-to-consider",
@@ -886,21 +886,21 @@
     "href": "teaching/MBG/geostat_pred_rss2025.html#example-regional-average-prevalence",
     "title": "Geostatistical prediction",
     "section": "Example: regional average prevalence",
-    "text": "Example: regional average prevalence\n\nLet \\(T(x) = \\exp\\{d(x)^\\top \\beta + S(x) \\}/(1+\\exp\\{d(x)^\\top \\beta + S(x)\\})\\)\n\n\n\nAverage (unweighted) prevalence \\[\n\\mathcal{M}_i = \\frac{1}{|A_i|}\\int_{A_i} T(x) \\: dx.\n\\]\n\n\n\n\nAverage weighted prevalence \\[\n\\mathcal{M}_i = \\frac{\\int_{A_i} w(x) T(x) \\: dx}{\\int_{A_i} w(x) \\: dx}.\n\\]\n\n\n\n\nWe approximate the above integrals using the regular grid, e.g.\n\n\\[\\mathcal{M}_i \\approx \\frac{1}{\\#\\{j : \\tilde{x}_j \\in A_i\\}} \\sum_{\\tilde{x}_j \\in A_i} T(\\tilde{x}_j), \\]\nfor the unweighted regional prevalence."
+    "text": "Example: regional average prevalence\n\nLet \\(T(x) = \\exp\\{d(x)^\\top \\beta + S(x) \\}/(1+\\exp\\{d(x)^\\top \\beta + S(x)\\})\\)\n\n. . .\n\nAverage (unweighted) prevalence \\[\n\\mathcal{M}_i = \\frac{1}{|A_i|}\\int_{A_i} T(x) \\: dx.\n\\]\n\n. . .\n\nAverage weighted prevalence \\[\n\\mathcal{M}_i = \\frac{\\int_{A_i} w(x) T(x) \\: dx}{\\int_{A_i} w(x) \\: dx}.\n\\]\n\n. . .\n\nWe approximate the above integrals using the regular grid, e.g.\n\n\\[\\mathcal{M}_i \\approx \\frac{1}{\\#\\{j : \\tilde{x}_j \\in A_i\\}} \\sum_{\\tilde{x}_j \\in A_i} T(\\tilde{x}_j), \\]\nfor the unweighted regional prevalence."
   },
   {
     "objectID": "teaching/MBG/geostat_pred_rss2025.html#steps-for-the-geostistical-prediction-of-areal-targets",
     "href": "teaching/MBG/geostat_pred_rss2025.html#steps-for-the-geostistical-prediction-of-areal-targets",
     "title": "Geostatistical prediction",
     "section": "Steps for the geostistical prediction of areal targets",
-    "text": "Steps for the geostistical prediction of areal targets\nPreliminary steps:\n\nObtain the shapefile of the study area.\nObtain the shapefiles of the boundaries of the regions for which aggregation is required.\nGenerate a regular grid that covers the study for the desired spatial resolution, using the shapefile.\nExtract all the covariates used in the model on the grid and ensure that there are no missing values.\nFor weighted areal level target, extract all the weights on the grid and ensure that there are no missing values.\n\n\nPrediction steps (for a given location \\(x\\) on the grid):\n\n(Joint prediction) Generate samples from the predictive distribution of \\(S(x) \\: | \\: y\\), say \\(S_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n\n\n\nApply the transformation defined by \\(T(x)\\) to each of the samples \\(S_{(j)}(x)\\), to obtain \\(T_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n\n\n\nAggregate the samples \\(T_{(j)}(x)\\) for each region \\(A_i\\) to obtain samples of the areal-level predictive target \\(\\mathcal{M}_i\\). Denote these samples as \\(\\mathcal{M}_i^{(j)}\\).\nObtain the desired summaries of the predictive distribution of \\(\\mathcal{M}_i\\). Examples:\n\nMean: \\(\\overline{\\mathcal{M}}_{i,B} = B^{-1} \\sum_{j=1}^B \\mathcal{M}_i^{(j)}\\)\nStandard deviation: \\(\\left[B^{-1} \\sum_{j=1}^B (\\mathcal{M}_i^{(j)} - \\overline{\\mathcal{M}}_{i,B})^2\\right]^{1/2}\\)\nPrediction intervals at 95\\(\\%\\) coverage level\nExceedance probabilities: \\(B^{-1} \\sum_{j=1}^B I(\\mathcal{M}_{i}^{(j)} &gt; L)\\), for a given threshold \\(L\\).\n\n\n\n\n pred_area.R"
+    "text": "Steps for the geostistical prediction of areal targets\nPreliminary steps:\n\nObtain the shapefile of the study area.\nObtain the shapefiles of the boundaries of the regions for which aggregation is required.\nGenerate a regular grid that covers the study for the desired spatial resolution, using the shapefile.\nExtract all the covariates used in the model on the grid and ensure that there are no missing values.\nFor weighted areal level target, extract all the weights on the grid and ensure that there are no missing values.\n\n. . .\nPrediction steps (for a given location \\(x\\) on the grid):\n\n(Joint prediction) Generate samples from the predictive distribution of \\(S(x) \\: | \\: y\\), say \\(S_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n. . .\n\nApply the transformation defined by \\(T(x)\\) to each of the samples \\(S_{(j)}(x)\\), to obtain \\(T_{(j)}(x)\\), for \\(j = 1, \\ldots, B\\).\n\n. . .\n\nAggregate the samples \\(T_{(j)}(x)\\) for each region \\(A_i\\) to obtain samples of the areal-level predictive target \\(\\mathcal{M}_i\\). Denote these samples as \\(\\mathcal{M}_i^{(j)}\\).\nObtain the desired summaries of the predictive distribution of \\(\\mathcal{M}_i\\). Examples:\n\nMean: \\(\\overline{\\mathcal{M}}_{i,B} = B^{-1} \\sum_{j=1}^B \\mathcal{M}_i^{(j)}\\)\nStandard deviation: \\(\\left[B^{-1} \\sum_{j=1}^B (\\mathcal{M}_i^{(j)} - \\overline{\\mathcal{M}}_{i,B})^2\\right]^{1/2}\\)\nPrediction intervals at 95\\(\\%\\) coverage level\nExceedance probabilities: \\(B^{-1} \\sum_{j=1}^B I(\\mathcal{M}_{i}^{(j)} &gt; L)\\), for a given threshold \\(L\\).\n\n\n. . .\n pred_area.R"
   },
   {
     "objectID": "teaching/MBG/estimation.html#overview-of-topics",
     "href": "teaching/MBG/estimation.html#overview-of-topics",
     "title": "Model formulation and parameter estimation",
-    "section": "Overview of topics",
-    "text": "Overview of topics\n\nHow to assess residual spatial correlation\nHow to formulate and fit a geostatistical model\nHow to interpret the results from a model fit"
+    "section": "",
+    "text": "How to assess residual spatial correlation\nHow to formulate and fit a geostatistical model\nHow to interpret the results from a model fit"
   },
   {
     "objectID": "teaching/MBG/estimation.html#which-residuals-should-we-use-to-assess-spatial-correlation",
@@ -914,7 +914,7 @@
     "href": "teaching/MBG/estimation.html#the-empirical-variogram-using-random-effects-residuals",
     "title": "Model formulation and parameter estimation",
     "section": "The Empirical Variogram using Random Effects Residuals",
-    "text": "The Empirical Variogram using Random Effects Residuals\n\nThe empirical variogram is defined as: \\[\n\\gamma(D_{[a,b]}) = \\frac{1}{2|D_{[a,b]}|} \\sum_{(i,j) \\in D_{[a,b]}} (\\hat{Z}_i - \\hat{Z}_j)^2\n\\] where:\n\n\\(D_{[a,b]}\\) is a class of distance with lower limit \\(a\\) and upper limit \\(b\\);\n\\(|D_{[a,b]}|\\) is the number of pairs of observations whose locations ar at a distance between \\(a\\) and \\(b\\).\n\n\n\n\n\n\n liberia_variog.R"
+    "text": "The Empirical Variogram using Random Effects Residuals\n\nThe empirical variogram is defined as: \\[\n\\gamma(D_{[a,b]}) = \\frac{1}{2|D_{[a,b]}|} \\sum_{(i,j) \\in D_{[a,b]}} (\\hat{Z}_i - \\hat{Z}_j)^2\n\\] where:\n\n\\(D_{[a,b]}\\) is a class of distance with lower limit \\(a\\) and upper limit \\(b\\);\n\\(|D_{[a,b]}|\\) is the number of pairs of observations whose locations ar at a distance between \\(a\\) and \\(b\\).\n\n\n. . .\n\n. . .\n liberia_variog.R\n. . ."
   },
   {
     "objectID": "teaching/MBG/estimation.html#stationary-and-isotropic-gaussian-processes",
@@ -935,7 +935,7 @@
     "href": "teaching/MBG/estimation.html#special-cases-of-the-matérn-covariance",
     "title": "Model formulation and parameter estimation",
     "section": "Special Cases of the Matérn Covariance",
-    "text": "Special Cases of the Matérn Covariance\nThe Matérn family includes two important special cases:\n\nExponential Covariance (\\(\\kappa = 1/2\\))\n\\[ C(h) = \\sigma^2 \\exp\\left(-\\frac{h}{\\phi}\\right) \\]\nProperties:\n\nRelatively rough process, non-differentiable\n\nContinuous but not differentiable\n\nMarkovian (memoryless) property\n\n\n\n\nGaussian (Squared Exponential) Covariance (\\(\\kappa \\to \\infty\\))\n\\[ C(h) = \\sigma^2 \\exp\\left(-\\frac{h^2}{2\\phi^2}\\right) \\]\nProperties:\n\nInfinitely differentiable\n\nProduces very smooth realizations\n\nSometimes too smooth for physical processes"
+    "text": "Special Cases of the Matérn Covariance\nThe Matérn family includes two important special cases:\n\nExponential Covariance (\\(\\kappa = 1/2\\))\n\\[ C(h) = \\sigma^2 \\exp\\left(-\\frac{h}{\\phi}\\right) \\]\nProperties:\n\nRelatively rough process, non-differentiable\n\nContinuous but not differentiable\n\nMarkovian (memoryless) property\n\n\n. . .\n\nGaussian (Squared Exponential) Covariance (\\(\\kappa \\to \\infty\\))\n\\[ C(h) = \\sigma^2 \\exp\\left(-\\frac{h^2}{2\\phi^2}\\right) \\]\nProperties:\n\nInfinitely differentiable\n\nProduces very smooth realizations\n\nSometimes too smooth for physical processes"
   },
   {
     "objectID": "teaching/MBG/estimation.html#practical-range-of-spatial-correlation",
@@ -949,7 +949,7 @@
     "href": "teaching/MBG/estimation.html#theoretical-variogram",
     "title": "Model formulation and parameter estimation",
     "section": "Theoretical Variogram",
-    "text": "Theoretical Variogram\n\nThe variogram measures spatial dependence: \\[\n\\gamma(h) = \\frac{1}{2} \\mathbb{E} \\left[\\left\\{S(x) - S(x')\\right\\}^2\\right]\n\\]\nFor the Matérn process, it is derived from its covariance function \\[\n\\gamma(h) = \\sigma^2 \\left( 1 - \\rho(h) \\right), h = ||x-x'||\n\\] where \\(\\rho(h)\\) is the correlation function of \\(S(x)\\)."
+    "text": "Theoretical Variogram\n\nThe variogram measures spatial dependence: \\[\n\\gamma(h) = \\frac{1}{2} \\mathbb{E} \\left[\\left\\{S(x) - S(x')\\right\\}^2\\right]\n\\]\nFor the Matérn process, it is derived from its covariance function \\[\n\\gamma(h) = \\sigma^2 \\left( 1 - \\rho(h) \\right), h = ||x-x'||\n\\] where \\(\\rho(h)\\) is the correlation function of \\(S(x)\\).\n\n. . ."
   },
   {
     "objectID": "teaching/MBG/estimation.html#theoretical-variogram-with-noise",
@@ -963,7 +963,7 @@
     "href": "teaching/MBG/estimation.html#the-linear-geostatistical-model",
     "title": "Model formulation and parameter estimation",
     "section": "The linear geostatistical model",
-    "text": "The linear geostatistical model\n\nThe general expression is\n\n\\[\nY_i = d(x_i)\\top \\beta + S(x_i) + U_i\n\\]\nwhere: \\(d(x_i)\\) are covariates, \\(S(x_i)\\) is a stationary and isotropic spatial Gaussian process and \\(U_i\\) is Gaussian noise.\n\n\nDenote \\(S = (S(x_1), \\ldots, S(x_n))\\).\n\n\n\n\nAssuming \\(R(\\phi)\\) to be the correlation matrix of \\(S\\), and \\(U_i \\sim \\text{N}(0, \\tau^2)\\), the vector of observations \\(\\mathbf{Y} = (Y_1, \\dots, Y_n)^T\\) follows a multivariate normal distribution:\n\n\\[\n\\mathbf{Y} \\sim \\text{MVN}\\left(D\\beta, \\Sigma\\right)\n\\]\nwhere the covariance matrix is given by\n\\[\n\\Sigma = \\sigma^2 R(\\phi) + \\tau^2 I_n.\n\\]"
+    "text": "The linear geostatistical model\n\nThe general expression is\n\n\\[\nY_i = d(x_i)\\top \\beta + S(x_i) + U_i\n\\]\nwhere: \\(d(x_i)\\) are covariates, \\(S(x_i)\\) is a stationary and isotropic spatial Gaussian process and \\(U_i\\) is Gaussian noise.\n. . .\n\nDenote \\(S = (S(x_1), \\ldots, S(x_n))\\).\n\n. . .\n\nAssuming \\(R(\\phi)\\) to be the correlation matrix of \\(S\\), and \\(U_i \\sim \\text{N}(0, \\tau^2)\\), the vector of observations \\(\\mathbf{Y} = (Y_1, \\dots, Y_n)^T\\) follows a multivariate normal distribution:\n\n\\[\n\\mathbf{Y} \\sim \\text{MVN}\\left(D\\beta, \\Sigma\\right)\n\\]\nwhere the covariance matrix is given by\n\\[\n\\Sigma = \\sigma^2 R(\\phi) + \\tau^2 I_n.\n\\]"
   },
   {
     "objectID": "teaching/MBG/estimation.html#parameter-estimation-via-likelihood",
@@ -977,35 +977,35 @@
     "href": "teaching/MBG/estimation.html#using-moss-to-monitor-air-pollution",
     "title": "Model formulation and parameter estimation",
     "section": "Using moss to monitor air pollution",
-    "text": "Using moss to monitor air pollution\n\n\n galicia_fit.R"
+    "text": "Using moss to monitor air pollution\n\n. . .\n galicia_fit.R"
   },
   {
     "objectID": "teaching/MBG/estimation.html#generalized-linear-geostatistical-models",
     "href": "teaching/MBG/estimation.html#generalized-linear-geostatistical-models",
     "title": "Model formulation and parameter estimation",
     "section": "Generalized linear geostatistical models",
-    "text": "Generalized linear geostatistical models\n\nLet \\(S(x)\\) be a stationary and isotropic Gaussian process, with Matérn correlation function.\n\n\n\nLet \\(Z_i\\) be independent identically distributed random variables.\n\n\n\n\nLet \\(d(x_i)\\) be a vector of covariates with associated regression coefficients \\(\\beta\\).\n\n\n\n\nLet \\(Y_i\\) be a random variable that, conditionally on \\(S(x_i)\\) and \\(Z_i\\), follows an exponential family distribution (e.g. Gaussian, Binomial, Poisson).\n\n\n\n\nLet \\(g(\\cdot)\\) be a link function.\n\n\\(\\mathbb{E} \\left[ Y_i \\: | \\: S(x_i), Z_i \\right] = m_i \\mu_i\\)\n\n\\({\\rm Var}\\left[Y_i \\: | \\: S(x_i), Z_i\\right] = m_i V(\\mu_i)\\)\n\\(g(\\mu_i) = d(x_i)^\\top \\beta + S(x_i) + Z_i\\)"
+    "text": "Generalized linear geostatistical models\n\nLet \\(S(x)\\) be a stationary and isotropic Gaussian process, with Matérn correlation function.\n\n. . .\n\nLet \\(Z_i\\) be independent identically distributed random variables.\n\n. . .\n\nLet \\(d(x_i)\\) be a vector of covariates with associated regression coefficients \\(\\beta\\).\n\n. . .\n\nLet \\(Y_i\\) be a random variable that, conditionally on \\(S(x_i)\\) and \\(Z_i\\), follows an exponential family distribution (e.g. Gaussian, Binomial, Poisson).\n\n. . .\n\nLet \\(g(\\cdot)\\) be a link function.\n\n\\(\\mathbb{E} \\left[ Y_i \\: | \\: S(x_i), Z_i \\right] = m_i \\mu_i\\)\n\n\\({\\rm Var}\\left[Y_i \\: | \\: S(x_i), Z_i\\right] = m_i V(\\mu_i)\\)\n\\(g(\\mu_i) = d(x_i)^\\top \\beta + S(x_i) + Z_i\\)"
   },
   {
     "objectID": "teaching/MBG/estimation.html#binomial-and-poisson-geostatistical-models",
     "href": "teaching/MBG/estimation.html#binomial-and-poisson-geostatistical-models",
     "title": "Model formulation and parameter estimation",
     "section": "Binomial and Poisson Geostatistical Models",
-    "text": "Binomial and Poisson Geostatistical Models\n\nBinomial Geostatistical Model\n\n\\(Y_i \\: | \\: S(x_i), Z_i \\sim \\text{Binomial}(m_i, \\mu_i)\\)\nLink function: Logit link \\(g(\\mu_i) = \\log \\left( \\frac{\\mu_i}{1 - \\mu_i} \\right) = d(x_i)^\\top \\beta + S(x_i) + Z_i\\)\nVariance function: \\(V(\\mu_i) = m_i \\mu_i (1 - \\mu_i)\\)\n\n\n\n\nPoisson Geostatistical Model\n\n\\(Y_i \\: | \\: S(x_i), Z_i \\sim \\text{Poisson}(m_i \\mu_i)\\)\nLink function: Log link \\(g(\\mu_i) = \\log (\\mu_i) = d(x_i)^\\top \\beta + S(x_i) + Z_i\\)\nVariance function: \\(V(\\mu_i) = m_i \\mu_i\\)"
+    "text": "Binomial and Poisson Geostatistical Models\n\nBinomial Geostatistical Model\n\n\\(Y_i \\: | \\: S(x_i), Z_i \\sim \\text{Binomial}(m_i, \\mu_i)\\)\nLink function: Logit link \\(g(\\mu_i) = \\log \\left( \\frac{\\mu_i}{1 - \\mu_i} \\right) = d(x_i)^\\top \\beta + S(x_i) + Z_i\\)\nVariance function: \\(V(\\mu_i) = m_i \\mu_i (1 - \\mu_i)\\)\n\n\n. . .\n\nPoisson Geostatistical Model\n\n\\(Y_i \\: | \\: S(x_i), Z_i \\sim \\text{Poisson}(m_i \\mu_i)\\)\nLink function: Log link \\(g(\\mu_i) = \\log (\\mu_i) = d(x_i)^\\top \\beta + S(x_i) + Z_i\\)\nVariance function: \\(V(\\mu_i) = m_i \\mu_i\\)"
   },
   {
     "objectID": "teaching/MBG/estimation.html#monte-carlo-maximum-likelihood-mcml",
     "href": "teaching/MBG/estimation.html#monte-carlo-maximum-likelihood-mcml",
     "title": "Model formulation and parameter estimation",
     "section": "Monte Carlo Maximum Likelihood (MCML)",
-    "text": "Monte Carlo Maximum Likelihood (MCML)\n\nLet \\(W_i = S(x_i) + Z_i\\) and \\(W = (W_1, \\ldots, W_n)\\)\n\n\n\nThe likelihood function for parameters \\(\\theta = (\\beta, \\sigma^2, \\phi, \\tau^2)\\) is given by:\n\\[\nL(\\theta) = \\int N(W; D\\beta, \\Omega) f(y| W) dW\n\\]\nwhere \\(\\Omega = \\sigma^2 R(\\phi) + \\tau^2I_n\\).\n\n\n\n\nWe approximate this using Monte Carlo integration:\n\\[\nL_m(\\theta) = \\frac{1}{B} \\sum_{j=1}^{B} \\frac{N\\left(W^{(j)}; D\\beta, \\Omega \\right)}{N\\left(W^{(j)}; D\\beta_0, \\Omega_0\\right)}\n\\] where \\(W^{(i)}\\) are sampled from the distribution of \\(W\\) given \\(y\\) using an MCMC algorithm."
+    "text": "Monte Carlo Maximum Likelihood (MCML)\n\nLet \\(W_i = S(x_i) + Z_i\\) and \\(W = (W_1, \\ldots, W_n)\\)\n\n. . .\n\nThe likelihood function for parameters \\(\\theta = (\\beta, \\sigma^2, \\phi, \\tau^2)\\) is given by:\n\\[\nL(\\theta) = \\int N(W; D\\beta, \\Omega) f(y| W) dW\n\\]\nwhere \\(\\Omega = \\sigma^2 R(\\phi) + \\tau^2I_n\\).\n\n. . .\n\nWe approximate this using Monte Carlo integration:\n\\[\nL_m(\\theta) = \\frac{1}{B} \\sum_{j=1}^{B} \\frac{N\\left(W^{(j)}; D\\beta, \\Omega \\right)}{N\\left(W^{(j)}; D\\beta_0, \\Omega_0\\right)}\n\\] where \\(W^{(i)}\\) are sampled from the distribution of \\(W\\) given \\(y\\) using an MCMC algorithm."
   },
   {
     "objectID": "teaching/MBG/estimation.html#mcml-iterative-estimation",
     "href": "teaching/MBG/estimation.html#mcml-iterative-estimation",
     "title": "Model formulation and parameter estimation",
     "section": "MCML: Iterative Estimation",
-    "text": "MCML: Iterative Estimation\n\nChoose initial values \\(\\theta_0\\) and generate samples \\(W^{(j)}\\), for \\(j = 1,\\ldots, B\\).\n\n\n\nEstimate \\(\\theta\\) by maximizing the Monte Carlo approximation, denoted by \\(L_m(\\theta)\\), to the likelihood. Denote with \\(\\hat{\\theta}_m\\) this estimate.\n\n\n\n\nUpdate \\(\\theta_0 = \\hat{\\theta}_m\\) and iterate until convergence.\n\n\n\n\nStandard errors are computed using the inverse Hessian of \\(L_m(\\theta)\\) at \\(\\hat{\\theta}_m\\).\n\n\n\n glgm_fit.R"
+    "text": "MCML: Iterative Estimation\n\nChoose initial values \\(\\theta_0\\) and generate samples \\(W^{(j)}\\), for \\(j = 1,\\ldots, B\\).\n\n. . .\n\nEstimate \\(\\theta\\) by maximizing the Monte Carlo approximation, denoted by \\(L_m(\\theta)\\), to the likelihood. Denote with \\(\\hat{\\theta}_m\\) this estimate.\n\n. . .\n\nUpdate \\(\\theta_0 = \\hat{\\theta}_m\\) and iterate until convergence.\n\n. . .\n\nStandard errors are computed using the inverse Hessian of \\(L_m(\\theta)\\) at \\(\\hat{\\theta}_m\\).\n\n. . .\n glgm_fit.R"
   },
   {
     "objectID": "teaching/MBG/estimation.html#the-nugget-effect-as-small-scale-spatial-correlation",
@@ -1018,85 +1018,85 @@
     "objectID": "teaching/MBG/introduction_rss2025.html#epidemiological-data",
     "href": "teaching/MBG/introduction_rss2025.html#epidemiological-data",
     "title": "Introduction",
-    "section": "Epidemiological Data",
-    "text": "Epidemiological Data\n\nIncidence: Number of new cases per unit time per unit population\n\nPrevalence: Number of existing cases per unit population\n\nRisk: Probability that a person will contract the disease (per unit time or lifetime)\n\nObjective: Understand spatial variation in disease incidence, prevalence, and risk\nRelevant books:\nElliott et al. (2000), Gelfand et al. (2010), Rothman (1986), Waller & Gotway (2004), Woodward (1999)"
+    "section": "",
+    "text": "Incidence: Number of new cases per unit time per unit population\n\nPrevalence: Number of existing cases per unit population\n\nRisk: Probability that a person will contract the disease (per unit time or lifetime)\n\nObjective: Understand spatial variation in disease incidence, prevalence, and risk\nRelevant books:\nElliott et al. (2000), Gelfand et al. (2010), Rothman (1986), Waller & Gotway (2004), Woodward (1999)"
   },
   {
     "objectID": "teaching/MBG/introduction_rss2025.html#cholera-in-victorian-london-1854",
     "href": "teaching/MBG/introduction_rss2025.html#cholera-in-victorian-london-1854",
     "title": "Introduction",
-    "section": "Cholera in Victorian London, 1854",
-    "text": "Cholera in Victorian London, 1854\n\n\n\nJohn Snow removed the handle of the Broad Street water pump\n\nIdentified contaminated water as the disease source\n\nContradicted conventional wisdom at the time\n\n1854 Broad Street cholera outbreak"
+    "section": "",
+    "text": "John Snow removed the handle of the Broad Street water pump\n\nIdentified contaminated water as the disease source\n\nContradicted conventional wisdom at the time\n\n1854 Broad Street cholera outbreak"
   },
   {
     "objectID": "teaching/MBG/introduction_rss2025.html#study-designs",
     "href": "teaching/MBG/introduction_rss2025.html#study-designs",
     "title": "Introduction",
-    "section": "Study Designs",
-    "text": "Study Designs\n\nRegistry\n\nCase counts in sub-regions\n\nPopulation size as denominator\n\nCovariates from census data\n\nCase-Control\n\nCases: All known cases in the study region\n\nControls: Probability sample of non-cases\n\nSurvey\n\nSampled locations within study region\n\nData collected per location\n\nCommon in low-resource settings"
+    "section": "",
+    "text": "Registry\n\nCase counts in sub-regions\n\nPopulation size as denominator\n\nCovariates from census data\n\nCase-Control\n\nCases: All known cases in the study region\n\nControls: Probability sample of non-cases\n\nSurvey\n\nSampled locations within study region\n\nData collected per location\n\nCommon in low-resource settings"
   },
   {
     "objectID": "teaching/MBG/introduction_rss2025.html#registry-example-plague-in-madagascar",
     "href": "teaching/MBG/introduction_rss2025.html#registry-example-plague-in-madagascar",
     "title": "Introduction",
-    "section": "Registry Example: Plague in Madagascar",
-    "text": "Registry Example: Plague in Madagascar\n\nResearch Question:\nDoes plague infection risk increase above 800m elevation?\nGiorgi et al., 2016, Spatial and Spatio-temporal Epidemiology"
+    "section": "",
+    "text": "Research Question:\nDoes plague infection risk increase above 800m elevation?\nGiorgi et al., 2016, Spatial and Spatio-temporal Epidemiology"
   },
   {
     "objectID": "teaching/MBG/introduction_rss2025.html#case-control-example-childhood-leukaemia-in-humberside",
     "href": "teaching/MBG/introduction_rss2025.html#case-control-example-childhood-leukaemia-in-humberside",
     "title": "Introduction",
-    "section": "Case-Control Example: Childhood Leukaemia in Humberside",
-    "text": "Case-Control Example: Childhood Leukaemia in Humberside\n\n\nLocations of all known cases (1974–82)\n\nResidential locations of a random sample of births\n\nReferences:\nCuzick & Edwards (1990), Diggle & Chetwynd (1991)"
+    "section": "",
+    "text": "Locations of all known cases (1974–82)\n\nResidential locations of a random sample of births\n\nReferences:\nCuzick & Edwards (1990), Diggle & Chetwynd (1991)"
   },
   {
     "objectID": "teaching/MBG/introduction_rss2025.html#survey-example-loa-loa-in-cameroon",
     "href": "teaching/MBG/introduction_rss2025.html#survey-example-loa-loa-in-cameroon",
     "title": "Introduction",
-    "section": "Survey Example: Loa loa in Cameroon",
-    "text": "Survey Example: Loa loa in Cameroon\n\n\nData: Empirical prevalences in surveyed villages\n\nMap: Predictive probabilities of exceeding 20% prevalence threshold\n\nDiggle et al., 2007"
+    "section": "",
+    "text": "Data: Empirical prevalences in surveyed villages\n\nMap: Predictive probabilities of exceeding 20% prevalence threshold\n\nDiggle et al., 2007"
   },
   {
     "objectID": "teaching/MBG/introduction_rss2025.html#research-questions",
     "href": "teaching/MBG/introduction_rss2025.html#research-questions",
     "title": "Introduction",
-    "section": "Research Questions",
-    "text": "Research Questions\nPlague in Madagascar\n\nIs elevation an important risk factor?\n\nIf so, why?\n\nChildhood Leukaemia in Humberside\n\nDo cases show unexpected clustering?\n\nLoa loa in Cameroon\n\nWhat environmental factors influence risk?\n\nCan we predict areas exceeding an intervention threshold?"
+    "section": "",
+    "text": "Is elevation an important risk factor?\n\nIf so, why?\n\n\n\n\n\nDo cases show unexpected clustering?\n\n\n\n\n\nWhat environmental factors influence risk?\n\nCan we predict areas exceeding an intervention threshold?"
   },
   {
     "objectID": "teaching/MBG/introduction_rss2025.html#empirical-modelling-aegiss-project",
     "href": "teaching/MBG/introduction_rss2025.html#empirical-modelling-aegiss-project",
     "title": "Introduction",
-    "section": "Empirical Modelling: AEGISS Project",
-    "text": "Empirical Modelling: AEGISS Project\n\nObjective: Early detection of incidence anomalies\n\n3,374 reports of gastro-intestinal illness\n\nLog-Gaussian Cox process for space-time correlation"
+    "section": "",
+    "text": "Objective: Early detection of incidence anomalies\n\n3,374 reports of gastro-intestinal illness\n\nLog-Gaussian Cox process for space-time correlation"
   },
   {
     "objectID": "teaching/MBG/introduction_rss2025.html#geostatistics",
     "href": "teaching/MBG/introduction_rss2025.html#geostatistics",
     "title": "Introduction",
-    "section": "Geostatistics",
-    "text": "Geostatistics\n\n\n\n\n\n\n\nData: \\((y_i, x_i)\\), where \\(x_i \\in A \\subset \\mathbb{R}^2\\)\n\nModel: \\(Y_i = S(x_i) + Z_i\\)\n\nObjective: Estimate \\(\\int_{A} S(x) dx\\) (e.g., mining yield)"
+    "section": "",
+    "text": "Data: \\((y_i, x_i)\\), where \\(x_i \\in A \\subset \\mathbb{R}^2\\)\n\nModel: \\(Y_i = S(x_i) + Z_i\\)\n\nObjective: Estimate \\(\\int_{A} S(x) dx\\) (e.g., mining yield)"
   },
   {
     "objectID": "teaching/MBG/introduction_rss2025.html#model-based-geostatistics-for-public-health",
     "href": "teaching/MBG/introduction_rss2025.html#model-based-geostatistics-for-public-health",
     "title": "Introduction",
-    "section": "Model-Based Geostatistics for Public Health",
-    "text": "Model-Based Geostatistics for Public Health\n\n\n\n\n\nAnimation: Malaria in Chikwawa district"
+    "section": "",
+    "text": "Animation: Malaria in Chikwawa district"
   },
   {
     "objectID": "teaching/MBG/introduction_rss2025.html#science-and-statistics",
     "href": "teaching/MBG/introduction_rss2025.html#science-and-statistics",
     "title": "Introduction",
-    "section": "Science and Statistics",
-    "text": "Science and Statistics\n\nKey Concepts:\n- \\(S\\): “Process of nature”\n- \\(Y\\): “Observed data”\n- Bayesian Framework: \\([Y, S] = [S][Y | S]\\)\nAdapted from: Statistics and Scientific Method (Diggle & Chatwynd, 2011)"
+    "section": "",
+    "text": "Key Concepts:\n- \\(S\\): “Process of nature”\n- \\(Y\\): “Observed data”\n- Bayesian Framework: \\([Y, S] = [S][Y | S]\\)\nAdapted from: Statistics and Scientific Method (Diggle & Chatwynd, 2011)"
   },
   {
     "objectID": "teaching/MBG/introduction_rss2025.html#workflow-of-a-statistical-analysis",
     "href": "teaching/MBG/introduction_rss2025.html#workflow-of-a-statistical-analysis",
     "title": "Introduction",
-    "section": "Workflow of a statistical analysis",
-    "text": "Workflow of a statistical analysis\n\n\n\n\nHow do we apply the workflow of a statistical analysis in model-based geostatistics?"
+    "section": "",
+    "text": "How do we apply the workflow of a statistical analysis in model-based geostatistics?"
   },
   {
     "objectID": "teaching/MBG/Exercises/Exercise 3.html",
@@ -1166,7 +1166,7 @@
     "href": "talks/Lund2025.html#ntds-risk-factors",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "NTDs Risk Factors",
-    "text": "NTDs Risk Factors\n\n\n\n\n\n\n\n\n\n\nCommon risk factors:\n- Poor sanitation and lack of clean water\n- Limited healthcare access\n- Poverty and overcrowding\n- Exposure to disease vectors (e.g., mosquitoes, flies)\n- Lack of education and awareness"
+    "text": "NTDs Risk Factors\n\n\n\n\n\n\n\n\n\n\n\n\n\nCommon risk factors:\n- Poor sanitation and lack of clean water\n- Limited healthcare access\n- Poverty and overcrowding\n- Exposure to disease vectors (e.g., mosquitoes, flies)\n- Lack of education and awareness"
   },
   {
     "objectID": "talks/Lund2025.html#mass-drug-administration-mda-a-preventive-strategy",
@@ -1180,28 +1180,28 @@
     "href": "talks/Lund2025.html#albendazole",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Albendazole",
-    "text": "Albendazole\n\n\n\n\n\n\nHow it works:\nAlbendazole disrupts the metabolism of parasitic worms by inhibiting microtubule formation, which is essential for their survival.\n\nAlbendazole works by stopping worms from absorbing the nutrients they need to survive. It blocks a process inside their cells that’s kind of like the framework or “skeleton” that helps them function and grow. Without it, the worms can’t live for long and are eventually cleared from the body.\n\nUsed for NTDs such as:\n\nLymphatic filariasis (in combination with ivermectin or DEC)\nSoil-transmitted helminths (e.g., ascariasis, hookworm, trichuriasis)\n\nMDA use:\nDistributed in large-scale deworming campaigns, particularly targeting children and at-risk communities."
+    "text": "Albendazole\n\n\n\n\n\n\n\n\n\nHow it works:\nAlbendazole disrupts the metabolism of parasitic worms by inhibiting microtubule formation, which is essential for their survival.\n\nAlbendazole works by stopping worms from absorbing the nutrients they need to survive. It blocks a process inside their cells that’s kind of like the framework or “skeleton” that helps them function and grow. Without it, the worms can’t live for long and are eventually cleared from the body.\n\nUsed for NTDs such as:\n\nLymphatic filariasis (in combination with ivermectin or DEC)\nSoil-transmitted helminths (e.g., ascariasis, hookworm, trichuriasis)\n\nMDA use:\nDistributed in large-scale deworming campaigns, particularly targeting children and at-risk communities."
   },
   {
     "objectID": "talks/Lund2025.html#ivermectin",
     "href": "talks/Lund2025.html#ivermectin",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Ivermectin",
-    "text": "Ivermectin\n\n\n\n\n\n\nHow it works:\nIvermectin paralyzes and kills parasites by interfering with their nerve and muscle function via chloride channel disruption. Parasites cannot move and feed.\n\nIvermectin kills parasites by messing with their nerves and muscles, which causes them to become paralyzed and die. It stops them from moving and feeding, so the body can get rid of them.\nChloride channel disruption refers to any impairment in the normal function of chloride channels, which are protein pores in cell membranes that allow chloride ions (Cl-) to pass through.\n\nUsed for NTDs such as:\n\nOnchocerciasis (river blindness)\n\nLymphatic filariasis (in combination with albendazole)\n\nStrongyloidiasis\n\nMDA use: Ivermectin is given to both adults and children (weighing more than 15kg), but its use is carefully considered for pregnant women."
+    "text": "Ivermectin\n\n\n\n\n\n\n\n\n\nHow it works:\nIvermectin paralyzes and kills parasites by interfering with their nerve and muscle function via chloride channel disruption. Parasites cannot move and feed.\n\nIvermectin kills parasites by messing with their nerves and muscles, which causes them to become paralyzed and die. It stops them from moving and feeding, so the body can get rid of them.\nChloride channel disruption refers to any impairment in the normal function of chloride channels, which are protein pores in cell membranes that allow chloride ions (Cl-) to pass through.\n\nUsed for NTDs such as:\n\nOnchocerciasis (river blindness)\n\nLymphatic filariasis (in combination with albendazole)\n\nStrongyloidiasis\n\nMDA use: Ivermectin is given to both adults and children (weighing more than 15kg), but its use is carefully considered for pregnant women."
   },
   {
     "objectID": "talks/Lund2025.html#praziquantel",
     "href": "talks/Lund2025.html#praziquantel",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Praziquantel",
-    "text": "Praziquantel\n\n\n\n\n\n\nHow it works:\nPraziquantel increases permeability of the parasite’s cell membranes to calcium ions, causing muscle contraction and paralysis.\n\nPraziquantel makes the outer layer of the parasite’s cells more “leaky,” allowing calcium to enter. This causes the parasite’s muscles to tighten and paralyze it, making it easier for the body to get rid of it.\nInside the cells of parasites, calcium is important for controlling muscle movement. When calcium enters the parasite’s cells (which normally isn’t supposed to happen), it disrupts the normal function of the muscles.\nThis excess calcium makes the muscles contract and become stiff. The parasite can’t move properly or feed, and it becomes paralyzed, which allows the body to get rid of it. So, calcium causes the parasite’s muscles to freeze up, stopping it from surviving or causing further harm.\n\nUsed for NTDs such as:\n\n\nSchistosomiasis\n\nTapeworm infections\n\nMDA use:\nKey drug in school-based and community-wide treatment campaigns in regions with high schistosomiasis burden."
+    "text": "Praziquantel\n\n\n\n\n\n\n\n\n\nHow it works:\nPraziquantel increases permeability of the parasite’s cell membranes to calcium ions, causing muscle contraction and paralysis.\n\nPraziquantel makes the outer layer of the parasite’s cells more “leaky,” allowing calcium to enter. This causes the parasite’s muscles to tighten and paralyze it, making it easier for the body to get rid of it.\nInside the cells of parasites, calcium is important for controlling muscle movement. When calcium enters the parasite’s cells (which normally isn’t supposed to happen), it disrupts the normal function of the muscles.\nThis excess calcium makes the muscles contract and become stiff. The parasite can’t move properly or feed, and it becomes paralyzed, which allows the body to get rid of it. So, calcium causes the parasite’s muscles to freeze up, stopping it from surviving or causing further harm.\n\nUsed for NTDs such as:\n\n\nSchistosomiasis\n\nTapeworm infections\n\nMDA use:\nKey drug in school-based and community-wide treatment campaigns in regions with high schistosomiasis burden."
   },
   {
     "objectID": "talks/Lund2025.html#treating-ntds",
     "href": "talks/Lund2025.html#treating-ntds",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Treating NTDs",
-    "text": "Treating NTDs\n\n\n\n\n\nDisease\nAlb\nPZQ\nIVM\nAZM\nDEC\nMOX\nOther\n\n\n\n\nSTH\n✓\n\n\n\n\n\nMBD\n\n\nSchisto\n✓†\n✓\n\n\n\n\nOXA\n\n\nLF\n✓†\n\n✓\n\n✓\n✓\nDOX*\n\n\nTrachoma\n\n\n✓‡\n✓\n\n\nTEO\n\n\n\n\n\nAbbreviations:\nAlb = Albendazole, PZQ = Praziquantel, IVM = Ivermectin, AZM = Azithromycin, DEC = Diethylcarbamazine, MOX = Moxidectin, MBD = Mebendazole, OXA = Oxamniquine, DOX = Doxycycline, TEO = Tetracycline eye ointment\nSymbols:\n† Used in combination therapy\n‡ Only in onchocerciasis co-endemic areas\n*Adjunctive treatment\n\nKey Explanations: - combo: Combination therapy enhances efficacy (e.g., albendazole+praziquantel for schistosomiasis kills both juvenile and adult worms)\n\nco-endemic areas only (trachoma/ivermectin):\n\nIvermectin is only recommended for trachoma in areas where onchocerciasis (river blindness) is also present because:\n\nIn onchocerciasis-endemic areas: Mass ivermectin distribution is already occurring for river blindness control, so it can simultaneously help reduce trachoma transmission\nIn non-onchocerciasis areas:\n\nAzithromycin is preferred as the primary trachoma treatment because:\n\nIt has direct antibacterial action against Chlamydia trachomatis\nBetter safety profile for children and pregnant women\nAdditional community-wide benefits against other bacterial infections\n\nIvermectin isn’t contraindicated, but simply less optimal than azithromycin for trachoma-specific control\n\n\n\nadjunct:\n\nSecondary treatment that supports but doesn’t replace primary therapy\nExample: Doxycycline for LF kills Wolbachia bacteria inside adult worms, making them sterile (used alongside albendazole/ivermectin)"
+    "text": "Treating NTDs\n\n\n\n\n\nDisease\nAlb\nPZQ\nIVM\nAZM\nDEC\nMOX\nOther\n\n\n\n\nSTH\n✓\n\n\n\n\n\nMBD\n\n\nSchisto\n✓†\n✓\n\n\n\n\nOXA\n\n\nLF\n✓†\n\n✓\n\n✓\n✓\nDOX*\n\n\nTrachoma\n\n\n✓‡\n✓\n\n\nTEO\n\n\n\n\n\n\n\nAbbreviations:\nAlb = Albendazole, PZQ = Praziquantel, IVM = Ivermectin, AZM = Azithromycin, DEC = Diethylcarbamazine, MOX = Moxidectin, MBD = Mebendazole, OXA = Oxamniquine, DOX = Doxycycline, TEO = Tetracycline eye ointment\nSymbols:\n† Used in combination therapy\n‡ Only in onchocerciasis co-endemic areas\n*Adjunctive treatment\n\nKey Explanations: - combo: Combination therapy enhances efficacy (e.g., albendazole+praziquantel for schistosomiasis kills both juvenile and adult worms)\n\nco-endemic areas only (trachoma/ivermectin):\n\nIvermectin is only recommended for trachoma in areas where onchocerciasis (river blindness) is also present because:\n\nIn onchocerciasis-endemic areas: Mass ivermectin distribution is already occurring for river blindness control, so it can simultaneously help reduce trachoma transmission\nIn non-onchocerciasis areas:\n\nAzithromycin is preferred as the primary trachoma treatment because:\n\nIt has direct antibacterial action against Chlamydia trachomatis\nBetter safety profile for children and pregnant women\nAdditional community-wide benefits against other bacterial infections\n\nIvermectin isn’t contraindicated, but simply less optimal than azithromycin for trachoma-specific control\n\n\n\nadjunct:\n\nSecondary treatment that supports but doesn’t replace primary therapy\nExample: Doxycycline for LF kills Wolbachia bacteria inside adult worms, making them sterile (used alongside albendazole/ivermectin)"
   },
   {
     "objectID": "talks/Lund2025.html#assessing-mda-impact",
@@ -1445,8 +1445,8 @@
     "objectID": "talks/Barcelona2025.html#presentation-overview",
     "href": "talks/Barcelona2025.html#presentation-overview",
     "title": "A flexible class of latent variable models for the analysis of antibody response data",
-    "section": "Presentation Overview",
-    "text": "Presentation Overview\n\nA brief overview of the serology\nCurrent approaches for the analysis of antibody data\nThe proposed modelling approach\nApplication to malaria sero-epidemiology\nSummary"
+    "section": "",
+    "text": "A brief overview of the serology\nCurrent approaches for the analysis of antibody data\nThe proposed modelling approach\nApplication to malaria sero-epidemiology\nSummary"
   },
   {
     "objectID": "talks/Barcelona2025.html#thank-you",
@@ -1467,7 +1467,7 @@
     "href": "talks/Barcelona2025.html#immune-response-to-infectious-diseases",
     "title": "A flexible class of latent variable models for the analysis of antibody response data",
     "section": "Immune response to infectious diseases",
-    "text": "Immune response to infectious diseases\n\n\nFollowing infection, the adaptive immune response is initiated through antigen recognition by naïve B cells. Different classes of antibodies play distinct roles in this process. IgM is usually the first antibody produced following infection and reflects recent or ongoing exposure, but is short-lived. IgG is produced later, after immune maturation and class switching, and persists substantially longer, providing a durable marker of past exposure. Other antibody classes, such as IgA and IgE, play important biological roles but are less commonly used in sero-epidemiological studies.\nThe initiation of the adaptive immune response is not immediate, introducing a delay between pathogen entry and measurable antibody responses. During the incubation period, the pathogen replicates while innate immune mechanisms dominate early control. Antigen processing and presentation occur during this phase, and B-cell activation begins, but IgG antibodies are typically not yet detectable, creating a systematic lag between infection onset and serological evidence of exposure.\nAs infection progresses into the early symptomatic phase, short-lived antibody classes, particularly IgM, start to rise. At the same time, class-switch recombination is initiated and IgG production begins, although IgG levels remain relatively low. For this reason, IgG-based assays often have limited sensitivity very early in the course of disease.\nDuring the peak symptomatic phase, or shortly thereafter, antigen levels decline as immune control is established. Plasma cells produce increasing quantities of IgG, leading to a rapid rise in IgG levels, which typically peak around or shortly after symptom resolution. The timing and magnitude of this peak depend on pathogen characteristics, infection intensity, and host immune status.\nIn the recovery and convalescent phase, IgM wanes rapidly, while IgG declines much more slowly, often following an approximately exponential decay. Long-lived plasma cells and memory B cells maintain persistent IgG titres, which may remain detectable for months or years. Subsequent exposure or reinfection usually results in faster and stronger boosting of IgG, compared with the primary response.\nBecause of this delayed but durable behaviour, IgG provides an integrated record of infection history, rather than a snapshot of current infection. This makes IgG the most commonly measured antibody isotype in sero-epidemiology.\n\n\nDenning DW, Kilcoyne A, Ucer C (2020). Non-infectious status indicated by detectable IgG antibody to SARS-CoV-2.\nBritish Dental Journal, 229:521–524. Link to article"
+    "text": "Immune response to infectious diseases\n\n\n\n\n\n\nFollowing infection, the adaptive immune response is initiated through antigen recognition by naïve B cells. Different classes of antibodies play distinct roles in this process. IgM is usually the first antibody produced following infection and reflects recent or ongoing exposure, but is short-lived. IgG is produced later, after immune maturation and class switching, and persists substantially longer, providing a durable marker of past exposure. Other antibody classes, such as IgA and IgE, play important biological roles but are less commonly used in sero-epidemiological studies.\nThe initiation of the adaptive immune response is not immediate, introducing a delay between pathogen entry and measurable antibody responses. During the incubation period, the pathogen replicates while innate immune mechanisms dominate early control. Antigen processing and presentation occur during this phase, and B-cell activation begins, but IgG antibodies are typically not yet detectable, creating a systematic lag between infection onset and serological evidence of exposure.\nAs infection progresses into the early symptomatic phase, short-lived antibody classes, particularly IgM, start to rise. At the same time, class-switch recombination is initiated and IgG production begins, although IgG levels remain relatively low. For this reason, IgG-based assays often have limited sensitivity very early in the course of disease.\nDuring the peak symptomatic phase, or shortly thereafter, antigen levels decline as immune control is established. Plasma cells produce increasing quantities of IgG, leading to a rapid rise in IgG levels, which typically peak around or shortly after symptom resolution. The timing and magnitude of this peak depend on pathogen characteristics, infection intensity, and host immune status.\nIn the recovery and convalescent phase, IgM wanes rapidly, while IgG declines much more slowly, often following an approximately exponential decay. Long-lived plasma cells and memory B cells maintain persistent IgG titres, which may remain detectable for months or years. Subsequent exposure or reinfection usually results in faster and stronger boosting of IgG, compared with the primary response.\nBecause of this delayed but durable behaviour, IgG provides an integrated record of infection history, rather than a snapshot of current infection. This makes IgG the most commonly measured antibody isotype in sero-epidemiology.\n\n\nDenning DW, Kilcoyne A, Ucer C (2020). Non-infectious status indicated by detectable IgG antibody to SARS-CoV-2.\nBritish Dental Journal, 229:521–524. Link to article"
   },
   {
     "objectID": "talks/Barcelona2025.html#when-are-igg-responses-informative",
@@ -1509,7 +1509,7 @@
     "href": "talks/Barcelona2025.html#link-with-antibody-acquisition-models",
     "title": "A flexible class of latent variable models for the analysis of antibody response data",
     "section": "Link with antibody acquisition models",
-    "text": "Link with antibody acquisition models\n\nClassical antibody acquisition model\n(Yman et al., 2016) \\[\n\\mathbb{E}[Y;a] = f(a) = \\mu_0 + (\\mu_1 - \\mu_0)\\{1 - \\exp(-r a)\\},\n\\] with age \\(a\\) and acquisition rate \\(r &gt; 0\\).\nInterpretation in the latent sero-reactivity framework \\[\n\\mathbb{E}[T;a] = \\frac{f(a)-\\mu_0}{\\mu_1-\\mu_0}\n      = 1 - \\exp(-r a),\n\\]\nResulting expectation of the antibody level \\[\n\\mathbb{E}[Y;a] = \\mu_0 + (\\mu_1-\\mu_0)\\,\\mathbb{E}[T;a].\n\\]"
+    "text": "Link with antibody acquisition models\n\n\nClassical antibody acquisition model\n(Yman et al., 2016) \\[\n\\mathbb{E}[Y;a] = f(a) = \\mu_0 + (\\mu_1 - \\mu_0)\\{1 - \\exp(-r a)\\},\n\\] with age \\(a\\) and acquisition rate \\(r &gt; 0\\).\nInterpretation in the latent sero-reactivity framework \\[\n\\mathbb{E}[T;a] = \\frac{f(a)-\\mu_0}{\\mu_1-\\mu_0}\n      = 1 - \\exp(-r a),\n\\]\nResulting expectation of the antibody level \\[\n\\mathbb{E}[Y;a] = \\mu_0 + (\\mu_1-\\mu_0)\\,\\mathbb{E}[T;a].\n\\]"
   },
   {
     "objectID": "talks/Barcelona2025.html#single-beta-model-for-t",
@@ -1621,7 +1621,7 @@
     "href": "talks/Barcelona2025.html#a-latent-variable-of-sero-reactivity",
     "title": "A flexible class of latent variable models for the analysis of antibody response data",
     "section": "A latent variable of sero-reactivity",
-    "text": "A latent variable of sero-reactivity\n\n\n\n\n\n\n\nSero-reactivity\nThe presence or degree of antibody reactivity, irrespective of any diagnostic threshold.\n\n\nLatent variable \\(T \\in [0,1]\\) represents the underlying serological activation state:\n\n\\(T=0\\): minimal or absent serological activity\n\n\\(T=1\\): strong or saturated antibody response\n\nAntibody level given latent seroreactivity: \\[\nY \\mid T=t \\sim\n\\mathcal{N}\\!\\big( (1-t)\\mu_0 + t\\mu_1,\\;\n                 (1-t)\\sigma_0^2 + t\\sigma_1^2 \\big)\n\\]\n\n\\(\\mu_0\\): baseline (no activation)\n\n\\(\\mu_1\\): saturation level\n\n\\(\\sigma_0^2, \\sigma_1^2\\): heterogeneity at the two extremes"
+    "text": "A latent variable of sero-reactivity\n\n\n\n\n\n\n\nSero-reactivity\nThe presence or degree of antibody reactivity, irrespective of any diagnostic threshold.\n\n\n\nLatent variable \\(T \\in [0,1]\\) represents the underlying serological activation state:\n\n\\(T=0\\): minimal or absent serological activity\n\n\\(T=1\\): strong or saturated antibody response\n\nAntibody level given latent seroreactivity: \\[\nY \\mid T=t \\sim\n\\mathcal{N}\\!\\big( (1-t)\\mu_0 + t\\mu_1,\\;\n                 (1-t)\\sigma_0^2 + t\\sigma_1^2 \\big)\n\\]\n\n\\(\\mu_0\\): baseline (no activation)\n\n\\(\\mu_1\\): saturation level\n\n\\(\\sigma_0^2, \\sigma_1^2\\): heterogeneity at the two extremes"
   },
   {
     "objectID": "talks/Barcelona2025.html#the-model-outcome",
@@ -1642,21 +1642,21 @@
     "href": "talks/Barcelona2025.html#how-do-we-model-the-latent-variable-t",
     "title": "A flexible class of latent variable models for the analysis of antibody response data",
     "section": "How do we model the latent variable \\(T\\) ?",
-    "text": "How do we model the latent variable \\(T\\) ?\n\n\nSingle-density approach\nThe latent sero-reactivity \\(T \\in [0,1]\\) is modelled using a single parametric distribution: \\[\nT \\sim \\text{Beta}(\\alpha,\\beta),\n\\] where \\((\\alpha,\\beta)\\) control the mean level of sero-reactivity and its heterogeneity.\nMixture-distribution approach\nThe latent variable \\(T\\) is modelled as a three-component mixture capturing graded serological states: \\[\nT \\sim \\pi_0\\,\\text{Beta}(\\alpha_0,\\beta_0)\n   + \\pi_1\\,\\text{Beta}(\\alpha_1,\\beta_1)\n   + \\pi_2\\,\\text{Beta}(\\alpha_2,\\beta_2),\n\\] with \\(\\pi_k \\ge 0\\), \\(\\sum_{k=0}^2 \\pi_k = 1\\), representing low, intermediate, and high sero-reactivity."
+    "text": "How do we model the latent variable \\(T\\) ?\n\n\n\nSingle-density approach\nThe latent sero-reactivity \\(T \\in [0,1]\\) is modelled using a single parametric distribution: \\[\nT \\sim \\text{Beta}(\\alpha,\\beta),\n\\] where \\((\\alpha,\\beta)\\) control the mean level of sero-reactivity and its heterogeneity.\nMixture-distribution approach\nThe latent variable \\(T\\) is modelled as a three-component mixture capturing graded serological states: \\[\nT \\sim \\pi_0\\,\\text{Beta}(\\alpha_0,\\beta_0)\n   + \\pi_1\\,\\text{Beta}(\\alpha_1,\\beta_1)\n   + \\pi_2\\,\\text{Beta}(\\alpha_2,\\beta_2),\n\\] with \\(\\pi_k \\ge 0\\), \\(\\sum_{k=0}^2 \\pi_k = 1\\), representing low, intermediate, and high sero-reactivity."
   },
   {
     "objectID": "talks/Barcelona2025.html#how-do-we-model-age-dependency-in-t",
     "href": "talks/Barcelona2025.html#how-do-we-model-age-dependency-in-t",
     "title": "A flexible class of latent variable models for the analysis of antibody response data",
     "section": "How do we model age dependency in \\(T\\)?",
-    "text": "How do we model age dependency in \\(T\\)?\n\n\nHow should latent sero-reactivity \\(T\\) change with age, reflecting cumulative exposure and immune maturation?\nAge-dependent structure\nLet the distribution of \\(T\\) depend on age \\(a\\) through parameters or mixing proportions, allowing gradual acquisition.\nApplication to malaria\nDifferent antigens exhibit distinct age profiles of acquisition and boosting.\n\nAMA1\nRapid acquisition in early childhood, with sero-reactivity increasing quickly at young ages.\nMSP1\nSlower and more gradual age-related increases, reflecting different exposure or immune dynamics.\n\n\n\n\nAMA1 and MSP1 are both blood-stage antigens of Plasmodium falciparum, but they differ in their immunological properties and in how antibody responses to them are acquired over age.\nAntibodies to AMA1 tend to be acquired relatively quickly after exposure. Even limited exposure early in life often leads to detectable IgG responses, and antibody levels rise steeply with age during early childhood. This makes AMA1 a marker of recent or intense exposure, particularly sensitive to changes in transmission. However, AMA1 responses can also wane relatively quickly in the absence of continued exposure and are known to be boosted strongly by repeated infections.\nBy contrast, MSP1 antibody responses are typically acquired more gradually. Detectable IgG levels often increase slowly over childhood and adolescence, reflecting cumulative rather than recent exposure. MSP1 responses are therefore often more stable over time and less sensitive to short-term fluctuations in transmission intensity, making them a marker of long-term exposure history.\nThese differences mean that AMA1 and MSP1 encode different information about transmission. AMA1 is more informative about current or recent transmission, while MSP1 reflects accumulated past exposure. From a modelling perspective, this motivates allowing the age-dependence of latent sero-reactivity to differ by antigen, rather than assuming a common functional form across markers.\nIn our framework, this translates naturally into antigen-specific age effects on the latent variable T T, capturing faster acquisition for AMA1 and slower, more gradual accumulation for MSP1, without imposing hard sero-positivity thresholds."
+    "text": "How do we model age dependency in \\(T\\)?\n\n\n\nHow should latent sero-reactivity \\(T\\) change with age, reflecting cumulative exposure and immune maturation?\nAge-dependent structure\nLet the distribution of \\(T\\) depend on age \\(a\\) through parameters or mixing proportions, allowing gradual acquisition.\nApplication to malaria\nDifferent antigens exhibit distinct age profiles of acquisition and boosting.\n\nAMA1\nRapid acquisition in early childhood, with sero-reactivity increasing quickly at young ages.\nMSP1\nSlower and more gradual age-related increases, reflecting different exposure or immune dynamics.\n\n\n\n\n\nAMA1 and MSP1 are both blood-stage antigens of Plasmodium falciparum, but they differ in their immunological properties and in how antibody responses to them are acquired over age.\nAntibodies to AMA1 tend to be acquired relatively quickly after exposure. Even limited exposure early in life often leads to detectable IgG responses, and antibody levels rise steeply with age during early childhood. This makes AMA1 a marker of recent or intense exposure, particularly sensitive to changes in transmission. However, AMA1 responses can also wane relatively quickly in the absence of continued exposure and are known to be boosted strongly by repeated infections.\nBy contrast, MSP1 antibody responses are typically acquired more gradually. Detectable IgG levels often increase slowly over childhood and adolescence, reflecting cumulative rather than recent exposure. MSP1 responses are therefore often more stable over time and less sensitive to short-term fluctuations in transmission intensity, making them a marker of long-term exposure history.\nThese differences mean that AMA1 and MSP1 encode different information about transmission. AMA1 is more informative about current or recent transmission, while MSP1 reflects accumulated past exposure. From a modelling perspective, this motivates allowing the age-dependence of latent sero-reactivity to differ by antigen, rather than assuming a common functional form across markers.\nIn our framework, this translates naturally into antigen-specific age effects on the latent variable T T, capturing faster acquisition for AMA1 and slower, more gradual accumulation for MSP1, without imposing hard sero-positivity thresholds."
   },
   {
     "objectID": "talks/Barcelona2025.html#age-dependent-latent-model-for-ama1",
     "href": "talks/Barcelona2025.html#age-dependent-latent-model-for-ama1",
     "title": "A flexible class of latent variable models for the analysis of antibody response data",
     "section": "Age-dependent latent model for AMA1",
-    "text": "Age-dependent latent model for AMA1\n\n\nFor age \\(a&lt;15\\) years, \\(T\\) follows a Dirac-Beta mixture: \\[\nT \\sim (1-\\pi(a))\\,\\delta_0 + \\pi(a)\\,\\mathrm{Beta}(\\alpha_2,1), \\quad\n\\pi(a)=1-\\exp(-\\lambda a).\n\\]\nFor age \\(a\\ge 15\\) years, \\(T\\) follows a single Beta with logit-linear mean: \\[\nT \\sim \\mathrm{Beta}\\big(\\mu(a)\\phi,\\,[1-\\mu(a)]\\phi\\big), \\quad\n\\log\\left\\{\\frac{\\mu(a)}{1-\\mu(a)}\\right\\}=\\eta_0+\\eta_1\\log(a).\n\\]\nContinuity constraint on the mean of \\(T\\) at \\(a=15\\): \\[\n\\eta_0=\\mathrm{logit}(\\mu_{15^-})-\\eta_1\\log(15),\n\\] with \\[\n\\mu_{15^-}=(1-\\exp(-15\\lambda))\\frac{\\alpha_2}{\\alpha_2+1}.\n\\]"
+    "text": "Age-dependent latent model for AMA1\n\n\n\nFor age \\(a&lt;15\\) years, \\(T\\) follows a Dirac-Beta mixture: \\[\nT \\sim (1-\\pi(a))\\,\\delta_0 + \\pi(a)\\,\\mathrm{Beta}(\\alpha_2,1), \\quad\n\\pi(a)=1-\\exp(-\\lambda a).\n\\]\nFor age \\(a\\ge 15\\) years, \\(T\\) follows a single Beta with logit-linear mean: \\[\nT \\sim \\mathrm{Beta}\\big(\\mu(a)\\phi,\\,[1-\\mu(a)]\\phi\\big), \\quad\n\\log\\left\\{\\frac{\\mu(a)}{1-\\mu(a)}\\right\\}=\\eta_0+\\eta_1\\log(a).\n\\]\nContinuity constraint on the mean of \\(T\\) at \\(a=15\\): \\[\n\\eta_0=\\mathrm{logit}(\\mu_{15^-})-\\eta_1\\log(15),\n\\] with \\[\n\\mu_{15^-}=(1-\\exp(-15\\lambda))\\frac{\\alpha_2}{\\alpha_2+1}.\n\\]"
   },
   {
     "objectID": "talks/Barcelona2025.html#ama1-analysis-results",
@@ -1670,7 +1670,7 @@
     "href": "talks/Barcelona2025.html#age-dependent-latent-model-for-msp1",
     "title": "A flexible class of latent variable models for the analysis of antibody response data",
     "section": "Age-dependent latent model for MSP1",
-    "text": "Age-dependent latent model for MSP1\n\n\nLatent sero-reactivity \\(T\\) follows a single age-dependent Beta distribution: \\[\nT \\sim \\mathrm{Beta}(\\alpha(a),\\beta(a)).\n\\]\n\n\nAge-dependent shape parameters: \\[\n\\alpha(a)=\\alpha_0\\,a^{\\gamma}, \\quad \\beta(a)=\\beta_0\\,a^{\\delta(a)}.\n\\]\nPiecewise age effect in \\(\\beta(a)\\) with change-point \\(\\tau_{cp}\\): \\[\n\\delta(a)=\n\\begin{cases}\n\\delta_1, & a \\le \\tau_{cp},\\\\\n\\delta_1+\\delta_2, & a &gt; \\tau_{cp}.\n\\end{cases}\n\\]\nInduced mean of \\(T\\) for \\(a \\ge \\tau_{cp}\\): \\[\n\\mathbb{E}[T;a]=\\left\\{1+\\frac{\\beta_0}{\\alpha_0}a^{\\delta_1+\\delta_2-\\gamma}\\right\\}^{-1}.\n\\]"
+    "text": "Age-dependent latent model for MSP1\n\n\nLatent sero-reactivity \\(T\\) follows a single age-dependent Beta distribution: \\[\nT \\sim \\mathrm{Beta}(\\alpha(a),\\beta(a)).\n\\]\n\n\n\nAge-dependent shape parameters: \\[\n\\alpha(a)=\\alpha_0\\,a^{\\gamma}, \\quad \\beta(a)=\\beta_0\\,a^{\\delta(a)}.\n\\]\nPiecewise age effect in \\(\\beta(a)\\) with change-point \\(\\tau_{cp}\\): \\[\n\\delta(a)=\n\\begin{cases}\n\\delta_1, & a \\le \\tau_{cp},\\\\\n\\delta_1+\\delta_2, & a &gt; \\tau_{cp}.\n\\end{cases}\n\\]\nInduced mean of \\(T\\) for \\(a \\ge \\tau_{cp}\\): \\[\n\\mathbb{E}[T;a]=\\left\\{1+\\frac{\\beta_0}{\\alpha_0}a^{\\delta_1+\\delta_2-\\gamma}\\right\\}^{-1}.\n\\]"
   },
   {
     "objectID": "talks/Barcelona2025.html#msp1-analysis-results",
@@ -1719,7 +1719,7 @@
     "href": "talks/Barcelona2025.html#summary-and-conclusions",
     "title": "A flexible class of latent variable models for the analysis of antibody response data",
     "section": "Summary and conclusions",
-    "text": "Summary and conclusions\n\n\nWe proposed a latent-variable framework that generalizes finite mixture models.\nIt allows flexible age-dependent modelling.\nModelling of the latent variable (seroreactivity) can be done using data-driven or mechanistic approaches.\nWe are working to extend the proposed model to\n\nanalyse geostatistical and longitudinal data-sets;\njointly model multiple antibodies."
+    "text": "Summary and conclusions\n\n\n\nWe proposed a latent-variable framework that generalizes finite mixture models.\nIt allows flexible age-dependent modelling.\nModelling of the latent variable (seroreactivity) can be done using data-driven or mechanistic approaches.\nWe are working to extend the proposed model to\n\nanalyse geostatistical and longitudinal data-sets;\njointly model multiple antibodies."
   },
   {
     "objectID": "talks/Barcelona2025.html#msp1-parameter-estimates-1",
@@ -1769,5 +1769,89 @@
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "",
     "text": "Neglected Tropical Diseases and Mass Drug Administration\nThe standard geostatistical model for prevalence mapping\nA decay-adjusted spatio-temporal model\nApplication to lymphatic filariasis in Madagascar\nSummary"
+  },
+  {
+    "objectID": "projects/ntds.html#recent-publications-preprints",
+    "href": "projects/ntds.html#recent-publications-preprints",
+    "title": "Neglected Tropical Diseases",
+    "section": "Recent publications & preprints",
+    "text": "Recent publications & preprints\n\nGiorgi, E., Fronterre, C., Diggle, P. J., Decay-Adjusted Spatio-Temporal Modeling for Mass Drug Administration Programs, (Under review) Preprint on arXiv\nSasanami, M., Almou, I., Diori, A. N., Bakhtiari, A., Beidou, N., Bisanzio, D., Boyd, S., Burgert-Brucker, C. R., Amza, A., Gass, K., Kadri, B., Kebede, F., Masika, M. P., Olobio, N. P., Seife, F., Souley, A. S. Y., Tefera, A., Kello, A. B., Solomon, A. W., Harding-Esch, E. Giorgi, E. (2025). Understanding the impact of covariates for trachoma prevalence prediction using geostatistical methods. BMC Global and Public Health. BMC Global Public Health 3, 48. https://doi.org/10.1186/s44263-025-00161-x\nKhaki, J., Minnery, M., Giorgi, E. (2025). Using ESPEN Data for Evidence-Based Control of Neglected Tropical Diseases in sub-Saharan Africa: a Comprehensive Model-based Geostatistical Analysis on Soil-Transmitted Helminths. PLOS Neglected Tropical Diseases 19(1): e0012782. https://doi.org/10.1371/journal.pntd.0012782"
+  },
+  {
+    "objectID": "teaching/MBG/exp_analysis_rss2025.html",
+    "href": "teaching/MBG/exp_analysis_rss2025.html",
+    "title": "Exploratory analysis",
+    "section": "",
+    "text": "How to explore relationships with count data\nHow to use a non-spatial model for mapping\nHow to handle spatial data in R"
+  },
+  {
+    "objectID": "teaching/MBG/estimation.html",
+    "href": "teaching/MBG/estimation.html",
+    "title": "Model formulation and parameter estimation",
+    "section": "",
+    "text": "How to assess residual spatial correlation\nHow to formulate and fit a geostatistical model\nHow to interpret the results from a model fit"
+  },
+  {
+    "objectID": "teaching/MBG/estimation_rss2025.html",
+    "href": "teaching/MBG/estimation_rss2025.html",
+    "title": "Model formulation and parameter estimation",
+    "section": "",
+    "text": "An overview of staionary Gaussian processes in 2 dimensions\nHow to formulate and fit a geostatistical model\nHow to interpret the results from a model fit"
+  },
+  {
+    "objectID": "teaching/MBG/introduction_rss2025.html",
+    "href": "teaching/MBG/introduction_rss2025.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Defining geostatistical problems\nModel-based geostatistics as a data-driven approach to spatial analysis of health outcomes\n\n\n\n\n\nIncidence: Number of new cases per unit time per unit population\n\nPrevalence: Number of existing cases per unit population\n\nRisk: Probability that a person will contract the disease (per unit time or lifetime)\n\nObjective: Understand spatial variation in disease incidence, prevalence, and risk\nRelevant books:\nElliott et al. (2000), Gelfand et al. (2010), Rothman (1986), Waller & Gotway (2004), Woodward (1999)\n\n\n\n\n\n\n\nJohn Snow removed the handle of the Broad Street water pump\n\nIdentified contaminated water as the disease source\n\nContradicted conventional wisdom at the time\n\n1854 Broad Street cholera outbreak\n\n\n\n\n\n\n\n\n\n\nRegistry\n\nCase counts in sub-regions\n\nPopulation size as denominator\n\nCovariates from census data\n\nCase-Control\n\nCases: All known cases in the study region\n\nControls: Probability sample of non-cases\n\nSurvey\n\nSampled locations within study region\n\nData collected per location\n\nCommon in low-resource settings\n\n\n\n\n\n\n\nResearch Question:\nDoes plague infection risk increase above 800m elevation?\nGiorgi et al., 2016, Spatial and Spatio-temporal Epidemiology\n\n\n\n\n\n\nLocations of all known cases (1974–82)\n\nResidential locations of a random sample of births\n\nReferences:\nCuzick & Edwards (1990), Diggle & Chetwynd (1991)\n\n\n\n\n\n\nData: Empirical prevalences in surveyed villages\n\nMap: Predictive probabilities of exceeding 20% prevalence threshold\n\nDiggle et al., 2007\n\n\n\n\n\n\n\nIs elevation an important risk factor?\n\nIf so, why?\n\n\n\n\n\nDo cases show unexpected clustering?\n\n\n\n\n\nWhat environmental factors influence risk?\n\nCan we predict areas exceeding an intervention threshold?\n\n\n\n\n\n\n\nObjective: Early detection of incidence anomalies\n\n3,374 reports of gastro-intestinal illness\n\nLog-Gaussian Cox process for space-time correlation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData: \\((y_i, x_i)\\), where \\(x_i \\in A \\subset \\mathbb{R}^2\\)\n\nModel: \\(Y_i = S(x_i) + Z_i\\)\n\nObjective: Estimate \\(\\int_{A} S(x) dx\\) (e.g., mining yield)\n\n\n\n\n\n\n\n\n\nAnimation: Malaria in Chikwawa district\n\n\n\n\n\n\n\nKey Concepts:\n- \\(S\\): “Process of nature”\n- \\(Y\\): “Observed data”\n- Bayesian Framework: \\([Y, S] = [S][Y | S]\\)\nAdapted from: Statistics and Scientific Method (Diggle & Chatwynd, 2011)\n\n\n\n\n\n\n\n\nHow do we apply the workflow of a statistical analysis in model-based geostatistics?"
+  },
+  {
+    "objectID": "teaching/MBG/geostat_pred_rss2025.html",
+    "href": "teaching/MBG/geostat_pred_rss2025.html",
+    "title": "Geostatistical prediction",
+    "section": "",
+    "text": "“Conventional geostatistical methodology solves the problem of predicting the realized value of a linear functional of a Gaussian spatial stochastic process \\(S(x)\\) based on observations \\(Y_i= S(x_i) + Z_i\\) at sampling locations \\(x_i\\), where the \\(Z_i\\) are mutually independent, zero-mean Gaussian random variables.”\n\nDiggle, Tawn and Moyeed (1998)"
+  },
+  {
+    "objectID": "teaching/MBG/exp_analysis.html",
+    "href": "teaching/MBG/exp_analysis.html",
+    "title": "Exploratory analysis",
+    "section": "",
+    "text": "How to explore relationships with count data\nHow to use a non-spatial model for mapping\nHow to handle spatial data in R"
+  },
+  {
+    "objectID": "teaching/MBG/geostat_pred.html",
+    "href": "teaching/MBG/geostat_pred.html",
+    "title": "Geostatistical prediction",
+    "section": "",
+    "text": "“Conventional geostatistical methodology solves the problem of predicting the realized value of a linear functional of a Gaussian spatial stochastic process \\(S(x)\\) based on observations \\(Y_i= S(x_i) + Z_i\\) at sampling locations \\(x_i\\), where the \\(Z_i\\) are mutually independent, zero-mean Gaussian random variables.”\n\nDiggle, Tawn and Moyeed (1998)"
+  },
+  {
+    "objectID": "teaching/MBG/introduction.html",
+    "href": "teaching/MBG/introduction.html",
+    "title": "Introduction",
+    "section": "",
+    "text": "Defining geostatistical problems\nModel-based geostatistics as a data-driven approach to spatial analysis of health outcomes\n\n\n\n\n\nIncidence: Number of new cases per unit time per unit population\n\nPrevalence: Number of existing cases per unit population\n\nRisk: Probability that a person will contract the disease (per unit time or lifetime)\n\nObjective: Understand spatial variation in disease incidence, prevalence, and risk\nRelevant books:\nElliott et al. (2000), Gelfand et al. (2010), Rothman (1986), Waller & Gotway (2004), Woodward (1999)\n\n\n\n\n\n\n\nJohn Snow removed the handle of the Broad Street water pump\n\nIdentified contaminated water as the disease source\n\nContradicted conventional wisdom at the time\n\n1854 Broad Street cholera outbreak\n\n\n\n\n\n\n\n\n\n\nRegistry\n\nCase counts in sub-regions\n\nPopulation size as denominator\n\nCovariates from census data\n\nCase-Control\n\nCases: All known cases in the study region\n\nControls: Probability sample of non-cases\n\nSurvey\n\nSampled locations within study region\n\nData collected per location\n\nCommon in low-resource settings\n\n\n\n\n\n\n\nResearch Question:\nDoes plague infection risk increase above 800m elevation?\nGiorgi et al., 2016, Spatial and Spatio-temporal Epidemiology\n\n\n\n\n\n\nLocations of all known cases (1974–82)\n\nResidential locations of a random sample of births\n\nReferences:\nCuzick & Edwards (1990), Diggle & Chetwynd (1991)\n\n\n\n\n\n\nData: Empirical prevalences in surveyed villages\n\nMap: Predictive probabilities of exceeding 20% prevalence threshold\n\nDiggle et al., 2007\n\n\n\n\n\n\n\nIs elevation an important risk factor?\n\nIf so, why?\n\n\n\n\n\nDo cases show unexpected clustering?\n\n\n\n\n\nWhat environmental factors influence risk?\n\nCan we predict areas exceeding an intervention threshold?\n\n\n\n\n\n\n\nEpidemic: Foot-and-mouth in Cumbria (2001)\n\nEndemic: Gastroenteric disease in Hampshire (AEGISS)\n\nAnimations:\n- Foot-and-mouth\n- AEGISS\nHow are these patterns different?\n\n\n\n\n\nObjective: Early detection of incidence anomalies\n\n3,374 reports of gastro-intestinal illness\n\nLog-Gaussian Cox process for space-time correlation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData: \\((y_i, x_i)\\), where \\(x_i \\in A \\subset \\mathbb{R}^2\\)\n\nModel: \\(Y_i = S(x_i) + Z_i\\)\n\nObjective: Estimate \\(\\int_{A} S(x) dx\\) (e.g., mining yield)\n\n\n\n\n\n\n\n\n\nAnimation: Malaria in Chikwawa district\n\n\n\n\n\n\n\nKey Concepts:\n- \\(S\\): “Process of nature”\n- \\(Y\\): “Observed data”\n- Bayesian Framework: \\([Y, S] = [S][Y | S]\\)\nAdapted from: Statistics and Scientific Method (Diggle & Chatwynd, 2011)\n\n\n\n\n\n\n\n\nHow do we apply the workflow of a statistical analysis in model-based geostatistics?"
+  },
+  {
+    "objectID": "talks/Birmingham (20 Feb 2025).html",
+    "href": "talks/Birmingham (20 Feb 2025).html",
+    "title": "Model-based Geostatistics for Global Public Health",
+    "section": "",
+    "text": "PhD in Statistics and Epidemiology (Sep 2015)\n\nMSc in Statistics (July 2012)\n\nBSc in Statistics (April 2012)"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html",
+    "href": "talks/Barcelona2025.html",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "",
+    "text": "A brief overview of the serology\nCurrent approaches for the analysis of antibody data\nThe proposed modelling approach\nApplication to malaria sero-epidemiology\nSummary"
+  },
+  {
+    "objectID": "projects/serology.html#recent-publications-preprints",
+    "href": "projects/serology.html#recent-publications-preprints",
+    "title": "Statisitcal Methods for Serological Data Analysis",
+    "section": "Recent publications & preprints",
+    "text": "Recent publications & preprints\n\nGiorgi, E., Wallin, J., A flexible class of latent variable models for the analysis of antibody response data. (Under review) Preprint on arXiv\nRomano, C., Wallin, J., William, T., Drakeley, C., Branda, F., Ciccozzi, M., Giorgi, E., Modelling serological multiplex bead assays responses: A case study from Malaysia. (Under review) Preprint on medRxiv\nKyomuhangi, I., Giorgi, E. (2022). A threshold-free approach with age-dependency for estimating malaria seroprevalence. Malaria Journal. https://doi.org/10.1371/journal.pone.0262145\nKyomuhangi, I., Giorgi, E. (2021) A unified and flexible modelling framework for the analysis of malaria serology data. Epidemiology & Infection. doi:10.1017/S0950268821000753"
   }
 ]
