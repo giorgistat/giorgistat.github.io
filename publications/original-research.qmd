@@ -58,7 +58,7 @@ title: "Original Research Articles"
 
 -   Purkiss. J., Pepe, P., Poplawski, N. A. K., Maurelli, M. P., Gualdieri, L., Rinaldi, L., <u>**Giorgi, E.**</u> (2025). *Combining country indicators and individual variables to predict soil-transmitted helminth infections among migrant populations: a case study from southern Italy.* PLOS Neglected Tropical Diseases 19(6): e0012577. https://doi.org/10.1371/journal.pntd.0012577
 
--   Ecke, F., Semenza, J.C., Buzan, E., Costa, F., <u>**Giorgi, E.**</u>, Guo, J., Kirkpatrick, L., Knauf, S., Meheretu, Y., Singh, N., Sjödin, H., Timperley, M., Treskova, M., Ulrich, R.G., Zeppelini, C.G., and Rocklöv, J. (2025). *Mitigating Zoonotic Risks Through Ecosystem Restoration.* Nature Ecology and Evolution. In production.
+-   Ecke, F., Semenza, J.C., Buzan, E., Costa, F., <u>**Giorgi, E.**</u>, Guo, J., Kirkpatrick, L., Knauf, S., Meheretu, Y., Singh, N., Sjödin, H., Timperley, M., Treskova, M., Ulrich, R.G., Zeppelini, C.G., and Rocklöv, J. (2025). *Mitigating Zoonotic Risks Through Ecosystem Restoration.* Nature Ecology and Evolution 9, 1979–1988 (2025). https://doi.org/10.1038/s41559-025-02869-3
 
 -   Sasanami, M., Almou, I., Diori, A. N., Bakhtiari, A., Beidou, N., Bisanzio, D., Boyd, S., Burgert-Brucker, C. R., Amza, A., Gass, K., Kadri, B., Kebede, F., Masika, M. P., Olobio, N. P., Seife, F., Souley, A. S. Y., Tefera, A., Kello, A. B., Solomon, A. W., Harding-Esch, E. <u>**Giorgi, E.**</u> (2025). *Understanding the impact of covariates for trachoma prevalence prediction using geostatistical methods.* BMC Global and Public Health. BMC Global Public Health 3, 48. https://doi.org/10.1186/s44263-025-00161-x
 

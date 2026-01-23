@@ -14,7 +14,10 @@ To know more about my research on NTDs **read our Significance paper** [here](Si
 
 ## Recent publications & preprints
 
--   Giorgi, E., Fronterre, C., Diggle, P. J., *Decay-Adjusted Spatio-Temporal Modeling for Mass Drug Administration Programs*, (Under review) [Preprint on arXiv](https://arxiv.org/abs/2512.03760)
+-   <u>**Giorgi, E.**</u>, Fronterre, C., Diggle, P. J., *Decay-Adjusted Spatio-Temporal Modeling for Mass Drug Administration Programs*, (Under review) [Preprint on arXiv](https://arxiv.org/abs/2512.03760)
+
+-   Norman, J., Bassabi-Alladjie, N.-M., Boko-Collins, P. M., de Souza, D. K., Gass, K., Hamill, L., Langa, J., Moore, C., Nala, R., Sullivan, S., <u>**Giorgi, E.**</u>, *Assessing diagnostic accuracy of Ov16 rapid diagnostic tests for onchocerciasis using Bayesian latent class models.* (Under review) [Preprint on medRxiv](https://www.medrxiv.org/content/10.64898/2026.01.20.26344416v1)
+
 
 -   Sasanami, M., Almou, I., Diori, A. N., Bakhtiari, A., Beidou, N., Bisanzio, D., Boyd, S., Burgert-Brucker, C. R., Amza, A., Gass, K., Kadri, B., Kebede, F., Masika, M. P., Olobio, N. P., Seife, F., Souley, A. S. Y., Tefera, A., Kello, A. B., Solomon, A. W., Harding-Esch, E. <u>**Giorgi, E.**</u> (2025). *Understanding the impact of covariates for trachoma prevalence prediction using geostatistical methods.* BMC Global and Public Health. BMC Global Public Health 3, 48. https://doi.org/10.1186/s44263-025-00161-x
 
