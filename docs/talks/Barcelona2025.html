@@ -1,255 +1,159 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.40">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Emanuele Giorgi">
-<meta name="author" content="Jonas Wallin">
-
-<title>A flexible class of latent variable models for the analysis of antibody response data – Welcome to My Personal Website</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-</style>
-
-
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<html lang="en"><head>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2a0ac3da282dc2b09897d71ea71da634.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
-  }
-}</script>
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.6.40">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
+  <meta name="author" content="Emanuele Giorgi">
+  <meta name="author" content="Jonas Wallin">
+  <title>Welcome to My Personal Website – A flexible class of latent variable models for the analysis of antibody response data</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
     }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../styles.css">
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-2a4c8bc07c7bed3f644724215556eb12.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
 </head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
 
-<body class="nav-fixed">
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">A flexible class of latent variable models for the analysis of antibody response data</h1>
 
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Welcome to My Personal Website</span>
-    </a>
-  </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../books.html"> 
-<span class="menu-text">Books</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../projects/index.html"> 
-<span class="menu-text">Projects</span></a>
-  </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-publications" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Publications</span>
-    </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-publications">    
-        <li>
-    <a class="dropdown-item" href="../publications/index.html">
- <span class="dropdown-text">Overview</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../publications/original-research.html">
- <span class="dropdown-text">Original Research</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../publications/book-chapters.html">
- <span class="dropdown-text">Book Chapters</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../publications/other-publications.html">
- <span class="dropdown-text">Other Publications</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="../talks/index.html"> 
-<span class="menu-text">Talks</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../teaching/index.html"> 
-<span class="menu-text">Teaching</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Emanuele Giorgi 
 </div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#presentation-overview" id="toc-presentation-overview" class="nav-link active" data-scroll-target="#presentation-overview">Presentation Overview</a></li>
-  <li><a href="#key-definitions" id="toc-key-definitions" class="nav-link" data-scroll-target="#key-definitions">Key definitions</a></li>
-  <li><a href="#immune-response-to-infectious-diseases" id="toc-immune-response-to-infectious-diseases" class="nav-link" data-scroll-target="#immune-response-to-infectious-diseases">Immune response to infectious diseases</a></li>
-  <li><a href="#when-are-igg-responses-informative" id="toc-when-are-igg-responses-informative" class="nav-link" data-scroll-target="#when-are-igg-responses-informative">When are IgG responses informative?</a></li>
-  <li><a href="#seropositivity-and-seronegativity" id="toc-seropositivity-and-seronegativity" class="nav-link" data-scroll-target="#seropositivity-and-seronegativity">Seropositivity and seronegativity</a></li>
-  <li><a href="#antibody-data-and-mixtures" id="toc-antibody-data-and-mixtures" class="nav-link" data-scroll-target="#antibody-data-and-mixtures">Antibody data and mixtures</a></li>
-  <li><a href="#a-latent-variable-of-sero-reactivity" id="toc-a-latent-variable-of-sero-reactivity" class="nav-link" data-scroll-target="#a-latent-variable-of-sero-reactivity">A latent variable of sero-reactivity</a></li>
-  <li><a href="#link-with-antibody-acquisition-models" id="toc-link-with-antibody-acquisition-models" class="nav-link" data-scroll-target="#link-with-antibody-acquisition-models">Link with antibody acquisition models</a></li>
-  <li><a href="#how-do-we-model-the-latent-variable-t" id="toc-how-do-we-model-the-latent-variable-t" class="nav-link" data-scroll-target="#how-do-we-model-the-latent-variable-t">How do we model the latent variable <span class="math inline">\(T\)</span> ?</a></li>
-  <li><a href="#single-beta-model-for-t" id="toc-single-beta-model-for-t" class="nav-link" data-scroll-target="#single-beta-model-for-t">Single Beta model for <span class="math inline">\(T\)</span></a></li>
-  <li><a href="#how-do-we-model-age-dependency-in-t" id="toc-how-do-we-model-age-dependency-in-t" class="nav-link" data-scroll-target="#how-do-we-model-age-dependency-in-t">How do we model age dependency in <span class="math inline">\(T\)</span>?</a></li>
-  <li><a href="#age-dependent-latent-model-for-ama1" id="toc-age-dependent-latent-model-for-ama1" class="nav-link" data-scroll-target="#age-dependent-latent-model-for-ama1">Age-dependent latent model for AMA1</a></li>
-  <li><a href="#ama1-parameter-estimates" id="toc-ama1-parameter-estimates" class="nav-link" data-scroll-target="#ama1-parameter-estimates">AMA1: parameter estimates</a></li>
-  <li><a href="#ama1-analysis-model-based-histograms" id="toc-ama1-analysis-model-based-histograms" class="nav-link" data-scroll-target="#ama1-analysis-model-based-histograms">AMA1 analysis: model-based histograms</a></li>
-  <li><a href="#age-dependent-latent-model-for-msp1" id="toc-age-dependent-latent-model-for-msp1" class="nav-link" data-scroll-target="#age-dependent-latent-model-for-msp1">Age-dependent latent model for MSP1</a></li>
-  <li><a href="#msp1-parameter-estimates" id="toc-msp1-parameter-estimates" class="nav-link" data-scroll-target="#msp1-parameter-estimates">MSP1: parameter estimates</a></li>
-  <li><a href="#msp1-analysis-results" id="toc-msp1-analysis-results" class="nav-link" data-scroll-target="#msp1-analysis-results">MSP1 analysis: results</a></li>
-  <li><a href="#predicted-antibody-levels-in-ama1-and-msp1" id="toc-predicted-antibody-levels-in-ama1-and-msp1" class="nav-link" data-scroll-target="#predicted-antibody-levels-in-ama1-and-msp1">Predicted antibody levels in AMA1 and MSP1</a></li>
-  <li><a href="#summary-and-conclusions" id="toc-summary-and-conclusions" class="nav-link" data-scroll-target="#summary-and-conclusions">Summary and conclusions</a></li>
-  <li><a href="#thank-you" id="toc-thank-you" class="nav-link" data-scroll-target="#thank-you">THANK YOU!</a></li>
-  <li><a href="#inference" id="toc-inference" class="nav-link" data-scroll-target="#inference">Inference</a></li>
-  <li><a href="#exploratory-analysis-ama1" id="toc-exploratory-analysis-ama1" class="nav-link" data-scroll-target="#exploratory-analysis-ama1">Exploratory analysis: AMA1</a></li>
-  <li><a href="#exploratory-analysis-msp1" id="toc-exploratory-analysis-msp1" class="nav-link" data-scroll-target="#exploratory-analysis-msp1">Exploratory analysis: MSP1</a></li>
-  <li><a href="#antibody-measurement-how-elisa-works" id="toc-antibody-measurement-how-elisa-works" class="nav-link" data-scroll-target="#antibody-measurement-how-elisa-works">Antibody measurement: How ELISA Works</a></li>
-  </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="Barcelona2025.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
-    </div>
-<!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">A flexible class of latent variable models for the analysis of antibody response data</h1>
-</div>
-
-
-<div class="quarto-title-meta-author">
-  <div class="quarto-title-meta-heading">Authors</div>
-  <div class="quarto-title-meta-heading">Affiliations</div>
-  
-    <div class="quarto-title-meta-contents">
-    <p class="author">Emanuele Giorgi </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
+        <p class="quarto-title-affiliation">
             University of Birmingham
           </p>
-      </div>
-    <div class="quarto-title-meta-contents">
-    <p class="author">Jonas Wallin </p>
-  </div>
-  <div class="quarto-title-meta-contents">
-        <p class="affiliation">
+    </div>
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Jonas Wallin 
+</div>
+        <p class="quarto-title-affiliation">
             Lund University
           </p>
-      </div>
-  </div>
+    </div>
+</div>
 
-<div class="quarto-title-meta">
-
-      
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="presentation-overview" class="level2">
-<h2 class="anchored" data-anchor-id="presentation-overview">Presentation Overview</h2>
+</section>
+<section id="presentation-overview" class="slide level2">
+<h2>Presentation Overview</h2>
 <ol type="1">
 <li><strong>A brief overview of the serology</strong></li>
 <li><strong>Current approaches for the analysis of antibody data</strong></li>
@@ -257,10 +161,9 @@ window.Quarto = {
 <li><strong>Application to malaria sero-epidemiology</strong></li>
 <li><strong>Summary</strong></li>
 </ol>
-<hr>
 </section>
-<section id="key-definitions" class="level2">
-<h2 class="anchored" data-anchor-id="key-definitions">Key definitions</h2>
+<section id="key-definitions" class="slide level2">
+<h2>Key definitions</h2>
 <div class="columns">
 <div class="column" style="width:60%;">
 <ul>
@@ -271,35 +174,40 @@ A protein produced by B cells that specifically binds to an antigen, reflecting 
 </ul>
 </div><div class="column" style="width:40%;">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figures/antib_antig.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<figure>
+<p><img data-src="figures/antib_antig.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
-</div>
-</div>
+</div></div>
 </section>
-<section id="immune-response-to-infectious-diseases" class="level2">
-<h2 class="anchored" data-anchor-id="immune-response-to-infectious-diseases">Immune response to infectious diseases</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figures/antib_covid.jpg" class="img-fluid quarto-figure quarto-figure-center figure-img" data-out-width="90%"></p>
-</figure>
-</div>
-<div class="notes">
+<section id="immune-response-to-infectious-diseases" class="slide level2">
+<h2>Immune response to infectious diseases</h2>
+
+<img data-src="figures/antib_covid.jpg" class="quarto-figure quarto-figure-center r-stretch" data-out-width="90%"><aside class="notes">
 <p>Following infection, the adaptive immune response is initiated through antigen recognition by naïve B cells. Different classes of antibodies play distinct roles in this process. IgM is usually the first antibody produced following infection and reflects recent or ongoing exposure, but is short-lived. IgG is produced later, after immune maturation and class switching, and persists substantially longer, providing a durable marker of past exposure. Other antibody classes, such as IgA and IgE, play important biological roles but are less commonly used in sero-epidemiological studies.</p>
 <p>The initiation of the adaptive immune response is not immediate, introducing a delay between pathogen entry and measurable antibody responses. During the incubation period, the pathogen replicates while innate immune mechanisms dominate early control. Antigen processing and presentation occur during this phase, and B-cell activation begins, but IgG antibodies are typically not yet detectable, creating a systematic lag between infection onset and serological evidence of exposure.</p>
 <p>As infection progresses into the early symptomatic phase, short-lived antibody classes, particularly IgM, start to rise. At the same time, class-switch recombination is initiated and IgG production begins, although IgG levels remain relatively low. For this reason, IgG-based assays often have limited sensitivity very early in the course of disease.</p>
 <p>During the peak symptomatic phase, or shortly thereafter, antigen levels decline as immune control is established. Plasma cells produce increasing quantities of IgG, leading to a rapid rise in IgG levels, which typically peak around or shortly after symptom resolution. The timing and magnitude of this peak depend on pathogen characteristics, infection intensity, and host immune status.</p>
 <p>In the recovery and convalescent phase, IgM wanes rapidly, while IgG declines much more slowly, often following an approximately exponential decay. Long-lived plasma cells and memory B cells maintain persistent IgG titres, which may remain detectable for months or years. Subsequent exposure or reinfection usually results in faster and stronger boosting of IgG, compared with the primary response.</p>
 <p>Because of this delayed but durable behaviour, IgG provides an integrated record of infection history, rather than a snapshot of current infection. This makes IgG the most commonly measured antibody isotype in sero-epidemiology.</p>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 <div class="footer">
 <p>Denning DW, Kilcoyne A, Ucer C (2020). <em>Non-infectious status indicated by detectable IgG antibody to SARS-CoV-2</em>.<br>
 <strong>British Dental Journal</strong>, 229:521–524. <a href="https://www.nature.com/articles/s41415-020-2228-9">Link to article</a></p>
 </div>
 </section>
-<section id="when-are-igg-responses-informative" class="level2">
-<h2 class="anchored" data-anchor-id="when-are-igg-responses-informative">When are IgG responses informative?</h2>
+<section id="when-are-igg-responses-informative" class="slide level2">
+<h2>When are IgG responses informative?</h2>
 <div style="font-size:0.75em; line-height:1.15;">
 <ul>
 <li><p>Infections with many <strong>asymptomatic</strong> cases<br>
@@ -314,7 +222,7 @@ trachoma, lymphatic filariasis, onchocerciasis</p></li>
 tuberculosis, leishmaniasis</p></li>
 </ul>
 </div>
-<div class="notes">
+<aside class="notes">
 <p>IgG responses are most informative in settings where infection history cannot be reliably reconstructed from clinical or diagnostic data alone.</p>
 <p>Infections with a high proportion of asymptomatic or mildly symptomatic cases, such as malaria, dengue, chikungunya and Zika, are poorly captured by routine surveillance. In these contexts, IgG provides a cumulative record of past exposure at both individual and population levels.</p>
 <p>IgG is also valuable for acute infections with short diagnostic windows, such as SARS-CoV-2, influenza and yellow fever, where molecular or antigen-based detection is only possible for a limited period. Persisting IgG allows retrospective assessment of transmission.</p>
@@ -323,10 +231,20 @@ tuberculosis, leishmaniasis</p></li>
 <p>However, there are important contexts where IgG is less informative. For infections that induce weak or short-lived systemic antibody responses, particularly some enteric bacterial infections such as cholera or non-typhoidal Salmonella, IgG levels may not reliably reflect exposure.</p>
 <p>IgG is also less informative for diseases in which immunity is primarily cell-mediated rather than antibody-mediated, or where circulating IgG does not correlate well with protection or recent transmission, limiting its interpretability without additional modelling.</p>
 <p>In interpreting serological data, it is useful to contrast antibody-mediated and cell-mediated immunity. Antibody-mediated, or humoral, immunity is driven by circulating antibodies such as IgM and IgG, which target pathogens or antigens present in the blood or other extracellular spaces. For this reason, antibody responses are particularly useful for population surveillance, for reconstructing exposure history, and for epidemiological inference based on serology. By contrast, cell-mediated immunity acts primarily through T cells that recognise and destroy infected host cells. In diseases where immune control relies predominantly on these cellular mechanisms, circulating antibody levels may provide only limited information about infection status or protection, and are therefore often poorly captured by serology alone.</p>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="seropositivity-and-seronegativity" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="seropositivity-and-seronegativity">Seropositivity and seronegativity</h2>
+<section id="seropositivity-and-seronegativity" class="slide level2 smaller">
+<h2>Seropositivity and seronegativity</h2>
 <div style="font-size:1em; line-height:1.15;">
 <ul>
 <li><p><strong>Seronegativity</strong><br>
@@ -348,17 +266,27 @@ Antibody concentration exceeding a predefined assay-specific threshold, interpre
 <li>Data-driven thresholds via finite mixture models</li>
 </ul>
 </div>
-<div class="notes">
+<aside class="notes">
 <p>Here I want to briefly clarify what we mean by seropositivity and how it is typically defined in practice.</p>
 <p>The most common approach relies on <strong>manufacturer-provided cut-offs</strong>, which are often derived under laboratory conditions and may not translate well to field settings or different epidemiological contexts.</p>
 <p>Another widely used method is based on <strong>negative controls</strong>, for example defining seropositivity as antibody levels exceeding the mean of a presumed negative population by two or three standard deviations. This is simple and reproducible, but it depends critically on having a truly unexposed reference group, which is often difficult to identify.</p>
 <p>When well-characterised positive and negative samples are available, researchers sometimes use <strong>ROC curve analysis</strong> to choose a cut-off that optimises sensitivity and specificity. This approach is statistically principled, but again depends on the availability and representativeness of validation samples. (ROC-based cut-offs require reference samples with assumed known status. Positive samples usually come from PCR- or clinically confirmed cases, often biased toward recent or symptomatic infections. Negative samples typically come from presumed unexposed populations, such as blood donors from non-endemic areas or historical sera. A threshold is then chosen to balance sensitivity and specificity along the ROC curve. The limitation is that these reference samples are rarely representative of the full immune spectrum in endemic settings, so ROC cut-offs often fail to capture intermediate or waning antibody responses.)</p>
 <p>In a few settings, <strong>immunological correlates of protection</strong> are available, meaning that a specific antibody level is known to be associated with clinical protection. These thresholds are biologically meaningful, but they are rare and pathogen-specific.</p>
 <p>Finally, many sero-epidemiological studies rely on <strong>finite mixture models</strong>, most commonly Gaussian mixtures, to estimate a data-driven threshold separating seronegative and seropositive subpopulations. This is the approach we focus on next, and it motivates the modelling framework introduced in the following slides.</p>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="antibody-data-and-mixtures" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="antibody-data-and-mixtures">Antibody data and mixtures</h2>
+<section id="antibody-data-and-mixtures" class="slide level2 smaller">
+<h2>Antibody data and mixtures</h2>
 <div style="font-size:0.9em; line-height:1.15;">
 <ul>
 <li>Quantitative antibody concentration <span class="math inline">\(Y_i\)</span> (e.g.&nbsp;OD values)<br>
@@ -372,74 +300,73 @@ f(y) = \pi_0 \mathcal{N}(y ; \mu_0, \sigma_0^2)
      + \pi_1 \mathcal{N}(y ; \mu_1, \sigma_1^2),
 \quad \pi_0 + \pi_1 = 1
 \]</span></p>
-<p><img src="figures/antibody_mix.png" class="img-fluid" style="width:85.0%"></p>
+<p><img data-src="figures/antibody_mix.png" style="width:85.0%"></p>
 </div>
-<hr>
 </section>
-<section id="a-latent-variable-of-sero-reactivity" class="level2">
-<h2 class="anchored" data-anchor-id="a-latent-variable-of-sero-reactivity">A latent variable of sero-reactivity</h2>
+<section id="a-latent-variable-of-sero-reactivity" class="slide level2">
+<h2>A latent variable of sero-reactivity</h2>
 <div style="font-size:0.65em; line-height:1.15; max-height:650px; overflow-y:auto; padding-right:10px;">
 <div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figures/seroreactivity.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+<figure>
+<p><img data-src="figures/seroreactivity.png" class="quarto-figure quarto-figure-center"></p>
 </figure>
 </div>
 <ul>
 <li><strong>Sero-reactivity</strong><br>
 The presence or degree of antibody reactivity, irrespective of any diagnostic threshold.</li>
 </ul>
-<div class="incremental">
-<ul class="incremental">
-<li>Latent variable <span class="math inline">\(T \in [0,1]\)</span> represents the underlying serological activation state:
-<ul class="incremental">
-<li><span class="math inline">\(T=0\)</span>: minimal or absent serological activity<br>
+<div>
+<ul>
+<li class="fragment">Latent variable <span class="math inline">\(T \in [0,1]\)</span> represents the underlying serological activation state:
+<ul>
+<li class="fragment"><span class="math inline">\(T=0\)</span>: minimal or absent serological activity<br>
 </li>
-<li><span class="math inline">\(T=1\)</span>: strong or saturated antibody response</li>
+<li class="fragment"><span class="math inline">\(T=1\)</span>: strong or saturated antibody response</li>
 </ul></li>
-<li>Antibody level given latent seroreactivity: <span class="math display">\[
+<li class="fragment">Antibody level given latent seroreactivity: <span class="math display">\[
 Y \mid T=t \sim
 \mathcal{N}\!\big( (1-t)\mu_0 + t\mu_1,\;
                  (1-t)\sigma_0^2 + t\sigma_1^2 \big)
 \]</span>
-<ul class="incremental">
-<li><span class="math inline">\(\mu_0\)</span>: baseline (no activation)<br>
+<ul>
+<li class="fragment"><span class="math inline">\(\mu_0\)</span>: baseline (no activation)<br>
 </li>
-<li><span class="math inline">\(\mu_1\)</span>: saturation level<br>
+<li class="fragment"><span class="math inline">\(\mu_1\)</span>: saturation level<br>
 </li>
-<li><span class="math inline">\(\sigma_0^2, \sigma_1^2\)</span>: heterogeneity at the two extremes</li>
+<li class="fragment"><span class="math inline">\(\sigma_0^2, \sigma_1^2\)</span>: heterogeneity at the two extremes</li>
 </ul></li>
 </ul>
 </div>
 </div>
 </section>
-<section id="link-with-antibody-acquisition-models" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="link-with-antibody-acquisition-models">Link with antibody acquisition models</h2>
-<div class="incremental">
-<ul class="incremental">
-<li><p>Classical antibody acquisition model<br>
+<section id="link-with-antibody-acquisition-models" class="slide level2 smaller">
+<h2>Link with antibody acquisition models</h2>
+<div>
+<ul>
+<li class="fragment"><p>Classical antibody acquisition model<br>
 (<a href="https://www.nature.com/articles/srep19472">Yman et al., 2016</a>) <span class="math display">\[
 \mathbb{E}[Y;a] = f(a) = \mu_0 + (\mu_1 - \mu_0)\{1 - \exp(-r a)\},
 \]</span> with age <span class="math inline">\(a\)</span> and acquisition rate <span class="math inline">\(r &gt; 0\)</span>.</p></li>
-<li><p>Interpretation in the latent sero-reactivity framework <span class="math display">\[
+<li class="fragment"><p>Interpretation in the latent sero-reactivity framework <span class="math display">\[
 \mathbb{E}[T;a] = \frac{f(a)-\mu_0}{\mu_1-\mu_0}
       = 1 - \exp(-r a),
 \]</span></p></li>
-<li><p>Resulting expectation of the antibody level <span class="math display">\[
+<li class="fragment"><p>Resulting expectation of the antibody level <span class="math display">\[
 \mathbb{E}[Y;a] = \mu_0 + (\mu_1-\mu_0)\,\mathbb{E}[T;a].
 \]</span></p></li>
 </ul>
 </div>
 </section>
-<section id="how-do-we-model-the-latent-variable-t" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="how-do-we-model-the-latent-variable-t">How do we model the latent variable <span class="math inline">\(T\)</span> ?</h2>
-<div class="incremental">
+<section id="how-do-we-model-the-latent-variable-t" class="slide level2 smaller">
+<h2>How do we model the latent variable <span class="math inline">\(T\)</span> ?</h2>
+<div>
 <div style="font-size:1em; line-height:1.15;">
-<ul class="incremental">
-<li><strong>Single-density approach</strong><br>
+<ul>
+<li class="fragment"><strong>Single-density approach</strong><br>
 The latent sero-reactivity <span class="math inline">\(T \in [0,1]\)</span> is modelled using a single parametric distribution: <span class="math display">\[
 T \sim \text{Beta}(\alpha,\beta),
 \]</span> where <span class="math inline">\((\alpha,\beta)\)</span> control the mean level of sero-reactivity and its heterogeneity.</li>
-<li><strong>Mixture-distribution approach</strong><br>
+<li class="fragment"><strong>Mixture-distribution approach</strong><br>
 The latent variable <span class="math inline">\(T\)</span> is modelled as a three-component mixture capturing graded serological states: <span class="math display">\[
 T \sim \pi_0\,\text{Beta}(\alpha_0,\beta_0)
    + \pi_1\,\text{Beta}(\alpha_1,\beta_1)
@@ -449,55 +376,61 @@ T \sim \pi_0\,\text{Beta}(\alpha_0,\beta_0)
 </div>
 </div>
 </section>
-<section id="single-beta-model-for-t" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="single-beta-model-for-t">Single Beta model for <span class="math inline">\(T\)</span></h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figures/dens_lbmg.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
-</figure>
-</div>
-</section>
-<section id="how-do-we-model-age-dependency-in-t" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="how-do-we-model-age-dependency-in-t">How do we model age dependency in <span class="math inline">\(T\)</span>?</h2>
-<div class="incremental">
+<section id="single-beta-model-for-t" class="slide level2 smaller">
+<h2>Single Beta model for <span class="math inline">\(T\)</span></h2>
+
+<img data-src="figures/dens_lbmg.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"></section>
+<section id="how-do-we-model-age-dependency-in-t" class="slide level2 smaller">
+<h2>How do we model age dependency in <span class="math inline">\(T\)</span>?</h2>
+<div>
 <div style="font-size:1.15em; line-height:1.15;">
-<ul class="incremental">
-<li>How should latent sero-reactivity <span class="math inline">\(T\)</span> change with age, reflecting cumulative exposure and immune maturation?</li>
-<li><strong>Age-dependent structure</strong><br>
+<ul>
+<li class="fragment">How should latent sero-reactivity <span class="math inline">\(T\)</span> change with age, reflecting cumulative exposure and immune maturation?</li>
+<li class="fragment"><strong>Age-dependent structure</strong><br>
 Let the distribution of <span class="math inline">\(T\)</span> depend on age <span class="math inline">\(a\)</span> through parameters or mixing proportions, allowing gradual acquisition.</li>
-<li>Application to <strong>malaria</strong><br>
+<li class="fragment">Application to <strong>malaria</strong><br>
 Different antigens exhibit distinct age profiles of acquisition and boosting.
-<ul class="incremental">
-<li>AMA1<br>
+<ul>
+<li class="fragment">AMA1<br>
 Rapid acquisition in early childhood, with sero-reactivity increasing quickly at young ages.</li>
-<li>MSP1<br>
+<li class="fragment">MSP1<br>
 Slower and more gradual age-related increases, reflecting different exposure or immune dynamics.</li>
 </ul></li>
 </ul>
 </div>
 </div>
-<div class="notes">
+<aside class="notes">
 <p>AMA1 and MSP1 are both blood-stage antigens of Plasmodium falciparum, but they differ in their immunological properties and in how antibody responses to them are acquired over age.</p>
 <p>Antibodies to AMA1 tend to be acquired relatively quickly after exposure. Even limited exposure early in life often leads to detectable IgG responses, and antibody levels rise steeply with age during early childhood. This makes AMA1 a marker of recent or intense exposure, particularly sensitive to changes in transmission. However, AMA1 responses can also wane relatively quickly in the absence of continued exposure and are known to be boosted strongly by repeated infections.</p>
 <p>By contrast, MSP1 antibody responses are typically acquired more gradually. Detectable IgG levels often increase slowly over childhood and adolescence, reflecting cumulative rather than recent exposure. MSP1 responses are therefore often more stable over time and less sensitive to short-term fluctuations in transmission intensity, making them a marker of long-term exposure history.</p>
 <p>These differences mean that AMA1 and MSP1 encode different information about transmission. AMA1 is more informative about current or recent transmission, while MSP1 reflects accumulated past exposure. From a modelling perspective, this motivates allowing the age-dependence of latent sero-reactivity to differ by antigen, rather than assuming a common functional form across markers.</p>
 <p>In our framework, this translates naturally into antigen-specific age effects on the latent variable T T, capturing faster acquisition for AMA1 and slower, more gradual accumulation for MSP1, without imposing hard sero-positivity thresholds.</p>
-</div>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 </section>
-<section id="age-dependent-latent-model-for-ama1" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="age-dependent-latent-model-for-ama1">Age-dependent latent model for AMA1</h2>
-<div class="incremental">
+<section id="age-dependent-latent-model-for-ama1" class="slide level2 smaller">
+<h2>Age-dependent latent model for AMA1</h2>
+<div>
 <div style="font-size:0.85em; line-height:1.15;">
-<ul class="incremental">
-<li>For age <span class="math inline">\(a&lt;15\)</span> years, <span class="math inline">\(T\)</span> follows a Dirac-Beta mixture: <span class="math display">\[
+<ul>
+<li class="fragment">For age <span class="math inline">\(a&lt;15\)</span> years, <span class="math inline">\(T\)</span> follows a Dirac-Beta mixture: <span class="math display">\[
 T \sim (1-\pi(a))\,\delta_0 + \pi(a)\,\mathrm{Beta}(\alpha_2,1), \quad
 \pi(a)=1-\exp(-\lambda a).
 \]</span></li>
-<li>For age <span class="math inline">\(a\ge 15\)</span> years, <span class="math inline">\(T\)</span> follows a single Beta with logit-linear mean: <span class="math display">\[
+<li class="fragment">For age <span class="math inline">\(a\ge 15\)</span> years, <span class="math inline">\(T\)</span> follows a single Beta with logit-linear mean: <span class="math display">\[
 T \sim \mathrm{Beta}\big(\mu(a)\phi,\,[1-\mu(a)]\phi\big), \quad
 \log\left\{\frac{\mu(a)}{1-\mu(a)}\right\}=\eta_0+\eta_1\log(a).
 \]</span></li>
-<li>Continuity constraint on the mean of <span class="math inline">\(T\)</span> at <span class="math inline">\(a=15\)</span>: <span class="math display">\[
+<li class="fragment">Continuity constraint on the mean of <span class="math inline">\(T\)</span> at <span class="math inline">\(a=15\)</span>: <span class="math display">\[
 \eta_0=\mathrm{logit}(\mu_{15^-})-\eta_1\log(15),
 \]</span> with <span class="math display">\[
 \mu_{15^-}=(1-\exp(-15\lambda))\frac{\alpha_2}{\alpha_2+1}.
@@ -506,206 +439,115 @@ T \sim \mathrm{Beta}\big(\mu(a)\phi,\,[1-\mu(a)]\phi\big), \quad
 </div>
 </div>
 </section>
-<section id="ama1-parameter-estimates" class="level2">
-<h2 class="anchored" data-anchor-id="ama1-parameter-estimates">AMA1: parameter estimates</h2>
-<table style="font-size:0.65em; line-height:1.15; border-collapse:collapse;">
+<section id="ama1-parameter-estimates" class="slide level2">
+<h2>AMA1: parameter estimates</h2>
+<table class="caption-top" style="width:95%;">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 13%">
+<col style="width: 9%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 10%">
+</colgroup>
 <thead>
-<tr>
-<th style="border:none;">
-Parameter
-</th>
-<th style="border:none;">
-Estimate
-</th>
-<th style="border:none;">
-SD
-</th>
-<th style="border:none;">
-2.5%
-</th>
-<th style="border:none;">
-50%
-</th>
-<th style="border:none;">
-97.5%
-</th>
+<tr class="header">
+<th>Parameter</th>
+<th>Estimate</th>
+<th>SD</th>
+<th>2.5%</th>
+<th>50%</th>
+<th>97.5%</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td colspan="6" style="border:none;">
-<em>Distribution of Y | T</em>
-</td>
+<tr class="odd">
+<td><em>Distribution of Y | T</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
-<tr>
-<td style="border:none;">
-μ₀
-</td>
-<td style="border:none;">
--3.427
-</td>
-<td style="border:none;">
-0.077
-</td>
-<td style="border:none;">
--3.626
-</td>
-<td style="border:none;">
--3.470
-</td>
-<td style="border:none;">
--3.311
-</td>
+<tr class="even">
+<td>μ₀</td>
+<td>-3.427</td>
+<td>0.077</td>
+<td>-3.626</td>
+<td>-3.470</td>
+<td>-3.311</td>
 </tr>
-<tr>
-<td style="border:none;">
-μ₁
-</td>
-<td style="border:none;">
-0.790
-</td>
-<td style="border:none;">
-0.016
-</td>
-<td style="border:none;">
-0.774
-</td>
-<td style="border:none;">
-0.808
-</td>
-<td style="border:none;">
-0.838
-</td>
+<tr class="odd">
+<td>μ₁</td>
+<td>0.790</td>
+<td>0.016</td>
+<td>0.774</td>
+<td>0.808</td>
+<td>0.838</td>
 </tr>
-<tr>
-<td style="border:none;">
-σ₀
-</td>
-<td style="border:none;">
-0.606
-</td>
-<td style="border:none;">
-0.041
-</td>
-<td style="border:none;">
-0.537
-</td>
-<td style="border:none;">
-0.609
-</td>
-<td style="border:none;">
-0.695
-</td>
+<tr class="even">
+<td>σ₀</td>
+<td>0.606</td>
+<td>0.041</td>
+<td>0.537</td>
+<td>0.609</td>
+<td>0.695</td>
 </tr>
-<tr>
-<td style="border:none;">
-σ₁
-</td>
-<td style="border:none;">
-0.114
-</td>
-<td style="border:none;">
-0.022
-</td>
-<td style="border:none;">
-0.077
-</td>
-<td style="border:none;">
-0.122
-</td>
-<td style="border:none;">
-0.164
-</td>
+<tr class="odd">
+<td>σ₁</td>
+<td>0.114</td>
+<td>0.022</td>
+<td>0.077</td>
+<td>0.122</td>
+<td>0.164</td>
 </tr>
-<tr>
-<td colspan="6" style="border:none;">
-<em>Distribution of T (age &lt; 15)</em>
-</td>
+<tr class="even">
+<td><em>Distribution of T (age &lt; 15)</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
-<tr>
-<td style="border:none;">
-α₂
-</td>
-<td style="border:none;">
-1.337
-</td>
-<td style="border:none;">
-0.074
-</td>
-<td style="border:none;">
-1.248
-</td>
-<td style="border:none;">
-1.341
-</td>
-<td style="border:none;">
-1.563
-</td>
+<tr class="odd">
+<td>α₂</td>
+<td>1.337</td>
+<td>0.074</td>
+<td>1.248</td>
+<td>1.341</td>
+<td>1.563</td>
 </tr>
-<tr>
-<td style="border:none;">
-λ
-</td>
-<td style="border:none;">
-0.224
-</td>
-<td style="border:none;">
-0.032
-</td>
-<td style="border:none;">
-0.173
-</td>
-<td style="border:none;">
-0.227
-</td>
-<td style="border:none;">
-0.299
-</td>
+<tr class="even">
+<td>λ</td>
+<td>0.224</td>
+<td>0.032</td>
+<td>0.173</td>
+<td>0.227</td>
+<td>0.299</td>
 </tr>
-<tr>
-<td colspan="6" style="border:none;">
-<em>Distribution of T (age ≥ 15)</em>
-</td>
+<tr class="odd">
+<td><em>Distribution of T (age ≥ 15)</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
-<tr>
-<td style="border:none;">
-ϕ
-</td>
-<td style="border:none;">
-3.423
-</td>
-<td style="border:none;">
-0.259
-</td>
-<td style="border:none;">
-3.078
-</td>
-<td style="border:none;">
-3.520
-</td>
-<td style="border:none;">
-4.117
-</td>
+<tr class="even">
+<td>ϕ</td>
+<td>3.423</td>
+<td>0.259</td>
+<td>3.078</td>
+<td>3.520</td>
+<td>4.117</td>
 </tr>
-<tr>
-<td style="border:none;">
-η₁
-</td>
-<td style="border:none;">
--0.096
-</td>
-<td style="border:none;">
-0.124
-</td>
-<td style="border:none;">
--0.399
-</td>
-<td style="border:none;">
--0.097
-</td>
-<td style="border:none;">
-0.110
-</td>
+<tr class="odd">
+<td>η₁</td>
+<td>-0.096</td>
+<td>0.124</td>
+<td>-0.399</td>
+<td>-0.097</td>
+<td>0.110</td>
 </tr>
 </tbody>
 </table>
@@ -713,320 +555,194 @@ SD
 <p><em>The estimate of</em> <span class="math inline">\(\lambda\)</span> suggests that on average it takes about 4.5 years for individuals to reach higher levels of sero-reactivity.</p>
 </div>
 </section>
-<section id="ama1-analysis-model-based-histograms" class="level2">
-<h2 class="anchored" data-anchor-id="ama1-analysis-model-based-histograms">AMA1 analysis: model-based histograms</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figures/joint_ama.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-</section>
-<section id="age-dependent-latent-model-for-msp1" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="age-dependent-latent-model-for-msp1">Age-dependent latent model for MSP1</h2>
+<section id="ama1-analysis-model-based-histograms" class="slide level2">
+<h2>AMA1 analysis: model-based histograms</h2>
+
+<img data-src="figures/joint_ama.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="age-dependent-latent-model-for-msp1" class="slide level2 smaller">
+<h2>Age-dependent latent model for MSP1</h2>
 <div style="font-size:0.85em; line-height:1.15;">
 <ul>
 <li>Latent sero-reactivity <span class="math inline">\(T\)</span> follows a single age-dependent Beta distribution: <span class="math display">\[
 T \sim \mathrm{Beta}(\alpha(a),\beta(a)).
 \]</span></li>
 </ul>
-<div class="incremental">
-<ul class="incremental">
-<li>Age-dependent shape parameters: <span class="math display">\[
+<div>
+<ul>
+<li class="fragment">Age-dependent shape parameters: <span class="math display">\[
 \alpha(a)=\alpha_0\,a^{\gamma}, \quad \beta(a)=\beta_0\,a^{\delta(a)}.
 \]</span></li>
-<li>Piecewise age effect in <span class="math inline">\(\beta(a)\)</span> with change-point <span class="math inline">\(\tau_{cp}\)</span>: <span class="math display">\[
+<li class="fragment">Piecewise age effect in <span class="math inline">\(\beta(a)\)</span> with change-point <span class="math inline">\(\tau_{cp}\)</span>: <span class="math display">\[
 \delta(a)=
 \begin{cases}
 \delta_1, &amp; a \le \tau_{cp},\\
 \delta_1+\delta_2, &amp; a &gt; \tau_{cp}.
 \end{cases}
 \]</span></li>
-<li>Induced mean of <span class="math inline">\(T\)</span> for <span class="math inline">\(a \ge \tau_{cp}\)</span>: <span class="math display">\[
+<li class="fragment">Induced mean of <span class="math inline">\(T\)</span> for <span class="math inline">\(a \ge \tau_{cp}\)</span>: <span class="math display">\[
 \mathbb{E}[T;a]=\left\{1+\frac{\beta_0}{\alpha_0}a^{\delta_1+\delta_2-\gamma}\right\}^{-1}.
 \]</span></li>
 </ul>
 </div>
 </div>
 </section>
-<section id="msp1-parameter-estimates" class="level2">
-<h2 class="anchored" data-anchor-id="msp1-parameter-estimates">MSP1: parameter estimates</h2>
-<table style="font-size:0.65em; line-height:1.15; border-collapse:collapse;">
+<section id="msp1-parameter-estimates" class="slide level2">
+<h2>MSP1: parameter estimates</h2>
+<table class="caption-top" style="width:95%;">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 12%">
+<col style="width: 10%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
 <thead>
-<tr>
-<th style="border:none;">
-Parameter
-</th>
-<th style="border:none;">
-Mean
-</th>
-<th style="border:none;">
-SD
-</th>
-<th style="border:none;">
-2.5%
-</th>
-<th style="border:none;">
-50%
-</th>
-<th style="border:none;">
-97.5%
-</th>
+<tr class="header">
+<th>Parameter</th>
+<th>Mean</th>
+<th>SD</th>
+<th>2.5%</th>
+<th>50%</th>
+<th>97.5%</th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td colspan="6" style="border:none;">
-<em>Distribution of Y | T</em>
-</td>
+<tr class="odd">
+<td><em>Distribution of Y | T</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
-<tr>
-<td style="border:none;">
-μ<sub>0</sub>
-</td>
-<td style="border:none;">
--4.481
-</td>
-<td style="border:none;">
-0.042
-</td>
-<td style="border:none;">
--4.567
-</td>
-<td style="border:none;">
--4.479
-</td>
-<td style="border:none;">
--4.404
-</td>
+<tr class="even">
+<td>μ<sub>0</sub></td>
+<td>-4.481</td>
+<td>0.042</td>
+<td>-4.567</td>
+<td>-4.479</td>
+<td>-4.404</td>
 </tr>
-<tr>
-<td style="border:none;">
-μ<sub>1</sub>
-</td>
-<td style="border:none;">
-1.255
-</td>
-<td style="border:none;">
-0.026
-</td>
-<td style="border:none;">
-1.205
-</td>
-<td style="border:none;">
-1.255
-</td>
-<td style="border:none;">
-1.307
-</td>
+<tr class="odd">
+<td>μ<sub>1</sub></td>
+<td>1.255</td>
+<td>0.026</td>
+<td>1.205</td>
+<td>1.255</td>
+<td>1.307</td>
 </tr>
-<tr>
-<td style="border:none;">
-log&nbsp;σ<sub>0</sub>
-</td>
-<td style="border:none;">
--0.677
-</td>
-<td style="border:none;">
-0.043
-</td>
-<td style="border:none;">
--0.764
-</td>
-<td style="border:none;">
--0.676
-</td>
-<td style="border:none;">
--0.599
-</td>
+<tr class="even">
+<td>log&nbsp;σ<sub>0</sub></td>
+<td>-0.677</td>
+<td>0.043</td>
+<td>-0.764</td>
+<td>-0.676</td>
+<td>-0.599</td>
 </tr>
-<tr>
-<td style="border:none;">
-log&nbsp;σ<sub>1</sub>
-</td>
-<td style="border:none;">
--5.716
-</td>
-<td style="border:none;">
-0.536
-</td>
-<td style="border:none;">
--6.892
-</td>
-<td style="border:none;">
--5.666
-</td>
-<td style="border:none;">
--4.874
-</td>
+<tr class="odd">
+<td>log&nbsp;σ<sub>1</sub></td>
+<td>-5.716</td>
+<td>0.536</td>
+<td>-6.892</td>
+<td>-5.666</td>
+<td>-4.874</td>
 </tr>
-<tr>
-<td colspan="6" style="border:none;">
-<em>Distribution of T</em>
-</td>
+<tr class="even">
+<td><em>Distribution of T</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
-<tr>
-<td style="border:none;">
-α<sub>0</sub>
-</td>
-<td style="border:none;">
-0.093
-</td>
-<td style="border:none;">
-0.036
-</td>
-<td style="border:none;">
-0.025
-</td>
-<td style="border:none;">
-0.093
-</td>
-<td style="border:none;">
-0.166
-</td>
+<tr class="odd">
+<td>α<sub>0</sub></td>
+<td>0.093</td>
+<td>0.036</td>
+<td>0.025</td>
+<td>0.093</td>
+<td>0.166</td>
 </tr>
-<tr>
-<td style="border:none;">
-γ<sub>1</sub>
-</td>
-<td style="border:none;">
-0.277
-</td>
-<td style="border:none;">
-0.011
-</td>
-<td style="border:none;">
-0.256
-</td>
-<td style="border:none;">
-0.277
-</td>
-<td style="border:none;">
-0.297
-</td>
+<tr class="even">
+<td>γ<sub>1</sub></td>
+<td>0.277</td>
+<td>0.011</td>
+<td>0.256</td>
+<td>0.277</td>
+<td>0.297</td>
 </tr>
-<tr>
-<td style="border:none;">
-β<sub>0</sub>
-</td>
-<td style="border:none;">
-0.755
-</td>
-<td style="border:none;">
-0.037
-</td>
-<td style="border:none;">
-0.684
-</td>
-<td style="border:none;">
-0.754
-</td>
-<td style="border:none;">
-0.827
-</td>
+<tr class="odd">
+<td>β<sub>0</sub></td>
+<td>0.755</td>
+<td>0.037</td>
+<td>0.684</td>
+<td>0.754</td>
+<td>0.827</td>
 </tr>
-<tr>
-<td style="border:none;">
-δ<sub>1</sub>
-</td>
-<td style="border:none;">
-0.110
-</td>
-<td style="border:none;">
-0.018
-</td>
-<td style="border:none;">
-0.075
-</td>
-<td style="border:none;">
-0.110
-</td>
-<td style="border:none;">
-0.145
-</td>
+<tr class="even">
+<td>δ<sub>1</sub></td>
+<td>0.110</td>
+<td>0.018</td>
+<td>0.075</td>
+<td>0.110</td>
+<td>0.145</td>
 </tr>
-<tr>
-<td style="border:none;">
-τ<sub>cp</sub>
-</td>
-<td style="border:none;">
-11.623
-</td>
-<td style="border:none;">
-0.406
-</td>
-<td style="border:none;">
-11.004
-</td>
-<td style="border:none;">
-11.667
-</td>
-<td style="border:none;">
-12.197
-</td>
+<tr class="odd">
+<td>τ<sub>cp</sub></td>
+<td>11.623</td>
+<td>0.406</td>
+<td>11.004</td>
+<td>11.667</td>
+<td>12.197</td>
 </tr>
-<tr>
-<td style="border:none;">
-δ<sub>2</sub>
-</td>
-<td style="border:none;">
--0.061
-</td>
-<td style="border:none;">
-0.010
-</td>
-<td style="border:none;">
--0.080
-</td>
-<td style="border:none;">
--0.061
-</td>
-<td style="border:none;">
--0.042
-</td>
+<tr class="even">
+<td>δ<sub>2</sub></td>
+<td>-0.061</td>
+<td>0.010</td>
+<td>-0.080</td>
+<td>-0.061</td>
+<td>-0.042</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="msp1-analysis-results" class="level2">
-<h2 class="anchored" data-anchor-id="msp1-analysis-results">MSP1 analysis: results</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figures/joint_msp.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-</section>
-<section id="predicted-antibody-levels-in-ama1-and-msp1" class="level2">
-<h2 class="anchored" data-anchor-id="predicted-antibody-levels-in-ama1-and-msp1">Predicted antibody levels in AMA1 and MSP1</h2>
-<p><img src="figures/fig_expected_log_ab_by_age.png" class="img-fluid"></p>
-</section>
-<section id="summary-and-conclusions" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="summary-and-conclusions">Summary and conclusions</h2>
+<section id="msp1-analysis-results" class="slide level2">
+<h2>MSP1 analysis: results</h2>
+
+<img data-src="figures/joint_msp.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="predicted-antibody-levels-in-ama1-and-msp1" class="slide level2">
+<h2>Predicted antibody levels in AMA1 and MSP1</h2>
+
+<img data-src="figures/fig_expected_log_ab_by_age.png" class="r-stretch"></section>
+<section id="summary-and-conclusions" class="slide level2 smaller">
+<h2>Summary and conclusions</h2>
 <div style="font-size:1.2em; line-height:1.15;">
-<div class="incremental">
-<ul class="incremental">
-<li>We proposed a latent-variable framework that <u>generalizes finite mixture models</u>.</li>
-<li>It allows <u>flexible age-dependent modelling.</u></li>
-<li>Modelling of the latent variable (seroreactivity) can be done using <u>data-driven or mechanistic approaches</u>.</li>
-<li>We are working to extend the proposed model to
-<ul class="incremental">
-<li>analyse <u>geostatistical</u> and <u>longitudinal</u> data-sets;</li>
-<li><u>jointly model</u> multiple antibodies.</li>
+<div>
+<ul>
+<li class="fragment">We proposed a latent-variable framework that <u>generalizes finite mixture models</u>.</li>
+<li class="fragment">It allows <u>flexible age-dependent modelling.</u></li>
+<li class="fragment">Modelling of the latent variable (seroreactivity) can be done using <u>data-driven or mechanistic approaches</u>.</li>
+<li class="fragment">We are working to extend the proposed model to
+<ul>
+<li class="fragment">analyse <u>geostatistical</u> and <u>longitudinal</u> data-sets;</li>
+<li class="fragment"><u>jointly model</u> multiple antibodies.</li>
 </ul></li>
 </ul>
 </div>
 </div>
 </section>
-<section id="thank-you" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="thank-you">THANK YOU!</h2>
+<section id="thank-you" class="slide level2 smaller">
+<h2>THANK YOU!</h2>
 <center>
-<img src="figures/questions.jpg" style="height:4in">
+<img data-src="figures/questions.jpg" style="height:4in">
 </center>
 <p>🔗 <a href="https://giorgistat.github.io">giorgistat.github.io</a><br>
 📧 e.giorgi@bham.ac.uk<br>
 📍 BESTEAM, Department of Applied Health Sciences, University of Birmingham</p>
 </section>
-<section id="inference" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="inference">Inference</h2>
+<section id="inference" class="slide level2 smaller">
+<h2>Inference</h2>
 <div style="font-size:0.8em; line-height:1.15; max-height:650px; overflow-y:auto; padding-right:10px;">
 <ul>
 <li><p>Two complementary inference approaches are used:</p>
@@ -1054,451 +770,424 @@ Q(\boldsymbol\theta,\boldsymbol\psi)=\sum_{j=1}^J\{\widehat f_j-f(m_j;\boldsymbo
 </ul>
 </div>
 </section>
-<section id="exploratory-analysis-ama1" class="level2">
-<h2 class="anchored" data-anchor-id="exploratory-analysis-ama1">Exploratory analysis: AMA1</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figures/ama_expl.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-</section>
-<section id="exploratory-analysis-msp1" class="level2">
-<h2 class="anchored" data-anchor-id="exploratory-analysis-msp1">Exploratory analysis: MSP1</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="figures/msp_expl.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
-</figure>
-</div>
-</section>
-<section id="antibody-measurement-how-elisa-works" class="level2 smaller">
-<h2 class="smaller anchored" data-anchor-id="antibody-measurement-how-elisa-works">Antibody measurement: How ELISA Works</h2>
+<section id="exploratory-analysis-ama1" class="slide level2">
+<h2>Exploratory analysis: AMA1</h2>
+
+<img data-src="figures/ama_expl.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="exploratory-analysis-msp1" class="slide level2">
+<h2>Exploratory analysis: MSP1</h2>
+
+<img data-src="figures/msp_expl.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="antibody-measurement-how-elisa-works" class="slide level2 smaller">
+<h2>Antibody measurement: How ELISA Works</h2>
 <iframe src="https://www.youtube.com/embed/ERk0hwqhyDw" style="width:100%; height:65vh;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
 </iframe>
 
 
 </section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<p><img src="figures/uob_logo_v2.jpg" class="slide-logo"></p>
+<div class="footer footer-default">
 
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'fade',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
         }
       }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/giorgistat\.github\.io\/");
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
         }
       }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
-    };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+        return false;
+      }
+      const onCopySuccess = function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
         }
-        return container.innerHTML
-      } else {
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(note);
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      }
+      const getTextToCopy = function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+        text: getTextToCopy
+      });
+      clipboard.on('success', onCopySuccess);
+      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+          text: getTextToCopy,
+          container: window.document.getElementById('quarto-embedded-source-code-modal')
+        });
+        clipboardModal.on('success', onCopySuccess);
+      }
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp("https:\/\/giorgistat\.github\.io\/");
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
         }
-        return note.innerHTML;
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
       }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
       }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
-      }
-    }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
-          .then(res => res.text())
-          .then(html => {
-            const parser = new DOMParser();
-            const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
-            if (note !== null) {
-              const html = processXRef(id, note);
-              instance.setContent(html);
-            } 
-          }).finally(() => {
-            instance.enable();
-            instance.show();
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
       }
-    }, function(instance) {
     });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
-      });
-    }
-  }
-});
-</script>
-</div> <!-- /content -->
-
-
-
+    </script>
+    
 
 </body></html>

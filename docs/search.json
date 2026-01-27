@@ -122,8 +122,8 @@
     "objectID": "talks/Birmingham (20 Feb 2025).html#my-background",
     "href": "talks/Birmingham (20 Feb 2025).html#my-background",
     "title": "Model-based Geostatistics for Global Public Health",
-    "section": "",
-    "text": "PhD in Statistics and Epidemiology (Sep 2015)\n\nMSc in Statistics (July 2012)\n\nBSc in Statistics (April 2012)"
+    "section": "My Background",
+    "text": "My Background\n\nPhD in Statistics and Epidemiology (Sep 2015)\n\nMSc in Statistics (July 2012)\n\nBSc in Statistics (April 2012)"
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#presentation-overview",
@@ -186,49 +186,49 @@
     "href": "talks/Birmingham (20 Feb 2025).html#the-ingredients-of-a-geostatistical-model-for-prevalence-mapping",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "The ingredients of a geostatistical model for prevalence mapping",
-    "text": "The ingredients of a geostatistical model for prevalence mapping\n\nOutcome: \\(Y_i\\) number of cases out \\(n_i\\) sampled\n\n. . .\n\nLocations: \\(X = (x_1, \\ldots, x_n)\\)\n\n. . .\n\nCovariates (optional): \\(d(x)\\) (e.g. elevation, distance from waterways)\n\n. . .\n\nSpatial Gaussian process: \\(S(x)\\) (stationary and isotropic) \\[\n{\\rm cov}\\{S(x), S(x')\\} = \\sigma^2 \\rho(||x - x'||; \\phi)\n\\] Example: \\(\\rho(u; \\phi) = \\exp\\{-u/\\phi\\}\\)."
+    "text": "The ingredients of a geostatistical model for prevalence mapping\n\nOutcome: \\(Y_i\\) number of cases out \\(n_i\\) sampled\n\n\n\nLocations: \\(X = (x_1, \\ldots, x_n)\\)\n\n\n\n\nCovariates (optional): \\(d(x)\\) (e.g. elevation, distance from waterways)\n\n\n\n\nSpatial Gaussian process: \\(S(x)\\) (stationary and isotropic) \\[\n{\\rm cov}\\{S(x), S(x')\\} = \\sigma^2 \\rho(||x - x'||; \\phi)\n\\] Example: \\(\\rho(u; \\phi) = \\exp\\{-u/\\phi\\}\\)."
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#putting-all-together",
     "href": "talks/Birmingham (20 Feb 2025).html#putting-all-together",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "Putting all together",
-    "text": "Putting all together\n\nConditional independence: \\(Y_{i}\\) conditionally on \\(S(x_i)\\) are mutually independent \\(Bin(n_i , p(x_i))\\)\n\n. . .\n\nThe linear predictor \\[\n\\log\\left\\{\\frac{p(x_i)}{1-p(x_i)}\\right\\} = \\beta_0 + d(x_i)^\\top \\beta + S(x_i)\n\\]\n\n. . .\n\nThe joint distribution: \\([S, Y] = [S] [Y | S]\\)\n\nwhere \\(Y=(Y_1, \\ldots, Y_n)\\) and \\(S = (S(x_1), \\ldots, S(x_n))\\)\n. . .\n\nThe likelihood function \\[\nL(\\theta) = \\int_{\\mathbb{R}^n} [S] [Y | S] \\: dS\n\\] How do we approximate this intractable integral?"
+    "text": "Putting all together\n\nConditional independence: \\(Y_{i}\\) conditionally on \\(S(x_i)\\) are mutually independent \\(Bin(n_i , p(x_i))\\)\n\n\n\nThe linear predictor \\[\n\\log\\left\\{\\frac{p(x_i)}{1-p(x_i)}\\right\\} = \\beta_0 + d(x_i)^\\top \\beta + S(x_i)\n\\]\n\n\n\n\nThe joint distribution: \\([S, Y] = [S] [Y | S]\\)\n\nwhere \\(Y=(Y_1, \\ldots, Y_n)\\) and \\(S = (S(x_1), \\ldots, S(x_n))\\)\n\n\n\nThe likelihood function \\[\nL(\\theta) = \\int_{\\mathbb{R}^n} [S] [Y | S] \\: dS\n\\] How do we approximate this intractable integral?"
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#prevmap-and-riskmap",
     "href": "talks/Birmingham (20 Feb 2025).html#prevmap-and-riskmap",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "PrevMap and RiskMap",
-    "text": "PrevMap and RiskMap\n\n\n\n. . .\nGiorgi, E. and Fronterre, C. (expected August 2025) Model-based geostatistics for global public health using R. Chapman and Hall/CRC. The R Series."
+    "text": "PrevMap and RiskMap\n\n\n\n\nGiorgi, E. and Fronterre, C. (expected August 2025) Model-based geostatistics for global public health using R. Chapman and Hall/CRC. The R Series."
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#identifying-disease-hotspots",
     "href": "talks/Birmingham (20 Feb 2025).html#identifying-disease-hotspots",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "Identifying disease hotspots",
-    "text": "Identifying disease hotspots\n\nHotspot: riverblindness prevalence above \\(20\\%\\)\n\n. . .\n\nExceedance probability: \\({\\rm Prob}\\{p(x) &gt; 0.2 \\:  | \\: Y \\}\\)\n\n. . ."
+    "text": "Identifying disease hotspots\n\nHotspot: riverblindness prevalence above \\(20\\%\\)\n\n\n\nExceedance probability: \\({\\rm Prob}\\{p(x) &gt; 0.2 \\:  | \\: Y \\}\\)"
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#extensions-to-spatio-temporal-modelling",
     "href": "talks/Birmingham (20 Feb 2025).html#extensions-to-spatio-temporal-modelling",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "Extensions to spatio-temporal modelling",
-    "text": "Extensions to spatio-temporal modelling\nQuestion: Which spatio-temporal correlation structures are suitable for modelling disease prevalence data?\n\n\n\n. . .\nGiorgi, E., Diggle, P. J., Snow, R. W., Noor, A. M. (2018). Geostatistical methods for disease mapping and visualization using data from spatio-temporally referenced prevalence surveys. International Statistical Review. https://doi.org/10.1111/insr.12268"
+    "text": "Extensions to spatio-temporal modelling\nQuestion: Which spatio-temporal correlation structures are suitable for modelling disease prevalence data?\n\n\n\n\nGiorgi, E., Diggle, P. J., Snow, R. W., Noor, A. M. (2018). Geostatistical methods for disease mapping and visualization using data from spatio-temporally referenced prevalence surveys. International Statistical Review. https://doi.org/10.1111/insr.12268"
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#combining-data-from-multiple-diagnostics",
     "href": "talks/Birmingham (20 Feb 2025).html#combining-data-from-multiple-diagnostics",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "Combining data from multiple diagnostics",
-    "text": "Combining data from multiple diagnostics\nQuestions: 1) How we predict a gold-standard diagnostic using cheap biased diagnostics? 2) How do we model the bivariate relationship between two complementary gold-standards?\n\n\n\n. . .\nAmoah, B., Diggle, P. J., Giorgi, E. (2019). A geostatistical framework for combining data from multiple diagnostic tests. Biometrics. doi:10.1111/biom.13142"
+    "text": "Combining data from multiple diagnostics\nQuestions: 1) How we predict a gold-standard diagnostic using cheap biased diagnostics? 2) How do we model the bivariate relationship between two complementary gold-standards?\n\n\n\n\nAmoah, B., Diggle, P. J., Giorgi, E. (2019). A geostatistical framework for combining data from multiple diagnostic tests. Biometrics. doi:10.1111/biom.13142"
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#spatially-structured-zero-inflation",
     "href": "talks/Birmingham (20 Feb 2025).html#spatially-structured-zero-inflation",
     "title": "Model-based Geostatistics for Global Public Health",
     "section": "Spatially structured zero-inflation",
-    "text": "Spatially structured zero-inflation\nQuestion: How can we effectively model the bivariate relationship between disease suitability and disease prevalence?\n\n\n\n. . .\nDiggle, P. J., Giorgi, E. (2016). Model-based geostatistics for prevalence mapping in low-resource settings (with discussion). Journal of the American Statistical Association. 111:1096-1120"
+    "text": "Spatially structured zero-inflation\nQuestion: How can we effectively model the bivariate relationship between disease suitability and disease prevalence?\n\n\n\n\nDiggle, P. J., Giorgi, E. (2016). Model-based geostatistics for prevalence mapping in low-resource settings (with discussion). Journal of the American Statistical Association. 111:1096-1120"
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#future-methodological-directions",
@@ -1137,8 +1137,8 @@
     "objectID": "talks/Lund2025.html#presentation-overview",
     "href": "talks/Lund2025.html#presentation-overview",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
-    "section": "",
-    "text": "Neglected Tropical Diseases and Mass Drug Administration\nThe standard geostatistical model for prevalence mapping\nA decay-adjusted spatio-temporal model\nApplication to lymphatic filariasis in Madagascar\nSummary"
+    "section": "Presentation Overview",
+    "text": "Presentation Overview\n\nNeglected Tropical Diseases and Mass Drug Administration\nThe standard geostatistical model for prevalence mapping\nA decay-adjusted spatio-temporal model\nApplication to lymphatic filariasis in Madagascar\nSummary"
   },
   {
     "objectID": "talks/Lund2025.html#neglected-tropical-diseases",
@@ -1173,28 +1173,28 @@
     "href": "talks/Lund2025.html#mass-drug-administration-mda-a-preventive-strategy",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Mass Drug Administration (MDA): A Preventive Strategy",
-    "text": "Mass Drug Administration (MDA): A Preventive Strategy\nWhat is MDA? Mass Drug Administration involves the periodic distribution of safe, effective medications to entire at-risk populations—regardless of disease status—to reduce transmission and prevent infections.\n. . .\nWhy is it used?\n\nControls or eliminates disease in endemic areas\nReduces the community-level parasite burden\nPrevents long-term complications and disability\n\n. . .\nKey Features:\n\nDelivered at regular intervals (annually or biannually)\nOften combined with public health education\nSupported by WHO and major global health initiatives"
+    "text": "Mass Drug Administration (MDA): A Preventive Strategy\nWhat is MDA? Mass Drug Administration involves the periodic distribution of safe, effective medications to entire at-risk populations—regardless of disease status—to reduce transmission and prevent infections.\n\nWhy is it used?\n\nControls or eliminates disease in endemic areas\nReduces the community-level parasite burden\nPrevents long-term complications and disability\n\n\n\nKey Features:\n\nDelivered at regular intervals (annually or biannually)\nOften combined with public health education\nSupported by WHO and major global health initiatives"
   },
   {
     "objectID": "talks/Lund2025.html#albendazole",
     "href": "talks/Lund2025.html#albendazole",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Albendazole",
-    "text": "Albendazole\n\n\n\n\n\n\n\n\n\nHow it works:\nAlbendazole disrupts the metabolism of parasitic worms by inhibiting microtubule formation, which is essential for their survival.\n\nAlbendazole works by stopping worms from absorbing the nutrients they need to survive. It blocks a process inside their cells that’s kind of like the framework or “skeleton” that helps them function and grow. Without it, the worms can’t live for long and are eventually cleared from the body.\n\nUsed for NTDs such as:\n\nLymphatic filariasis (in combination with ivermectin or DEC)\nSoil-transmitted helminths (e.g., ascariasis, hookworm, trichuriasis)\n\nMDA use:\nDistributed in large-scale deworming campaigns, particularly targeting children and at-risk communities."
+    "text": "Albendazole\n\n\n\n\n\n\n\n\nHow it works:\nAlbendazole disrupts the metabolism of parasitic worms by inhibiting microtubule formation, which is essential for their survival.\n\nAlbendazole works by stopping worms from absorbing the nutrients they need to survive. It blocks a process inside their cells that’s kind of like the framework or “skeleton” that helps them function and grow. Without it, the worms can’t live for long and are eventually cleared from the body.\n\nUsed for NTDs such as:\n\nLymphatic filariasis (in combination with ivermectin or DEC)\nSoil-transmitted helminths (e.g., ascariasis, hookworm, trichuriasis)\n\nMDA use:\nDistributed in large-scale deworming campaigns, particularly targeting children and at-risk communities."
   },
   {
     "objectID": "talks/Lund2025.html#ivermectin",
     "href": "talks/Lund2025.html#ivermectin",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Ivermectin",
-    "text": "Ivermectin\n\n\n\n\n\n\n\n\n\nHow it works:\nIvermectin paralyzes and kills parasites by interfering with their nerve and muscle function via chloride channel disruption. Parasites cannot move and feed.\n\nIvermectin kills parasites by messing with their nerves and muscles, which causes them to become paralyzed and die. It stops them from moving and feeding, so the body can get rid of them.\nChloride channel disruption refers to any impairment in the normal function of chloride channels, which are protein pores in cell membranes that allow chloride ions (Cl-) to pass through.\n\nUsed for NTDs such as:\n\nOnchocerciasis (river blindness)\n\nLymphatic filariasis (in combination with albendazole)\n\nStrongyloidiasis\n\nMDA use: Ivermectin is given to both adults and children (weighing more than 15kg), but its use is carefully considered for pregnant women."
+    "text": "Ivermectin\n\n\n\n\n\n\n\n\nHow it works:\nIvermectin paralyzes and kills parasites by interfering with their nerve and muscle function via chloride channel disruption. Parasites cannot move and feed.\n\nIvermectin kills parasites by messing with their nerves and muscles, which causes them to become paralyzed and die. It stops them from moving and feeding, so the body can get rid of them.\nChloride channel disruption refers to any impairment in the normal function of chloride channels, which are protein pores in cell membranes that allow chloride ions (Cl-) to pass through.\n\nUsed for NTDs such as:\n\nOnchocerciasis (river blindness)\n\nLymphatic filariasis (in combination with albendazole)\n\nStrongyloidiasis\n\nMDA use: Ivermectin is given to both adults and children (weighing more than 15kg), but its use is carefully considered for pregnant women."
   },
   {
     "objectID": "talks/Lund2025.html#praziquantel",
     "href": "talks/Lund2025.html#praziquantel",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Praziquantel",
-    "text": "Praziquantel\n\n\n\n\n\n\n\n\n\nHow it works:\nPraziquantel increases permeability of the parasite’s cell membranes to calcium ions, causing muscle contraction and paralysis.\n\nPraziquantel makes the outer layer of the parasite’s cells more “leaky,” allowing calcium to enter. This causes the parasite’s muscles to tighten and paralyze it, making it easier for the body to get rid of it.\nInside the cells of parasites, calcium is important for controlling muscle movement. When calcium enters the parasite’s cells (which normally isn’t supposed to happen), it disrupts the normal function of the muscles.\nThis excess calcium makes the muscles contract and become stiff. The parasite can’t move properly or feed, and it becomes paralyzed, which allows the body to get rid of it. So, calcium causes the parasite’s muscles to freeze up, stopping it from surviving or causing further harm.\n\nUsed for NTDs such as:\n\n\nSchistosomiasis\n\nTapeworm infections\n\nMDA use:\nKey drug in school-based and community-wide treatment campaigns in regions with high schistosomiasis burden."
+    "text": "Praziquantel\n\n\n\n\n\n\n\n\nHow it works:\nPraziquantel increases permeability of the parasite’s cell membranes to calcium ions, causing muscle contraction and paralysis.\n\nPraziquantel makes the outer layer of the parasite’s cells more “leaky,” allowing calcium to enter. This causes the parasite’s muscles to tighten and paralyze it, making it easier for the body to get rid of it.\nInside the cells of parasites, calcium is important for controlling muscle movement. When calcium enters the parasite’s cells (which normally isn’t supposed to happen), it disrupts the normal function of the muscles.\nThis excess calcium makes the muscles contract and become stiff. The parasite can’t move properly or feed, and it becomes paralyzed, which allows the body to get rid of it. So, calcium causes the parasite’s muscles to freeze up, stopping it from surviving or causing further harm.\n\nUsed for NTDs such as:\n\n\nSchistosomiasis\n\nTapeworm infections\n\nMDA use:\nKey drug in school-based and community-wide treatment campaigns in regions with high schistosomiasis burden."
   },
   {
     "objectID": "talks/Lund2025.html#treating-ntds",
@@ -1222,7 +1222,7 @@
     "href": "talks/Lund2025.html#the-standard-geostatistical-model-for-prevalence-mapping",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "The standard geostatistical model for prevalence mapping",
-    "text": "The standard geostatistical model for prevalence mapping\n\nOutcome: \\(Y_i\\) number of cases out \\(n_i\\) sampled\n\n. . .\n\nLocations: \\(X = (x_1, \\ldots, x_n)\\)\n\n. . .\n\nCovariates (optional): \\(d(x)\\) (e.g. elevation, distance from waterways)\n\n. . .\n\nSpatial Gaussian process: \\(S(x)\\) (stationary and isotropic) \\[\n{\\rm cov}\\{S(x), S(x')\\} = \\sigma^2 \\rho(||x - x'||; \\phi)\n\\] Example: \\(\\rho(u; \\phi) = \\exp\\{-u/\\phi\\}\\).\n\n. . .\n\nConditional independence: \\(Y_{i}\\) conditionally on \\(S(x_i)\\) are mutually independent \\(Bin(n_i , p(x_i))\\)\n\n. . .\n\nThe linear predictor \\[\n\\log\\left\\{\\frac{p(x_i)}{1-p(x_i)}\\right\\} = \\beta_0 + d(x_i)^\\top \\beta + S(x_i)\n\\]"
+    "text": "The standard geostatistical model for prevalence mapping\n\nOutcome: \\(Y_i\\) number of cases out \\(n_i\\) sampled\n\n\n\nLocations: \\(X = (x_1, \\ldots, x_n)\\)\n\n\n\n\nCovariates (optional): \\(d(x)\\) (e.g. elevation, distance from waterways)\n\n\n\n\nSpatial Gaussian process: \\(S(x)\\) (stationary and isotropic) \\[\n{\\rm cov}\\{S(x), S(x')\\} = \\sigma^2 \\rho(||x - x'||; \\phi)\n\\] Example: \\(\\rho(u; \\phi) = \\exp\\{-u/\\phi\\}\\).\n\n\n\n\nConditional independence: \\(Y_{i}\\) conditionally on \\(S(x_i)\\) are mutually independent \\(Bin(n_i , p(x_i))\\)\n\n\n\n\nThe linear predictor \\[\n\\log\\left\\{\\frac{p(x_i)}{1-p(x_i)}\\right\\} = \\beta_0 + d(x_i)^\\top \\beta + S(x_i)\n\\]"
   },
   {
     "objectID": "talks/Lund2025.html#spatial-and-temporal-confounding-with-mda",
@@ -1250,7 +1250,7 @@
     "href": "talks/Lund2025.html#monte-carlo-maximum-likelihood",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Monte Carlo Maximum Likelihood",
-    "text": "Monte Carlo Maximum Likelihood\n\nLet \\(W_i = S(x_i) + Z_i\\) and \\(W = (W_1, \\ldots, W_n)\\)\n\n. . .\n\nThe likelihood function for parameters \\(\\theta = (\\beta, \\sigma^2, \\phi, \\tau^2)\\) is given by:\n\\[\nL(\\theta) = \\int N(W; D\\beta, \\Omega) f(y| W) dW\n\\]\nwhere \\(\\Omega = \\sigma^2 R(\\phi) + \\tau^2I_n\\).\n\n. . .\n\nWe approximate this using Monte Carlo integration:\n\\[\nL_m(\\theta) = \\frac{1}{B} \\sum_{j=1}^{B} \\frac{N\\left(W^{(j)}; D\\beta, \\Omega \\right)}{N\\left(W^{(j)}; D\\beta_0, \\Omega_0\\right)}\n\\] where \\(W^{(i)}\\) are sampled from the distribution of \\(W\\) given \\(y\\) using an MCMC algorithm.\nAll implemented in the dast function of the RiskMap package"
+    "text": "Monte Carlo Maximum Likelihood\n\nLet \\(W_i = S(x_i) + Z_i\\) and \\(W = (W_1, \\ldots, W_n)\\)\n\n\n\nThe likelihood function for parameters \\(\\theta = (\\beta, \\sigma^2, \\phi, \\tau^2)\\) is given by:\n\\[\nL(\\theta) = \\int N(W; D\\beta, \\Omega) f(y| W) dW\n\\]\nwhere \\(\\Omega = \\sigma^2 R(\\phi) + \\tau^2I_n\\).\n\n\n\n\nWe approximate this using Monte Carlo integration:\n\\[\nL_m(\\theta) = \\frac{1}{B} \\sum_{j=1}^{B} \\frac{N\\left(W^{(j)}; D\\beta, \\Omega \\right)}{N\\left(W^{(j)}; D\\beta_0, \\Omega_0\\right)}\n\\] where \\(W^{(i)}\\) are sampled from the distribution of \\(W\\) given \\(y\\) using an MCMC algorithm.\nAll implemented in the dast function of the RiskMap package"
   },
   {
     "objectID": "talks/Lund2025.html#applications",
@@ -1292,7 +1292,7 @@
     "href": "talks/Lund2025.html#introducing-penalization-for-alpha",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Introducing penalization for \\(\\alpha\\)",
-    "text": "Introducing penalization for \\(\\alpha\\)\n\nLet \\(p(\\alpha) &gt; 0\\) be a positive function.\n\n. . .\n\nThe penalized likelihood for \\(\\alpha\\) is \\[\nL_{p}(\\theta) = L(\\theta) - p(\\alpha)\n\\]\n\n. . .\n\nProposed penalty\n\\[\np(\\alpha) = -\\left[\\lambda_1 \\log\\alpha + \\lambda_2\\log(1-\\alpha) \\right]\n\\]\n\n. . .\n\nWe set \\(\\lambda_1 = 20\\) and \\(\\lambda_2 = 14\\). (This inspired by a Beta distribution with mode in around 0.6, with 0.42 and 0.7 as its 0.025 and 0.975 quantiles, respectively.)"
+    "text": "Introducing penalization for \\(\\alpha\\)\n\nLet \\(p(\\alpha) &gt; 0\\) be a positive function.\n\n\n\nThe penalized likelihood for \\(\\alpha\\) is \\[\nL_{p}(\\theta) = L(\\theta) - p(\\alpha)\n\\]\n\n\n\n\nProposed penalty\n\\[\np(\\alpha) = -\\left[\\lambda_1 \\log\\alpha + \\lambda_2\\log(1-\\alpha) \\right]\n\\]\n\n\n\n\nWe set \\(\\lambda_1 = 20\\) and \\(\\lambda_2 = 14\\). (This inspired by a Beta distribution with mode in around 0.6, with 0.42 and 0.7 as its 0.025 and 0.975 quantiles, respectively.)"
   },
   {
     "objectID": "talks/Lund2025.html#introducing-penalization-for-alpha-1",
@@ -1306,7 +1306,7 @@
     "href": "talks/Lund2025.html#paramter-estimates",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Paramter estimates",
-    "text": "Paramter estimates\nMDA impact function: \\(f(v) = \\alpha\\exp\\{-v/\\gamma\\}\\), with \\(v\\) denoting the years since last MDA\n. . .\n\n\n\nParameter\nEstimates\n\n\n\n\nIntercept\n-2.582 (-2.622, -2.541)\n\n\nSpatial variance\n2.204 (1.891, 2.569)\n\n\nSpatial scale\n79.153 (70.874, 88.399)\n\n\nMax. reduction (\\(\\alpha\\))\n0.856 (0.839, 0.872)\n\n\nDecay scale (\\(\\gamma\\))\n1.802 (1.768, 1.837)"
+    "text": "Paramter estimates\nMDA impact function: \\(f(v) = \\alpha\\exp\\{-v/\\gamma\\}\\), with \\(v\\) denoting the years since last MDA\n\n\n\n\nParameter\nEstimates\n\n\n\n\nIntercept\n-2.582 (-2.622, -2.541)\n\n\nSpatial variance\n2.204 (1.891, 2.569)\n\n\nSpatial scale\n79.153 (70.874, 88.399)\n\n\nMax. reduction (\\(\\alpha\\))\n0.856 (0.839, 0.872)\n\n\nDecay scale (\\(\\gamma\\))\n1.802 (1.768, 1.837)"
   },
   {
     "objectID": "talks/Lund2025.html#estimated-mda-impact-function",
@@ -1348,7 +1348,7 @@
     "href": "talks/Lund2025.html#paramter-estimates-1",
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Paramter estimates",
-    "text": "Paramter estimates\nMDA impact function: \\(f(v) = \\alpha\\exp\\{-v/\\gamma\\}\\), with \\(v\\) denoting the years since last MDA\n. . .\n\n\n\n\n\n\n\n\n\nParameter\nAscaris\nTrichuris\nHookworm\n\n\n\n\nIntercept\n-2.41 (-2.45, -2.37)\n-2.44 (-2.51, -2.37)\n-1.94 (-1.98, -1.90)\n\n\nSpatial variance\n26.83 (14.70, 48.97)\n15.57 (8.35, 29.06)\n29.75 (20.17, 43.89)\n\n\nSpatial scale\n263.31 (178.38, 388.66)\n109.02 (72.34, 164.32)\n198.63 (152.33, 258.99)\n\n\nMax. reduction (\\(\\alpha\\))\n0.318 (0.299, 0.338)\n0.837 (0.533, 0.958)\n0.892 (0.871, 0.909)\n\n\nDecay scale (\\(\\gamma\\))\n9.49 (7.41, 12.16)\n1.23 (1.01, 1.49)\n6.46 (6.06, 6.90)"
+    "text": "Paramter estimates\nMDA impact function: \\(f(v) = \\alpha\\exp\\{-v/\\gamma\\}\\), with \\(v\\) denoting the years since last MDA\n\n\n\n\n\n\n\n\n\n\nParameter\nAscaris\nTrichuris\nHookworm\n\n\n\n\nIntercept\n-2.41 (-2.45, -2.37)\n-2.44 (-2.51, -2.37)\n-1.94 (-1.98, -1.90)\n\n\nSpatial variance\n26.83 (14.70, 48.97)\n15.57 (8.35, 29.06)\n29.75 (20.17, 43.89)\n\n\nSpatial scale\n263.31 (178.38, 388.66)\n109.02 (72.34, 164.32)\n198.63 (152.33, 258.99)\n\n\nMax. reduction (\\(\\alpha\\))\n0.318 (0.299, 0.338)\n0.837 (0.533, 0.958)\n0.892 (0.871, 0.909)\n\n\nDecay scale (\\(\\gamma\\))\n9.49 (7.41, 12.16)\n1.23 (1.01, 1.49)\n6.46 (6.06, 6.90)"
   },
   {
     "objectID": "talks/Lund2025.html#the-mda-impact-by-sth-species",
@@ -1445,8 +1445,8 @@
     "objectID": "talks/Barcelona2025.html#presentation-overview",
     "href": "talks/Barcelona2025.html#presentation-overview",
     "title": "A flexible class of latent variable models for the analysis of antibody response data",
-    "section": "",
-    "text": "A brief overview of the serology\nCurrent approaches for the analysis of antibody data\nThe proposed modelling approach\nApplication to malaria sero-epidemiology\nSummary"
+    "section": "Presentation Overview",
+    "text": "Presentation Overview\n\nA brief overview of the serology\nCurrent approaches for the analysis of antibody data\nThe proposed modelling approach\nApplication to malaria sero-epidemiology\nSummary"
   },
   {
     "objectID": "talks/Barcelona2025.html#thank-you",
@@ -1467,7 +1467,7 @@
     "href": "talks/Barcelona2025.html#immune-response-to-infectious-diseases",
     "title": "A flexible class of latent variable models for the analysis of antibody response data",
     "section": "Immune response to infectious diseases",
-    "text": "Immune response to infectious diseases\n\n\n\n\n\n\nFollowing infection, the adaptive immune response is initiated through antigen recognition by naïve B cells. Different classes of antibodies play distinct roles in this process. IgM is usually the first antibody produced following infection and reflects recent or ongoing exposure, but is short-lived. IgG is produced later, after immune maturation and class switching, and persists substantially longer, providing a durable marker of past exposure. Other antibody classes, such as IgA and IgE, play important biological roles but are less commonly used in sero-epidemiological studies.\nThe initiation of the adaptive immune response is not immediate, introducing a delay between pathogen entry and measurable antibody responses. During the incubation period, the pathogen replicates while innate immune mechanisms dominate early control. Antigen processing and presentation occur during this phase, and B-cell activation begins, but IgG antibodies are typically not yet detectable, creating a systematic lag between infection onset and serological evidence of exposure.\nAs infection progresses into the early symptomatic phase, short-lived antibody classes, particularly IgM, start to rise. At the same time, class-switch recombination is initiated and IgG production begins, although IgG levels remain relatively low. For this reason, IgG-based assays often have limited sensitivity very early in the course of disease.\nDuring the peak symptomatic phase, or shortly thereafter, antigen levels decline as immune control is established. Plasma cells produce increasing quantities of IgG, leading to a rapid rise in IgG levels, which typically peak around or shortly after symptom resolution. The timing and magnitude of this peak depend on pathogen characteristics, infection intensity, and host immune status.\nIn the recovery and convalescent phase, IgM wanes rapidly, while IgG declines much more slowly, often following an approximately exponential decay. Long-lived plasma cells and memory B cells maintain persistent IgG titres, which may remain detectable for months or years. Subsequent exposure or reinfection usually results in faster and stronger boosting of IgG, compared with the primary response.\nBecause of this delayed but durable behaviour, IgG provides an integrated record of infection history, rather than a snapshot of current infection. This makes IgG the most commonly measured antibody isotype in sero-epidemiology.\n\n\nDenning DW, Kilcoyne A, Ucer C (2020). Non-infectious status indicated by detectable IgG antibody to SARS-CoV-2.\nBritish Dental Journal, 229:521–524. Link to article"
+    "text": "Immune response to infectious diseases\n\n\nFollowing infection, the adaptive immune response is initiated through antigen recognition by naïve B cells. Different classes of antibodies play distinct roles in this process. IgM is usually the first antibody produced following infection and reflects recent or ongoing exposure, but is short-lived. IgG is produced later, after immune maturation and class switching, and persists substantially longer, providing a durable marker of past exposure. Other antibody classes, such as IgA and IgE, play important biological roles but are less commonly used in sero-epidemiological studies.\nThe initiation of the adaptive immune response is not immediate, introducing a delay between pathogen entry and measurable antibody responses. During the incubation period, the pathogen replicates while innate immune mechanisms dominate early control. Antigen processing and presentation occur during this phase, and B-cell activation begins, but IgG antibodies are typically not yet detectable, creating a systematic lag between infection onset and serological evidence of exposure.\nAs infection progresses into the early symptomatic phase, short-lived antibody classes, particularly IgM, start to rise. At the same time, class-switch recombination is initiated and IgG production begins, although IgG levels remain relatively low. For this reason, IgG-based assays often have limited sensitivity very early in the course of disease.\nDuring the peak symptomatic phase, or shortly thereafter, antigen levels decline as immune control is established. Plasma cells produce increasing quantities of IgG, leading to a rapid rise in IgG levels, which typically peak around or shortly after symptom resolution. The timing and magnitude of this peak depend on pathogen characteristics, infection intensity, and host immune status.\nIn the recovery and convalescent phase, IgM wanes rapidly, while IgG declines much more slowly, often following an approximately exponential decay. Long-lived plasma cells and memory B cells maintain persistent IgG titres, which may remain detectable for months or years. Subsequent exposure or reinfection usually results in faster and stronger boosting of IgG, compared with the primary response.\nBecause of this delayed but durable behaviour, IgG provides an integrated record of infection history, rather than a snapshot of current infection. This makes IgG the most commonly measured antibody isotype in sero-epidemiology.\n\n\nDenning DW, Kilcoyne A, Ucer C (2020). Non-infectious status indicated by detectable IgG antibody to SARS-CoV-2.\nBritish Dental Journal, 229:521–524. Link to article"
   },
   {
     "objectID": "talks/Barcelona2025.html#when-are-igg-responses-informative",
@@ -1684,7 +1684,7 @@
     "href": "talks/Barcelona2025.html#ama1-parameter-estimates",
     "title": "A flexible class of latent variable models for the analysis of antibody response data",
     "section": "AMA1: parameter estimates",
-    "text": "AMA1: parameter estimates\n\n\n\n\nParameter\n\n\nEstimate\n\n\nSD\n\n\n2.5%\n\n\n50%\n\n\n97.5%\n\n\n\n\n\n\nDistribution of Y | T\n\n\n\n\nμ₀\n\n\n-3.427\n\n\n0.077\n\n\n-3.626\n\n\n-3.470\n\n\n-3.311\n\n\n\n\nμ₁\n\n\n0.790\n\n\n0.016\n\n\n0.774\n\n\n0.808\n\n\n0.838\n\n\n\n\nσ₀\n\n\n0.606\n\n\n0.041\n\n\n0.537\n\n\n0.609\n\n\n0.695\n\n\n\n\nσ₁\n\n\n0.114\n\n\n0.022\n\n\n0.077\n\n\n0.122\n\n\n0.164\n\n\n\n\nDistribution of T (age &lt; 15)\n\n\n\n\nα₂\n\n\n1.337\n\n\n0.074\n\n\n1.248\n\n\n1.341\n\n\n1.563\n\n\n\n\nλ\n\n\n0.224\n\n\n0.032\n\n\n0.173\n\n\n0.227\n\n\n0.299\n\n\n\n\nDistribution of T (age ≥ 15)\n\n\n\n\nϕ\n\n\n3.423\n\n\n0.259\n\n\n3.078\n\n\n3.520\n\n\n4.117\n\n\n\n\nη₁\n\n\n-0.096\n\n\n0.124\n\n\n-0.399\n\n\n-0.097\n\n\n0.110\n\n\n\n\n\nThe estimate of \\(\\lambda\\) suggests that on average it takes about 4.5 years for individuals to reach higher levels of sero-reactivity."
+    "text": "AMA1: parameter estimates\n\n\n\n\n\n\n\n\n\n\n\nParameter\nEstimate\nSD\n2.5%\n50%\n97.5%\n\n\n\n\nDistribution of Y | T\n\n\n\n\n\n\n\nμ₀\n-3.427\n0.077\n-3.626\n-3.470\n-3.311\n\n\nμ₁\n0.790\n0.016\n0.774\n0.808\n0.838\n\n\nσ₀\n0.606\n0.041\n0.537\n0.609\n0.695\n\n\nσ₁\n0.114\n0.022\n0.077\n0.122\n0.164\n\n\nDistribution of T (age &lt; 15)\n\n\n\n\n\n\n\nα₂\n1.337\n0.074\n1.248\n1.341\n1.563\n\n\nλ\n0.224\n0.032\n0.173\n0.227\n0.299\n\n\nDistribution of T (age ≥ 15)\n\n\n\n\n\n\n\nϕ\n3.423\n0.259\n3.078\n3.520\n4.117\n\n\nη₁\n-0.096\n0.124\n-0.399\n-0.097\n0.110\n\n\n\n\nThe estimate of \\(\\lambda\\) suggests that on average it takes about 4.5 years for individuals to reach higher levels of sero-reactivity."
   },
   {
     "objectID": "talks/Barcelona2025.html#ama1-analysis-model-based-histograms",
@@ -1705,7 +1705,7 @@
     "href": "talks/Barcelona2025.html#msp1-parameter-estimates",
     "title": "A flexible class of latent variable models for the analysis of antibody response data",
     "section": "MSP1: parameter estimates",
-    "text": "MSP1: parameter estimates\n\n\n\n\nParameter\n\n\nMean\n\n\nSD\n\n\n2.5%\n\n\n50%\n\n\n97.5%\n\n\n\n\n\n\nDistribution of Y | T\n\n\n\n\nμ0\n\n\n-4.481\n\n\n0.042\n\n\n-4.567\n\n\n-4.479\n\n\n-4.404\n\n\n\n\nμ1\n\n\n1.255\n\n\n0.026\n\n\n1.205\n\n\n1.255\n\n\n1.307\n\n\n\n\nlog σ0\n\n\n-0.677\n\n\n0.043\n\n\n-0.764\n\n\n-0.676\n\n\n-0.599\n\n\n\n\nlog σ1\n\n\n-5.716\n\n\n0.536\n\n\n-6.892\n\n\n-5.666\n\n\n-4.874\n\n\n\n\nDistribution of T\n\n\n\n\nα0\n\n\n0.093\n\n\n0.036\n\n\n0.025\n\n\n0.093\n\n\n0.166\n\n\n\n\nγ1\n\n\n0.277\n\n\n0.011\n\n\n0.256\n\n\n0.277\n\n\n0.297\n\n\n\n\nβ0\n\n\n0.755\n\n\n0.037\n\n\n0.684\n\n\n0.754\n\n\n0.827\n\n\n\n\nδ1\n\n\n0.110\n\n\n0.018\n\n\n0.075\n\n\n0.110\n\n\n0.145\n\n\n\n\nτcp\n\n\n11.623\n\n\n0.406\n\n\n11.004\n\n\n11.667\n\n\n12.197\n\n\n\n\nδ2\n\n\n-0.061\n\n\n0.010\n\n\n-0.080\n\n\n-0.061\n\n\n-0.042"
+    "text": "MSP1: parameter estimates\n\n\n\n\n\n\n\n\n\n\n\nParameter\nMean\nSD\n2.5%\n50%\n97.5%\n\n\n\n\nDistribution of Y | T\n\n\n\n\n\n\n\nμ0\n-4.481\n0.042\n-4.567\n-4.479\n-4.404\n\n\nμ1\n1.255\n0.026\n1.205\n1.255\n1.307\n\n\nlog σ0\n-0.677\n0.043\n-0.764\n-0.676\n-0.599\n\n\nlog σ1\n-5.716\n0.536\n-6.892\n-5.666\n-4.874\n\n\nDistribution of T\n\n\n\n\n\n\n\nα0\n0.093\n0.036\n0.025\n0.093\n0.166\n\n\nγ1\n0.277\n0.011\n0.256\n0.277\n0.297\n\n\nβ0\n0.755\n0.037\n0.684\n0.754\n0.827\n\n\nδ1\n0.110\n0.018\n0.075\n0.110\n0.145\n\n\nτcp\n11.623\n0.406\n11.004\n11.667\n12.197\n\n\nδ2\n-0.061\n0.010\n-0.080\n-0.061\n-0.042"
   },
   {
     "objectID": "talks/Barcelona2025.html#predicted-antibody-levels-in-ama1-and-msp1",

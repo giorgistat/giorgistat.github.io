@@ -18,7 +18,6 @@ format:
 
 ## My Background {.smaller}
 
-
 -   **PhD in Statistics and Epidemiology** (Sep 2015)\
 -   **MSc in Statistics** (July 2012)\
 -   **BSc in Statistics** (April 2012)
@@ -221,12 +220,11 @@ Lancaster University, 4-5 March 2024
 
 ## Engagement with policy makers {.smaller}
 
-Technical meeting on capacity building 
+Technical meeting on capacity building
 
 Lancaster University, 3-4 March 2025
 
 <center>![](figures/cap_build.jpg){height="5in"}</center>
-
 
 ## A user-friendly app for malaria mapping {.smaller}
 

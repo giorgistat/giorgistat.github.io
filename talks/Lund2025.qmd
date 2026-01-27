@@ -407,14 +407,9 @@ $$
 
 ## Applications
 
-
 -   [Lymphatic filariasis in Madagascar](#lf-slide)
 
-
-
-
 -   [Soil-transmitted helminths in Kenya](#sth-slide)
-
 
 ## Example: Lymphatic filariasis in Madagascar {#lf-slide}
 
@@ -464,20 +459,19 @@ $$
 
 <center>![](figures/penalized_profile_alpha.jpg){width="50%"}</center>
 
-## Paramter estimates 
+## Paramter estimates
 
 MDA impact function: $f(v) = \alpha\exp\{-v/\gamma\}$, with $v$ denoting the years since last MDA
 
 . . .
 
-| Parameter                     | Estimates                         |
-|-----------------|----------------------------------|
-| Intercept                | -2.582 (-2.622, -2.541)          |
-| Spatial variance         | 2.204 (1.891, 2.569)             |
-| Spatial scale            | 79.153 (70.874, 88.399)          |
-| Max. reduction ($\alpha$) | 0.856 (0.839, 0.872)             |
-| Decay scale ($\gamma$)    | 1.802 (1.768, 1.837)             |
-
+| Parameter                 | Estimates               |
+|---------------------------|-------------------------|
+| Intercept                 | -2.582 (-2.622, -2.541) |
+| Spatial variance          | 2.204 (1.891, 2.569)    |
+| Spatial scale             | 79.153 (70.874, 88.399) |
+| Max. reduction ($\alpha$) | 0.856 (0.839, 0.872)    |
+| Decay scale ($\gamma$)    | 1.802 (1.768, 1.837)    |
 
 ## Estimated MDA impact function
 
@@ -487,18 +481,17 @@ MDA impact function: $f(v) = \alpha\exp\{-v/\gamma\}$, with $v$ denoting the yea
 
 <center>![](figures/prevalence_animation.gif)</center>
 
-
 ## Example: soil-transmitted helminths in Kenya {#sth-slide}
 
 <center>![](figures/sth_cycle.jpg)</center>
 
 ## The data
+
 ::: {style="width: 100%; height: 900px; position: relative;"}
 <iframe src="sth_kenya.html" width="100%" height="70%" style="border: none; position: absolute; top: 0; left: 0;">
 
 </iframe>
 :::
-
 
 ## Timeline of surveys and MDA
 
@@ -510,15 +503,13 @@ MDA impact function: $f(v) = \alpha\exp\{-v/\gamma\}$, with $v$ denoting the yea
 
 . . .
 
-
-
-| Parameter                | Ascaris            | Trichuris             | Hookworm            |
-|--------------------------|----------------------------------|----------------------------------|----------------------------------|
-| **Intercept**            | -2.41 (-2.45, -2.37)             | -2.44 (-2.51, -2.37)             | -1.94 (-1.98, -1.90)             |
-| **Spatial variance**    | 26.83 (14.70, 48.97)             | 15.57 (8.35, 29.06)              | 29.75 (20.17, 43.89)             |
-| **Spatial scale**        | 263.31 (178.38, 388.66)          | 109.02 (72.34, 164.32)           | 198.63 (152.33, 258.99)          |
-| **Max. reduction ($\alpha$)**        | 0.318 (0.299, 0.338)             | 0.837 (0.533, 0.958)             | 0.892 (0.871, 0.909)             |
-| **Decay scale ($\gamma$)**      | 9.49 (7.41, 12.16)               | 1.23 (1.01, 1.49)                | 6.46 (6.06, 6.90)                |
+| Parameter | Ascaris | Trichuris | Hookworm |
+|----|----|----|----|
+| **Intercept** | -2.41 (-2.45, -2.37) | -2.44 (-2.51, -2.37) | -1.94 (-1.98, -1.90) |
+| **Spatial variance** | 26.83 (14.70, 48.97) | 15.57 (8.35, 29.06) | 29.75 (20.17, 43.89) |
+| **Spatial scale** | 263.31 (178.38, 388.66) | 109.02 (72.34, 164.32) | 198.63 (152.33, 258.99) |
+| **Max. reduction (**$\alpha$) | 0.318 (0.299, 0.338) | 0.837 (0.533, 0.958) | 0.892 (0.871, 0.909) |
+| **Decay scale (**$\gamma$) | 9.49 (7.41, 12.16) | 1.23 (1.01, 1.49) | 6.46 (6.06, 6.90) |
 
 ## The MDA impact by STH species
 
@@ -529,7 +520,6 @@ MDA impact function: $f(v) = \alpha\exp\{-v/\gamma\}$, with $v$ denoting the yea
 <center>![](figures/STH_grid_animation.gif){width="75%"}</center>
 
 <center>![](figures/STH_sc_animation.gif){width="75%"}</center>
-
 
 ## Next steps and extenions {.smaller}
 
@@ -546,7 +536,6 @@ MDA impact function: $f(v) = \alpha\exp\{-v/\gamma\}$, with $v$ denoting the yea
     -   Accounting for the effect of different types of treatments
 
     -   Uncertainty in the MDA coverage
-
 
 ## THANK YOU! {.smaller}
 
