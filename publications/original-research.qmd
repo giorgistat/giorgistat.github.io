@@ -4,7 +4,7 @@ title: "Original Research Articles"
 
 ## Statistical Methodology {#stat-methodology}
 
--   Chacón-Montalván, E.A., Parry, L., <u>**Giorgi, E.**</u>, Torres, P., Orellana, J.D.Y., Moraga, P., Taylor, B.M. (2025). *Mapping food insecurity in the Brazilian Amazon using a spatial item factor analysis model.* The Annals of Applied Statistics.  19(4): 3438-3463 (December 2025). DOI: 10.1214/25-AOAS2072
+-   Chacón-Montalván, E.A., Parry, L., <u>**Giorgi, E.**</u>, Torres, P., Orellana, J.D.Y., Moraga, P., Taylor, B.M. (2025). *Mapping food insecurity in the Brazilian Amazon using a spatial item factor analysis model.* The Annals of Applied Statistics. 19(4): 3438-3463 (December 2025). DOI: 10.1214/25-AOAS2072
 
 -   Ruiz Cuenca, P., Souza, F. N., Nascimento, R. C. do, da Silva, A. G., Eyre, M. T., Cerqueira, J., dos Santos, D. O., Ribeiro de Souza, E. V., Read, J., Cremonese, C., Costa, F., <u>**Giorgi, E.**</u> (2025). *Using step selection functions to analyse human mobility using telemetry data in infectious disease epidemiology: a case study of leptospirosis.* eLife, 14:RP107153, https://doi.org/10.7554/eLife.107153.1
 
@@ -206,6 +206,8 @@ $^*$ I have co-authored this paper as member of the NTD consortium.
 
 ## Teaching of Statistics {#teaching}
 
--   Johnson, O., Fronterre, C., Diggle, P. J., Amoah, A., <u>**Giorgi, E.**</u> (2021). *MBGapp: A Shiny application for teaching model-based geostatistics to population health scientists.* PLoS ONE. https://doi.org/10.1371/journal.pone.0262145
+-   Castro, M., Phillips, N., Robinson, I., <u>**Giorgi, E.**</u> (2026). *Utilising Random Effects Models to Analyse Multiple Mini-Interviews for Prospective Medical Students – From Theory to Practice.* Journal of Medical Education and Curricular Development. Journal of Medical Education and Curricular Development, 13. <https://doi.org/10.1177/23821205251411170>
+
+-   Johnson, O., Fronterre, C., Diggle, P. J., Amoah, A., <u>**Giorgi, E.**</u> (2021). *MBGapp: A Shiny application for teaching model-based geostatistics to population health scientists.* PLoS ONE. <https://doi.org/10.1371/journal.pone.0262145>
 
 -   <u>**Giorgi, E.**</u> (2018). *Using a problem-driven approach for teaching statistics at the African Institute of Mathematical Sciences (invited paper).* In M. A. Sorto, A. White, & L. Guyot (Eds.), Looking back, looking forward. Proceedings of the Tenth International Conference on Teaching Statistics (ICOTS10, July, 2018), Kyoto, Japan. Voorburg, The Netherlands: International Statistical Institute. Available [here](https://iase-web.org/icots/10/proceedings/pdfs/ICOTS10_3H3.pdf?1531364259)
