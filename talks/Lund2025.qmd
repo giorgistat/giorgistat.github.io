@@ -1,8 +1,8 @@
 ---
 title: "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods"  
 subtitle: "A decay-adjusted spatio-temporal (DAST) model"  
-author: "Emanuele Giorgi, Claudio Fronterre, Jana Purkiss, Freya Clark"  
-institute: "Lancaster University" 
+author: "Emanuele Giorgi, Claudio Fronterre, Peter J. Diggle"  
+institute: "University of Birmingham" 
 execute:
   freeze: true
 date: ""  
@@ -12,7 +12,7 @@ format:
     transition: fade
     slide-number: true
     chalkboard: true
-    logo: "figures/clogo.png"
+    logo: "figures/uob_logo_v2.jpg"
     footer: ""
 ---
 
@@ -251,70 +251,9 @@ Alb = Albendazole, PZQ = Praziquantel, IVM = Ivermectin, AZM = Azithromycin, DEC
 -   Entomological indices (for vector-borne NTDs)
 
 ## Modelling the impact of MDA
+<center>![](figures/mda_impact.png){width="55%"}</center>
 
-```{r}
-#| echo: false
-#| fig-cap: ""
-#| fig-width: 8
-#| fig-height: 5
-library(ggplot2)
 
-# Create time sequence (-5 to 20 years)
-time <- seq(-10, 20, by = 0.1)
-
-# Define Gamma-shaped MDA impact function
-gamma_impact <- function(t) {
-  # Parameters for Gamma distribution (shape=3, rate=0.7 gives mode around 3)
-  dgamma(pmax(0, t), shape = 3, rate = 0.7) * 15 # Scaled for visibility
-}
-
-# Find the mode (peak time) of the Gamma distribution
-mode_time <- (3 - 1)/0.7  # (shape-1)/rate
-peak_impact <- gamma_impact(mode_time)
-
-# Exponential decay starting at mode
-exp_decay <- function(t) {
-  peak_impact * exp(-0.25 * (t - mode_time))
-}
-
-# Create data frame
-impact_data <- data.frame(
-  Time = time,
-  Impact = ifelse(time < 0, 0, gamma_impact(time)),
-  Exponential_Fit = ifelse(time >= mode_time, exp_decay(time), NA)
-)
-
-# Calculate optimal text positions
-text_y_pos <- max(impact_data$Impact, na.rm = TRUE) * c(0.9, 0.7, 0.5)
-text_x_pos <- c(mode_time + 3, mode_time + 3, 5)
-
-# Plot
-ggplot(impact_data, aes(x = Time)) +
-  geom_vline(xintercept = 0, linetype = "dashed", color = "blue") +
-  geom_line(aes(y = Impact), color = "black", linewidth = 1.2) +
-  geom_line(aes(y = Exponential_Fit), color = "green", linetype = "dashed", linewidth = 1, na.rm = TRUE) +
-  # Annotations with non-overlapping positions
-  annotate("text", x = -2.5, y = 0.1*max(impact_data$Impact, na.rm = TRUE), 
-           label = "Baseline", color = "black", hjust = 0.5) +
-  annotate("text", x = -9, y = 0.6*max(impact_data$Impact, na.rm = TRUE), 
-           label = "MDA Implementation", color = "blue", hjust = 0) +
-  annotate("text", x = text_x_pos[2], y = text_y_pos[2], 
-           label = "MDA Impact Approximation", color = "green", hjust = 0) +
-  geom_vline(xintercept = mode_time, linetype = "dotted", color = "gray50") +
-  annotate("text", x = mode_time+3, y = 0, 
-           label = "Impact Survey", vjust = 1.5, color = "gray30") +
-  labs(title = "Impact of Mass Drug Administration (MDA) Over Time",
-       x = "Time (years)",
-       y = "Relative Prevalence Reduction",
-       caption = "Blue dashed line: MDA implementation time\nGreen dashed line: Decay approximation from geostatistical model") +
-  theme_minimal() +
-  theme(plot.caption = element_text(hjust = 0)) +
-  ylim(0, max(impact_data$Impact, na.rm = TRUE) * 1.1) +
-  # Ensure no text overlap
-  coord_cartesian(clip = "off") +
-  theme(plot.margin = unit(c(1, 1, 1.5, 1), "lines"))
-
-```
 
 ## The standard geostatistical model for prevalence mapping {.scrollable .smaller}
 
@@ -495,7 +434,7 @@ MDA impact function: $f(v) = \alpha\exp\{-v/\gamma\}$, with $v$ denoting the yea
 
 ## Timeline of surveys and MDA
 
-<center>![](figures/kenya_data.png){width="55%"}</center>
+<center>![](figures/mda_hist_sth.png){width="95%"}</center>
 
 ## Paramter estimates {.smaller}
 
@@ -503,6 +442,16 @@ MDA impact function: $f(v) = \alpha\exp\{-v/\gamma\}$, with $v$ denoting the yea
 
 . . .
 
+<<<<<<< HEAD
+
+| Parameter | Ascaris | Trichuris | Hookworm |
+|-----------|---------|-----------|----------|
+| **Intercept** ($\beta$) | -2.432 (-2.478, -2.374) | -2.402 (-2.457, -2.336) | -1.960 (-2.012, -1.899) |
+| **Spatial variance** ($\sigma^2$) | 22.975 (11.276, 56.275) | 36.665 (16.309, 90.619) | 32.760 (14.418, 86.624) |
+| **Spatial scale** ($\phi$) | 214.303 (102.984, 522.853) | 221.500 (99.104, 583.012) | 293.396 (132.714, 844.706) |
+| **Max. reduction** ($\alpha$) | 0.304 (0.256, 0.371) | 0.450 (0.352, 0.547) | 0.926 (0.853, 0.971) |
+| **Decay scale** ($\gamma$) | 28.873 (12.254, 85.485) | 3.886 (2.788, 5.543) | 6.710 (4.774, 8.933) |
+=======
 | Parameter | Ascaris | Trichuris | Hookworm |
 |----|----|----|----|
 | **Intercept** | -2.41 (-2.45, -2.37) | -2.44 (-2.51, -2.37) | -1.94 (-1.98, -1.90) |
@@ -510,10 +459,11 @@ MDA impact function: $f(v) = \alpha\exp\{-v/\gamma\}$, with $v$ denoting the yea
 | **Spatial scale** | 263.31 (178.38, 388.66) | 109.02 (72.34, 164.32) | 198.63 (152.33, 258.99) |
 | **Max. reduction (**$\alpha$) | 0.318 (0.299, 0.338) | 0.837 (0.533, 0.958) | 0.892 (0.871, 0.909) |
 | **Decay scale (**$\gamma$) | 9.49 (7.41, 12.16) | 1.23 (1.01, 1.49) | 6.46 (6.06, 6.90) |
+>>>>>>> b096a02eb003b400c226da63968ff1806c8f79f6
 
 ## The MDA impact by STH species
 
-<center>![](figures/MDA_effects.png)</center>
+<center>![](figures/mda_impact_sth.png){width="55%"}</center>
 
 ## Prevalence prediction 2012-2023
 
@@ -521,26 +471,48 @@ MDA impact function: $f(v) = \alpha\exp\{-v/\gamma\}$, with $v$ denoting the yea
 
 <center>![](figures/STH_sc_animation.gif){width="75%"}</center>
 
+<<<<<<< HEAD
+## Discussion {.smaller .scrollable}
+
+**A1 — Baseline equilibrium:** Replace $S(x)$ with a spatio-temporal process $S(x,t)$ to capture background prevalence trends. Regularise $f(v)$ via informative priors or penalized likelihood to preserve identifiability of MDA effects.
+=======
 ## Next steps and extenions {.smaller}
+>>>>>>> b096a02eb003b400c226da63968ff1806c8f79f6
 
--   Need for extension that includes $S(x,t)$ rather than $S(x)$.
+. . .
 
--   Apply DAST to other NTDs.
+**A2 — Transient MDA effect:** Allow partial permanence once prevalence drops below an elimination threshold $p^*$:
+$$
+f(x,t) = \alpha \left[(1 - r(x,t))\exp\left\{-\frac{t - t^*(x,t)}{\gamma}\right\} + \delta \times r(x,t)\right],
+$$
+where $r(x,t) = I\{P(x, t^-) < p^*\}$
 
--   Key assumptions of DAST
+. . .
 
-    -   The MDA effect is the same across time
+**A3 — Constant relative reduction:** Allow $\alpha$ to vary with baseline prevalence $P^*(x)$ via a smooth function $h(\cdot)$, or a piecewise-constant specification across prevalence strata.
 
-    -   Incorporating data from multiple diagnostics
+. . .
 
-    -   Accounting for the effect of different types of treatments
+**Adherence:** Weight each MDA round by observed adherence $A(x,t) \in [0,1]$:
+$$
+P(x,t) = P^*(x)\prod_{j:\,u_j < t} \Big(1 - f(t-u_j)\Big)^{A(x, u_j)\, I(x, u_j)}
+$$
 
-    -   Uncertainty in the MDA coverage
+. . .
 
+<<<<<<< HEAD
+**Age-varying effects:** Model $\alpha(a)$ and $\gamma(a)$ as smooth or piecewise functions of age.
+
+. . .
+
+**Multiple interventions:** Assign each intervention its own impact function $f_k$, with an interaction term $\psi_{k\ell}$ to capture synergy ($\psi_{k\ell}>0$) or antagonism ($\psi_{k\ell}<0$).
+
+=======
+>>>>>>> b096a02eb003b400c226da63968ff1806c8f79f6
 ## THANK YOU! {.smaller}
 
 <center>![](figures/questions.jpg){height="4in"}</center>
 
 🔗 [giorgistat.github.io](https://giorgistat.github.io)\
-📧 e.giorgi\@lancaster.ac.uk\
-📍 CHICAS, Lancaster Medical School, Lancaster University, UK
+📧 e.giorgi\@bham.ac.uk\
+📍 Department of Applied Health Sciences, University of Birmingham

@@ -6,10 +6,10 @@
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.6.40">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.33">
 
-  <meta name="author" content="Emanuele Giorgi, Claudio Fronterre, Jana Purkiss, Freya Clark">
+  <meta name="author" content="Emanuele Giorgi, Claudio Fronterre, Peter J. Diggle">
   <title>Welcome to My Personal Website – Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -29,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-2a4c8bc07c7bed3f644724215556eb12.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-8a5cdbf101a0845817b98f2425171703.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -137,10 +137,10 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Emanuele Giorgi, Claudio Fronterre, Jana Purkiss, Freya Clark 
+Emanuele Giorgi, Claudio Fronterre, Peter J. Diggle 
 </div>
         <p class="quarto-title-affiliation">
-            Lancaster University
+            University of Birmingham
           </p>
     </div>
 </div>
@@ -170,9 +170,6 @@ Emanuele Giorgi, Claudio Fronterre, Jana Purkiss, Freya Clark
 <img data-src="figures/Ranking-of-NTDs-by-Disease-Burden-DALYs-and-Comparison-with-HIV-AIDS-Tuberculosis-and.png" style="width:35.0%" class="r-stretch"></section>
 <section id="ntds-risk-factors" class="slide level2 smaller">
 <h2>NTDs Risk Factors</h2>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
@@ -212,9 +209,6 @@ Emanuele Giorgi, Claudio Fronterre, Jana Purkiss, Freya Clark
 </section>
 <section id="albendazole" class="slide level2 smaller">
 <h2>Albendazole</h2>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="column quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
@@ -247,9 +241,6 @@ Distributed in large-scale deworming campaigns, particularly targeting children 
 </section>
 <section id="ivermectin" class="slide level2 smaller">
 <h2>Ivermectin</h2>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="column quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
@@ -285,9 +276,6 @@ Distributed in large-scale deworming campaigns, particularly targeting children 
 </section>
 <section id="praziquantel" class="slide level2 smaller">
 <h2>Praziquantel</h2>
-<div>
-
-</div>
 <div class="quarto-layout-panel" data-layout-ncol="2">
 <div class="quarto-layout-row">
 <div class="column quarto-layout-cell" style="flex-basis: 30.0%;justify-content: center;">
@@ -382,8 +370,6 @@ Key drug in school-based and community-wide treatment campaigns in regions with 
 </tr>
 </tbody>
 </table>
-
-
 </div>
 </div>
 <p><strong>Abbreviations:</strong></p>
@@ -456,8 +442,10 @@ Key drug in school-based and community-wide treatment campaigns in regions with 
 </section>
 <section id="modelling-the-impact-of-mda" class="slide level2">
 <h2>Modelling the impact of MDA</h2>
-
-<img data-src="Lund2025_files/figure-revealjs/unnamed-chunk-2-1.png" width="768" class="r-stretch"></section>
+<center>
+<img data-src="figures/mda_impact.png" style="width:55.0%">
+</center>
+</section>
 <section id="the-standard-geostatistical-model-for-prevalence-mapping" class="slide level2 scrollable smaller">
 <h2>The standard geostatistical model for prevalence mapping</h2>
 <ul>
@@ -692,19 +680,20 @@ p(\alpha) = -\left[\lambda_1 \log\alpha + \lambda_2\log(1-\alpha) \right]
 <section id="timeline-of-surveys-and-mda-1" class="slide level2">
 <h2>Timeline of surveys and MDA</h2>
 <center>
-<img data-src="figures/kenya_data.png" style="width:55.0%">
+<img data-src="figures/mda_hist_sth.png" style="width:95.0%">
 </center>
 </section>
 <section id="paramter-estimates-1" class="slide level2 smaller">
 <h2>Paramter estimates</h2>
 <p>MDA impact function: <span class="math inline">\(f(v) = \alpha\exp\{-v/\gamma\}\)</span>, with <span class="math inline">\(v\)</span> denoting the years since last MDA</p>
 <div class="fragment">
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
-<col style="width: 25%">
+<col style="width: 26%">
+<col style="width: 21%">
+<col style="width: 26%">
+<col style="width: 24%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -716,43 +705,44 @@ p(\alpha) = -\left[\lambda_1 \log\alpha + \lambda_2\log(1-\alpha) \right]
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Intercept</strong></td>
-<td>-2.41 (-2.45, -2.37)</td>
-<td>-2.44 (-2.51, -2.37)</td>
-<td>-1.94 (-1.98, -1.90)</td>
+<td><strong>Intercept</strong> (<span class="math inline">\(\beta\)</span>)</td>
+<td>-2.432 (-2.478, -2.374)</td>
+<td>-2.402 (-2.457, -2.336)</td>
+<td>-1.960 (-2.012, -1.899)</td>
 </tr>
 <tr class="even">
-<td><strong>Spatial variance</strong></td>
-<td>26.83 (14.70, 48.97)</td>
-<td>15.57 (8.35, 29.06)</td>
-<td>29.75 (20.17, 43.89)</td>
+<td><strong>Spatial variance</strong> (<span class="math inline">\(\sigma^2\)</span>)</td>
+<td>22.975 (11.276, 56.275)</td>
+<td>36.665 (16.309, 90.619)</td>
+<td>32.760 (14.418, 86.624)</td>
 </tr>
 <tr class="odd">
-<td><strong>Spatial scale</strong></td>
-<td>263.31 (178.38, 388.66)</td>
-<td>109.02 (72.34, 164.32)</td>
-<td>198.63 (152.33, 258.99)</td>
+<td><strong>Spatial scale</strong> (<span class="math inline">\(\phi\)</span>)</td>
+<td>214.303 (102.984, 522.853)</td>
+<td>221.500 (99.104, 583.012)</td>
+<td>293.396 (132.714, 844.706)</td>
 </tr>
 <tr class="even">
-<td><strong>Max. reduction (</strong><span class="math inline">\(\alpha\)</span>)</td>
-<td>0.318 (0.299, 0.338)</td>
-<td>0.837 (0.533, 0.958)</td>
-<td>0.892 (0.871, 0.909)</td>
+<td><strong>Max. reduction</strong> (<span class="math inline">\(\alpha\)</span>)</td>
+<td>0.304 (0.256, 0.371)</td>
+<td>0.450 (0.352, 0.547)</td>
+<td>0.926 (0.853, 0.971)</td>
 </tr>
 <tr class="odd">
-<td><strong>Decay scale (</strong><span class="math inline">\(\gamma\)</span>)</td>
-<td>9.49 (7.41, 12.16)</td>
-<td>1.23 (1.01, 1.49)</td>
-<td>6.46 (6.06, 6.90)</td>
+<td><strong>Decay scale</strong> (<span class="math inline">\(\gamma\)</span>)</td>
+<td>28.873 (12.254, 85.485)</td>
+<td>3.886 (2.788, 5.543)</td>
+<td>6.710 (4.774, 8.933)</td>
 </tr>
 </tbody>
 </table>
+<p>======= | Parameter | Ascaris | Trichuris | Hookworm | |—-|—-|—-|—-| | <strong>Intercept</strong> | -2.41 (-2.45, -2.37) | -2.44 (-2.51, -2.37) | -1.94 (-1.98, -1.90) | | <strong>Spatial variance</strong> | 26.83 (14.70, 48.97) | 15.57 (8.35, 29.06) | 29.75 (20.17, 43.89) | | <strong>Spatial scale</strong> | 263.31 (178.38, 388.66) | 109.02 (72.34, 164.32) | 198.63 (152.33, 258.99) | | <strong>Max. reduction (</strong><span class="math inline">\(\alpha\)</span>) | 0.318 (0.299, 0.338) | 0.837 (0.533, 0.958) | 0.892 (0.871, 0.909) | | <strong>Decay scale (</strong><span class="math inline">\(\gamma\)</span>) | 9.49 (7.41, 12.16) | 1.23 (1.01, 1.49) | 6.46 (6.06, 6.90) | &gt;&gt;&gt;&gt;&gt;&gt;&gt; b096a02eb003b400c226da63968ff1806c8f79f6</p>
 </div>
 </section>
 <section id="the-mda-impact-by-sth-species" class="slide level2">
 <h2>The MDA impact by STH species</h2>
 <center>
-<img data-src="figures/MDA_effects.png">
+<img data-src="figures/mda_impact_sth.png" style="width:55.0%">
 </center>
 </section>
 <section id="prevalence-prediction-2012-2023" class="slide level2">
@@ -763,35 +753,62 @@ p(\alpha) = -\left[\lambda_1 \log\alpha + \lambda_2\log(1-\alpha) \right]
 <center>
 <img data-src="figures/STH_sc_animation.gif" style="width:75.0%">
 </center>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD ## Discussion {.smaller .scrollable}</p>
+</section>
+<section>
+<section id="a1-baseline-equilibrium-replace-sx-with-a-spatio-temporal-process-sxt-to-capture-background-prevalence-trends.-regularise-fv-via-informative-priors-or-penalized-likelihood-to-preserve-identifiability-of-mda-effects." class="title-slide slide level1 center">
+<h1><strong>A1 — Baseline equilibrium:</strong> Replace <span class="math inline">\(S(x)\)</span> with a spatio-temporal process <span class="math inline">\(S(x,t)\)</span> to capture background prevalence trends. Regularise <span class="math inline">\(f(v)\)</span> via informative priors or penalized likelihood to preserve identifiability of MDA effects.</h1>
+
 </section>
 <section id="next-steps-and-extenions" class="slide level2 smaller">
 <h2>Next steps and extenions</h2>
-<ul>
-<li><p>Need for extension that includes <span class="math inline">\(S(x,t)\)</span> rather than <span class="math inline">\(S(x)\)</span>.</p></li>
-<li><p>Apply DAST to other NTDs.</p></li>
-<li><p>Key assumptions of DAST</p>
-<ul>
-<li><p>The MDA effect is the same across time</p></li>
-<li><p>Incorporating data from multiple diagnostics</p></li>
-<li><p>Accounting for the effect of different types of treatments</p></li>
-<li><p>Uncertainty in the MDA coverage</p></li>
-</ul></li>
-</ul>
-</section>
-<section id="thank-you" class="slide level2 smaller">
-<h2>THANK YOU!</h2>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>b096a02eb003b400c226da63968ff1806c8f79f6</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<div class="fragment">
+<p><strong>A2 — Transient MDA effect:</strong> Allow partial permanence once prevalence drops below an elimination threshold <span class="math inline">\(p^*\)</span>: <span class="math display">\[
+f(x,t) = \alpha \left[(1 - r(x,t))\exp\left\{-\frac{t - t^*(x,t)}{\gamma}\right\} + \delta \times r(x,t)\right],
+\]</span> where <span class="math inline">\(r(x,t) = I\{P(x, t^-) &lt; p^*\}\)</span></p>
+</div>
+<div class="fragment">
+<p><strong>A3 — Constant relative reduction:</strong> Allow <span class="math inline">\(\alpha\)</span> to vary with baseline prevalence <span class="math inline">\(P^*(x)\)</span> via a smooth function <span class="math inline">\(h(\cdot)\)</span>, or a piecewise-constant specification across prevalence strata.</p>
+</div>
+<div class="fragment">
+<p><strong>Adherence:</strong> Weight each MDA round by observed adherence <span class="math inline">\(A(x,t) \in [0,1]\)</span>: <span class="math display">\[
+P(x,t) = P^*(x)\prod_{j:\,u_j &lt; t} \Big(1 - f(t-u_j)\Big)^{A(x, u_j)\, I(x, u_j)}
+\]</span></p>
+</div>
+<div class="fragment">
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD <strong>Age-varying effects:</strong> Model <span class="math inline">\(\alpha(a)\)</span> and <span class="math inline">\(\gamma(a)\)</span> as smooth or piecewise functions of age.</p>
+</div>
+<div class="fragment">
+<p><strong>Multiple interventions:</strong> Assign each intervention its own impact function <span class="math inline">\(f_k\)</span>, with an interaction term <span class="math inline">\(\psi_{k\ell}\)</span> to capture synergy (<span class="math inline">\(\psi_{k\ell}&gt;0\)</span>) or antagonism (<span class="math inline">\(\psi_{k\ell}&lt;0\)</span>).</p>
+<p>======= &gt;&gt;&gt;&gt;&gt;&gt;&gt; b096a02eb003b400c226da63968ff1806c8f79f6 ## THANK YOU! {.smaller}</p>
 <center>
 <img data-src="figures/questions.jpg" style="height:4in">
 </center>
 <p>🔗 <a href="https://giorgistat.github.io">giorgistat.github.io</a><br>
-📧 e.giorgi@lancaster.ac.uk<br>
-📍 CHICAS, Lancaster Medical School, Lancaster University, UK</p>
+📧 e.giorgi@bham.ac.uk<br>
+📍 Department of Applied Health Sciences, University of Birmingham</p>
 
 
-</section>
+</div>
+</section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
-<p><img src="figures/clogo.png" class="slide-logo"></p>
+<p><img src="figures/uob_logo_v2.jpg" class="slide-logo"></p>
 <div class="footer footer-default">
 
 </div>
@@ -1046,190 +1063,172 @@ p(\alpha) = -\left[\lambda_1 \log\alpha + \lambda_2\log(1-\alpha) \right]
     </script>
 
     <script id="quarto-html-after-body" type="application/javascript">
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-      const toggleBodyColorMode = (bsSheetEl) => {
-        const mode = bsSheetEl.getAttribute("data-mode");
-        const bodyEl = window.document.querySelector("body");
-        if (mode === "dark") {
-          bodyEl.classList.add("quarto-dark");
-          bodyEl.classList.remove("quarto-light");
-        } else {
-          bodyEl.classList.add("quarto-light");
-          bodyEl.classList.remove("quarto-dark");
-        }
-      }
-      const toggleBodyColorPrimary = () => {
-        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-        if (bsSheetEl) {
-          toggleBodyColorMode(bsSheetEl);
-        }
-      }
-      toggleBodyColorPrimary();  
-      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
-      tabsets.forEach(function(tabset) {
-        const tabby = new Tabby('#' + tabset.id);
-      });
-      const isCodeAnnotation = (el) => {
-        for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
-            return true;
-          }
-        }
-        return false;
-      }
-      const onCopySuccess = function(e) {
-        // button target
-        const button = e.trigger;
-        // don't keep focus
-        button.blur();
-        // flash "checked"
-        button.classList.add('code-copy-button-checked');
-        var currentTitle = button.getAttribute("title");
-        button.setAttribute("title", "Copied!");
-        let tooltip;
-        if (window.bootstrap) {
-          button.setAttribute("data-bs-toggle", "tooltip");
-          button.setAttribute("data-bs-placement", "left");
-          button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
-              customClass: "code-copy-button-tooltip",
-              offset: [0, -8]});
-          tooltip.show();    
-        }
-        setTimeout(function() {
-          if (tooltip) {
-            tooltip.hide();
-            button.removeAttribute("data-bs-title");
-            button.removeAttribute("data-bs-toggle");
-            button.removeAttribute("data-bs-placement");
-          }
-          button.setAttribute("title", currentTitle);
-          button.classList.remove('code-copy-button-checked');
-        }, 1000);
-        // clear code selection
-        e.clearSelection();
-      }
-      const getTextToCopy = function(trigger) {
-          const codeEl = trigger.previousElementSibling.cloneNode(true);
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
             }
           }
-          return codeEl.innerText;
-      }
-      const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-        text: getTextToCopy
-      });
-      clipboard.on('success', onCopySuccess);
-      if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-        const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-          text: getTextToCopy,
-          container: window.document.getElementById('quarto-embedded-source-code-modal')
-        });
-        clipboardModal.on('success', onCopySuccess);
-      }
-        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-        var mailtoRegex = new RegExp(/^mailto:/);
-          var filterRegex = new RegExp("https:\/\/giorgistat\.github\.io\/");
-        var isInternal = (href) => {
-            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          return false;
         }
-        // Inspect non-navigation links and adorn them if external
-     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-        for (var i=0; i<links.length; i++) {
-          const link = links[i];
-          if (!isInternal(link.href)) {
-            // undo the damage that might have been done by quarto-nav.js in the case of
-            // links that we want to consider external
-            if (link.dataset.originalHref !== undefined) {
-              link.href = link.dataset.originalHref;
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
             }
-          }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
         }
-      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-        const config = {
-          allowHTML: true,
-          maxWidth: 500,
-          delay: 100,
-          arrow: false,
-          appendTo: function(el) {
-              return el.closest('section.slide') || el.parentElement;
-          },
-          interactive: true,
-          interactiveBorder: 10,
-          theme: 'light-border',
-          placement: 'bottom-start',
-        };
-        if (contentFn) {
-          config.content = contentFn;
-        }
-        if (onTriggerFn) {
-          config.onTrigger = onTriggerFn;
-        }
-        if (onUntriggerFn) {
-          config.onUntrigger = onUntriggerFn;
-        }
-          config['offset'] = [0,0];
-          config['maxWidth'] = 700;
-        window.tippy(el, config); 
-      }
-      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-      for (var i=0; i<noterefs.length; i++) {
-        const ref = noterefs[i];
-        tippyHover(ref, function() {
-          // use id or data attribute instead here
-          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-          try { href = new URL(href).hash; } catch {}
-          const id = href.replace(/^#\/?/, "");
-          const note = window.document.getElementById(id);
-          if (note) {
-            return note.innerHTML;
-          } else {
-            return "";
-          }
-        });
-      }
-      const findCites = (el) => {
-        const parentEl = el.parentElement;
-        if (parentEl) {
-          const cites = parentEl.dataset.cites;
-          if (cites) {
-            return {
-              el,
-              cites: cites.split(' ')
-            };
-          } else {
-            return findCites(el.parentElement)
-          }
-        } else {
-          return undefined;
-        }
-      };
-      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-      for (var i=0; i<bibliorefs.length; i++) {
-        const ref = bibliorefs[i];
-        const citeInfo = findCites(ref);
-        if (citeInfo) {
-          tippyHover(citeInfo.el, function() {
-            var popup = window.document.createElement('div');
-            citeInfo.cites.forEach(function(cite) {
-              var citeDiv = window.document.createElement('div');
-              citeDiv.classList.add('hanging-indent');
-              citeDiv.classList.add('csl-entry');
-              var biblioDiv = window.document.getElementById('ref-' + cite);
-              if (biblioDiv) {
-                citeDiv.innerHTML = biblioDiv.innerHTML;
+        const getTextToCopy = function(trigger) {
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
               }
-              popup.appendChild(citeDiv);
-            });
-            return popup.innerHTML;
+            }
+            return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp("https:\/\/giorgistat\.github\.io\/");
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
           });
         }
-      }
-    });
-    </script>
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
     
 
 </body></html>
