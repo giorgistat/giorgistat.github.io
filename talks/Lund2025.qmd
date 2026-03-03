@@ -440,9 +440,6 @@ MDA impact function: $f(v) = \alpha\exp\{-v/\gamma\}$, with $v$ denoting the yea
 
 MDA impact function: $f(v) = \alpha\exp\{-v/\gamma\}$, with $v$ denoting the years since last MDA
 
-. . .
-
-<<<<<<< HEAD
 
 | Parameter | Ascaris | Trichuris | Hookworm |
 |-----------|---------|-----------|----------|
@@ -451,15 +448,7 @@ MDA impact function: $f(v) = \alpha\exp\{-v/\gamma\}$, with $v$ denoting the yea
 | **Spatial scale** ($\phi$) | 214.303 (102.984, 522.853) | 221.500 (99.104, 583.012) | 293.396 (132.714, 844.706) |
 | **Max. reduction** ($\alpha$) | 0.304 (0.256, 0.371) | 0.450 (0.352, 0.547) | 0.926 (0.853, 0.971) |
 | **Decay scale** ($\gamma$) | 28.873 (12.254, 85.485) | 3.886 (2.788, 5.543) | 6.710 (4.774, 8.933) |
-=======
-| Parameter | Ascaris | Trichuris | Hookworm |
-|----|----|----|----|
-| **Intercept** | -2.41 (-2.45, -2.37) | -2.44 (-2.51, -2.37) | -1.94 (-1.98, -1.90) |
-| **Spatial variance** | 26.83 (14.70, 48.97) | 15.57 (8.35, 29.06) | 29.75 (20.17, 43.89) |
-| **Spatial scale** | 263.31 (178.38, 388.66) | 109.02 (72.34, 164.32) | 198.63 (152.33, 258.99) |
-| **Max. reduction (**$\alpha$) | 0.318 (0.299, 0.338) | 0.837 (0.533, 0.958) | 0.892 (0.871, 0.909) |
-| **Decay scale (**$\gamma$) | 9.49 (7.41, 12.16) | 1.23 (1.01, 1.49) | 6.46 (6.06, 6.90) |
->>>>>>> b096a02eb003b400c226da63968ff1806c8f79f6
+
 
 ## The MDA impact by STH species
 
@@ -471,13 +460,9 @@ MDA impact function: $f(v) = \alpha\exp\{-v/\gamma\}$, with $v$ denoting the yea
 
 <center>![](figures/STH_sc_animation.gif){width="75%"}</center>
 
-<<<<<<< HEAD
 ## Discussion {.smaller .scrollable}
 
 **A1 — Baseline equilibrium:** Replace $S(x)$ with a spatio-temporal process $S(x,t)$ to capture background prevalence trends. Regularise $f(v)$ via informative priors or penalized likelihood to preserve identifiability of MDA effects.
-=======
-## Next steps and extenions {.smaller}
->>>>>>> b096a02eb003b400c226da63968ff1806c8f79f6
 
 . . .
 
@@ -500,15 +485,13 @@ $$
 
 . . .
 
-<<<<<<< HEAD
 **Age-varying effects:** Model $\alpha(a)$ and $\gamma(a)$ as smooth or piecewise functions of age.
 
 . . .
 
 **Multiple interventions:** Assign each intervention its own impact function $f_k$, with an interaction term $\psi_{k\ell}$ to capture synergy ($\psi_{k\ell}>0$) or antagonism ($\psi_{k\ell}<0$).
 
-=======
->>>>>>> b096a02eb003b400c226da63968ff1806c8f79f6
+
 ## THANK YOU! {.smaller}
 
 <center>![](figures/questions.jpg){height="4in"}</center>

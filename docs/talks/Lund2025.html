@@ -686,8 +686,6 @@ p(\alpha) = -\left[\lambda_1 \log\alpha + \lambda_2\log(1-\alpha) \right]
 <section id="paramter-estimates-1" class="slide level2 smaller">
 <h2>Paramter estimates</h2>
 <p>MDA impact function: <span class="math inline">\(f(v) = \alpha\exp\{-v/\gamma\}\)</span>, with <span class="math inline">\(v\)</span> denoting the years since last MDA</p>
-<div class="fragment">
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p>
 <table class="caption-top">
 <colgroup>
 <col style="width: 26%">
@@ -736,8 +734,6 @@ p(\alpha) = -\left[\lambda_1 \log\alpha + \lambda_2\log(1-\alpha) \right]
 </tr>
 </tbody>
 </table>
-<p>======= | Parameter | Ascaris | Trichuris | Hookworm | |—-|—-|—-|—-| | <strong>Intercept</strong> | -2.41 (-2.45, -2.37) | -2.44 (-2.51, -2.37) | -1.94 (-1.98, -1.90) | | <strong>Spatial variance</strong> | 26.83 (14.70, 48.97) | 15.57 (8.35, 29.06) | 29.75 (20.17, 43.89) | | <strong>Spatial scale</strong> | 263.31 (178.38, 388.66) | 109.02 (72.34, 164.32) | 198.63 (152.33, 258.99) | | <strong>Max. reduction (</strong><span class="math inline">\(\alpha\)</span>) | 0.318 (0.299, 0.338) | 0.837 (0.533, 0.958) | 0.892 (0.871, 0.909) | | <strong>Decay scale (</strong><span class="math inline">\(\gamma\)</span>) | 9.49 (7.41, 12.16) | 1.23 (1.01, 1.49) | 6.46 (6.06, 6.90) | &gt;&gt;&gt;&gt;&gt;&gt;&gt; b096a02eb003b400c226da63968ff1806c8f79f6</p>
-</div>
 </section>
 <section id="the-mda-impact-by-sth-species" class="slide level2">
 <h2>The MDA impact by STH species</h2>
@@ -753,30 +749,10 @@ p(\alpha) = -\left[\lambda_1 \log\alpha + \lambda_2\log(1-\alpha) \right]
 <center>
 <img data-src="figures/STH_sc_animation.gif" style="width:75.0%">
 </center>
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD ## Discussion {.smaller .scrollable}</p>
 </section>
-<section>
-<section id="a1-baseline-equilibrium-replace-sx-with-a-spatio-temporal-process-sxt-to-capture-background-prevalence-trends.-regularise-fv-via-informative-priors-or-penalized-likelihood-to-preserve-identifiability-of-mda-effects." class="title-slide slide level1 center">
-<h1><strong>A1 — Baseline equilibrium:</strong> Replace <span class="math inline">\(S(x)\)</span> with a spatio-temporal process <span class="math inline">\(S(x,t)\)</span> to capture background prevalence trends. Regularise <span class="math inline">\(f(v)\)</span> via informative priors or penalized likelihood to preserve identifiability of MDA effects.</h1>
-
-</section>
-<section id="next-steps-and-extenions" class="slide level2 smaller">
-<h2>Next steps and extenions</h2>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>b096a02eb003b400c226da63968ff1806c8f79f6</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
+<section id="discussion" class="slide level2 smaller scrollable">
+<h2>Discussion</h2>
+<p><strong>A1 — Baseline equilibrium:</strong> Replace <span class="math inline">\(S(x)\)</span> with a spatio-temporal process <span class="math inline">\(S(x,t)\)</span> to capture background prevalence trends. Regularise <span class="math inline">\(f(v)\)</span> via informative priors or penalized likelihood to preserve identifiability of MDA effects.</p>
 <div class="fragment">
 <p><strong>A2 — Transient MDA effect:</strong> Allow partial permanence once prevalence drops below an elimination threshold <span class="math inline">\(p^*\)</span>: <span class="math display">\[
 f(x,t) = \alpha \left[(1 - r(x,t))\exp\left\{-\frac{t - t^*(x,t)}{\gamma}\right\} + \delta \times r(x,t)\right],
@@ -791,11 +767,14 @@ P(x,t) = P^*(x)\prod_{j:\,u_j &lt; t} \Big(1 - f(t-u_j)\Big)^{A(x, u_j)\, I(x, u
 \]</span></p>
 </div>
 <div class="fragment">
-<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD <strong>Age-varying effects:</strong> Model <span class="math inline">\(\alpha(a)\)</span> and <span class="math inline">\(\gamma(a)\)</span> as smooth or piecewise functions of age.</p>
+<p><strong>Age-varying effects:</strong> Model <span class="math inline">\(\alpha(a)\)</span> and <span class="math inline">\(\gamma(a)\)</span> as smooth or piecewise functions of age.</p>
 </div>
 <div class="fragment">
 <p><strong>Multiple interventions:</strong> Assign each intervention its own impact function <span class="math inline">\(f_k\)</span>, with an interaction term <span class="math inline">\(\psi_{k\ell}\)</span> to capture synergy (<span class="math inline">\(\psi_{k\ell}&gt;0\)</span>) or antagonism (<span class="math inline">\(\psi_{k\ell}&lt;0\)</span>).</p>
-<p>======= &gt;&gt;&gt;&gt;&gt;&gt;&gt; b096a02eb003b400c226da63968ff1806c8f79f6 ## THANK YOU! {.smaller}</p>
+</div>
+</section>
+<section id="thank-you" class="slide level2 smaller">
+<h2>THANK YOU!</h2>
 <center>
 <img data-src="figures/questions.jpg" style="height:4in">
 </center>
@@ -804,8 +783,7 @@ P(x,t) = P^*(x)\prod_{j:\,u_j &lt; t} \Big(1 - f(t-u_j)\Big)^{A(x, u_j)\, I(x, u
 📍 Department of Applied Health Sciences, University of Birmingham</p>
 
 
-</div>
-</section></section>
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <p><img src="figures/uob_logo_v2.jpg" class="slide-logo"></p>
