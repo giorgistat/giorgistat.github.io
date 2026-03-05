@@ -16,10 +16,9 @@ about:
 title-block-banner: true
 ---
 
-
 # Welcome
 
-I am Professor of Statistical Science in the Biostatistics, Evidence Synthesis, Test Evaluation and Prediction Models ([BESTEAM](https://www.birmingham.ac.uk/research/applied-health/research/besteam/biostatistics-evidence-synthesis-test-evaluation-and-prediction-models-besteam)) group at the University of Birmingham.  
+I am Professor of Statistical Science in the Biostatistics, Evidence Synthesis, Test Evaluation and Prediction Models ([BESTEAM](https://www.birmingham.ac.uk/research/applied-health/research/besteam/biostatistics-evidence-synthesis-test-evaluation-and-prediction-models-besteam)) group at the University of Birmingham.
 
 My research focuses on developing statistical methodology motivated by real-world public health challenges, with particular emphasis on mapping tropical diseases.
 
