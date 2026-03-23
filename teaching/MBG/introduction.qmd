@@ -2,7 +2,7 @@
 title: "Introduction"  
 subtitle: "Model-based Geostatistics for Global Public Health"  
 author: "Emanuele Giorgi"  
-institute: "Lancaster University" 
+institute: "University of Birmingham" 
 execute:
   freeze: true
 date: ""  

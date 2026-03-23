@@ -2,7 +2,7 @@
 title: "Model formulation and parameter estimation"
 subtitle: "Model-based Geostatistics for Global Public Health"  
 author: "Emanuele Giorgi"  
-institute: "Lancaster University" 
+institute: "University of Birmingham" 
 execute:
   freeze: true
 date: ""  
@@ -58,7 +58,7 @@ format:
 -   A GP is **stationary** if its statistical properties do not change with location shifts.
 -   It is **isotropic** if its properties do not change with locations rotations.
 -   We denote a GP as $S(x)$, where $x$ represents location.
--   For a stationary and isotropic GP, the correlation function is purely a function of the distance between locations. 
+-   For a stationary and isotropic GP, the correlation function is purely a function of the distance between locations.
 
 ## The Matérn Process {.smaller}
 
@@ -79,42 +79,37 @@ format:
 
 The Matérn family includes two important special cases:
 
-- **Exponential Covariance** ($\kappa = 1/2$)  
-  $$ C(h) = \sigma^2 \exp\left(-\frac{h}{\phi}\right) $$  
-  Properties:  
-    - Relatively rough process, non-differentiable  
-    - Continuous but not differentiable  
-    - Markovian (memoryless) property  
+-   **Exponential Covariance** ($\kappa = 1/2$)\
+    $$ C(h) = \sigma^2 \exp\left(-\frac{h}{\phi}\right) $$\
+    Properties:
+    -   Relatively rough process, non-differentiable\
+    -   Continuous but not differentiable\
+    -   Markovian (memoryless) property
 
 . . .
 
-- **Gaussian (Squared Exponential) Covariance** ($\kappa \to \infty$)  
-  $$ C(h) = \sigma^2 \exp\left(-\frac{h^2}{2\phi^2}\right) $$  
-  Properties:  
-    - Infinitely differentiable  
-    - Produces very smooth realizations  
-    - Sometimes too smooth for physical processes  
-
+-   **Gaussian (Squared Exponential) Covariance** ($\kappa \to \infty$)\
+    $$ C(h) = \sigma^2 \exp\left(-\frac{h^2}{2\phi^2}\right) $$\
+    Properties:
+    -   Infinitely differentiable\
+    -   Produces very smooth realizations\
+    -   Sometimes too smooth for physical processes
 
 ------------------------------------------------------------------------
 
 ## Practical Range of Spatial Correlation {.smaller .scrollable}
 
-- **Definition**: Distance ($h^*$) where correlation drops to 0.05 (5%)
-  - Represents the effective spatial dependence range
-  - Commonly used cutoff in geostatistics
+-   **Definition**: Distance ($h^*$) where correlation drops to 0.05 (5%)
 
-- **General Solution**:
-  $$ \rho(h^*) =  0.05 $$
-  Solve for $h^*$ to find practical range
+    -   Represents the effective spatial dependence range
+    -   Commonly used cutoff in geostatistics
 
-- **Exponential Covariance Example**:
-  $$ \rho(h^*) = \exp\left(-\frac{h^*}{\phi}\right) = 0.05 $$
-  $$ \Rightarrow -\frac{h^*}{\phi} = \log(0.05) \approx -3 $$
-  $$ \Rightarrow h^* \approx 3\phi $$
-  - *Practical range*: $3\phi$
-  - At $h^* = 3\phi$, correlation drops to ~5%
-  
+-   **General Solution**: $$ \rho(h^*) =  0.05 $$ Solve for $h^*$ to find practical range
+
+-   **Exponential Covariance Example**: $$ \rho(h^*) = \exp\left(-\frac{h^*}{\phi}\right) = 0.05 $$ $$ \Rightarrow -\frac{h^*}{\phi} = \log(0.05) \approx -3 $$ $$ \Rightarrow h^* \approx 3\phi $$
+
+    -   *Practical range*: $3\phi$
+    -   At $h^* = 3\phi$, correlation drops to \~5%
 
 ------------------------------------------------------------------------
 
@@ -125,8 +120,7 @@ The Matérn family includes two important special cases:
     $$
 -   For the Matérn process, it is derived from its covariance function $$
     \gamma(h) = \sigma^2 \left( 1 - \rho(h) \right), h = ||x-x'||
-    $$
-where $\rho(h)$ is the correlation function of $S(x)$.
+    $$ where $\rho(h)$ is the correlation function of $S(x)$.
 
 . . .
 
@@ -144,7 +138,7 @@ where $\rho(h)$ is the correlation function of $S(x)$.
 
 -   The expression of the variogram changes to $$
     \gamma(h) = \tau^2 + \sigma^2 \left( 1 - C(h) \right), h = ||x-x'||
-    $$ . . .
+    $$
 
 <center>![](Images/theo_variog_withnoise.png){width="80%"}</center>
 
@@ -277,25 +271,21 @@ $$
 
 ![](Images/rlogo.png){width="10%"} [glgm_fit.R](R%20scripts/glgm_fit.R)
 
-
 ## The Nugget Effect as Small-Scale Spatial Correlation {.smaller .scrollablel}
 
-- **Interpretation of $Z_i$**:
-  - Represents microscale variation (below measurement distance)
-  - Captures measurement error or sub-resolution variability
-
-- **Example Process with Threshold Correlation**:
-  $$ \rho(h) = \begin{cases} 
-      \delta & \text{if } h \leq h_0 \\
-      0 & \text{if } h > h_0 
-      \end{cases} $$
-  - Where $\delta$ is small-scale correlation
-  - $h_0$ is resolution threshold
-
-- **Practical Implications**:
-  - If minimum distance between samples $> h_0$:
-    - Process appears as $Z_i \sim N(0, \tau^2)$ (pure noise)
-    - Spatial structure in $Z_i$ becomes undetectable
-  - Cannot disentangle $Z_i$ from measurement error in the lineara geostatistical model
+-   **Interpretation of** $Z_i$:
+    -   Represents microscale variation (below measurement distance)
+    -   Captures measurement error or sub-resolution variability
+-   **Example Process with Threshold Correlation**: $$ \rho(h) = \begin{cases} 
+        \delta & \text{if } h \leq h_0 \\
+        0 & \text{if } h > h_0 
+        \end{cases} $$
+    -   Where $\delta$ is small-scale correlation
+    -   $h_0$ is resolution threshold
+-   **Practical Implications**:
+    -   If minimum distance between samples $> h_0$:
+        -   Process appears as $Z_i \sim N(0, \tau^2)$ (pure noise)
+        -   Spatial structure in $Z_i$ becomes undetectable
+    -   Cannot disentangle $Z_i$ from measurement error in the lineara geostatistical model
 
 ------------------------------------------------------------------------
