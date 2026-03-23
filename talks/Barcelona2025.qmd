@@ -198,6 +198,44 @@ $$
     $$
 :::
 
+## Alternative latent model formulations (1) {.smaller}
+::: incremental
+
+<div style="max-height:65vh; overflow-y:auto; padding-right:8px;">
+
+- Model: $Y \mid T=t = (1-t)Y_0 + tY_1$,  
+  $Y_0 \sim \mathcal{N}(\mu_0,\sigma_0^2),\; Y_1 \sim \mathcal{N}(\mu_1,\sigma_1^2)$
+- Mean: $\mathbb{E}(Y\mid T=t)=(1-t)\mu_0+t\mu_1$
+- Variance: ${\rm Var}(Y\mid T=t)=(1-t)^2\sigma_0^2+t^2\sigma_1^2$
+  - Quadratic; minimum at $t^*=\sigma_0^2/(\sigma_0^2+\sigma_1^2)$ → **U‑shape**
+- Implications:
+  - Lowest variability at intermediate $t$ (implausible for serology)
+  - Retains two latent outcome mechanisms → **binary flavor**
+  - With $\sigma_1^2<\sigma_0^2$, our linear interpolation gives **monotone decreasing** variance
+
+</div>
+:::
+---
+
+## Alternative latent model formulations (2) {.smaller}
+::: incremental
+
+<div style="max-height:65vh; overflow-y:auto; padding-right:8px;">
+
+- Model: $Y \mid T=t=(1-Z_t)Y_0+Z_tY_1,\; Z_t\sim{\rm Bernoulli}(t)$
+- Variance:
+  $$
+  {\rm Var}(Y\mid T=t)=(1-t)\sigma_0^2+t\sigma_1^2+t(1-t)(\mu_1-\mu_0)^2
+  $$
+  - Extra **between‑component** term, maximized at $t=0.5$
+- Implications:
+  - Equivalent to a **GMM conditional on $t$**
+  - **Probabilistic binary assignment** (low/high) persists
+  - Does not capture a continuous immune activation spectrum
+
+</div>
+:::
+
 ## How do we model the latent variable $T$ ? {.smaller}
 
 :::: incremental
@@ -218,6 +256,42 @@ $$
 ## Single Beta model for $T$ {.smaller}
 
 ![](figures/dens_lbmg.png){fig-align="center" width="70%"}
+
+
+## Inference {.smaller}
+
+::: {style="font-size:0.8em; line-height:1.15; max-height:650px; overflow-y:auto; padding-right:10px;"}
+-   Two complementary inference approaches are used:
+
+    (i) full maximum likelihood, and\
+    (ii) a fast histogram-based approximation for exploratory fitting and initialisation.
+
+-   Conditional on the latent immune state $T$, antibody concentrations are Gaussian with mean and variance interpolating between low and high sero-reactivity extremes.\
+    The marginal density of $Y$ is obtained by integrating out $T$: $$
+    f(y;\boldsymbol\theta,\boldsymbol\psi)=\int_0^1 
+    \phi\!\left(y;(1-t)\mu_0+t\mu_1,(1-t)\sigma_0^2+t\sigma_1^2\right)
+    \,g_T(t;\boldsymbol\psi)\,dt.
+    $$
+
+-   Exact maximum likelihood is based on $$
+    \ell(\boldsymbol\theta,\boldsymbol\psi)=\sum_{i=1}^n\log f(y_i;\boldsymbol\theta,\boldsymbol\psi),
+    $$ but direct maximisation is computationally intensive due to repeated numerical integration.
+:::
+
+## A computationally efficient $L_2$-based estimator {.smaller}
+::: {style="font-size:1.1em; line-height:1.15; max-height:650px; overflow-y:auto; padding-right:10px;"}
+-   To reduce computation, data are summarised into a histogram.\
+    Let $\widehat f_j = n_j/(n\Delta_j)$ be the empirical density in bin $j$, and approximate model probabilities by evaluation at bin midpoints: $$
+    p_j(\boldsymbol\theta,\boldsymbol\psi)\approx f(m_j;\boldsymbol\theta,\boldsymbol\psi)\Delta_j.
+    $$
+
+-   Parameters are estimated by minimising an $L_2$ distance between empirical and model densities: $$
+    Q(\boldsymbol\theta,\boldsymbol\psi)=\sum_{j=1}^J\{\widehat f_j-f(m_j;\boldsymbol\theta,\boldsymbol\psi)\}^2.
+    $$ This yields a robust minimum-distance estimator and is computationally efficient when $J\ll n$.
+    
+-   **Theorem.** Under regularity conditions, the $L_2$-based estimator converges in probability to the true $(\boldsymbol\theta, \boldsymbol\psi)$.
+
+:::
 
 ## How do we model age dependency in $T$? {.smaller}
 
@@ -247,123 +321,153 @@ These differences mean that AMA1 and MSP1 encode different information about tra
 In our framework, this translates naturally into antigen-specific age effects on the latent variable T T, capturing faster acquisition for AMA1 and slower, more gradual accumulation for MSP1, without imposing hard sero-positivity thresholds.
 :::
 
-## Age-dependent latent model for AMA1 {.smaller}
+## AMA1: Model formulation (1) {.smaller}
+<div style="max-height:65vh; overflow-y:auto; padding-right:8px;">
 
-:::: incremental
-::: {style="font-size:0.85em; line-height:1.15;"}
--   For age $a<15$ years, $T$ follows a Dirac-Beta mixture: $$
-    T \sim (1-\pi(a))\,\delta_0 + \pi(a)\,\mathrm{Beta}(\alpha_2,1), \quad
-    \pi(a)=1-\exp(-\lambda a).
-    $$
--   For age $a\ge 15$ years, $T$ follows a single Beta with logit-linear mean: $$
-    T \sim \mathrm{Beta}\big(\mu(a)\phi,\,[1-\mu(a)]\phi\big), \quad
-    \log\left\{\frac{\mu(a)}{1-\mu(a)}\right\}=\eta_0+\eta_1\log(a).
-    $$
--   Continuity constraint on the mean of $T$ at $a=15$: $$
-    \eta_0=\mathrm{logit}(\mu_{15^-})-\eta_1\log(15),
-    $$ with $$
-    \mu_{15^-}=(1-\exp(-15\lambda))\frac{\alpha_2}{\alpha_2+1}.
-    $$
+::: incremental
+
+**Latent variable for age $<\tau$:**
+
+- Mixed discrete–continuous  
+  $$
+  f_T(t;a)=
+  \begin{cases}
+  1-\pi(a), & t=0,\\[4pt]
+  \pi(a)\,\alpha_2\,t^{\alpha_2-1}, & 0<t<1,
+  \end{cases}
+  $$
+
+- Probability of high sero-reactivity   
+  $$
+  \pi(a)=1-\exp(-\lambda a)
+  $$
+
+
+
 :::
-::::
 
-## AMA1: parameter estimates
+</div>
 
-+---------------------------------+----------+-------+--------+--------+--------+
-| Parameter                       | Estimate | SD    | 2.5%   | 50%    | 97.5%  |
-+=================================+==========+=======+========+========+========+
-| *Distribution of Y \| T*        |          |       |        |        |        |
-+---------------------------------+----------+-------+--------+--------+--------+
-| μ₀                              | -3.427   | 0.077 | -3.626 | -3.470 | -3.311 |
-+---------------------------------+----------+-------+--------+--------+--------+
-| μ₁                              | 0.790    | 0.016 | 0.774  | 0.808  | 0.838  |
-+---------------------------------+----------+-------+--------+--------+--------+
-| σ₀                              | 0.606    | 0.041 | 0.537  | 0.609  | 0.695  |
-+---------------------------------+----------+-------+--------+--------+--------+
-| σ₁                              | 0.114    | 0.022 | 0.077  | 0.122  | 0.164  |
-+---------------------------------+----------+-------+--------+--------+--------+
-| *Distribution of T (age \< 15)* |          |       |        |        |        |
-+---------------------------------+----------+-------+--------+--------+--------+
-| α₂                              | 1.337    | 0.074 | 1.248  | 1.341  | 1.563  |
-+---------------------------------+----------+-------+--------+--------+--------+
-| λ                               | 0.224    | 0.032 | 0.173  | 0.227  | 0.299  |
-+---------------------------------+----------+-------+--------+--------+--------+
-| *Distribution of T (age ≥ 15)*  |          |       |        |        |        |
-+---------------------------------+----------+-------+--------+--------+--------+
-| ϕ                               | 3.423    | 0.259 | 3.078  | 3.520  | 4.117  |
-+---------------------------------+----------+-------+--------+--------+--------+
-| η₁                              | -0.096   | 0.124 | -0.399 | -0.097 | 0.110  |
-+---------------------------------+----------+-------+--------+--------+--------+
+---
 
-::: {style="font-size:0.85em; line-height:1.15;"}
-*The estimate of* $\lambda$ suggests that on average it takes about 4.5 years for individuals to reach higher levels of sero-reactivity.
+## AMA1: Model formulation (2) {.smaller}
+<div style="max-height:65vh; overflow-y:auto; padding-right:8px;">
+
+::: incremental
+
+**Latent variable for age $\ge\tau$:**
+
+- Latent variable distribution
+  $$
+  T\sim \mathrm{Beta}(\mu(a)\phi,\,[1-\mu(a)]\phi)
+  $$
+
+- Logit–linear regression  
+  $$
+  \mathrm{logit}\{\mu(a)\}=\eta_0+\eta_1\log(a)
+  $$
+
+- Continuity constraint at the change-point $\tau$  
+  $$
+  \eta_0=\mathrm{logit}(\mu_{\tau^-})-\eta_1\log(\tau)
+  $$
+
+- Mean of $T$ for $a < \tau$:  
+  $$
+  \mu_{\tau^-}
+  =p_0 e^{-\tau\lambda}\frac{\alpha_1}{\alpha_1+\beta_1}
+  +\bigl(1-p_0 e^{-\tau\lambda}\bigr)
+   \frac{\alpha_2}{\alpha_2+\beta_2}
+  $$
+
 :::
+
+</div>
+
+---
+
+## AMA1: Parameter estimates {.smaller}
+<div style="max-height:65vh; overflow-y:auto; padding-right:8px;">
+
+| Parameter | Estimate | SD | 2.5% | 50% | 97.5% |
+|-----------|---------:|---:|-----:|----:|------:|
+| $\mu_0$ | -3.194 | 0.021 | -3.237 | -3.194 | -3.151 |
+| $\mu_1$ | 0.747 | 0.010 | 0.727 | 0.747 | 0.768 |
+| $\sigma_0$ | 0.745 | 0.013 | 0.719 | 0.745 | 0.772 |
+| $\sigma_1$ | 0.091 | 0.013 | 0.062 | 0.091 | 0.117 |
+| $\tau$ | 20.842 | 0.420 | 20.003 | 20.876 | 20.998 |
+| $\alpha_2$ | 1.498 | 0.033 | 1.436 | 1.499 | 1.577 |
+| $\lambda$ | 0.148 | 0.005 | 0.140 | 0.148 | 0.158 |
+| $\phi$ | 4.544 | 0.131 | 4.298 | 4.551 | 4.828 |
+| $\eta_1$ | -0.138 | 0.027 | -0.191 | -0.135 | -0.080 |
+
+</div>
+
 
 ## AMA1 analysis: model-based histograms
 
 ![](figures/joint_ama.png){width="55%," fig-align="center"}
 
-## Age-dependent latent model for MSP1 {.smaller}
-
-:::: {style="font-size:0.85em; line-height:1.15;"}
--   Latent sero-reactivity $T$ follows a single age-dependent Beta distribution: $$
-    T \sim \mathrm{Beta}(\alpha(a),\beta(a)).
-    $$
+## MSP1: Model formulation {.smaller}
+<div style="max-height:65vh; overflow-y:auto; padding-right:8px;">
 
 ::: incremental
--   Age-dependent shape parameters: $$
-    \alpha(a)=\alpha_0\,a^{\gamma}, \quad \beta(a)=\beta_0\,a^{\delta(a)}.
-    $$
--   Piecewise age effect in $\beta(a)$ with change-point $\tau_{cp}$: $$
-    \delta(a)=
-    \begin{cases}
-    \delta_1, & a \le \tau_{cp},\\
-    \delta_1+\delta_2, & a > \tau_{cp}.
-    \end{cases}
-    $$
--   Induced mean of $T$ for $a \ge \tau_{cp}$: $$
-    \mathbb{E}[T;a]=\left\{1+\frac{\beta_0}{\alpha_0}a^{\delta_1+\delta_2-\gamma}\right\}^{-1}.
-    $$
+
+**Single‑component age‑dependent Beta distribution**
+
+- Distribution of the latent variable
+  $$
+  T \sim \mathrm{Beta}(\alpha(a),\,\beta(a))
+  $$
+  where $\alpha(a)=\alpha_0\,a^{\gamma}$ and $\beta(a)=\beta_0\,a^{\delta(a)}$.
+
+- Change point parameter
+  $$
+  \delta(a)=
+  \begin{cases}
+  \delta_1, & a\le \tau_{cp},\\[4pt]
+  \delta_1+\delta_2, & a>\tau_{cp}. 
+  \end{cases}
+  $$
+
 :::
-::::
 
-## MSP1: parameter estimates
+</div>
 
-+--------------------------+--------+-------+--------+--------+--------+
-| Parameter                | Mean   | SD    | 2.5%   | 50%    | 97.5%  |
-+==========================+========+=======+========+========+========+
-| *Distribution of Y \| T* |        |       |        |        |        |
-+--------------------------+--------+-------+--------+--------+--------+
-| μ~0~                     | -4.481 | 0.042 | -4.567 | -4.479 | -4.404 |
-+--------------------------+--------+-------+--------+--------+--------+
-| μ~1~                     | 1.255  | 0.026 | 1.205  | 1.255  | 1.307  |
-+--------------------------+--------+-------+--------+--------+--------+
-| log σ~0~                 | -0.677 | 0.043 | -0.764 | -0.676 | -0.599 |
-+--------------------------+--------+-------+--------+--------+--------+
-| log σ~1~                 | -5.716 | 0.536 | -6.892 | -5.666 | -4.874 |
-+--------------------------+--------+-------+--------+--------+--------+
-| *Distribution of T*      |        |       |        |        |        |
-+--------------------------+--------+-------+--------+--------+--------+
-| α~0~                     | 0.093  | 0.036 | 0.025  | 0.093  | 0.166  |
-+--------------------------+--------+-------+--------+--------+--------+
-| γ~1~                     | 0.277  | 0.011 | 0.256  | 0.277  | 0.297  |
-+--------------------------+--------+-------+--------+--------+--------+
-| β~0~                     | 0.755  | 0.037 | 0.684  | 0.754  | 0.827  |
-+--------------------------+--------+-------+--------+--------+--------+
-| δ~1~                     | 0.110  | 0.018 | 0.075  | 0.110  | 0.145  |
-+--------------------------+--------+-------+--------+--------+--------+
-| τ~cp~                    | 11.623 | 0.406 | 11.004 | 11.667 | 12.197 |
-+--------------------------+--------+-------+--------+--------+--------+
-| δ~2~                     | -0.061 | 0.010 | -0.080 | -0.061 | -0.042 |
-+--------------------------+--------+-------+--------+--------+--------+
+---
+
+
+## MSP1: Parameter estimates {.smaller}
+<div style="max-height:65vh; overflow-y:auto; padding-right:8px;">
+
+| Parameter | Mean | SD | 2.5% | 50% | 97.5% |
+|-----------|-----:|----:|------:|------:|--------:|
+| $\mu_0$ | -4.481 | 0.042 | -4.567 | -4.479 | -4.404 |
+| $\mu_1$ | 1.255 | 0.026 | 1.205 | 1.255 | 1.307 |
+| $\log\sigma_0$ | -0.677 | 0.043 | -0.764 | -0.676 | -0.599 |
+| $\log\sigma_1$ | -5.716 | 0.536 | -6.892 | -5.666 | -4.874 |
+| $\alpha_0$ | 0.093 | 0.036 | 0.025 | 0.093 | 0.166 |
+| $\gamma$ | 0.277 | 0.011 | 0.256 | 0.277 | 0.297 |
+| $\beta_0$ | 0.755 | 0.037 | 0.684 | 0.754 | 0.827 |
+| $\delta_1$ | 0.110 | 0.018 | 0.075 | 0.110 | 0.145 |
+| $\tau_{cp}$ | 11.623 | 0.406 | 11.004 | 11.667 | 12.197 |
+| $\delta_2$ | -0.061 | 0.010 | -0.080 | -0.061 | -0.042 |
+
+</div>
 
 ## MSP1 analysis: results
 
 ![](figures/joint_msp.png){width="55%," fig-align="center"}
 
-## Predicted antibody levels in AMA1 and MSP1
+## Predicted antibody levels in AMA1
+![](figures/ama_ab.png)
 
-![](figures/fig_expected_log_ab_by_age.png)
+## Predicted antibody levels in MSP1
+![](figures/msp_ab.png)
+
+## Model comparison and computational cost {.smaller}
+![](figures/table_comparison.png)
+
 
 ## Summary and conclusions {.smaller}
 
@@ -385,35 +489,6 @@ In our framework, this translates naturally into antigen-specific age effects on
 🔗 [giorgistat.github.io](https://giorgistat.github.io)\
 📧 e.giorgi\@bham.ac.uk\
 📍 BESTEAM, Department of Applied Health Sciences, University of Birmingham
-
-## Inference {.smaller}
-
-::: {style="font-size:0.8em; line-height:1.15; max-height:650px; overflow-y:auto; padding-right:10px;"}
--   Two complementary inference approaches are used:
-
-    (i) full maximum likelihood, and\
-    (ii) a fast histogram-based approximation for exploratory fitting and initialisation.
-
--   Conditional on the latent immune state $T$, antibody concentrations are Gaussian with mean and variance interpolating between low and high sero-reactivity extremes.\
-    The marginal density of $Y$ is obtained by integrating out $T$: $$
-    f(y;\boldsymbol\theta,\boldsymbol\psi)=\int_0^1 
-    \phi\!\left(y;(1-t)\mu_0+t\mu_1,(1-t)\sigma_0^2+t\sigma_1^2\right)
-    \,g_T(t;\boldsymbol\psi)\,dt.
-    $$
-
--   Exact maximum likelihood is based on $$
-    \ell(\boldsymbol\theta,\boldsymbol\psi)=\sum_{i=1}^n\log f(y_i;\boldsymbol\theta,\boldsymbol\psi),
-    $$ but direct maximisation is computationally intensive due to repeated numerical integration.
-
--   To reduce computation, data are summarised into a histogram.\
-    Let $\widehat f_j = n_j/(n\Delta_j)$ be the empirical density in bin $j$, and approximate model probabilities by evaluation at bin midpoints: $$
-    p_j(\boldsymbol\theta,\boldsymbol\psi)\approx f(m_j;\boldsymbol\theta,\boldsymbol\psi)\Delta_j.
-    $$
-
--   Parameters are estimated by minimising an $L_2$ distance between empirical and model densities: $$
-    Q(\boldsymbol\theta,\boldsymbol\psi)=\sum_{j=1}^J\{\widehat f_j-f(m_j;\boldsymbol\theta,\boldsymbol\psi)\}^2.
-    $$ This yields a robust minimum-distance estimator and is computationally efficient when $J\ll n$.
-:::
 
 ## Exploratory analysis: AMA1
 

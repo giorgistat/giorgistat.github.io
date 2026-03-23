@@ -1683,8 +1683,8 @@
     "objectID": "talks/Barcelona2025.html#ama1-parameter-estimates",
     "href": "talks/Barcelona2025.html#ama1-parameter-estimates",
     "title": "A flexible class of latent variable models for the analysis of antibody response data",
-    "section": "AMA1: parameter estimates",
-    "text": "AMA1: parameter estimates\n\n\n\n\n\n\n\n\n\n\n\nParameter\nEstimate\nSD\n2.5%\n50%\n97.5%\n\n\n\n\nDistribution of Y | T\n\n\n\n\n\n\n\nμ₀\n-3.427\n0.077\n-3.626\n-3.470\n-3.311\n\n\nμ₁\n0.790\n0.016\n0.774\n0.808\n0.838\n\n\nσ₀\n0.606\n0.041\n0.537\n0.609\n0.695\n\n\nσ₁\n0.114\n0.022\n0.077\n0.122\n0.164\n\n\nDistribution of T (age &lt; 15)\n\n\n\n\n\n\n\nα₂\n1.337\n0.074\n1.248\n1.341\n1.563\n\n\nλ\n0.224\n0.032\n0.173\n0.227\n0.299\n\n\nDistribution of T (age ≥ 15)\n\n\n\n\n\n\n\nϕ\n3.423\n0.259\n3.078\n3.520\n4.117\n\n\nη₁\n-0.096\n0.124\n-0.399\n-0.097\n0.110\n\n\n\n\nThe estimate of \\(\\lambda\\) suggests that on average it takes about 4.5 years for individuals to reach higher levels of sero-reactivity."
+    "section": "AMA1: Parameter estimates",
+    "text": "AMA1: Parameter estimates\n\n\n\n\nParameter\nEstimate\nSD\n2.5%\n50%\n97.5%\n\n\n\n\n\\(\\mu_0\\)\n-3.194\n0.021\n-3.237\n-3.194\n-3.151\n\n\n\\(\\mu_1\\)\n0.747\n0.010\n0.727\n0.747\n0.768\n\n\n\\(\\sigma_0\\)\n0.745\n0.013\n0.719\n0.745\n0.772\n\n\n\\(\\sigma_1\\)\n0.091\n0.013\n0.062\n0.091\n0.117\n\n\n\\(\\tau\\)\n20.842\n0.420\n20.003\n20.876\n20.998\n\n\n\\(\\alpha_2\\)\n1.498\n0.033\n1.436\n1.499\n1.577\n\n\n\\(\\lambda\\)\n0.148\n0.005\n0.140\n0.148\n0.158\n\n\n\\(\\phi\\)\n4.544\n0.131\n4.298\n4.551\n4.828\n\n\n\\(\\eta_1\\)\n-0.138\n0.027\n-0.191\n-0.135\n-0.080"
   },
   {
     "objectID": "talks/Barcelona2025.html#ama1-analysis-model-based-histograms",
@@ -1704,8 +1704,8 @@
     "objectID": "talks/Barcelona2025.html#msp1-parameter-estimates",
     "href": "talks/Barcelona2025.html#msp1-parameter-estimates",
     "title": "A flexible class of latent variable models for the analysis of antibody response data",
-    "section": "MSP1: parameter estimates",
-    "text": "MSP1: parameter estimates\n\n\n\n\n\n\n\n\n\n\n\nParameter\nMean\nSD\n2.5%\n50%\n97.5%\n\n\n\n\nDistribution of Y | T\n\n\n\n\n\n\n\nμ0\n-4.481\n0.042\n-4.567\n-4.479\n-4.404\n\n\nμ1\n1.255\n0.026\n1.205\n1.255\n1.307\n\n\nlog σ0\n-0.677\n0.043\n-0.764\n-0.676\n-0.599\n\n\nlog σ1\n-5.716\n0.536\n-6.892\n-5.666\n-4.874\n\n\nDistribution of T\n\n\n\n\n\n\n\nα0\n0.093\n0.036\n0.025\n0.093\n0.166\n\n\nγ1\n0.277\n0.011\n0.256\n0.277\n0.297\n\n\nβ0\n0.755\n0.037\n0.684\n0.754\n0.827\n\n\nδ1\n0.110\n0.018\n0.075\n0.110\n0.145\n\n\nτcp\n11.623\n0.406\n11.004\n11.667\n12.197\n\n\nδ2\n-0.061\n0.010\n-0.080\n-0.061\n-0.042"
+    "section": "MSP1: Parameter estimates",
+    "text": "MSP1: Parameter estimates\n\n\n\n\nParameter\nMean\nSD\n2.5%\n50%\n97.5%\n\n\n\n\n\\(\\mu_0\\)\n-4.481\n0.042\n-4.567\n-4.479\n-4.404\n\n\n\\(\\mu_1\\)\n1.255\n0.026\n1.205\n1.255\n1.307\n\n\n\\(\\log\\sigma_0\\)\n-0.677\n0.043\n-0.764\n-0.676\n-0.599\n\n\n\\(\\log\\sigma_1\\)\n-5.716\n0.536\n-6.892\n-5.666\n-4.874\n\n\n\\(\\alpha_0\\)\n0.093\n0.036\n0.025\n0.093\n0.166\n\n\n\\(\\gamma\\)\n0.277\n0.011\n0.256\n0.277\n0.297\n\n\n\\(\\beta_0\\)\n0.755\n0.037\n0.684\n0.754\n0.827\n\n\n\\(\\delta_1\\)\n0.110\n0.018\n0.075\n0.110\n0.145\n\n\n\\(\\tau_{cp}\\)\n11.623\n0.406\n11.004\n11.667\n12.197\n\n\n\\(\\delta_2\\)\n-0.061\n0.010\n-0.080\n-0.061\n-0.042"
   },
   {
     "objectID": "talks/Barcelona2025.html#predicted-antibody-levels-in-ama1-and-msp1",
@@ -1740,7 +1740,7 @@
     "href": "talks/Barcelona2025.html#inference",
     "title": "A flexible class of latent variable models for the analysis of antibody response data",
     "section": "Inference",
-    "text": "Inference\n\n\nTwo complementary inference approaches are used:\n\nfull maximum likelihood, and\n\na fast histogram-based approximation for exploratory fitting and initialisation.\n\nConditional on the latent immune state \\(T\\), antibody concentrations are Gaussian with mean and variance interpolating between low and high sero-reactivity extremes.\nThe marginal density of \\(Y\\) is obtained by integrating out \\(T\\): \\[\nf(y;\\boldsymbol\\theta,\\boldsymbol\\psi)=\\int_0^1\n\\phi\\!\\left(y;(1-t)\\mu_0+t\\mu_1,(1-t)\\sigma_0^2+t\\sigma_1^2\\right)\n\\,g_T(t;\\boldsymbol\\psi)\\,dt.\n\\]\nExact maximum likelihood is based on \\[\n\\ell(\\boldsymbol\\theta,\\boldsymbol\\psi)=\\sum_{i=1}^n\\log f(y_i;\\boldsymbol\\theta,\\boldsymbol\\psi),\n\\] but direct maximisation is computationally intensive due to repeated numerical integration.\nTo reduce computation, data are summarised into a histogram.\nLet \\(\\widehat f_j = n_j/(n\\Delta_j)\\) be the empirical density in bin \\(j\\), and approximate model probabilities by evaluation at bin midpoints: \\[\np_j(\\boldsymbol\\theta,\\boldsymbol\\psi)\\approx f(m_j;\\boldsymbol\\theta,\\boldsymbol\\psi)\\Delta_j.\n\\]\nParameters are estimated by minimising an \\(L_2\\) distance between empirical and model densities: \\[\nQ(\\boldsymbol\\theta,\\boldsymbol\\psi)=\\sum_{j=1}^J\\{\\widehat f_j-f(m_j;\\boldsymbol\\theta,\\boldsymbol\\psi)\\}^2.\n\\] This yields a robust minimum-distance estimator and is computationally efficient when \\(J\\ll n\\)."
+    "text": "Inference\n\n\nTwo complementary inference approaches are used:\n\nfull maximum likelihood, and\n\na fast histogram-based approximation for exploratory fitting and initialisation.\n\nConditional on the latent immune state \\(T\\), antibody concentrations are Gaussian with mean and variance interpolating between low and high sero-reactivity extremes.\nThe marginal density of \\(Y\\) is obtained by integrating out \\(T\\): \\[\nf(y;\\boldsymbol\\theta,\\boldsymbol\\psi)=\\int_0^1\n\\phi\\!\\left(y;(1-t)\\mu_0+t\\mu_1,(1-t)\\sigma_0^2+t\\sigma_1^2\\right)\n\\,g_T(t;\\boldsymbol\\psi)\\,dt.\n\\]\nExact maximum likelihood is based on \\[\n\\ell(\\boldsymbol\\theta,\\boldsymbol\\psi)=\\sum_{i=1}^n\\log f(y_i;\\boldsymbol\\theta,\\boldsymbol\\psi),\n\\] but direct maximisation is computationally intensive due to repeated numerical integration."
   },
   {
     "objectID": "talks/Barcelona2025.html#exploratory-analysis-ama1",
@@ -1860,5 +1860,96 @@
     "title": "Accounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods",
     "section": "Discussion",
     "text": "Discussion\nA1 — Baseline equilibrium: Replace \\(S(x)\\) with a spatio-temporal process \\(S(x,t)\\) to capture background prevalence trends. Regularise \\(f(v)\\) via informative priors or penalized likelihood to preserve identifiability of MDA effects.\n\nA2 — Transient MDA effect: Allow partial permanence once prevalence drops below an elimination threshold \\(p^*\\): \\[\nf(x,t) = \\alpha \\left[(1 - r(x,t))\\exp\\left\\{-\\frac{t - t^*(x,t)}{\\gamma}\\right\\} + \\delta \\times r(x,t)\\right],\n\\] where \\(r(x,t) = I\\{P(x, t^-) &lt; p^*\\}\\)\n\n\nA3 — Constant relative reduction: Allow \\(\\alpha\\) to vary with baseline prevalence \\(P^*(x)\\) via a smooth function \\(h(\\cdot)\\), or a piecewise-constant specification across prevalence strata.\n\n\nAdherence: Weight each MDA round by observed adherence \\(A(x,t) \\in [0,1]\\): \\[\nP(x,t) = P^*(x)\\prod_{j:\\,u_j &lt; t} \\Big(1 - f(t-u_j)\\Big)^{A(x, u_j)\\, I(x, u_j)}\n\\]\n\n\nAge-varying effects: Model \\(\\alpha(a)\\) and \\(\\gamma(a)\\) as smooth or piecewise functions of age.\n\n\nMultiple interventions: Assign each intervention its own impact function \\(f_k\\), with an interaction term \\(\\psi_{k\\ell}\\) to capture synergy (\\(\\psi_{k\\ell}&gt;0\\)) or antagonism (\\(\\psi_{k\\ell}&lt;0\\))."
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#a-computationally-efficient-l_2-based-estimator",
+    "href": "talks/Barcelona2025.html#a-computationally-efficient-l_2-based-estimator",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "A computationally efficient \\(L_2\\)-based estimator",
+    "text": "A computationally efficient \\(L_2\\)-based estimator\n\n\nTo reduce computation, data are summarised into a histogram.\nLet \\(\\widehat f_j = n_j/(n\\Delta_j)\\) be the empirical density in bin \\(j\\), and approximate model probabilities by evaluation at bin midpoints: \\[\np_j(\\boldsymbol\\theta,\\boldsymbol\\psi)\\approx f(m_j;\\boldsymbol\\theta,\\boldsymbol\\psi)\\Delta_j.\n\\]\nParameters are estimated by minimising an \\(L_2\\) distance between empirical and model densities: \\[\nQ(\\boldsymbol\\theta,\\boldsymbol\\psi)=\\sum_{j=1}^J\\{\\widehat f_j-f(m_j;\\boldsymbol\\theta,\\boldsymbol\\psi)\\}^2.\n\\] This yields a robust minimum-distance estimator and is computationally efficient when \\(J\\ll n\\).\nTheorem. Under regularity conditions, the \\(L_2\\)-based estimator converges in probability to the true \\((\\boldsymbol\\theta, \\boldsymbol\\psi)\\)."
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#comparison-with-alternative-latent-model-formulations-1",
+    "href": "talks/Barcelona2025.html#comparison-with-alternative-latent-model-formulations-1",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Comparison with alternative latent model formulations (1)",
+    "text": "Comparison with alternative latent model formulations (1)\n\n\nModel: \\(Y \\mid T=t = (1-t)Y_0 + tY_1\\),\n\\(Y_0 \\sim \\mathcal{N}(\\mu_0,\\sigma_0^2),\\; Y_1 \\sim \\mathcal{N}(\\mu_1,\\sigma_1^2)\\)\nMean: \\(\\mathbb{E}(Y\\mid T=t)=(1-t)\\mu_0+t\\mu_1\\)\nVariance: \\({\\rm Var}(Y\\mid T=t)=(1-t)^2\\sigma_0^2+t^2\\sigma_1^2\\)\n\nQuadratic; minimum at \\(t^*=\\sigma_0^2/(\\sigma_0^2+\\sigma_1^2)\\) → U‑shape\n\nImplications:\n\nLowest variability at intermediate \\(t\\) (implausible for serology)\nRetains two latent outcome mechanisms → binary flavor\nWith \\(\\sigma_1^2&lt;\\sigma_0^2\\), our linear interpolation gives monotone decreasing variance"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#comparison-with-alternative-latent-model-formulations-2",
+    "href": "talks/Barcelona2025.html#comparison-with-alternative-latent-model-formulations-2",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Comparison with alternative latent model formulations (2)",
+    "text": "Comparison with alternative latent model formulations (2)\n\n\nModel: \\(Y \\mid T=t=(1-Z_t)Y_0+Z_tY_1,\\; Z_t\\sim{\\rm Bernoulli}(t)\\)\nVariance: \\[\n{\\rm Var}(Y\\mid T=t)=(1-t)\\sigma_0^2+t\\sigma_1^2+t(1-t)(\\mu_1-\\mu_0)^2\n\\]\n\nExtra between‑component term, maximized at \\(t=0.5\\)\n\nImplications:\n\nEquivalent to a GMM conditional on \\(t\\)\nProbabilistic binary assignment (low/high) persists\nDoes not capture a continuous immune activation spectrum"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#alternative-latent-model-formulations-1",
+    "href": "talks/Barcelona2025.html#alternative-latent-model-formulations-1",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Alternative latent model formulations (1)",
+    "text": "Alternative latent model formulations (1)\n\n\nModel: \\(Y \\mid T=t = (1-t)Y_0 + tY_1\\),\n\\(Y_0 \\sim \\mathcal{N}(\\mu_0,\\sigma_0^2),\\; Y_1 \\sim \\mathcal{N}(\\mu_1,\\sigma_1^2)\\)\nMean: \\(\\mathbb{E}(Y\\mid T=t)=(1-t)\\mu_0+t\\mu_1\\)\nVariance: \\({\\rm Var}(Y\\mid T=t)=(1-t)^2\\sigma_0^2+t^2\\sigma_1^2\\)\n\nQuadratic; minimum at \\(t^*=\\sigma_0^2/(\\sigma_0^2+\\sigma_1^2)\\) → U‑shape\n\nImplications:\n\nLowest variability at intermediate \\(t\\) (implausible for serology)\nRetains two latent outcome mechanisms → binary flavor\nWith \\(\\sigma_1^2&lt;\\sigma_0^2\\), our linear interpolation gives monotone decreasing variance"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#alternative-latent-model-formulations-2",
+    "href": "talks/Barcelona2025.html#alternative-latent-model-formulations-2",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Alternative latent model formulations (2)",
+    "text": "Alternative latent model formulations (2)\n\n\nModel: \\(Y \\mid T=t=(1-Z_t)Y_0+Z_tY_1,\\; Z_t\\sim{\\rm Bernoulli}(t)\\)\nVariance: \\[\n{\\rm Var}(Y\\mid T=t)=(1-t)\\sigma_0^2+t\\sigma_1^2+t(1-t)(\\mu_1-\\mu_0)^2\n\\]\n\nExtra between‑component term, maximized at \\(t=0.5\\)\n\nImplications:\n\nEquivalent to a GMM conditional on \\(t\\)\nProbabilistic binary assignment (low/high) persists\nDoes not capture a continuous immune activation spectrum"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#ama1-model-formulation-1",
+    "href": "talks/Barcelona2025.html#ama1-model-formulation-1",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "AMA1: Model formulation (1)",
+    "text": "AMA1: Model formulation (1)\n\nLatent variable for age \\(&lt;\\tau\\):\n\nMixed discrete–continuous\n\\[\nf_T(t;a)=\n\\begin{cases}\n1-\\pi(a), & t=0,\\\\[4pt]\n\\pi(a)\\,\\alpha_2\\,t^{\\alpha_2-1}, & 0&lt;t&lt;1,\n\\end{cases}\n\\]\nProbability of high sero-reactivity\n\\[\n\\pi(a)=1-\\exp(-\\lambda a)\n\\]"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#ama1-model-formulation-2",
+    "href": "talks/Barcelona2025.html#ama1-model-formulation-2",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "AMA1: Model formulation (2)",
+    "text": "AMA1: Model formulation (2)\n\nLatent variable for age \\(\\ge\\tau\\):\n\nLatent variable distribution \\[\nT\\sim \\mathrm{Beta}(\\mu(a)\\phi,\\,[1-\\mu(a)]\\phi)\n\\]\nLogit–linear regression\n\\[\n\\mathrm{logit}\\{\\mu(a)\\}=\\eta_0+\\eta_1\\log(a)\n\\]\nContinuity constraint at the change-point \\(\\tau\\)\n\\[\n\\eta_0=\\mathrm{logit}(\\mu_{\\tau^-})-\\eta_1\\log(\\tau)\n\\]\nMean of \\(T\\) for \\(a &lt; \\tau\\):\n\\[\n\\mu_{\\tau^-}\n=p_0 e^{-\\tau\\lambda}\\frac{\\alpha_1}{\\alpha_1+\\beta_1}\n+\\bigl(1-p_0 e^{-\\tau\\lambda}\\bigr)\n\\frac{\\alpha_2}{\\alpha_2+\\beta_2}\n\\]"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#msp1-model-formulation-1",
+    "href": "talks/Barcelona2025.html#msp1-model-formulation-1",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "MSP1: Model formulation (1)",
+    "text": "MSP1: Model formulation (1)\n\nSingle‑component age‑dependent Beta distribution\n\nDistribution of the latent variable \\[\nT \\sim \\mathrm{Beta}(\\alpha(a),\\,\\beta(a))\n\\] where \\(\\alpha(a)=\\alpha_0\\,a^{\\gamma}\\) and \\(\\beta(a)=\\beta_0\\,a^{\\delta(a)}\\).\nChange point parameter \\[\n\\delta(a)=\n\\begin{cases}\n\\delta_1, & a\\le \\tau_{cp},\\\\[4pt]\n\\delta_1+\\delta_2, & a&gt;\\tau_{cp}.\n\\end{cases}\n\\]"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#msp1-model-formulation-2",
+    "href": "talks/Barcelona2025.html#msp1-model-formulation-2",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "MSP1: Model formulation (2)",
+    "text": "MSP1: Model formulation (2)\n\nInduced mean of \\(T\\) for \\(a\\ge\\tau_{cp}\\)\n\n\\[\n  \\mathbb{E}[T;a]\n  =\\left\\{1+\\frac{\\beta_0}{\\alpha_0}a^{\\,\\delta_1+\\delta_2-\\gamma}\\right\\}^{-1}\n  \\]\n\nConditional antibody model (same as AMA1)\n\n\\[\n  Y\\mid T=t\n  \\sim\n  \\mathcal{N}\\!\\big(\n  (1-t)\\mu_0+t\\mu_1,\\;\n  (1-t)\\sigma_0^2+t\\sigma_1^2\n  \\big)\n  \\]\n\nAge dependence enters only through \\(T\\)\n→ antibody distributions shift via the evolving Beta shape."
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#msp1-model-formulation",
+    "href": "talks/Barcelona2025.html#msp1-model-formulation",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "MSP1: Model formulation",
+    "text": "MSP1: Model formulation\n\nSingle‑component age‑dependent Beta distribution\n\nDistribution of the latent variable \\[\nT \\sim \\mathrm{Beta}(\\alpha(a),\\,\\beta(a))\n\\] where \\(\\alpha(a)=\\alpha_0\\,a^{\\gamma}\\) and \\(\\beta(a)=\\beta_0\\,a^{\\delta(a)}\\).\nChange point parameter \\[\n\\delta(a)=\n\\begin{cases}\n\\delta_1, & a\\le \\tau_{cp},\\\\[4pt]\n\\delta_1+\\delta_2, & a&gt;\\tau_{cp}.\n\\end{cases}\n\\]"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#model-comparison-and-computational-cost",
+    "href": "talks/Barcelona2025.html#model-comparison-and-computational-cost",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Model comparison and computational cost",
+    "text": "Model comparison and computational cost"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#predicted-antibody-levels-in-ama1",
+    "href": "talks/Barcelona2025.html#predicted-antibody-levels-in-ama1",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Predicted antibody levels in AMA1",
+    "text": "Predicted antibody levels in AMA1"
+  },
+  {
+    "objectID": "talks/Barcelona2025.html#predicted-antibody-levels-in-msp1",
+    "href": "talks/Barcelona2025.html#predicted-antibody-levels-in-msp1",
+    "title": "A flexible class of latent variable models for the analysis of antibody response data",
+    "section": "Predicted antibody levels in MSP1",
+    "text": "Predicted antibody levels in MSP1"
   }
 ]

@@ -353,6 +353,46 @@ Y \mid T=t \sim
 \]</span></p></li>
 </ul>
 </section>
+<section id="alternative-latent-model-formulations-1" class="slide level2 smaller">
+<h2>Alternative latent model formulations (1)</h2>
+<div style="max-height:65vh; overflow-y:auto; padding-right:8px;">
+<ul>
+<li class="fragment">Model: <span class="math inline">\(Y \mid T=t = (1-t)Y_0 + tY_1\)</span>,<br>
+<span class="math inline">\(Y_0 \sim \mathcal{N}(\mu_0,\sigma_0^2),\; Y_1 \sim \mathcal{N}(\mu_1,\sigma_1^2)\)</span></li>
+<li class="fragment">Mean: <span class="math inline">\(\mathbb{E}(Y\mid T=t)=(1-t)\mu_0+t\mu_1\)</span></li>
+<li class="fragment">Variance: <span class="math inline">\({\rm Var}(Y\mid T=t)=(1-t)^2\sigma_0^2+t^2\sigma_1^2\)</span>
+<ul>
+<li class="fragment">Quadratic; minimum at <span class="math inline">\(t^*=\sigma_0^2/(\sigma_0^2+\sigma_1^2)\)</span> → <strong>U‑shape</strong></li>
+</ul></li>
+<li class="fragment">Implications:
+<ul>
+<li class="fragment">Lowest variability at intermediate <span class="math inline">\(t\)</span> (implausible for serology)</li>
+<li class="fragment">Retains two latent outcome mechanisms → <strong>binary flavor</strong></li>
+<li class="fragment">With <span class="math inline">\(\sigma_1^2&lt;\sigma_0^2\)</span>, our linear interpolation gives <strong>monotone decreasing</strong> variance</li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="alternative-latent-model-formulations-2" class="slide level2 smaller">
+<h2>Alternative latent model formulations (2)</h2>
+<div style="max-height:65vh; overflow-y:auto; padding-right:8px;">
+<ul>
+<li class="fragment">Model: <span class="math inline">\(Y \mid T=t=(1-Z_t)Y_0+Z_tY_1,\; Z_t\sim{\rm Bernoulli}(t)\)</span></li>
+<li class="fragment">Variance: <span class="math display">\[
+{\rm Var}(Y\mid T=t)=(1-t)\sigma_0^2+t\sigma_1^2+t(1-t)(\mu_1-\mu_0)^2
+\]</span>
+<ul>
+<li class="fragment">Extra <strong>between‑component</strong> term, maximized at <span class="math inline">\(t=0.5\)</span></li>
+</ul></li>
+<li class="fragment">Implications:
+<ul>
+<li class="fragment">Equivalent to a <strong>GMM conditional on <span class="math inline">\(t\)</span></strong></li>
+<li class="fragment"><strong>Probabilistic binary assignment</strong> (low/high) persists</li>
+<li class="fragment">Does not capture a continuous immune activation spectrum</li>
+</ul></li>
+</ul>
+</div>
+</section>
 <section id="how-do-we-model-the-latent-variable-t" class="slide level2 smaller">
 <h2>How do we model the latent variable <span class="math inline">\(T\)</span> ?</h2>
 <div style="font-size:1em; line-height:1.15;">
@@ -374,6 +414,43 @@ T \sim \pi_0\,\text{Beta}(\alpha_0,\beta_0)
 <h2>Single Beta model for <span class="math inline">\(T\)</span></h2>
 
 <img data-src="figures/dens_lbmg.png" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"></section>
+<section id="inference" class="slide level2 smaller">
+<h2>Inference</h2>
+<div style="font-size:0.8em; line-height:1.15; max-height:650px; overflow-y:auto; padding-right:10px;">
+<ul>
+<li><p>Two complementary inference approaches are used:</p>
+<ol type="i">
+<li>full maximum likelihood, and<br>
+</li>
+<li>a fast histogram-based approximation for exploratory fitting and initialisation.</li>
+</ol></li>
+<li><p>Conditional on the latent immune state <span class="math inline">\(T\)</span>, antibody concentrations are Gaussian with mean and variance interpolating between low and high sero-reactivity extremes.<br>
+The marginal density of <span class="math inline">\(Y\)</span> is obtained by integrating out <span class="math inline">\(T\)</span>: <span class="math display">\[
+f(y;\boldsymbol\theta,\boldsymbol\psi)=\int_0^1
+\phi\!\left(y;(1-t)\mu_0+t\mu_1,(1-t)\sigma_0^2+t\sigma_1^2\right)
+\,g_T(t;\boldsymbol\psi)\,dt.
+\]</span></p></li>
+<li><p>Exact maximum likelihood is based on <span class="math display">\[
+\ell(\boldsymbol\theta,\boldsymbol\psi)=\sum_{i=1}^n\log f(y_i;\boldsymbol\theta,\boldsymbol\psi),
+\]</span> but direct maximisation is computationally intensive due to repeated numerical integration.</p></li>
+</ul>
+</div>
+</section>
+<section id="a-computationally-efficient-l_2-based-estimator" class="slide level2 smaller">
+<h2>A computationally efficient <span class="math inline">\(L_2\)</span>-based estimator</h2>
+<div style="font-size:1.1em; line-height:1.15; max-height:650px; overflow-y:auto; padding-right:10px;">
+<ul>
+<li><p>To reduce computation, data are summarised into a histogram.<br>
+Let <span class="math inline">\(\widehat f_j = n_j/(n\Delta_j)\)</span> be the empirical density in bin <span class="math inline">\(j\)</span>, and approximate model probabilities by evaluation at bin midpoints: <span class="math display">\[
+p_j(\boldsymbol\theta,\boldsymbol\psi)\approx f(m_j;\boldsymbol\theta,\boldsymbol\psi)\Delta_j.
+\]</span></p></li>
+<li><p>Parameters are estimated by minimising an <span class="math inline">\(L_2\)</span> distance between empirical and model densities: <span class="math display">\[
+Q(\boldsymbol\theta,\boldsymbol\psi)=\sum_{j=1}^J\{\widehat f_j-f(m_j;\boldsymbol\theta,\boldsymbol\psi)\}^2.
+\]</span> This yields a robust minimum-distance estimator and is computationally efficient when <span class="math inline">\(J\ll n\)</span>.</p></li>
+<li><p><strong>Theorem.</strong> Under regularity conditions, the <span class="math inline">\(L_2\)</span>-based estimator converges in probability to the true <span class="math inline">\((\boldsymbol\theta, \boldsymbol\psi)\)</span>.</p></li>
+</ul>
+</div>
+</section>
 <section id="how-do-we-model-age-dependency-in-t" class="slide level2 smaller">
 <h2>How do we model age dependency in <span class="math inline">\(T\)</span>?</h2>
 <div style="font-size:1.15em; line-height:1.15;">
@@ -409,300 +486,280 @@ Slower and more gradual age-related increases, reflecting different exposure or 
           display:block!important;
       }</style></aside>
 </section>
-<section id="age-dependent-latent-model-for-ama1" class="slide level2 smaller">
-<h2>Age-dependent latent model for AMA1</h2>
-<div style="font-size:0.85em; line-height:1.15;">
+<section id="ama1-model-formulation-1" class="slide level2 smaller">
+<h2>AMA1: Model formulation (1)</h2>
+<div style="max-height:65vh; overflow-y:auto; padding-right:8px;">
+<p><strong>Latent variable for age <span class="math inline">\(&lt;\tau\)</span>:</strong></p>
 <ul>
-<li class="fragment">For age <span class="math inline">\(a&lt;15\)</span> years, <span class="math inline">\(T\)</span> follows a Dirac-Beta mixture: <span class="math display">\[
-T \sim (1-\pi(a))\,\delta_0 + \pi(a)\,\mathrm{Beta}(\alpha_2,1), \quad
-\pi(a)=1-\exp(-\lambda a).
-\]</span></li>
-<li class="fragment">For age <span class="math inline">\(a\ge 15\)</span> years, <span class="math inline">\(T\)</span> follows a single Beta with logit-linear mean: <span class="math display">\[
-T \sim \mathrm{Beta}\big(\mu(a)\phi,\,[1-\mu(a)]\phi\big), \quad
-\log\left\{\frac{\mu(a)}{1-\mu(a)}\right\}=\eta_0+\eta_1\log(a).
-\]</span></li>
-<li class="fragment">Continuity constraint on the mean of <span class="math inline">\(T\)</span> at <span class="math inline">\(a=15\)</span>: <span class="math display">\[
-\eta_0=\mathrm{logit}(\mu_{15^-})-\eta_1\log(15),
-\]</span> with <span class="math display">\[
-\mu_{15^-}=(1-\exp(-15\lambda))\frac{\alpha_2}{\alpha_2+1}.
-\]</span></li>
+<li class="fragment"><p>Mixed discrete–continuous<br>
+<span class="math display">\[
+f_T(t;a)=
+\begin{cases}
+1-\pi(a), &amp; t=0,\\[4pt]
+\pi(a)\,\alpha_2\,t^{\alpha_2-1}, &amp; 0&lt;t&lt;1,
+\end{cases}
+\]</span></p></li>
+<li class="fragment"><p>Probability of high sero-reactivity<br>
+<span class="math display">\[
+\pi(a)=1-\exp(-\lambda a)
+\]</span></p></li>
 </ul>
 </div>
 </section>
-<section id="ama1-parameter-estimates" class="slide level2">
-<h2>AMA1: parameter estimates</h2>
-<table class="caption-top" style="width:95%;">
-<colgroup>
-<col style="width: 40%">
-<col style="width: 13%">
-<col style="width: 9%">
-<col style="width: 10%">
-<col style="width: 10%">
-<col style="width: 10%">
-</colgroup>
+<section id="ama1-model-formulation-2" class="slide level2 smaller">
+<h2>AMA1: Model formulation (2)</h2>
+<div style="max-height:65vh; overflow-y:auto; padding-right:8px;">
+<p><strong>Latent variable for age <span class="math inline">\(\ge\tau\)</span>:</strong></p>
+<ul>
+<li class="fragment"><p>Latent variable distribution <span class="math display">\[
+T\sim \mathrm{Beta}(\mu(a)\phi,\,[1-\mu(a)]\phi)
+\]</span></p></li>
+<li class="fragment"><p>Logit–linear regression<br>
+<span class="math display">\[
+\mathrm{logit}\{\mu(a)\}=\eta_0+\eta_1\log(a)
+\]</span></p></li>
+<li class="fragment"><p>Continuity constraint at the change-point <span class="math inline">\(\tau\)</span><br>
+<span class="math display">\[
+\eta_0=\mathrm{logit}(\mu_{\tau^-})-\eta_1\log(\tau)
+\]</span></p></li>
+<li class="fragment"><p>Mean of <span class="math inline">\(T\)</span> for <span class="math inline">\(a &lt; \tau\)</span>:<br>
+<span class="math display">\[
+\mu_{\tau^-}
+=p_0 e^{-\tau\lambda}\frac{\alpha_1}{\alpha_1+\beta_1}
++\bigl(1-p_0 e^{-\tau\lambda}\bigr)
+\frac{\alpha_2}{\alpha_2+\beta_2}
+\]</span></p></li>
+</ul>
+</div>
+</section>
+<section id="ama1-parameter-estimates" class="slide level2 smaller">
+<h2>AMA1: Parameter estimates</h2>
+<div style="max-height:65vh; overflow-y:auto; padding-right:8px;">
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th>Parameter</th>
-<th>Estimate</th>
-<th>SD</th>
-<th>2.5%</th>
-<th>50%</th>
-<th>97.5%</th>
+<th style="text-align: right;">Estimate</th>
+<th style="text-align: right;">SD</th>
+<th style="text-align: right;">2.5%</th>
+<th style="text-align: right;">50%</th>
+<th style="text-align: right;">97.5%</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><em>Distribution of Y | T</em></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><span class="math inline">\(\mu_0\)</span></td>
+<td style="text-align: right;">-3.194</td>
+<td style="text-align: right;">0.021</td>
+<td style="text-align: right;">-3.237</td>
+<td style="text-align: right;">-3.194</td>
+<td style="text-align: right;">-3.151</td>
 </tr>
 <tr class="even">
-<td>μ₀</td>
-<td>-3.427</td>
-<td>0.077</td>
-<td>-3.626</td>
-<td>-3.470</td>
-<td>-3.311</td>
+<td><span class="math inline">\(\mu_1\)</span></td>
+<td style="text-align: right;">0.747</td>
+<td style="text-align: right;">0.010</td>
+<td style="text-align: right;">0.727</td>
+<td style="text-align: right;">0.747</td>
+<td style="text-align: right;">0.768</td>
 </tr>
 <tr class="odd">
-<td>μ₁</td>
-<td>0.790</td>
-<td>0.016</td>
-<td>0.774</td>
-<td>0.808</td>
-<td>0.838</td>
+<td><span class="math inline">\(\sigma_0\)</span></td>
+<td style="text-align: right;">0.745</td>
+<td style="text-align: right;">0.013</td>
+<td style="text-align: right;">0.719</td>
+<td style="text-align: right;">0.745</td>
+<td style="text-align: right;">0.772</td>
 </tr>
 <tr class="even">
-<td>σ₀</td>
-<td>0.606</td>
-<td>0.041</td>
-<td>0.537</td>
-<td>0.609</td>
-<td>0.695</td>
+<td><span class="math inline">\(\sigma_1\)</span></td>
+<td style="text-align: right;">0.091</td>
+<td style="text-align: right;">0.013</td>
+<td style="text-align: right;">0.062</td>
+<td style="text-align: right;">0.091</td>
+<td style="text-align: right;">0.117</td>
 </tr>
 <tr class="odd">
-<td>σ₁</td>
-<td>0.114</td>
-<td>0.022</td>
-<td>0.077</td>
-<td>0.122</td>
-<td>0.164</td>
+<td><span class="math inline">\(\tau\)</span></td>
+<td style="text-align: right;">20.842</td>
+<td style="text-align: right;">0.420</td>
+<td style="text-align: right;">20.003</td>
+<td style="text-align: right;">20.876</td>
+<td style="text-align: right;">20.998</td>
 </tr>
 <tr class="even">
-<td><em>Distribution of T (age &lt; 15)</em></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><span class="math inline">\(\alpha_2\)</span></td>
+<td style="text-align: right;">1.498</td>
+<td style="text-align: right;">0.033</td>
+<td style="text-align: right;">1.436</td>
+<td style="text-align: right;">1.499</td>
+<td style="text-align: right;">1.577</td>
 </tr>
 <tr class="odd">
-<td>α₂</td>
-<td>1.337</td>
-<td>0.074</td>
-<td>1.248</td>
-<td>1.341</td>
-<td>1.563</td>
+<td><span class="math inline">\(\lambda\)</span></td>
+<td style="text-align: right;">0.148</td>
+<td style="text-align: right;">0.005</td>
+<td style="text-align: right;">0.140</td>
+<td style="text-align: right;">0.148</td>
+<td style="text-align: right;">0.158</td>
 </tr>
 <tr class="even">
-<td>λ</td>
-<td>0.224</td>
-<td>0.032</td>
-<td>0.173</td>
-<td>0.227</td>
-<td>0.299</td>
+<td><span class="math inline">\(\phi\)</span></td>
+<td style="text-align: right;">4.544</td>
+<td style="text-align: right;">0.131</td>
+<td style="text-align: right;">4.298</td>
+<td style="text-align: right;">4.551</td>
+<td style="text-align: right;">4.828</td>
 </tr>
 <tr class="odd">
-<td><em>Distribution of T (age ≥ 15)</em></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="even">
-<td>ϕ</td>
-<td>3.423</td>
-<td>0.259</td>
-<td>3.078</td>
-<td>3.520</td>
-<td>4.117</td>
-</tr>
-<tr class="odd">
-<td>η₁</td>
-<td>-0.096</td>
-<td>0.124</td>
-<td>-0.399</td>
-<td>-0.097</td>
-<td>0.110</td>
+<td><span class="math inline">\(\eta_1\)</span></td>
+<td style="text-align: right;">-0.138</td>
+<td style="text-align: right;">0.027</td>
+<td style="text-align: right;">-0.191</td>
+<td style="text-align: right;">-0.135</td>
+<td style="text-align: right;">-0.080</td>
 </tr>
 </tbody>
 </table>
-<div style="font-size:0.85em; line-height:1.15;">
-<p><em>The estimate of</em> <span class="math inline">\(\lambda\)</span> suggests that on average it takes about 4.5 years for individuals to reach higher levels of sero-reactivity.</p>
 </div>
 </section>
 <section id="ama1-analysis-model-based-histograms" class="slide level2">
 <h2>AMA1 analysis: model-based histograms</h2>
 
 <img data-src="figures/joint_ama.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="age-dependent-latent-model-for-msp1" class="slide level2 smaller">
-<h2>Age-dependent latent model for MSP1</h2>
-<div style="font-size:0.85em; line-height:1.15;">
+<section id="msp1-model-formulation" class="slide level2 smaller">
+<h2>MSP1: Model formulation</h2>
+<div style="max-height:65vh; overflow-y:auto; padding-right:8px;">
+<p><strong>Single‑component age‑dependent Beta distribution</strong></p>
 <ul>
-<li>Latent sero-reactivity <span class="math inline">\(T\)</span> follows a single age-dependent Beta distribution: <span class="math display">\[
-T \sim \mathrm{Beta}(\alpha(a),\beta(a)).
-\]</span></li>
-</ul>
-<ul>
-<li class="fragment">Age-dependent shape parameters: <span class="math display">\[
-\alpha(a)=\alpha_0\,a^{\gamma}, \quad \beta(a)=\beta_0\,a^{\delta(a)}.
-\]</span></li>
-<li class="fragment">Piecewise age effect in <span class="math inline">\(\beta(a)\)</span> with change-point <span class="math inline">\(\tau_{cp}\)</span>: <span class="math display">\[
+<li class="fragment"><p>Distribution of the latent variable <span class="math display">\[
+T \sim \mathrm{Beta}(\alpha(a),\,\beta(a))
+\]</span> where <span class="math inline">\(\alpha(a)=\alpha_0\,a^{\gamma}\)</span> and <span class="math inline">\(\beta(a)=\beta_0\,a^{\delta(a)}\)</span>.</p></li>
+<li class="fragment"><p>Change point parameter <span class="math display">\[
 \delta(a)=
 \begin{cases}
-\delta_1, &amp; a \le \tau_{cp},\\
-\delta_1+\delta_2, &amp; a &gt; \tau_{cp}.
+\delta_1, &amp; a\le \tau_{cp},\\[4pt]
+\delta_1+\delta_2, &amp; a&gt;\tau_{cp}.
 \end{cases}
-\]</span></li>
-<li class="fragment">Induced mean of <span class="math inline">\(T\)</span> for <span class="math inline">\(a \ge \tau_{cp}\)</span>: <span class="math display">\[
-\mathbb{E}[T;a]=\left\{1+\frac{\beta_0}{\alpha_0}a^{\delta_1+\delta_2-\gamma}\right\}^{-1}.
-\]</span></li>
+\]</span></p></li>
 </ul>
 </div>
 </section>
-<section id="msp1-parameter-estimates" class="slide level2">
-<h2>MSP1: parameter estimates</h2>
-<table class="caption-top" style="width:95%;">
-<colgroup>
-<col style="width: 36%">
-<col style="width: 12%">
-<col style="width: 10%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-</colgroup>
+<section id="msp1-parameter-estimates" class="slide level2 smaller">
+<h2>MSP1: Parameter estimates</h2>
+<div style="max-height:65vh; overflow-y:auto; padding-right:8px;">
+<table class="caption-top">
 <thead>
 <tr class="header">
 <th>Parameter</th>
-<th>Mean</th>
-<th>SD</th>
-<th>2.5%</th>
-<th>50%</th>
-<th>97.5%</th>
+<th style="text-align: right;">Mean</th>
+<th style="text-align: right;">SD</th>
+<th style="text-align: right;">2.5%</th>
+<th style="text-align: right;">50%</th>
+<th style="text-align: right;">97.5%</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><em>Distribution of Y | T</em></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><span class="math inline">\(\mu_0\)</span></td>
+<td style="text-align: right;">-4.481</td>
+<td style="text-align: right;">0.042</td>
+<td style="text-align: right;">-4.567</td>
+<td style="text-align: right;">-4.479</td>
+<td style="text-align: right;">-4.404</td>
 </tr>
 <tr class="even">
-<td>μ<sub>0</sub></td>
-<td>-4.481</td>
-<td>0.042</td>
-<td>-4.567</td>
-<td>-4.479</td>
-<td>-4.404</td>
+<td><span class="math inline">\(\mu_1\)</span></td>
+<td style="text-align: right;">1.255</td>
+<td style="text-align: right;">0.026</td>
+<td style="text-align: right;">1.205</td>
+<td style="text-align: right;">1.255</td>
+<td style="text-align: right;">1.307</td>
 </tr>
 <tr class="odd">
-<td>μ<sub>1</sub></td>
-<td>1.255</td>
-<td>0.026</td>
-<td>1.205</td>
-<td>1.255</td>
-<td>1.307</td>
+<td><span class="math inline">\(\log\sigma_0\)</span></td>
+<td style="text-align: right;">-0.677</td>
+<td style="text-align: right;">0.043</td>
+<td style="text-align: right;">-0.764</td>
+<td style="text-align: right;">-0.676</td>
+<td style="text-align: right;">-0.599</td>
 </tr>
 <tr class="even">
-<td>log&nbsp;σ<sub>0</sub></td>
-<td>-0.677</td>
-<td>0.043</td>
-<td>-0.764</td>
-<td>-0.676</td>
-<td>-0.599</td>
+<td><span class="math inline">\(\log\sigma_1\)</span></td>
+<td style="text-align: right;">-5.716</td>
+<td style="text-align: right;">0.536</td>
+<td style="text-align: right;">-6.892</td>
+<td style="text-align: right;">-5.666</td>
+<td style="text-align: right;">-4.874</td>
 </tr>
 <tr class="odd">
-<td>log&nbsp;σ<sub>1</sub></td>
-<td>-5.716</td>
-<td>0.536</td>
-<td>-6.892</td>
-<td>-5.666</td>
-<td>-4.874</td>
+<td><span class="math inline">\(\alpha_0\)</span></td>
+<td style="text-align: right;">0.093</td>
+<td style="text-align: right;">0.036</td>
+<td style="text-align: right;">0.025</td>
+<td style="text-align: right;">0.093</td>
+<td style="text-align: right;">0.166</td>
 </tr>
 <tr class="even">
-<td><em>Distribution of T</em></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><span class="math inline">\(\gamma\)</span></td>
+<td style="text-align: right;">0.277</td>
+<td style="text-align: right;">0.011</td>
+<td style="text-align: right;">0.256</td>
+<td style="text-align: right;">0.277</td>
+<td style="text-align: right;">0.297</td>
 </tr>
 <tr class="odd">
-<td>α<sub>0</sub></td>
-<td>0.093</td>
-<td>0.036</td>
-<td>0.025</td>
-<td>0.093</td>
-<td>0.166</td>
+<td><span class="math inline">\(\beta_0\)</span></td>
+<td style="text-align: right;">0.755</td>
+<td style="text-align: right;">0.037</td>
+<td style="text-align: right;">0.684</td>
+<td style="text-align: right;">0.754</td>
+<td style="text-align: right;">0.827</td>
 </tr>
 <tr class="even">
-<td>γ<sub>1</sub></td>
-<td>0.277</td>
-<td>0.011</td>
-<td>0.256</td>
-<td>0.277</td>
-<td>0.297</td>
+<td><span class="math inline">\(\delta_1\)</span></td>
+<td style="text-align: right;">0.110</td>
+<td style="text-align: right;">0.018</td>
+<td style="text-align: right;">0.075</td>
+<td style="text-align: right;">0.110</td>
+<td style="text-align: right;">0.145</td>
 </tr>
 <tr class="odd">
-<td>β<sub>0</sub></td>
-<td>0.755</td>
-<td>0.037</td>
-<td>0.684</td>
-<td>0.754</td>
-<td>0.827</td>
+<td><span class="math inline">\(\tau_{cp}\)</span></td>
+<td style="text-align: right;">11.623</td>
+<td style="text-align: right;">0.406</td>
+<td style="text-align: right;">11.004</td>
+<td style="text-align: right;">11.667</td>
+<td style="text-align: right;">12.197</td>
 </tr>
 <tr class="even">
-<td>δ<sub>1</sub></td>
-<td>0.110</td>
-<td>0.018</td>
-<td>0.075</td>
-<td>0.110</td>
-<td>0.145</td>
-</tr>
-<tr class="odd">
-<td>τ<sub>cp</sub></td>
-<td>11.623</td>
-<td>0.406</td>
-<td>11.004</td>
-<td>11.667</td>
-<td>12.197</td>
-</tr>
-<tr class="even">
-<td>δ<sub>2</sub></td>
-<td>-0.061</td>
-<td>0.010</td>
-<td>-0.080</td>
-<td>-0.061</td>
-<td>-0.042</td>
+<td><span class="math inline">\(\delta_2\)</span></td>
+<td style="text-align: right;">-0.061</td>
+<td style="text-align: right;">0.010</td>
+<td style="text-align: right;">-0.080</td>
+<td style="text-align: right;">-0.061</td>
+<td style="text-align: right;">-0.042</td>
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 <section id="msp1-analysis-results" class="slide level2">
 <h2>MSP1 analysis: results</h2>
 
 <img data-src="figures/joint_msp.png" class="quarto-figure quarto-figure-center r-stretch"></section>
-<section id="predicted-antibody-levels-in-ama1-and-msp1" class="slide level2">
-<h2>Predicted antibody levels in AMA1 and MSP1</h2>
+<section id="predicted-antibody-levels-in-ama1" class="slide level2">
+<h2>Predicted antibody levels in AMA1</h2>
 
-<img data-src="figures/fig_expected_log_ab_by_age.png" class="r-stretch"></section>
+<img data-src="figures/ama_ab.png" class="r-stretch"></section>
+<section id="predicted-antibody-levels-in-msp1" class="slide level2">
+<h2>Predicted antibody levels in MSP1</h2>
+
+<img data-src="figures/msp_ab.png" class="r-stretch"></section>
+<section id="model-comparison-and-computational-cost" class="slide level2 smaller">
+<h2>Model comparison and computational cost</h2>
+
+<img data-src="figures/table_comparison.png" class="r-stretch"></section>
 <section id="summary-and-conclusions" class="slide level2 smaller">
 <h2>Summary and conclusions</h2>
 <div style="font-size:1.2em; line-height:1.15;">
@@ -726,35 +783,6 @@ T \sim \mathrm{Beta}(\alpha(a),\beta(a)).
 <p>🔗 <a href="https://giorgistat.github.io">giorgistat.github.io</a><br>
 📧 e.giorgi@bham.ac.uk<br>
 📍 BESTEAM, Department of Applied Health Sciences, University of Birmingham</p>
-</section>
-<section id="inference" class="slide level2 smaller">
-<h2>Inference</h2>
-<div style="font-size:0.8em; line-height:1.15; max-height:650px; overflow-y:auto; padding-right:10px;">
-<ul>
-<li><p>Two complementary inference approaches are used:</p>
-<ol type="i">
-<li>full maximum likelihood, and<br>
-</li>
-<li>a fast histogram-based approximation for exploratory fitting and initialisation.</li>
-</ol></li>
-<li><p>Conditional on the latent immune state <span class="math inline">\(T\)</span>, antibody concentrations are Gaussian with mean and variance interpolating between low and high sero-reactivity extremes.<br>
-The marginal density of <span class="math inline">\(Y\)</span> is obtained by integrating out <span class="math inline">\(T\)</span>: <span class="math display">\[
-f(y;\boldsymbol\theta,\boldsymbol\psi)=\int_0^1
-\phi\!\left(y;(1-t)\mu_0+t\mu_1,(1-t)\sigma_0^2+t\sigma_1^2\right)
-\,g_T(t;\boldsymbol\psi)\,dt.
-\]</span></p></li>
-<li><p>Exact maximum likelihood is based on <span class="math display">\[
-\ell(\boldsymbol\theta,\boldsymbol\psi)=\sum_{i=1}^n\log f(y_i;\boldsymbol\theta,\boldsymbol\psi),
-\]</span> but direct maximisation is computationally intensive due to repeated numerical integration.</p></li>
-<li><p>To reduce computation, data are summarised into a histogram.<br>
-Let <span class="math inline">\(\widehat f_j = n_j/(n\Delta_j)\)</span> be the empirical density in bin <span class="math inline">\(j\)</span>, and approximate model probabilities by evaluation at bin midpoints: <span class="math display">\[
-p_j(\boldsymbol\theta,\boldsymbol\psi)\approx f(m_j;\boldsymbol\theta,\boldsymbol\psi)\Delta_j.
-\]</span></p></li>
-<li><p>Parameters are estimated by minimising an <span class="math inline">\(L_2\)</span> distance between empirical and model densities: <span class="math display">\[
-Q(\boldsymbol\theta,\boldsymbol\psi)=\sum_{j=1}^J\{\widehat f_j-f(m_j;\boldsymbol\theta,\boldsymbol\psi)\}^2.
-\]</span> This yields a robust minimum-distance estimator and is computationally efficient when <span class="math inline">\(J\ll n\)</span>.</p></li>
-</ul>
-</div>
 </section>
 <section id="exploratory-analysis-ama1" class="slide level2">
 <h2>Exploratory analysis: AMA1</h2>
