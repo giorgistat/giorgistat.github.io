@@ -209,7 +209,7 @@ Assumptions:
 -   **Likelihood function**
 
 The vector of unkown parameters is $\theta=(\beta, \sigma^2)$ $$
-L(\theta) = \prod_{i=1}^n \int_{-\infty}^{+\infty} [Z_i] [Y_i \mid Z_i] \: dY_i
+L(\theta) = \prod_{i=1}^n \int_{-\infty}^{+\infty} [Z_i] [Y_i \mid Z_i] \: dZ_i
 $$
 
 . . .

@@ -186,7 +186,7 @@ Animation: [Malaria in Chikwawa district](https://www.lancaster.ac.uk/staff/gior
 **Key Concepts:**\
 - $S$: "Process of nature"\
 - $Y$: "Observed data"\
-- Bayesian Framework: $[Y, S] = [S][Y | S]$
+- Formulation of a statistical model: $[Y, S] = [S][Y | S]$
 
 **Adapted from:** [Statistics and Scientific Method (Diggle & Chatwynd, 2011)](https://global.oup.com/academic/product/statistics-and-scientific-method-9780199543199?cc=gb&lang=en&)
 
