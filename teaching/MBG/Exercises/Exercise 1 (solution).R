@@ -30,7 +30,7 @@ p3 <- ggplot(tz_malaria, aes(x = EVI, y = elogit)) +
   theme_minimal()
 
 # Scatter plot for elogit vs NTL
-p4 <- ggplot(tz_malaria, aes(x = log(NTL), y = elogit)) +
+p4 <- ggplot(tz_malaria, aes(x = log(NTL+1), y = elogit)) +
   geom_point(alpha = 0.5) +
   geom_smooth(method = "gam", formula = y ~ s(x, bs = "cs"), color = "purple") +
   labs(title = "Empirical logit vs NTL",
