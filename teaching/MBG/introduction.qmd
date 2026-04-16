@@ -12,7 +12,7 @@ format:
     transition: fade
     slide-number: true
     chalkboard: true
-    logo: "Images/clogo.png"
+    logo: "Images/uob_logo_v2.jpg"
     footer: "[Click here to go back to the course page](../mbg.qmd)"
 ---
 
