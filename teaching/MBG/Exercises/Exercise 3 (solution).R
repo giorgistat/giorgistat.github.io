@@ -7,8 +7,8 @@ data("tz_malaria")
 tz_malaria <- st_as_sf(tz_malaria, coords = c("utm_x", "utm_y"), crs = 32736)
 
 # Fitting a model with covariates
-glgm_fit <- glgpm(Pf ~ EVI + Temperature + pmax(Temperature - 33, 0) +
-                     gp(nugget = NULL),
+glgm_fit <- glgpm(Pf ~ Temperature + pmax(Temperature - 33, 0) +
+                    EVI + gp(nugget = NULL),
                   den = Ex,
                   data = tz_malaria,
                   family = "binomial")
@@ -27,22 +27,26 @@ grid_tza <- create_grid(shp_tz_0, spat_res = 10)
 
 # EVI for Tanzania
 library(terra)
-tza_evi <- rast("../Data/Tanzania_Annual_EVI_2015.tif")
+tza_evi <- rast("teaching/MBG/Data/Tanzania_Annual_EVI_2015.tif")
 tza_evi <- project(tza_evi, "EPSG:32736")
 
 # Temperature for Tanzania
-tza_temp <- rast("../Data/Tanzania_Annual_LST_2015.tif")
+tza_temp <- rast("teaching/MBG/Data/Tanzania_Annual_LST_2015.tif")
 tza_temp <- project(tza_temp, "EPSG:32736")
 
 # Population density for Tanzania
 library(terra)
-tza_pop <- rast("../Data/Tanzania_population_density_2015.tif")
+tza_pop <- rast("teaching/MBG/Data/Tanzania_population_density_2015.tif")
 tza_pop <- project(tza_pop, "EPSG:32736")
 
 # Extract covariates over the grid
 pred_tza <- data.frame(EVI = extract(tza_evi, st_as_sf(grid_tza))[,2],
                        Temperature = extract(tza_temp, st_as_sf(grid_tza))[,2])
 
+# Remove missing value
+ind_na <- which(is.na(pred_tza$Temperature))
+grid_tza <- grid_tza[-ind_na,]
+pred_tza <- pred_tza[-ind_na,]
 
 # Prediction of S(x)
 
@@ -54,18 +58,18 @@ pred_S_tza_cov <-
 
 pred_T_grid <-
   pred_target_grid(pred_S_tza_cov,
-                  f_target = list(prev = function(x) exp(x)/(1+exp(x))),
-                  pd_summary = list(mean = mean,
-                                    below10 = function(x) mean(x < 0.1),
-                                    btw10_20 = function(x) mean(x > 0.1 &
-                                                                x < 0.2),
-                                    class = function(x) {
-                                      v1 <- mean(x < 0.1)
-                                      v2 <- mean(x > 0.1 &
-                                                  x < 0.2)
-                                      v3 <- mean(x > 0.2)
-                                      (1:3)[which.max(c(v1,v2,v3))]
-                                    }))
+                   f_target = list(prev = function(x) exp(x)/(1+exp(x))),
+                   pd_summary = list(mean = mean,
+                                     below10 = function(x) mean(x < 0.1),
+                                     btw10_20 = function(x) mean(x > 0.1 &
+                                                                   x < 0.2),
+                                     class = function(x) {
+                                       v1 <- mean(x < 0.1)
+                                       v2 <- mean(x > 0.1 &
+                                                    x < 0.2)
+                                       v3 <- mean(x > 0.2)
+                                       (1:3)[which.max(c(v1,v2,v3))]
+                                     }))
 
 plot(pred_T_grid, which_target = "prev", which_summary = "mean",
      main = "Predictive mean")
@@ -79,20 +83,20 @@ plot(pred_T_grid, which_target = "prev", which_summary = "class")
 
 pred_T_adm1 <-
   pred_target_shp(pred_S_tza_cov,
-                   f_target = list(prev = function(x) exp(x)/(1+exp(x))),
-                   shp = shp_tz_1,
-                   shp_target = mean,
-                   pd_summary = list(mean = mean,
-                                     below10 = function(x) mean(x < 0.1),
-                                     btw10_30 = function(x) mean(x > 0.1 &
-                                                                   x < 0.2),
-                                     class = function(x) {
-                                       v1 <- mean(x < 0.1)
-                                       v2 <- mean(x > 0.1 &
-                                                    x < 0.2)
-                                       v3 <- mean(x > 0.2)
-                                       (1:3)[which.max(c(v1,v2,v3))]
-                                     }),
+                  f_target = list(prev = function(x) exp(x)/(1+exp(x))),
+                  shp = shp_tz_1,
+                  shp_target = mean,
+                  pd_summary = list(mean = mean,
+                                    below10 = function(x) mean(x < 0.1),
+                                    btw10_20 = function(x) mean(x > 0.1 &
+                                                                  x < 0.2),
+                                    class = function(x) {
+                                      v1 <- mean(x < 0.1)
+                                      v2 <- mean(x > 0.1 &
+                                                   x < 0.2)
+                                      v3 <- mean(x > 0.2)
+                                      (1:3)[which.max(c(v1,v2,v3))]
+                                    }),
                   col_names = "shapeName")
 
 library(ggplot2)
@@ -113,8 +117,9 @@ plot(pred_T_adm1, which_target = "prev", which_summary = "class",
 
 
 ## Estimating the total number of malaria cases
+library(terra)
+tza_weights <- 100*terra::extract(tza_pop, st_as_sf(grid_tza))[,2]
 
-tza_weights <- 10*extract(tza_pop, pred_S_tza_cov$grid_pred)[,2]
 pred_T_adm1 <-
   pred_target_shp(pred_S_tza_cov,
                   f_target = list(prev = function(x) exp(x)/(1+exp(x))),
