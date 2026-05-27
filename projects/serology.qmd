@@ -12,11 +12,10 @@ Building on this foundation, I am expanding these methods to analyze data for mu
 
 ## Recent publications & preprints
 
--   <u>**Giorgi, E.**</u>, Wallin, J., *A flexible class of latent variable models for the analysis of antibody response data.* (Under review) [Preprint on arXiv](https://arxiv.org/abs/2512.14504)
+- <u>**Giorgi, E.**</u>, Wallin, J., *A flexible class of latent variable models for the analysis of antibody response data.* Biostatistics, Volume 27, Issue 1, January 2026, kxag008, [https://doi.org/10.1093/biostatistics/kxag008](https://doi.org/10.1093/biostatistics/kxag008)
 
--   Romano, C., Wallin, J., William, T., Drakeley, C., Branda, F., Ciccozzi, M., <u>**Giorgi, E.**</u>, *Modelling serological multiplex bead assays responses: A case study from Malaysia.* (Under review) [Preprint on medRxiv](https://doi.org/10.64898/2025.12.11.25342063)
+- Romano, C., Wallin, J., William, T., Drakeley, C., Branda, F., Ciccozzi, M., <u>**Giorgi, E.**</u>, *Modelling serological multiplex bead assays responses: A case study from Malaysia.* (Under review) [Preprint on medRxiv](https://doi.org/10.64898/2025.12.11.25342063)
 
+- Kyomuhangi, I., <u>**Giorgi, E.**</u> (2022). *A threshold-free approach with age-dependency for estimating malaria seroprevalence.* Malaria Journal. [https://doi.org/10.1371/journal.pone.0262145](https://doi.org/10.1371/journal.pone.0262145)
 
--   Kyomuhangi, I., <u>**Giorgi, E.**</u> (2022). *A threshold-free approach with age-dependency for estimating malaria seroprevalence.* Malaria Journal. https://doi.org/10.1371/journal.pone.0262145
-
--   Kyomuhangi, I., <u>**Giorgi, E.**</u> (2021) *A unified and flexible modelling framework for the analysis of malaria serology data.* Epidemiology & Infection. doi:10.1017/S0950268821000753
+- Kyomuhangi, I., <u>**Giorgi, E.**</u> (2021) *A unified and flexible modelling framework for the analysis of malaria serology data.* Epidemiology & Infection. doi:10.1017/S0950268821000753

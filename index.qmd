@@ -24,10 +24,10 @@ My research focuses on developing statistical methodology motivated by real-worl
 
 ## Research Interests
 
--   Spatial and spatio-temporal modeling\
--   Geostatistical methods for global health applications\
--   Point process models
--   Statistical methods for serological data analysis
+- Spatial and spatio-temporal modeling\
+- Geostatistical methods for global health applications\
+- Point process models
+- Statistical methods for serological data analysis
 
 For a comprehensive overview of my academic and professional journey, you can access my [full CV](CV_EGiorgi.pdf).
 
