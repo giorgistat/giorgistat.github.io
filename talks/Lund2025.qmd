@@ -61,21 +61,21 @@ format:
 
 **Why is it used?**
 
--   Controls or eliminates disease in endemic areas
+- Controls or eliminates disease in endemic areas
 
--   Reduces the community-level parasite burden
+- Reduces the community-level parasite burden
 
--   Prevents long-term complications and disability
+- Prevents long-term complications and disability
 
 . . .
 
 **Key Features:**
 
--   Delivered at regular intervals (annually or biannually)
+- Delivered at regular intervals (annually or biannually)
 
--   Often combined with public health education
+- Often combined with public health education
 
--   Supported by WHO and major global health initiatives
+- Supported by WHO and major global health initiatives
 
 ## Albendazole {.smaller}
 
@@ -94,9 +94,9 @@ Albendazole works by stopping worms from absorbing the nutrients they need to su
 
 **Used for NTDs such as:**
 
--   Lymphatic filariasis (in combination with ivermectin or DEC)
+- Lymphatic filariasis (in combination with ivermectin or DEC)
 
--   Soil-transmitted helminths (e.g., ascariasis, hookworm, trichuriasis)
+- Soil-transmitted helminths (e.g., ascariasis, hookworm, trichuriasis)
 
 **MDA use:**\
 Distributed in large-scale deworming campaigns, particularly targeting children and at-risk communities.
@@ -123,11 +123,11 @@ Chloride channel disruption refers to any impairment in the normal function of c
 
 **Used for NTDs such as:**
 
--   Onchocerciasis (river blindness)\
+- Onchocerciasis (river blindness)\
 
--   Lymphatic filariasis (in combination with albendazole)\
+- Lymphatic filariasis (in combination with albendazole)\
 
--   Strongyloidiasis
+- Strongyloidiasis
 
 **MDA use:** Ivermectin is given to both adults and children (weighing more than 15kg), but its use is carefully considered for pregnant women.
 ::::
@@ -154,9 +154,9 @@ This excess calcium makes the muscles contract and become stiff. The parasite ca
 
 **Used for NTDs such as:**\
 
--   Schistosomiasis\
+- Schistosomiasis\
 
--   Tapeworm infections
+- Tapeworm infections
 
 **MDA use:**\
 Key drug in school-based and community-wide treatment campaigns in regions with high schistosomiasis burden.
@@ -204,84 +204,82 @@ Alb = Albendazole, PZQ = Praziquantel, IVM = Ivermectin, AZM = Azithromycin, DEC
 ::: notes
 **Key Explanations:** - **combo**: Combination therapy enhances efficacy (e.g., albendazole+praziquantel for schistosomiasis kills both juvenile and adult worms)
 
--   **co-endemic areas only** (trachoma/ivermectin):
-    -   Ivermectin is only recommended for trachoma in areas where onchocerciasis (river blindness) is also present because:
-        1.  **In onchocerciasis-endemic areas**: Mass ivermectin distribution is already occurring for river blindness control, so it can simultaneously help reduce trachoma transmission
-        2.  **In non-onchocerciasis areas**:
-            -   Azithromycin is preferred as the primary trachoma treatment because:
-                -   It has direct antibacterial action against Chlamydia trachomatis
-                -   Better safety profile for children and pregnant women
-                -   Additional community-wide benefits against other bacterial infections
-            -   Ivermectin isn't contraindicated, but simply less optimal than azithromycin for trachoma-specific control
--   **adjunct**:
-    -   Secondary treatment that supports but doesn't replace primary therapy
-    -   Example: Doxycycline for LF kills Wolbachia bacteria inside adult worms, making them sterile (used alongside albendazole/ivermectin)
+- **co-endemic areas only** (trachoma/ivermectin):
+  - Ivermectin is only recommended for trachoma in areas where onchocerciasis (river blindness) is also present because:
+    1.  **In onchocerciasis-endemic areas**: Mass ivermectin distribution is already occurring for river blindness control, so it can simultaneously help reduce trachoma transmission
+    2.  **In non-onchocerciasis areas**:
+        - Azithromycin is preferred as the primary trachoma treatment because:
+          - It has direct antibacterial action against Chlamydia trachomatis
+          - Better safety profile for children and pregnant women
+          - Additional community-wide benefits against other bacterial infections
+        - Ivermectin isn't contraindicated, but simply less optimal than azithromycin for trachoma-specific control
+- **adjunct**:
+  - Secondary treatment that supports but doesn't replace primary therapy
+  - Example: Doxycycline for LF kills Wolbachia bacteria inside adult worms, making them sterile (used alongside albendazole/ivermectin)
 :::
 
 ## Assessing MDA Impact {.smaller .scrollable}
 
 **Timeframe for observable impact:**
 
--   STH: Reduced prevalence seen after 1-2 annual rounds
+- STH: Reduced prevalence seen after 1-2 annual rounds
 
--   Schistosomiasis: Egg reduction visible after 1-2 years
+- Schistosomiasis: Egg reduction visible after 1-2 years
 
--   LF: Microfilariae reduction within months, but breaking transmission requires 5+ years
+- LF: Microfilariae reduction within months, but breaking transmission requires 5+ years
 
--   Trachoma: Active disease reduction in 1-3 years
+- Trachoma: Active disease reduction in 1-3 years
 
 **Monitoring surveys:**
 
--   Baseline surveys (pre-MDA)
+- Baseline surveys (pre-MDA)
 
--   Transmission Assessment Surveys (TAS) for LF after 5+ rounds
+- Transmission Assessment Surveys (TAS) for LF after 5+ rounds
 
--   Impact surveys (after 3-5 rounds)
+- Impact surveys (after 3-5 rounds)
 
--   Post-treatment surveillance (after reaching elimination targets)
+- Post-treatment surveillance (after reaching elimination targets)
 
 **Key indicators:**
 
--   Parasitological prevalence (STH, schisto)
+- Parasitological prevalence (STH, schisto)
 
--   Antigenemia (LF)
+- Antigenemia (LF)
 
--   TF/TI rates (trachoma)
+- TF/TI rates (trachoma)
 
--   Entomological indices (for vector-borne NTDs)
+- Entomological indices (for vector-borne NTDs)
 
 ## Modelling the impact of MDA
+
 <center>![](figures/mda_impact.png){width="55%"}</center>
-
-
 
 ## The standard geostatistical model for prevalence mapping {.scrollable .smaller}
 
--   **Outcome**: $Y_i$ number of cases out $n_i$ sampled
+- **Outcome**: $Y_i$ number of cases out $n_i$ sampled
 
 . . .
 
--   **Locations**: $X = (x_1, \ldots, x_n)$
+- **Locations**: $X = (x_1, \ldots, x_n)$
 
 . . .
 
--   **Covariates** (optional): $d(x)$ (e.g. elevation, distance from waterways)
+- **Covariates** (optional): $d(x)$ (e.g. elevation, distance from waterways)
 
 . . .
 
--   **Spatial Gaussian process**: $S(x)$ (stationary and isotropic) $$
-    {\rm cov}\{S(x), S(x')\} = \sigma^2 \rho(||x - x'||; \phi)
-    $$ Example: $\rho(u; \phi) = \exp\{-u/\phi\}$.
+- **Spatial Gaussian process**: $S(x)$ (stationary and isotropic)
+  $${\rm cov}\{S(x), S(x')\} = \sigma^2 \rho(||x - x'||; \phi)$$
+  Example: $\rho(u; \phi) = \exp\{-u/\phi\}$.
 
 . . .
 
--   **Conditional independence**: $Y_{i}$ conditionally on $S(x_i)$ are mutually independent $Bin(n_i , p(x_i))$
+- **Conditional independence**: $Y_{i}$ conditionally on $S(x_i)$ are mutually independent $Bin(n_i , p(x_i))$
 
 . . .
 
--   The **linear predictor** $$
-    \log\left\{\frac{p(x_i)}{1-p(x_i)}\right\} = \beta_0 + d(x_i)^\top \beta + S(x_i)
-    $$
+- The **linear predictor**
+  $$\log\left\{\frac{p(x_i)}{1-p(x_i)}\right\} = \beta_0 + d(x_i)^\top \beta + S(x_i)$$
 
 ## Spatial and temporal confounding with MDA {.smaller}
 
@@ -289,66 +287,59 @@ Alb = Albendazole, PZQ = Praziquantel, IVM = Ivermectin, AZM = Azithromycin, DEC
 
 **Issues:**
 
--   Areas with different levels of transmission are sampled at different times.
+- Areas with different levels of transmission are sampled at different times.
 
--   Use of MDA rounds can even show a positive associated with disease risk
+- Use of MDA rounds can even show a positive associated with disease risk
 
 ## Modelling the Impact of MDA {.smaller}
 
 We model observed prevalence $P(x,t)$ as a product of:
 
--   **Counterfactual prevalence**, $P^*(x,t)$, in the absence of MDA
--   A **cumulative MDA effect**, based on rounds of effective treatment
+- **Counterfactual prevalence**, $P^*(x,t)$, in the absence of MDA
+- A **cumulative MDA effect**, based on rounds of effective treatment
 
-$$
-P(x, t) = P^*(x, t)\prod_{j=1}^{r(t)} \left[1 - f(t - u_j)\right]^{I(x, u_j)}
-$$
+$$P(x, t) = P^*(x, t)\prod_{j=1}^{r(t)} \left[1 - f(t - u_j)\right]^{I(x, u_j)}$$
 
--   $u_j$: times of effective MDA rounds\
--   $I(x, u_j)$: indicator of MDA coverage at location $x$ and time $u_j$
--   $r(t)$ is the number of MDA rounds carried out before time $t$
+- $u_j$: times of effective MDA rounds\
+- $I(x, u_j)$: indicator of MDA coverage at location $x$ and time $u_j$
+- $r(t)$ is the number of MDA rounds carried out before time $t$
 
 ## Parametric form of MDA decay function {.smaller}
 
-$$
-f(v) = \alpha \exp\left\{ -\left(\frac{v}{\gamma}\right)^{\kappa} \right\}
-$$
+$$f(v) = \alpha \exp\left\{ -\left(\frac{v}{\gamma}\right)^{\kappa} \right\}$$
 
--   $\alpha$: maximum reduction immediately after MDA\
--   $\gamma$: scale of decay\
--   $\kappa$: shape of decay (fixed)
+- $\alpha$: maximum reduction immediately after MDA\
+- $\gamma$: scale of decay\
+- $\kappa$: shape of decay (fixed)
 
 <center>![](figures/f_mda.jpg){width="40%"}</center>
 
 ## Monte Carlo Maximum Likelihood {.smaller .scrollable}
 
--   Let $W_i = S(x_i) + Z_i$ and $W = (W_1, \ldots, W_n)$
+- Let $W_i = S(x_i) + Z_i$ and $W = (W_1, \ldots, W_n)$
 
 . . .
 
--   The likelihood function for parameters $\theta = (\beta, \sigma^2, \phi, \tau^2)$ is given by:
+- The likelihood function for parameters $\theta = (\beta, \sigma^2, \phi, \tau^2)$ is given by:
 
-    $$
-    L(\theta) = \int N(W; D\beta, \Omega) f(y| W) dW
-    $$
+  $$L(\theta) = \int N(W; D\beta, \Omega) f(y| W) dW$$
 
-    where $\Omega = \sigma^2 R(\phi) + \tau^2I_n$.
+  where $\Omega = \sigma^2 R(\phi) + \tau^2I_n$.
 
 . . .
 
--   We approximate this using Monte Carlo integration:
+- We approximate this using Monte Carlo integration:
 
-    $$
-    L_m(\theta) = \frac{1}{B} \sum_{j=1}^{B} \frac{N\left(W^{(j)}; D\beta, \Omega \right)}{N\left(W^{(j)}; D\beta_0, \Omega_0\right)}
-    $$ where $W^{(i)}$ are sampled from the distribution of $W$ given $y$ using an MCMC algorithm.
+  $$L_m(\theta) = \frac{1}{B} \sum_{j=1}^{B} \frac{N\left(W^{(j)}; D\beta, \Omega \right)}{N\left(W^{(j)}; D\beta_0, \Omega_0\right)}$$
+  where $W^{(i)}$ are sampled from the distribution of $W$ given $y$ using an MCMC algorithm.
 
--   All implemented in the `dast` function of the `RiskMap` package <img src="figures/excitement.png" width="80" height="80" style="vertical-align: middle;"/>
+- All implemented in the `dast` function of the `RiskMap` package <img src="figures/excitement.png" width="80" height="80" style="vertical-align: middle;"/>
 
 ## Applications
 
--   [Lymphatic filariasis in Madagascar](#lf-slide)
+- [Lymphatic filariasis in Madagascar](#lf-slide)
 
--   [Soil-transmitted helminths in Kenya](#sth-slide)
+- [Soil-transmitted helminths in Kenya](#sth-slide)
 
 ## Example: Lymphatic filariasis in Madagascar {#lf-slide}
 
@@ -372,25 +363,22 @@ $$
 
 ## Introducing penalization for $\alpha$ {.smaller .scrollable}
 
--   Let $p(\alpha) > 0$ be a positive function.
+- Let $p(\alpha) > 0$ be a positive function.
 
 . . .
 
--   The penalized likelihood for $\alpha$ is $$
-    L_{p}(\theta) = L(\theta) - p(\alpha)
-    $$
+- The penalized likelihood for $\alpha$ is
+  $$L_{p}(\theta) = L(\theta) - p(\alpha)$$
 
 . . .
 
--   Proposed penalty
+- Proposed penalty
 
-    $$
-    p(\alpha) = -\left[\lambda_1 \log\alpha + \lambda_2\log(1-\alpha) \right]
-    $$
+  $$p(\alpha) = -\left[\lambda_1 \log\alpha + \lambda_2\log(1-\alpha) \right]$$
 
 . . .
 
--   We set $\lambda_1 = 20$ and $\lambda_2 = 14$. (This inspired by a Beta distribution with mode in around 0.6, with 0.42 and 0.7 as its 0.025 and 0.975 quantiles, respectively.)
+- We set $\lambda_1 = 20$ and $\lambda_2 = 14$. (This inspired by a Beta distribution with mode in around 0.6, with 0.42 and 0.7 as its 0.025 and 0.975 quantiles, respectively.)
 
 <center>![](figures/beta_distr.png){width="40%"}</center>
 
@@ -440,15 +428,13 @@ MDA impact function: $f(v) = \alpha\exp\{-v/\gamma\}$, with $v$ denoting the yea
 
 MDA impact function: $f(v) = \alpha\exp\{-v/\gamma\}$, with $v$ denoting the years since last MDA
 
-
 | Parameter | Ascaris | Trichuris | Hookworm |
-|-----------|---------|-----------|----------|
+|----|----|----|----|
 | **Intercept** ($\beta$) | -2.432 (-2.478, -2.374) | -2.402 (-2.457, -2.336) | -1.960 (-2.012, -1.899) |
 | **Spatial variance** ($\sigma^2$) | 22.975 (11.276, 56.275) | 36.665 (16.309, 90.619) | 32.760 (14.418, 86.624) |
 | **Spatial scale** ($\phi$) | 214.303 (102.984, 522.853) | 221.500 (99.104, 583.012) | 293.396 (132.714, 844.706) |
 | **Max. reduction** ($\alpha$) | 0.304 (0.256, 0.371) | 0.450 (0.352, 0.547) | 0.926 (0.853, 0.971) |
 | **Decay scale** ($\gamma$) | 28.873 (12.254, 85.485) | 3.886 (2.788, 5.543) | 6.710 (4.774, 8.933) |
-
 
 ## The MDA impact by STH species
 
@@ -467,9 +453,7 @@ MDA impact function: $f(v) = \alpha\exp\{-v/\gamma\}$, with $v$ denoting the yea
 . . .
 
 **A2 — Transient MDA effect:** Allow partial permanence once prevalence drops below an elimination threshold $p^*$:
-$$
-f(x,t) = \alpha \left[(1 - r(x,t))\exp\left\{-\frac{t - t^*(x,t)}{\gamma}\right\} + \delta \times r(x,t)\right],
-$$
+$$f(x,t) = \alpha \left[(1 - r(x,t))\exp\left\{-\frac{t - t^*(x,t)}{\gamma}\right\} + \delta \times r(x,t)\right],$$
 where $r(x,t) = I\{P(x, t^-) < p^*\}$
 
 . . .
@@ -479,9 +463,7 @@ where $r(x,t) = I\{P(x, t^-) < p^*\}$
 . . .
 
 **Adherence:** Weight each MDA round by observed adherence $A(x,t) \in [0,1]$:
-$$
-P(x,t) = P^*(x)\prod_{j:\,u_j < t} \Big(1 - f(t-u_j)\Big)^{A(x, u_j)\, I(x, u_j)}
-$$
+$$P(x,t) = P^*(x)\prod_{j:\,u_j < t} \Big(1 - f(t-u_j)\Big)^{A(x, u_j)\, I(x, u_j)}$$
 
 . . .
 
@@ -490,7 +472,6 @@ $$
 . . .
 
 **Multiple interventions:** Assign each intervention its own impact function $f_k$, with an interaction term $\psi_{k\ell}$ to capture synergy ($\psi_{k\ell}>0$) or antagonism ($\psi_{k\ell}<0$).
-
 
 ## THANK YOU! {.smaller}
 
