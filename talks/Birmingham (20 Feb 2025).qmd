@@ -18,9 +18,9 @@ format:
 
 ## My Background {.smaller}
 
--   **PhD in Statistics and Epidemiology** (Sep 2015)\
--   **MSc in Statistics** (July 2012)\
--   **BSc in Statistics** (April 2012)
+- **PhD in Statistics and Epidemiology** (Sep 2015)\
+- **MSc in Statistics** (July 2012)\
+- **BSc in Statistics** (April 2012)
 
 ------------------------------------------------------------------------
 
@@ -88,43 +88,42 @@ format:
 
 ## The ingredients of a geostatistical model for prevalence mapping {.scrollable .smaller}
 
--   **Outcome**: $Y_i$ number of cases out $n_i$ sampled
+- **Outcome**: $Y_i$ number of cases out $n_i$ sampled
 
 . . .
 
--   **Locations**: $X = (x_1, \ldots, x_n)$
+- **Locations**: $X = (x_1, \ldots, x_n)$
 
 . . .
 
--   **Covariates** (optional): $d(x)$ (e.g. elevation, distance from waterways)
+- **Covariates** (optional): $d(x)$ (e.g. elevation, distance from waterways)
 
 . . .
 
--   **Spatial Gaussian process**: $S(x)$ (stationary and isotropic) $$
-    {\rm cov}\{S(x), S(x')\} = \sigma^2 \rho(||x - x'||; \phi)
-    $$ Example: $\rho(u; \phi) = \exp\{-u/\phi\}$.
+- **Spatial Gaussian process**: $S(x)$ (stationary and isotropic)
+  $${\rm cov}\{S(x), S(x')\} = \sigma^2 \rho(||x - x'||; \phi)$$
+  Example: $\rho(u; \phi) = \exp\{-u/\phi\}$.
 
 ## Putting all together {.scrollable .smaller}
 
--   **Conditional independence**: $Y_{i}$ conditionally on $S(x_i)$ are mutually independent $Bin(n_i , p(x_i))$
+- **Conditional independence**: $Y_{i}$ conditionally on $S(x_i)$ are mutually independent $Bin(n_i , p(x_i))$
 
 . . .
 
--   The **linear predictor** $$
-    \log\left\{\frac{p(x_i)}{1-p(x_i)}\right\} = \beta_0 + d(x_i)^\top \beta + S(x_i)
-    $$
+- The **linear predictor**
+  $$\log\left\{\frac{p(x_i)}{1-p(x_i)}\right\} = \beta_0 + d(x_i)^\top \beta + S(x_i)$$
 
 . . .
 
--   The **joint distribution**: $[S, Y] = [S] [Y | S]$
+- The **joint distribution**: $[S, Y] = [S] [Y | S]$
 
 where $Y=(Y_1, \ldots, Y_n)$ and $S = (S(x_1), \ldots, S(x_n))$
 
 . . .
 
--   The **likelihood function** $$
-    L(\theta) = \int_{\mathbb{R}^n} [S] [Y | S] \: dS
-    $$ How do we approximate this intractable integral?
+- The **likelihood function**
+  $$L(\theta) = \int_{\mathbb{R}^n} [S] [Y | S] \: dS$$
+  How do we approximate this intractable integral?
 
 ## PrevMap and RiskMap {.smaller}
 
@@ -136,11 +135,11 @@ Giorgi, E. and Fronterre, C. (expected August 2025) *Model-based geostatistics f
 
 ## Identifying disease hotspots
 
--   **Hotspot:** riverblindness prevalence above $20\%$
+- **Hotspot:** riverblindness prevalence above $20\%$
 
 . . .
 
--   **Exceedance probability:** ${\rm Prob}\{p(x) > 0.2 \:  | \: Y \}$
+- **Exceedance probability:** ${\rm Prob}\{p(x) > 0.2 \:  | \: Y \}$
 
 . . .
 
@@ -182,13 +181,13 @@ Diggle, P. J., Giorgi, E. (2016). Model-based geostatistics for prevalence mappi
 
 ## Future methodological directions
 
--   Using **multivariate geostatistical** models to analyse serological data from multiple diseases
+- Using **multivariate geostatistical** models to analyse serological data from multiple diseases
 
--   Incorporating **mathematical models** for the impact of interventions into geostatistical models
+- Incorporating **mathematical models** for the impact of interventions into geostatistical models
 
--   Developing more robust methods for the **validation** of geostatistical models for counts data.
+- Developing more robust methods for the **validation** of geostatistical models for counts data.
 
--   Dealing with **spatial and temporal misalignment** in repeated cross-sectional survey data
+- Dealing with **spatial and temporal misalignment** in repeated cross-sectional survey data
 
 ## Translation into policy: the case of trachoma
 
@@ -202,13 +201,13 @@ Sasanami, M., et al. (2023). Using model-based geostatistics for assessing the e
 
 ## Challenges in Translating Geostatistics for Policy
 
--   **Complexity of methods** – Advanced models are difficult to interpret for non-specialists.
+- **Complexity of methods** – Advanced models are difficult to interpret for non-specialists.
 
--   **Data uncertainty** – Policymakers may struggle to incorporate probabilistic estimates into decision-making.
+- **Data uncertainty** – Policymakers may struggle to incorporate probabilistic estimates into decision-making.
 
--   **Lack of user-friendly tools** – Limited access to tools that allow interactive exploration of spatial predictions.
+- **Lack of user-friendly tools** – Limited access to tools that allow interactive exploration of spatial predictions.
 
--   **Lack of local geostatistical expertise** – Few or no local experts support to support control programmes.
+- **Lack of local geostatistical expertise** – Few or no local experts support to support control programmes.
 
 ## Engagement with policy makers {.smaller}
 
