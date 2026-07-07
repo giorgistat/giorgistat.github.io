@@ -100,9 +100,7 @@ format:
 
 . . .
 
-- **Spatial Gaussian process**: $S(x)$ (stationary and isotropic)
-  $${\rm cov}\{S(x), S(x')\} = \sigma^2 \rho(||x - x'||; \phi)$$
-  Example: $\rho(u; \phi) = \exp\{-u/\phi\}$.
+- **Spatial Gaussian process**: $S(x)$ (stationary and isotropic) $${\rm cov}\{S(x), S(x')\} = \sigma^2 \rho(||x - x'||; \phi)$$ Example: $\rho(u; \phi) = \exp\{-u/\phi\}$.
 
 ## Putting all together {.scrollable .smaller}
 
@@ -110,8 +108,7 @@ format:
 
 . . .
 
-- The **linear predictor**
-  $$\log\left\{\frac{p(x_i)}{1-p(x_i)}\right\} = \beta_0 + d(x_i)^\top \beta + S(x_i)$$
+- The **linear predictor** $$\log\left\{\frac{p(x_i)}{1-p(x_i)}\right\} = \beta_0 + d(x_i)^\top \beta + S(x_i)$$
 
 . . .
 
@@ -121,9 +118,7 @@ where $Y=(Y_1, \ldots, Y_n)$ and $S = (S(x_1), \ldots, S(x_n))$
 
 . . .
 
-- The **likelihood function**
-  $$L(\theta) = \int_{\mathbb{R}^n} [S] [Y | S] \: dS$$
-  How do we approximate this intractable integral?
+- The **likelihood function** $$L(\theta) = \int_{\mathbb{R}^n} [S] [Y | S] \: dS$$ How do we approximate this intractable integral?
 
 ## PrevMap and RiskMap {.smaller}
 
