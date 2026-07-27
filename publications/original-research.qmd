@@ -59,6 +59,8 @@ title: "Original Research Articles"
 
 ## Applications {#public-health}
 
+- Kigozi, S. P., Okiring, J., Kigozi, L. S., Emuron, P., Talimusa, E. A., Kigozi, R. N., Alegana, V., Sartorius, B., <u>**Giorgi, E.**</u>, Drakeley, C., Yeka, A., *Attitude and practices of district-level HMIS managers towards malaria routine reporting in Uganda: a 2024 cross-sectional study.* Malaria Journal. <https://doi.org/10.1186/s12936-026-05951-8>
+
 - Ruiz Cuenca, P., Palma, F. A. G., Khalil, H., Brito, P., Reis, M. N., Arouca, M. G., Santos, A. M., de Oliveira, D. S., Alzete Lopez, Y. A., Santiago, D. C., Begon, M., <u>**Giorgi, E.**</u>, Costa, F., Lustosa, R. (2026). *Collaborative mapping: perceived environmental risk of leptospirosis in urban communities in Salvador, Brazil.* PLOS Global Public Health. PLOS Global Public Health 6(4): e0006113. <https://doi.org/10.1371/journal.pgph.0006113>
 
 - Purkiss. J., Pepe, P., Poplawski, N. A. K., Maurelli, M. P., Gualdieri, L., Rinaldi, L., <u>**Giorgi, E.**</u> (2025). *Combining country indicators and individual variables to predict soil-transmitted helminth infections among migrant populations: a case study from southern Italy.* PLOS Neglected Tropical Diseases 19(6): e0012577. <https://doi.org/10.1371/journal.pntd.0012577>
