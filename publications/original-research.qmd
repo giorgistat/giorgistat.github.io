@@ -59,7 +59,9 @@ title: "Original Research Articles"
 
 ## Applications {#public-health}
 
-- Kigozi, S. P., Okiring, J., Kigozi, L. S., Emuron, P., Talimusa, E. A., Kigozi, R. N., Alegana, V., Sartorius, B., <u>**Giorgi, E.**</u>, Drakeley, C., Yeka, A., *Attitude and practices of district-level HMIS managers towards malaria routine reporting in Uganda: a 2024 cross-sectional study.* Malaria Journal. <https://doi.org/10.1186/s12936-026-05951-8>
+- Supali, T., Djuardi, Y., Iskandar, E., Sugianto, N., Alfian, R., Destani, Y., <u>**Giorgi, E.**</u>, Weil, G. J., Fischer, P. U. (2026). *Can mass drug administration alone eliminate lymphatic filariasis in areas of Indonesia with zoophilic Brugia malayi?* PLoS Neglected Tropical Diseases. 20(7): e0014501. <https://doi.org/10.1371/journal.pntd.0014501>
+
+- Kigozi, S. P., Okiring, J., Kigozi, L. S., Emuron, P., Talimusa, E. A., Kigozi, R. N., Alegana, V., Sartorius, B., <u>**Giorgi, E.**</u>, Drakeley, C., Yeka, A. (2026). *Attitude and practices of district-level HMIS managers towards malaria routine reporting in Uganda: a 2024 cross-sectional study.* Malaria Journal. <https://doi.org/10.1186/s12936-026-05951-8>
 
 - Ruiz Cuenca, P., Palma, F. A. G., Khalil, H., Brito, P., Reis, M. N., Arouca, M. G., Santos, A. M., de Oliveira, D. S., Alzete Lopez, Y. A., Santiago, D. C., Begon, M., <u>**Giorgi, E.**</u>, Costa, F., Lustosa, R. (2026). *Collaborative mapping: perceived environmental risk of leptospirosis in urban communities in Salvador, Brazil.* PLOS Global Public Health. PLOS Global Public Health 6(4): e0006113. <https://doi.org/10.1371/journal.pgph.0006113>
 
