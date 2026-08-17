@@ -4,7 +4,9 @@ title: "Original Research Articles"
 
 ## Statistical Methodology {#stat-methodology}
 
-- <u>**Giorgi, E.**</u>, Wallin, J., *A flexible class of latent variable models for the analysis of antibody response data.* Biostatistics, Volume 27, Issue 1, January 2026, kxag008, [https://doi.org/10.1093/biostatistics/kxag008](https://doi.org/10.1093/biostatistics/kxag008)
+- <u>**Giorgi, E.**</u>, Fronterre, C., Diggle, P. J. (2026). *A decay-adjusted spatio-temporal model to account for the impact of mass drug administration on neglected tropical disease prevalence.* Journal of the Royal Statistical Society, Series A. DOI: 10.1093/jrsssa/qnag100. [Preprint on arXiv](https://arxiv.org/abs/2512.03760)
+
+- <u>**Giorgi, E.**</u>, Wallin, J. (2026). *A flexible class of latent variable models for the analysis of antibody response data.* Biostatistics, Volume 27, Issue 1, January 2026, kxag008, [https://doi.org/10.1093/biostatistics/kxag008](https://doi.org/10.1093/biostatistics/kxag008)
 
 
 - Chacón-Montalván, E.A., Parry, L., <u>**Giorgi, E.**</u>, Torres, P., Orellana, J.D.Y., Moraga, P., Taylor, B.M. (2025). *Mapping food insecurity in the Brazilian Amazon using a spatial item factor analysis model.* The Annals of Applied Statistics. 19(4): 3438-3463 (December 2025). DOI: 10.1214/25-AOAS2072
