@@ -12,17 +12,17 @@ This course provides a comprehensive introduction to **Model-based Geostatistics
 
 By the end of this course, students will be able to:
 
--   Understand the theoretical foundations of model-based geostatistics.
--   Perform exploratory analysis of spatial data using R.
--   Fit and interpret geostatistical models.
--   Perform geostatistical prediction in answer to a given public health questions.
+- Understand the theoretical foundations of model-based geostatistics.
+- Perform exploratory analysis of spatial data using R.
+- Fit and interpret geostatistical models.
+- Perform geostatistical prediction in answer to a given public health questions.
 
 ------------------------------------------------------------------------
 
 ## R packages
 
--   *Essential*: `RiskMap`, `rgeoboundaries`, `ggplot2`, `sf`, `terra`, `elevats`
--   *Desireable*: `shiny`
+- *Essential*: `RiskMap`, `rgeoboundaries`, `ggplot2`, `sf`, `terra`, `elevats`
+- *Desireable*: `shiny`
 
 Install `RiskMap` in R by running `devtools::install_github("giorgilancs/RiskMap")`
 
@@ -38,41 +38,41 @@ You can download all the R scripts used in the slides [here](MBG/R%20scripts.zip
 
 An overview of geostatistical problems in the context of epidemiological studies.
 
--   [Slides](MBG/introduction.qmd)
+- [Slides](MBG/introduction.qmd)
 
 ### 2. Exploratory Analysis
 
 Exploring regression relationships, overdispersion and spatial correlation.
 
--   [Slides](MBG/exp_analysis.qmd)
--   [Exercise](MBG/Exercises/Exercise-1.pdf), [raster files](MBG/Data/Tanzania_rasters.zip) for the analysis and [solution](MBG/Exercises/Exercise%201%20(solution).zip)
+- [Slides](MBG/exp_analysis.qmd)
+- [Exercise](MBG/Exercises/Exercise-1.pdf), [raster files](MBG/Data/Tanzania_rasters.zip) for the analysis and [solution](MBG/Exercises/Exercise%201%20(solution).zip)
 
 ### 3. Model Formulation and Parameter Estimation
 
 How to formulate and fit geostatistical models using Monte Carlo Maximum likelihood.
 
--   [Slides](MBG/estimation.qmd)
--   [Exercise](MBG/Exercises/Exercise-2.pdf) and [solution](MBG/Exercises/Exercise%202%20(solution).zip)
+- [Slides](MBG/estimation.qmd)
+- [Exercise](MBG/Exercises/Exercise-2.pdf) and [solution](MBG/Exercises/Exercise%202%20(solution).zip)
 
 ### 4. Geostatistical prediction
 
 How to predict health outcomes using geostatistical models, at pixel- and areal-level.
 
--   [Slides](MBG/geostat_pred.qmd)
--   [Exercise](MBG/Exercises/Exercise-3.pdf) and [solution](MBG/Exercises/Exercise%203%20(solution).zip)
+- [Slides](MBG/geostat_pred.qmd)
+- [Exercise](MBG/Exercises/Exercise-3.pdf) and [solution](MBG/Exercises/Exercise%203%20(solution).zip)
 
 ------------------------------------------------------------------------
 
 ## Prerequisites
 
--   Basic knowledge of the basics of probability.
--   Good knowledge of generalized linear models.
--   Familiarity with R programming (or willingness to learn).
--   No prior experience with geostatistics is required.
+- Basic knowledge of the basics of probability.
+- Good knowledge of generalized linear models.
+- Familiarity with R programming (or willingness to learn).
+- No prior experience with geostatistics is required.
 
 ------------------------------------------------------------------------
 
 ## How to Use This Material
 
--   Each section includes lecture notes, code examples, and exercises.
--   The materials are designed to be self-paced, but they can also be used in a classroom setting.
+- Each section includes lecture notes, code examples, and exercises.
+- The materials are designed to be self-paced, but they can also be used in a classroom setting.

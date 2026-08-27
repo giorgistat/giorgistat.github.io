@@ -2,7 +2,8 @@
 title: "Neglected Tropical Diseases"
 ---
 
-![](whocc.png){.border .rounded .shadow-lg width="50%"}
+![Figure taken from [Zheng et al (2026)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12766246/)](ntd_map.jpeg){.border .rounded .shadow-lg width="50%"}
+
 
 Neglected Tropical Diseases (NTDs) are a group of infectious diseases that primarily affect impoverished populations in low- and middle-income countries. These diseases, such as lymphatic filariasis, trachoma, and soil-transmitted helminths, have significant impacts on health, social development, and economic productivity. Addressing NTDs requires innovative approaches to map, analyze, and design control interventions efficiently.
 
@@ -10,7 +11,7 @@ My research focuses on the application of spatial and spatio-temporal statistica
 
 As the Head of the World Health Organization (WHO) Collaborating Centre on Geostatistical Methods for Neglected Tropical Diseases, I lead initiatives that leverage cutting-edge statistical techniques to support global health priorities. This role involves developing tools, conducting training programs, and fostering collaborations to advance the use of spatial statistics in the fight against NTDs.
 
-To know more about my research on NTDs **read our Significance paper** [here](Significance_Article.pdf) (the published paper can also be accessed through the official Significance website [here](https://academic.oup.com/jrssig/article-abstract/21/4/14/7730933))
+To know more about my research on NTDs **read our Significance paper** [here](https://academic.oup.com/jrssig/article-abstract/21/4/14/7730933).
 
 ## Recent publications & preprints
 
@@ -18,6 +19,6 @@ To know more about my research on NTDs **read our Significance paper** [here](Si
 
 - Norman, J., Bassabi-Alladjie, N.-M., Boko-Collins, P. M., de Souza, D. K., Gass, K., Hamill, L., Langa, J., Moore, C., Nala, R., Sullivan, S., <u>**Giorgi, E.**</u>, *Assessing diagnostic accuracy of Ov16 rapid diagnostic tests for onchocerciasis using Bayesian latent class models.* (Under review) [Preprint on medRxiv](https://www.medrxiv.org/content/10.64898/2026.01.20.26344416v1)
 
-- Sasanami, M., Almou, I., Diori, A. N., Bakhtiari, A., Beidou, N., Bisanzio, D., Boyd, S., Burgert-Brucker, C. R., Amza, A., Gass, K., Kadri, B., Kebede, F., Masika, M. P., Olobio, N. P., Seife, F., Souley, A. S. Y., Tefera, A., Kello, A. B., Solomon, A. W., Harding-Esch, E. <u>**Giorgi, E.**</u> (2025). *Understanding the impact of covariates for trachoma prevalence prediction using geostatistical methods.* BMC Global and Public Health. BMC Global Public Health 3, 48. https://doi.org/10.1186/s44263-025-00161-x
+- Sasanami, M., Almou, I., Diori, A. N., Bakhtiari, A., Beidou, N., Bisanzio, D., Boyd, S., Burgert-Brucker, C. R., Amza, A., Gass, K., Kadri, B., Kebede, F., Masika, M. P., Olobio, N. P., Seife, F., Souley, A. S. Y., Tefera, A., Kello, A. B., Solomon, A. W., Harding-Esch, E. <u>**Giorgi, E.**</u> (2025). *Understanding the impact of covariates for trachoma prevalence prediction using geostatistical methods.* BMC Global and Public Health. BMC Global Public Health 3, 48. [https://doi.org/10.1186/s44263-025-00161-x](https://doi.org/10.1186/s44263-025-00161-x)
 
-- Khaki, J., Minnery, M., <u>**Giorgi, E.**</u> (2025). *Using ESPEN Data for Evidence-Based Control of Neglected Tropical Diseases in sub-Saharan Africa: a Comprehensive Model-based Geostatistical Analysis on Soil-Transmitted Helminths.* PLOS Neglected Tropical Diseases 19(1): e0012782. https://doi.org/10.1371/journal.pntd.0012782
+- Khaki, J., Minnery, M., <u>**Giorgi, E.**</u> (2025). *Using ESPEN Data for Evidence-Based Control of Neglected Tropical Diseases in sub-Saharan Africa: a Comprehensive Model-based Geostatistical Analysis on Soil-Transmitted Helminths.* PLOS Neglected Tropical Diseases 19(1): e0012782. [https://doi.org/10.1371/journal.pntd.0012782](https://doi.org/10.1371/journal.pntd.0012782)
