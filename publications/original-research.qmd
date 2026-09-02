@@ -4,7 +4,7 @@ title: "Original Research Articles"
 
 ## Statistical Methodology {#stat-methodology}
 
-- <u>**Giorgi, E.**</u>, Fronterre, C., Diggle, P. J. (2026). *A decay-adjusted spatio-temporal model to account for the impact of mass drug administration on neglected tropical disease prevalence.* Journal of the Royal Statistical Society, Series A. DOI: 10.1093/jrsssa/qnag100. [Preprint on arXiv](https://arxiv.org/abs/2512.03760)
+- <u>**Giorgi, E.**</u>, Fronterre, C., Diggle, P. J. (2026). *A decay-adjusted spatio-temporal model to account for the impact of mass drug administration on neglected tropical disease prevalence.* Journal of the Royal Statistical Society, Series A.  qnag100, [qnag100, https://doi.org/10.1093/jrsssa/qnag100](https://doi.org/10.1093/jrsssa/qnag100). 
 
 - <u>**Giorgi, E.**</u>, Wallin, J. (2026). *A flexible class of latent variable models for the analysis of antibody response data.* Biostatistics, Volume 27, Issue 1, January 2026, kxag008, [https://doi.org/10.1093/biostatistics/kxag008](https://doi.org/10.1093/biostatistics/kxag008)
 

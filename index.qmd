@@ -11,6 +11,9 @@ about:
     - icon: envelope
       text: "e.giorgi@bham.ac.uk"
       href: "mailto:e.giorgi@bham.ac.uk"
+    - icon: linkedin
+      text: "LinkedIn"
+      href: "https://www.linkedin.com/in/emanuele-giorgi-423a19157"
     - text: "<img src='bs.png' alt='Bluesky' style='height:1em; vertical-align:middle;'> @giorgistat.bsky.social"
       href: "https://bsky.app/profile/giorgistat.bsky.social"
 title-block-banner: true

@@ -15,7 +15,7 @@ To know more about my research on NTDs **read our Significance paper** [here](ht
 
 ## Recent publications & preprints
 
-- <u>**Giorgi, E.**</u>, Fronterre, C., Diggle, P. J. (2026). *A decay-adjusted spatio-temporal model to account for the impact of mass drug administration on neglected tropical disease prevalence.* Journal of the Royal Statistical Society, Series A. DOI: 10.1093/jrsssa/qnag100. [Preprint on arXiv](https://arxiv.org/abs/2512.03760)
+- <u>**Giorgi, E.**</u>, Fronterre, C., Diggle, P. J. (2026). *A decay-adjusted spatio-temporal model to account for the impact of mass drug administration on neglected tropical disease prevalence.* Journal of the Royal Statistical Society, Series A.  qnag100, [qnag100, https://doi.org/10.1093/jrsssa/qnag100](https://doi.org/10.1093/jrsssa/qnag100). 
 
 - Norman, J., Bassabi-Alladjie, N.-M., Boko-Collins, P. M., de Souza, D. K., Gass, K., Hamill, L., Langa, J., Moore, C., Nala, R., Sullivan, S., <u>**Giorgi, E.**</u>, *Assessing diagnostic accuracy of Ov16 rapid diagnostic tests for onchocerciasis using Bayesian latent class models.* (Under review) [Preprint on medRxiv](https://www.medrxiv.org/content/10.64898/2026.01.20.26344416v1)
 
