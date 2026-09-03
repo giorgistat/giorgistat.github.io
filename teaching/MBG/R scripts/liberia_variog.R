@@ -21,15 +21,15 @@ liberia <- st_as_sf(liberia, coords = c("long", "lat"),
 crs_lb <- propose_utm(liberia)
 liberia <- st_transform(liberia, crs = crs_lb)
 
-liberia_variog <- s_variogram(data = liberia,
-                              variable = "Z_hat",
-                              bins = c(15, 30, 40, 80, 120,
-                                       160, 200, 250, 300, 350),
-                              scale_to_km = TRUE,
-                              n_permutation = 10000)
+liberia_variog <- variogram(data = liberia,
+                            variable = "Z_hat",
+                            breaks = c(15, 30, 40, 80, 120,
+                                     160, 200, 250, 300, 350),
+                            scale_to_km = TRUE,
+                            n_permutation = 10000)
 
-plot_s_variogram(liberia_variog)
+plot_variogram(liberia_variog)
 
 
-plot_s_variogram(liberia_variog,
+plot_variogram(liberia_variog,
                  plot_envelope = TRUE)
