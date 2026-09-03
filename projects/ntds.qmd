@@ -17,7 +17,7 @@ To know more about my research on NTDs **read our Significance paper** [here](ht
 
 - <u>**Giorgi, E.**</u>, Fronterre, C., Diggle, P. J. (2026). *A decay-adjusted spatio-temporal model to account for the impact of mass drug administration on neglected tropical disease prevalence.* Journal of the Royal Statistical Society, Series A.  qnag100, [qnag100, https://doi.org/10.1093/jrsssa/qnag100](https://doi.org/10.1093/jrsssa/qnag100). 
 
-- Norman, J., Bassabi-Alladjie, N.-M., Boko-Collins, P. M., de Souza, D. K., Gass, K., Hamill, L., Langa, J., Moore, C., Nala, R., Sullivan, S., <u>**Giorgi, E.**</u>, *Assessing diagnostic accuracy of Ov16 rapid diagnostic tests for onchocerciasis using Bayesian latent class models.* (Under review) [Preprint on medRxiv](https://www.medrxiv.org/content/10.64898/2026.01.20.26344416v1)
+- Norman, J., Bassabi-Alladjie, N.-M., Boko-Collins, P. M., de Souza, D. K., Gass, K., Hamill, L., Langa, J., Moore, C., Nala, R., Sullivan, S., <u>**Giorgi, E.**</u>, *Assessing diagnostic accuracy of Ov16 rapid diagnostic tests for onchocerciasis using Bayesian latent class models.* (Under review) [Preprint on medRxiv](https://www.medrxiv.org/content/10.64898/2026.01.20.26344416)
 
 - Sasanami, M., Almou, I., Diori, A. N., Bakhtiari, A., Beidou, N., Bisanzio, D., Boyd, S., Burgert-Brucker, C. R., Amza, A., Gass, K., Kadri, B., Kebede, F., Masika, M. P., Olobio, N. P., Seife, F., Souley, A. S. Y., Tefera, A., Kello, A. B., Solomon, A. W., Harding-Esch, E. <u>**Giorgi, E.**</u> (2025). *Understanding the impact of covariates for trachoma prevalence prediction using geostatistical methods.* BMC Global and Public Health. BMC Global Public Health 3, 48. [https://doi.org/10.1186/s44263-025-00161-x](https://doi.org/10.1186/s44263-025-00161-x)
 
