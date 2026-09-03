@@ -86,28 +86,28 @@
   {
     "objectID": "publications/other-publications.html",
     "href": "publications/other-publications.html",
-    "title": "Other Non Peer-Reviewed Publications",
+    "title": "Other Publications",
     "section": "",
-    "text": "Purkiss, J., Clark, F., Giorgi, E. (2024). Using geostatistics to fight neglected tropical diseases. Significance, Volume 21, Issue 4, September 2024, Pages 14–18, \\ https://doi.org/10.1093/jrssig/qmae057\nGiorgi, E. (2018). Career Highlights: Emanuele Giorgi on teaching in Africa. Significance, 15: 41. doi:10.1111/j.1740-9713.2018.01111.x\nGiorgi, E., Bisanzio, D. (2017). Why malaria is unlikely to return to Italy – despite a recent death from the disease. The Conversation. Available here"
+    "text": "Giorgi, E., Fronterre, C., Diggle, P. J. (2026). Comment on “The Two Cultures of Prevalence Mapping: Small Area Estimation and Model-Based Geostatistics.”  Statistical Science. Available here\nStockdale, A. J., Kreuels, B., Henrion, M., Giorgi, E., Kyomuhangi, I., Geretti, A. M. (2018). Hepatitis D prevalence: problems with extrapolation to global population estimates. Gut. DOI:10.1136/gutjnl-2018-317874\nDiggle, P. J., Giorgi, E. (2014). Geostatistical mapping of helminth infection rates. The Lancet Infectious Diseases. 15:9-11"
   },
   {
     "objectID": "publications/other-publications.html#outreach",
     "href": "publications/other-publications.html#outreach",
-    "title": "Other Non Peer-Reviewed Publications",
-    "section": "",
-    "text": "Purkiss, J., Clark, F., Giorgi, E. (2024). Using geostatistics to fight neglected tropical diseases. Significance, Volume 21, Issue 4, September 2024, Pages 14–18, \\ https://doi.org/10.1093/jrssig/qmae057\nGiorgi, E. (2018). Career Highlights: Emanuele Giorgi on teaching in Africa. Significance, 15: 41. doi:10.1111/j.1740-9713.2018.01111.x\nGiorgi, E., Bisanzio, D. (2017). Why malaria is unlikely to return to Italy – despite a recent death from the disease. The Conversation. Available here"
+    "title": "Other Publications",
+    "section": "Outreach and Public Engagement",
+    "text": "Outreach and Public Engagement\n\nPurkiss, J., Clark, F., Giorgi, E. (2024). Using geostatistics to fight neglected tropical diseases. Significance, Volume 21, Issue 4, September 2024, Pages 14–18,https://doi.org/10.1093/jrssig/qmae057\nGiorgi, E. (2018). Career Highlights: Emanuele Giorgi on teaching in Africa. Significance, 15: 41. doi:10.1111/j.1740-9713.2018.01111.x\nGiorgi, E., Bisanzio, D. (2017). Why malaria is unlikely to return to Italy – despite a recent death from the disease. The Conversation. Available here"
   },
   {
     "objectID": "publications/other-publications.html#comments",
     "href": "publications/other-publications.html#comments",
-    "title": "Other Non Peer-Reviewed Publications",
-    "section": "Invited Comments to Publications",
-    "text": "Invited Comments to Publications\n\nStockdale, A. J., Kreuels, B., Henrion, M., Giorgi, E., Kyomuhangi, I., Geretti, A. M. (2018). Hepatitis D prevalence: problems with extrapolation to global population estimates. Gut.\\ DOI:10.1136/gutjnl-2018-317874\nDiggle, P. J., Giorgi, E. (2014). Geostatistical mapping of helminth infection rates. The Lancet Infectious Diseases. 15:9-11"
+    "title": "Other Publications",
+    "section": "",
+    "text": "Giorgi, E., Fronterre, C., Diggle, P. J. (2026). Comment on “The Two Cultures of Prevalence Mapping: Small Area Estimation and Model-Based Geostatistics.”  Statistical Science. Available here\nStockdale, A. J., Kreuels, B., Henrion, M., Giorgi, E., Kyomuhangi, I., Geretti, A. M. (2018). Hepatitis D prevalence: problems with extrapolation to global population estimates. Gut. DOI:10.1136/gutjnl-2018-317874\nDiggle, P. J., Giorgi, E. (2014). Geostatistical mapping of helminth infection rates. The Lancet Infectious Diseases. 15:9-11"
   },
   {
     "objectID": "publications/other-publications.html#reviews",
     "href": "publications/other-publications.html#reviews",
-    "title": "Other Non Peer-Reviewed Publications",
+    "title": "Other Publications",
     "section": "Book Reviews",
     "text": "Book Reviews\n\nGiorgi, E. (2017). Review of “Spatial Point Patterns: Methodology and Applications with R”. American Statistician. doi: 10.1080/00031305.2017.1322880"
   },
@@ -116,7 +116,7 @@
     "href": "talks/index.html",
     "title": "Talks",
     "section": "",
-    "text": "This page includes slides of selected presentations given at seminars and conferences since February 2025.\n\n\nA flexible class of latent variable models for the analysis of antibody response data\nSeminar at the Barcelona Supercomputing Centre, Barcelona, Spain, 5 December 2025\nAccounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods\nSeminar at the Department of Statistics at Lund University, Lund, Sweden, 26 May 2025\nModel-based Geostatistics for Global Public Health: From Methodology Development to Policy Applications\nSeminar at Oslo Centre for Biostatistics and Epidemiology, Oslo University, Oslo, Norway, 20 March 2025"
+    "text": "This page includes slides of selected presentations given at seminars and conferences since February 2025.\n\n\nLatent variable models for the analysis of antibody density data: from non-spatial univariate to spatial multivariate\nSeminar at the Institut Pasteur, Paris, France, September 2026\nA flexible class of latent variable models for the analysis of antibody response data\nSeminar at the Barcelona Supercomputing Centre, Barcelona, Spain, 5 December 2025\nAccounting for the impact of mass-drug administration for NTDs prevalence mapping using geostatistical methods\nSeminar at the Department of Statistics at Lund University, Lund, Sweden, 26 May 2025\nModel-based Geostatistics for Global Public Health: From Methodology Development to Policy Applications\nSeminar at Oslo Centre for Biostatistics and Epidemiology, Oslo University, Oslo, Norway, 20 March 2025"
   },
   {
     "objectID": "talks/Birmingham (20 Feb 2025).html#my-background",
@@ -1951,5 +1951,572 @@
     "title": "A flexible class of latent variable models for the analysis of antibody response data",
     "section": "Predicted antibody levels in MSP1",
     "text": "Predicted antibody levels in MSP1"
+  },
+  {
+    "objectID": "talks/Paris2026.html#where-we-are-going",
+    "href": "talks/Paris2026.html#where-we-are-going",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Where we are going",
+    "text": "Where we are going\n\nPart I — One antigen. A continuous latent seroreactivity variable replaces the seropositive / seronegative dichotomy\nPart II — Two antigens. Three guiding principles for where dependence should enter the model\n\nwithin individuals: shared infection events and shared within-host immunology\nbetween individuals: shared exposure environment (geostatistics)\n\nPart III — Application. Malaria serology in the Kenyan highlands: what joint modelling buys us, and what it does not"
+  },
+  {
+    "objectID": "talks/Paris2026.html#the-dominant-paradigm",
+    "href": "talks/Paris2026.html#the-dominant-paradigm",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "The dominant paradigm",
+    "text": "The dominant paradigm\n\n\\[f(y) = \\pi_0\\, \\mathcal{N}(y; \\mu_0,\\sigma_0^2) + \\pi_1\\, \\mathcal{N}(y; \\mu_1,\\sigma_1^2)\\]\n\nIndividuals classified into two mutually exclusive states\nWhich threshold to use?\nChoice should be context dependent\nMultiple antigens, multiple thresholds?\n\n\nWhite, Baudemont et al. (2026). Whose Line Is it Anyway? Defining Seropositivity Cutoffs for Infectious Disease Surveillance. JID. doi.org/10.1093/infdis/jiaf537"
+  },
+  {
+    "objectID": "talks/Paris2026.html#a-continuum-instead-of-a-dichotomy",
+    "href": "talks/Paris2026.html#a-continuum-instead-of-a-dichotomy",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "A continuum instead of a dichotomy",
+    "text": "A continuum instead of a dichotomy\nSeroreactivity: the presence or degree of antibody reactivity, irrespective of any diagnostic threshold.\n\n\nLatent variable \\(T \\in [0,1]\\)\n\n\\(T \\approx 0\\): minimal or absent serological activity\n\\(T \\approx 1\\): strong or saturated response\n\n\n\\[Y \\mid T=t \\sim\n\\mathcal{N}\\big( (1-t)\\mu_0 + t\\mu_1,\\;\n(1-t)\\sigma_0^2 + t\\sigma_1^2 \\big)\\]\n\nBoth mean and variance interpolate linearly between the two extremes of the assay range."
+  },
+  {
+    "objectID": "talks/Paris2026.html#what-the-parameters-mean",
+    "href": "talks/Paris2026.html#what-the-parameters-mean",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "What the parameters mean",
+    "text": "What the parameters mean\n\n\\(\\mu_0, \\mu_1\\) — resting and saturation antibody levels (assay characteristics)\n\\(\\sigma_0^2, \\sigma_1^2\\) — heterogeneity at each extreme; usually \\(\\sigma_1^2 &lt; \\sigma_0^2\\)\n\nAll the epidemiology sits in the distribution of \\(T\\)."
+  },
+  {
+    "objectID": "talks/Paris2026.html#it-contains-what-we-already-use",
+    "href": "talks/Paris2026.html#it-contains-what-we-already-use",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "It contains what we already use",
+    "text": "It contains what we already use\nClassical antibody acquisition model (Yman et al., 2016):\n\\[\\mathbb{E}[Y;a] = \\mu_0 + (\\mu_1-\\mu_0)\\{1-\\exp(-ra)\\}\\]\n\nIn the latent framework this is simply\n\\[\\mathbb{E}[T;a] = 1-\\exp(-ra),\n\\qquad\n\\mathbb{E}[Y;a] = \\mu_0 + (\\mu_1-\\mu_0)\\,\\mathbb{E}[T;a]\\]\nGaussian mixture models are recovered as the limiting case where \\(T\\) collapses to a two-point distribution."
+  },
+  {
+    "objectID": "talks/Paris2026.html#why-linear-interpolation-of-the-variance",
+    "href": "talks/Paris2026.html#why-linear-interpolation-of-the-variance",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Why linear interpolation of the variance",
+    "text": "Why linear interpolation of the variance\nTwo tempting alternatives, and why we do not use them:\n\n\\(Y = (1-t)Y_0 + tY_1\\) gives \\({\\rm Var} = (1-t)^2\\sigma_0^2 + t^2\\sigma_1^2\\) — a U-shape, so individuals at intermediate activation would be least variable. No biological justification.\n\\(Y = (1-Z_t)Y_0 + Z_tY_1\\), \\(Z_t \\sim \\text{Bernoulli}(t)\\) — this is a GMM conditional on \\(t\\). The binary assignment survives.\n\n\nOur specification keeps the response on a genuine continuum."
+  },
+  {
+    "objectID": "talks/Paris2026.html#modelling-t-a-single-beta",
+    "href": "talks/Paris2026.html#modelling-t-a-single-beta",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Modelling \\(T\\): a single Beta",
+    "text": "Modelling \\(T\\): a single Beta"
+  },
+  {
+    "objectID": "talks/Paris2026.html#modelling-t-mixtures-of-betas",
+    "href": "talks/Paris2026.html#modelling-t-mixtures-of-betas",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Modelling \\(T\\): mixtures of Betas",
+    "text": "Modelling \\(T\\): mixtures of Betas"
+  },
+  {
+    "objectID": "talks/Paris2026.html#age-dependency",
+    "href": "talks/Paris2026.html#age-dependency",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Age dependency",
+    "text": "Age dependency\nRecall the two ways of modelling \\(T\\):\n\\[\n1) \\quad T \\sim \\text{Beta}(\\alpha,\\beta)\n\\]\n\\[\n2) \\quad T \\sim \\bigl(1-\\pi(a)\\bigr)\\,\\text{Beta}(t;\\alpha_1,\\beta_1) + \\pi(a)\\,\\text{Beta}(t;\\alpha_2,\\beta_2)\n\\]\n\n\nThrough the shape: \\(\\alpha(a)=\\alpha_0 a^{\\gamma}\\), \\(\\beta(a)=\\beta_0 a^{\\delta}\\)\nthe single Beta’s own shape parameters vary with age\nThrough the mixing weights: \\(\\pi(a) = 1-\\exp(-\\lambda a)\\)\nage shifts weight from the low- to the high-seroreactivity component"
+  },
+  {
+    "objectID": "talks/Paris2026.html#inference",
+    "href": "talks/Paris2026.html#inference",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Inference",
+    "text": "Inference\n\nMLE: repeated numerical integration over \\(T\\)\nHistogram \\(L_2\\): evaluates density at \\(J \\ll n\\) bin midpoints, 7–250-fold faster\nUse: \\(L_2\\) for exploration, MLE for final estimates"
+  },
+  {
+    "objectID": "talks/Paris2026.html#application-malaria-serology-kenyan-highlands",
+    "href": "talks/Paris2026.html#application-malaria-serology-kenyan-highlands",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Application: malaria serology, Kenyan highlands",
+    "text": "Application: malaria serology, Kenyan highlands\nRachuonyo South District, 2011 — IgG against two P. falciparum blood-stage antigens, AMA1 and MSP1 (Bousema et al., 2013, 2016).\n\nExploratory strategy: fix the conditional parameters from the youngest age group, re-estimate only the distribution of \\(T\\) within successive age bands."
+  },
+  {
+    "objectID": "talks/Paris2026.html#ama1-age-stratified-exploration",
+    "href": "talks/Paris2026.html#ama1-age-stratified-exploration",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "AMA1: age-stratified exploration",
+    "text": "AMA1: age-stratified exploration\n\n\nLeft: histograms and fitted densities by age band\nMiddle: Beta shape parameters \\(\\alpha\\), \\(\\beta\\) and their mean across age\nRight: fitted Beta densities of \\(T\\) by age band"
+  },
+  {
+    "objectID": "talks/Paris2026.html#ama1-a-joint-model-across-all-ages",
+    "href": "talks/Paris2026.html#ama1-a-joint-model-across-all-ages",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "AMA1: a joint model across all ages",
+    "text": "AMA1: a joint model across all ages\nBelow the change point \\(\\tau\\) — mechanistic mixture with a degenerate mass at \\(T=0\\):\n\\[\nf_T(t;a) =\n\\begin{cases}\n1-\\pi(a), & t=0\\\\\n\\pi(a)\\,\\alpha_2\\, t^{\\alpha_2-1}, & 0&lt;t&lt;1\n\\end{cases}\n\\qquad\n\\pi(a) = 1-\\exp(-\\lambda a)\n\\]\nAbove \\(\\tau\\) — empirical Beta with logit-linear mean, tied to the mechanistic part by a continuity constraint:\n\\[\nT \\sim \\text{Beta}\\big(\\mu(a)\\phi,\\,[1-\\mu(a)]\\phi\\big), \\qquad\n\\eta_0 = \\text{logit}(\\mu_{\\tau^-}) - \\eta_1\\log(\\tau)\n\\]\nEstimated at \\(\\hat\\tau = 20.8\\) years, \\(\\hat\\lambda = 0.148\\) — about half of children have initiated a measurable response by age 5."
+  },
+  {
+    "objectID": "talks/Paris2026.html#ama1-validation",
+    "href": "talks/Paris2026.html#ama1-validation",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "AMA1: validation",
+    "text": "AMA1: validation"
+  },
+  {
+    "objectID": "talks/Paris2026.html#msp1-age-stratified-exploration",
+    "href": "talks/Paris2026.html#msp1-age-stratified-exploration",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "MSP1: age-stratified exploration",
+    "text": "MSP1: age-stratified exploration\n\n\nSame three-panel layout as AMA1: histograms, shape parameters, fitted Beta densities\n\\(\\alpha\\) rises with age as for AMA1; \\(\\beta\\) stabilises after age 10\nSeparation between low- and high-response groups weakens more slowly than for AMA1"
+  },
+  {
+    "objectID": "talks/Paris2026.html#msp1-validation",
+    "href": "talks/Paris2026.html#msp1-validation",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "MSP1: validation",
+    "text": "MSP1: validation\n\nChange point at \\(\\zeta = 11.6\\) years — an acceleration, not a plateau."
+  },
+  {
+    "objectID": "talks/Paris2026.html#two-antigens-two-age-profiles",
+    "href": "talks/Paris2026.html#two-antigens-two-age-profiles",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Two antigens, two age profiles",
+    "text": "Two antigens, two age profiles"
+  },
+  {
+    "objectID": "talks/Paris2026.html#part-i-in-one-line",
+    "href": "talks/Paris2026.html#part-i-in-one-line",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Part I in one line",
+    "text": "Part I in one line\n\nLatent model beats GMM everywhere (BIC gaps up to ~1400)\nAge dynamics become testable, not assumed\n\nBut: one antigen, one individual at a time."
+  },
+  {
+    "objectID": "talks/Paris2026.html#why-go-multivariate",
+    "href": "talks/Paris2026.html#why-go-multivariate",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Why go multivariate",
+    "text": "Why go multivariate\nMultiplex assays measure many antigens at once.\n\nWithin an individual — shared infection, shared immunology\nBetween individuals — shared exposure environment\n\nNo existing framework handles all three (cross-antigen, age, spatial) for non-Gaussian outcomes."
+  },
+  {
+    "objectID": "talks/Paris2026.html#where-should-dependence-enter",
+    "href": "talks/Paris2026.html#where-should-dependence-enter",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Where should dependence enter?",
+    "text": "Where should dependence enter?\nWithout constraints, multivariate extensions become weakly identifiable and hard to reconcile with biology.\n\nWe therefore adopt three guiding principles."
+  },
+  {
+    "objectID": "talks/Paris2026.html#p1-dependence-is-carried-by-the-latent-process",
+    "href": "talks/Paris2026.html#p1-dependence-is-carried-by-the-latent-process",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "P1 — Dependence is carried by the latent process",
+    "text": "P1 — Dependence is carried by the latent process\nThe observation model \\(Y \\mid T\\) describes assay characteristics.\n\nConditional on seroreactivity, residual variation is measurement noise and laboratory artefact — it induces no systematic cross-antigen correlation.\n\n\nConsequence: the antibody concentrations are conditionally independent given \\(\\mathbf{T}\\); all dependence lives in the joint distribution of \\(\\mathbf{T}\\)."
+  },
+  {
+    "objectID": "talks/Paris2026.html#p2-exposure-and-response-magnitude-are-separate",
+    "href": "talks/Paris2026.html#p2-exposure-and-response-magnitude-are-separate",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "P2 — Exposure and response magnitude are separate",
+    "text": "P2 — Exposure and response magnitude are separate\n\n\nExposure\nForce of infection → probability of mounting a high-seroreactivity response\n→ enters the mixing probabilities\n\nMagnitude\nIndividual immunology → size of the response given exposure\n→ enters the component locations\n\n\nThis is why a mixture formulation for \\(T\\), rather than a single density, is the natural choice here."
+  },
+  {
+    "objectID": "talks/Paris2026.html#p3-separate-scales-separate-structures",
+    "href": "talks/Paris2026.html#p3-separate-scales-separate-structures",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "P3 — Separate scales, separate structures",
+    "text": "P3 — Separate scales, separate structures\nThree mechanisms act at distinct levels:\n\nA single infection event stimulating several antigen-specific responses within an individual\nA shared exposure environment correlating risk across nearby individuals\nShared within-host processes correlating response magnitude, independent of any single event\n\n\nEach should get its own correlation structure, so the processes remain distinguishable."
+  },
+  {
+    "objectID": "talks/Paris2026.html#the-latent-unit-square",
+    "href": "talks/Paris2026.html#the-latent-unit-square",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "The latent unit square",
+    "text": "The latent unit square\n\n\n\n\n\n\nMass concentrates on the diagonal, with an off-diagonal tail."
+  },
+  {
+    "objectID": "talks/Paris2026.html#an-illustration",
+    "href": "talks/Paris2026.html#an-illustration",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "An illustration",
+    "text": "An illustration\n\n\n\n\n\n\nMass concentrates on the diagonal, with an off-diagonal tail."
+  },
+  {
+    "objectID": "talks/Paris2026.html#two-distinct-correlation-parameters",
+    "href": "talks/Paris2026.html#two-distinct-correlation-parameters",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Two distinct correlation parameters",
+    "text": "Two distinct correlation parameters\n\n\n\\(\\delta(a)\\) — shared infection event\nAssociation between the two component labels. Positive when the antigens come from the same pathogen and life-cycle stage.\nAllowed to vary with age: antigens differ in immunogenicity, so the two regimes need not align at young ages.\n\n\\(\\rho_T\\) — shared within-host processes\nContinuous co-variation in seroreactivity that remains after the regime labels are fixed.\n\n\nMechanisms 1 and 3 of P3 are now separately identified. Mechanism 2 is next."
+  },
+  {
+    "objectID": "talks/Paris2026.html#the-geostatistical-extension",
+    "href": "talks/Paris2026.html#the-geostatistical-extension",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "The geostatistical extension",
+    "text": "The geostatistical extension\nSpatial variation enters the mixing probabilities, not the observation model (P1 + P2).\n\\(\\{S_1,S_2\\}\\) — a bivariate Matérn field whose cross-correlation encodes shared exposure."
+  },
+  {
+    "objectID": "talks/Paris2026.html#the-bivariate-field",
+    "href": "talks/Paris2026.html#the-bivariate-field",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "The bivariate field",
+    "text": "The bivariate field"
+  },
+  {
+    "objectID": "talks/Paris2026.html#fitting-briefly",
+    "href": "talks/Paris2026.html#fitting-briefly",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Fitting, briefly",
+    "text": "Fitting, briefly\n\n\\(T\\) integrated out on a grid over \\((0,1)^2\\)\nSpatial field via sparse GMRF (SPDE + finite elements)\nLaplace approximation; bootstrap for uncertainty"
+  },
+  {
+    "objectID": "talks/Paris2026.html#what-we-predict",
+    "href": "talks/Paris2026.html#what-we-predict",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "What we predict",
+    "text": "What we predict\n\nExpected seroreactivity \\(\\mathbb{E}\\{T_k(a)\\mid \\mathbf{S}(\\mathbf{x})\\}\\)\nExpected antibody concentration \\(\\mathbb{E}\\{Y_k(a)\\mid \\mathbf{S}(\\mathbf{x})\\}\\)"
+  },
+  {
+    "objectID": "talks/Paris2026.html#the-data",
+    "href": "talks/Paris2026.html#the-data",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "The data",
+    "text": "The data\n\n15,578 individuals, 3,042 unique locations\nAMA1 & MSP1 — same pathogen, same infection event\nBimodal → unimodal with age"
+  },
+  {
+    "objectID": "talks/Paris2026.html#estimates-worth-remembering",
+    "href": "talks/Paris2026.html#estimates-worth-remembering",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Estimates worth remembering",
+    "text": "Estimates worth remembering\n\n\n\nQuantity\nEstimate\n95% CI\n\n\n\n\nSpatial range, AMA1\n473 m\n(353, 639)\n\n\nSpatial range, MSP1\n437 m\n(318, 577)\n\n\nCross-field \\(\\rho_S\\)\n0.587\n(0.453, 0.711)\n\n\nWithin-component \\(\\rho_T\\)\n0.717\n(0.691, 0.750)\n\n\nAge effect \\(\\delta_1\\)\n0.286\n(0.211, 0.339)\n\n\n\n\nResidential-scale clustering of transmission\nSubstantial spatial co-localisation of the two antigens\nCross-antigen association strengthens with age"
+  },
+  {
+    "objectID": "talks/Paris2026.html#model-validation",
+    "href": "talks/Paris2026.html#model-validation",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Model validation",
+    "text": "Model validation"
+  },
+  {
+    "objectID": "talks/Paris2026.html#spatial-predictions",
+    "href": "talks/Paris2026.html#spatial-predictions",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Spatial predictions",
+    "text": "Spatial predictions"
+  },
+  {
+    "objectID": "talks/Paris2026.html#recovering-the-joint-distribution",
+    "href": "talks/Paris2026.html#recovering-the-joint-distribution",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Recovering the joint distribution",
+    "text": "Recovering the joint distribution\n\n\n\nAge band\nUnivariate\nJoint\n\n\n\n\n\\([1,5]\\)\n0.295\n0.189\n\n\n\\((20,40]\\)\n0.225\n0.083\n\n\nAll ages\n0.194\n0.078\n\n\n\nUnivariate models stay slightly better on marginals — as expected."
+  },
+  {
+    "objectID": "talks/Paris2026.html#predictive-performance",
+    "href": "talks/Paris2026.html#predictive-performance",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Predictive performance",
+    "text": "Predictive performance\n\nSpatial field → clear gain in scoring rules\nJoint model → 12.6% smaller bivariate HDR at same coverage"
+  },
+  {
+    "objectID": "talks/Paris2026.html#simulation-study-where-the-benefit-sits",
+    "href": "talks/Paris2026.html#simulation-study-where-the-benefit-sits",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Simulation study: where the benefit sits",
+    "text": "Simulation study: where the benefit sits\n\nSpatial field \\(S\\) — joint model always lower MAE; the advantage grows with \\(\\rho_S\\) (≈3% at \\(\\rho_S=0.1\\), ≈9% at \\(\\rho_S=0.9\\))\nLatent seroreactivity \\(T\\) — univariate models carry a persistent bias of about \\(-0.09\\) at every scenario and sample size; the joint model is essentially unbiased, with 20–25% lower MAE\nObserved antibody \\(Y\\) — both nearly unbiased; the gain propagates only weakly through the measurement error\n\n\nThe case for joint modelling is strongest when \\(T\\), not \\(Y\\), is the quantity of interest."
+  },
+  {
+    "objectID": "talks/Paris2026.html#summary",
+    "href": "talks/Paris2026.html#summary",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Summary",
+    "text": "Summary\n\nLatent seroreactivity provides a flexible and biologically intepretable way to model continuous measurements of antibody concentration\nThree principles keep the multivariate extension interpretable and identifiable\nThe gains of joint modelling are dependent on the research question"
+  },
+  {
+    "objectID": "talks/Paris2026.html#what-comes-next",
+    "href": "talks/Paris2026.html#what-comes-next",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "What comes next",
+    "text": "What comes next\n\nBeyond two antigens\nMechanistic spatial mixing probabilities\nCheaper uncertainty quantification than bootstrap"
+  },
+  {
+    "objectID": "talks/Paris2026.html#thank-you",
+    "href": "talks/Paris2026.html#thank-you",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "THANK YOU!",
+    "text": "THANK YOU!\n\n\n\nReferences\n\nGiorgi, E. and Wallin, J. (2026). A flexible class of latent variable models for the analysis of antibody response data. Biostatistics, Volume 27, Issue 1, January 2026, kxag008, https://doi.org/10.1093/biostatistics/kxag008\nGiorgi, E. and Wallin, J. (2026). Bivariate geostatistical latent variable models for the analysis of antibody density data. Pre-print available at https://arxiv.org/abs/2608.27534\n\nLet’s Connect\n🔗 giorgistat.github.io\n📧 e.giorgi@bham.ac.uk\n📍Department of Health Sciences, University of Birmingham, Birmingham, UK"
+  },
+  {
+    "objectID": "talks/Paris2026.html#gmm-comparison-ama1",
+    "href": "talks/Paris2026.html#gmm-comparison-ama1",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "GMM comparison: AMA1",
+    "text": "GMM comparison: AMA1"
+  },
+  {
+    "objectID": "talks/Paris2026.html#gmm-comparison-msp1",
+    "href": "talks/Paris2026.html#gmm-comparison-msp1",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "GMM comparison: MSP1",
+    "text": "GMM comparison: MSP1"
+  },
+  {
+    "objectID": "talks/Paris2026.html#reparametrisation-of-the-mixing-probabilities",
+    "href": "talks/Paris2026.html#reparametrisation-of-the-mixing-probabilities",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Reparametrisation of the mixing probabilities",
+    "text": "Reparametrisation of the mixing probabilities\nA Plackett copula with covariate-dependent odds ratio gives the same three-dimensional family, but lets both \\(\\gamma_1\\) and \\(\\gamma_2\\) keep a marginal interpretation.\nThe sequential form is preferred here because it extends directly beyond two antigens by adding successive conditional terms \\(\\delta_{jk}(a_i)\\)."
+  },
+  {
+    "objectID": "talks/Paris2026.html#full-parameter-table",
+    "href": "talks/Paris2026.html#full-parameter-table",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Full parameter table",
+    "text": "Full parameter table\nPoint estimates and 95% bootstrap intervals for all parameters of the joint bivariate spatial model — see Table 1 of the paper.\nKey structural features: low- and high-seroreactivity means well separated for both antigens; reduced spread at high seroreactivity, consistent with assay saturation."
+  },
+  {
+    "objectID": "talks/Paris2026.html#outline",
+    "href": "talks/Paris2026.html#outline",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Outline",
+    "text": "Outline\n\nPart I. One antigen: a continuous latent seroreactivity replaces seropositive / seronegative\nPart II. Two antigens: three principles for where dependence enters, and the spatial extension"
+  },
+  {
+    "objectID": "talks/Paris2026.html#a-continuum-instead",
+    "href": "talks/Paris2026.html#a-continuum-instead",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "A continuum instead",
+    "text": "A continuum instead\nSeroreactivity: degree of antibody reactivity, irrespective of any threshold.\n\n\nLatent \\(T \\in [0,1]\\)\n\n\\(T \\approx 0\\): minimal activity\n\\(T \\approx 1\\): saturated response\n\n\n\\[Y \\mid T=t \\sim\n\\mathcal{N}\\big( (1-t)\\mu_0 + t\\mu_1,\\;\n(1-t)\\sigma_0^2 + t\\sigma_1^2 \\big)\\]\n\nMean and variance interpolate linearly."
+  },
+  {
+    "objectID": "talks/Paris2026.html#contains-what-we-already-use",
+    "href": "talks/Paris2026.html#contains-what-we-already-use",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Contains what we already use",
+    "text": "Contains what we already use\nYman et al. (2016): \\(\\mathbb{E}[Y;a] = \\mu_0 + (\\mu_1-\\mu_0)\\{1-\\exp(-ra)\\}\\)\n\nEquivalent to \\(\\mathbb{E}[T;a] = 1-\\exp(-ra)\\)\nGMMs are the limit where \\(T\\) collapses to two points."
+  },
+  {
+    "objectID": "talks/Paris2026.html#why-linear-interpolation",
+    "href": "talks/Paris2026.html#why-linear-interpolation",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Why linear interpolation",
+    "text": "Why linear interpolation\n\n\\(Y=(1-t)Y_0+tY_1\\) → U-shaped variance, minimal at intermediate \\(t\\) — implausible\n\\(Y=(1-Z_t)Y_0+Z_tY_1\\), \\(Z_t\\sim\\text{Bernoulli}(t)\\) — still a binary GMM underneath\n\nOur specification keeps the response on a genuine continuum."
+  },
+  {
+    "objectID": "talks/Paris2026.html#application-malaria-kenyan-highlands",
+    "href": "talks/Paris2026.html#application-malaria-kenyan-highlands",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Application: malaria, Kenyan highlands",
+    "text": "Application: malaria, Kenyan highlands\nRachuonyo South District, 2011 — IgG against AMA1 and MSP1 (Bousema et al., 2013, 2016).\nStrategy: fix conditional parameters \\((\\mu_0,\\mu_1,\\sigma_0^2,\\sigma_1^2)\\) from the youngest age group, then re-estimate only \\(T\\)’s distribution within each successive age band."
+  },
+  {
+    "objectID": "talks/Paris2026.html#ama1-a-joint-model",
+    "href": "talks/Paris2026.html#ama1-a-joint-model",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "AMA1: a joint model",
+    "text": "AMA1: a joint model\n\n\nBelow \\(\\tau\\): mechanistic, mass at \\(T=0\\)\n\nAbove \\(\\tau\\): empirical Beta, continuity constraint\n\n\\(\\hat\\tau = 20.8\\) years; \\(\\hat\\lambda = 0.148\\)."
+  },
+  {
+    "objectID": "talks/Paris2026.html#three-guiding-principles",
+    "href": "talks/Paris2026.html#three-guiding-principles",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Three guiding principles",
+    "text": "Three guiding principles\n\nP1 — Dependence lies in the latent process, not the observation model\n\\(Y\\mid T\\) describes assay characteristics only; conditional on \\(\\mathbf{T}\\), antibody concentrations are independent across antigens\nP2 — Exposure and response magnitude are modelled separately\nexposure → mixing probabilities; magnitude → component locations. A mixture for \\(T\\) is what makes this separation available\nP3 — Distinct scales of dependence get distinct structures\nso that each underlying mechanism remains interpretable"
+  },
+  {
+    "objectID": "talks/Paris2026.html#p1-latent-process-carries-dependence",
+    "href": "talks/Paris2026.html#p1-latent-process-carries-dependence",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "P1 — Latent process carries dependence",
+    "text": "P1 — Latent process carries dependence\n\\(Y\\mid T\\) describes assay characteristics only.\nConditional on \\(\\mathbf{T}\\), antibody concentrations are independent across antigens."
+  },
+  {
+    "objectID": "talks/Paris2026.html#p2-exposure-vs-magnitude",
+    "href": "talks/Paris2026.html#p2-exposure-vs-magnitude",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "P2 — Exposure vs magnitude",
+    "text": "P2 — Exposure vs magnitude\n\n\nExposure\n→ mixing probabilities\n\nMagnitude\n→ component locations\n\nA mixture for \\(T\\) is the natural fit."
+  },
+  {
+    "objectID": "talks/Paris2026.html#p3-three-mechanisms",
+    "href": "talks/Paris2026.html#p3-three-mechanisms",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "P3 — Three mechanisms",
+    "text": "P3 — Three mechanisms\n\nShared infection event — within an individual\nShared exposure environment — across nearby individuals\nShared within-host processes — response magnitude"
+  },
+  {
+    "objectID": "talks/Paris2026.html#two-correlation-parameters",
+    "href": "talks/Paris2026.html#two-correlation-parameters",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Two correlation parameters",
+    "text": "Two correlation parameters\n\n\n\\(\\delta(a)\\) — shared infection event, age-varying\n\n\\(\\rho_T\\) — shared within-host processes\n\nMechanisms 1 and 3 of P3 now identified separately."
+  },
+  {
+    "objectID": "talks/Paris2026.html#simulation-study",
+    "href": "talks/Paris2026.html#simulation-study",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Simulation study",
+    "text": "Simulation study\n\n\\(S\\): joint model lower MAE, gap grows with \\(\\rho_S\\)\n\\(T\\): univariate bias \\(\\approx -0.09\\) throughout; joint essentially unbiased\n\\(Y\\): gain propagates only weakly\n\nJoint modelling matters most for \\(T\\), less for \\(Y\\)."
+  },
+  {
+    "objectID": "talks/Paris2026.html#a-threshold-free-approach-latent-variable-models",
+    "href": "talks/Paris2026.html#a-threshold-free-approach-latent-variable-models",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "A threshold-free approach: Latent variable models",
+    "text": "A threshold-free approach: Latent variable models\nSeroreactivity: degree of antibody reactivity, irrespective of any threshold.\nLatent \\(T \\in [0,1]\\)\n\n\\(T \\approx 0\\): minimal activity\n\\(T \\approx 1\\): saturated response\n\\(Y \\mid T=t \\sim\n\\mathcal{N}\\big( (1-t)\\mu_0 + t\\mu_1,\\;\n(1-t)\\sigma_0^2 + t\\sigma_1^2 \\big)\\)"
+  },
+  {
+    "objectID": "talks/Paris2026.html#modelling-t-single-distribution",
+    "href": "talks/Paris2026.html#modelling-t-single-distribution",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Modelling \\(T\\): single distribution",
+    "text": "Modelling \\(T\\): single distribution"
+  },
+  {
+    "objectID": "talks/Paris2026.html#modelling-t-mixtures",
+    "href": "talks/Paris2026.html#modelling-t-mixtures",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Modelling \\(T\\): mixtures",
+    "text": "Modelling \\(T\\): mixtures"
+  },
+  {
+    "objectID": "talks/Paris2026.html#ama1-goodness-of-fit",
+    "href": "talks/Paris2026.html#ama1-goodness-of-fit",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "AMA1: goodness of fit",
+    "text": "AMA1: goodness of fit\n\n\nEnvelope of histograms simulated from the fitted model vs. the observed histogram\nGood agreement across most age bands\nSlight overstatement of high-antibody individuals in the youngest groups"
+  },
+  {
+    "objectID": "talks/Paris2026.html#msp1-model-equations",
+    "href": "talks/Paris2026.html#msp1-model-equations",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "MSP1: model equations",
+    "text": "MSP1: model equations\nSingle Beta distribution, shape parameters both varying with age, with a change point in \\(\\beta(a)\\):\n\\[\nT \\sim \\text{Beta}\\big(\\alpha(a),\\beta(a)\\big), \\qquad\n\\alpha(a) = \\alpha_0\\, a^{\\gamma}, \\qquad\n\\beta(a) = \\beta_0\\, a^{\\delta(a)}\n\\]\n\\[\n\\delta(a) =\n\\begin{cases}\n\\delta_1, & a \\le \\zeta\\\\\n\\delta_1+\\delta_2, & a &gt; \\zeta\n\\end{cases}\n\\]\nEstimated change point at \\(\\hat\\zeta = 11.6\\) years — marks an acceleration in seroreactivity, not a plateau."
+  },
+  {
+    "objectID": "talks/Paris2026.html#msp1-goodness-of-fit",
+    "href": "talks/Paris2026.html#msp1-goodness-of-fit",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "MSP1: goodness of fit",
+    "text": "MSP1: goodness of fit\n\n\nSame envelope comparison as for AMA1\nModel tracks the observed histograms closely across all age bands\nNo systematic bias, unlike AMA1’s youngest bands"
+  },
+  {
+    "objectID": "talks/Paris2026.html#lbm-vs-gmm-how-much-better-is-the-latent-model",
+    "href": "talks/Paris2026.html#lbm-vs-gmm-how-much-better-is-the-latent-model",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "LBM vs GMM: how much better is the latent model?",
+    "text": "LBM vs GMM: how much better is the latent model?\nBIC comparison, age-stratified, both fitted with MLE (positive \\(\\Delta\\)BIC favours the latent model):\n\n\n\nAntigen\nAge band\n\\(\\Delta\\)BIC\n\n\n\n\nAMA1\n\\(6\\)–\\(10\\)\n45\n\n\nAMA1\n\\(20\\)–\\(30\\)\n700\n\n\nAMA1\n\\(45+\\)\n1394\n\n\nMSP1\n\\(&lt;6\\)\n42\n\n\nMSP1\n\\(20\\)–\\(30\\)\n259\n\n\nMSP1\n\\(45+\\)\n459\n\n\n\n\nThe latent Beta model outperforms the GMM in every single age band, for both antigens\nThe advantage for AMA1 grows sharply with age, exceeding 1000 BIC units in older groups\nMSP1 gains are more modest — the GMM adapts reasonably well here, but the latent model still wins throughout\nThe \\(L_2\\) histogram approximation reproduces the same ranking as MLE, at a fraction of the computational cost"
+  },
+  {
+    "objectID": "talks/Paris2026.html#ama-profile",
+    "href": "talks/Paris2026.html#ama-profile",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "AMA profile",
+    "text": "AMA profile"
+  },
+  {
+    "objectID": "talks/Paris2026.html#msp-profile",
+    "href": "talks/Paris2026.html#msp-profile",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "MSP profile",
+    "text": "MSP profile"
+  },
+  {
+    "objectID": "talks/Paris2026.html#developing-a-multivariate-framework",
+    "href": "talks/Paris2026.html#developing-a-multivariate-framework",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Developing a multivariate framework",
+    "text": "Developing a multivariate framework\nDependence in multi-antigen serology operates at two levels:\n\nWithin an individual — shared infection event, shared immunology\nBetween individuals — shared exposure environment\n\n\nNo existing framework handles cross-antigen correlation, age dependence and spatial dependence together for non-Gaussian, multimodal outcomes."
+  },
+  {
+    "objectID": "talks/Paris2026.html#modelling-the-sources-of-correlation",
+    "href": "talks/Paris2026.html#modelling-the-sources-of-correlation",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Modelling the sources of correlation",
+    "text": "Modelling the sources of correlation\nThree mechanisms, three separate parameters:\n\nShared infection event (within individual) → \\(\\delta(a)\\), the age-varying association between the two component labels\nShared within-host processes (within individual) → \\(\\rho_T\\), the correlation of the truncated Gaussian components once labels are fixed\nShared exposure environment (between individuals) → \\(\\rho_S\\), the cross-correlation of a bivariate Matérn field entering the mixing probabilities\n\n\n\\[\np_{i,1} = h\\big(\\mathbf{d}_i^\\top\\gamma_1 + S_1(\\mathbf{x}_i)\\big),\n\\qquad\np_{i,2} = h\\big(\\mathbf{d}_i^\\top\\gamma_2 + \\delta(a_i)z_1 + S_2(\\mathbf{x}_i)\\big)\n\\]"
+  },
+  {
+    "objectID": "talks/Paris2026.html#bivariate-fit-age-stratified-validation",
+    "href": "talks/Paris2026.html#bivariate-fit-age-stratified-validation",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Bivariate fit: age-stratified validation",
+    "text": "Bivariate fit: age-stratified validation"
+  },
+  {
+    "objectID": "talks/Paris2026.html#does-joint-modelling-help",
+    "href": "talks/Paris2026.html#does-joint-modelling-help",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Does joint modelling help?",
+    "text": "Does joint modelling help?\nCoarsened total variation distance for the joint distribution:\n\n\n\nAge band\nUnivariate\nJoint\n\n\n\n\n\\([1,5]\\)\n0.295\n0.189\n\n\n\\((20,40]\\)\n0.225\n0.083\n\n\nAll ages\n0.194\n0.078\n\n\n\n\nUnivariate models stay slightly better on the marginals — as expected\nJoint model → 12.6% smaller bivariate HDR at the same coverage\nSimulation: most predictions gains are shown in the inferences for \\(T\\)\n\nJoint modelling matters if we are answering research questions that involve joint properties of antibodies"
+  },
+  {
+    "objectID": "talks/Paris2026.html#discussion",
+    "href": "talks/Paris2026.html#discussion",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Discussion",
+    "text": "Discussion\n\nThe principles can be relaxed. P1 fails under antibody cross-reactivity, which would need a residual covariance in the observation model — hard to separate from genuine biological correlation without replicate measurements or known cross-reactivity profiles\nP2 is pragmatic. Letting the spatial field enter both component locations and mixing probabilities would create an identifiability problem\nP3 assumes a shared pathogen. For antigens from distinct pathogens the shared-infection pathway no longer applies, and \\(\\delta(a)\\) should be left unconstrained\nBeyond two antigens. Disease-agnostic versus biologically constrained correlation structures; the computational approximations here are unlikely to scale to tens of responses\nCheaper uncertainty. The parametric bootstrap is costly; inverse-Hessian standard errors would need the validity conditions of Ogden (2017) to be established"
+  },
+  {
+    "objectID": "talks/Paris2026.html#the-bivariate-matérn-field",
+    "href": "talks/Paris2026.html#the-bivariate-matérn-field",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "The bivariate Matérn field",
+    "text": "The bivariate Matérn field"
+  },
+  {
+    "objectID": "talks/Paris2026.html#fitting",
+    "href": "talks/Paris2026.html#fitting",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Fitting",
+    "text": "Fitting\n\n\\(T\\) integrated out on a grid over \\((0,1)^2\\)\nSpatial field via sparse GMRF (SPDE + finite elements)\nLaplace approximation; bootstrap for uncertainty"
+  },
+  {
+    "objectID": "talks/Paris2026.html#analogy-amount-of-dna-generated-by-a-cell",
+    "href": "talks/Paris2026.html#analogy-amount-of-dna-generated-by-a-cell",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Analogy: amount of DNA generated by a cell",
+    "text": "Analogy: amount of DNA generated by a cell\n\n\n\n\n\n\n\n\n\nMass piles up at two boundary states: 2n (pre-replication) and 4n (post-replication)\nCells in S phase occupy a genuine continuum in between\n\n\n\nTaken from Alberts B, Johnson A, Lewis J, Morgan D, Raff M, Roberts K, Walter P (2015). Molecular Biology of the Cell, 6th edition. New York: Garland Science."
+  },
+  {
+    "objectID": "talks/Paris2026.html#ama1-model-specification",
+    "href": "talks/Paris2026.html#ama1-model-specification",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "AMA1: model specification",
+    "text": "AMA1: model specification\nA change point \\(\\tau\\) separates two regimes, with the mean of \\(T\\) kept continuous across it.\nBelow \\(\\tau\\) — mechanistic, with a degenerate mass at \\(T=0\\):\n\\[\nf_T(t;a) =\n\\begin{cases}\n1-\\pi(a), & t=0\\\\[4pt]\n\\pi(a)\\,\\alpha_2\\, t^{\\alpha_2-1}, & 0&lt;t&lt;1\n\\end{cases}\n\\qquad\n\\pi(a) = 1-\\exp(-\\lambda a)\n\\]\nAbove \\(\\tau\\) — empirical Beta with logit-linear mean:\n\\[\nT \\sim \\text{Beta}\\big(\\mu(a)\\phi,\\,[1-\\mu(a)]\\phi\\big),\n\\qquad\n\\text{logit}\\{\\mu(a)\\} = \\eta_0 + \\eta_1\\log(a)\n\\]\n\nContinuity constraint: \\(\\eta_0 = \\text{logit}(\\mu_{\\tau^-}) - \\eta_1\\log(\\tau)\\)\n\\(\\hat\\tau = 20.8\\) years — mechanistic model appropriate up to about age 20\n\\(\\hat\\lambda = 0.148\\) — roughly half of children have initiated a response by age 5\n\\(\\hat\\eta_1 &lt; 0\\) — modest decline in mean seroreactivity at older ages"
+  },
+  {
+    "objectID": "talks/Paris2026.html#msp1-model-specification",
+    "href": "talks/Paris2026.html#msp1-model-specification",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "MSP1: model specification",
+    "text": "MSP1: model specification\nA single Beta throughout, with both shape parameters varying with age:\n\\[\nT \\sim \\text{Beta}\\big(\\alpha(a),\\,\\beta(a)\\big),\n\\qquad\n\\alpha(a) = \\alpha_0\\, a^{\\gamma},\n\\qquad\n\\beta(a) = \\beta_0\\, a^{\\delta(a)}\n\\]\nwith a change point \\(\\zeta\\) in the exponent of \\(\\beta\\):\n\\[\n\\delta(a) =\n\\begin{cases}\n\\delta_1, & a \\le \\zeta\\\\[4pt]\n\\delta_1+\\delta_2, & a &gt; \\zeta\n\\end{cases}\n\\qquad\n\\mathbb{E}[T] = \\left(1 + \\tfrac{\\beta_0}{\\alpha_0}\\, a^{\\delta_1+\\delta_2-\\gamma}\\right)^{-1}\n\\]\n\n\\(\\hat\\gamma = 0.277 &gt; \\hat\\delta_1 = 0.110\\) — \\(\\alpha(a)\\) grows faster, so \\(\\mathbb{E}[T]\\) rises steadily\n\\(\\hat\\zeta = 11.6\\) years, \\(\\hat\\delta_2 = -0.061 &lt; 0\\) — \\(\\beta(a)\\) slows, accelerating the rise\nSaturation would require \\(\\delta_1+\\delta_2 \\approx \\gamma\\); it does not occur here\nContrast with AMA1: a data-driven rather than mechanistic specification"
+  },
+  {
+    "objectID": "talks/Paris2026.html#notation-for-two-antigens",
+    "href": "talks/Paris2026.html#notation-for-two-antigens",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Notation for two antigens",
+    "text": "Notation for two antigens\nFor individual \\(i\\) and antigen \\(k \\in \\{1,2\\}\\):\n\n\\(\\mathbf{Y}_i = (Y_{i,1}, Y_{i,2})^\\top\\) — the pair of log-antibody concentrations\n\\(\\mathbf{T}_i = (T_{i,1}, T_{i,2})^\\top \\in (0,1)^2\\) — the pair of latent seroreactivities\n\\(\\mathbf{Z}_i = (Z_{i,1}, Z_{i,2})^\\top \\in \\{0,1\\}^2\\) — component labels, low or high regime per antigen\n\\(\\mathbf{d}_i\\) — covariates, with age \\(a_i\\) written separately where it matters\n\n\nThe question the principles answer: where in this hierarchy does each source of dependence belong?"
+  },
+  {
+    "objectID": "talks/Paris2026.html#p1-dependence-lies-in-the-latent-process",
+    "href": "talks/Paris2026.html#p1-dependence-lies-in-the-latent-process",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "P1 — Dependence lies in the latent process",
+    "text": "P1 — Dependence lies in the latent process\n\nThe observation model describes assay characteristics, not biology\nConditional on \\(\\mathbf{T}_i\\), the two antibody measurements are independent:\n\\[\np(\\mathbf{y}_i \\mid \\mathbf{T}_i = \\mathbf{t}) =\n\\prod_{k=1}^{2}\n\\mathcal{N}\\big\\{y_{i,k};\\, \\mu_k(t_{i,k}),\\, \\sigma_k^2(t_{i,k})\\big\\}\n\\]\nImplication: all cross-antigen dependence is carried by the joint density \\(g(\\mathbf{t}\\mid\\mathbf{d}_i)\\) — nothing is left in the observation model\nWhen it fails: antibody cross-reactivity would induce correlation in \\(\\mathbf{Y}\\) unrelated to \\(\\mathbf{T}\\), requiring a residual covariance term instead"
+  },
+  {
+    "objectID": "talks/Paris2026.html#p2-exposure-and-magnitude-are-separate",
+    "href": "talks/Paris2026.html#p2-exposure-and-magnitude-are-separate",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "P2 — Exposure and magnitude are separate",
+    "text": "P2 — Exposure and magnitude are separate\n\nExposure determines the probability of mounting a high response\nIndividual immunology determines the magnitude, given exposure\nImplication: a mixture for \\(\\mathbf{T}_i\\) is the natural choice, since it provides two distinct places to put them\n\\[\n\\mathbf{T}_i \\mid \\mathbf{Z}_i = \\mathbf{z} \\;\\sim\\;\n\\mathcal{N}_{(0,1)^2}\\big\\{ \\mathbf{m}(\\mathbf{d}_i;\\mathbf{z}),\\, \\Sigma_T \\big\\}\n\\]\nexposure → the mixing probabilities \\(\\pi_i(\\mathbf{z})\\); magnitude → the component locations \\(\\mathbf{m}(\\mathbf{d}_i;\\mathbf{z})\\)\nConsequence: spatial variation, being variation in the force of infection, enters only the mixing probabilities"
+  },
+  {
+    "objectID": "talks/Paris2026.html#p3-distinct-scales-distinct-structures",
+    "href": "talks/Paris2026.html#p3-distinct-scales-distinct-structures",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "P3 — Distinct scales, distinct structures",
+    "text": "P3 — Distinct scales, distinct structures\n\nShared infection event, within an individual\n→ \\(\\delta(a_i)\\) in \\(\\Pr(Z_{i,2}=1 \\mid Z_{i,1}=z_1)\\), the association between component labels\nShared within-host processes, within an individual\n→ \\(\\rho_T\\), the correlation in \\(\\Sigma_T\\) once the labels are fixed\nShared exposure environment, between individuals\n→ \\(\\rho_S\\), the cross-correlation of the fields \\(\\{S_1(\\mathbf{x}), S_2(\\mathbf{x})\\}\\)\n\n\n\nImplication: each mechanism that induce dependence is governed by its own parameter"
+  },
+  {
+    "objectID": "talks/Paris2026.html#correlation-between-ama1-and-msp1-estimates",
+    "href": "talks/Paris2026.html#correlation-between-ama1-and-msp1-estimates",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Correlation between AMA1 and MSP1: Estimates",
+    "text": "Correlation between AMA1 and MSP1: Estimates\n\n\n\nQuantity\nEstimate\n95% CI\n\n\n\n\nSpatial range, AMA1\n473 m\n(353, 639)\n\n\nSpatial range, MSP1\n437 m\n(318, 577)\n\n\nCross-field \\(\\rho_S\\)\n0.587\n(0.453, 0.711)\n\n\nWithin-component \\(\\rho_T\\)\n0.717\n(0.691, 0.750)\n\n\nAge effect \\(\\delta_1\\)\n0.286\n(0.211, 0.339)\n\n\n\n\nResidential-scale clustering of transmission\nSubstantial spatial co-localisation of the two antigens\nCross-antigen association strengthens with age"
+  },
+  {
+    "objectID": "talks/Paris2026.html#discussion-going-beyond-two-antigens",
+    "href": "talks/Paris2026.html#discussion-going-beyond-two-antigens",
+    "title": "Latent variable models for the analysis of antibody density data",
+    "section": "Discussion: going beyond two antigens",
+    "text": "Discussion: going beyond two antigens\nThe sequential construction extends directly by adding conditional terms \\(\\delta_{jk}(a_i)\\). The harder questions are epidemiological.\n\nDoes the pathogen structure matter? Whether the antigens belong to one pathogen or several has direct implications for how cross-antigen association should be modelled\nDisease-agnostic approach. Impose no prior structure on the correlations and let the data determine the full pattern of dependence\nAssumption-driven approach. Impose a parsimonious structure informed by biology, for example allowing association only among antigens sharing a pathogen or a transmission route\nThe principles adapt. P3 as stated assumes a shared pathogen and life-cycle stage; for antigens from distinct pathogens the shared-infection pathway no longer applies and \\(\\delta(a)\\) should be left unconstrained\nComputation is the binding constraint. The approximations used here are adequate for a bivariate outcome but unlikely to scale to tens of antibody responses\n\n\nExtending to a handful of antigens from the same pathogen is relatively straightforward. A genuinely multivariate formulation would need to be tailored to the epidemiological context."
   }
 ]
