@@ -1,5 +1,4 @@
 rm(list = ls())  # Clear workspace
-library(RiskMap)  # Load RiskMap package for spatial modeling
 
 # Load Required Packages
 library(ggplot2)  # For data visualization
@@ -120,6 +119,7 @@ elev_class_data$elevation_mean <- aggregate(elevation ~ elevation_class,
 
 # Visualizing empirical logit by elevation
 ggplot(elev_class_data, aes(x = elevation_mean, y = RDT),
+       # n_obs not found
        size = n_obs) +
   geom_point() +
   labs(x="Elevation (meters)",y="Empirical logit")

@@ -18,16 +18,16 @@ format:
 
 # Overview
 
--   **Defining geostatistical problems**
--   **Model-based geostatistics as a data-driven approach to spatial analysis of health outcomes**
+- **Defining geostatistical problems**
+- **Model-based geostatistics as a data-driven approach to spatial analysis of health outcomes**
 
 ------------------------------------------------------------------------
 
 ## Epidemiological Data {.smaller}
 
--   **Incidence:** Number of new cases per unit time per unit population\
--   **Prevalence:** Number of existing cases per unit population\
--   **Risk:** Probability that a person will contract the disease (per unit time or lifetime)
+- **Incidence:** Number of new cases per unit time per unit population\
+- **Prevalence:** Number of existing cases per unit population\
+- **Risk:** Probability that a person will contract the disease (per unit time or lifetime)
 
 **Objective:** Understand spatial variation in disease incidence, prevalence, and risk
 
@@ -40,9 +40,9 @@ Elliott et al. (2000), Gelfand et al. (2010), Rothman (1986), Waller & Gotway (2
 
 ::::: columns
 ::: column
--   John Snow removed the handle of the Broad Street water pump\
--   Identified contaminated water as the disease source\
--   Contradicted conventional wisdom at the time
+- John Snow removed the handle of the Broad Street water pump\
+- Identified contaminated water as the disease source\
+- Contradicted conventional wisdom at the time
 
 [1854 Broad Street cholera outbreak](https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak)
 :::
@@ -58,16 +58,16 @@ Elliott et al. (2000), Gelfand et al. (2010), Rothman (1986), Waller & Gotway (2
 ## Study Designs {.smaller}
 
 1.  **Registry**
-    -   Case counts in sub-regions\
-    -   Population size as denominator\
-    -   Covariates from census data
+    - Case counts in sub-regions\
+    - Population size as denominator\
+    - Covariates from census data
 2.  **Case-Control**
-    -   Cases: All known cases in the study region\
-    -   Controls: Probability sample of non-cases
+    - Cases: All known cases in the study region\
+    - Controls: Probability sample of non-cases
 3.  **Survey**
-    -   Sampled locations within study region\
-    -   Data collected per location\
-    -   Common in low-resource settings
+    - Sampled locations within study region\
+    - Data collected per location\
+    - Common in low-resource settings
 
 ------------------------------------------------------------------------
 
@@ -86,8 +86,8 @@ Does plague infection risk increase above 800m elevation?
 
 ![](Images/leuk.png){width="45%"}
 
--   Locations of all known cases (1974–82)\
--   Residential locations of a random sample of births
+- Locations of all known cases (1974–82)\
+- Residential locations of a random sample of births
 
 **References:**\
 [Cuzick & Edwards (1990)](https://www.jstor.org/stable/2345652), [Diggle & Chetwynd (1991)](https://www.jstor.org/stable/2532668)
@@ -98,8 +98,8 @@ Does plague infection risk increase above 800m elevation?
 
 ![](Images/pinkmap.png){width="60%"}
 
--   **Data:** Empirical prevalences in surveyed villages\
--   **Map:** Predictive probabilities of exceeding 20% prevalence threshold
+- **Data:** Empirical prevalences in surveyed villages\
+- **Map:** Predictive probabilities of exceeding 20% prevalence threshold
 
 [Diggle et al., 2007](https://www.tandfonline.com/doi/epdf/10.1179/136485913X13789813917463?needAccess=true)
 
@@ -109,24 +109,24 @@ Does plague infection risk increase above 800m elevation?
 
 ### **Plague in Madagascar**
 
--   Is elevation an important risk factor?\
--   If so, **why**?
+- Is elevation an important risk factor?\
+- If so, **why**?
 
 ### **Childhood Leukaemia in Humberside**
 
--   Do cases show unexpected clustering?
+- Do cases show unexpected clustering?
 
 ### **Loa loa in Cameroon**
 
--   What environmental factors influence risk?\
--   Can we predict areas exceeding an intervention threshold?
+- What environmental factors influence risk?\
+- Can we predict areas exceeding an intervention threshold?
 
 ------------------------------------------------------------------------
 
 ## Epidemic vs Endemic Patterns {.smaller}
 
--   **Epidemic:** Foot-and-mouth in Cumbria (2001)\
--   **Endemic:** Gastroenteric disease in Hampshire (AEGISS)
+- **Epidemic:** Foot-and-mouth in Cumbria (2001)\
+- **Endemic:** Gastroenteric disease in Hampshire (AEGISS)
 
 Animations:\
 - [Foot-and-mouth](https://www.lancaster.ac.uk/staff/diggle/FMD/)\
@@ -138,9 +138,9 @@ Animations:\
 
 ## **Empirical Modelling: AEGISS Project** {.smaller}
 
--   **Objective:** Early detection of incidence anomalies\
--   3,374 reports of gastro-intestinal illness\
--   Log-Gaussian Cox process for space-time correlation
+- **Objective:** Early detection of incidence anomalies\
+- 3,374 reports of gastro-intestinal illness\
+- Log-Gaussian Cox process for space-time correlation
 
 ![](Images/6-Mar-2003-2.png){width="60%"}
 
@@ -158,11 +158,11 @@ Animations:\
 :::
 :::::
 
--   **Data:** $(y_i, x_i)$, where $x_i \in A \subset \mathbb{R}^2$\
+- **Data:** $(y_i, x_i)$, where $x_i \in A \subset \mathbb{R}^2$\
 
--   **Model:** $Y_i = S(x_i) + Z_i$\
+- **Model:** $Y_i = S(x_i) + Z_i$\
 
--   **Objective:** Estimate $\int_{A} S(x) dx$ (e.g., mining yield)
+- **Objective:** Estimate $\int_{A} S(x) dx$ (e.g., mining yield)
 
 ## **Model-Based Geostatistics for Public Health** {.smaller}
 

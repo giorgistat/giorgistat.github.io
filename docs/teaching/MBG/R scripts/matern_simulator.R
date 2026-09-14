@@ -4,6 +4,7 @@ library(gstat)
 library(sp)
 library(gridExtra)
 library(sf)
+library(RiskMap)
 
 # Matern correlation function
 matern_corr <- function(h, kappa, phi) {
@@ -57,7 +58,6 @@ server <- function(input, output) {
                 formula = ~ gp(kappa = input$kappa),
                 data = grid,
                 family = "gaussian",
-                crs = 3857,
                 sim_pars = list(beta = 0, sigma2 = input$sigma2,
                                 phi = input$phi,
                                 tau2 = 0, sigma2_me = 0),
