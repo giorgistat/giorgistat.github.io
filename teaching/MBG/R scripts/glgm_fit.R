@@ -16,10 +16,11 @@ liberia_sf <- st_transform(liberia_sf, crs = crs_lb)
 lb_fit <- glgpm(npos ~ log(elevation) + gp(),
                 den = ntest,
                 family = "binomial",
-                data = liberia_sf)
+                data = liberia_sf,
+                return_samples = TRUE)
 
-check_mcmc(lb_fit)
-check_mcmc(lb_fit, check_mean = FALSE, component = sample(1:nrow(liberia_sf), 1))
+plot_mcmc(lb_fit)
+plot_mcmc(lb_fit, check_mean = FALSE, component = sample(1:nrow(liberia_sf), 1))
 
 # Updating the MCMCL
 theta0 <- coef(lb_fit)
@@ -28,13 +29,14 @@ lb_fit <- glgpm(npos ~ log(elevation) + gp(),
                 den = ntest,
                 par0 = theta0,
                 family = "binomial",
-                data = liberia_sf)
+                data = liberia_sf,
+                return_samples = TRUE)
 
 summary(lb_fit)
 
 ### Including the nugget effect Z_i
 
-lb_fit_n <- glgpm(npos ~ log(elevation) + gp(nugget = NULL),
+lb_fit_n <- glgpm(npos ~ log(elevation) + gp(nugget = TRUE),
                 den = ntest,
                 family = "binomial",
                 data = liberia_sf)
@@ -49,10 +51,11 @@ data("anopheles")
 
 an_fit <- glgpm(An.gambiae ~ elevation + gp(),
                 family = "poisson",
-                data = anopheles)
+                data = anopheles,
+                return_samples = TRUE)
 
-check_mcmc(an_fit)
-check_mcmc(an_fit, check_mean = FALSE, component = sample(1:nrow(anopheles), 1))
+plot_mcmc(an_fit)
+plot_mcmc(an_fit, check_mean = FALSE, component = sample(1:nrow(anopheles), 1))
 
 # Updating the MCMCL
 theta0 <- coef(an_fit)

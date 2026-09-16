@@ -32,7 +32,7 @@ shp_lb_1 <- st_transform(shp_lb_1, crs=crs_lb)
 
 # Create the grid
 
-grid_lb <- create_grid(shp_lb_0, spat_res = 5)
+grid_lb <- create_grid(shp_lb_0, spacing = 5)
 
 
 # Extract elevation
@@ -44,20 +44,19 @@ pred_lb <- data.frame(elevation=elevation)
 
 # Predict S(x)
 
-pred_S_lb <-
-  pred_over_grid(lb_fit, grid_pred = grid_lb,
+pred_S_lb <-setup_prediction(lb_fit, grid_pred = grid_lb,
                  predictors = pred_lb, type="joint")
 
 
 ## Unweighted regional prevalence
 
-pred_area <- pred_target_shp(pred_S_lb, shp = shp_lb_1,
-                            shp_target = function(Tx) mean(Tx),
-                            f_target = list(prev =
-                                              function(lp) exp(lp)/(1+exp(lp))),
-                            pd_summary = list(mean = mean,
-                                              exceed20 = function(x) mean(x > 0.2)),
-                            col_names = "shapeName")
+pred_area <- predict_areal_target(pred_S_lb, shp = shp_lb_1,
+                                  shp_target = function(Tx) mean(Tx),
+                                  f_target = list(prev =
+                                                    function(lp) exp(lp)/(1+exp(lp))),
+                                  pd_summary = list(mean = mean,
+                                                    exceed20 = function(x) mean(x > 0.2)),
+                                  col_names = "shapeName")
 
 # Plot point predictions of average prevalence
 plot(pred_area, which_target = "prev", which_summary = "mean",
@@ -91,15 +90,15 @@ weights_pred <- extract(lbr_pop, st_as_sf(grid_lb))$lbr_ppp_2014
 
 # Prediction of the population weighted regional average prevalence
 
-pred_area_w <- pred_target_shp(pred_S_lb, shp = shp_lb_1,
-                              shp_target = function(Tx) sum(Tx),
-                              f_target = list(prev =
-                                                function(lp) exp(lp)/(1+exp(lp))),
-                              pd_summary = list(mean = mean,
-                                                exceed20 = function(x) mean(x > 0.2)),
-                              weights = weights_pred,
-                              standardize_weights = TRUE,
-                              col_names = "shapeName")
+pred_area_w <- predict_areal_target(pred_S_lb, shp = shp_lb_1,
+                                    shp_target = function(Tx) sum(Tx),
+                                    f_target = list(prev =
+                                                      function(lp) exp(lp)/(1+exp(lp))),
+                                    pd_summary = list(mean = mean,
+                                                      exceed20 = function(x) mean(x > 0.2)),
+                                    weights = weights_pred,
+                                    standardize_weights = TRUE,
+                                    col_names = "shapeName")
 
 # Plot point predictions of average prevalence (weighted)
 plot(pred_area_w, which_target = "prev", which_summary = "mean",

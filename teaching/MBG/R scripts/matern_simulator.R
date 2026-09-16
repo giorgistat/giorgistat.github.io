@@ -35,7 +35,7 @@ ui <- fluidPage(
 server <- function(input, output) {
   observeEvent(input$simulate, {
     h_vals <- seq(0, sqrt(2), length.out = 100)
-    corr_vals <- sapply(h_vals, matern_corr, kappa = input$kappa, phi = input$phi)
+    corr_vals <- sapply(h_vals, matern_correlation, kappa = input$kappa, phi = input$phi)
 
     output$maternPlot <- renderPlot({
       ggplot(data.frame(h = h_vals, corr = corr_vals), aes(x = h, y = corr)) +
@@ -53,15 +53,15 @@ server <- function(input, output) {
     st_crs(grid) <- 3857
 
     # Define the variogram model (Matérn covariance)
-    sim_res <-
-      glgpm_sim(n_sim = 1,
-                formula = ~ gp(kappa = input$kappa),
-                data = grid,
-                family = "gaussian",
-                sim_pars = list(beta = 0, sigma2 = input$sigma2,
-                                phi = input$phi,
-                                tau2 = 0, sigma2_me = 0),
-                scale_to_km = FALSE)
+    sim_res <- simulate_glgpm(
+                  n_sim = 1,
+                  formula = ~ gp(kappa = input$kappa),
+                  data = grid,
+                  family = "gaussian",
+                  sim_pars = list(beta = 0, sigma2 = input$sigma2,
+                                  phi = input$phi,
+                                  tau2 = 0, sigma2_me = 0),
+                  distance_units = "m")
 
     # Convert the result to a data frame for ggplot
     sim_df <- data.frame(x = st_coordinates(grid)[,1],

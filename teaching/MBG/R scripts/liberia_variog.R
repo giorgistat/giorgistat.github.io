@@ -25,7 +25,7 @@ liberia_variog <- variogram(data = liberia,
                             variable = "Z_hat",
                             breaks = c(15, 30, 40, 80, 120,
                                      160, 200, 250, 300, 350),
-                            scale_to_km = TRUE,
+                            distance_units = "km",
                             n_permutation = 10000)
 
 plot_variogram(liberia_variog)

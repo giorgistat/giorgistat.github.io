@@ -30,7 +30,7 @@ shp_lb <- geoboundaries(country = "liberia", adm_lvl = "adm0")
 # Transform the shapefile to the proposed UTM CRS
 shp_lb <- st_transform(shp_lb, crs = crs_lb)
 # Create a grid over Liberia with a spatial resolution of 5 km
-grid_utm <- create_grid(shp_lb, spat_res = 5)
+grid_utm <- create_grid(shp_lb, spacing = 5)
 # Transform the grid back to WGS84 (EPSG:4326) for compatibility with other data
 grid_ll <- st_transform(grid_utm, crs = 4326)
 
