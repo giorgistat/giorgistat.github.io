@@ -4,7 +4,7 @@ title: "Model-based Geostatistics"
 
 ![Figure taken from [Stresman, Giorgi et al (2017)](https://www.nature.com/articles/srep45849)](MBG/course_cover.jpg){height="3in"}
 
-This course provides a comprehensive introduction to **Model-based Geostatistics**, with a focus on applications in global public health and environmental science. The course on the applications of geostaistical methods while keeping the mathematical content to the minimum level required. The course is taught using the R software environment.
+This course provides a comprehensive introduction to **Model-based Geostatistics**, with a focus on applications in global public health and environmental science. The course on the applications of geostatistical methods while keeping the mathematical content to the minimum level required. The course is taught using the R software environment.
 
 ------------------------------------------------------------------------
 
@@ -21,8 +21,8 @@ By the end of this course, students will be able to:
 
 ## R packages
 
-- *Essential*: `RiskMap`, `rgeoboundaries`, `ggplot2`, `sf`, `terra`, `elevats`
-- *Desireable*: `shiny`
+- *Essential*: `RiskMap`, `rgeoboundaries`, `ggplot2`, `sf`, `terra`, `elevatr`
+- *Desirable*: `shiny`
 
 Install `RiskMap` in R by running `devtools::install_github("giorgilancs/RiskMap")`
 

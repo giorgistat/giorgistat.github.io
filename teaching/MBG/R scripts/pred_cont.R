@@ -30,7 +30,7 @@ shp_lb <- st_transform(shp_lb, crs=crs_lb)
 
 # Create the grid
 
-grid_lb <- create_grid(shp_lb, spat_res = 5)
+grid_lb <- create_grid(shp_lb, spacing = 5)
 
 
 # Extract elevation
@@ -42,21 +42,19 @@ pred_lb <- data.frame(elevation=elevation)
 
 # Predict S(x)
 
-pred_S_lb <-
-pred_over_grid(lb_fit, grid_pred = grid_lb,
-               predictors = pred_lb)
+pred_S_lb <- setup_prediction(lb_fit, grid_pred = grid_lb,
+                              predictors = pred_lb)
 
 # Predict T(x)
 
-pred_T_lb <-
-  pred_target_grid(pred_S_lb,
-                   f_target = list(prev = function(x) exp(x)/(1+exp(x))),
-                   pd_summary = list(mean = mean,
-                                     lower_lim = function(x) quantile(x, 0.025),
-                                     upper_lim = function(x) quantile(x, 0.975),
-                                     exceed20 = function(x) mean(x > 0.2),
-                                     exceed30 = function(x) mean(x > 0.3)))
-
+pred_T_lb <- predict_grid_target(
+               pred_S_lb,
+               f_target = list(prev = function(x) exp(x)/(1+exp(x))),
+               pd_summary = list(mean = mean,
+                                 lower_lim = function(x) quantile(x, 0.025),
+                                 upper_lim = function(x) quantile(x, 0.975),
+                                 exceed20 = function(x) mean(x > 0.2),
+                                 exceed30 = function(x) mean(x > 0.3)))
 
 plot(pred_T_lb, which_target = "prev", which_summary = "mean",
      main = "Predictive mean")

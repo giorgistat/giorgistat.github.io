@@ -118,8 +118,6 @@ elev_class_data$elevation_mean <- aggregate(elevation ~ elevation_class,
                                             FUN = mean)$elevation
 
 # Visualizing empirical logit by elevation
-ggplot(elev_class_data, aes(x = elevation_mean, y = RDT),
-       # n_obs not found
-       size = n_obs) +
+ggplot(elev_class_data, aes(x = elevation_mean, y = RDT)) +
   geom_point() +
   labs(x="Elevation (meters)",y="Empirical logit")
