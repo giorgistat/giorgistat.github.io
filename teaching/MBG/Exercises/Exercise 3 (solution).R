@@ -8,7 +8,7 @@ tz_malaria <- st_as_sf(tz_malaria, coords = c("utm_x", "utm_y"), crs = 32736)
 
 # Fitting a model with covariates
 glgm_fit <- glgpm(Pf ~ Temperature + pmax(Temperature - 33, 0) +
-                    EVI + gp(nugget = NULL),
+                    EVI + gp(nugget = TRUE),
                   den = Ex,
                   data = tz_malaria,
                   family = "binomial")
@@ -22,7 +22,7 @@ shp_tz_1 <- geoboundaries(country = "tanzania", adm_lvl = "adm1")
 shp_tz_1 <- st_transform(shp_tz_1, crs = 32736)
 
 # Create the grid
-grid_tza <- create_grid(shp_tz_0, spat_res = 10)
+grid_tza <- RiskMapNTDtest::create_grid(shp_tz_0, spat_res = 10)
 
 
 # EVI for Tanzania
@@ -51,13 +51,13 @@ pred_tza <- pred_tza[-ind_na,]
 # Prediction of S(x)
 
 pred_S_tza_cov <-
-  pred_over_grid(glgm_fit, predictors = pred_tza,
+  setup_prediction(glgm_fit, predictors = pred_tza,
                  grid_pred = grid_tza, type="joint")
 
 # Prediction of prevalence over the grid
 
 pred_T_grid <-
-  pred_target_grid(pred_S_tza_cov,
+  predict_grid_target(pred_S_tza_cov,
                    f_target = list(prev = function(x) exp(x)/(1+exp(x))),
                    pd_summary = list(mean = mean,
                                      below10 = function(x) mean(x < 0.1),
@@ -82,7 +82,7 @@ plot(pred_T_grid, which_target = "prev", which_summary = "class")
 
 
 pred_T_adm1 <-
-  pred_target_shp(pred_S_tza_cov,
+  predict_areal_target(pred_S_tza_cov,
                   f_target = list(prev = function(x) exp(x)/(1+exp(x))),
                   shp = shp_tz_1,
                   shp_target = mean,
@@ -121,7 +121,7 @@ library(terra)
 tza_weights <- 100*terra::extract(tza_pop, st_as_sf(grid_tza))[,2]
 
 pred_T_adm1 <-
-  pred_target_shp(pred_S_tza_cov,
+  predict_areal_target(pred_S_tza_cov,
                   f_target = list(prev = function(x) exp(x)/(1+exp(x))),
                   shp = shp_tz_0,
                   weights = tza_weights,

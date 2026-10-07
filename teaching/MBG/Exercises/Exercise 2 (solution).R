@@ -18,12 +18,12 @@ tz_malaria$Z_hat_null <- ranef(glmer_fit_null)$cluster.number[,1]
 
 
 tz_vari_null <-
-  s_variogram(data = tz_malaria, variable = "Z_hat_null",
-              bins = seq(1,500, length = 15),
+  variogram(data = tz_malaria, variable = "Z_hat_null",
+             breaks  = seq(1,500, length = 15),
               scale_to_km = TRUE,
               n_permutation = 1000)
 
-plot_s_variogram(tz_vari_null, plot_envelope = TRUE)
+plot_variogram(tz_vari_null, plot_envelope = TRUE)
 
 
 # Point 2
@@ -36,12 +36,12 @@ glmer_fit <- glmer(cbind(Pf, Ex - Pf) ~ Temperature + pmax(Temperature - 33, 0) 
 tz_malaria$Z_hat <- ranef(glmer_fit)$cluster.number[,1]
 
 tz_vari <-
-s_variogram(data = tz_malaria, variable = "Z_hat",
-            bins = seq(1,500, length = 15),
+variogram(data = tz_malaria, variable = "Z_hat",
+            breaks = seq(1,500, length = 15),
             scale_to_km = TRUE,
             n_permutation = 1000)
 
-plot_s_variogram(tz_vari, plot_envelope = TRUE)
+plot_variogram(tz_vari, plot_envelope = TRUE)
 
 
 
@@ -65,7 +65,7 @@ glgm_fit_null <- glgpm(Pf ~ gp(nugget = NULL),
 
 # Fitting a model with covariates
 glgm_fit <- glgpm(Pf ~ Temperature + pmax(Temperature - 33, 0) +
-                    EVI + gp(nugget = NULL),
+                    EVI + gp(nugget = TRUE),
                        den = Ex,
                        data = tz_malaria,
                        family = "binomial")
