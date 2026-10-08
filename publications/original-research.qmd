@@ -12,7 +12,7 @@ title: "Original Research Articles"
 
 - Ruiz Cuenca, P., Souza, F. N., Nascimento, R. C. do, da Silva, A. G., Eyre, M. T., Cerqueira, J., dos Santos, D. O., Ribeiro de Souza, E. V., Read, J., Cremonese, C., Costa, F., <u>**Giorgi, E.**</u> (2025). *Using step selection functions to analyse human mobility using telemetry data in infectious disease epidemiology: a case study of leptospirosis.* eLife, 14:RP107153, https://doi.org/10.7554/eLife.107153.1
 
-- Kyomuhangi, I., <u>**Giorgi, E.**</u> (2022). *A threshold-free approach with age-dependency for estimating malaria seroprevalence.* Malaria Journal. https://doi.org/10.1371/journal.pone.0262145
+- Kyomuhangi, I., <u>**Giorgi, E.**</u> (2022). *A threshold-free approach with age-dependency for estimating malaria seroprevalence.* Malaria Journal. 3;21(1):1. doi: [10.1186/s12936-021-04022-4](https://doi.org/10.1186/s12936-021-04022-4). PMID: 34980109; PMCID: PMC8725324. 
 
 - Macharia, P., Ray, N., Gitonga, C. W., Snow, R. W., <u>**Giorgi, E.**</u> (2022). *Combining school-catchment area models with geostatistical models for analysing school survey data from low-resource settings: inferential benefits and limitations.* Spatial statistics. https://doi.org/10.1016/j.spasta.2022.100679
 
@@ -44,7 +44,7 @@ title: "Original Research Articles"
 
 - <u>**Giorgi, E.**</u> , Diggle, P. J., Snow, R. W., Noor, A. M. (2018). *Geostatistical methods for disease mapping and visualization using data from spatio-temporally referenced prevalence surveys.* International Statistical Review. https://doi.org/10.1111/insr.12268
 
-- <u>**Giorgi, E.**</u> , (2018). *On the goodness-of-fit of generalized linear geostistical models.* Spatial statistics. https://doi.org/10.1016/j.spasta.2018.01.002
+- <u>**Giorgi, E.**</u> , (2018). *On the goodness-of-fit of generalized linear geostatistical models.* Spatial statistics. https://doi.org/10.1016/j.spasta.2018.01.002
 
 - <u>**Giorgi, E.**</u> , Schlüter, D. K., Diggle, P. J. (2017). *Bivariate geostatistical modelling of the relationship between Loa loa prevalence and intensity of infection.* Environmetrics. doi:10.1002/ env.2447
 
@@ -52,16 +52,17 @@ title: "Original Research Articles"
 
 - Diggle, P. J., <u>**Giorgi, E.**</u> (2016). *Model-based geostatistics for prevalence mapping in low-resource settings (with discussion).* Journal of the American Statistical Association. 111:1096-1120
 
-- <u>**Giorgi, E.**</u> , Diggle, P. J. (2014). *On the inverse geostatistical problem of inference on missing locations.* Spatial statistics. 11:35-44 arXiv:1409.3408
-
 - <u>**Giorgi, E.**</u> , Sesay, S. S., Terlouw, D. J., Diggle, P. J. (2015). *Combining data from multiple spatially referenced prevalence surveys using generalized linear geostatistical models.* Journal of the Royal Statistical Society, Series A. 178:445-464 arXiv:1308.2790
+
+- <u>**Giorgi, E.**</u> , Diggle, P. J. (2014). *On the inverse geostatistical problem of inference on missing locations.* Spatial statistics. 11:35-44 arXiv:1409.3408
 
 - <u>**Giorgi, E.**</u> , McNeil, A. J. (2014). *On the computation of multivariate scenario sets for the skew-t and generalized hyperbolic families.* Computational Statistics and Data Analysis. 100:205-220 arXiv:1402.0686
 
 ## Applications {#public-health}
 
+- Norman, J., Bassabi-Alladjie, N.-M., Boko-Collins, P. M., de Souza, D. K., Gass, K., Hamill, L., Langa, J., Moore, C., Nala, R., Sullivan, S., <u>**Giorgi, E.**</u> (2026). *Assessing diagnostic accuracy of Ov16 rapid diagnostic tests for onchocerciasis using Bayesian latent class models.* PLOS Neglected Tropical Diseases.  20(10): e0013954. [https://doi.org/10.1371/journal.pntd.0013954](https://doi.org/10.1371/journal.pntd.0013954)
 
-- Clark, F. N., da Silva Solca, M., Fraga, D. B. M., Brodskyn, C. I., <u>**Giorgi, E.**</u> (2026).*Understanding the relationship between the presence of vegetation and the spread of canine visceral leishmaniasis in Camacari, Bahia State, Northeastern Brazil.* Scientific Reports. <https://doi.org/10.1038/s41598-026-73205-3>
+- Clark, F. N., da Silva Solca, M., Fraga, D. B. M., Brodskyn, C. I., <u>**Giorgi, E.**</u> (2026).*Geostatistical modelling of the effect of vegetation on canine visceral leishmaniasis in Camaçari, Bahia State, Northeastern Brazil using remote-sensed data.* Scientific Reports. <https://doi.org/10.1038/s41598-026-73205-3>
 
 
 - Supali, T., Djuardi, Y., Iskandar, E., Sugianto, N., Alfian, R., Destani, Y., <u>**Giorgi, E.**</u>, Weil, G. J., Fischer, P. U. (2026). *Can mass drug administration alone eliminate lymphatic filariasis in areas of Indonesia with zoophilic Brugia malayi?* PLoS Neglected Tropical Diseases. 20(7): e0014501. <https://doi.org/10.1371/journal.pntd.0014501>
@@ -86,7 +87,7 @@ title: "Original Research Articles"
 
 - Puranik, A., Diggle, P. J., Odiere, M. R., Gass, K., Kepha, S., Okoyo, C., Mwandawiro, C., Wakesho, F., Omondi, W., Sultani, H. M., <u>**Giorgi, E.**</u> (2024). *Understanding the impact of covariates on the classification of implementation units for soil-transmitted helminths control: A case study from Kenya.* BMC Medical Research Methodology, 24, 294 (2024). https://doi.org/10.1186/s12874-024-02420-1
 
-- Khaki, J., Macharia, P., <u>**Giorgi, E.**</u> , Benova, L. (2024). *Prevalence and determinants of double and triple burden of malnutrition among mother-child pairs in Malawi: a mapping and multilevel modelling study.* Pubblic Health Nutrition. Public Health Nutrition.\
+- Khaki, J., Macharia, P., <u>**Giorgi, E.**</u> , Benova, L. (2024). *Prevalence and determinants of double and triple burden of malnutrition among mother-child pairs in Malawi: a mapping and multilevel modelling study.* Public Health Nutrition. Public Health Nutrition.\
   2024;27(1):e241. doi:10.1017/S1368980024002064
 
 - Soni, N., Eyre, M. T., Souza, F. N., Diggle, P. J., Ko, A. I., Begon, M., Pickup, R., Childs, J. E., Khalil, H., Carvalho-Pereira, T. S. A., Pertile, A. C., Carvalho, M., de Oliveira, D., Junior, N. N., <u>**Giorgi, E.**</u> $^*$, Costa, F.$^*$ (2024). *Disentangling the influence of reservoir abundance and pathogen shedding on zoonotic spillover of the Leptospira agent in urban informal settlements.* Frontiers in Public Health. 12:1447592. doi: 10.3389/fpubh.2024.1447592 $^*$These authors contributed equally.
@@ -111,7 +112,7 @@ $^*$ I have co-authored this paper as member of the NTD consortium.
 
 - Kitawa, Y. S., Johnson, O., <u>**Giorgi, E.**</u> , Zeytu Gashaw Asfaw (2023). Understanding the importance of spatial correlation in identifying spatio-temporal variation of disease risk, in the case of malaria risk mapping in southern Ethiopia. Scientific African. doi: 10.1016/j.sciaf.2023.e01926
 
-- Greenland-Bews, C., Byrne, R. L., Owen, S. O., Watkins, R. L., Bengey, D., Buist, K., Clerkin, K., Escadafal, C., Finch, L. S., Gould, S., <u>**Giorgi, E.**</u> , Hodgkinson, A., Mashenko, L., Powell, D., Savage, H. R,. Thompson, C. R., Turtle, L. T., Wardale, J., Wooding, D., Edwards, T., Atienzar, A. C. (2023). *Evaluation of Eight Lateral Flow Tests for the detection of anti-SARS-CoV-2 antibodies in a vaccinated population Corresponding Author: Dr Emily R Adams.* BMC Infectious Diseases. https://doi.org/10.1186/s12879-023-08033-1
+- Greenland-Bews, C., Byrne, R. L., Owen, S. O., Watkins, R. L., Bengey, D., Buist, K., Clerkin, K., Escadafal, C., Finch, L. S., Gould, S., <u>**Giorgi, E.**</u> , Hodgkinson, A., Mashenko, L., Powell, D., Savage, H. R,. Thompson, C. R., Turtle, L. T., Wardale, J., Wooding, D., Edwards, T., Atienzar, A. C. (2023). *Evaluation of Eight Lateral Flow Tests for the detection of anti-SARS-CoV-2 antibodies in a vaccinated population.* BMC Infectious Diseases. https://doi.org/10.1186/s12879-023-08033-1
 
 - Echodu, D., Yeka, D., Eganyu, T., Odude, W., Bukenya, F., Amoah, B., Wanzira, H., Colborn, K., Elliott, R. C., Powell, S. E., Kilama, M., Mulebeke, R., Nankabirwa, J., <u>**Giorgi, E.**</u> , Roskosky, M., Omoding, O., Gonahasa, S., Opigo, J. (2023). *Impact of population based indoor residual spraying with and without mass drug administration with dihydroartemisinin-piperaquine on malaria prevalence in a high transmission setting: a controlled trial in northeastern Uganda.* BMC Infectious Diseases. https://doi.org/10.1186/s12879-023-07991-w
 
@@ -195,7 +196,7 @@ $^*$ I have co-authored this paper as member of the NTD consortium.
 - <u>**Giorgi, E.**</u> , Osman, A. A., Hassan, A. H., Ali, A. A., Ibrahim, F., Amran, J. G. H., Noor, A. M., Snow, R. W. (2018). *Using non-exceedance probabilities of policy-relevant malaria prevalence thresholds to identify areas of low transmission in Somalia.* Malaria Journal. 17:88,\
   https://doi.org/10.1186/s12936-018-2238-0
 
-- Deribe, K., Mbeng, A. A., Cano, J., Njouendo, A. J., Fru-Cho, J., Abong, R., Eyong, M. E., Ndongmo, P. W. C, <u>**Giorgi, E.**</u> , Pigott, D. M., Golding, N. et al. (2017). *Mapping the geographical distribution of podoconiosis in Cameroon using parasitological, serological, and clinical evidence to exclude other causes of lymphedema.* PLOS Neglrected Tropical Diseases 12(1): e0006126. https://doi.org/10.1371/journal.pntd.0006126
+- Deribe, K., Mbeng, A. A., Cano, J., Njouendo, A. J., Fru-Cho, J., Abong, R., Eyong, M. E., Ndongmo, P. W. C, <u>**Giorgi, E.**</u> , Pigott, D. M., Golding, N. et al. (2017). *Mapping the geographical distribution of podoconiosis in Cameroon using parasitological, serological, and clinical evidence to exclude other causes of lymphedema.* PLOS Neglected Tropical Diseases 12(1): e0006126. https://doi.org/10.1371/journal.pntd.0006126
 
 - Jary , H. R., Aston, S., Ho, A., <u>**Giorgi, E.**</u> , Kalata, N., Nyirenda, M., Mallewa, J., Peterson, I., Gordon, S. B., Mortimer, K. (2017). *Household air pollution and pneumonia in Malawian adults: a case-control study.* Wellcome Open Research, 2:103, doi: 10.12688/wellcomeopenres.12621.1
 
